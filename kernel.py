@@ -9810,6 +9810,25 @@ def create_app():
     @app.route('/s6')
     def s6(): return send_from_directory('static', 's6.html')
 
+    # ── Rings ────────
+    @app.route('/rings')
+    def rings():
+        try:
+            from npu_engine.field.ring_engine import derive_all_rings
+            fs = field_state()
+            return jsonify(derive_all_rings(fs))
+        except Exception as e:
+            return jsonify({'error': str(e)})
+
+    @app.route('/ring/<ring_id>')
+    def ring(ring_id):
+        try:
+            from npu_engine.field.ring_engine import derive_ring_spec
+            fs = field_state()
+            return jsonify(derive_ring_spec(ring_id, fs))
+        except Exception as e:
+            return jsonify({'error': str(e)})
+
     # ── Dashboard + widgets ────────
     @app.route('/dashboard')
     def dashboard(): return send_from_directory('static', 'dashboard.html')
