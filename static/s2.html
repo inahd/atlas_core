@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>S2 · sound</title>
+<style>
+:root{--bg:#02030a;--panel:#080c14;--border:#0e1420;--gold:#c8941a;--teal:#1a8a7a;--purple:#7060cc;--text:#8a9ab0;--dim:#3a4a5a;--bright:#c8d8e8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;display:flex;flex-direction:column;height:100vh;overflow:hidden}
+.layer-strip{height:24px;background:var(--panel);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 12px;flex-shrink:0}
+.layer-left{display:flex;align-items:center;gap:8px}
+.layer-id{font-size:9px;color:var(--dim)}
+.layer-name{font-size:10px;color:var(--teal);font-family:Georgia,serif}
+.layer-clock{font-size:9px;color:var(--dim)}
+.main{flex:1;overflow-y:auto;padding:16px}
+.field-strip{height:20px;background:var(--panel);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:12px;font-size:9px;color:var(--dim);flex-shrink:0}
+.block-header{font-size:8px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px;margin-top:20px}
+.block-header:first-child{margin-top:0}
+.raga-name{font-family:Georgia,serif;font-size:20px;color:var(--gold);margin-bottom:4px}
+.tala-name{font-family:Georgia,serif;font-size:14px;color:var(--gold);margin-bottom:4px}
+.bpm{font-size:12px;color:var(--teal);margin-bottom:4px}
+.notes{font-size:10px;color:var(--text);margin-bottom:2px}
+.dim{font-size:9px;color:var(--dim);margin-bottom:2px}
+.beats{display:flex;gap:4px;margin-bottom:4px;flex-wrap:wrap}
+.beat{width:8px;height:8px;border-radius:50%;border:1px solid var(--dim)}
+.beat.on{background:var(--teal);border-color:var(--teal)}
+.beat.sam{background:var(--gold);border-color:var(--gold)}
+.shruti-row{display:flex;gap:3px;margin-bottom:4px;flex-wrap:wrap}
+.shruti-dot{width:6px;height:6px;border-radius:50%;background:#1a2030}
+.shruti-dot.active{background:var(--gold)}
+.shruti-labels{display:flex;font-size:7px;color:var(--dim);margin-top:2px}
+.bija-text{font-family:Georgia,serif;font-size:24px;color:var(--teal)}
+.home-link{position:fixed;bottom:8px;right:8px;font-family:'Courier New',monospace;font-size:8px;color:var(--dim);text-decoration:none;letter-spacing:0.15em}
+</style>
+</head>
+<body>
+<div class="layer-strip">
+  <div class="layer-left"><span class="layer-id">S2</span><span class="layer-name">sound</span></div>
+  <span class="layer-clock" id="clock"></span>
+</div>
+<div class="main">
+  <div class="block-header">RAGA</div>
+  <div id="raga">◌ loading</div>
+  <div class="block-header">TALA</div>
+  <div id="tala">◌ loading</div>
+  <div class="block-header">SHRUTI</div>
+  <div id="shruti">◌</div>
+  <div class="block-header">BIJA</div>
+  <div id="bija">◌</div>
+</div>
+<div class="field-strip" id="field-strip">◌</div>
+<a href="/" class="home-link">✦ ATLAS</a>
+<script>
+function tick(){document.getElementById('clock').textContent=new Date().toLocaleTimeString('en-GB',{hour12:false})}
+tick();setInterval(tick,1000);
+
+function p(d,path,fb){let v=d;for(const k of path.split('.')){if(!v)return fb;v=v[k]}return(typeof v==='object'&&v!==null)?(v.name||fb):v||fb}
+
+async function load(){
+  try{
+    const[fr,sr]=await Promise.all([fetch('/field'),fetch('/sound/spec')]);
+    const d=await fr.json();
+    let s={};try{s=await sr.json()}catch(e){}
+
+    const nak=p(d,'panchanga.nakshatra','—');
+    const tithi=p(d,'panchanga.tithi','—');
+    const vara=p(d,'panchanga.vara','—');
+    const devi=p(d,'panchanga.devi','—');
+    document.getElementById('field-strip').textContent=[nak,tithi,vara,devi].join(' · ');
+
+    // Raga
+    const raga=s.raga||s.raga_name||p(d,'field.raga','')||'—';
+    const arohana=s.arohana||s.aroha||'';
+    const avarohana=s.avarohana||s.avaroha||'';
+    const timeOfDay=s.time||s.time_of_day||s.prahar||'';
+    const rasa=s.rasa||s.mood||'';
+    let rhtml='<div class="raga-name">'+(typeof raga==='object'?raga.name||'—':raga)+'</div>';
+    if(arohana)rhtml+='<div class="notes">↑ '+(Array.isArray(arohana)?arohana.join(' '):arohana)+'</div>';
+    if(avarohana)rhtml+='<div class="notes">↓ '+(Array.isArray(avarohana)?avarohana.join(' '):avarohana)+'</div>';
+    if(timeOfDay)rhtml+='<div class="dim">'+timeOfDay+'</div>';
+    if(rasa)rhtml+='<div class="dim">'+rasa+'</div>';
+    document.getElementById('raga').innerHTML=rhtml;
+
+    // Tala
+    const tala=s.tala||s.tala_name||'—';
+    const bpm=s.bpm||s.tempo||'';
+    const beats=s.beats||s.beat_count||0;
+    let thtml='<div class="tala-name">'+(typeof tala==='object'?tala.name||'—':tala)+'</div>';
+    if(bpm)thtml+='<div class="bpm">'+bpm+' bpm</div>';
+    if(beats){
+      thtml+='<div class="beats">';
+      const n=typeof beats==='number'?beats:parseInt(beats)||0;
+      for(let i=0;i<n;i++)thtml+='<div class="beat'+(i===0?' sam':' on')+'"></div>';
+      thtml+='</div>';
+    }
+    document.getElementById('tala').innerHTML=thtml;
+
+    // Shruti
+    const activeShrutis=s.shrutis||s.active_shrutis||[];
+    let shtml='<div class="shruti-row">';
+    for(let i=0;i<22;i++){
+      const active=Array.isArray(activeShrutis)&&activeShrutis.includes(i);
+      shtml+='<div class="shruti-dot'+(active?' active':'')+'"></div>';
+    }
+    shtml+='</div><div class="shruti-labels"><span style="flex:1">Sa</span><span style="flex:1;text-align:center">Pa</span><span style="flex:1;text-align:right">Sa</span></div>';
+    document.getElementById('shruti').innerHTML=shtml;
+
+    // Bija
+    const bija=s.bija||s.bija_mantra||p(d,'field.bija','')||'◌';
+    document.getElementById('bija').innerHTML='<div class="bija-text">'+(typeof bija==='object'?bija.syllable||bija.name||'◌':bija)+'</div>';
+  }catch(e){document.getElementById('field-strip').textContent='◌'}
+}
+
+load();setInterval(load,60000);
+</script>
+</body>
+</html>

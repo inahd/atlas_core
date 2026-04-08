@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>S3 · time</title>
+<style>
+:root{--bg:#02030a;--panel:#080c14;--border:#0e1420;--gold:#c8941a;--teal:#1a8a7a;--purple:#7060cc;--text:#8a9ab0;--dim:#3a4a5a;--bright:#c8d8e8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;display:flex;flex-direction:column;height:100vh;overflow:hidden}
+.layer-strip{height:24px;background:var(--panel);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 12px;flex-shrink:0}
+.layer-left{display:flex;align-items:center;gap:8px}
+.layer-id{font-size:9px;color:var(--dim)}
+.layer-name{font-size:10px;color:var(--bright);font-family:Georgia,serif}
+.layer-clock{font-size:9px;color:var(--dim)}
+.main{flex:1;overflow-y:auto;padding:16px}
+.field-strip{height:20px;background:var(--panel);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:12px;font-size:9px;color:var(--dim);flex-shrink:0}
+.block-header{font-size:8px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px;margin-top:20px}
+.block-header:first-child{margin-top:0}
+.tithi-num{font-family:Georgia,serif;font-size:48px;color:var(--gold);text-align:center;line-height:1}
+.tithi-name{font-family:Georgia,serif;font-size:14px;color:var(--dim);text-align:center;margin-top:4px}
+.tithi-sub{font-size:10px;color:var(--dim);text-align:center;margin-top:2px}
+.moon-svg{display:block;margin:12px auto}
+.muhurta-name{font-size:11px;color:var(--gold);margin-bottom:2px}
+.quality{margin-bottom:2px}
+.quality-dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:4px}
+.dim{font-size:9px;color:var(--dim);margin-bottom:2px}
+.detail{font-size:9px;color:var(--text);margin-bottom:2px;line-height:1.5}
+.rahu-range{font-size:10px;color:#c84040;margin-bottom:2px}
+.home-link{position:fixed;bottom:8px;right:8px;font-family:'Courier New',monospace;font-size:8px;color:var(--dim);text-decoration:none;letter-spacing:0.15em}
+</style>
+</head>
+<body>
+<div class="layer-strip">
+  <div class="layer-left"><span class="layer-id">S3</span><span class="layer-name">time</span></div>
+  <span class="layer-clock" id="clock"></span>
+</div>
+<div class="main">
+  <div class="block-header">NOW</div>
+  <div id="now">◌ loading</div>
+  <div class="block-header">MUHURTA</div>
+  <div id="muhurta">◌</div>
+  <div class="block-header">TRAJECTORY</div>
+  <div id="trajectory">◌</div>
+  <div class="block-header">RAHU KALA</div>
+  <div id="rahu">◌</div>
+</div>
+<div class="field-strip" id="field-strip">◌</div>
+<a href="/" class="home-link">✦ ATLAS</a>
+<script>
+function tick(){document.getElementById('clock').textContent=new Date().toLocaleTimeString('en-GB',{hour12:false})}
+tick();setInterval(tick,1000);
+
+function p(d,path,fb){let v=d;for(const k of path.split('.')){if(!v)return fb;v=v[k]}return(typeof v==='object'&&v!==null)?(v.name||fb):v||fb}
+
+function moonSVG(phase){
+  const r=25,cx=30,cy=30;
+  const f=typeof phase==='number'?phase:0.5;
+  const lit=f*2;
+  const dark=2-lit;
+  const sweep=f<=0.5?0:1;
+  const dx=r*Math.abs(1-lit*2);
+  return '<svg class="moon-svg" width="60" height="60" viewBox="0 0 60 60">'
+    +'<circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="none" stroke="#1a2030" stroke-width="0.5"/>'
+    +'<path d="M'+cx+' '+(cy-r)+' A'+r+' '+r+' 0 0 1 '+cx+' '+(cy+r)+' A'+dx+' '+r+' 0 0 '+sweep+' '+cx+' '+(cy-r)+'" fill="#c8941a" opacity="0.8"/>'
+    +'</svg>';
+}
+
+async function load(){
+  try{
+    const[fr,tr,cr]=await Promise.all([fetch('/field'),fetch('/trajectory'),fetch('/calendar/day')]);
+    const d=await fr.json();
+    let tj={};try{tj=await tr.json()}catch(e){}
+    let cal={};try{cal=await cr.json()}catch(e){}
+
+    const nak=p(d,'panchanga.nakshatra','—');
+    const tithi=p(d,'panchanga.tithi','—');
+    const vara=p(d,'panchanga.vara','—');
+    const devi=p(d,'panchanga.devi','—');
+    document.getElementById('field-strip').textContent=[nak,tithi,vara,devi].join(' · ');
+
+    const pa=d.panchanga||{};
+    const tithiNum=pa.tithi?.number||pa.tithi_number||'';
+    const tithiName=p(d,'panchanga.tithi','—');
+    const paksha=pa.paksha||pa.tithi?.paksha||'';
+    const lunarDay=pa.lunar_day||tithiNum||'';
+    const moonPhase=pa.moon_phase||pa.lunar_phase||tj.lunar_phase||0.5;
+
+    let nhtml='<div class="tithi-num">'+(tithiNum||'◌')+'</div>';
+    nhtml+='<div class="tithi-name">'+tithiName+'</div>';
+    nhtml+='<div class="tithi-sub">'+(paksha?paksha+' · ':'')+(lunarDay?'day '+lunarDay:'')+'</div>';
+    nhtml+=moonSVG(typeof moonPhase==='number'?moonPhase:parseFloat(moonPhase)||0.5);
+    document.getElementById('now').innerHTML=nhtml;
+
+    // Muhurta
+    const muh=cal.current_muhurta||cal.muhurta||{};
+    const muhName=muh.name||muh.window||p(cal,'muhurta','—');
+    const muhQuality=muh.quality||muh.nature||'';
+    const muhRemaining=muh.remaining||muh.time_remaining||'';
+    let mhtml='<div class="muhurta-name">'+(typeof muhName==='object'?muhName.name||'—':muhName)+'</div>';
+    if(muhQuality){
+      const color=muhQuality.toLowerCase().includes('good')?'#3a7a4a':muhQuality.toLowerCase().includes('avoid')?'#c84040':'#c8941a';
+      mhtml+='<div class="quality"><span class="quality-dot" style="background:'+color+'"></span>'+muhQuality+'</div>';
+    }
+    if(muhRemaining)mhtml+='<div class="dim">'+muhRemaining+' remaining</div>';
+    document.getElementById('muhurta').innerHTML=mhtml||'◌';
+
+    // Trajectory
+    const lunarArc=tj.lunar_arc||tj.lunar||tj.description||'';
+    const dashaLord=tj.dasha_lord||tj.dasha?.lord||p(tj,'dasha','');
+    const dashaEnd=tj.dasha_end||tj.dasha?.end_date||'';
+    const sessionArc=tj.session_arc||tj.session||'';
+    let thtml='';
+    if(lunarArc)thtml+='<div class="detail">'+lunarArc+'</div>';
+    if(dashaLord)thtml+='<div class="dim">dasha: '+(typeof dashaLord==='object'?dashaLord.name||'—':dashaLord)+(dashaEnd?' · ends '+dashaEnd:'')+'</div>';
+    if(sessionArc)thtml+='<div class="dim">'+sessionArc+'</div>';
+    document.getElementById('trajectory').innerHTML=thtml||'◌';
+
+    // Rahu Kala
+    const rahu=pa.rahu_kala||pa.rahu_kalam||'';
+    if(rahu){
+      let rhtml='<div class="rahu-range">'+rahu+'</div>';
+      document.getElementById('rahu').innerHTML=rhtml;
+    }
+  }catch(e){document.getElementById('field-strip').textContent='◌'}
+}
+
+load();setInterval(load,60000);
+</script>
+</body>
+</html>

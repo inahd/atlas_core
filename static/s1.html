@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>S1 · field</title>
+<style>
+:root{--bg:#02030a;--panel:#080c14;--border:#0e1420;--gold:#c8941a;--teal:#1a8a7a;--purple:#7060cc;--text:#8a9ab0;--dim:#3a4a5a;--bright:#c8d8e8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;display:flex;flex-direction:column;height:100vh;overflow:hidden}
+.layer-strip{height:24px;background:var(--panel);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 12px;flex-shrink:0}
+.layer-left{display:flex;align-items:center;gap:8px}
+.layer-id{font-size:9px;color:var(--dim)}
+.layer-name{font-size:10px;color:var(--gold);font-family:Georgia,serif}
+.layer-clock{font-size:9px;color:var(--dim)}
+.main{flex:1;overflow-y:auto;padding:16px;display:flex;gap:24px}
+.col{flex:1;min-width:0}
+.field-strip{height:20px;background:var(--panel);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:12px;font-size:9px;color:var(--dim);flex-shrink:0}
+.block-header{font-size:8px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px;margin-top:20px}
+.block-header:first-child{margin-top:0}
+.nak-name{font-family:Georgia,serif;font-size:18px;color:var(--gold);margin-bottom:2px}
+.devi-name{font-family:Georgia,serif;font-size:12px;color:var(--gold);margin-bottom:2px}
+.tithi-line{font-size:13px;color:var(--text);margin-bottom:2px}
+.detail{font-size:10px;color:var(--text);margin-bottom:2px}
+.dim{font-size:9px;color:var(--dim);margin-bottom:2px}
+.coh{font-size:12px;color:var(--teal);margin-bottom:2px}
+.rahu{font-size:9px;color:#c84040;margin-bottom:2px}
+.layer-line{font-size:8px;color:var(--dim);margin-bottom:1px}
+.layer-line.active{color:var(--gold)}
+.home-link{position:fixed;bottom:8px;right:8px;font-family:'Courier New',monospace;font-size:8px;color:var(--dim);text-decoration:none;letter-spacing:0.15em}
+</style>
+</head>
+<body>
+<div class="layer-strip">
+  <div class="layer-left"><span class="layer-id">S1</span><span class="layer-name">field</span></div>
+  <span class="layer-clock" id="clock"></span>
+</div>
+<div class="main">
+  <div class="col" id="left">
+    <div class="block-header">PANCHANGA</div>
+    <div id="panchanga">◌ loading</div>
+  </div>
+  <div class="col" id="right">
+    <div class="block-header">FIELD</div>
+    <div id="field-data">◌ loading</div>
+    <div class="block-header">LAYERS</div>
+    <div id="layers"></div>
+  </div>
+</div>
+<div class="field-strip" id="field-strip">◌</div>
+<a href="/" class="home-link">✦ ATLAS</a>
+<script>
+function tick(){document.getElementById('clock').textContent=new Date().toLocaleTimeString('en-GB',{hour12:false})}
+tick();setInterval(tick,1000);
+
+function p(d,path,fb){let v=d;for(const k of path.split('.')){if(!v)return fb;v=v[k]}return(typeof v==='object'&&v!==null)?(v.name||fb):v||fb}
+
+const layerNames=['S0 · bindu','S1 · archetype','S2 · sound','S3 · rhythm','S4 · geometry','S5 · nature','S6 · lila'];
+
+async function load(){
+  try{
+    const[fr,cr]=await Promise.all([fetch('/field'),fetch('/coherence-score')]);
+    const d=await fr.json();
+    let coh='—';try{const cd=await cr.json();coh=cd.coherence_score||cd.score||cd.coherence||'—'}catch(e){}
+    const pa=d.panchanga||{};
+    const nak=p(d,'panchanga.nakshatra','—');
+    const nakDeity=pa.nakshatra?.deity||pa.nakshatra_deity||'';
+    const tithi=p(d,'panchanga.tithi','—');
+    const tithiNum=pa.tithi?.number||pa.tithi_number||'';
+    const paksha=pa.paksha||pa.tithi?.paksha||'';
+    const vara=p(d,'panchanga.vara','—');
+    const yoga=p(d,'panchanga.yoga','');
+    const karana=p(d,'panchanga.karana','');
+    const hora=p(d,'panchanga.hora','');
+    const rahu=pa.rahu_kala||pa.rahu_kalam||'';
+    const devi=p(d,'panchanga.devi','—');
+
+    let html='<div class="nak-name">'+nak+'</div>';
+    if(nakDeity)html+='<div class="dim">'+nakDeity+'</div>';
+    html+='<div class="tithi-line">'+(tithiNum?tithiNum+' · ':'')+tithi+'</div>';
+    if(paksha)html+='<div class="dim">'+paksha+'</div>';
+    html+='<div class="detail">'+vara+'</div>';
+    if(yoga)html+='<div class="dim">yoga: '+yoga+'</div>';
+    if(karana)html+='<div class="dim">karana: '+karana+'</div>';
+    if(hora)html+='<div class="dim">hora: '+hora+'</div>';
+    if(rahu)html+='<div class="rahu">rahu kala: '+rahu+'</div>';
+    document.getElementById('panchanga').innerHTML=html;
+
+    const el=p(d,'field.element','')||p(d,'element','');
+    const guna=p(d,'field.guna','')||p(d,'guna','');
+    const graha=p(d,'panchanga.graha','')||p(d,'field.graha','');
+    const alpha=d.field?.alpha||d.alpha||'';
+    let fhtml='';
+    if(el)fhtml+='<div class="detail" style="color:var(--teal)">'+el+'</div>';
+    if(guna)fhtml+='<div class="dim">guna: '+guna+'</div>';
+    fhtml+='<div class="devi-name">'+devi+'</div>';
+    if(graha)fhtml+='<div class="detail">'+graha+'</div>';
+    fhtml+='<div class="coh">coherence: '+(typeof coh==='number'?Math.round(coh*100)+'%':coh)+'</div>';
+    if(alpha)fhtml+='<div class="dim">alpha: '+alpha+'</div>';
+    document.getElementById('field-data').innerHTML=fhtml;
+
+    const currentLayer=d.field?.s_layer||d.s_layer||1;
+    document.getElementById('layers').innerHTML=layerNames.map((n,i)=>
+      '<div class="layer-line'+(i===currentLayer?' active':'')+'">'+n+'</div>'
+    ).join('');
+
+    document.getElementById('field-strip').textContent=[nak,tithi,vara,devi].join(' · ');
+  }catch(e){document.getElementById('field-strip').textContent='◌'}
+}
+
+load();setInterval(load,60000);
+</script>
+</body>
+</html>

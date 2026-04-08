@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>S5 · plant · body</title>
+<style>
+:root{--bg:#02030a;--panel:#080c14;--border:#0e1420;--gold:#c8941a;--teal:#1a8a7a;--purple:#7060cc;--text:#8a9ab0;--dim:#3a4a5a;--bright:#c8d8e8;--green:#3a7a4a}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;display:flex;flex-direction:column;height:100vh;overflow:hidden}
+.layer-strip{height:24px;background:var(--panel);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 12px;flex-shrink:0}
+.layer-left{display:flex;align-items:center;gap:8px}
+.layer-id{font-size:9px;color:var(--dim)}
+.layer-name{font-size:10px;color:var(--green);font-family:Georgia,serif}
+.layer-clock{font-size:9px;color:var(--dim)}
+.main{flex:1;overflow-y:auto;padding:16px}
+.field-strip{height:20px;background:var(--panel);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:12px;font-size:9px;color:var(--dim);flex-shrink:0}
+.block-header{font-size:8px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px;margin-top:20px}
+.block-header:first-child{margin-top:0}
+.anchor-name{font-family:Georgia,serif;font-size:16px;color:var(--gold);margin-bottom:2px}
+.dim{font-size:9px;color:var(--dim);margin-bottom:2px}
+.detail{font-size:10px;color:var(--text);margin-bottom:2px}
+.signal{display:flex;align-items:center;gap:6px;margin-top:4px;margin-bottom:4px}
+.signal-dot{width:10px;height:10px;border-radius:50%}
+.signal-label{font-size:12px}
+.companion{display:flex;align-items:center;gap:6px;margin-bottom:6px}
+.graha-dot{width:6px;height:6px;border-radius:50%;flex-shrink:0}
+.comp-name{font-size:10px;color:var(--text)}
+.comp-fn{font-size:9px;color:var(--dim)}
+.plant-item{margin-bottom:6px}
+.plant-common{font-size:10px;color:var(--text)}
+.plant-latin{font-size:8px;color:var(--dim);font-style:italic}
+.badge{display:inline-block;font-size:7px;color:var(--dim);border:1px solid var(--border);padding:0 3px;border-radius:2px;margin-right:2px;margin-top:1px}
+.home-link{position:fixed;bottom:8px;right:8px;font-family:'Courier New',monospace;font-size:8px;color:var(--dim);text-decoration:none;letter-spacing:0.15em}
+</style>
+</head>
+<body>
+<div class="layer-strip">
+  <div class="layer-left"><span class="layer-id">S5</span><span class="layer-name">plant · body</span></div>
+  <span class="layer-clock" id="clock"></span>
+</div>
+<div class="main">
+  <div class="block-header">GUILD</div>
+  <div id="guild">◌ loading</div>
+  <div class="block-header">COMPANIONS</div>
+  <div id="companions">◌</div>
+  <div class="block-header">REGIONAL · GULF COAST</div>
+  <div id="regional">◌</div>
+</div>
+<div class="field-strip" id="field-strip">◌</div>
+<a href="/" class="home-link">✦ ATLAS</a>
+<script>
+function tick(){document.getElementById('clock').textContent=new Date().toLocaleTimeString('en-GB',{hour12:false})}
+tick();setInterval(tick,1000);
+
+function p(d,path,fb){let v=d;for(const k of path.split('.')){if(!v)return fb;v=v[k]}return(typeof v==='object'&&v!==null)?(v.name||fb):v||fb}
+
+const grahaColors={Sun:'#c8941a',Moon:'#c8d8e8',Mars:'#c84040',Mercury:'#3a7a4a',Jupiter:'#c8941a',Venus:'#7060cc',Saturn:'#3a4a5a',Rahu:'#1a2030',Ketu:'#5a3a2a'};
+
+const signalColors={ROOT:'#8a6030',LEAF:'#3a7a4a',FLOWER:'#7060cc',FRUIT:'#c84040',REST:'#3a4a5a'};
+
+async function load(){
+  try{
+    const[fr,gr,pr]=await Promise.all([
+      fetch('/field'),
+      fetch('/guild/state'),
+      fetch('/plants/region?lat=29.65&lon=-82.32&limit=5')
+    ]);
+    const d=await fr.json();
+    let g={};try{g=await gr.json()}catch(e){}
+    let rp={};try{rp=await pr.json()}catch(e){}
+
+    const nak=p(d,'panchanga.nakshatra','—');
+    const tithi=p(d,'panchanga.tithi','—');
+    const vara=p(d,'panchanga.vara','—');
+    const devi=p(d,'panchanga.devi','—');
+    document.getElementById('field-strip').textContent=[nak,tithi,vara,devi].join(' · ');
+
+    // Guild
+    const anchor=g.anchor||g.anchor_plant||g.plant||{};
+    const anchorName=typeof anchor==='string'?anchor:(anchor.name||anchor.common_name||'—');
+    const guildNak=g.nakshatra||nak;
+    const moonPhase=g.moon_phase||g.phase||'';
+    const activity=g.activity||g.recommendation||'';
+    const signal=g.planting_signal||g.signal||'';
+
+    let ghtml='<div class="anchor-name">'+anchorName+'</div>';
+    ghtml+='<div class="dim">'+guildNak+'</div>';
+    if(moonPhase||activity)ghtml+='<div class="detail">'+(moonPhase?moonPhase:'')+(moonPhase&&activity?' · ':'')+(activity||'')+'</div>';
+    if(signal){
+      const sig=typeof signal==='string'?signal.toUpperCase():signal;
+      const sc=signalColors[sig]||'#3a4a5a';
+      ghtml+='<div class="signal"><span class="signal-dot" style="background:'+sc+'"></span><span class="signal-label" style="color:'+sc+'">'+sig+'</span></div>';
+    }
+    document.getElementById('guild').innerHTML=ghtml;
+
+    // Companions
+    const companions=g.companions||g.guild_members||g.plants||[];
+    const cel=document.getElementById('companions');
+    if(Array.isArray(companions)&&companions.length>0){
+      cel.innerHTML=companions.slice(0,3).map(c=>{
+        const name=typeof c==='string'?c:(c.name||c.common_name||'—');
+        const fn=c.guild_function||c.function||c.role||'';
+        const graha=c.graha||c.planet||'';
+        const gc=grahaColors[graha]||'var(--dim)';
+        return '<div class="companion"><span class="graha-dot" style="background:'+gc+'"></span><span class="comp-name">'+name+'</span>'+(fn?'<span class="comp-fn"> · '+fn+'</span>':'')+'</div>';
+      }).join('');
+    }else{cel.textContent='◌'}
+
+    // Regional
+    const plants=rp.plants||rp.results||rp;
+    const rel=document.getElementById('regional');
+    if(Array.isArray(plants)&&plants.length>0){
+      rel.innerHTML=plants.slice(0,5).map(pl=>{
+        const common=pl.common_name||pl.name||'—';
+        const latin=pl.latin||pl.scientific_name||pl.species||'';
+        const sources=[];
+        if(pl.inat||pl.source==='inat')sources.push('iNat');
+        if(pl.pfaf||pl.source==='pfaf')sources.push('PFAF');
+        if(pl.usda||pl.source==='usda')sources.push('USDA');
+        if(!sources.length&&pl.source)sources.push(pl.source);
+        return '<div class="plant-item"><div class="plant-common">'+common+'</div>'
+          +(latin?'<div class="plant-latin">'+latin+'</div>':'')
+          +(sources.length?'<div>'+sources.map(s=>'<span class="badge">'+s+'</span>').join('')+'</div>':'')
+          +'</div>';
+      }).join('');
+    }else{rel.textContent='◌'}
+  }catch(e){document.getElementById('field-strip').textContent='◌'}
+}
+
+load();setInterval(load,60000);
+</script>
+</body>
+</html>

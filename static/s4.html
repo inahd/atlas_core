@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>S4 · form</title>
+<style>
+:root{--bg:#02030a;--panel:#080c14;--border:#0e1420;--gold:#c8941a;--teal:#1a8a7a;--purple:#7060cc;--text:#8a9ab0;--dim:#3a4a5a;--bright:#c8d8e8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;display:flex;flex-direction:column;height:100vh;overflow:hidden}
+.layer-strip{height:24px;background:var(--panel);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 12px;flex-shrink:0}
+.layer-left{display:flex;align-items:center;gap:8px}
+.layer-id{font-size:9px;color:var(--dim)}
+.layer-name{font-size:10px;color:var(--gold);font-family:Georgia,serif}
+.layer-clock{font-size:9px;color:var(--dim)}
+.main{flex:1;overflow-y:auto;padding:16px}
+.field-strip{height:20px;background:var(--panel);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:12px;font-size:9px;color:var(--dim);flex-shrink:0}
+.block-header{font-size:8px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px;margin-top:20px}
+.block-header:first-child{margin-top:0}
+.yantra-wrap{text-align:center;margin-bottom:8px}
+.yantra-svg{animation:spin 180s linear infinite}
+@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+.devi-name{font-family:Georgia,serif;font-size:12px;color:var(--gold);text-align:center;margin-bottom:2px}
+.tithi-sub{font-size:9px;color:var(--dim);text-align:center;margin-bottom:4px}
+.detail{font-size:10px;color:var(--gold);margin-bottom:2px}
+.dim{font-size:9px;color:var(--dim);margin-bottom:2px}
+.torus-val{font-size:9px;color:var(--teal);font-family:'Courier New',monospace;margin-bottom:2px}
+.home-link{position:fixed;bottom:8px;right:8px;font-family:'Courier New',monospace;font-size:8px;color:var(--dim);text-decoration:none;letter-spacing:0.15em}
+</style>
+</head>
+<body>
+<div class="layer-strip">
+  <div class="layer-left"><span class="layer-id">S4</span><span class="layer-name">form</span></div>
+  <span class="layer-clock" id="clock"></span>
+</div>
+<div class="main">
+  <div class="block-header">YANTRA</div>
+  <div id="yantra">◌ loading</div>
+  <div class="block-header">VASTU</div>
+  <div id="vastu">◌</div>
+  <div class="block-header">TORUS</div>
+  <div id="torus">◌</div>
+</div>
+<div class="field-strip" id="field-strip">◌</div>
+<a href="/" class="home-link">✦ ATLAS</a>
+<script>
+function tick(){document.getElementById('clock').textContent=new Date().toLocaleTimeString('en-GB',{hour12:false})}
+tick();setInterval(tick,1000);
+
+function p(d,path,fb){let v=d;for(const k of path.split('.')){if(!v)return fb;v=v[k]}return(typeof v==='object'&&v!==null)?(v.name||fb):v||fb}
+
+function makeYantra(tithiNum){
+  const n=parseInt(tithiNum)||1;
+  const cx=60,cy=60,r=50;
+  let paths='';
+  const stroke='stroke="#c8941a" stroke-width="0.8" fill="none"';
+  function tri(cx,cy,r,up){
+    const a=up?-Math.PI/2:Math.PI/2;
+    const pts=[];
+    for(let i=0;i<3;i++){const ang=a+i*2*Math.PI/3;pts.push((cx+r*Math.cos(ang)).toFixed(1)+','+(cy+r*Math.sin(ang)).toFixed(1))}
+    return '<polygon points="'+pts.join(' ')+'" '+stroke+'/>';
+  }
+  function poly(cx,cy,r,sides){
+    const pts=[];
+    for(let i=0;i<sides;i++){const ang=-Math.PI/2+i*2*Math.PI/sides;pts.push((cx+r*Math.cos(ang)).toFixed(1)+','+(cy+r*Math.sin(ang)).toFixed(1))}
+    return '<polygon points="'+pts.join(' ')+'" '+stroke+'/>';
+  }
+
+  if(n===1)paths=tri(cx,cy,r,false);
+  else if(n===2)paths=tri(cx,cy,r,true)+tri(cx,cy,r,false);
+  else if(n===3)paths=tri(cx,cy,r,true)+tri(cx,cy,r*0.7,false)+tri(cx,cy,r*0.4,true);
+  else if(n<=5)paths=poly(cx,cy,r,5);
+  else if(n<=7)paths=tri(cx,cy,r,true)+tri(cx,cy,r,false);
+  else if(n<=9){
+    paths=poly(cx,cy,r,8);
+  }else if(n<=11)paths=poly(cx,cy,r,10);
+  else if(n<=13){
+    for(let i=0;i<5;i++)paths+=tri(cx,cy,r*(1-i*0.15),i%2===0);
+  }else if(n===14){
+    for(let i=0;i<9;i++){const s=r*(1-i*0.08);paths+=tri(cx,cy,s,i%2===0)}
+  }else{
+    for(let i=0;i<9;i++){const s=r*(1-i*0.08);paths+=tri(cx,cy,s,i%2===0)}
+    const pr=r+4;
+    for(let i=0;i<16;i++){
+      const ang=i*2*Math.PI/16;const px=cx+pr*Math.cos(ang);const py=cy+pr*Math.sin(ang);
+      paths+='<ellipse cx="'+px.toFixed(1)+'" cy="'+py.toFixed(1)+'" rx="5" ry="3" transform="rotate('+(ang*180/Math.PI).toFixed(1)+' '+px.toFixed(1)+' '+py.toFixed(1)+')" '+stroke+'/>';
+    }
+  }
+
+  return '<div class="yantra-wrap"><svg class="yantra-svg" width="120" height="120" viewBox="0 0 120 120">'+paths+'</svg></div>';
+}
+
+async function load(){
+  try{
+    const[fr,yr,sr]=await Promise.all([fetch('/field'),fetch('/yantra'),fetch('/shell/state')]);
+    const d=await fr.json();
+    let y={};try{y=await yr.json()}catch(e){}
+    let sh={};try{sh=await sr.json()}catch(e){}
+
+    const nak=p(d,'panchanga.nakshatra','—');
+    const tithi=p(d,'panchanga.tithi','—');
+    const vara=p(d,'panchanga.vara','—');
+    const devi=p(d,'panchanga.devi','—');
+    document.getElementById('field-strip').textContent=[nak,tithi,vara,devi].join(' · ');
+
+    const pa=d.panchanga||{};
+    const tithiNum=pa.tithi?.number||pa.tithi_number||1;
+    const paksha=pa.paksha||pa.tithi?.paksha||'';
+    const nityaDevi=y.nitya_devi||y.devi||p(d,'panchanga.devi','—');
+
+    let html=makeYantra(tithiNum);
+    html+='<div class="devi-name">'+(typeof nityaDevi==='object'?nityaDevi.name||'—':nityaDevi)+'</div>';
+    html+='<div class="tithi-sub">tithi '+tithiNum+(paksha?' · '+paksha:'')+'</div>';
+    document.getElementById('yantra').innerHTML=html;
+
+    // Vastu
+    const zone=sh.active_zone||sh.zone||y.vastu_zone||'';
+    const zoneDeity=sh.zone_deity||sh.deity||'';
+    const zoneEl=sh.zone_element||sh.element||'';
+    const zoneQ=sh.zone_quality||sh.quality||'';
+    let vhtml='';
+    if(zone)vhtml+='<div class="detail">'+zone+'</div>';
+    if(zoneDeity)vhtml+='<div class="dim">'+zoneDeity+'</div>';
+    if(zoneEl||zoneQ)vhtml+='<div class="dim">'+(zoneEl?zoneEl:'')+(zoneEl&&zoneQ?' · ':'')+(zoneQ||'')+'</div>';
+    document.getElementById('vastu').innerHTML=vhtml||'◌';
+
+    // Torus
+    const theta=d.field?.theta||d.theta||y.theta||'';
+    const phi=d.field?.phi||d.phi||y.phi||'';
+    const sLayer=d.field?.s_layer||d.s_layer||'';
+    let thtml='';
+    if(theta!==''||phi!=='')thtml+='<div class="torus-val">θ '+(typeof theta==='number'?theta.toFixed(1):theta)+'° · φ '+(typeof phi==='number'?phi.toFixed(1):phi)+'°</div>';
+    if(sLayer!=='')thtml+='<div class="dim">S-layer: S'+sLayer+'</div>';
+    document.getElementById('torus').innerHTML=thtml||'◌';
+  }catch(e){document.getElementById('field-strip').textContent='◌'}
+}
+
+load();setInterval(load,60000);
+</script>
+</body>
+</html>

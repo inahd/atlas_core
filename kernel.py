@@ -9780,6 +9780,28 @@ def create_app():
     def serve_static(name):
         return send_from_directory('static', name)
 
+    # ── S-layer field state pages ────────
+    @app.route('/s0')
+    def s0(): return send_from_directory('static', 's0.html')
+
+    @app.route('/s1')
+    def s1(): return send_from_directory('static', 's1.html')
+
+    @app.route('/s2')
+    def s2(): return send_from_directory('static', 's2.html')
+
+    @app.route('/s3')
+    def s3(): return send_from_directory('static', 's3.html')
+
+    @app.route('/s4')
+    def s4(): return send_from_directory('static', 's4.html')
+
+    @app.route('/s5')
+    def s5(): return send_from_directory('static', 's5.html')
+
+    @app.route('/s6')
+    def s6(): return send_from_directory('static', 's6.html')
+
     return app
 
 
