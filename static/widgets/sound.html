@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>W · Sound</title>
+<style>
+:root{--bg:#080c14;--border:#0e1420;--gold:#c8941a;--teal:#1a8a7a;--text:#8a9ab0;--dim:#3a4a5a;--accent:#285898}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;padding:10px;overflow-y:auto;overflow-x:hidden}
+.hdr{font-size:7px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px}
+.raga{font-family:Georgia,serif;font-size:18px;color:var(--gold);margin-bottom:2px}
+.dim{font-size:8px;color:var(--dim);margin-bottom:2px}
+.tala{font-size:10px;color:var(--teal);margin-bottom:6px}
+.shruti-row{display:flex;gap:2px;margin-bottom:2px;flex-wrap:wrap}
+.shruti-dot{width:5px;height:5px;border-radius:50%;background:#1a2030}
+.shruti-dot.active{background:var(--gold)}
+.shruti-labels{display:flex;font-size:6px;color:var(--dim);margin-bottom:6px;width:calc(22*7px)}
+.bija{font-family:Georgia,serif;font-size:16px;color:var(--teal);text-align:center;margin:8px 0}
+.audio-status{font-size:8px;margin-top:4px}
+.audio-dot{display:inline-block;width:5px;height:5px;border-radius:50%;margin-right:3px}
+</style>
+</head>
+<body>
+<div class="hdr">SOUND · W · Varuṇa</div>
+<div id="content">◌ loading</div>
+<script>
+function p(d,path,fb){let v=d;for(const k of path.split('.')){if(!v)return fb;v=v[k]}return(typeof v==='object'&&v!==null)?(v.name||fb):v||fb}
+
+async function load(){
+  const el=document.getElementById('content');
+  try{
+    const[sr,ar]=await Promise.all([fetch('/sound/spec'),fetch('/system/audio').catch(()=>null)]);
+    const s=await sr.json();
+    let audio=null;try{if(ar)audio=await ar.json()}catch(e){}
+
+    const raga=s.raga||s.raga_name||'—';
+    const time=s.time||s.time_of_day||s.prahar||'';
+    const tala=s.tala||s.tala_name||'';
+    const bpm=s.bpm||s.tempo||'';
+    const shrutis=s.shrutis||s.active_shrutis||[];
+    const bija=s.bija||s.bija_mantra||'';
+
+    let html='<div class="raga">'+(typeof raga==='object'?raga.name||'—':raga)+'</div>';
+    if(time)html+='<div class="dim">'+time+'</div>';
+    if(tala||bpm)html+='<div class="tala">'+(typeof tala==='object'?tala.name||'':tala)+(bpm?' · '+bpm+' bpm':'')+'</div>';
+
+    html+='<div class="shruti-row">';
+    for(let i=0;i<22;i++){
+      const active=Array.isArray(shrutis)&&shrutis.includes(i);
+      html+='<div class="shruti-dot'+(active?' active':'')+'"></div>';
+    }
+    html+='</div>';
+    html+='<div class="shruti-labels"><span style="flex:1">S</span><span style="flex:1;text-align:center">P</span><span style="flex:1;text-align:right">S</span></div>';
+
+    if(bija)html+='<div class="bija">'+(typeof bija==='object'?bija.syllable||bija.name||'◌':bija)+'</div>';
+
+    if(audio){
+      const active=audio.tanpura_active||audio.tanpura||audio.playing||false;
+      html+='<div class="audio-status"><span class="audio-dot" style="background:'+(active?'#3a7a4a':'var(--dim)')+'"></span>'+(active?'tanpura active':'audio offline')+'</div>';
+    }
+    el.innerHTML=html;
+  }catch(e){el.innerHTML='◌ sound offline'}
+}
+load();setInterval(load,60000);
+</script>
+</body>
+</html>

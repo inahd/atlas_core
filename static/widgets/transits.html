@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NW · Transits</title>
+<style>
+:root{--bg:#080c14;--border:#0e1420;--gold:#c8941a;--teal:#1a8a7a;--text:#8a9ab0;--dim:#3a4a5a;--bright:#c8d8e8;--accent:#2878a8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;padding:10px;overflow-y:auto;overflow-x:hidden}
+.hdr{font-size:7px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px}
+.row{display:flex;align-items:center;gap:6px;height:22px;border-bottom:1px solid var(--border);padding:0 2px}
+.graha{font-size:10px;min-width:14px;text-align:center}
+.transit-text{font-size:9px;color:var(--text);flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.aspect{font-size:8px;color:var(--dim)}
+.qdot{width:5px;height:5px;border-radius:50%;flex-shrink:0}
+.empty{font-size:9px;color:var(--dim);margin-top:12px}
+.next{font-size:8px;color:var(--dim);margin-top:8px;border-top:1px solid var(--border);padding-top:6px}
+</style>
+</head>
+<body>
+<div class="hdr">TRANSITS · NW · Vayu</div>
+<div id="content">◌ loading</div>
+<script>
+const gc={surya:'#e8c86a',sun:'#e8c86a',chandra:'#c8d8e8',moon:'#c8d8e8',mangal:'#c84040',mars:'#c84040',budha:'#38b8b0',mercury:'#38b8b0',guru:'#c8a050',jupiter:'#c8a050',shukra:'#e8a0c0',venus:'#e8a0c0',shani:'#8090a8',saturn:'#8090a8',rahu:'#9060c0',ketu:'#806040'};
+
+function qcolor(q){
+  if(!q)return'var(--dim)';
+  const s=(typeof q==='string'?q:'').toLowerCase();
+  if(s.includes('favor')||s.includes('good')||s.includes('benefi'))return'#3a7a4a';
+  if(s.includes('tense')||s.includes('hard')||s.includes('malef')||s.includes('chall'))return'#c84040';
+  return'var(--dim)';
+}
+
+async function load(){
+  const el=document.getElementById('content');
+  try{
+    const r=await fetch('/transits');const d=await r.json();
+    const hits=d.hits||d.transits||d.aspects||[];
+    if(!Array.isArray(hits)||hits.length===0){el.innerHTML='<div class="empty">◌ no major transits active</div>';return}
+    el.innerHTML=hits.slice(0,8).map(h=>{
+      const graha=h.graha||h.transit||h.planet||'';
+      const gk=graha.toLowerCase().replace(/[āīūṛ]/g,m=>({ā:'a',ī:'i',ū:'u',ṛ:'r'})[m]||m);
+      const color=gc[gk]||'var(--text)';
+      const target=h.natal_point||h.natal||h.target||'';
+      const aspect=h.aspect||'';
+      const orb=h.orb!=null?h.orb+'°':'';
+      const quality=h.quality||h.nature||'';
+      return '<div class="row"><span class="graha" style="color:'+color+'">●</span>'
+        +'<span class="transit-text">'+graha+(target?' → '+target:'')+'</span>'
+        +'<span class="aspect">'+(aspect?aspect:'')+(orb?' · '+orb:'')+'</span>'
+        +'<span class="qdot" style="background:'+qcolor(quality)+'"></span></div>';
+    }).join('');
+    const next=d.next_significant||d.upcoming||'';
+    if(next)el.innerHTML+='<div class="next">next: '+(typeof next==='object'?next.description||next.name||'':next)+'</div>';
+  }catch(e){el.innerHTML='<div class="empty">◌ transits offline</div>'}
+}
+load();setInterval(load,60000);
+</script>
+</body>
+</html>

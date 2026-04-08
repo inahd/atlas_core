@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>S · Dasha</title>
+<style>
+:root{--bg:#080c14;--border:#0e1420;--gold:#c8941a;--teal:#1a8a7a;--purple:#7060cc;--text:#8a9ab0;--dim:#3a4a5a;--accent:#885028}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;padding:10px;overflow-y:auto;overflow-x:hidden}
+.hdr{font-size:7px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px}
+.lord{font-family:Georgia,serif;font-size:18px;color:var(--gold);margin-bottom:0}
+.lord-label{font-size:8px;color:var(--dim);margin-bottom:6px}
+.bar-bg{width:100%;height:4px;background:#1a2030;border-radius:2px;margin-bottom:2px}
+.bar-fill{height:100%;background:var(--purple);border-radius:2px}
+.bar-label{font-size:8px;color:var(--dim);margin-bottom:6px}
+.sub{font-size:10px;color:var(--text);margin-bottom:2px}
+.dim{font-size:9px;color:var(--dim);margin-bottom:2px}
+.divider{height:1px;background:var(--border);margin:8px 0}
+.arc{font-family:Georgia,serif;font-size:9px;color:var(--text);line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:4px}
+.moon{font-size:8px;color:var(--dim)}
+</style>
+</head>
+<body>
+<div class="hdr">DASHA · S · Yama</div>
+<div id="content">◌ loading</div>
+<script>
+function p(d,path,fb){let v=d;for(const k of path.split('.')){if(!v)return fb;v=v[k]}return(typeof v==='object'&&v!==null)?(v.name||fb):v||fb}
+
+const dashaStart=new Date('2010-09-01').getTime();
+const dashaEnd=new Date('2027-10-01').getTime();
+
+async function load(){
+  const el=document.getElementById('content');
+  try{
+    const r=await fetch('/trajectory');const d=await r.json();
+    const lord=p(d,'dasha_lord','')||p(d,'dasha.lord','')||p(d,'dasha','Mercury');
+    const end=d.dasha_end||d.dasha?.end_date||'Oct 2027';
+    const sub=d.sub_dasha||d.dasha?.sub||d.antardasha||'';
+    const subEnd=d.sub_dasha_end||d.dasha?.sub_end||d.antardasha_end||'';
+    const lunarArc=d.lunar_arc||d.lunar||d.description||'';
+    const sessionArc=d.session_arc||d.session||'';
+    const moonPhase=d.moon_phase_description||d.moon_phase||d.lunar_phase||'';
+
+    const now=Date.now();
+    const pct=Math.min(100,Math.max(0,((now-dashaStart)/(dashaEnd-dashaStart))*100));
+
+    let html='<div class="lord">'+(typeof lord==='object'?lord.name||'Mercury':lord)+'</div>';
+    html+='<div class="lord-label">daśā</div>';
+    html+='<div class="bar-bg"><div class="bar-fill" style="width:'+pct.toFixed(1)+'%"></div></div>';
+    html+='<div class="bar-label">'+pct.toFixed(0)+'% · ends '+(typeof end==='object'?end.name||'Oct 2027':end)+'</div>';
+
+    if(sub){
+      html+='<div class="sub">'+(typeof sub==='object'?sub.name||'':sub)+'</div>';
+      if(subEnd)html+='<div class="dim">ends '+(typeof subEnd==='object'?subEnd.name||'':subEnd)+'</div>';
+    }
+
+    html+='<div class="divider"></div>';
+    if(lunarArc)html+='<div class="arc">'+lunarArc+'</div>';
+    if(sessionArc)html+='<div class="arc">'+sessionArc+'</div>';
+    if(moonPhase)html+='<div class="moon">'+(typeof moonPhase==='object'?moonPhase.name||'':moonPhase)+'</div>';
+
+    el.innerHTML=html;
+  }catch(e){el.innerHTML='◌ trajectory offline'}
+}
+load();setInterval(load,60000);
+</script>
+</body>
+</html>

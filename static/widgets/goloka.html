@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NE · Goloka</title>
+<style>
+:root{--bg:#080c14;--border:#0e1420;--gold:#c8941a;--teal:#38b8b0;--text:#8a9ab0;--dim:#3a4a5a}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;padding:10px;overflow-y:auto;overflow-x:hidden}
+.hdr{font-size:7px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px}
+.period{font-family:Georgia,serif;font-size:14px;color:var(--teal);margin-bottom:2px}
+.dim{font-size:9px;color:var(--dim);margin-bottom:2px}
+.sakhi{font-size:10px;color:var(--gold);margin-bottom:2px}
+.seva{font-family:Georgia,serif;font-size:9px;color:var(--text);font-style:italic;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:4px}
+.forest{font-size:8px;color:var(--dim);font-style:italic;margin-bottom:6px}
+.divider{height:1px;background:var(--border);margin:8px 0}
+.detail{font-size:9px;color:var(--text);margin-bottom:2px}
+.raga{font-size:9px;color:var(--teal);margin-bottom:2px}
+</style>
+</head>
+<body>
+<div class="hdr">GOLOKA · NE · Iśāna</div>
+<div id="content">◌ loading</div>
+<script>
+function p(d,path,fb){let v=d;for(const k of path.split('.')){if(!v)return fb;v=v[k]}return(typeof v==='object'&&v!==null)?(v.name||fb):v||fb}
+
+async function load(){
+  const el=document.getElementById('content');
+  try{
+    const r=await fetch('/goloka');const d=await r.json();
+    const ashta=p(d,'ashtakala','')||p(d,'period','');
+    const time=d.time||d.kala||'';
+    const sakhi=p(d,'sakhi','');
+    const seva=d.seva||d.description||'';
+    const forest=d.forest||d.setting||d.vana||'';
+    const devi=p(d,'devi','');
+    const raga=d.raga||d.raga_name||'';
+
+    let html='';
+    if(ashta)html+='<div class="period">'+ashta+'</div>';
+    if(time)html+='<div class="dim">'+time+'</div>';
+    if(sakhi)html+='<div class="sakhi">'+sakhi+'</div>';
+    if(seva)html+='<div class="seva">'+seva+'</div>';
+    if(forest)html+='<div class="forest">'+forest+'</div>';
+    if(devi||raga){
+      html+='<div class="divider"></div>';
+      if(devi)html+='<div class="detail">'+devi+'</div>';
+      if(raga)html+='<div class="raga">'+(typeof raga==='object'?raga.name||'':raga)+'</div>';
+    }
+    el.innerHTML=html||'◌';
+  }catch(e){el.innerHTML='◌ goloka offline'}
+}
+load();setInterval(load,60000);
+</script>
+</body>
+</html>

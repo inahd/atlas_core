@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atlas · Dashboard</title>
+<style>
+:root{--bg:#02030a;--panel:#080c14;--border:#0e1420;--gold:#c8941a;--teal:#1a8a7a;--text:#8a9ab0;--dim:#3a4a5a;--bright:#c8d8e8}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%;overflow:hidden}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;display:flex;flex-direction:column}
+
+.intention-strip{height:28px;background:var(--panel);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 12px;flex-shrink:0;gap:12px}
+.intention-left{font-size:9px;color:var(--gold);letter-spacing:0.2em;flex-shrink:0}
+.intention-center{flex:1;text-align:center;font-size:10px;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.intention-right{font-size:9px;color:var(--dim);flex-shrink:0;white-space:nowrap}
+
+.grid{flex:1;display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr 1fr 1fr;gap:1px;background:var(--border);min-height:0}
+.cell{position:relative;background:var(--panel);overflow:hidden}
+.cell iframe{width:100%;height:100%;border:none;background:var(--panel)}
+.zone-label{position:absolute;bottom:4px;left:4px;font-size:7px;color:var(--dim);pointer-events:none;z-index:1;letter-spacing:0.05em}
+</style>
+</head>
+<body>
+
+<div class="intention-strip">
+  <span class="intention-left">✦ ATLAS</span>
+  <span class="intention-center" id="intention">◌</span>
+  <span class="intention-right" id="field-clock">◌</span>
+</div>
+
+<div class="grid">
+  <div class="cell"><iframe src="/widgets/transits.html"></iframe><span class="zone-label">NW · Vāyu</span></div>
+  <div class="cell"><iframe src="/widgets/guild.html"></iframe><span class="zone-label">N · Kubera</span></div>
+  <div class="cell"><iframe src="/widgets/goloka.html"></iframe><span class="zone-label">NE · Īśāna</span></div>
+
+  <div class="cell"><iframe src="/widgets/sound.html"></iframe><span class="zone-label">W · Varuṇa</span></div>
+  <div class="cell"><iframe src="/widgets/field.html"></iframe><span class="zone-label">C · Brahmā</span></div>
+  <div class="cell"><iframe src="/widgets/natal.html"></iframe><span class="zone-label">E · Indra</span></div>
+
+  <div class="cell"><iframe src="/widgets/system.html"></iframe><span class="zone-label">SW · Nirṛti</span></div>
+  <div class="cell"><iframe src="/widgets/dasha.html"></iframe><span class="zone-label">S · Yama</span></div>
+  <div class="cell"><iframe src="/widgets/coherence.html"></iframe><span class="zone-label">SE · Agni</span></div>
+</div>
+
+<script>
+function p(d,path,fb){let v=d;for(const k of path.split('.')){if(!v)return fb;v=v[k]}return(typeof v==='object'&&v!==null)?(v.name||fb):v||fb}
+
+function updateClock(){
+  const el=document.getElementById('field-clock');
+  const time=new Date().toLocaleTimeString('en-GB',{hour12:false});
+  const stored=el.dataset.field||'';
+  el.textContent=stored?(stored+' · '+time):time;
+}
+updateClock();setInterval(updateClock,1000);
+
+async function loadStrip(){
+  try{
+    const[fr,ir]=await Promise.all([fetch('/field'),fetch('/intention/now').catch(()=>null)]);
+    const d=await fr.json();
+    const nak=p(d,'panchanga.nakshatra','—');
+    const tithi=p(d,'panchanga.tithi','—');
+    const el=document.getElementById('field-clock');
+    el.dataset.field=nak+' · '+tithi;
+
+    if(ir){
+      try{
+        const intent=await ir.json();
+        const rec=intent.recommendation||intent.current||intent.suggestion||'';
+        document.getElementById('intention').textContent=rec||'◌';
+      }catch(e){}
+    }
+  }catch(e){}
+}
+loadStrip();setInterval(loadStrip,60000);
+</script>
+
+</body>
+</html>

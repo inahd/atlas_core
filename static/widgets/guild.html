@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>N · Guild</title>
+<style>
+:root{--bg:#080c14;--border:#0e1420;--gold:#c8941a;--teal:#1a8a7a;--text:#8a9ab0;--dim:#3a4a5a;--bright:#c8d8e8;--accent:#2858b8}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;padding:10px;overflow-y:auto;overflow-x:hidden}
+.hdr{font-size:7px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px}
+.anchor{font-family:Georgia,serif;font-size:16px;color:var(--gold);margin-bottom:2px}
+.dim{font-size:9px;color:var(--dim);margin-bottom:2px}
+.detail{font-size:9px;color:var(--text);margin-bottom:4px}
+.signal{display:flex;align-items:center;justify-content:center;gap:6px;margin:10px 0}
+.signal-dot{width:12px;height:12px;border-radius:50%}
+.signal-label{font-size:11px}
+.comp{font-size:9px;margin-bottom:3px}
+.comp-fn{color:var(--dim)}
+</style>
+</head>
+<body>
+<div class="hdr">GUILD · N · Kubera</div>
+<div id="content">◌ loading</div>
+<script>
+function p(d,path,fb){let v=d;for(const k of path.split('.')){if(!v)return fb;v=v[k]}return(typeof v==='object'&&v!==null)?(v.name||fb):v||fb}
+const sc={ROOT:'#8b6040',LEAF:'#3a7a4a',FLOWER:'#e8a0c0',FRUIT:'#c8941a',REST:'#3a4a5a'};
+
+async function load(){
+  const el=document.getElementById('content');
+  try{
+    const r=await fetch('/guild/state');const d=await r.json();
+    const anchor=d.anchor||d.anchor_plant||d.plant||{};
+    const name=typeof anchor==='string'?anchor:(anchor.name||anchor.common_name||'—');
+    const nak=d.nakshatra||'';
+    const phase=d.moon_phase||d.phase||'';
+    const activity=d.activity||d.recommendation||'';
+    const signal=(d.planting_signal||d.signal||'').toString().toUpperCase();
+    const color=sc[signal]||'#3a4a5a';
+    const companions=d.companions||d.guild_members||d.plants||[];
+
+    let html='<div class="anchor">'+name+'</div>';
+    html+='<div class="dim">'+nak+'</div>';
+    if(signal)html+='<div class="signal"><span class="signal-dot" style="background:'+color+'"></span><span class="signal-label" style="color:'+color+'">'+signal+'</span></div>';
+    if(phase||activity)html+='<div class="detail">'+(phase||'')+(phase&&activity?' · ':'')+(activity||'')+'</div>';
+    if(Array.isArray(companions)&&companions.length){
+      html+=companions.slice(0,3).map(c=>{
+        const n=typeof c==='string'?c:(c.name||c.common_name||'—');
+        const fn=c.guild_function||c.function||c.role||'';
+        return '<div class="comp">· '+n+(fn?' · <span class="comp-fn">'+fn+'</span>':'')+'</div>';
+      }).join('');
+    }
+    el.innerHTML=html;
+  }catch(e){el.innerHTML='◌ guild offline'}
+}
+load();setInterval(load,60000);
+</script>
+</body>
+</html>

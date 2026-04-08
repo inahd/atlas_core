@@ -9802,6 +9802,13 @@ def create_app():
     @app.route('/s6')
     def s6(): return send_from_directory('static', 's6.html')
 
+    # ── Dashboard + widgets ────────
+    @app.route('/dashboard')
+    def dashboard(): return send_from_directory('static', 'dashboard.html')
+
+    @app.route('/widgets/<path:name>')
+    def widgets(name): return send_from_directory('static/widgets', name)
+
     return app
 
 

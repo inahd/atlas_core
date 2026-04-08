@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>C · Field</title>
+<style>
+:root{--bg:#080c14;--border:#0e1420;--gold:#c8941a;--teal:#1a8a7a;--purple:#7060cc;--green:#3a7a4a;--text:#8a9ab0;--dim:#3a4a5a;--bright:#c8d8e8;--red:#c84040}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;padding:10px;overflow-y:auto;overflow-x:hidden}
+.hdr{font-size:7px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px}
+.cols{display:flex;gap:12px}
+.col{flex:1;min-width:0}
+.nak{font-family:Georgia,serif;font-size:16px;color:var(--gold);margin-bottom:2px}
+.tithi-num{font-family:Georgia,serif;font-size:24px;color:var(--gold);text-align:center;margin:6px 0 2px}
+.tithi-name{font-size:10px;color:var(--dim);text-align:center;margin-bottom:2px}
+.dim{font-size:9px;color:var(--dim);margin-bottom:2px}
+.detail{font-size:10px;color:var(--text);margin-bottom:2px}
+.rahu{font-size:9px;color:var(--red);margin-bottom:2px}
+.dots{display:flex;gap:4px;margin-top:6px}
+.sdot{width:6px;height:6px;border-radius:50%;opacity:0.5}
+.sdot.active{width:8px;height:8px;opacity:1}
+</style>
+</head>
+<body>
+<div class="hdr">FIELD · C · Brahmā</div>
+<div id="content">◌ loading</div>
+<script>
+function p(d,path,fb){let v=d;for(const k of path.split('.')){if(!v)return fb;v=v[k]}return(typeof v==='object'&&v!==null)?(v.name||fb):v||fb}
+const sColors=['#7060cc','#c8941a','#1a8a7a','#c8d8e8','#c8941a','#3a7a4a','#7060cc'];
+
+async function load(){
+  const el=document.getElementById('content');
+  try{
+    const r=await fetch('/field');const d=await r.json();
+    const pa=d.panchanga||{};
+    const nak=p(d,'panchanga.nakshatra','—');
+    const nakDeity=pa.nakshatra?.deity||pa.nakshatra_deity||'';
+    const element=p(d,'field.element','')||p(d,'element','');
+    const guna=p(d,'field.guna','')||p(d,'guna','');
+    const tithiNum=pa.tithi?.number||pa.tithi_number||'';
+    const tithiName=p(d,'panchanga.tithi','—');
+    const paksha=pa.paksha||pa.tithi?.paksha||'';
+    const vara=p(d,'panchanga.vara','—');
+    const yoga=p(d,'panchanga.yoga','');
+    const karana=p(d,'panchanga.karana','');
+    const hora=p(d,'panchanga.hora','');
+    const rahu=pa.rahu_kala||pa.rahu_kalam||'';
+    const sLayer=d.field?.s_layer||d.s_layer||0;
+
+    let left='<div class="nak">'+nak+'</div>';
+    if(nakDeity)left+='<div class="dim">'+nakDeity+'</div>';
+    if(element||guna)left+='<div class="dim">'+(element||'')+(element&&guna?' · ':'')+(guna||'')+'</div>';
+    left+='<div class="tithi-num">'+(tithiNum||'◌')+'</div>';
+    left+='<div class="tithi-name">'+tithiName+'</div>';
+    if(paksha)left+='<div class="dim">'+paksha+'</div>';
+
+    let right='<div class="detail">'+vara+'</div>';
+    if(yoga)right+='<div class="dim">yoga: '+(typeof yoga==='object'?yoga.name||'':yoga)+'</div>';
+    if(karana)right+='<div class="dim">karana: '+(typeof karana==='object'?karana.name||'':karana)+'</div>';
+    if(hora)right+='<div class="dim">hora: '+(typeof hora==='object'?hora.name||'':hora)+'</div>';
+    if(rahu)right+='<div class="rahu">rahu kala: '+rahu+'</div>';
+
+    right+='<div class="dots">';
+    for(let i=0;i<7;i++){
+      right+='<div class="sdot'+(i===sLayer?' active':'')+'" style="background:'+sColors[i]+'"></div>';
+    }
+    right+='</div>';
+
+    el.innerHTML='<div class="cols"><div class="col">'+left+'</div><div class="col">'+right+'</div></div>';
+  }catch(e){el.innerHTML='◌ field offline'}
+}
+load();setInterval(load,60000);
+</script>
+</body>
+</html>

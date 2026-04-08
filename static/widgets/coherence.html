@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SE · Coherence</title>
+<style>
+:root{--bg:#080c14;--border:#0e1420;--gold:#c8941a;--teal:#1a8a7a;--text:#8a9ab0;--dim:#3a4a5a;--accent:#c85028}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;padding:10px;overflow-y:auto;overflow-x:hidden}
+.hdr{font-size:7px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px}
+.gauge{text-align:center;margin-bottom:4px}
+.gauge-label{font-size:8px;color:var(--dim);text-align:center;margin-bottom:8px}
+.divider{height:1px;background:var(--border);margin:8px 0}
+.now-hdr{font-size:7px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:6px}
+.recommend{font-size:9px;color:var(--text);line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:4px}
+.dim{font-size:8px;color:var(--dim);margin-bottom:2px}
+.activity{font-size:8px;color:var(--teal)}
+</style>
+</head>
+<body>
+<div class="hdr">COHERENCE · SE · Agni</div>
+<div id="content">◌ loading</div>
+<script>
+function cohColor(pct){
+  if(pct<34)return'#c84040';
+  if(pct<67)return'#c8941a';
+  return'#3a7a4a';
+}
+
+function donut(pct){
+  const r=34,cx=40,cy=40,sw=6;
+  const circ=2*Math.PI*r;
+  const dash=circ*(pct/100);
+  const color=cohColor(pct);
+  return '<svg width="80" height="80" viewBox="0 0 80 80">'
+    +'<circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="none" stroke="#1a2030" stroke-width="'+sw+'"/>'
+    +'<circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="none" stroke="'+color+'" stroke-width="'+sw+'"'
+    +' stroke-dasharray="'+dash.toFixed(1)+' '+circ.toFixed(1)+'"'
+    +' stroke-linecap="round" transform="rotate(-90 '+cx+' '+cy+')"/>'
+    +'<text x="'+cx+'" y="'+(cy+6)+'" text-anchor="middle" font-family="Georgia,serif" font-size="20" fill="'+color+'">'+Math.round(pct)+'</text>'
+    +'</svg>';
+}
+
+async function load(){
+  const el=document.getElementById('content');
+  try{
+    const[cr,ir]=await Promise.all([fetch('/coherence-score'),fetch('/intention/now').catch(()=>null)]);
+    const cd=await cr.json();
+    let intent={};try{if(ir)intent=await ir.json()}catch(e){}
+
+    let score=cd.coherence_score||cd.score||cd.coherence||0;
+    if(typeof score==='number'&&score<=1)score=score*100;
+    score=Math.max(0,Math.min(100,score));
+
+    let html='<div class="gauge">'+donut(score)+'</div>';
+    html+='<div class="gauge-label">coherence</div>';
+
+    html+='<div class="divider"></div>';
+    html+='<div class="now-hdr">NOW</div>';
+    const rec=intent.recommendation||intent.current||intent.suggestion||'';
+    const window=intent.favorable_window||intent.window||intent.time||'';
+    const activity=intent.activity||intent.activity_type||intent.type||'';
+    if(rec)html+='<div class="recommend">'+rec+'</div>';
+    if(window)html+='<div class="dim">'+window+'</div>';
+    if(activity)html+='<div class="activity">'+activity+'</div>';
+    if(!rec&&!window)html+='<div class="dim">◌ no intention data</div>';
+
+    el.innerHTML=html;
+  }catch(e){el.innerHTML='◌ coherence offline'}
+}
+load();setInterval(load,60000);
+</script>
+</body>
+</html>

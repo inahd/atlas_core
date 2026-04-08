@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>E · Natal</title>
+<style>
+:root{--bg:#080c14;--border:#0e1420;--gold:#c8941a;--teal:#1a8a7a;--text:#8a9ab0;--dim:#3a4a5a;--accent:#e8c86a}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;padding:10px;overflow-y:auto;overflow-x:hidden}
+.hdr{font-size:7px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px}
+.score{font-family:Georgia,serif;font-size:32px;color:var(--gold);text-align:center;line-height:1}
+.score-pct{font-family:Georgia,serif;font-size:16px;color:var(--gold)}
+.score-label{font-size:8px;color:var(--dim);text-align:center;margin-bottom:8px}
+.res{font-size:9px;margin-bottom:3px}
+.res-dot{display:inline-block;width:5px;height:5px;border-radius:50%;margin-right:4px}
+.match{color:#3a7a4a}
+.tension{color:#c84040}
+.neutral{color:var(--dim)}
+.natal-sum{font-size:8px;color:var(--dim);margin-top:8px;border-top:1px solid var(--border);padding-top:6px}
+</style>
+</head>
+<body>
+<div class="hdr">NATAL · E · Indra</div>
+<div id="content">◌ loading</div>
+<script>
+function p(d,path,fb){let v=d;for(const k of path.split('.')){if(!v)return fb;v=v[k]}return(typeof v==='object'&&v!==null)?(v.name||fb):v||fb}
+
+const natalNak='Rohiṇī';
+const natalLagna='Vṛṣabha';
+const natalLagnaLord='Venus';
+const dashaLord='Mercury';
+
+const friendMap={Venus:['Mercury','Saturn'],Mercury:['Venus','Sun'],Sun:['Moon','Mars','Jupiter'],Moon:['Sun','Mercury'],Mars:['Sun','Moon','Jupiter'],Jupiter:['Sun','Moon','Mars'],Saturn:['Mercury','Venus']};
+const enemyMap={Venus:['Sun','Moon'],Mercury:['Moon'],Sun:['Venus','Saturn'],Moon:['Rahu','Ketu'],Mars:['Mercury'],Jupiter:['Venus','Mercury'],Saturn:['Sun','Moon','Mars']};
+
+function isFriend(a,b){return(friendMap[a]||[]).includes(b)}
+function isEnemy(a,b){return(enemyMap[a]||[]).includes(b)}
+
+async function load(){
+  const el=document.getElementById('content');
+  try{
+    const[fr,nr]=await Promise.all([fetch('/field'),fetch('/natal')]);
+    const d=await fr.json();
+    let natal={};try{natal=await nr.json()}catch(e){}
+
+    const todayNak=p(d,'panchanga.nakshatra','—');
+    const vara=p(d,'panchanga.vara','—');
+    const hora=p(d,'panchanga.hora','');
+    const horaLord=typeof hora==='object'?(hora.lord||hora.name||''):(hora||'');
+
+    let score=50;
+    const resonances=[];
+
+    // Nakshatra match
+    const nakMatch=todayNak.toLowerCase().includes('rohiṇī')||todayNak.toLowerCase().includes('rohini');
+    if(nakMatch){score+=25;resonances.push({text:todayNak+' ←→ '+natalNak,cls:'match'})}
+    else{
+      const sameLord=todayNak.toLowerCase().includes('mriga')||todayNak.toLowerCase().includes('hasta');
+      if(sameLord){score+=10;resonances.push({text:todayNak+' ←→ '+natalNak,cls:'match'})}
+      else{resonances.push({text:todayNak+' ←→ '+natalNak,cls:'neutral'})}
+    }
+
+    // Vara lord vs lagna lord
+    const varaLords={Sunday:'Sun',Monday:'Moon',Tuesday:'Mars',Wednesday:'Mercury',Thursday:'Jupiter',Friday:'Venus',Saturday:'Saturn'};
+    const vl=varaLords[vara]||'';
+    if(vl===natalLagnaLord){score+=15;resonances.push({text:vara+' lord ←→ '+natalLagna+' lord',cls:'match'})}
+    else if(isFriend(vl,natalLagnaLord)){score+=5;resonances.push({text:vl+' ←→ '+natalLagnaLord,cls:'match'})}
+    else if(isEnemy(vl,natalLagnaLord)){score-=10;resonances.push({text:vl+' ←→ '+natalLagnaLord,cls:'tension'})}
+
+    // Hora lord vs Mercury dasha
+    if(horaLord){
+      if(horaLord.includes('Mercur')||horaLord.includes('Budha')){score+=10;resonances.push({text:'hora '+horaLord+' ←→ '+dashaLord+' daśā',cls:'match'})}
+      else if(isFriend(horaLord,dashaLord)){score+=5;resonances.push({text:'hora '+horaLord+' ←→ '+dashaLord+' daśā',cls:'match'})}
+      else{resonances.push({text:'hora '+horaLord+' ←→ '+dashaLord+' daśā',cls:'neutral'})}
+    }
+
+    score=Math.max(0,Math.min(100,score));
+
+    let html='<div style="text-align:center"><span class="score">'+score+'</span><span class="score-pct">%</span></div>';
+    html+='<div class="score-label">field resonance</div>';
+    resonances.forEach(r=>{
+      const color=r.cls==='match'?'#3a7a4a':r.cls==='tension'?'#c84040':'var(--dim)';
+      html+='<div class="res"><span class="res-dot" style="background:'+color+'"></span>'+r.text+'</div>';
+    });
+    html+='<div class="natal-sum">'+natalNak+' · '+natalLagna+' · '+dashaLord+' daśā</div>';
+    el.innerHTML=html;
+  }catch(e){el.innerHTML='◌ natal offline'}
+}
+load();setInterval(load,60000);
+</script>
+</body>
+</html>

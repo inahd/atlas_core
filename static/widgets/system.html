@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SW · System</title>
+<style>
+:root{--bg:#080c14;--border:#0e1420;--gold:#c8941a;--text:#8a9ab0;--dim:#3a4a5a;--green:#3a7a4a;--red:#c84040;--amber:#c8941a}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;padding:10px;overflow-y:auto;overflow-x:hidden}
+.hdr{font-size:7px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px}
+.svc{display:flex;align-items:center;gap:5px;height:20px;font-size:8px}
+.svc-dot{width:5px;height:5px;border-radius:50%;flex-shrink:0}
+.svc-name{color:var(--text)}
+.svc-detail{color:var(--dim);margin-left:auto}
+.divider{height:1px;background:var(--border);margin:6px 0}
+.hw{font-size:8px;color:var(--dim);margin-bottom:2px}
+.chain{font-size:8px;color:var(--dim);margin-top:4px}
+.chain-status{font-size:8px;margin-top:2px}
+</style>
+</head>
+<body>
+<div class="hdr">SYSTEM · SW · Nirṛti</div>
+<div id="content">◌ loading</div>
+<script>
+async function load(){
+  const el=document.getElementById('content');
+  try{
+    const[sr,ar]=await Promise.all([
+      fetch('/system/state').catch(()=>null),
+      fetch('/system/audio').catch(()=>null)
+    ]);
+    let sys={};try{if(sr)sys=await sr.json()}catch(e){}
+    let audio={};try{if(ar)audio=await ar.json()}catch(e){}
+
+    const kernelUp=sr&&sr.ok;
+    const audioActive=audio.tanpura_active||audio.tanpura||audio.playing||false;
+    const npuAvail=sys.npu_available||sys.npu||sys.capabilities?.npu||false;
+    const igpuAvail=sys.igpu_available||sys.igpu||sys.capabilities?.igpu||sys.capabilities?.webgl||false;
+
+    let html='';
+    html+='<div class="svc"><span class="svc-dot" style="background:'+(kernelUp?'var(--green)':'var(--red)')+'"></span><span class="svc-name">kernel</span><span class="svc-detail">localhost:5000</span></div>';
+    html+='<div class="svc"><span class="svc-dot" style="background:'+(audioActive?'var(--green)':'var(--amber)')+'"></span><span class="svc-name">audio</span><span class="svc-detail">om.py → MOTU M2</span></div>';
+    html+='<div class="svc"><span class="svc-dot" style="background:'+(npuAvail?'var(--green)':'var(--red)')+'"></span><span class="svc-name">NPU</span><span class="svc-detail">coherence '+(npuAvail?'active':'off')+'</span></div>';
+    html+='<div class="svc"><span class="svc-dot" style="background:'+(igpuAvail?'var(--green)':'var(--dim)')+'"></span><span class="svc-name">iGPU</span><span class="svc-detail">WebGL '+(igpuAvail?'ready':'off')+'</span></div>';
+
+    html+='<div class="divider"></div>';
+
+    const cpu=sys.cpu_usage||sys.cpu||sys.hardware?.cpu||'';
+    const ram=sys.ram||sys.memory||sys.hardware?.memory||'';
+    const npuDetail=sys.npu_model||sys.hardware?.npu||'';
+    if(cpu)html+='<div class="hw">CPU: '+cpu+'</div>';
+    if(ram)html+='<div class="hw">RAM: '+(typeof ram==='object'?(ram.used||'')+'/'+( ram.total||''):ram)+'</div>';
+    if(npuDetail)html+='<div class="hw">NPU: '+npuDetail+'</div>';
+    if(!cpu&&!ram)html+='<div class="hw">hardware: polling</div>';
+
+    html+='<div class="chain">om.py → pw-cat → PipeWire → MOTU M2</div>';
+    const audioStatus=audio.status||audio.chain_status||(audioActive?'stable':'interrupted');
+    html+='<div class="chain-status"><span class="svc-dot" style="display:inline-block;background:'+(audioActive?'var(--green)':'var(--dim)')+'"></span> '+audioStatus+'</div>';
+
+    el.innerHTML=html;
+  }catch(e){el.innerHTML='◌ system offline'}
+}
+load();setInterval(load,60000);
+</script>
+</body>
+</html>
