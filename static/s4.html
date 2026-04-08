@@ -174,6 +174,7 @@ canvas { display: block; }
       <div id="mode-toggle">
         <button class="mtbtn active" id="btn-2d" onclick="setMode('2d')">YANTRA</button>
         <button class="mtbtn" id="btn-3d" onclick="setMode('3d')">TOROID</button>
+        <button class="mtbtn" id="btn-bloom" onclick="setMode('bloom')">BLOOM</button>
         <button class="mtbtn" id="btn-both" onclick="setMode('both')">FUSED</button>
       </div>
     </div>
@@ -208,6 +209,13 @@ canvas { display: block; }
         <div class="param-row"><span class="pname">intensity</span><span class="pval" id="p-int">—</span></div>
         <div class="param-row"><span class="pname">phase</span><span class="pval" id="p-drift">—</span></div>
         <div class="param-row"><span class="pname">α kali</span><span class="pval" id="p-alpha">—</span></div>
+      </div>
+
+      <hr class="sb-div">
+
+      <div>
+        <div class="sb-lbl">bloom · 15 toroids</div>
+        <div class="sb-val" id="sb-bloom" style="font-size:10px">—</div>
       </div>
 
       <hr class="sb-div">
@@ -788,6 +796,187 @@ function draw3D(opacity=1.0){
   ctx.restore();
 }
 
+// ── 15-TOROID NITYA DEVI BLOOM ENGINE ─────────────────────
+
+const NITYA=[
+  {n:1, name:'Kāmeśvarī',     bija:'ऐं',  col:[224,176,64]},
+  {n:2, name:'Bhagamālinī',   bija:'ह्रीं',col:[232,80,48]},
+  {n:3, name:'Nityaklinā',    bija:'क्लीं',col:[32,168,138]},
+  {n:4, name:'Bheruṇḍā',     bija:'ह्सौं',col:[200,64,64]},
+  {n:5, name:'Vahnivāsinī',   bija:'सौं', col:[224,104,32]},
+  {n:6, name:'Mahāvajreśvarī',bija:'ह्रीं',col:[224,208,64]},
+  {n:7, name:'Śivadūtī',     bija:'ह्रीं',col:[192,64,128]},
+  {n:8, name:'Tvaritā',      bija:'ऐं',  col:[128,112,221]},
+  {n:9, name:'Kulasundarī',  bija:'क्लीं',col:[32,168,138]},
+  {n:10,name:'Nityā',        bija:'श्रीं',col:[224,176,64]},
+  {n:11,name:'Nīlapatākā',   bija:'ह्रीं',col:[64,96,221]},
+  {n:12,name:'Vijayā',       bija:'ऐं',  col:[224,104,32]},
+  {n:13,name:'Sarvamaṅgalā', bija:'श्रीं',col:[58,138,74]},
+  {n:14,name:'Jvālāmālinī',  bija:'रं',   col:[224,64,32]},
+  {n:15,name:'Cidagni',      bija:'ह्रीं',col:[220,220,240]},
+];
+
+// Thomson Problem N=15 — iterative relaxation
+function thomsonRelax(n,iters=3000){
+  let pts=[];
+  // Seed with roughly uniform distribution
+  for(let i=0;i<n;i++){
+    const phi=Math.acos(1-2*(i+0.5)/n);
+    const theta=Math.PI*(1+Math.sqrt(5))*i;
+    pts.push([Math.sin(phi)*Math.cos(theta),Math.sin(phi)*Math.sin(theta),Math.cos(phi)]);
+  }
+  for(let iter=0;iter<iters;iter++){
+    const forces=pts.map(()=>[0,0,0]);
+    for(let i=0;i<n;i++)for(let j=i+1;j<n;j++){
+      const dx=pts[i][0]-pts[j][0],dy=pts[i][1]-pts[j][1],dz=pts[i][2]-pts[j][2];
+      const d2=dx*dx+dy*dy+dz*dz+1e-8;
+      const f=1/d2;
+      forces[i][0]+=f*dx;forces[i][1]+=f*dy;forces[i][2]+=f*dz;
+      forces[j][0]-=f*dx;forces[j][1]-=f*dy;forces[j][2]-=f*dz;
+    }
+    const lr=0.005*Math.exp(-iter/800);
+    pts=pts.map((p,i)=>{
+      const nx=p[0]+forces[i][0]*lr,ny=p[1]+forces[i][1]*lr,nz=p[2]+forces[i][2]*lr;
+      const len=Math.sqrt(nx*nx+ny*ny+nz*nz)||1;
+      return[nx/len,ny/len,nz/len];
+    });
+  }
+  // Sort by polar angle for consistent Devi assignment
+  pts.sort((a,b)=>Math.atan2(a[1],a[0])-Math.atan2(b[1],b[0]));
+  return pts;
+}
+const THOMSON=thomsonRelax(15);
+
+function rotateToAxis(x,y,z,ax){
+  const cosA=ax[2];
+  if(Math.abs(cosA-1)<1e-4)return[x,y,z];
+  if(Math.abs(cosA+1)<1e-4)return[-x,-y,-z];
+  const sinA=Math.sqrt(1-cosA*cosA);
+  const kx=-ax[1]/sinA,ky=ax[0]/sinA;
+  const dot=kx*x+ky*y;
+  return[
+    x*cosA+ky*z*sinA+kx*dot*(1-cosA),
+    y*cosA-kx*z*sinA+ky*dot*(1-cosA),
+    z*cosA+(kx*y-ky*x)*sinA
+  ];
+}
+
+// Active Devis by tithi
+function getActiveDevis(tithi){
+  if(!tithi||tithi<1)return[1];
+  if(tithi<=15)return Array.from({length:tithi},(_,i)=>i+1);
+  const rem=Math.max(1,30-tithi+1);
+  return Array.from({length:Math.min(rem,15)},(_,i)=>i+1);
+}
+
+// Interference field (z=0 cross-section)
+let _bloomCache={tithi:-1,img:null};
+function computeBloomField(tithi,W,H){
+  if(_bloomCache.tithi===tithi&&_bloomCache.img&&_bloomCache.img.width===W)return _bloomCache.img;
+  const active=getActiveDevis(tithi);
+  const img=ctx.createImageData(W,H);
+  const d=img.data;const cx=W/2,cy=H/2;const scale=Math.min(W,H)*0.45;
+  for(let py=0;py<H;py++){
+    for(let px=0;px<W;px++){
+      const x=(px-cx)/scale,y=(py-cy)/scale;
+      let field=0;
+      for(const ti of active){
+        const pos=THOMSON[ti-1];const winding=ti+2;
+        const dx=x-pos[0]*0.7,dy=y-pos[1]*0.7;
+        const dist=Math.sqrt(dx*dx+dy*dy);
+        const ang=Math.atan2(dy,dx);
+        // Toroidal wave: radial × angular interference
+        field+=Math.cos(winding*dist*6+ang*winding*0.5)*Math.exp(-dist*1.5);
+      }
+      // Normalize by active count
+      field/=Math.max(active.length,1);
+      const idx=(py*W+px)*4;
+      if(field>0){
+        // Gold for constructive
+        const v=Math.min(1,field*2);
+        d[idx]=Math.round(224*v);d[idx+1]=Math.round(176*v);d[idx+2]=Math.round(64*v);d[idx+3]=Math.round(200*v*v);
+      }else{
+        // Teal for destructive
+        const v=Math.min(1,Math.abs(field)*2);
+        d[idx]=Math.round(32*v);d[idx+1]=Math.round(168*v);d[idx+2]=Math.round(138*v);d[idx+3]=Math.round(120*v*v);
+      }
+    }
+  }
+  _bloomCache={tithi,img};return img;
+}
+
+// Draw BLOOM mode
+function drawBloom(opacity=1.0){
+  ctx.save();ctx.globalAlpha=opacity;
+  const t=state.t;const tithi=state.tithi||7;
+  const active=getActiveDevis(tithi);
+
+  // Background
+  ctx.fillStyle='rgba(2,3,10,1)';ctx.fillRect(0,0,W,H);
+
+  // Interference field (lower resolution for performance)
+  const res=Math.min(W,200);const resH=Math.round(res*H/W);
+  const fieldImg=computeBloomField(tithi,res,resH);
+  // Draw scaled up
+  const offC=document.createElement('canvas');offC.width=res;offC.height=resH;
+  offC.getContext('2d').putImageData(fieldImg,0,0);
+  ctx.imageSmoothingEnabled=true;
+  ctx.drawImage(offC,0,0,W,H);
+
+  // Thomson sphere projection — Devi positions as dots
+  const cx=W/2,cy=H/2,sR=Math.min(W,H)*0.35;
+  // Draw sphere outline
+  ctx.beginPath();ctx.arc(cx,cy,sR,0,TAU);
+  ctx.strokeStyle='rgba(26,40,64,0.4)';ctx.lineWidth=0.5;ctx.stroke();
+
+  THOMSON.forEach((pos,i)=>{
+    const devi=NITYA[i];const isAct=active.includes(i+1);
+    // Project: orthographic z=0 plane
+    const px=cx+pos[0]*sR,py=cy+pos[1]*sR;
+    const depth=pos[2];// z for depth cueing
+    const sz=isAct?(4+2*Math.sin(t*2+i)):(2);
+    const [r,g,b]=devi.col;
+    const baseA=isAct?0.9:0.2;
+    const a=baseA*(0.5+0.5*Math.max(0,depth+0.3));// depth fade
+    ctx.beginPath();ctx.arc(px,py,sz,0,TAU);
+    ctx.fillStyle=`rgba(${r},${g},${b},${a})`;ctx.fill();
+    if(isAct){
+      ctx.beginPath();ctx.arc(px,py,sz+3,0,TAU);
+      ctx.strokeStyle=`rgba(${r},${g},${b},${a*0.4})`;ctx.lineWidth=0.5;ctx.stroke();
+      // Bija label
+      if(depth>-0.3){
+        ctx.font=`${W*0.018}px Georgia`;ctx.fillStyle=`rgba(${r},${g},${b},${a*0.7})`;
+        ctx.textAlign='center';ctx.fillText(devi.bija,px,py-sz-4);
+      }
+    }
+  });
+
+  // Center status
+  ctx.font=`${W*0.022}px Georgia`;ctx.fillStyle=clr(GOLD,0.8);
+  ctx.textAlign='center';ctx.fillText(`${active.length}/15 active`,cx,H-W*0.06);
+  ctx.font=`${W*0.014}px 'Courier New'`;ctx.fillStyle=clr(GOLD,0.4);
+  ctx.fillText(`tithi ${tithi} · ${tithi<=15?'waxing':'waning'}`,cx,H-W*0.035);
+
+  // Active Devi name (current tithi's Devi)
+  const curDevi=NITYA[Math.min(tithi,15)-1];
+  if(curDevi){
+    ctx.font=`${W*0.016}px Georgia`;ctx.fillStyle=`rgba(${curDevi.col.join(',')},0.7)`;
+    ctx.fillText(curDevi.name,cx,W*0.04);
+  }
+
+  ctx.restore();
+}
+
+// Sidebar bloom state
+function updateBloomSidebar(){
+  const tithi=state.tithi||7;const active=getActiveDevis(tithi);
+  const el=document.getElementById('sb-bloom');
+  if(!el)return;
+  const sym=active.length<=3?'C₃':active.length<=6?'C₆':active.length<=9?'C₉':active.length<=12?'C₁₂':'C₁₅';
+  const emergence=Math.round(active.length/15*100);
+  el.innerHTML=`<span style="color:var(--gold)">${active.length}/15</span> · ${sym} · ${emergence}%`;
+}
+
 // ── MAIN DRAW ─────────────────────────────────────────────
 function draw(){
   ctx.clearRect(0,0,W,H);
@@ -799,6 +988,8 @@ function draw(){
     draw2D(1.0);
   } else if(state.mode==='3d'){
     draw3D(1.0);
+  } else if(state.mode==='bloom'){
+    drawBloom(1.0);
   } else { // both
     draw3D(0.55);
     draw2D(0.65);
@@ -815,8 +1006,9 @@ function loop(){
 // ── MODE TOGGLE ───────────────────────────────────────────
 function setMode(m){
   state.mode=m;
-  ['2d','3d','both'].forEach(id=>{
-    document.getElementById('btn-'+id).classList.toggle('active',id===m);
+  ['2d','3d','bloom','both'].forEach(id=>{
+    const el=document.getElementById('btn-'+id);
+    if(el)el.classList.toggle('active',id===m);
   });
 }
 
@@ -882,6 +1074,7 @@ function updateSidebar(){
   document.getElementById('p-int').textContent=state.intensity.toFixed(2);
   document.getElementById('p-drift').textContent=(state.phase_drift*180/Math.PI).toFixed(1)+'°';
   document.getElementById('p-alpha').textContent=state.alpha.toFixed(3);
+  updateBloomSidebar();
   document.getElementById('alpha-val').textContent=state.alpha.toFixed(3);
   document.getElementById('alpha-cursor').style.left=(state.alpha*100)+'%';
   // highlight active devi petal
