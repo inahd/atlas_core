@@ -5,18 +5,18 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>C · Field</title>
 <style>
-:root{--bg:#080c14;--border:#0e1420;--gold:#c8941a;--teal:#1a8a7a;--purple:#7060cc;--green:#3a7a4a;--text:#8a9ab0;--dim:#3a4a5a;--bright:#c8d8e8;--red:#c84040}
+:root{--bg:#0c1520;--border:#1a2840;--gold:#e0b040;--teal:#20a88a;--purple:#7060cc;--green:#3a7a4a;--text:#c8d8e8;--dim:#4a6a7a;--bright:#c8d8e8;--red:#c84040}
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;padding:10px;overflow-y:auto;overflow-x:hidden}
-.hdr{font-size:7px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px}
+.hdr{font-size:13px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px}
 .cols{display:flex;gap:12px}
 .col{flex:1;min-width:0}
 .nak{font-family:Georgia,serif;font-size:16px;color:var(--gold);margin-bottom:2px}
 .tithi-num{font-family:Georgia,serif;font-size:24px;color:var(--gold);text-align:center;margin:6px 0 2px}
 .tithi-name{font-size:10px;color:var(--dim);text-align:center;margin-bottom:2px}
-.dim{font-size:9px;color:var(--dim);margin-bottom:2px}
+.dim{font-size:11px;color:var(--dim);margin-bottom:2px}
 .detail{font-size:10px;color:var(--text);margin-bottom:2px}
-.rahu{font-size:9px;color:var(--red);margin-bottom:2px}
+.rahu{font-size:11px;color:var(--red);margin-bottom:2px}
 .dots{display:flex;gap:4px;margin-top:6px}
 .sdot{width:6px;height:6px;border-radius:50%;opacity:0.5}
 .sdot.active{width:8px;height:8px;opacity:1}
@@ -27,7 +27,7 @@ body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;
 <div id="content">◌ loading</div>
 <script>
 function p(d,path,fb){let v=d;for(const k of path.split('.')){if(!v)return fb;v=v[k]}return(typeof v==='object'&&v!==null)?(v.name||fb):v||fb}
-const sColors=['#7060cc','#c8941a','#1a8a7a','#c8d8e8','#c8941a','#3a7a4a','#7060cc'];
+const sColors=['#7060cc','#e0b040','#20a88a','#c8d8e8','#e0b040','#3a7a4a','#7060cc'];
 
 async function load(){
   const el=document.getElementById('content');

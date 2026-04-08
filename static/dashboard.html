@@ -5,20 +5,20 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Atlas · Dashboard</title>
 <style>
-:root{--bg:#02030a;--panel:#080c14;--border:#0e1420;--gold:#c8941a;--teal:#1a8a7a;--text:#8a9ab0;--dim:#3a4a5a;--bright:#c8d8e8}
+:root{--bg:#060d14;--panel:#0c1520;--border:#1a2840;--gold:#e0b040;--teal:#20a88a;--text:#c8d8e8;--dim:#4a6a7a;--bright:#c8d8e8}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{height:100%;overflow:hidden}
 body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;display:flex;flex-direction:column}
 
 .intention-strip{height:28px;background:var(--panel);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 12px;flex-shrink:0;gap:12px}
-.intention-left{font-size:9px;color:var(--gold);letter-spacing:0.2em;flex-shrink:0}
-.intention-center{flex:1;text-align:center;font-size:10px;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.intention-right{font-size:9px;color:var(--dim);flex-shrink:0;white-space:nowrap}
+.intention-left{font-size:11px;color:var(--gold);letter-spacing:0.2em;flex-shrink:0}
+.intention-center{flex:1;text-align:center;font-size:12px;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.intention-right{font-size:11px;color:var(--dim);flex-shrink:0;white-space:nowrap}
 
-.grid{flex:1;display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr 1fr 1fr;gap:1px;background:var(--border);min-height:0}
+.grid{flex:1;display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr 1fr 1fr;gap:2px;background:var(--border);min-height:0}
 .cell{position:relative;background:var(--panel);overflow:hidden}
 .cell iframe{width:100%;height:100%;border:none;background:var(--panel)}
-.zone-label{position:absolute;bottom:4px;left:4px;font-size:7px;color:var(--dim);pointer-events:none;z-index:1;letter-spacing:0.05em}
+.zone-label{position:absolute;bottom:4px;left:4px;font-size:10px;color:var(--dim);pointer-events:none;z-index:1;letter-spacing:0.05em}
 </style>
 </head>
 <body>
