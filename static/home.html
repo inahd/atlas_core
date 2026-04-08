@@ -196,7 +196,10 @@ function rStrip(){
   const devi=p(F,'panchanga.devi',''),raga=ss.raga||'',bpm=ss.bpm||'';
   let parts=[`<span class="nak">${nak}</span>`];
   if(paksha)parts.push(paksha);parts.push(tithi,vara);
-  if(devi)parts.push(devi);if(raga)parts.push(raga);if(bpm)parts.push(bpm+'bpm');
+  const deviId=F.panchanga?.devi?.entity_id||('devi_'+slug(devi));
+  if(devi)parts.push(`<span class="ent" onclick="openEnt('${deviId}','devi','${devi}')">${devi}</span>`);
+  if(raga)parts.push(`<span class="ent" onclick="openEnt('raga_${slug(raga)}','raga','${raga}')">${raga}</span>`);
+  if(bpm)parts.push(bpm+'bpm');
   const gl=FGLY.slice(0,3).map(g=>`<span title="${g.name}" style="font-size:14px;color:${g.color}">${g.glyph}</span>`).join(' ');
   if(gl)parts.push(gl);
   document.getElementById('fsc').innerHTML=parts.join(' · ');
@@ -213,7 +216,7 @@ function rNW(){
     h+=hits.slice(0,3).map(t=>{
       const gr=t.transit_graha||t.graha||t.transit||'';const tgt=t.natal_point||'';
       const q=(t.quality||t.nature||'').toLowerCase();const cls=q.includes('fav')||q.includes('good')?'fav':q.includes('tense')||q.includes('hard')?'tense':'';
-      return`<div class="tr ${cls}"><span style="color:${G.gc[Object.keys(G.gc).find(k=>gr.toLowerCase().includes(k.toLowerCase()))]||'var(--muted)'}">●</span>${gr}→${tgt} ${t.aspect||''}</div>`;
+      return`<div class="tr ${cls}"><span style="color:${G.gc[Object.keys(G.gc).find(k=>gr.toLowerCase().includes(k.toLowerCase()))]||'var(--muted)'}">●</span><span class="ent" onclick="event.stopPropagation();openEnt('graha_${slug(gr)}','graha','${gr}')">${gr}</span>→${tgt} ${t.aspect||''}</div>`;
     }).join('');
   }else h+='<div style="color:var(--dim)">◌ clear</div>';
   el.innerHTML=h;
@@ -229,6 +232,8 @@ function rNE(){
   if(ap.presiding_sakhi||(K.active_sakhis||[])[0])h+=`<div style="color:var(--gold);font-size:10px">${ap.presiding_sakhi||(K.active_sakhis||[])[0]}</div>`;
   h+=`<div style="color:var(--muted);font-size:9px">${ap.mood||ap.primary_seva||''}</div>`;
   if(K.active_forest?.name)h+=`<div style="color:var(--dim);font-size:9px;font-style:italic">${K.active_forest.name}</div>`;
+  const nd=K.nitya_devi||{};
+  if(nd.name){const deviId=F.panchanga?.devi?.entity_id||('devi_'+slug(nd.name));h+=`<div class="sep"></div><div class="ent" style="color:var(--gold);font-size:10px" onclick="event.stopPropagation();openEnt('${deviId}','devi','${nd.name}')">${nd.bija||''} ${nd.name}</div>`}
   el.innerHTML=h;
 }
 
@@ -391,21 +396,28 @@ function rCenter(){
 function rCenterDefault(cc){
   const el=document.getElementById('center');
   const W=el.clientWidth,H=el.clientHeight,sz=Math.min(W,H);
+  if(sz<10){cc.innerHTML='';return}// not yet sized
   const svg=mkSVG(sz,sz);const cx=sz/2,cy=sz/2,mR=sz*.14;
+  const m=mR,cR=m*.35;
   // Mandala square
-  const m=mR;
   svg.appendChild(svgEl('rect',{x:cx-m,y:cy-m,width:m*2,height:m*2,fill:'none',stroke:'#3a5a7a','stroke-width':.6}));
   addL(svg,cx-m,cy-m,cx+m,cy+m,'#1a2840',.3);addL(svg,cx+m,cy-m,cx-m,cy+m,'#1a2840',.3);
   addL(svg,cx,cy-m,cx,cy+m,'#1a2840',.3);addL(svg,cx-m,cy,cx+m,cy,'#1a2840',.3);
-  const cR=m*.35;
   svg.appendChild(svgEl('rect',{x:cx-cR,y:cy-cR,width:cR*2,height:cR*2,fill:'#f0c040','fill-opacity':.15,stroke:'#f0c040','stroke-width':.5,'stroke-opacity':.4}));
-  addT(svg,'✦',cx,cy-4,{size:16,color:'#f0c040',font:'Georgia,serif'});
-  addT(svg,F.panchanga?.nakshatra||'',cx,cy+10,{size:8,color:'#f0c040',font:'Georgia,serif'});
+  // Center: clickable nakshatra
+  const nak=F.panchanga?.nakshatra||'';const nakId='nakshatra_'+slug(nak);
+  const cg=svgEl('g',{style:'cursor:pointer'});cg.addEventListener('click',()=>openEnt(nakId,'nakshatra',nak));
+  addT(cg,'✦',cx,cy-8,{size:20,color:'#f0c040',font:'Georgia,serif'});
+  addT(cg,nak,cx,cy+8,{size:10,color:'#f0c040',font:'Georgia,serif'});
+  const devi=p(F,'panchanga.devi','');const tithi=F.panchanga?.tithi||'';const elem=F.panchanga?.element||'';
+  addT(cg,`${tithi} · ${devi}`,cx,cy+20,{size:8,color:'#8aabbb'});
+  addT(cg,`${G.el[(elem).toLowerCase()]||''} ${elem}`,cx,cy+32,{size:9,color:'#567080'});
+  svg.appendChild(cg);
   // Rings
-  drawRing(svg,RINGS.nakshatra,cx,cy,mR*1.6,{ns:2,labels:true,rtype:'nakshatra'});
-  drawRing(svg,RINGS.devi,cx,cy,mR*2,{ns:1.5,labels:true,rtype:'devi'});
-  drawRing(svg,RINGS.graha,cx,cy,mR*2.4,{ns:2.5,labels:true,rtype:'graha'});
-  drawRing(svg,RINGS.agricultural,cx,cy,mR*2.8,{ns:1.5,labels:false,cursor:false,rtype:'agricultural'});
+  drawRing(svg,RINGS.devi,cx,cy,mR*1.6,{ns:2,labels:true,rtype:'devi'});
+  drawRing(svg,RINGS.graha,cx,cy,mR*2,{ns:2.5,labels:true,rtype:'graha'});
+  drawRing(svg,RINGS.agricultural,cx,cy,mR*2.5,{ns:1.5,labels:false,cursor:false,rtype:'agricultural'});
+  if(RINGS.nakshatra?.nodes?.length)drawRing(svg,RINGS.nakshatra,cx,cy,mR*2.8,{ns:2,labels:true,rtype:'nakshatra'});
   cc.innerHTML='';cc.appendChild(svg);
 }
 
@@ -575,35 +587,41 @@ function renderEntity(cc,eid,type,d){
 
   if(type==='nakshatra'){
     const nd=F.panchanga?.nak_data||{};
-    h+='<div style="display:flex;gap:16px"><div style="flex:1">';
+    h+='<div style="display:flex;gap:14px"><div style="flex:1;min-width:0">';
     // Identity
-    h+='<div class="hdr" style="margin-top:6px">IDENTITY</div>';
+    h+='<div class="hdr" style="margin-top:4px">IDENTITY</div>';
     if(nd.deity)h+=`<div style="font-size:12px">${nd.deity}</div>`;
     if(nd.shakti)h+=`<div style="color:var(--muted);font-size:10px">shakti: ${nd.shakti}</div>`;
-    if(data.element||astro.element)h+=`<div style="color:var(--muted)">${G.el[(data.element||astro.element||'').toLowerCase()]||''} ${data.element||astro.element}</div>`;
-    if(data.guna||astro.guna)h+=`<div style="color:var(--muted)">${G.gu[(data.guna||astro.guna||'').toLowerCase()]||''} ${data.guna||astro.guna}</div>`;
+    const el0=data.element||astro.element||'';const gu0=data.guna||astro.guna||'';
+    if(el0)h+=`<div style="color:var(--muted)">${G.el[el0.toLowerCase()]||''} ${el0}</div>`;
+    if(gu0)h+=`<div style="color:var(--muted)">${G.gu[gu0.toLowerCase()]||''} ${gu0}</div>`;
     const nak_lord=astro.nak_lord||nd.graha||'';
-    if(nak_lord)h+=`<div style="color:${G.gc[Object.keys(G.gc).find(k=>nak_lord.toLowerCase().includes(k.toLowerCase()))]||'var(--muted)'}">${G.gr[nak_lord]||''} ${nak_lord}</div>`;
+    if(nak_lord){const lc=G.gc[Object.keys(G.gc).find(k=>nak_lord.toLowerCase().includes(k.toLowerCase()))]||'var(--muted)';h+=`<div><span class="ent" style="color:${lc}" onclick="openEnt('graha_${slug(nak_lord)}','graha','${nak_lord}')">${G.gr[nak_lord]||''} ${nak_lord}</span></div>`}
     if(nd.symbol)h+=`<div style="color:var(--muted);font-size:10px">symbol: ${nd.symbol}</div>`;
     if(nd.quality)h+=`<div style="color:var(--muted);font-size:10px">quality: ${nd.quality}</div>`;
     // Body
     const NAK_BODY={Ashwini:'feet',Bharani:'head',Krittika:'head · neck',Rohini:'forehead','Rohiṇī':'forehead',Mrigashira:'eyes · brows',Ardra:'hair · skull',Punarvasu:'fingers · nose',Pushya:'face · mouth',Ashlesha:'ears · nails',Magha:'nose · lips',Hasta:'fingers',Chitra:'forehead · neck',Swati:'chest · lungs',Vishakha:'arms · breasts',Anuradha:'stomach · womb',Jyeshtha:'tongue',Mula:'feet · left side','Pūrvāṣāḍhā':'thighs · back',Shravana:'ears',Dhanishtha:'back',Shatabhisha:'right thigh',Revati:'feet · ankles'};
     const br=NAK_BODY[name]||NAK_BODY[F.panchanga?.nakshatra||'']||'';
     if(br)h+=`<div style="color:var(--muted);font-size:10px">body: ${br}</div>`;
-    h+='</div><div style="flex:1">';
+    if(marma.marma_name)h+=`<div style="color:var(--muted);font-size:10px">marma: ${marma.marma_name} (${marma.marma_location||''})</div>`;
+    // Favorable
+    const NAK_ACT={fixed:'· foundation\n· permanence\n· planting',movable:'· travel\n· trade\n· change',sharp:'· surgery\n· cutting\n· confrontation',soft:'· art\n· music\n· fine work',mixed:'· study\n· routine\n· maintenance'};
+    const nquality=(nd.quality||'').toLowerCase();const ntype=nquality.includes('fixed')?'fixed':nquality.includes('movable')?'movable':nquality.includes('sharp')||nquality.includes('ugra')?'sharp':nquality.includes('soft')||nquality.includes('mridu')?'soft':'mixed';
+    h+=`<div class="hdr" style="margin-top:4px">FAVORABLE</div><div style="color:var(--dim);font-size:10px;white-space:pre-line">${NAK_ACT[ntype]||NAK_ACT.mixed}</div>`;
+
+    h+='</div><div style="flex:1;min-width:0">';
     // Ayurveda
     if(ayur.dosha_profile||ayur.herb){
-      h+='<div class="hdr" style="margin-top:6px">ĀYURVEDA</div>';
+      h+='<div class="hdr" style="margin-top:4px">ĀYURVEDA</div>';
       if(ayur.dosha_profile)h+=`<div style="font-size:11px">${ayur.dosha_profile.primary_dosha||''} dosha</div>`;
       if(ayur.herb){const hb=ayur.herb;h+=`<div style="color:var(--green)"><span class="ent" onclick="openEnt('plant_${slug(hb.common||hb.name)}','plant','${hb.common||hb.name}')">${hb.name||''}</span> (${hb.common||''})</div>`;
-        if(hb.rasa)h+=`<div style="color:var(--muted);font-size:10px">rasa: ${hb.rasa}</div>`}
+        if(hb.rasa)h+=`<div style="color:var(--muted);font-size:10px">rasa: ${hb.rasa}</div>`;
+        if(hb.virya)h+=`<div style="color:var(--muted);font-size:9px">virya: ${hb.virya}</div>`}
     }
     // Ratna
-    if(ratna.primary_gem){h+='<div class="hdr" style="margin-top:6px">RATNA</div>';h+=`<div style="font-size:11px">${ratna.primary_gem}</div>`;if(ratna.metal)h+=`<div style="color:var(--muted);font-size:10px">${ratna.metal} · ${ratna.finger||''}</div>`}
-    // Marma
-    if(marma.marma_name){h+='<div class="hdr" style="margin-top:6px">MARMA</div>';h+=`<div style="font-size:11px">${marma.marma_name}</div>`;if(marma.marma_location)h+=`<div style="color:var(--muted);font-size:10px">${marma.marma_location}</div>`}
+    if(ratna.primary_gem){h+='<div class="hdr" style="margin-top:4px">RATNA</div>';h+=`<div style="font-size:11px">${ratna.primary_gem}</div>`;if(ratna.metal)h+=`<div style="color:var(--muted);font-size:10px">${ratna.metal} · ${ratna.finger||''}</div>`}
     // Sound
-    if(gandh.therapeutic_raga){h+='<div class="hdr" style="margin-top:6px">SOUND</div>';h+=`<div style="color:var(--teal)">raga: ${gandh.therapeutic_raga}</div>`}
+    if(gandh.therapeutic_raga){h+='<div class="hdr" style="margin-top:4px">SOUND</div>';h+=`<div style="color:var(--teal)"><span class="ent" onclick="openEnt('raga_${slug(gandh.therapeutic_raga)}','raga','${gandh.therapeutic_raga}')">${gandh.therapeutic_raga}</span></div>`;if(gandh.dosha_target)h+=`<div style="color:var(--muted);font-size:9px">dosha: ${gandh.dosha_target}</div>`}
     h+='</div></div>';
 
   }else if(type==='graha'){
@@ -630,18 +648,30 @@ function renderEntity(cc,eid,type,d){
 
   }else if(type==='devi'){
     const ds=d.devi_sheet||{};
-    if(data.mantra)h+=`<div class="g" style="font-size:13px;color:var(--teal);margin:4px 0">${data.mantra}</div>`;
-    h+='<div style="display:flex;gap:16px"><div style="flex:1">';
-    if(data.tithi_number)h+=`<div>tithi ${data.tithi_number} · ${data.tithi_name||''}</div>`;
+    // Bija large
+    const bija=ds.bija||data.bija||'';
+    if(bija)h+=`<div class="g" style="font-size:24px;color:var(--teal);text-align:center;margin:4px 0">${bija}</div>`;
+    if(data.mantra)h+=`<div style="font-size:10px;color:var(--teal);text-align:center;margin-bottom:6px">${data.mantra}</div>`;
+    h+='<div style="display:flex;gap:14px"><div style="flex:1;min-width:0">';
+    // Tithi
+    if(data.tithi_number)h+=`<div class="g" style="font-size:20px;color:var(--gold)">${data.tithi_number}</div><div style="color:var(--muted)">${data.tithi_name||''} · ${data.paksha||''}</div>`;
     if(data.element)h+=`<div style="color:var(--muted)">${G.el[data.element]||''} ${data.element}</div>`;
     if(data.guna)h+=`<div style="color:var(--muted)">${G.gu[data.guna]||''} ${data.guna}</div>`;
-    if(data.governing_graha)h+=`<div style="color:var(--muted)"><span class="ent" onclick="openEnt('graha_${slug(data.governing_graha)}','graha','${data.governing_graha}')">${data.governing_graha}</span></div>`;
+    if(data.governing_graha)h+=`<div><span class="ent" style="color:var(--muted)" onclick="openEnt('graha_${slug(data.governing_graha)}','graha','${data.governing_graha}')">${G.gr[data.governing_graha]||''} ${data.governing_graha}</span></div>`;
     if(data.body_parts?.length)h+=`<div style="color:var(--muted);font-size:10px">body: ${data.body_parts.join(', ')}</div>`;
-    h+='</div><div style="flex:1">';
-    if(data.raga||ds.raga)h+=`<div style="color:var(--teal)">raga: ${data.raga||ds.raga}</div>`;
+    // Colors (from ingested devi data)
+    const deviRow=d._devi_row||{};// will be populated if we fetch CSV — for now use observe
+    h+='</div><div style="flex:1;min-width:0">';
+    // Iconography
+    if(data.raga||ds.raga)h+=`<div style="color:var(--teal)"><span class="ent" onclick="openEnt('raga_${slug(data.raga||ds.raga)}','raga','${data.raga||ds.raga}')">raga: ${data.raga||ds.raga}</span></div>`;
     if(data.yantra_geometry_name)h+=`<div style="color:var(--muted);font-size:10px">yantra: ${data.yantra_geometry_name}</div>`;
-    if(data.practice_for_day)h+=`<div style="color:var(--muted);font-size:10px">${data.practice_for_day}</div>`;
-    if(ds.description||data.process)h+=`<div class="g" style="font-size:10px;color:var(--muted);font-style:italic;margin-top:6px;line-height:1.5">${ds.description||data.process}</div>`;
+    if(data.practice_for_day){h+='<div class="hdr" style="margin-top:4px">PRACTICE</div>';h+=`<div style="color:var(--muted);font-size:10px">${data.practice_for_day}</div>`}
+    if(ds.description||data.process){h+='<div class="hdr" style="margin-top:4px">DESCRIPTION</div>';h+=`<div class="g" style="font-size:10px;color:var(--muted);font-style:italic;line-height:1.5">${ds.description||data.process}</div>`}
+    // Adjacent devis
+    if(data.tithi_number){
+      const prev=data.tithi_number>1?data.tithi_number-1:15;const next=data.tithi_number<15?data.tithi_number+1:1;
+      h+=`<div style="color:var(--dim);font-size:9px;margin-top:4px">tithi ${prev} ← <span style="color:var(--gold)">${data.tithi_number}</span> → tithi ${next}</div>`;
+    }
     h+='</div></div>';
 
   }else{
