@@ -531,6 +531,32 @@ function draw2D(opacity=1.0) {
     }
   });
 
+  // ── TITHI → ĀVARAṆA ACTIVATION ───────────────────────────
+  // Waxing (1-15): energy moves outward bindu→bhūpura
+  // Waning (16-30): energy returns inward bhūpura→bindu
+  // Pūrṇimā (15): all circuits simultaneously lit
+  // Amāvasyā (30): only bindu survives
+
+  const tithi = state.tithi;
+  const isPurnima = tithi===15;
+  const isAmavasya = tithi===30||tithi===0;
+  const isWaxing = tithi<=15;
+  const avPulse = 0.7+0.3*Math.sin(t*1.8);
+
+  function tithiToAvarana(tt) {
+    if(tt===15) return -1;
+    if(tt===30||tt===0) return 8;
+    const wt = tt<=15 ? tt : 30-tt;
+    if(wt<=2)  return 8;
+    if(wt<=5)  return 6;
+    if(wt<=8)  return 5;
+    if(wt<=11) return 4;
+    if(wt<=13) return 3;
+    if(wt===14) return 1;
+    return 8;
+  }
+  const activeAv = tithiToAvarana(tithi);
+
   // ── SRI YANTRA — 9 interlocked triangles ─────────────────
   // Each triangle mapped to its avarana — lights up with active tithi circuit
   const triData = [
@@ -576,32 +602,6 @@ function draw2D(opacity=1.0) {
   // dot
   ctx.beginPath(); ctx.arc(cx,cy,W*0.006,0,TAU);
   ctx.fillStyle=clr(PURPLE,0.9*bp); ctx.fill();
-
-  // ── TITHI → ĀVARAṆA ACTIVATION ───────────────────────────
-  // Waxing (1-15): energy moves outward bindu→bhūpura
-  // Waning (16-30): energy returns inward bhūpura→bindu
-  // Pūrṇimā (15): all circuits simultaneously lit
-  // Amāvasyā (30): only bindu survives
-
-  const tithi = state.tithi;
-  const isPurnima = tithi===15;
-  const isAmavasya = tithi===30||tithi===0;
-  const isWaxing = tithi<=15;
-  const avPulse = 0.7+0.3*Math.sin(t*1.8);
-
-  function tithiToAvarana(tt) {
-    if(tt===15) return -1;
-    if(tt===30||tt===0) return 8;
-    const wt = tt<=15 ? tt : 30-tt;
-    if(wt<=2)  return 8;
-    if(wt<=5)  return 6;
-    if(wt<=8)  return 5;
-    if(wt<=11) return 4;
-    if(wt<=13) return 3;
-    if(wt===14) return 1;
-    return 8;
-  }
-  const activeAv = tithiToAvarana(tithi);
 
   AVARANAS.forEach((av,i)=>{
     if(i===0) return;
