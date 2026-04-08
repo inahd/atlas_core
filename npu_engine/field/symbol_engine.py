@@ -28,8 +28,11 @@ _NAK_CSV = os.path.join(_ROOT, "datasets", "astro", "nakshatra_master.csv")
 _HEX_CSV = os.path.join(_ROOT, "datasets", "iching", "hexagrams.csv")
 _TRI_CSV = os.path.join(_ROOT, "datasets", "iching", "trigrams.csv")
 
+_GLYPHS_CSV = os.path.join(_ROOT, "datasets", "symbols", "atlas_glyphs.csv")
+
 _cache: Dict[str, list] = {}
 _symbol_index: Optional[Dict[str, dict]] = None
+_glyph_index: Optional[Dict[str, dict]] = None
 
 
 def _load(key, path):
@@ -239,3 +242,116 @@ def stats() -> dict:
         s = v.get("source", "unknown")
         sources[s] = sources.get(s, 0) + 1
     return {"total_symbols": len(idx), "by_source": sources}
+
+
+# ── Canonical Glyph System ──────────────────────────────────
+
+
+def _build_glyph_index() -> Dict[str, dict]:
+    global _glyph_index
+    if _glyph_index is not None:
+        return _glyph_index
+    rows = _load("glyphs", _GLYPHS_CSV)
+    _glyph_index = {}
+    for r in rows:
+        eid = r.get("entity_id", "")
+        if eid:
+            _glyph_index[eid] = r
+    return _glyph_index
+
+
+def get_glyph(entity_id: str) -> dict:
+    """Return glyph data for an entity_id, or fallback."""
+    idx = _build_glyph_index()
+    g = idx.get(entity_id)
+    if g:
+        return {
+            "entity_id": g["entity_id"],
+            "entity_type": g.get("entity_type", ""),
+            "name": g.get("name", ""),
+            "glyph": g.get("glyph", ""),
+            "glyph_type": g.get("glyph_type", ""),
+            "unicode": g.get("unicode", ""),
+            "color": g.get("color", "#c8d8e8"),
+            "size_default": int(g.get("size_default", 14) or 14),
+            "tradition": g.get("tradition", ""),
+            "attestation": g.get("attestation", ""),
+            "svg_path": g.get("svg_path", ""),
+            "notes": g.get("notes", ""),
+        }
+    # Fallback: check emoji vedic map
+    sym_idx = _build_index()
+    s = sym_idx.get(entity_id)
+    if s:
+        return {
+            "entity_id": entity_id,
+            "entity_type": s.get("source", ""),
+            "name": s.get("name", entity_id),
+            "glyph": s.get("symbol", "◌"),
+            "glyph_type": "emoji_fallback",
+            "unicode": "",
+            "color": s.get("color", "#c8d8e8"),
+            "size_default": 14,
+            "tradition": "",
+            "attestation": "SYNTHESIS",
+            "svg_path": "",
+            "notes": "emoji fallback",
+        }
+    return {
+        "entity_id": entity_id, "name": entity_id,
+        "glyph": "◌", "glyph_type": "none", "color": "#567080",
+        "size_default": 14, "unicode": "", "tradition": "",
+        "attestation": "", "svg_path": "", "notes": "not found",
+        "entity_type": "",
+    }
+
+
+def get_glyphs_by_type(entity_type: str) -> List[dict]:
+    """Return all glyphs of a given entity_type."""
+    idx = _build_glyph_index()
+    return [get_glyph(eid) for eid, g in idx.items()
+            if g.get("entity_type") == entity_type]
+
+
+def get_all_glyphs() -> Dict[str, List[dict]]:
+    """Return all glyphs grouped by entity_type."""
+    idx = _build_glyph_index()
+    groups: Dict[str, List[dict]] = {}
+    for eid in idx:
+        g = get_glyph(eid)
+        t = g["entity_type"]
+        groups.setdefault(t, []).append(g)
+    return groups
+
+
+def field_glyphs(field_state: dict) -> List[dict]:
+    """Return top field-resonant glyphs for current field state."""
+    result = []
+    pa = field_state.get("panchanga", {})
+    # Current nakshatra glyph
+    nak = pa.get("nakshatra", "")
+    if nak:
+        nak_slug = "nakshatra_" + nak.lower().replace(" ", "").replace("ā", "a").replace("ī", "i").replace("ū", "u").replace("ś", "sh").replace("ṣ", "sh").replace("ṭ", "t").replace("ḍ", "d").replace("ṇ", "n").replace("ḥ", "h").replace("ṃ", "m")
+        g = get_glyph(nak_slug)
+        if g["glyph"] != "◌":
+            result.append(g)
+    # Element glyph
+    elem = pa.get("element", "")
+    if elem:
+        g = get_glyph("element_" + elem.lower().replace(" ", "_"))
+        if g["glyph"] != "◌":
+            result.append(g)
+    # Guna glyph
+    guna = pa.get("guna", "")
+    if guna:
+        g = get_glyph("guna_" + guna.lower())
+        if g["glyph"] != "◌":
+            result.append(g)
+    # Hora graha glyph
+    hora = field_state.get("hora", {})
+    hora_lord = hora.get("hora_lord", "")
+    if hora_lord:
+        g = get_glyph("graha_" + hora_lord.lower().replace(" ", "_"))
+        if g["glyph"] != "◌":
+            result.append(g)
+    return result[:6]

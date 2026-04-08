@@ -8795,6 +8795,22 @@ def create_app():
         from npu_engine.field.symbol_engine import stats
         return jsonify(stats())
 
+    # ── Canonical Glyphs ─────────────────────────────
+    @app.route("/glyphs/field")
+    def _glyphs_field():
+        from npu_engine.field.symbol_engine import field_glyphs
+        return jsonify(field_glyphs(field_state()))
+
+    @app.route("/glyphs/all")
+    def _glyphs_all():
+        from npu_engine.field.symbol_engine import get_all_glyphs
+        return jsonify(get_all_glyphs())
+
+    @app.route("/glyphs/<path:entity_id>")
+    def _glyph_lookup(entity_id):
+        from npu_engine.field.symbol_engine import get_glyph
+        return jsonify(get_glyph(entity_id))
+
     # ── Game character routes ─────────────────────────────
 
     @app.route("/character")
@@ -9809,6 +9825,9 @@ def create_app():
 
     @app.route('/s6')
     def s6(): return send_from_directory('static', 's6.html')
+
+    @app.route('/glyphs')
+    def _glyphs_page(): return send_from_directory('static', 'glyphs.html')
 
     # ── Rings ────────
     @app.route('/rings')

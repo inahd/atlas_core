@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atlas · Glyphs</title>
+<style>
+:root{--bg:#02030a;--panel:#070d14;--border:#1a2840;--gold:#f0c040;--teal:#28c8aa;--text:#d8e8f0;--muted:#8aabbb;--dim:#567080}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:11px;padding:20px}
+h1{font-size:13px;color:var(--gold);letter-spacing:.3em;margin-bottom:16px;font-weight:normal}
+.search{width:100%;max-width:400px;padding:6px 10px;background:var(--panel);border:1px solid var(--border);color:var(--text);font-family:inherit;font-size:11px;border-radius:3px;margin-bottom:20px;outline:none}
+.search:focus{border-color:var(--gold)}
+.section{margin-bottom:24px}
+.section-title{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em;margin-bottom:8px;border-bottom:1px solid var(--border);padding-bottom:4px}
+.grid{display:flex;flex-wrap:wrap;gap:6px}
+.card{width:72px;height:86px;background:var(--panel);border:1px solid var(--border);border-radius:3px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:4px;cursor:pointer;transition:border-color .15s}
+.card:hover{border-color:var(--gold)}
+.card-glyph{font-size:28px;line-height:1.2;margin-bottom:4px}
+.card-name{font-size:8px;color:var(--muted);text-align:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;width:100%}
+.card-trad{font-size:7px;color:var(--dim);text-align:center}
+.detail{position:fixed;top:20px;right:20px;width:240px;background:var(--panel);border:1px solid var(--border);border-radius:4px;padding:14px;display:none;z-index:100}
+.detail-glyph{font-size:48px;text-align:center;margin-bottom:8px}
+.detail-name{font-family:Georgia,serif;font-size:14px;color:var(--gold);text-align:center;margin-bottom:8px}
+.detail-row{font-size:10px;color:var(--muted);margin-bottom:3px}
+.detail-row b{color:var(--dim);font-weight:normal;display:inline-block;min-width:60px}
+.home-link{position:fixed;bottom:8px;right:8px;font-size:9px;color:var(--dim);text-decoration:none;letter-spacing:.15em}
+.home-link:hover{color:var(--gold)}
+</style>
+</head>
+<body>
+<h1>✦ ATLAS GLYPHS</h1>
+<input class="search" id="search" placeholder="search glyphs..." autocomplete="off">
+<div id="sections"></div>
+<div class="detail" id="detail"></div>
+<a href="/" class="home-link">✦ ATLAS</a>
+<script>
+let ALL={};
+async function load(){
+  try{const r=await fetch('/glyphs/all');ALL=await r.json()}catch(e){ALL={}}
+  render();
+}
+
+const ORDER=['graha','rashi','nakshatra','devi','element','dosha','guna','vastu','slayer','ashtakala'];
+const LABELS={graha:'Grahas',rashi:'Rāśis',nakshatra:'Nakṣatras',devi:'Nitya Devīs',element:'Elements',dosha:'Doṣas',guna:'Guṇas',vastu:'Vāstu Zones',slayer:'S-Layers',ashtakala:'Aṣṭakāla'};
+
+function render(filter=''){
+  const el=document.getElementById('sections');
+  const f=filter.toLowerCase();
+  let html='';
+  for(const type of ORDER){
+    const glyphs=(ALL[type]||[]).filter(g=>!f||g.name.toLowerCase().includes(f)||g.entity_id.includes(f)||(g.notes||'').toLowerCase().includes(f));
+    if(!glyphs.length)continue;
+    html+=`<div class="section"><div class="section-title">${LABELS[type]||type} (${glyphs.length})</div><div class="grid">`;
+    for(const g of glyphs){
+      html+=`<div class="card" onclick='showDetail(${JSON.stringify(g).replace(/'/g,"&#39;")})'>`;
+      html+=`<div class="card-glyph" style="color:${g.color||'#c8d8e8'}">${g.glyph||'◌'}</div>`;
+      html+=`<div class="card-name">${g.name||g.entity_id}</div>`;
+      html+=`<div class="card-trad">${g.tradition||''}</div>`;
+      html+=`</div>`;
+    }
+    html+=`</div></div>`;
+  }
+  // Any remaining types
+  for(const[type,glyphs] of Object.entries(ALL)){
+    if(ORDER.includes(type))continue;
+    const filtered=glyphs.filter(g=>!f||g.name.toLowerCase().includes(f));
+    if(!filtered.length)continue;
+    html+=`<div class="section"><div class="section-title">${type} (${filtered.length})</div><div class="grid">`;
+    for(const g of filtered){
+      html+=`<div class="card" onclick='showDetail(${JSON.stringify(g).replace(/'/g,"&#39;")})'>`;
+      html+=`<div class="card-glyph" style="color:${g.color||'#c8d8e8'}">${g.glyph||'◌'}</div>`;
+      html+=`<div class="card-name">${g.name||g.entity_id}</div>`;
+      html+=`</div>`;
+    }
+    html+=`</div></div>`;
+  }
+  el.innerHTML=html||'<div style="color:var(--dim)">no glyphs found</div>';
+}
+
+function showDetail(g){
+  const el=document.getElementById('detail');
+  el.style.display='block';
+  el.innerHTML=`<div class="detail-glyph" style="color:${g.color}">${g.glyph||'◌'}</div>`
+    +`<div class="detail-name">${g.name}</div>`
+    +`<div class="detail-row"><b>id</b> ${g.entity_id}</div>`
+    +`<div class="detail-row"><b>type</b> ${g.entity_type}</div>`
+    +`<div class="detail-row"><b>glyph_type</b> ${g.glyph_type}</div>`
+    +(g.unicode?`<div class="detail-row"><b>unicode</b> ${g.unicode}</div>`:'')
+    +`<div class="detail-row"><b>color</b> <span style="color:${g.color}">■</span> ${g.color}</div>`
+    +`<div class="detail-row"><b>tradition</b> ${g.tradition||'—'}</div>`
+    +`<div class="detail-row"><b>attestation</b> ${g.attestation||'—'}</div>`
+    +(g.notes?`<div class="detail-row"><b>notes</b> ${g.notes}</div>`:'')
+    +(g.svg_path?`<div class="detail-row"><b>svg</b> <code style="font-size:8px;color:var(--dim)">${g.svg_path}</code></div>`:'');
+}
+
+document.getElementById('search').addEventListener('input',e=>render(e.target.value));
+document.addEventListener('click',e=>{if(!e.target.closest('.card')&&!e.target.closest('.detail'))document.getElementById('detail').style.display='none'});
+load();
+</script>
+</body>
+</html>

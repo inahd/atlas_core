@@ -147,9 +147,12 @@ const AUSPICIOUS_TITHIS=new Set([2,3,5,7,10,11,12,13,15,16,20,23,24,25,26,28]);
 const INAUSP_TITHIS=new Set([1,8,9,22,29,30]);
 
 // ── State ──
-let F={},G={},K={},TR={},TJ={},INT={},COH={},SND={},RDG={},AUD={},RINGS={};
+let F={},G={},K={},TR={},TJ={},INT={},COH={},SND={},RDG={},AUD={},RINGS={},FGLY=[];
 let online=false;
 const OBS={};// observe cache
+const GRAHA_SYM={Sun:'☉',Moon:'☽',Mars:'♂',Mercury:'☿',Jupiter:'♃',Venus:'♀',Saturn:'♄',Rahu:'☊',Ketu:'☋',Surya:'☉',Chandra:'☽',Mangal:'♂',Budha:'☿',Guru:'♃',Shukra:'♀',Shani:'♄','Sūrya':'☉','Candra':'☽','Maṅgala':'♂','Guru':'♃','Śukra':'♀','Śani':'♄','Rāhu':'☊'};
+const ELEM_SYM={fire:'▲',water:'▽',earth:'◼',air:'⬡',ether:'●'};
+const GUNA_SYM={sattva:'✦',rajas:'✶',tamas:'▪'};
 let leftMode='field',leftEntity=null;
 
 function slugify(name){return(name||'').toLowerCase().replace(/\s+/g,'_').replace(/[āáà]/g,'a').replace(/[īíì]/g,'i').replace(/[ūúù]/g,'u').replace(/ś/g,'sh').replace(/ṣ/g,'sh').replace(/ṭ/g,'t').replace(/ḍ/g,'d').replace(/ñ/g,'n').replace(/ṇ/g,'n').replace(/ḥ/g,'h').replace(/ṃ/g,'m').replace(/[^a-z0-9_]/g,'')}
@@ -171,7 +174,8 @@ async function fetchAll(){
     fetch('/coherence-score').then(r=>r.json()).then(d=>COH=d).catch(()=>{}),
     fetch('/sound/spec').then(r=>r.json()).then(d=>SND=d).catch(()=>{}),
     fetch('/reading/bandhu').then(r=>r.json()).then(d=>RDG=d).catch(()=>{}),
-    fetch('/system/audio').then(r=>r.json()).then(d=>AUD=d).catch(()=>{})
+    fetch('/system/audio').then(r=>r.json()).then(d=>AUD=d).catch(()=>{}),
+    fetch('/glyphs/field').then(r=>r.json()).then(d=>FGLY=d).catch(()=>{})
   ]);render();
 }
 function render(){
@@ -189,6 +193,9 @@ function renderStrip(){
   let parts=['<span class="nak">'+nak+'</span>'];
   if(paksha)parts.push(paksha);parts.push(tithi,vara);
   if(devi)parts.push(devi);if(raga)parts.push(raga);if(bpm)parts.push(bpm+'bpm');
+  // Field glyphs
+  const glyStr=FGLY.slice(0,3).map(g=>`<span title="${g.name} · ${g.tradition}" style="font-size:14px;color:${g.color}">${g.glyph}</span>`).join(' ');
+  if(glyStr)parts.push(glyStr);
   document.getElementById('fs-c').innerHTML=parts.join(' · ');
 }
 
@@ -228,14 +235,14 @@ function renderLeft(){
   h+=`<span class="g ent-link" style="font-size:16px;color:var(--gold)" onclick="openEntity('${nakId}','nakshatra')">${nak}</span>`;
   if(nakDeity)h+=`<div style="color:var(--muted)">${nakDeity}</div>`;
   if(bodyRegion)h+=`<div style="color:var(--muted);font-size:10px">body: ${bodyRegion}</div>`;
-  if(element||guna)h+=`<div style="color:var(--muted)">${element}${element&&guna?' · ':''}${guna}</div>`;
+  if(element||guna){const es=ELEM_SYM[element.toLowerCase()]||'';const gs=GUNA_SYM[guna.toLowerCase()]||'';h+=`<div style="color:var(--muted)">${es?es+' ':''}${element}${element&&guna?' · ':''}${gs?gs+' ':''}${guna}</div>`}
   h+='<div class="sep"></div>';
   h+=`<div style="font-size:13px">${tidx?tidx+' · ':''}${tithi}</div>`;
   if(paksha)h+=`<div style="color:var(--muted)">${paksha}</div>`;
   if(yoga)h+=`<div style="color:var(--muted)">yoga: ${yoga}</div>`;
   if(karana)h+=`<div style="color:var(--muted)">karana: ${karana}</div>`;
   h+=`<div style="font-size:11px">${vara}</div>`;
-  if(horaLord)h+=`<div style="color:var(--muted)">hora: <span class="ent-link" onclick="openEntity('${horaId}','graha')">${horaLord}</span></div>`;
+  if(horaLord){const hs=GRAHA_SYM[horaLord]||'';h+=`<div style="color:var(--muted)">hora: ${hs?hs+' ':''}<span class="ent-link" onclick="openEntity('${horaId}','graha')">${horaLord}</span></div>`}
   if(rkRange)h+=`<div style="color:${rkActive?'var(--red)':'var(--dim)'}">rahu kala: ${rkRange}${rkActive?' · ACTIVE':''}</div>`;
   h+=`<div style="color:var(--dim);font-size:10px;margin-top:3px">${activities.split(' · ').map(a=>'· '+a).join('<br>')}</div>`;
   h+='<div class="sep"></div><div class="hdr">DASHA</div>';
