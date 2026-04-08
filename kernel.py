@@ -9829,6 +9829,14 @@ def create_app():
     @app.route('/glyphs')
     def _glyphs_page(): return send_from_directory('static', 'glyphs.html')
 
+    @app.route('/assets/wesnoth/<path:filename>')
+    def _wesnoth_assets(filename):
+        return send_from_directory('static/assets/wesnoth', filename)
+
+    @app.route('/hexd-portal')
+    def _hexd_portal():
+        return send_from_directory('static', 'hexd-portal.html')
+
     # ── Rings ────────
     @app.route('/rings')
     def rings():

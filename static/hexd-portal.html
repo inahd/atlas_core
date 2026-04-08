@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atlas · Hexd Portal — Terrain Preview</title>
+<style>
+:root{--bg:#02030a;--panel:#070d14;--border:#1a2840;--gold:#f0c040;--text:#d8e8f0;--muted:#8aabbb;--dim:#567080}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:11px;padding:16px;overflow-y:auto}
+h1{font-size:13px;color:var(--gold);letter-spacing:.3em;margin-bottom:4px;font-weight:normal}
+.sub{font-size:10px;color:var(--dim);margin-bottom:16px}
+.section{margin-bottom:20px}
+.section-title{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.12em;margin-bottom:6px;border-bottom:1px solid var(--border);padding-bottom:3px;cursor:pointer}
+.section-title:hover{color:var(--gold)}
+.section-title span{font-size:9px;color:var(--dim);margin-left:6px}
+.grid{display:flex;flex-wrap:wrap;gap:4px}
+.tile{width:72px;height:72px;background:var(--panel);border:1px solid var(--border);border-radius:2px;overflow:hidden;cursor:pointer;position:relative;display:flex;align-items:center;justify-content:center;transition:border-color .15s}
+.tile:hover{border-color:var(--gold)}
+.tile img{max-width:72px;max-height:72px;image-rendering:pixelated}
+.tile-name{position:absolute;bottom:0;left:0;right:0;font-size:7px;color:var(--text);background:rgba(2,3,10,.85);padding:1px 2px;text-align:center;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;opacity:0;transition:opacity .15s}
+.tile:hover .tile-name{opacity:1}
+#detail{position:fixed;top:16px;right:16px;width:260px;background:var(--panel);border:1px solid var(--border);border-radius:4px;padding:12px;display:none;z-index:100}
+#detail img{max-width:144px;max-height:144px;image-rendering:pixelated;display:block;margin:0 auto 8px}
+#detail .d-name{font-size:11px;color:var(--gold);margin-bottom:4px}
+#detail .d-path{font-size:9px;color:var(--dim);word-break:break-all;margin-bottom:4px}
+#detail .d-size{font-size:9px;color:var(--muted)}
+.home{position:fixed;bottom:8px;right:8px;font-size:9px;color:var(--dim);text-decoration:none;letter-spacing:.15em}
+.home:hover{color:var(--gold)}
+.tabs{display:flex;gap:4px;margin-bottom:12px;flex-wrap:wrap}
+.tab{padding:3px 8px;font-size:9px;color:var(--muted);background:var(--panel);border:1px solid var(--border);border-radius:2px;cursor:pointer}
+.tab:hover,.tab.active{color:var(--gold);border-color:var(--gold)}
+</style>
+</head>
+<body>
+<h1>✦ HEXD PORTAL</h1>
+<div class="sub">Wesnoth terrain + unit assets for Atlas</div>
+<div class="tabs" id="tabs"></div>
+<div id="sections"></div>
+<div id="detail"></div>
+<a href="/" class="home">✦ ATLAS</a>
+<script>
+const TERRAIN_CATS=['flat','grass','forest','cave','village','mountains','hills','sand','frozen','chasm','swamp','water','bridge','castle','portals','symbols','walls','interior','misc','embellishments','desert_mountains','off-map','fog','masks','elevation'];
+const UNIT_CATS=['nagas','elves-wood','woses','merfolk'];
+
+let activeTab='terrain';
+let tileData={};
+
+async function scanDir(base,cat){
+  // We can't list directories from JS, so we'll try known patterns
+  // Instead, fetch a manifest we'll build
+  return [];
+}
+
+// Build page by fetching /research/files to list assets
+async function loadTiles(){
+  // Terrain: try common filenames per category
+  const commonNames={
+    flat:['grass.png','grass2.png','grass3.png','road.png','road-n.png','savanna.png','stone.png','plaza.png','beach.png'],
+    grass:['dry.png','dry2.png','dry3.png','semi-dry.png','green.png','leaf-litter.png','leaf-litter2.png','wild.png'],
+    forest:['deciduous-summer.png','deciduous-fall.png','pine.png','great-tree.png','tropical.png','mushrooms.png','snow.png','dead.png'],
+    cave:['floor.png','floor2.png','floor3.png','floor4.png','floor5.png','floor6.png','path.png','earthy.png'],
+    village:['camp.png','camp2.png','human-city.png','human-city-ruin.png','elven.png','hut.png','swampwater.png','desert.png'],
+    mountains:['basic.png','basic2.png','basic3.png','snow.png','dry.png','volcano.png'],
+    hills:['regular.png','regular2.png','regular3.png','snow.png','desert.png','desert2.png'],
+    sand:['desert.png','desert2.png','desert3.png','beach.png','beach2.png','steppe.png'],
+    frozen:['ice.png','ice2.png','ice3.png','snow.png','snow-hills.png','crater.png'],
+    chasm:['abyss.png','abyss2.png','abyss3.png','abyss4.png','gate.png','gate-gray.png'],
+    swamp:['mud.png','mud2.png','mud3.png','water.png','water-plant.png','reeds.png'],
+    water:['coast-tile.png','coast-tropical-tile.png','ford-tile.png'],
+    bridge:['basic-n.png','basic-ne.png','dock-ne.png'],
+    castle:['encampment/castle-tile.png','dwarven-castle-tile.png'],
+    portals:['gate-gray-tile.png','gate-tile.png','door-wooden-left-n.png'],
+    symbols:['terrain_group_all_30.png','terrain_group_bridges_30.png','terrain_group_castle_30.png','terrain_group_cave_30.png','terrain_group_flat_30.png','terrain_group_forest_30.png','terrain_group_frozen_30.png','terrain_group_hills_30.png','terrain_group_mountain_30.png','terrain_group_obstacle_30.png','terrain_group_swamp_30.png','terrain_group_village_30.png','terrain_group_water_30.png'],
+    walls:['castle/castle-n.png','castle/castle-ne.png'],
+    interior:['inn.png','mine.png'],
+    misc:['altar.png'],
+    embellishments:['flower1.png','flower2.png','mushroom1.png'],
+    desert_mountains:['base.png','base2.png'],
+    nagas:['fighter.png','myrmidon.png','warrior.png'],
+    'elves-wood':['archer.png','avenger.png','captain.png','druid.png','enchantress.png','hero.png','ranger.png','shaman.png','shyde.png','sorceress.png'],
+    woses:['wose.png','wose-elder.png'],
+    merfolk:['fighter.png','initiate.png','priestess.png','enchantress.png','hoplite.png','triton.png']
+  };
+
+  renderSections(commonNames);
+}
+
+function renderSections(names){
+  const cats=activeTab==='terrain'?TERRAIN_CATS:UNIT_CATS;
+  const base=activeTab==='terrain'?'/assets/wesnoth/terrain/':'/assets/wesnoth/units/';
+  let html='';
+  for(const cat of cats){
+    const files=names[cat]||[];
+    if(!files.length)continue;
+    html+=`<div class="section"><div class="section-title" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'flex':'none'">${cat}<span>${files.length} tiles</span></div><div class="grid">`;
+    for(const f of files){
+      const path=base+cat+'/'+f;
+      const fname=f.replace('.png','');
+      html+=`<div class="tile" onclick="showDetail('${path}','${cat}/${f}')"><img src="${path}" alt="${fname}" onerror="this.parentElement.style.display='none'"><div class="tile-name">${fname}</div></div>`;
+    }
+    html+=`</div></div>`;
+  }
+  document.getElementById('sections').innerHTML=html||'<div style="color:var(--dim)">no tiles</div>';
+}
+
+function showDetail(path,name){
+  const el=document.getElementById('detail');
+  el.style.display='block';
+  el.innerHTML=`<img src="${path}" alt="${name}"><div class="d-name">${name}</div><div class="d-path">${path}</div><div class="d-size">72×72 · Wesnoth hex tile</div>`;
+  // Get actual dimensions
+  const img=new Image();img.onload=function(){
+    el.querySelector('.d-size').textContent=this.naturalWidth+'×'+this.naturalHeight+' px';
+  };img.src=path;
+}
+
+function setTab(t){
+  activeTab=t;
+  document.querySelectorAll('.tab').forEach(e=>e.classList.toggle('active',e.dataset.tab===t));
+  loadTiles();
+}
+
+// Tabs
+document.getElementById('tabs').innerHTML=
+  `<div class="tab active" data-tab="terrain" onclick="setTab('terrain')">Terrain (5566)</div>`+
+  `<div class="tab" data-tab="units" onclick="setTab('units')">Units (709)</div>`;
+
+document.addEventListener('click',e=>{
+  if(!e.target.closest('.tile')&&!e.target.closest('#detail'))
+    document.getElementById('detail').style.display='none';
+});
+
+loadTiles();
+</script>
+</body>
+</html>
