@@ -880,24 +880,22 @@ function computeBloomField(tithi,W,H){
     for(let px=0;px<W;px++){
       const x=(px-cx)/scale,y=(py-cy)/scale;
       let field=0;
+      const distC=Math.sqrt(x*x+y*y);
+      const envelope=Math.exp(-distC*0.8);
       for(const ti of active){
-        const pos=THOMSON[ti-1];const winding=ti+2;
-        // Plane wave: each Devi emits toward center
-        const projX=-pos[0],projY=-pos[1]; // inward direction
-        const dot=x*projX+y*projY; // projection onto wave vector
-        field+=Math.cos(winding*dot*6);
+        const pos=THOMSON[ti-1];
+        const projX=-pos[0],projY=-pos[1];
+        const dot=x*projX+y*projY;
+        const freq=2.5+ti*0.15;
+        field+=Math.cos(freq*dot)*envelope;
       }
-      // Normalize by active count
       field/=Math.max(active.length,1);
       const idx=(py*W+px)*4;
+      const abs=Math.abs(field);const v=Math.min(1,abs*2.5);const v2=v*v;
       if(field>0){
-        // Gold for constructive
-        const v=Math.min(1,field*2);
-        d[idx]=Math.round(224*v);d[idx+1]=Math.round(176*v);d[idx+2]=Math.round(64*v);d[idx+3]=Math.round(200*v*v);
+        d[idx]=Math.round(2+222*v2);d[idx+1]=Math.round(3+173*v2);d[idx+2]=Math.round(10+54*v2);d[idx+3]=Math.round(40+215*v2);
       }else{
-        // Teal for destructive
-        const v=Math.min(1,Math.abs(field)*2);
-        d[idx]=Math.round(32*v);d[idx+1]=Math.round(168*v);d[idx+2]=Math.round(138*v);d[idx+3]=Math.round(120*v*v);
+        d[idx]=Math.round(2+30*v2);d[idx+1]=Math.round(3+165*v2);d[idx+2]=Math.round(10+128*v2);d[idx+3]=Math.round(40+160*v2);
       }
     }
   }
