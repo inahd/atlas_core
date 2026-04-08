@@ -64,8 +64,8 @@ body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;
   <div class="side side-r" id="right">◌</div>
 </div>
 <div class="wheels">
-  <div class="wheel" id="w-dosha"><div class="hdr">DOSHA</div></div>
-  <div class="wheel" id="w-guna"><div class="hdr">GUNA</div></div>
+  <div class="wheel" id="w-triangle"><div class="hdr">DOSHA · GUNA</div></div>
+  <div class="wheel" id="w-elem"><div class="hdr">ELEMENT</div></div>
   <div class="wheel" id="w-hora"><div class="hdr">HORA</div></div>
   <div class="wheel" id="w-tithi"><div class="hdr">TITHI QUALITY</div></div>
   <div class="wheel" id="w-muhurta"><div class="hdr">MUHURTA</div></div>
@@ -153,6 +153,7 @@ const OBS={};// observe cache
 const GRAHA_SYM={Sun:'☉',Moon:'☽',Mars:'♂',Mercury:'☿',Jupiter:'♃',Venus:'♀',Saturn:'♄',Rahu:'☊',Ketu:'☋',Surya:'☉',Chandra:'☽',Mangal:'♂',Budha:'☿',Guru:'♃',Shukra:'♀',Shani:'♄','Sūrya':'☉','Candra':'☽','Maṅgala':'♂','Guru':'♃','Śukra':'♀','Śani':'♄','Rāhu':'☊'};
 const ELEM_SYM={fire:'▲',water:'▽',earth:'◼',air:'⬡',ether:'●'};
 const GUNA_SYM={sattva:'✦',rajas:'✶',tamas:'▪'};
+const LAYER_SYM={S0:'●',S1:'◎',S2:'≋',S3:'◑',S4:'◈',S5:'✿',S6:'∞'};
 let leftMode='field',leftEntity=null;
 
 function slugify(name){return(name||'').toLowerCase().replace(/\s+/g,'_').replace(/[āáà]/g,'a').replace(/[īíì]/g,'i').replace(/[ūúù]/g,'u').replace(/ś/g,'sh').replace(/ṣ/g,'sh').replace(/ṭ/g,'t').replace(/ḍ/g,'d').replace(/ñ/g,'n').replace(/ṇ/g,'n').replace(/ḥ/g,'h').replace(/ṃ/g,'m').replace(/[^a-z0-9_]/g,'')}
@@ -181,7 +182,7 @@ async function fetchAll(){
 function render(){
   document.getElementById('dot').className='fs-dot'+(online?'':' off');
   renderStrip();renderLeft();renderCenter();renderRight();
-  renderDosha();renderGuna();renderHora();renderTithi();renderMuhurta();
+  renderTriangle();renderElement();renderHora();renderTithi();renderMuhurta();
   renderPrana();renderAsana();renderPlant();renderIntent();
 }
 
@@ -491,37 +492,69 @@ function renderRight(){
 }
 
 // ════ WHEELS ════
-function triSVG(el,labels,colors,balance,dom){
-  const w=el.clientWidth-12||120,h=90;const svg=makeSVG(w,h);
-  const pts=[[w/2,6],[w-6,h-6],[6,h-6]];
+
+// Unified dosha/guna triangle
+function renderTriangle(){
+  const el=clearEl('w-triangle');
+  const element=(F.panchanga?.element||'').toLowerCase();
+  const gunaStr=(F.panchanga?.guna||'').toLowerCase();
+  const w=el.clientWidth-12||120,h=100;const svg=makeSVG(w,h);
+  const pts=[[w/2,8],[w-8,h-8],[8,h-8]];
+  // Dosha balance from element
+  let dv=.33,dp=.33,dk=.34;
+  if(element.includes('air')||element.includes('ether'))dv=.5;else if(element.includes('fire'))dp=.5;else if(element.includes('water')||element.includes('earth'))dk=.5;
+  let dt=dv+dp+dk;dv/=dt;dp/=dt;dk/=dt;
+  const dDom=dv>=dp&&dv>=dk?'Vata':dp>=dv&&dp>=dk?'Pitta':'Kapha';
+  const dColors=['#a090ff','#ff5050','#5080ff'];const dIdx=[dv,dp,dk].indexOf(Math.max(dv,dp,dk));
+  // Guna balance
+  let gs=.33,gr=.33,gt=.34;
+  if(gunaStr.includes('sattva'))gs=.55;else if(gunaStr.includes('rajas'))gr=.55;else if(gunaStr.includes('tamas'))gt=.55;
+  let gTot=gs+gr+gt;gs/=gTot;gr/=gTot;gt/=gTot;
+  const gDom=gs>=gr&&gs>=gt?'Sattva':gr>=gs&&gr>=gt?'Rajas':'Tamas';
+  const gColors=['#ffd050','#ff9030','#607080'];const gIdx=[gs,gr,gt].indexOf(Math.max(gs,gr,gt));
+  // Triangle fill
+  svg.appendChild(svgEl('polygon',{points:pts.map(p=>p.join(',')).join(' '),fill:dColors[dIdx],'fill-opacity':0.08}));
   svg.appendChild(svgEl('polygon',{points:pts.map(p=>p.join(',')).join(' '),fill:'none',stroke:'#3a5a7a','stroke-width':0.8}));
-  const dIdx=balance.indexOf(Math.max(...balance));
-  svg.appendChild(svgEl('polygon',{points:pts.map(p=>p.join(',')).join(' '),fill:colors[dIdx],'fill-opacity':0.12}));
-  const bx=pts[0][0]*balance[0]+pts[1][0]*balance[1]+pts[2][0]*balance[2];
-  const by=pts[0][1]*balance[0]+pts[1][1]*balance[1]+pts[2][1]*balance[2];
-  addCirc(svg,bx.toFixed(1),by.toFixed(1),6,'#ffffff',1);
-  addCirc(svg,bx.toFixed(1),by.toFixed(1),8,colors[dIdx],0.3);
-  labels.forEach((l,i)=>{const lx=pts[i][0]+(i===0?0:i===1?6:-6);const ly=pts[i][1]+(i===0?-2:12);addText(svg,l,lx,ly,{size:10,color:colors[i],anchor:i===0?'middle':i===1?'start':'end'})});
+  // Dosha balance point (white)
+  const dx=pts[0][0]*dv+pts[1][0]*dp+pts[2][0]*dk;const dy=pts[0][1]*dv+pts[1][1]*dp+pts[2][1]*dk;
+  addCirc(svg,dx.toFixed(1),dy.toFixed(1),5,'#ffffff',1);
+  // Guna balance point (gold)
+  const gx=pts[0][0]*gs+pts[1][0]*gr+pts[2][0]*gt;const gy=pts[0][1]*gs+pts[1][1]*gr+pts[2][1]*gt;
+  addCirc(svg,gx.toFixed(1),gy.toFixed(1),4,'#f0c040',0.9);
+  // Outer labels: dosha
+  const dLabels=['⬡ Vata','▲ Pitta','▽ Kapha'];
+  dLabels.forEach((l,i)=>{const lx=pts[i][0]+(i===0?0:i===1?8:-8);const ly=pts[i][1]+(i===0?-4:14);addText(svg,l,lx,ly,{size:9,color:dColors[i],anchor:i===0?'middle':i===1?'start':'end'})});
+  // Inner labels: guna (offset inward slightly)
+  const gLabels=['✦ Sattva','✶ Rajas','▪ Tamas'];
+  const inset=0.8;const cxT=w/2,cyT=h*0.45;
+  gLabels.forEach((l,i)=>{
+    const ix=cxT+(pts[i][0]-cxT)*inset*0.6;const iy=cyT+(pts[i][1]-cyT)*inset*0.6;
+    const offY=i===0?-2:6;const offX=i===1?4:i===2?-4:0;
+    addText(svg,l,(ix+offX).toFixed(1),(iy+offY).toFixed(1),{size:8,color:gColors[i],anchor:i===0?'middle':i===1?'start':'end'})
+  });
   el.appendChild(svg);
-  const d=document.createElement('div');d.style.cssText=`font-size:11px;color:${colors[dIdx]};margin-top:2px`;d.textContent=dom;el.appendChild(d);
+  const d=document.createElement('div');d.style.cssText=`font-size:10px;margin-top:2px`;
+  d.innerHTML=`<span style="color:${dColors[dIdx]}">${dDom}</span> · <span style="color:${gColors[gIdx]}">${gDom}</span>`;
+  el.appendChild(d);
 }
 
-function renderDosha(){
-  const el=clearEl('w-dosha');const element=(F.panchanga?.element||'').toLowerCase();
-  let v=.33,pi=.33,k=.34;
-  if(element.includes('air')||element.includes('ether'))v=.5;else if(element.includes('fire'))pi=.5;else if(element.includes('water')||element.includes('earth'))k=.5;
-  const t=v+pi+k;v/=t;pi/=t;k/=t;
-  const dom=v>=pi&&v>=k?'Vata':pi>=v&&pi>=k?'Pitta':'Kapha';
-  triSVG(el,['Vata','Pitta','Kapha'],['#a090ff','#ff5050','#5080ff'],[v,pi,k],dom);
-}
-
-function renderGuna(){
-  const el=clearEl('w-guna');const guna=(F.panchanga?.guna||'').toLowerCase();
-  let s=.33,r=.33,t=.34;
-  if(guna.includes('sattva'))s=.55;else if(guna.includes('rajas'))r=.55;else if(guna.includes('tamas'))t=.55;
-  const tot=s+r+t;s/=tot;r/=tot;t/=tot;
-  const dom=s>=r&&s>=t?'Sattva':r>=s&&r>=t?'Rajas':'Tamas';
-  triSVG(el,['Sattva','Rajas','Tamas'],['#ffd050','#ff9030','#607080'],[s,r,t],dom);
+// Element pentagon
+function renderElement(){
+  const el=clearEl('w-elem');
+  const cur=(F.panchanga?.element||'').toLowerCase();
+  const elems=[{n:'Ether',g:'●',c:'#8070dd',a:-Math.PI/2},{n:'Air',g:'⬡',c:'#28c8aa',a:-Math.PI/2+2*Math.PI/5},{n:'Fire',g:'▲',c:'#c84040',a:-Math.PI/2+4*Math.PI/5},{n:'Earth',g:'◼',c:'#c87820',a:-Math.PI/2+6*Math.PI/5},{n:'Water',g:'▽',c:'#2858b8',a:-Math.PI/2+8*Math.PI/5}];
+  const w=el.clientWidth-12||120,h=90;const svg=makeSVG(w,h);
+  const cx=w/2,cy=h/2+2,r=32;
+  const pts=elems.map(e=>({x:cx+r*Math.cos(e.a),y:cy+r*Math.sin(e.a)}));
+  svg.appendChild(svgEl('polygon',{points:pts.map(p=>p.x.toFixed(1)+','+p.y.toFixed(1)).join(' '),fill:'none',stroke:'#3a5a7a','stroke-width':0.5}));
+  elems.forEach((e,i)=>{
+    const is=cur.includes(e.n.toLowerCase());
+    addCirc(svg,pts[i].x.toFixed(1),pts[i].y.toFixed(1),is?5:2.5,e.c,is?0.9:0.3);
+    const lx=cx+(r+14)*Math.cos(e.a),ly=cy+(r+14)*Math.sin(e.a);
+    addText(svg,e.g+' '+e.n,lx.toFixed(1),(ly+3).toFixed(1),{size:8,color:is?e.c:'#567080',anchor:Math.cos(e.a)>0.3?'start':Math.cos(e.a)<-0.3?'end':'middle'});
+  });
+  addText(svg,ELEM_SYM[cur]||'◌',cx,(cy+3),{size:14,color:elems.find(e=>cur.includes(e.n.toLowerCase()))?.c||'#567080'});
+  el.appendChild(svg);
 }
 
 function renderHora(){
