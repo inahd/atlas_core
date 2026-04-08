@@ -882,11 +882,10 @@ function computeBloomField(tithi,W,H){
       let field=0;
       for(const ti of active){
         const pos=THOMSON[ti-1];const winding=ti+2;
-        const dx=x-pos[0]*0.7,dy=y-pos[1]*0.7;
-        const dist=Math.sqrt(dx*dx+dy*dy);
-        const ang=Math.atan2(dy,dx);
-        // Toroidal wave: radial × angular interference
-        field+=Math.cos(winding*dist*6+ang*winding*0.5)*Math.exp(-dist*1.5);
+        // Plane wave: each Devi emits toward center
+        const projX=-pos[0],projY=-pos[1]; // inward direction
+        const dot=x*projX+y*projY; // projection onto wave vector
+        field+=Math.cos(winding*dot*6);
       }
       // Normalize by active count
       field/=Math.max(active.length,1);
