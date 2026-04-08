@@ -880,22 +880,27 @@ function computeBloomField(tithi,W,H){
     for(let px=0;px<W;px++){
       const x=(px-cx)/scale,y=(py-cy)/scale;
       let field=0;
-      const distC=Math.sqrt(x*x+y*y);
-      const envelope=Math.exp(-distC*0.8);
       for(const ti of active){
         const pos=THOMSON[ti-1];
         const projX=-pos[0],projY=-pos[1];
-        const dot=x*projX+y*projY;
-        const freq=2.5+ti*0.15;
-        field+=Math.cos(freq*dot)*envelope;
+        const pLen=Math.sqrt(projX*projX+projY*projY)||1;
+        const nx=projX/pLen,ny=projY/pLen;
+        const dot=x*nx+y*ny;
+        const k=Math.PI*(1+ti*0.4);
+        const phase=(ti-1)*TAU/15;
+        field+=Math.cos(k*dot+phase);
       }
       field/=Math.max(active.length,1);
       const idx=(py*W+px)*4;
-      const abs=Math.abs(field);const v=Math.min(1,abs*2.5);const v2=v*v;
-      if(field>0){
-        d[idx]=Math.round(2+222*v2);d[idx+1]=Math.round(3+173*v2);d[idx+2]=Math.round(10+54*v2);d[idx+3]=Math.round(40+215*v2);
+      // Nodal lines (near zero) = black = the geometry
+      if(field>0.3){
+        const v=Math.min(1,(field-0.3)/0.7);
+        d[idx]=Math.round(2+222*v);d[idx+1]=Math.round(3+173*v);d[idx+2]=Math.round(10+54*v);d[idx+3]=Math.round(60+195*v);
+      }else if(field<-0.3){
+        const v=Math.min(1,(-field-0.3)/0.7);
+        d[idx]=Math.round(2+30*v);d[idx+1]=Math.round(3+165*v);d[idx+2]=Math.round(10+128*v);d[idx+3]=Math.round(60+140*v);
       }else{
-        d[idx]=Math.round(2+30*v2);d[idx+1]=Math.round(3+165*v2);d[idx+2]=Math.round(10+128*v2);d[idx+3]=Math.round(40+160*v2);
+        d[idx]=2;d[idx+1]=3;d[idx+2]=10;d[idx+3]=Math.round(30+30*Math.abs(field)/0.3);
       }
     }
   }
@@ -912,7 +917,7 @@ function drawBloom(opacity=1.0){
   ctx.fillStyle='rgba(2,3,10,1)';ctx.fillRect(0,0,W,H);
 
   // Interference field (lower resolution for performance)
-  const res=Math.min(W,200);const resH=Math.round(res*H/W);
+  const res=Math.min(W,300);const resH=Math.round(res*H/W);
   const fieldImg=computeBloomField(tithi,res,resH);
   // Draw scaled up
   const offC=document.createElement('canvas');offC.width=res;offC.height=resH;
