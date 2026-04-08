@@ -8,790 +8,585 @@
 :root{--bg:#02030a;--panel:#070d14;--surface:#0c1520;--border:#1a2840;--gold:#e0b040;--teal:#20a88a;--purple:#8070dd;--green:#3a8a4a;--text:#c8d8e8;--muted:#6a8a9a;--dim:#3a5060;--red:#c84040;--amber:#c87820}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{height:100%;overflow:hidden}
-body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;display:flex;flex-direction:column}
+body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;display:grid;grid-template-rows:28px 1fr 160px 180px}
 
 /* ── FIELD STRIP ── */
-.field-strip{height:28px;background:var(--panel);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 14px;flex-shrink:0;gap:10px;z-index:10}
-.fs-left{display:flex;align-items:center;gap:6px;flex-shrink:0}
-.fs-atlas{font-size:11px;color:var(--gold);letter-spacing:0.3em}
-.fs-home{font-size:10px;color:var(--dim)}
-.fs-center{flex:1;text-align:center;font-size:13px;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.fs-center .nak{font-family:Georgia,serif;color:var(--gold)}
-.fs-right{display:flex;align-items:center;gap:8px;flex-shrink:0}
-.fs-clock{font-size:11px;color:var(--muted)}
-.fs-dot{width:5px;height:5px;border-radius:50%;background:var(--teal)}
+.fs{height:28px;background:var(--panel);border-bottom:1px solid var(--border);display:flex;align-items:center;padding:0 14px;gap:10px}
+.fs-l{display:flex;align-items:center;gap:5px;flex-shrink:0}
+.fs-atlas{font-size:11px;color:var(--gold);letter-spacing:.3em}
+.fs-sub{font-size:9px;color:var(--dim)}
+.fs-c{flex:1;text-align:center;font-size:11px;color:var(--text);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fs-c .nak{font-family:Georgia,serif;font-size:13px;color:var(--gold)}
+.fs-r{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.fs-clk{font-size:10px;color:var(--dim)}
+.fs-dot{width:6px;height:6px;border-radius:50%;background:var(--teal)}
 .fs-dot.off{background:var(--dim)}
 
-/* ── BANDS ── */
-.band-north{height:28%;background:var(--bg);display:flex;border-bottom:1px solid var(--border);min-height:0;overflow:hidden}
-.band-center{height:32%;background:var(--bg);display:flex;border-bottom:1px solid var(--border);min-height:0;overflow:hidden}
-.band-wheels{height:18%;background:var(--bg);display:flex;border-bottom:1px solid var(--border);min-height:0;overflow:hidden}
-.band-south{height:calc(22% - 28px);background:var(--panel);display:flex;min-height:0;overflow:hidden}
+/* ── BAND 2: MAIN ── */
+.main{display:grid;grid-template-columns:220px 1fr 220px;min-height:0;overflow:hidden}
+.side{background:var(--bg);padding:12px;overflow-y:auto;overflow-x:hidden}
+.side-l{border-right:1px solid var(--border)}
+.side-r{border-left:1px solid var(--border)}
+.center{background:var(--bg);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
 
-/* ── COLUMNS ── */
-.col{flex:1;padding:8px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
-.col+.col{border-left:1px solid var(--border)}
-.col-hdr{font-size:10px;text-transform:uppercase;color:var(--dim);letter-spacing:0.1em;margin-bottom:6px;flex-shrink:0}
-.col-body{flex:1;overflow:hidden;min-height:0}
+/* ── BAND 3: WHEELS ── */
+.wheels{background:var(--bg);border-top:1px solid var(--border);display:grid;grid-template-columns:repeat(5,1fr);overflow:hidden}
+.wheel{padding:8px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.wheel+.wheel{border-left:1px solid var(--border)}
+
+/* ── BAND 4: PRACTICE ── */
+.practice{background:var(--panel);border-top:1px solid var(--border);display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden}
+.prac{padding:10px;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.prac+.prac{border-left:1px solid var(--border)}
 
 /* ── SHARED ── */
-.label{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:0.08em}
-.val{font-size:12px;color:var(--text)}
-.val-gold{font-size:12px;color:var(--gold);font-family:Georgia,serif}
-.val-teal{font-size:12px;color:var(--teal)}
-.sub{font-size:10px;color:var(--muted);margin-bottom:2px}
-.dim-text{font-size:10px;color:var(--dim)}
-.row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:2px}
-.row .k{font-size:10px;color:var(--muted);min-width:50px}
-.row .v{font-size:11px;color:var(--text);text-align:right}
-.divider{height:1px;background:var(--border);margin:6px 0;flex-shrink:0}
-.progress{width:100%;height:3px;background:var(--border);border-radius:1px;margin:4px 0}
-.progress-fill{height:100%;border-radius:1px}
-
-/* ── MANDALA CENTER ── */
-.mandala-wrap{display:flex;align-items:center;justify-content:center;flex:1;min-width:0}
-.side-panel{width:200px;padding:10px;flex-shrink:0;overflow:hidden;display:flex;flex-direction:column;gap:6px}
-.side-panel .label{margin-bottom:4px}
-
-/* ── DONUT ── */
-.donut-wrap{text-align:center;margin-bottom:4px}
-.donut-label{font-size:10px;color:var(--dim);text-align:center}
-
-/* ── TRANSIT ROW ── */
+.hdr{font-size:8px;color:var(--dim);text-transform:uppercase;letter-spacing:.2em;margin-bottom:5px;flex-shrink:0}
+.sep{height:1px;background:var(--border);margin:6px 0;flex-shrink:0}
+.r{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:2px}
+.r .k{font-size:10px;color:var(--muted);min-width:42px}
+.r .v{font-size:11px;color:var(--text);text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.g{font-family:Georgia,serif}
+.bar{width:100%;height:3px;background:var(--border);border-radius:1px;margin:3px 0}
+.bar-f{height:100%;border-radius:1px}
 .transit-row{display:flex;align-items:center;gap:4px;height:18px;font-size:10px;border-left:2px solid var(--border);padding-left:4px;margin-bottom:1px}
 .transit-row.fav{border-color:var(--green)}
 .transit-row.tense{border-color:var(--red)}
-
-/* ── WHEELS ── */
-.hora-bar{display:flex;height:24px;width:100%;gap:0}
-.hora-seg{flex:1;opacity:0.6;position:relative}
-.hora-seg.active{opacity:1;border:1px solid var(--gold);z-index:1}
-.rahu-bar{height:16px;width:100%;background:var(--border);position:relative;border-radius:2px;margin:4px 0}
-.rahu-fill{position:absolute;height:100%;background:var(--red);opacity:0.5;border-radius:2px}
-.rahu-now{position:absolute;height:100%;width:2px;background:var(--gold)}
-
-/* ── PRACTICE ── */
-.practice-name{font-family:Georgia,serif;font-size:13px;color:var(--gold);margin-bottom:2px}
-.practice-eng{font-size:10px;color:var(--text);margin-bottom:4px}
-.practice-detail{font-size:10px;color:var(--muted);margin-bottom:2px}
-.practice-dim{font-size:10px;color:var(--dim);margin-bottom:2px}
-.reading-text{font-family:Georgia,serif;font-size:10px;color:var(--muted);font-style:italic;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-
-/* ── ZONE LINKS ── */
-.zone-link{cursor:pointer}
-.zone-link:hover .zone-fill{opacity:0.3!important}
+.shruti-row{display:flex;gap:2px;flex-wrap:wrap;margin:3px 0}
+.shruti-d{width:5px;height:5px;border-radius:50%;background:#1a2840}
+.shruti-d.on{background:var(--gold)}
 </style>
 </head>
 <body>
 
-<!-- ═══ FIELD STRIP ═══ -->
-<div class="field-strip">
-  <div class="fs-left"><span class="fs-atlas">✦ ATLAS</span><span class="fs-home">· home</span></div>
-  <div class="fs-center" id="fs-center">◌</div>
-  <div class="fs-right"><span class="fs-clock" id="fs-clock"></span><span class="fs-dot" id="fs-dot"></span></div>
+<!-- ═══ BAND 1: FIELD STRIP ═══ -->
+<div class="fs">
+  <div class="fs-l"><span class="fs-atlas">✦ ATLAS</span><span class="fs-sub">· kanjira</span></div>
+  <div class="fs-c" id="fs-c">◌</div>
+  <div class="fs-r"><span class="fs-clk" id="clk"></span><span class="fs-dot" id="dot"></span></div>
 </div>
 
-<!-- ═══ BAND 1: NORTH — TIME ═══ -->
-<div class="band-north">
-  <!-- Col 1: Nakshatra Wheel -->
-  <div class="col">
-    <div class="col-body" id="nak-wheel" style="display:flex;flex-direction:column;align-items:center;justify-content:center">◌</div>
-    <div class="label" style="text-align:center">nakshatra</div>
-  </div>
-  <!-- Col 2: Moon -->
-  <div class="col">
-    <div class="col-body" id="moon-col" style="display:flex;flex-direction:column;align-items:center;justify-content:center">◌</div>
-  </div>
-  <!-- Col 3: Vedic Time -->
-  <div class="col">
-    <div class="col-body" id="vedic-col" style="overflow-y:auto">◌</div>
-  </div>
-  <!-- Col 4: Western Time -->
-  <div class="col">
-    <div class="col-body" id="western-col" style="display:flex;flex-direction:column;align-items:center;justify-content:center">◌</div>
-  </div>
-  <!-- Col 5: Transits -->
-  <div class="col">
-    <div class="col-hdr">TRANSITS</div>
-    <div class="col-body" id="transits-col">◌</div>
-  </div>
-</div>
-
-<!-- ═══ BAND 2: CENTER — VASTU MANDALA ═══ -->
-<div class="band-center">
-  <div class="side-panel" id="left-panel">◌</div>
-  <div class="mandala-wrap" id="mandala-wrap">◌</div>
-  <div class="side-panel" id="right-panel">◌</div>
+<!-- ═══ BAND 2: MAIN ═══ -->
+<div class="main">
+  <div class="side side-l" id="left">◌</div>
+  <div class="center" id="center-col"></div>
+  <div class="side side-r" id="right">◌</div>
 </div>
 
 <!-- ═══ BAND 3: WHEELS ═══ -->
-<div class="band-wheels">
-  <div class="col"><div class="col-hdr">DOSHA</div><div class="col-body" id="dosha-col">◌</div></div>
-  <div class="col"><div class="col-hdr">GUNA</div><div class="col-body" id="guna-col">◌</div></div>
-  <div class="col"><div class="col-hdr">ELEMENT</div><div class="col-body" id="element-col">◌</div></div>
-  <div class="col"><div class="col-hdr">PLANETARY HOURS</div><div class="col-body" id="hora-col">◌</div></div>
-  <div class="col"><div class="col-hdr">RAHU KALA</div><div class="col-body" id="rahu-col">◌</div></div>
+<div class="wheels">
+  <div class="wheel" id="w-dosha"><div class="hdr">DOSHA</div></div>
+  <div class="wheel" id="w-guna"><div class="hdr">GUNA</div></div>
+  <div class="wheel" id="w-elem"><div class="hdr">ELEMENT</div></div>
+  <div class="wheel" id="w-hora"><div class="hdr">PLANETARY HOURS</div></div>
+  <div class="wheel" id="w-moon"><div class="hdr">LUNAR MONTH</div></div>
 </div>
 
-<!-- ═══ BAND 4: SOUTH — PRACTICE ═══ -->
-<div class="band-south">
-  <div class="col"><div class="col-hdr">PRANAYAMA</div><div class="col-body" id="prana-col">◌</div></div>
-  <div class="col"><div class="col-hdr">ASANA</div><div class="col-body" id="asana-col">◌</div></div>
-  <div class="col"><div class="col-hdr">PLANT · MEDICINE</div><div class="col-body" id="plant-col">◌</div></div>
-  <div class="col"><div class="col-hdr">INTENTION</div><div class="col-body" id="intent-col">◌</div></div>
+<!-- ═══ BAND 4: PRACTICE ═══ -->
+<div class="practice">
+  <div class="prac" id="p-prana"><div class="hdr">PRANAYAMA</div></div>
+  <div class="prac" id="p-asana"><div class="hdr">ASANA</div></div>
+  <div class="prac" id="p-plant"><div class="hdr">PLANT · MEDICINE</div></div>
+  <div class="prac" id="p-intent"><div class="hdr">INTENTION</div></div>
 </div>
 
 <script>
-// ── Helpers ──
-function p(d,path,fb){let v=d;for(const k of path.split('.')){if(!v)return fb;v=v[k]}return(typeof v==='object'&&v!==null)?(v.name||fb):v||fb}
-function tick(){document.getElementById('fs-clock').textContent=new Date().toLocaleTimeString('en-GB',{hour12:false})}
+// ── Helpers ──────────────────────────────────────
+function p(d,path,fb){if(!d)return fb;let v=d;for(const k of path.split('.')){if(v==null)return fb;v=v[k]}if(v==null)return fb;return(typeof v==='object'&&v!==null&&'name'in v)?v.name:v}
+function tick(){document.getElementById('clk').textContent=new Date().toLocaleTimeString('en-GB',{hour12:false})}
 tick();setInterval(tick,1000);
 
-const nakshatras=['Ashvini','Bharani','Krittika','Rohini','Mrigashira','Ardra','Punarvasu','Pushya','Ashlesha','Magha','Purva Phalguni','Uttara Phalguni','Hasta','Chitra','Svati','Vishakha','Anuradha','Jyeshtha','Mula','Purva Ashadha','Uttara Ashadha','Shravana','Dhanishtha','Shatabhisha','Purva Bhadrapada','Uttara Bhadrapada','Revati'];
-const zodiacGlyphs=['♈','♉','♊','♋','♌','♍','♎','♏','♐','♑','♒','♓'];
-const zodiacNames=['Aries','Taurus','Gemini','Cancer','Leo','Virgo','Libra','Scorpio','Sagittarius','Capricorn','Aquarius','Pisces'];
-const grahaColors={Sun:'#e8c86a',Moon:'#c8d8e8',Mars:'#c84040',Mercury:'#20a88a',Jupiter:'#c8a050',Venus:'#e8a0c0',Saturn:'#8090a8',Rahu:'#8070dd',Ketu:'#806040'};
-const horaOrder=['Sun','Moon','Mars','Mercury','Jupiter','Venus','Saturn'];
-const dashaStart=new Date('2010-09-01').getTime(),dashaEnd=new Date('2027-10-01').getTime();
+// SVG helpers
+function svgEl(tag,attrs){const e=document.createElementNS('http://www.w3.org/2000/svg',tag);for(const[k,v]of Object.entries(attrs))e.setAttribute(k,v);return e}
+function addCirc(svg,cx,cy,r,fill,op){svg.appendChild(svgEl('circle',{cx,cy,r,fill,'fill-opacity':op??1}))}
+function addLine(svg,x1,y1,x2,y2,stroke,w){svg.appendChild(svgEl('line',{x1,y1,x2,y2,stroke,'stroke-width':w??0.5}))}
+function addText(svg,txt,x,y,opts={}){const t=svgEl('text',{x,y,'text-anchor':opts.anchor||'middle','font-family':opts.font||"'Courier New',monospace",'font-size':opts.size||9,fill:opts.color||'#6a8a9a'});t.textContent=txt;svg.appendChild(t)}
+function addPoly(svg,pts,stroke,fill,op){svg.appendChild(svgEl('polygon',{points:pts,stroke,fill:fill||'none','fill-opacity':op??0.15,'stroke-width':0.6,'stroke-opacity':0.5}))}
+function makeSVG(w,h){const s=svgEl('svg',{width:w,height:h,viewBox:`0 0 ${w} ${h}`});return s}
+function rad(deg){return(deg-90)*Math.PI/180}
 
-// ── State ──
-let F={},G={},K={},TR={},NAT={},TJ={},INT={},COH={},SND={},RDG={},AUD={};
+// ── Ring renderer ────────────────────────────────
+function drawRing(svg,ring,cx,cy,r,opts={}){
+  const{nodeSize=3,showLabels=false,showCursor=true}=opts;
+  if(!ring)return;
+  const st=ring.style||{};
+  // ring circle
+  svg.appendChild(svgEl('circle',{cx,cy,r,fill:'none',stroke:st.ring_color||'rgba(255,255,255,0.08)','stroke-width':0.5}));
+  // nodes
+  for(const n of ring.nodes||[]){
+    const a=rad(n.angle_deg||0);
+    const x=cx+r*Math.cos(a),y=cy+r*Math.sin(a);
+    const sz=nodeSize*(n.size||1);
+    const col=n.active?(st.active_color||'#e0b040'):(n.color||'#3a5060');
+    const op=n.active?1:0.35;
+    addCirc(svg,x.toFixed(1),y.toFixed(1),sz,col,op);
+    if(showLabels&&n.active){
+      const lx=cx+(r+12)*Math.cos(a),ly=cy+(r+12)*Math.sin(a);
+      addText(svg,n.label||'',lx.toFixed(1),(ly+3).toFixed(1),{size:8,color:st.active_color||'#e0b040',anchor:lx>cx?'start':'end',font:'Georgia,serif'});
+    }
+  }
+  // cursor
+  if(showCursor&&ring.cursor){
+    const a=rad(ring.cursor.angle_deg||0);
+    const x2=cx+r*Math.cos(a),y2=cy+r*Math.sin(a);
+    addLine(svg,cx,cy,x2.toFixed(1),y2.toFixed(1),st.cursor_color||'#e0b04060',0.5);
+  }
+}
+
+// ── State ────────────────────────────────────────
+let F={},G={},K={},TR={},TJ={},INT={},COH={},SND={},RDG={},AUD={},RINGS={};
 let online=false;
 
-// ── Fetch all ──
 async function fetchAll(){
-  const fetches=[
+  await Promise.all([
     fetch('/field').then(r=>r.json()).then(d=>{F=d;online=true}).catch(()=>{}),
+    fetch('/rings').then(r=>r.json()).then(d=>RINGS=d).catch(()=>{}),
     fetch('/guild/state').then(r=>r.json()).then(d=>G=d).catch(()=>{}),
     fetch('/goloka').then(r=>r.json()).then(d=>K=d).catch(()=>{}),
     fetch('/transits').then(r=>r.json()).then(d=>TR=d).catch(()=>{}),
-    fetch('/natal').then(r=>r.json()).then(d=>NAT=d).catch(()=>{}),
     fetch('/trajectory').then(r=>r.json()).then(d=>TJ=d).catch(()=>{}),
     fetch('/intention/now').then(r=>r.json()).then(d=>INT=d).catch(()=>{}),
     fetch('/coherence-score').then(r=>r.json()).then(d=>COH=d).catch(()=>{}),
     fetch('/sound/spec').then(r=>r.json()).then(d=>SND=d).catch(()=>{}),
     fetch('/reading/bandhu').then(r=>r.json()).then(d=>RDG=d).catch(()=>{}),
     fetch('/system/audio').then(r=>r.json()).then(d=>AUD=d).catch(()=>{})
-  ];
-  await Promise.all(fetches);
+  ]);
   render();
 }
 
-// ── Main render ──
+// ── Render ───────────────────────────────────────
 function render(){
-  renderFieldStrip();
-  renderNakWheel();
-  renderMoon();
-  renderVedic();
-  renderWestern();
-  renderTransits();
-  renderMandala();
-  renderLeftPanel();
-  renderRightPanel();
-  renderDosha();
-  renderGuna();
-  renderElement();
-  renderHora();
-  renderRahu();
-  renderPranayama();
-  renderAsana();
-  renderPlant();
-  renderIntention();
-  document.getElementById('fs-dot').className='fs-dot'+(online?'':' off');
+  document.getElementById('dot').className='fs-dot'+(online?'':' off');
+  renderStrip();
+  renderLeft();
+  renderCenter();
+  renderRight();
+  renderDosha();renderGuna();renderElement();renderHora();renderMoonWave();
+  renderPrana();renderAsana();renderPlant();renderIntent();
 }
 
-// ════════════════════════════════════════════════
-// FIELD STRIP
-// ════════════════════════════════════════════════
-function renderFieldStrip(){
+// ════ FIELD STRIP ════════════════════════════════
+function renderStrip(){
   const pa=F.panchanga||{};
-  const nak=p(F,'panchanga.nakshatra','—');
-  const tithi=p(F,'panchanga.tithi','—');
-  const paksha=pa.paksha||pa.tithi?.paksha||'';
-  const vara=p(F,'panchanga.vara','—');
+  const nak=pa.nakshatra||'—';
+  const tithi=pa.tithi||'—';
+  const paksha=pa.paksha||'';
+  const vara=pa.vara||'—';
   const devi=p(F,'panchanga.devi','');
-  const raga=SND.raga||p(F,'field.raga','');
-  const ragaName=typeof raga==='object'?(raga.name||''):raga;
-  const bpm=SND.bpm||SND.tempo||'';
+  const ss=F.sound_state||{};
+  const raga=ss.raga||p(SND,'raga','')||'';
+  const bpm=ss.bpm||p(SND,'bpm','')||'';
   let parts=['<span class="nak">'+nak+'</span>'];
   if(paksha)parts.push(paksha);
   parts.push(tithi,vara);
   if(devi)parts.push(devi);
-  if(ragaName)parts.push(ragaName);
+  if(raga)parts.push(raga);
   if(bpm)parts.push(bpm+'bpm');
-  document.getElementById('fs-center').innerHTML=parts.join(' · ');
+  document.getElementById('fs-c').innerHTML=parts.join(' · ');
 }
 
-// ════════════════════════════════════════════════
-// NAKSHATRA WHEEL
-// ════════════════════════════════════════════════
-function renderNakWheel(){
-  const el=document.getElementById('nak-wheel');
-  const currentNak=p(F,'panchanga.nakshatra','');
-  const deity=F.panchanga?.nakshatra?.deity||F.panchanga?.nakshatra_deity||'';
-  const quality=F.panchanga?.nakshatra?.quality||F.panchanga?.nakshatra_quality||'';
-  const idx=nakshatras.findIndex(n=>currentNak.toLowerCase().includes(n.toLowerCase()));
-  const cx=90,cy=90,r=80,ir=45;
-  let svg='<svg width="180" height="180" viewBox="0 0 180 180">';
-  for(let i=0;i<27;i++){
-    const a1=(i/27)*Math.PI*2-Math.PI/2;
-    const a2=((i+1)/27)*Math.PI*2-Math.PI/2;
-    const am=(a1+a2)/2;
-    const isCurrent=i===idx;
-    const isNear=idx>=0&&Math.abs(i-idx)<=2;
-    const x1o=cx+r*Math.cos(a1),y1o=cy+r*Math.sin(a1);
-    const x1i=cx+ir*Math.cos(a1),y1i=cy+ir*Math.sin(a1);
-    const x2o=cx+r*Math.cos(a2),y2o=cy+r*Math.sin(a2);
-    const x2i=cx+ir*Math.cos(a2),y2i=cy+ir*Math.sin(a2);
-    if(isCurrent){
-      svg+='<path d="M'+x1i+','+y1i+' L'+x1o+','+y1o+' A'+r+','+r+' 0 0,1 '+x2o+','+y2o+' L'+x2i+','+y2i+' A'+ir+','+ir+' 0 0,0 '+x1i+','+y1i+'" fill="#e0b040" fill-opacity="0.3" stroke="#e0b040" stroke-width="1.2"/>';
-      const lr=r+6;const lx=cx+lr*Math.cos(am),ly=cy+lr*Math.sin(am);
-      const rot=am*180/Math.PI+(am>Math.PI/2&&am<Math.PI*1.5?180:0);
-    }else{
-      svg+='<line x1="'+x1i+'" y1="'+y1i+'" x2="'+x1o+'" y2="'+y1o+'" stroke="'+(isNear?'#e0b04040':'#1a2840')+'" stroke-width="0.5"/>';
-    }
-  }
-  svg+='<circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="none" stroke="#1a2840" stroke-width="0.5"/>';
-  svg+='<circle cx="'+cx+'" cy="'+cy+'" r="'+ir+'" fill="none" stroke="#1a2840" stroke-width="0.5"/>';
-  svg+='<text x="'+cx+'" y="'+(cy-4)+'" text-anchor="middle" font-family="Georgia,serif" font-size="13" fill="#e0b040">'+(currentNak||'◌')+'</text>';
-  if(deity)svg+='<text x="'+cx+'" y="'+(cy+10)+'" text-anchor="middle" font-family="Courier New" font-size="9" fill="#6a8a9a">'+deity+'</text>';
-  if(quality)svg+='<text x="'+cx+'" y="'+(cy+22)+'" text-anchor="middle" font-family="Courier New" font-size="9" fill="#3a5060">'+quality+'</text>';
-  svg+='</svg>';
-  el.innerHTML=svg;
-}
-
-// ════════════════════════════════════════════════
-// MOON
-// ════════════════════════════════════════════════
-function renderMoon(){
-  const el=document.getElementById('moon-col');
+// ════ LEFT PANEL ═════════════════════════════════
+function renderLeft(){
+  const el=document.getElementById('left');
   const pa=F.panchanga||{};
-  const tithiNum=pa.tithi?.number||pa.tithi_number||15;
-  const tithiName=p(F,'panchanga.tithi','—');
-  const paksha=pa.paksha||pa.tithi?.paksha||'';
-  const phase=(tithiNum<=15?tithiNum/30:1-((tithiNum-15)/30));
-  const phaseNames=['New Moon','Waxing Crescent','First Quarter','Waxing Gibbous','Full Moon','Waning Gibbous','Third Quarter','Waning Crescent'];
-  const phaseIdx=Math.min(7,Math.floor((tithiNum-1)/3.75));
-  const phaseName=phaseNames[phaseIdx]||'';
+  const nak=pa.nakshatra||'—';
+  const nakDeity=pa.nak_data?.deity||pa.tithi_deity||'';
+  const element=pa.element||'';
+  const guna=pa.guna||'';
+  const tidx=pa.tidx||'';
+  const tithi=pa.tithi||'—';
+  const paksha=pa.paksha||'';
+  const yoga=p(F,'panchanga.yoga','')||F.yoga||'';
+  const karana=p(F,'panchanga.karana','')||F.karana||'';
+  const vara=pa.vara||'—';
+  const hora=F.hora||{};
+  const horaLord=hora.hora_lord||'';
+  const rk=F.rahu_kala||{};
+  const rkActive=rk.rahu_kala_active||false;
+  const rkRange=(rk.rahu_kala_start||'')+(rk.rahu_kala_start?' – ':'')+( rk.rahu_kala_end||'');
+  const da=F.dasha||TJ.dasha||{};
+  const daLord=da.lord||da.mahadasha||p(TJ,'dasha_lord','Mercury');
+  const daEnd=da.closes||da.end_date||TJ.dasha_end||'Oct 2027';
+  const daSub=da.antardasha||TJ.sub_dasha||TJ.antardasha||'';
+  const dsStart=new Date('2010-09-01').getTime(),dsEnd=new Date('2027-10-01').getTime();
+  const daPct=Math.min(100,Math.max(0,((Date.now()-dsStart)/(dsEnd-dsStart))*100));
+  const ap=K.ashtakala_period||{};
+  const golPeriod=ap.name||p(K,'ashtakala','')||'';
+  const golSakhi=ap.presiding_sakhi||(K.active_sakhis||[])[0]||'';
+  const golSeva=ap.mood||ap.primary_seva||'';
+  const golForest=K.active_forest?.name||'';
 
-  // Moon phase SVG
-  const mr=35,mcx=40,mcy=40;
-  const f=tithiNum<=15?tithiNum/15:(30-tithiNum)/15;
-  const bulge=mr*Math.abs(1-f*2);
-  const sweep=f>0.5?1:0;
-  let moonSvg='<svg width="80" height="80" viewBox="0 0 80 80">';
-  moonSvg+='<circle cx="'+mcx+'" cy="'+mcy+'" r="'+mr+'" fill="#0c1520" stroke="#1a2840" stroke-width="0.5"/>';
-  if(tithiNum>0&&tithiNum<30){
-    moonSvg+='<path d="M'+mcx+' '+(mcy-mr)+' A'+mr+' '+mr+' 0 0 1 '+mcx+' '+(mcy+mr)+' A'+bulge+' '+mr+' 0 0 '+sweep+' '+mcx+' '+(mcy-mr)+'" fill="#e0b040" opacity="0.85"/>';
-  }
-  moonSvg+='</svg>';
-
-  // Moon sine wave
-  const ww=160,wh=40,wcx=0,wcy=wh/2;
-  let waveSvg='<svg width="'+ww+'" height="'+wh+'" viewBox="0 0 '+ww+' '+wh+'" style="margin-top:6px">';
-  waveSvg+='<line x1="0" y1="'+wcy+'" x2="'+ww+'" y2="'+wcy+'" stroke="#1a2840" stroke-width="0.5"/>';
-  let pts=[];
-  for(let d=0;d<=30;d++){
-    const x=(d/30)*ww;
-    const y=wcy-Math.sin((d/30)*Math.PI*2)*16;
-    pts.push(x.toFixed(1)+','+y.toFixed(1));
-    if(d===15){waveSvg+='<circle cx="'+x.toFixed(1)+'" cy="'+(wcy-16).toFixed(1)+'" r="2.5" fill="#e0b040"/>';}
-    if(d===0||d===30){waveSvg+='<circle cx="'+x.toFixed(1)+'" cy="'+(wcy).toFixed(1)+'" r="2" fill="#3a5060"/>';}
-    if(d===11||d===26){waveSvg+='<circle cx="'+x.toFixed(1)+'" cy="'+y.toFixed(1)+'" r="2" fill="#20a88a"/>';}
-  }
-  waveSvg+='<polyline points="'+pts.join(' ')+'" fill="none" stroke="#e0b040" stroke-width="0.8" opacity="0.6"/>';
-  const todayX=((tithiNum-1)/30)*ww;
-  waveSvg+='<line x1="'+todayX.toFixed(1)+'" y1="0" x2="'+todayX.toFixed(1)+'" y2="'+wh+'" stroke="#e0b040" stroke-width="1"/>';
-  waveSvg+='</svg>';
-
-  const daysToFull=tithiNum<=15?(15-tithiNum):(30-tithiNum+15);
-  const daysToNew=tithiNum<=15?(30-tithiNum):(30-tithiNum);
-
-  el.innerHTML=moonSvg
-    +'<div style="font-family:Georgia,serif;font-size:11px;color:#e0b040;margin-top:4px">'+phaseName+'</div>'
-    +'<div class="sub">Tithi '+tithiNum+' of 30</div>'
-    +'<div class="dim-text">'+paksha+'</div>'
-    +waveSvg
-    +'<div class="label" style="text-align:center;margin-top:2px">lunar month</div>'
-    +'<div class="dim-text" style="text-align:center">'+daysToFull+' days to pūrṇimā</div>';
+  let h='<div class="hdr">PANCHANGA</div>';
+  h+=`<div class="g" style="font-size:16px;color:var(--gold)">${nak}</div>`;
+  if(nakDeity)h+=`<div style="color:var(--muted)">${nakDeity}</div>`;
+  if(element||guna)h+=`<div style="color:var(--muted)">${element}${element&&guna?' · ':''}${guna}</div>`;
+  h+='<div class="sep"></div>';
+  h+=`<div style="font-size:12px">${tidx?tidx+' · ':''}${tithi}</div>`;
+  if(paksha)h+=`<div style="color:var(--muted)">${paksha}</div>`;
+  if(yoga)h+=`<div style="color:var(--muted)">yoga: ${yoga}</div>`;
+  if(karana)h+=`<div style="color:var(--muted)">karana: ${karana}</div>`;
+  h+=`<div style="font-size:11px">${vara}</div>`;
+  if(horaLord)h+=`<div style="color:var(--muted)">hora: ${horaLord}</div>`;
+  if(rkRange)h+=`<div style="color:${rkActive?'var(--red)':'var(--dim)'}">rahu kala: ${rkRange}${rkActive?' · ACTIVE':''}</div>`;
+  h+='<div class="sep"></div><div class="hdr">DASHA</div>';
+  h+=`<div class="g" style="font-size:13px;color:var(--gold)">${daLord} daśā</div>`;
+  h+=`<div style="font-size:9px;color:var(--dim)">ends ${daEnd}</div>`;
+  h+=`<div class="bar"><div class="bar-f" style="width:${daPct.toFixed(1)}%;background:var(--purple)"></div></div>`;
+  if(daSub)h+=`<div style="color:var(--muted);font-size:9px">sub: ${daSub}</div>`;
+  h+='<div class="sep"></div><div class="hdr">GOLOKA</div>';
+  if(golPeriod)h+=`<div class="g" style="font-size:11px;color:var(--teal)">${golPeriod}</div>`;
+  if(golSakhi)h+=`<div style="color:var(--text)">${golSakhi}</div>`;
+  if(golSeva)h+=`<div style="color:var(--muted);font-size:9px">${golSeva}</div>`;
+  if(golForest)h+=`<div style="color:var(--dim);font-size:9px;font-style:italic">${golForest}</div>`;
+  el.innerHTML=h;
 }
 
-// ════════════════════════════════════════════════
-// VEDIC TIME
-// ════════════════════════════════════════════════
-function renderVedic(){
-  const el=document.getElementById('vedic-col');
-  const pa=F.panchanga||{};
-  const tithiNum=pa.tithi?.number||pa.tithi_number||'';
-  const tithiName=p(F,'panchanga.tithi','—');
-  const yoga=p(F,'panchanga.yoga','');
-  const karana=p(F,'panchanga.karana','');
-  const vara=p(F,'panchanga.vara','');
-  const hora=p(F,'panchanga.hora','');
-  const rahu=pa.rahu_kala||pa.rahu_kalam||'';
-  const lord=p(TJ,'dasha_lord','')||p(TJ,'dasha.lord','Mercury');
-  const dEnd=TJ.dasha_end||TJ.dasha?.end_date||'Oct 2027';
-  const sub=TJ.sub_dasha||TJ.dasha?.sub||TJ.antardasha||'';
-  const pct=Math.min(100,Math.max(0,((Date.now()-dashaStart)/(dashaEnd-dashaStart))*100));
+// ════ CENTER — MANDALA + RINGS ═══════════════════
+function renderCenter(){
+  const el=document.getElementById('center-col');
+  const W=el.clientWidth,H=el.clientHeight;
+  const sz=Math.min(W,H);
+  const svg=makeSVG(sz,sz);
+  const cx=sz/2,cy=sz/2;
+  const mR=sz*0.16; // mandala half-size
 
-  let html='<div class="label">PANCHANGA</div><div class="divider"></div>';
-  html+='<div class="row"><span class="k">Tithi</span><span class="v" style="color:var(--gold)">'+(tithiNum?tithiNum+' · ':'')+tithiName+'</span></div>';
-  if(yoga)html+='<div class="row"><span class="k">Yoga</span><span class="v">'+yoga+'</span></div>';
-  if(karana)html+='<div class="row"><span class="k">Karana</span><span class="v">'+karana+'</span></div>';
-  if(vara)html+='<div class="row"><span class="k">Vara</span><span class="v">'+vara+'</span></div>';
-  if(hora)html+='<div class="row"><span class="k">Hora</span><span class="v">'+hora+'</span></div>';
-  html+='<div class="divider"></div><div class="label">DASHA</div>';
-  html+='<div style="font-family:Georgia,serif;font-size:13px;color:var(--gold);margin:3px 0">'+(typeof lord==='object'?lord.name||'Mercury':lord)+' daśā</div>';
-  html+='<div class="dim-text">ends '+(typeof dEnd==='object'?dEnd.name||'Oct 2027':dEnd)+'</div>';
-  html+='<div class="progress"><div class="progress-fill" style="width:'+pct.toFixed(1)+'%;background:var(--purple)"></div></div>';
-  if(sub)html+='<div class="sub">sub: '+(typeof sub==='object'?sub.name||'':sub)+'</div>';
-  html+='<div class="divider"></div><div class="label">RAHU KALA</div>';
-  if(rahu)html+='<div style="font-size:11px;color:var(--red);margin:3px 0">'+rahu+'</div>';
-  else html+='<div class="dim-text">—</div>';
-  el.innerHTML=html;
-}
+  // ── Mandala zones ──
+  const m=mR;
+  // outer square
+  svg.appendChild(svgEl('rect',{x:cx-m,y:cy-m,width:m*2,height:m*2,fill:'none',stroke:'#1a2840','stroke-width':0.8}));
+  // diagonals
+  addLine(svg,cx-m,cy-m,cx+m,cy+m,'#1a2840',0.3);
+  addLine(svg,cx+m,cy-m,cx-m,cy+m,'#1a2840',0.3);
+  // cardinals
+  addLine(svg,cx,cy-m,cx,cy+m,'#1a2840',0.3);
+  addLine(svg,cx-m,cy,cx+m,cy,'#1a2840',0.3);
+  // center square
+  const cR=m*0.35;
+  svg.appendChild(svgEl('rect',{x:cx-cR,y:cy-cR,width:cR*2,height:cR*2,fill:'#e0b040','fill-opacity':0.12,stroke:'#e0b040','stroke-width':0.6,'stroke-opacity':0.4}));
 
-// ════════════════════════════════════════════════
-// WESTERN TIME
-// ════════════════════════════════════════════════
-function renderWestern(){
-  const el=document.getElementById('western-col');
-  const sunSign=NAT.sun_sign||F.western?.sun_sign||'';
-  const sunDeg=NAT.sun_degree||F.western?.sun_degree||'';
-  const moonSign=NAT.moon_sign||F.western?.moon_sign||'';
-  const moonDeg=NAT.moon_degree||F.western?.moon_degree||'';
-  const sunIdx=zodiacNames.findIndex(z=>sunSign.toLowerCase().includes(z.toLowerCase()));
-  const moonIdx=zodiacNames.findIndex(z=>moonSign&&moonSign.toLowerCase().includes(z.toLowerCase()));
-
-  const cx=80,cy=80,r=65;
-  let svg='<svg width="160" height="160" viewBox="0 0 160 160">';
-  svg+='<circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="none" stroke="#1a2840" stroke-width="0.5"/>';
-  for(let i=0;i<12;i++){
-    const a1=(i/12)*Math.PI*2-Math.PI/2;
-    const a2=((i+1)/12)*Math.PI*2-Math.PI/2;
-    const am=(a1+a2)/2;
-    svg+='<line x1="'+(cx+(r-10)*Math.cos(a1)).toFixed(1)+'" y1="'+(cy+(r-10)*Math.sin(a1)).toFixed(1)+'" x2="'+(cx+r*Math.cos(a1)).toFixed(1)+'" y2="'+(cy+r*Math.sin(a1)).toFixed(1)+'" stroke="#1a2840" stroke-width="0.5"/>';
-    if(i===sunIdx){
-      const x1=cx+(r-10)*Math.cos(a1),y1=cy+(r-10)*Math.sin(a1);
-      const x2=cx+r*Math.cos(a1),y2=cy+r*Math.sin(a1);
-      const x3=cx+r*Math.cos(a2),y3=cy+r*Math.sin(a2);
-      const x4=cx+(r-10)*Math.cos(a2),y4=cy+(r-10)*Math.sin(a2);
-      svg+='<path d="M'+x1.toFixed(1)+','+y1.toFixed(1)+' L'+x2.toFixed(1)+','+y2.toFixed(1)+' A'+r+','+r+' 0 0,1 '+x3.toFixed(1)+','+y3.toFixed(1)+' L'+x4.toFixed(1)+','+y4.toFixed(1)+' A'+(r-10)+','+(r-10)+' 0 0,0 '+x1.toFixed(1)+','+y1.toFixed(1)+'" fill="#e0b040" fill-opacity="0.15"/>';
-    }
-    const gx=cx+(r-20)*Math.cos(am),gy=cy+(r-20)*Math.sin(am);
-    svg+='<text x="'+gx.toFixed(1)+'" y="'+(gy+3).toFixed(1)+'" text-anchor="middle" font-size="10" fill="#3a5060">'+zodiacGlyphs[i]+'</text>';
-  }
-  // Sun dot
-  if(sunIdx>=0){
-    const sa=((sunIdx+0.5)/12)*Math.PI*2-Math.PI/2;
-    svg+='<circle cx="'+(cx+r*Math.cos(sa)).toFixed(1)+'" cy="'+(cy+r*Math.sin(sa)).toFixed(1)+'" r="4" fill="#e8c86a"/>';
-  }
-  // Moon dot
-  if(moonIdx>=0){
-    const ma=((moonIdx+0.5)/12)*Math.PI*2-Math.PI/2;
-    svg+='<circle cx="'+(cx+r*Math.cos(ma)).toFixed(1)+'" cy="'+(cy+r*Math.sin(ma)).toFixed(1)+'" r="3" fill="#c8d8e8"/>';
-  }
-  svg+='</svg>';
-
-  el.innerHTML=svg
-    +(sunSign?'<div class="sub">Sun: '+sunSign+(sunDeg?' '+sunDeg+'°':'')+'</div>':'')
-    +(moonSign?'<div class="sub">Moon: '+moonSign+(moonDeg?' '+moonDeg+'°':'')+'</div>':'')
-    +'<div class="label" style="text-align:center">western</div>';
-}
-
-// ════════════════════════════════════════════════
-// TRANSITS
-// ════════════════════════════════════════════════
-function renderTransits(){
-  const el=document.getElementById('transits-col');
-  const hits=TR.hits||TR.transits||TR.aspects||[];
-  if(!Array.isArray(hits)||hits.length===0){el.innerHTML='<div class="dim-text">◌ no major transits</div>';return}
-  el.innerHTML=hits.slice(0,6).map(h=>{
-    const graha=h.graha||h.transit||h.planet||'';
-    const target=h.natal_point||h.natal||h.target||'';
-    const aspect=h.aspect||'';
-    const orb=h.orb!=null?h.orb+'°':'';
-    const q=(h.quality||h.nature||'').toLowerCase();
-    const cls=q.includes('favor')||q.includes('good')?'fav':q.includes('tense')||q.includes('hard')?'tense':'';
-    const gk=graha.toLowerCase();
-    const color=grahaColors[Object.keys(grahaColors).find(k=>gk.includes(k.toLowerCase()))]||'var(--muted)';
-    return '<div class="transit-row '+cls+'"><span style="color:'+color+'">●</span> '+graha+(target?' → '+target:'')+' <span class="dim-text">'+(aspect?aspect:'')+(orb?' '+orb:'')+'</span></div>';
-  }).join('');
-}
-
-// ════════════════════════════════════════════════
-// VASTU MANDALA
-// ════════════════════════════════════════════════
-function renderMandala(){
-  const el=document.getElementById('mandala-wrap');
-  const s=240,cx=s/2,cy=s/2,r=s/2-8,ir=r*0.35;
+  // Zone data
+  const nak=F.panchanga?.nakshatra||'—';
+  const anchor=typeof G.anchor==='string'?G.anchor:(G.anchor?.name||'');
+  const golP=K.ashtakala_period?.name||'';
+  const cohS=Math.round((COH.coherence_top||COH.score||0)*100)||0;
+  const daL=F.dasha?.lord||F.dasha?.mahadasha||'Mercury';
+  const ragaN=F.sound_state?.raga||p(SND,'raga','')||'';
+  const trCount=(TR.hits||TR.transits||TR.aspects||[]).length;
+  const resS=computeResonance();
   const zones=[
-    {id:'C',x:cx,y:cy,label:'Brahmā',color:'#e0b040',link:'/s1',data:()=>p(F,'panchanga.nakshatra','')},
-    {id:'N',x:cx,y:cy-r*0.55,label:'Kubera',color:'#2858b8',link:'/s5',data:()=>{const a=G.anchor||G.anchor_plant||G.plant||{};return typeof a==='string'?a:(a.name||a.common_name||'')}},
-    {id:'NE',x:cx+r*0.45,y:cy-r*0.45,label:'Īśāna',color:'#8070dd',link:'/s0',data:()=>(K.ashtakala_period?.name||p(K,'ashtakala','')||p(K,'period',''))},
-    {id:'E',x:cx+r*0.55,y:cy,label:'Indra',color:'#e8c86a',link:'/s1',data:()=>{const s=computeResonance();return s+'%'}},
-    {id:'SE',x:cx+r*0.45,y:cy+r*0.45,label:'Agni',color:'#c84040',link:'/coherence-score',data:()=>{let s=COH.coherence_score||COH.score||COH.coherence||0;if(typeof s==='number'&&s<=1)s=s*100;return Math.round(s)+'%'}},
-    {id:'S',x:cx,y:cy+r*0.55,label:'Yama',color:'#508860',link:'/s6',data:()=>{const l=p(TJ,'dasha_lord','')||p(TJ,'dasha.lord','Mercury');return(typeof l==='object'?l.name||'':l)}},
-    {id:'SW',x:cx-r*0.45,y:cy+r*0.45,label:'Nirṛti',color:'#4b0082',link:'/research/files',data:()=>''},
-    {id:'W',x:cx-r*0.55,y:cy,label:'Varuṇa',color:'#285898',link:'/s2',data:()=>{const rg=SND.raga||SND.raga_name||'';return typeof rg==='object'?(rg.name||''):rg}},
-    {id:'NW',x:cx-r*0.45,y:cy-r*0.45,label:'Vāyu',color:'#2878a8',link:'/transits',data:()=>{const h=TR.hits||TR.transits||TR.aspects||[];return h.length?h.length+' active':''}}
+    {id:'C',x:cx,y:cy,col:'#e0b040',val:nak,deity:'Brahmā',link:'/s1'},
+    {id:'N',x:cx,y:cy-m*0.6,col:'#2858b8',val:anchor,deity:'Kubera',link:'/s5'},
+    {id:'NE',x:cx+m*0.55,y:cy-m*0.55,col:'#8070dd',val:golP,deity:'Īśāna',link:'/s0'},
+    {id:'E',x:cx+m*0.6,y:cy,col:'#e8c870',val:resS+'%',deity:'Indra',link:'/s1'},
+    {id:'SE',x:cx+m*0.55,y:cy+m*0.55,col:'#c84040',val:cohS+'%',deity:'Agni',link:'/coherence-score'},
+    {id:'S',x:cx,y:cy+m*0.6,col:'#508860',val:daL,deity:'Yama',link:'/s6'},
+    {id:'SW',x:cx-m*0.55,y:cy+m*0.55,col:'#4b0082',val:'',deity:'Nirṛti',link:'/research/files'},
+    {id:'W',x:cx-m*0.6,y:cy,col:'#285898',val:ragaN,deity:'Varuṇa',link:'/s2'},
+    {id:'NW',x:cx-m*0.55,y:cy-m*0.55,col:'#2878a8',val:trCount?trCount+' active':'',deity:'Vāyu',link:'/transits'}
   ];
-
-  let svg='<svg width="'+s+'" height="'+s+'" viewBox="0 0 '+s+' '+s+'">';
-  // Outer square
-  const m=8;
-  svg+='<rect x="'+m+'" y="'+m+'" width="'+(s-m*2)+'" height="'+(s-m*2)+'" fill="none" stroke="#1a2840" stroke-width="0.8"/>';
-  // Inner rotated square
-  const d=r*0.7;
-  svg+='<polygon points="'+cx+','+(cy-d)+' '+(cx+d)+','+cy+' '+cx+','+(cy+d)+' '+(cx-d)+','+cy+'" fill="none" stroke="#1a2840" stroke-width="0.5"/>';
-  // Cardinal lines
-  svg+='<line x1="'+m+'" y1="'+cy+'" x2="'+(s-m)+'" y2="'+cy+'" stroke="#1a2840" stroke-width="0.3"/>';
-  svg+='<line x1="'+cx+'" y1="'+m+'" x2="'+cx+'" y2="'+(s-m)+'" stroke="#1a2840" stroke-width="0.3"/>';
-  // Center square
-  svg+='<rect x="'+(cx-ir)+'" y="'+(cy-ir)+'" width="'+(ir*2)+'" height="'+(ir*2)+'" fill="#e0b040" fill-opacity="0.12" stroke="#e0b040" stroke-width="0.6" stroke-opacity="0.4"/>';
-
-  // Zone fills + labels
   zones.forEach(z=>{
-    const zr=z.id==='C'?ir*1.2:24;
-    const opacity=z.id==='C'?0.18:0.12;
-    svg+='<g class="zone-link" onclick="location.href=\''+z.link+'\'" style="cursor:pointer">';
-    svg+='<circle class="zone-fill" cx="'+z.x.toFixed(1)+'" cy="'+z.y.toFixed(1)+'" r="'+zr+'" fill="'+z.color+'" fill-opacity="'+opacity+'" stroke="'+z.color+'" stroke-width="0.6" stroke-opacity="0.3"/>';
+    const zr=z.id==='C'?cR:14;
+    const op=z.id==='C'?0.18:0.12;
+    const g=svgEl('g',{style:'cursor:pointer'});
+    g.addEventListener('click',()=>location.href=z.link);
+    const c=svgEl('circle',{cx:z.x.toFixed(1),cy:z.y.toFixed(1),r:zr,fill:z.col,'fill-opacity':op,stroke:z.col,'stroke-width':0.6,'stroke-opacity':0.3});
+    c.addEventListener('mouseenter',()=>c.setAttribute('fill-opacity',0.3));
+    c.addEventListener('mouseleave',()=>c.setAttribute('fill-opacity',op));
+    g.appendChild(c);
     if(z.id==='C'){
-      svg+='<text x="'+z.x+'" y="'+(z.y-12)+'" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#e0b040">✦</text>';
-      const cd=z.data();
-      svg+='<text x="'+z.x+'" y="'+(z.y+6)+'" text-anchor="middle" font-family="Courier New" font-size="9" fill="#c8d8e8">'+cd+'</text>';
+      addText(g,'✦',cx,cy-6,{size:18,color:'#e0b040',font:'Georgia,serif'});
+      addText(g,nak,cx,cy+10,{size:9,color:'#e0b040',font:'Georgia,serif'});
     }else{
-      svg+='<text x="'+z.x.toFixed(1)+'" y="'+(z.y-6).toFixed(1)+'" text-anchor="middle" font-size="10" fill="#3a5060">'+z.id+'</text>';
-      svg+='<text x="'+z.x.toFixed(1)+'" y="'+(z.y+5).toFixed(1)+'" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="#6a8a9a">'+z.label+'</text>';
-      const dd=z.data();
-      if(dd)svg+='<text x="'+z.x.toFixed(1)+'" y="'+(z.y+16).toFixed(1)+'" text-anchor="middle" font-size="9" fill="#3a5060">'+dd+'</text>';
+      addText(g,z.id,z.x,z.y-5,{size:7,color:'#3a5060'});
+      addText(g,z.deity,z.x,z.y+4,{size:8,color:'#6a8a9a',font:'Georgia,serif'});
+      if(z.val)addText(g,z.val,z.x,z.y+13,{size:7,color:'#c8d8e8'});
     }
-    svg+='</g>';
+    svg.appendChild(g);
   });
-  svg+='</svg>';
-  el.innerHTML=svg;
-}
 
-// ════════════════════════════════════════════════
-// LEFT PANEL — Coherence + Resonance + Strength
-// ════════════════════════════════════════════════
-function donutSVG(pct,color,sz){
-  sz=sz||70;const r=sz/2-8,cx=sz/2,cy=sz/2,sw=7;
-  const circ=2*Math.PI*r;const dash=circ*(pct/100);
-  return '<svg width="'+sz+'" height="'+sz+'" viewBox="0 0 '+sz+' '+sz+'">'
-    +'<circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="none" stroke="#1a2840" stroke-width="'+sw+'"/>'
-    +'<circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="none" stroke="'+color+'" stroke-width="'+sw+'" stroke-dasharray="'+dash.toFixed(1)+' '+circ.toFixed(1)+'" stroke-linecap="round" transform="rotate(-90 '+cx+' '+cy+')"/>'
-    +'<text x="'+cx+'" y="'+(cy+5)+'" text-anchor="middle" font-family="Georgia,serif" font-size="14" fill="'+color+'">'+Math.round(pct)+'</text>'
-    +'</svg>';
+  // ── Rings ──
+  const rNak=RINGS.nakshatra,rDevi=RINGS.devi,rGraha=RINGS.graha,rAg=RINGS.agricultural;
+  drawRing(svg,rNak,cx,cy,mR*1.5,{nodeSize:2.5,showLabels:true,showCursor:true});
+  drawRing(svg,rDevi,cx,cy,mR*1.85,{nodeSize:2,showLabels:true,showCursor:true});
+  drawRing(svg,rGraha,cx,cy,mR*2.2,{nodeSize:3,showLabels:true,showCursor:true});
+  drawRing(svg,rAg,cx,cy,mR*2.55,{nodeSize:2,showLabels:false,showCursor:false});
+
+  el.innerHTML='';
+  el.appendChild(svg);
 }
 
 function computeResonance(){
-  const todayNak=p(F,'panchanga.nakshatra','').toLowerCase();
-  const vara=p(F,'panchanga.vara','');
-  let score=50;
-  if(todayNak.includes('rohini'))score+=25;
-  else if(todayNak.includes('mriga')||todayNak.includes('hasta'))score+=10;
-  const varaLords={Sunday:'Sun',Monday:'Moon',Tuesday:'Mars',Wednesday:'Mercury',Thursday:'Jupiter',Friday:'Venus',Saturday:'Saturn'};
-  const vl=varaLords[vara]||'';
-  if(vl==='Venus')score+=15;
-  else if(['Mercury','Saturn'].includes(vl))score+=5;
-  else if(['Sun','Moon'].includes(vl))score-=5;
-  const hora=p(F,'panchanga.hora','');
-  if(hora&&(hora.includes('Mercur')||hora.includes('Budha')))score+=10;
-  return Math.max(0,Math.min(100,score));
+  const nak=(F.panchanga?.nakshatra||'').toLowerCase();
+  const vara=F.panchanga?.vara||'';
+  let s=50;
+  if(nak.includes('rohiṇī')||nak.includes('rohini'))s+=25;
+  else if(nak.includes('mṛga')||nak.includes('hasta'))s+=10;
+  const vl={Sunday:'Sun',Monday:'Moon',Tuesday:'Mars',Wednesday:'Mercury',Thursday:'Jupiter',Friday:'Venus',Saturday:'Saturn'};
+  const v=vl[Object.keys(vl).find(k=>vara.includes(k))]||'';
+  if(v==='Venus')s+=15;else if(['Mercury','Saturn'].includes(v))s+=5;
+  const hora=F.hora?.hora_lord||'';
+  if(hora.includes('Mercury')||hora.includes('Budha'))s+=10;
+  return Math.max(0,Math.min(100,s));
 }
 
-function renderLeftPanel(){
-  const el=document.getElementById('left-panel');
-  let coh=COH.coherence_score||COH.score||COH.coherence||0;
-  if(typeof coh==='number'&&coh<=1)coh=coh*100;
-  coh=Math.max(0,Math.min(100,coh));
-  const cohColor=coh<34?'#c84040':coh<67?'#e0b040':'#3a8a4a';
-  const res=computeResonance();
-  const combined=Math.round((coh+res)/2);
+// ════ RIGHT PANEL ════════════════════════════════
+function renderRight(){
+  const el=document.getElementById('right');
+  const hits=TR.hits||TR.transits||TR.aspects||[];
+  const gc={Sun:'#e8c86a',Moon:'#c8d8e8',Mars:'#c84040',Mercury:'#20a88a',Jupiter:'#c8a050',Venus:'#e8a0c0',Saturn:'#8090a8',Rahu:'#8070dd',Ketu:'#806040'};
 
-  let html='<div class="label">COHERENCE</div>';
-  html+='<div class="donut-wrap">'+donutSVG(coh,cohColor)+'</div>';
-  html+='<div class="donut-label">coherence</div>';
-  html+='<div class="divider"></div>';
-  html+='<div class="label">NATAL RESONANCE</div>';
-  html+='<div class="donut-wrap">'+donutSVG(res,'#8070dd')+'</div>';
-  html+='<div class="donut-label">resonance</div>';
-  html+='<div class="divider"></div>';
-  html+='<div class="label">FIELD STRENGTH</div>';
-  html+='<div style="width:100%;height:10px;background:#1a2840;border-radius:2px;margin:4px 0"><div style="width:'+combined+'%;height:100%;background:linear-gradient(90deg,#3a5060,#e0b040);border-radius:2px"></div></div>';
-  el.innerHTML=html;
-}
+  let h='<div class="hdr">TRANSITS</div>';
+  if(Array.isArray(hits)&&hits.length){
+    h+=hits.slice(0,6).map(t=>{
+      const g=t.graha||t.transit||t.planet||'';
+      const tgt=t.natal_point||t.natal||t.target||'';
+      const asp=t.aspect||'';const orb=t.orb!=null?t.orb+'°':'';
+      const q=(t.quality||t.nature||'').toLowerCase();
+      const cls=q.includes('favor')||q.includes('good')?'fav':q.includes('tense')||q.includes('hard')?'tense':'';
+      const col=gc[Object.keys(gc).find(k=>g.toLowerCase().includes(k.toLowerCase()))]||'var(--muted)';
+      return `<div class="transit-row ${cls}"><span style="color:${col}">●</span> ${g}${tgt?' → '+tgt:''} <span style="color:var(--muted);font-size:9px">${asp}${orb?' '+orb:''}</span></div>`;
+    }).join('');
+  }else h+='<div style="color:var(--dim)">◌ no major transits</div>';
 
-// ════════════════════════════════════════════════
-// RIGHT PANEL — Goloka + Guild + Intention
-// ════════════════════════════════════════════════
-function renderRightPanel(){
-  const el=document.getElementById('right-panel');
-  // Goloka — actual paths: ashtakala_period.name, active_sakhis[], active_forest.name
-  const ap=K.ashtakala_period||{};
-  const ashta=ap.name||p(K,'ashtakala','')||p(K,'period','');
-  const sakhi=ap.presiding_sakhi||(K.active_sakhis||[])[0]||p(K,'sakhi','');
-  const seva=ap.mood||ap.primary_seva||K.seva||K.description||'';
-  const forest=K.active_forest?.name||K.active_forest?.sanskrit||'';
-  const raga=ap.raga||'';
-  // Guild — actual paths: anchor (string), recommended_activity, timing_quality, moon_phase
-  const anchor=G.anchor||G.anchor_plant||G.plant||{};
-  const aName=typeof anchor==='string'?anchor:(anchor.name||anchor.common_name||'—');
-  const sanskrit=G.anchor_sanskrit||'';
-  const guildFn=G.guild_function||'';
-  const phase=G.moon_phase||G.phase||'';
-  const activity=G.recommended_activity||G.activity||G.recommendation||'';
-  const timing=G.timing_quality||'';
-  // Intention — actual paths: intention_id, score (minimal endpoint)
-  const rec=INT.recommendation||INT.current||INT.suggestion||INT.intention_id||'';
+  // Sound
+  const ss=F.sound_state||SND||{};
+  const raga=ss.raga||p(SND,'raga','')||'';
+  const tala=ss.tala||p(SND,'tala','')||'';
+  const bpm=ss.bpm||p(SND,'bpm','')||'';
+  const bija=ss.bija||p(SND,'bija','')||'';
+  const shrutis=ss.shruti_ratios||SND.shrutis||SND.active_shrutis||[];
+  h+='<div class="sep"></div><div class="hdr">SOUND</div>';
+  if(raga)h+=`<div class="g" style="font-size:14px;color:var(--gold)">${raga}</div>`;
+  if(tala||bpm)h+=`<div style="color:var(--teal)">${tala}${bpm?' · '+bpm+'bpm':''}</div>`;
+  h+='<div class="shruti-row">';
+  for(let i=0;i<22;i++){
+    const on=Array.isArray(shrutis)&&shrutis.length===22?shrutis[i]:false;
+    h+=`<div class="shruti-d${on?' on':''}"></div>`;
+  }
+  h+='</div>';
+  if(bija)h+=`<div class="g" style="font-size:14px;color:var(--teal)">${bija}</div>`;
+
+  // Guild
+  h+='<div class="sep"></div><div class="hdr">GUILD</div>';
+  const anch=typeof G.anchor==='string'?G.anchor:(G.anchor?.name||'—');
+  const gfn=G.guild_function||'';
+  const phase=(G.moon_phase||'').replace(/_/g,' ');
+  const activity=G.recommended_activity||'';
+  h+=`<div class="g" style="font-size:12px;color:var(--gold)">${anch}</div>`;
+  if(gfn)h+=`<div style="color:var(--muted)">${gfn}</div>`;
+  if(phase||activity)h+=`<div style="color:var(--muted);font-size:9px">${phase}${phase&&activity?' · ':''}${activity}</div>`;
+
+  // Intention
+  h+='<div class="sep"></div><div class="hdr">INTENTION</div>';
+  const rec=INT.recommendation||INT.current||INT.suggestion||'';
+  const iid=(INT.intention_id||'').replace(/_/g,' ');
   const win=INT.favorable_window||INT.window||INT.time||'';
-  const intScore=INT.score!=null?INT.score:'';
+  if(rec)h+=`<div style="line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">${rec}</div>`;
+  else if(iid)h+=`<div style="color:var(--muted)">${iid}</div>`;
+  if(win)h+=`<div style="color:var(--muted);font-size:9px">${win}</div>`;
 
-  let html='<div class="label">GOLOKA</div>';
-  if(ashta)html+='<div style="font-family:Georgia,serif;font-size:12px;color:var(--teal)">'+ashta+'</div>';
-  if(sakhi)html+='<div class="sub">'+sakhi+'</div>';
-  if(seva)html+='<div class="dim-text" style="line-height:1.4">'+seva+'</div>';
-  if(forest)html+='<div class="dim-text" style="font-style:italic">'+forest+'</div>';
-  if(raga)html+='<div class="dim-text" style="color:var(--teal)">'+raga+'</div>';
-  html+='<div class="divider"></div>';
-  html+='<div class="label">GUILD</div>';
-  html+='<div style="font-family:Georgia,serif;font-size:12px;color:var(--gold)">'+aName+'</div>';
-  if(sanskrit)html+='<div class="dim-text" style="font-style:italic">'+sanskrit+'</div>';
-  if(guildFn)html+='<div class="sub">'+guildFn+'</div>';
-  if(phase||activity)html+='<div class="dim-text">'+(phase?phase.replace(/_/g,' '):'')+(phase&&activity?' · ':'')+(activity||'')+'</div>';
-  if(timing)html+='<div class="dim-text">'+timing+'</div>';
-  html+='<div class="divider"></div>';
-  html+='<div class="label">INTENTION</div>';
-  if(rec)html+='<div style="font-size:10px;color:var(--text);line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">'+rec+'</div>';
-  else if(intScore)html+='<div class="sub">score: '+intScore+'</div>';
-  if(win)html+='<div class="dim-text">'+win+'</div>';
-  if(!rec&&!win&&!intScore)html+='<div class="dim-text">◌</div>';
-  el.innerHTML=html;
+  // System
+  h+='<div class="sep"></div><div class="hdr">SYSTEM</div>';
+  const audioOn=AUD.tanpura_active||AUD.tanpura||AUD.playing||false;
+  h+=`<div style="font-size:9px"><span style="color:var(--teal)">●</span> kernel :5000</div>`;
+  h+=`<div style="font-size:9px"><span style="color:${audioOn?'var(--teal)':'var(--amber)'}">●</span> audio om.py</div>`;
+  h+=`<div style="font-size:9px"><span style="color:var(--dim)">●</span> NPU</div>`;
+  h+=`<div style="font-size:9px"><span style="color:var(--dim)">●</span> iGPU</div>`;
+  el.innerHTML=h;
 }
 
-// ════════════════════════════════════════════════
-// WHEELS — Dosha, Guna, Element, Hora, Rahu
-// ════════════════════════════════════════════════
-function triangleSVG(labels,colors,balancePoint,w,h){
-  w=w||120;h=h||100;
-  const pts=[[w/2,8],[w-8,h-8],[8,h-8]];
-  let svg='<svg width="'+w+'" height="'+h+'" viewBox="0 0 '+w+' '+h+'">';
-  svg+='<polygon points="'+pts.map(p=>p.join(',')).join(' ')+'" fill="none" stroke="#1a2840" stroke-width="0.8"/>';
-  // Fill with dominant color
-  const domIdx=balancePoint.indexOf(Math.max(...balancePoint));
-  svg+='<polygon points="'+pts.map(p=>p.join(',')).join(' ')+'" fill="'+colors[domIdx]+'" fill-opacity="0.1"/>';
-  // Balance dot
-  const bx=pts[0][0]*balancePoint[0]+pts[1][0]*balancePoint[1]+pts[2][0]*balancePoint[2];
-  const by=pts[0][1]*balancePoint[0]+pts[1][1]*balancePoint[1]+pts[2][1]*balancePoint[2];
-  svg+='<circle cx="'+bx.toFixed(1)+'" cy="'+by.toFixed(1)+'" r="4" fill="#c8d8e8"/>';
-  // Labels
+// ════ WHEELS ═════════════════════════════════════
+function triSVG(parent,labels,colors,balance,dom){
+  const w=parent.clientWidth-16||120,h=100;
+  const svg=makeSVG(w,h);
+  const pts=[[w/2,6],[w-6,h-6],[6,h-6]];
+  svg.appendChild(svgEl('polygon',{points:pts.map(p=>p.join(',')).join(' '),fill:'none',stroke:'#1a2840','stroke-width':0.5}));
+  const dIdx=balance.indexOf(Math.max(...balance));
+  svg.appendChild(svgEl('polygon',{points:pts.map(p=>p.join(',')).join(' '),fill:colors[dIdx],'fill-opacity':0.1}));
+  const bx=pts[0][0]*balance[0]+pts[1][0]*balance[1]+pts[2][0]*balance[2];
+  const by=pts[0][1]*balance[0]+pts[1][1]*balance[1]+pts[2][1]*balance[2];
+  addCirc(svg,bx.toFixed(1),by.toFixed(1),4,'#c8d8e8',1);
   labels.forEach((l,i)=>{
-    const lx=pts[i][0]+(i===0?0:i===1?8:-8);
-    const ly=pts[i][1]+(i===0?-2:12);
-    svg+='<text x="'+lx+'" y="'+ly+'" text-anchor="'+(i===0?'middle':i===1?'start':'end')+'" font-size="10" fill="'+colors[i]+'">'+l+'</text>';
+    const lx=pts[i][0]+(i===0?0:i===1?6:-6);
+    const ly=pts[i][1]+(i===0?-1:11);
+    addText(svg,l,lx,ly,{size:9,color:colors[i],anchor:i===0?'middle':i===1?'start':'end'});
   });
-  svg+='</svg>';
-  return svg;
+  parent.appendChild(svg);
+  const d=document.createElement('div');
+  d.style.cssText=`font-size:10px;color:${colors[dIdx]};margin-top:2px`;
+  d.textContent=dom;
+  parent.appendChild(d);
 }
 
 function renderDosha(){
-  const el=document.getElementById('dosha-col');
-  const element=p(F,'field.element','').toLowerCase();
-  let v=0.33,pi=0.33,k=0.34;
-  if(element.includes('air')||element.includes('ether'))v=0.5;
-  else if(element.includes('fire'))pi=0.5;
-  else if(element.includes('water')||element.includes('earth'))k=0.5;
+  const el=document.getElementById('w-dosha');
+  const element=(F.panchanga?.element||'').toLowerCase();
+  let v=.33,pi=.33,k=.34;
+  if(element.includes('air')||element.includes('ether'))v=.5;
+  else if(element.includes('fire'))pi=.5;
+  else if(element.includes('water')||element.includes('earth'))k=.5;
   const t=v+pi+k;v/=t;pi/=t;k/=t;
   const dom=v>=pi&&v>=k?'Vata':pi>=v&&pi>=k?'Pitta':'Kapha';
-  const domColor=dom==='Vata'?'#8070dd':dom==='Pitta'?'#c84040':'#285898';
-  el.innerHTML=triangleSVG(['Vata','Pitta','Kapha'],['#8070dd','#c84040','#285898'],[v,pi,k])
-    +'<div style="font-size:11px;color:'+domColor+';margin-top:2px">'+dom+'</div>';
+  triSVG(el,['Vata','Pitta','Kapha'],['#8070dd','#c84040','#2858b8'],[v,pi,k],dom);
 }
 
 function renderGuna(){
-  const el=document.getElementById('guna-col');
-  const guna=p(F,'field.guna','').toLowerCase();
-  let s=0.33,r=0.33,t=0.34;
-  if(guna.includes('sattva'))s=0.55;
-  else if(guna.includes('rajas'))r=0.55;
-  else if(guna.includes('tamas'))t=0.55;
-  const total=s+r+t;s/=total;r/=total;t/=total;
+  const el=document.getElementById('w-guna');
+  const guna=(F.panchanga?.guna||'').toLowerCase();
+  let s=.33,r=.33,t=.34;
+  if(guna.includes('sattva'))s=.55;else if(guna.includes('rajas'))r=.55;else if(guna.includes('tamas'))t=.55;
+  const tot=s+r+t;s/=tot;r/=tot;t/=tot;
   const dom=s>=r&&s>=t?'Sattva':r>=s&&r>=t?'Rajas':'Tamas';
-  const domColor=dom==='Sattva'?'#e0b040':dom==='Rajas'?'#c84040':'#3a5060';
-  el.innerHTML=triangleSVG(['Sattva','Rajas','Tamas'],['#e0b040','#c84040','#3a5060'],[s,r,t])
-    +'<div style="font-size:11px;color:'+domColor+';margin-top:2px">'+dom+'</div>';
+  triSVG(el,['Sattva','Rajas','Tamas'],['#e0b040','#c84040','#3a5060'],[s,r,t],dom);
 }
 
 function renderElement(){
-  const el=document.getElementById('element-col');
-  const current=p(F,'field.element','').toLowerCase();
-  const elems=[{n:'Ether',c:'#8070dd',a:-Math.PI/2},{n:'Air',c:'#20a88a',a:-Math.PI/2+2*Math.PI/5},{n:'Fire',c:'#c84040',a:-Math.PI/2+4*Math.PI/5},{n:'Earth',c:'#c87820',a:-Math.PI/2+6*Math.PI/5},{n:'Water',c:'#285898',a:-Math.PI/2+8*Math.PI/5}];
-  const w=120,h=110,cx=w/2,cy=h/2+4,r=40;
-  let svg='<svg width="'+w+'" height="'+h+'" viewBox="0 0 '+w+' '+h+'">';
-  // Pentagon + connections
+  const el=document.getElementById('w-elem');
+  const cur=(F.panchanga?.element||'').toLowerCase();
+  const elems=[{n:'Ether',c:'#8070dd',a:-Math.PI/2},{n:'Air',c:'#20a88a',a:-Math.PI/2+2*Math.PI/5},{n:'Fire',c:'#c84040',a:-Math.PI/2+4*Math.PI/5},{n:'Earth',c:'#c87820',a:-Math.PI/2+6*Math.PI/5},{n:'Water',c:'#2858b8',a:-Math.PI/2+8*Math.PI/5}];
+  const w=el.clientWidth-16||120,h=100;
+  const svg=makeSVG(w,h);
+  const cx=w/2,cy=h/2+2,r=36;
   const pts=elems.map(e=>({x:cx+r*Math.cos(e.a),y:cy+r*Math.sin(e.a)}));
-  svg+='<polygon points="'+pts.map(p=>p.x.toFixed(1)+','+p.y.toFixed(1)).join(' ')+'" fill="none" stroke="#1a2840" stroke-width="0.8"/>';
-  // Connections
-  for(let i=0;i<5;i++){
-    const j=(i+2)%5;
-    const active=current.includes(elems[i].n.toLowerCase())||current.includes(elems[j].n.toLowerCase());
-    svg+='<line x1="'+pts[i].x.toFixed(1)+'" y1="'+pts[i].y.toFixed(1)+'" x2="'+pts[j].x.toFixed(1)+'" y2="'+pts[j].y.toFixed(1)+'" stroke="'+(active?'#e0b040':'#1a2840')+'" stroke-width="0.3"/>';
-  }
-  // Vertices
+  svg.appendChild(svgEl('polygon',{points:pts.map(p=>p.x.toFixed(1)+','+p.y.toFixed(1)).join(' '),fill:'none',stroke:'#1a2840','stroke-width':0.5}));
   elems.forEach((e,i)=>{
-    const isCurrent=current.includes(e.n.toLowerCase());
-    svg+='<circle cx="'+pts[i].x.toFixed(1)+'" cy="'+pts[i].y.toFixed(1)+'" r="'+(isCurrent?6:3)+'" fill="'+e.c+'" fill-opacity="'+(isCurrent?0.8:0.3)+'"/>';
-    const lx=cx+(r+14)*Math.cos(e.a),ly=cy+(r+14)*Math.sin(e.a);
-    svg+='<text x="'+lx.toFixed(1)+'" y="'+(ly+3).toFixed(1)+'" text-anchor="middle" font-size="9" fill="'+(isCurrent?e.c:'#3a5060')+'">'+e.n+'</text>';
+    const is=cur.includes(e.n.toLowerCase());
+    addCirc(svg,pts[i].x.toFixed(1),pts[i].y.toFixed(1),is?5:2.5,e.c,is?0.9:0.3);
+    const lx=cx+(r+12)*Math.cos(e.a),ly=cy+(r+12)*Math.sin(e.a);
+    addText(svg,e.n,lx.toFixed(1),(ly+3).toFixed(1),{size:8,color:is?e.c:'#3a5060'});
   });
-  svg+='<text x="'+cx+'" y="'+(cy+4)+'" text-anchor="middle" font-family="Georgia,serif" font-size="10" fill="var(--text)">'+(current||'◌')+'</text>';
-  svg+='</svg>';
-  el.innerHTML=svg;
+  addText(svg,cur||'◌',cx,cy+3,{size:10,color:'var(--text)',font:'Georgia,serif'});
+  el.appendChild(svg);
 }
 
 function renderHora(){
-  const el=document.getElementById('hora-col');
-  const currentHora=p(F,'panchanga.hora','');
-  const horaLord=typeof currentHora==='object'?(currentHora.lord||currentHora.name||''):currentHora;
-  const now=new Date();
-  const ch=now.getHours();
-  // Simplified 24-hora cycle
-  let html='<div class="hora-bar">';
-  for(let h=0;h<24;h++){
-    const lord=horaOrder[h%7];
-    const color=grahaColors[lord]||'#3a5060';
-    const active=h===ch;
-    html+='<div class="hora-seg'+(active?' active':'')+'" style="background:'+color+'" title="'+lord+'"></div>';
-  }
-  html+='</div>';
-  html+='<div style="font-size:11px;color:'+(grahaColors[horaLord]||'var(--text)')+';margin-top:4px">'+(horaLord||'—')+'</div>';
-  html+='<div class="dim-text">current hora</div>';
-  el.innerHTML=html;
-}
-
-function renderRahu(){
-  const el=document.getElementById('rahu-col');
-  const pa=F.panchanga||{};
-  const rahu=pa.rahu_kala||pa.rahu_kalam||'';
-  const vara=p(F,'panchanga.vara','');
-  const now=new Date();
-  const ch=now.getHours()+now.getMinutes()/60;
-  // Parse rahu kala time range
-  let rs=0,re=0,isActive=false;
-  if(rahu){
-    const m=rahu.match(/(\d{1,2}):?(\d{2})?\s*[-–]\s*(\d{1,2}):?(\d{2})?/);
-    if(m){rs=parseInt(m[1])+(parseInt(m[2]||0)/60);re=parseInt(m[3])+(parseInt(m[4]||0)/60);isActive=ch>=rs&&ch<re}
-  }
-  // Day bar 6am-6pm
-  const ds=6,de=18,dur=de-ds;
-  const barW=100;
-  const rsP=Math.max(0,(rs-ds)/dur*barW);
-  const reP=Math.min(barW,(re-ds)/dur*barW);
-  const nowP=Math.max(0,Math.min(barW,(ch-ds)/dur*barW));
-
-  let html='<div class="rahu-bar"><div class="rahu-fill" style="left:'+rsP+'%;width:'+(reP-rsP)+'%"></div><div class="rahu-now" style="left:'+nowP+'%"></div></div>';
-  if(isActive)html+='<div style="font-size:11px;color:var(--red);animation:pulse 2s infinite">RAHU KALA ACTIVE</div>';
-  else html+='<div class="sub">'+(rahu?'clear':'—')+'</div>';
-  html+='<div style="font-size:10px;margin-top:2px">'+rahu+'</div>';
-  if(vara)html+='<div class="dim-text">'+vara+'</div>';
-  el.innerHTML=html;
-}
-
-// ════════════════════════════════════════════════
-// PRACTICE — Pranayama, Asana, Plant, Intention
-// ════════════════════════════════════════════════
-function renderPranayama(){
-  const el=document.getElementById('prana-col');
-  const vara=p(F,'panchanga.vara','');
-  const nak=p(F,'panchanga.nakshatra','');
+  const el=document.getElementById('w-hora');
+  const horaLord=F.hora?.hora_lord||'';
   const ch=new Date().getHours();
-  // Derive swara from time of day (simplified: left nostril evening, right morning)
-  const isIda=ch>=17||ch<5;
-  const swaraName=isIda?'Ida · Chandra':'Pingala · Sūrya';
-  const swaraColor=isIda?'#285898':'#e8c86a';
-  const swaraSymbol=isIda?'☽':'☉';
-  const swaraDesc=isIda?'cooling · receptive':'heating · active';
-  // Derive practice
-  const practices={morning:{name:'Kapālabhāti',eng:'Skull-shining breath',dur:15},midday:{name:'Nāḍī Śodhana',eng:'Alternate nostril',dur:10},evening:{name:'Bhrāmarī',eng:'Bee breath',dur:10},night:{name:'Śītalī',eng:'Cooling breath',dur:10}};
-  const period=ch<10?'morning':ch<14?'midday':ch<19?'evening':'night';
-  const pr=practices[period];
+  const gc={Sun:'#e8c86a',Moon:'#c8d8e8',Mars:'#c84040',Mercury:'#20a88a',Jupiter:'#c8a050',Venus:'#e8a0c0',Saturn:'#8090a8'};
+  const order=['Sun','Moon','Mars','Mercury','Jupiter','Venus','Saturn'];
+  let h='<div style="display:flex;height:24px;margin-top:4px">';
+  for(let i=0;i<24;i++){
+    const lord=order[i%7];const col=gc[lord]||'#3a5060';
+    const active=i===ch;
+    h+=`<div style="flex:1;background:${col};opacity:${active?1:0.5}${active?';border-top:2px solid var(--gold)':''}" title="${lord}"></div>`;
+  }
+  h+='</div>';
+  h+=`<div style="font-size:10px;color:${gc[horaLord]||'var(--text)'};margin-top:3px">${horaLord||'—'}</div>`;
+  h+='<div style="color:var(--dim);font-size:9px">current hora</div>';
+  el.insertAdjacentHTML('beforeend',h);
+}
 
-  el.innerHTML='<div style="font-size:16px;color:'+swaraColor+';margin-bottom:4px">'+swaraSymbol+'</div>'
-    +'<div class="sub">'+swaraName+'</div>'
-    +'<div class="dim-text">'+swaraDesc+'</div>'
-    +'<div class="divider"></div>'
-    +'<div class="practice-name">'+pr.name+'</div>'
-    +'<div class="practice-eng">'+pr.eng+'</div>'
-    +'<div class="practice-dim">'+pr.dur+' minutes · '+period+'</div>';
+function renderMoonWave(){
+  const el=document.getElementById('w-moon');
+  const tidx=F.panchanga?.tidx||15;
+  const tithiNum=((tidx-1)%30)+1;
+  const w=el.clientWidth-16||160,h=70;
+  const svg=makeSVG(w,h);
+  const cy=h/2;
+  addLine(svg,0,cy,w,cy,'#1a2840',0.3);
+  let pts=[];
+  for(let d=1;d<=30;d++){
+    const x=((d-1)/29)*w;
+    const y=cy-Math.sin(((d-1)/30)*Math.PI*2)*22;
+    pts.push(x.toFixed(1)+','+y.toFixed(1));
+    if(d===15)addCirc(svg,x.toFixed(1),(cy-22).toFixed(1),2.5,'#e0b040',1);
+    if(d===1||d===30)addCirc(svg,x.toFixed(1),cy.toFixed(1),2,'#3a5060',0.6);
+    if(d===11||d===26)addCirc(svg,x.toFixed(1),y.toFixed(1),2,'#20a88a',0.8);
+  }
+  svg.appendChild(svgEl('polyline',{points:pts.join(' '),fill:'none',stroke:'#e0b040','stroke-width':0.8,'stroke-opacity':0.6}));
+  const tx=((tithiNum-1)/29)*w;
+  addLine(svg,tx,0,tx,h,'#e0b040',1);
+  const ty=cy-Math.sin(((tithiNum-1)/30)*Math.PI*2)*22;
+  addCirc(svg,tx.toFixed(1),ty.toFixed(1),3,'#e0b040',1);
+  el.appendChild(svg);
+  const daysToFull=tithiNum<=15?(15-tithiNum):(30-tithiNum+15);
+  const phaseNames=['New','Wax Cresc','First Qtr','Wax Gibb','Full','Wan Gibb','Third Qtr','Wan Cresc'];
+  const phaseIdx=Math.min(7,Math.floor((tithiNum-1)/3.75));
+  el.insertAdjacentHTML('beforeend',`<div style="color:var(--muted);font-size:9px;margin-top:2px">${daysToFull} days to pūrṇimā</div><div style="color:var(--gold);font-size:10px">${phaseNames[phaseIdx]||''}</div>`);
+}
+
+// ════ PRACTICE ═══════════════════════════════════
+function renderPrana(){
+  const el=document.getElementById('p-prana');
+  const swara=F.swara||{};
+  const nadi=swara.swara_nadi||'';
+  const isIda=nadi.includes('ida');
+  const isPing=nadi.includes('pingala');
+  const symbol=isPing?'☉ ○':'○ ☽';
+  const name=isPing?'Piṅgalā · Sūrya':'Iḍā · Candra';
+  const quality=isPing?'heating · active':'cooling · receptive';
+  const element=(F.panchanga?.element||'').toLowerCase();
+  const practices={water:{sk:'Nāḍī Śodhana',en:'Alternate nostril',dur:10},fire:{sk:'Śītalī',en:'Cooling breath',dur:10},earth:{sk:'Kapālabhāti',en:'Skull-shining breath',dur:15},air:{sk:'Anuloma Viloma',en:'Balanced breath',dur:12}};
+  const pr=practices[element]||practices.air;
+  el.insertAdjacentHTML('beforeend',
+    `<div style="font-size:16px;color:var(--gold);margin:4px 0">${symbol}</div>`
+    +`<div style="color:var(--text)">${name}</div>`
+    +`<div style="color:var(--muted);font-size:9px">${quality}</div>`
+    +`<div class="sep"></div>`
+    +`<div class="g" style="font-size:12px;color:var(--text)">${pr.sk}</div>`
+    +`<div style="color:var(--muted)">${pr.en}</div>`
+    +`<div style="color:var(--dim);font-size:9px">${pr.dur} min</div>`);
 }
 
 function renderAsana(){
-  const el=document.getElementById('asana-col');
-  const element=p(F,'field.element','').toLowerCase();
-  const guna=p(F,'field.guna','').toLowerCase();
-  // Derive asana
-  let asana={sk:'Vṛkṣāsana',en:'Tree Pose',quality:'grounding',dur:'1 min each side'};
-  if(element.includes('fire')||guna.includes('rajas'))asana={sk:'Ardha Chandrāsana',en:'Half Moon',quality:'cooling',dur:'30s each side'};
-  else if(element.includes('water')||element.includes('earth'))asana={sk:'Ūrdhva Dhanurāsana',en:'Wheel Pose',quality:'energizing',dur:'3 rounds'};
-  else if(element.includes('air')||element.includes('ether'))asana={sk:'Padmāsana',en:'Lotus Pose',quality:'stabilizing',dur:'5 min'};
-
-  // Simple stick figure
-  const fig='<svg width="40" height="50" viewBox="0 0 40 50"><circle cx="20" cy="8" r="4" fill="none" stroke="#3a5060" stroke-width="1"/><line x1="20" y1="12" x2="20" y2="30" stroke="#3a5060" stroke-width="1"/><line x1="20" y1="18" x2="10" y2="24" stroke="#3a5060" stroke-width="1"/><line x1="20" y1="18" x2="30" y2="24" stroke="#3a5060" stroke-width="1"/><line x1="20" y1="30" x2="12" y2="45" stroke="#3a5060" stroke-width="1"/><line x1="20" y1="30" x2="28" y2="45" stroke="#3a5060" stroke-width="1"/></svg>';
-
-  el.innerHTML='<div class="practice-name">'+asana.sk+'</div>'
-    +'<div class="practice-eng">'+asana.en+'</div>'
+  const el=document.getElementById('p-asana');
+  const element=(F.panchanga?.element||'').toLowerCase();
+  const poses={earth:{sk:'Vṛkṣāsana',en:'Tree Pose',q:'grounding',dur:'1 min',fig:'M20 12 L20 30 M20 30 L14 45 M20 30 L28 42 M20 18 L12 24 M20 18 L30 22 M20 8 A4 4 0 1 0 20 8.01'},
+    water:{sk:'Baddha Koṇāsana',en:'Bound Angle',q:'opening',dur:'3 min',fig:'M20 12 L20 28 M20 28 L8 38 M20 28 L32 38 M20 18 L10 22 M20 18 L30 22 M20 8 A4 4 0 1 0 20 8.01'},
+    fire:{sk:'Vīrabhadrāsana',en:'Warrior',q:'strengthening',dur:'30s each',fig:'M20 12 L20 30 M20 30 L10 45 M20 30 L32 42 M20 18 L6 14 M20 18 L34 14 M20 8 A4 4 0 1 0 20 8.01'},
+    air:{sk:'Garuḍāsana',en:'Eagle Pose',q:'balancing',dur:'30s each',fig:'M20 12 L20 32 M20 32 L16 45 M20 32 L22 44 M20 18 L14 12 M20 18 L28 14 M20 8 A4 4 0 1 0 20 8.01'},
+    ether:{sk:'Śavāsana',en:'Corpse Pose',q:'dissolving',dur:'10 min',fig:'M10 25 L30 25 M20 25 L20 10 M10 38 L14 25 M26 25 L30 38 M20 6 A4 4 0 1 0 20 6.01'}};
+  const pose=poses[element]||poses.earth;
+  const fig=`<svg width="40" height="50" viewBox="0 0 40 50"><path d="${pose.fig}" fill="none" stroke="#e0b040" stroke-width="1" stroke-linecap="round"/></svg>`;
+  el.insertAdjacentHTML('beforeend',
+    `<div class="g" style="font-size:12px;color:var(--gold)">${pose.sk}</div>`
+    +`<div style="color:var(--muted)">${pose.en}</div>`
     +fig
-    +'<div class="practice-dim">'+asana.quality+'</div>'
-    +'<div class="practice-dim">'+asana.dur+'</div>';
+    +`<div style="color:var(--muted);font-size:9px">${pose.q} · ${pose.dur}</div>`);
 }
 
 function renderPlant(){
-  const el=document.getElementById('plant-col');
-  const anchor=G.anchor||G.anchor_plant||G.plant||{};
-  const name=typeof anchor==='string'?anchor:(anchor.name||anchor.common_name||'—');
-  const sanskrit=G.anchor_sanskrit||anchor.sanskrit||'';
-  const fn=G.guild_function||anchor.guild_function||anchor.function||'';
-  const nak=G.nakshatra||p(F,'panchanga.nakshatra','');
-  const element=G.element||'';
-  const elemColors={water:'#285898',fire:'#c84040',earth:'#c87820',air:'#20a88a',ether:'#8070dd'};
-  const leafColor=elemColors[element]||'#3a5060';
-  const leaf='<svg width="40" height="40" viewBox="0 0 40 40"><path d="M20 38 Q8 28 8 16 Q8 4 20 2 Q32 4 32 16 Q32 28 20 38Z" fill="'+leafColor+'" fill-opacity="0.2" stroke="'+leafColor+'" stroke-width="0.8"/><line x1="20" y1="38" x2="20" y2="8" stroke="'+leafColor+'" stroke-width="0.5"/></svg>';
-
-  el.innerHTML='<div style="font-family:Georgia,serif;font-size:14px;color:var(--gold)">'+name+'</div>'
-    +(sanskrit?'<div class="dim-text" style="font-style:italic">'+sanskrit+'</div>':'')
+  const el=document.getElementById('p-plant');
+  const anch=typeof G.anchor==='string'?G.anchor:(G.anchor?.name||'—');
+  const skt=G.anchor_sanskrit||'';
+  const gfn=G.guild_function||'';
+  const nak=G.nakshatra||F.panchanga?.nakshatra||'';
+  const elemC={water:'#2858b8',fire:'#c84040',earth:'#c87820',air:'#20a88a',ether:'#8070dd'};
+  const lc=elemC[G.element]||'#3a5060';
+  const leaf=`<svg width="40" height="40" viewBox="0 0 40 40"><path d="M20 38 Q8 28 8 16 Q8 4 20 2 Q32 4 32 16 Q32 28 20 38Z" fill="${lc}" fill-opacity="0.2" stroke="${lc}" stroke-width="0.8"/><line x1="20" y1="38" x2="20" y2="8" stroke="${lc}" stroke-width="0.5"/></svg>`;
+  const uses={purification:'cleansing · detox',healing:'restorative · tonic',grounding:'stabilizing · root',protection:'shielding · boundary'};
+  el.insertAdjacentHTML('beforeend',
+    `<div class="g" style="font-size:14px;color:var(--gold)">${anch}</div>`
+    +(skt?`<div style="color:var(--teal)">${skt}</div>`:'')
     +leaf
-    +(fn?'<div class="practice-detail">'+fn+'</div>':'')
-    +'<div class="practice-dim">'+nak+'</div>';
+    +(gfn?`<div style="color:var(--text)">${gfn}</div>`:'')
+    +`<div style="color:var(--muted);font-size:9px">${uses[gfn]||''}</div>`
+    +`<div style="color:var(--dim);font-size:9px">${nak}</div>`);
 }
 
-function renderIntention(){
-  const el=document.getElementById('intent-col');
-  const rec=INT.recommendation||INT.current||INT.suggestion||INT.intention_id||'';
-  const win=INT.favorable_window||INT.window||INT.time||'';
-  const act=INT.activity||INT.activity_type||INT.type||'';
-  const intScore=INT.score!=null&&INT.score>0?'score: '+INT.score:'';
+function renderIntent(){
+  const el=document.getElementById('p-intent');
+  const rec=INT.recommendation||INT.current||INT.suggestion||'';
+  const iid=(INT.intention_id||'').replace(/_/g,' ');
+  const score=INT.score||0;
+  const act=INT.activity||INT.activity_type||'';
   const pada=RDG.pada||RDG.excerpt||RDG.passage||RDG.text||'';
-
-  let html='';
-  if(rec)html+='<div style="font-family:Georgia,serif;font-size:12px;color:var(--text);line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:4px">'+rec+'</div>';
-  else if(intScore)html+='<div class="sub">'+intScore+'</div>';
-  if(win)html+='<div style="font-size:10px;color:var(--teal)">'+win+'</div>';
-  if(act)html+='<div style="font-size:10px;color:var(--gold);margin-top:2px">'+act+'</div>';
+  const trad=RDG.tradition||RDG.source_tradition||'';
+  let h='';
+  if(rec)h+=`<div class="g" style="font-size:13px;color:var(--text);line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden">${rec}</div>`;
+  else if(iid)h+=`<div class="g" style="font-size:13px;color:var(--text)">${iid.charAt(0).toUpperCase()+iid.slice(1)}</div>`;
+  if(score)h+=`<div class="bar"><div class="bar-f" style="width:${Math.min(100,score*100)}%;background:var(--teal)"></div></div>`;
+  if(act)h+=`<div style="color:var(--gold)">${act}</div>`;
   if(pada){
-    html+='<div class="divider"></div>';
-    html+='<div class="reading-text">'+pada+'</div>';
+    h+=`<div class="sep"></div>`;
+    h+=`<div class="g" style="font-size:9px;color:var(--muted);font-style:italic;line-height:1.5;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">${pada}</div>`;
+    if(trad)h+=`<div style="font-size:7px;color:var(--dim)">${trad}</div>`;
   }
-  if(!html)html='<div class="dim-text">◌</div>';
-  el.innerHTML=html;
+  if(!h)h='<div style="color:var(--dim)">◌</div>';
+  el.insertAdjacentHTML('beforeend',h);
 }
 
-// ── Pulse animation ──
-const style=document.createElement('style');
-style.textContent='@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}';
-document.head.appendChild(style);
-
-// ── Init ──
+// ── Init + refresh ───────────────────────────────
 fetchAll();
 setInterval(()=>{
   Promise.all([
@@ -803,7 +598,8 @@ setInterval(()=>{
 setInterval(()=>{
   Promise.all([
     fetch('/transits').then(r=>r.json()).then(d=>TR=d).catch(()=>{}),
-    fetch('/coherence-score').then(r=>r.json()).then(d=>COH=d).catch(()=>{})
+    fetch('/coherence-score').then(r=>r.json()).then(d=>COH=d).catch(()=>{}),
+    fetch('/rings').then(r=>r.json()).then(d=>RINGS=d).catch(()=>{})
   ]).then(render);
 },300000);
 </script>
