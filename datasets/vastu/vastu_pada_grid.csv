@@ -1,15 +1,82 @@
-
-Pada,Direction,Deity,Auspicious_Use,Reason,Sources
-E3,East,Jayant,"Main entrance brings wealth, success and prosperity",Jayant field refreshes mind and provides victory,32 entrance articlehttps://iiag.co.in/articles/vastu-vidya/32-entrance-in-vastu#:~:text=Main%20Entrance%20Effects%20%E2%80%93%20EAST,E1%20to%20E8
-E4,East,Indra,Entrance enhances social connections and government support,Indra field facilitates administrative power,32 entrance articlehttps://iiag.co.in/articles/vastu-vidya/32-entrance-in-vastu#:~:text=Main%20Entrance%20Effects%20%E2%80%93%20EAST,E1%20to%20E8
-S3,South,Vitatha,Prosperity and growth when used as entrance,Vitatha zone encourages prosperity but may induce cleverness,32 entrance articlehttps://iiag.co.in/articles/vastu-vidya/32-entrance-in-vastu#:~:text=Main%20Entrance%20Effects%20%E2%80%93%20SOUTH,S1%20to%20S8
-S4,South,Grihrakshita,Fame and financial stability; good for media professionals,Grihrakshita field controls the mind and grants longevity,32 entrance articlehttps://iiag.co.in/articles/vastu-vidya/32-entrance-in-vastu#:~:text=Best%20South%20Entrances
-W3,West,Sugriva,Wealth and rapid growth when used as entrance,Sugriva field enhances knowledge reception and growth,32 entrance articlehttps://iiag.co.in/articles/vastu-vidya/32-entrance-in-vastu#:~:text=Main%20Entrance%20Effects%20%E2%80%93%20WEST,W1%20to%20W8
-W4,West,Pushpadant,Prosperity and smooth life; supportive entrance,Pushpadant field fulfils desires and provides immediate support,32 entrance articlehttps://iiag.co.in/articles/vastu-vidya/32-entrance-in-vastu#:~:text=Main%20Entrance%20Effects%20%E2%80%93%20WEST,W1%20to%20W8
-N3,North,Mukhya,Wealth and strong growth; good main entrance,"Mukhya field fosters creation, knowledge and principal purpose",32 entrance articlehttps://iiag.co.in/articles/vastu-vidya/32-entrance-in-vastu#:~:text=Main%20Entrance%20Effects%20%E2%80%93%20NORTH,N1%20to%20N8
-N4,North,Bhallat,Property gains and inheritance benefits,Bhallat field grants abundance and analysis,32 entrance articlehttps://iiag.co.in/articles/vastu-vidya/32-entrance-in-vastu#:~:text=Main%20Entrance%20Effects%20%E2%80%93%20NORTH,N1%20to%20N8
-N5,North,Soma (Kubera),"Calm, spiritual and stable life; entrance fosters wealth and opportunities",Soma field corresponds to lord of wealth and ensures money flow,32 entrance articlehttps://iiag.co.in/articles/vastu-vidya/32-entrance-in-vastu#:~:text=Main%20Entrance%20Effects%20%E2%80%93%20NORTH,N1%20to%20N8
-Brahma Vithi,Centre,Brahma,Central Brahmasthana should be kept open; used for meditation or sacred shrine,Brahma Vithi represents creation and space; heavy structures disrupt energy,VastuPurusha Mandala articlehttps://www.appliedvastu.com/vastu-purusha-mandala#:~:text=of%20the%20building%2C%20the%20inhabitants,Manduka%20mandala%20to%20design%20temples
-Deva Vithi,Inner ring,"Bhudhar, Aryama, Vivaswan, Mitra","Sacred spaces like pooja room, library or meditation; also near central courtyard","Deva Vithi expands from Brahma Vithi and is occupied by devtas representing manifestation, connection, success and inspiration",VastuPurusha Mandala articlehttps://www.appliedvastu.com/vastu-purusha-mandala#:~:text=
-Manushya Vithi,Intermediate ring,"Apaha & Apahavatsa (NE), Savita & Savitra (SE), Indra & Indrajaya (SW), Rudra & Rudrajaya (NW)","Human living spaces such as bedrooms, study, kitchen and work areas depending on direction","Manushya Vithi forms as energy expands diagonally; each pair of energy fields bestows healing (NE), motivation (SE), business prosperity (SW) and uninterrupted work (NW)",VastuPurusha Mandala articlehttps://www.appliedvastu.com/vastu-purusha-mandala#:~:text=After%20raising%20the%20wall%20more,in%20Vastu%20Purusha%20Mandala
-Paishacha Vithi,Outer ring,Sixteen deities in diagonal directions and additional fields in cardinal directions,"Support functions like bathrooms, storerooms, animal shelters, granaries and workshops",Paishacha Vithi forms after completion of superstructure; outer ring handles worldly and service activities,VastuPurusha Mandala articlehttps://www.appliedvastu.com/vastu-purusha-mandala#:~:text=
+pada_number,row,col,deity_name,deity_type,direction,source_text,attestation
+1,0,0,Isha,perimeter,NW,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+2,0,1,Parjanya,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+3,0,2,Jayanta,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+4,0,3,Mahendra,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+5,0,4,Surya,perimeter,N,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+6,0,5,Satya,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+7,0,6,Bhrisha,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+8,0,7,Antariksha,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+9,0,8,Vayu,perimeter,NE,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+10,1,0,Roga,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+11,1,1,Apa,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+12,1,2,Apavatsa,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+13,1,3,Savitra,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+14,1,4,Savitra,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+15,1,5,Vivasvan,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+16,1,6,Vivasvan,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+17,1,7,Mitra,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+18,1,8,Asura,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+19,2,0,Varuna,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+20,2,1,Vivasvan,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+21,2,2,Mitra,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+22,2,3,Mitra,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+23,2,4,Indra,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+24,2,5,Indra,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+25,2,6,Indrajaya,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+26,2,7,Indrajaya,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+27,2,8,Vishvakarma,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+28,3,0,Yama,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+29,3,1,Indrajaya,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+30,3,2,Indrajaya,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+31,3,3,Brahma,brahma,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+32,3,4,Brahma,brahma,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+33,3,5,Brahma,brahma,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+34,3,6,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+35,3,7,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+36,3,8,Nirriti,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+37,4,0,Nirriti,perimeter,W,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+38,4,1,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+39,4,2,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+40,4,3,Brahma,brahma,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+41,4,4,Brahma,brahma,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+42,4,5,Brahma,brahma,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+43,4,6,Savitri,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+44,4,7,Savitri,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+45,4,8,Nirriti,perimeter,E,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+46,5,0,Nirriti,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+47,5,1,Savitri,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+48,5,2,Savitri,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+49,5,3,Brahma,brahma,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+50,5,4,Brahma,brahma,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+51,5,5,Brahma,brahma,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+52,5,6,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+53,5,7,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+54,5,8,Nirriti,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+55,6,0,Nirriti,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+56,6,1,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+57,6,2,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+58,6,3,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+59,6,4,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+60,6,5,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+61,6,6,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+62,6,7,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+63,6,8,Nirriti,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+64,7,0,Nirriti,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+65,7,1,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+66,7,2,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+67,7,3,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+68,7,4,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+69,7,5,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+70,7,6,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+71,7,7,Brahma,inner,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+72,7,8,Nirriti,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+73,8,0,Nirriti,perimeter,SW,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+74,8,1,Nirriti,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+75,8,2,Nirriti,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+76,8,3,Nirriti,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+77,8,4,Nirriti,perimeter,S,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+78,8,5,Nirriti,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+79,8,6,Nirriti,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+80,8,7,Nirriti,perimeter,,"Brihat Samhita, Manasara, Mayamata",OBSERVED
+81,8,8,Nirriti,perimeter,SE,"Brihat Samhita, Manasara, Mayamata",OBSERVED
