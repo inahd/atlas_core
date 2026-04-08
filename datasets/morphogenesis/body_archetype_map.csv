@@ -1,0 +1,27 @@
+body_region,archetype,graha,dhatu,mathematical_equation,render_geometry,natal_weight_key,asana_that_loads,pranayama_that_loads,marma_at_this_region,color_primary,color_secondary,animation_pattern,animation_cycle_ms
+skull_vault,radial,surya,D005,"r=R*cos(n*theta)","radial_lines_from_center",sun,"Sirsasana","Bhramari","Adhipati",#FFB300,#445566,pulse_outward,6000
+eye_socket,vesica,chandra,D005,"two_circles_overlap_r=0.7R","bilateral_ellipse_pair",moon,"Trataka","Nadi_Shodhana","Apanga",#E8E8FF,#445566,bilateral_expand,4000
+eye_lens,spiral,shukra,D006,"r=a*e^(b*theta)","logarithmic_spiral",venus,"Trataka","","Apanga",#FFAADD,#00AA44,log_rotation,8000
+iris,radial,mangala,D002,"radial_fibers_n=36","fine_radial_lines",mars,"","","Apanga",#CC2200,#FFB300,pulse_outward,3000
+cochlea,spiral,budha,D006,"r=a*e^(b*theta) golden","logarithmic_spiral",mercury,"","Bhramari","Vidhura",#00AA44,#6600AA,log_rotation,5000
+nasal_cavity,branching,budha,D001,"L_system_depth=3","dendritic_tree",mercury,"Kapalbhati","Nadi_Shodhana","Phana",#00AA44,#E8E8FF,l_system_grow,6000
+jaw_masseter,parabolic,mangala,D003,"y=a*x^2 bilateral","bilateral_parabola",mars,"Simhasana","","Hanu",#CC2200,#8B6914,arch_flex,4000
+cervical_spine,tensegrity,shani,D005,"tension_compression_7_units","stacked_tensegrity",saturn,"Sarvangasana","Ujjayi","Nila/Manya",#445566,#887755,micro_oscillation,8000
+thoracic_spine,tensegrity,shani,D005,"tension_compression_12_units","stacked_tensegrity",saturn,"Bhujangasana","Ujjayi","Brihati",#445566,#887755,micro_oscillation,8000
+lumbar_spine,tensegrity,shani,D005,"tension_compression_5_units","stacked_tensegrity",saturn,"Dhanurasana","Kapalabhati","Katika_Tarunna",#445566,#887755,micro_oscillation,10000
+sternum,radial,surya,D005,"radial_from_center","radial_lines_from_center",sun,"Ustrasana","Bhastrika","Hridaya",#FFB300,#445566,pulse_outward,5000
+ribs,parabolic,mangala,D005,"y=a*cosh(x/a) catenary","bilateral_catenary_12_pairs",mars,"Trikonasana","Ujjayi","Stanamula",#CC2200,#445566,arch_flex,6000
+clavicle,parabolic,shani,D005,"gentle_S_curve","bilateral_S_arc",saturn,"Virabhadrasana","","Kshipra_arm",#445566,#8899aa,arch_flex,8000
+scapula,radial,mangala,D003,"radial_attachment_points","fan_of_lines",mars,"Garudasana","","Amsaphalaka",#CC2200,#8B6914,pulse_outward,5000
+humerus,tensegrity,mangala,D005,"single_compression_strut","cylinder_tension_wrap",mars,"Chaturanga","","Bahvi",#CC2200,#445566,micro_oscillation,6000
+radius_ulna,parabolic,budha,D005,"parallel_gentle_curves","bilateral_parallel_arcs",mercury,"Bakasana","","Manibandha",#00AA44,#445566,arch_flex,5000
+carpals,branching,budha,D005,"8_bone_cluster_graph","node_lattice_8",mercury,"Mudras","","Kshipra_hand",#00AA44,#445566,l_system_grow,4000
+phalanges,branching,budha,D006,"5_finger_L_system","digit_branching_5",mercury,"Mudras","","Talahridaya",#00AA44,#E8E8FF,l_system_grow,3000
+pelvis,concentric,guru,D005,"nested_ellipses_3_bones","concentric_ellipse_trio",jupiter,"Baddha_Konasana","Mula_Bandha","Vitapa",#FFDD44,#445566,bilateral_expand,10000
+femur,tensegrity,shani,D005,"long_compression_strut","cylinder_tension_wrap",saturn,"Virabhadrasana","","Urvi",#445566,#887755,micro_oscillation,8000
+tibia_fibula,parabolic,shani,D005,"parallel_weight_bearing","bilateral_parallel_arcs",saturn,"Utkatasana","","Janu",#445566,#887755,arch_flex,6000
+tarsals,branching,shani,D005,"7_bone_arch_cluster","node_lattice_arch",saturn,"Tadasana","","Kshipra_foot",#445566,#887755,l_system_grow,5000
+lung_bronchial,branching,budha,D001,"L_system_depth=6_bilateral","dendritic_tree_bilateral",mercury,"Pranayama","All","Stanarohita",#00AA44,#E8E8FF,l_system_grow,4000
+heart_muscle,sinusoidal,surya,D003,"contraction_wave_72bpm","pulse_ring_expand_contract",sun,"Ustrasana","Bhastrika","Hridaya",#FFB300,#CC2200,sine_oscillation,833
+fascia_network,tensegrity,rahu,D003,"continuous_tension_web","triangle_mesh_whole_body",rahu,"Yin_Yoga","","All_marmas",#6600AA,#445566,micro_oscillation,12000
+skin_surface,tidal,chandra,D001,"surface_wave_slow","whole_body_glow_pulse",moon,"Abhyanga","","Kshipra_all",#E8E8FF,#c8a06e,tidal_pulse,24000

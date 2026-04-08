@@ -1,0 +1,13 @@
+id,name_iast,name_sk,type,description,sthayi_bhava,source,attestation
+rasa_shanta,Śānta,शान्त,primary,"Peaceful contemplation. Realization of Brahman. No active service but awareness of transcendence.",rati (neutral attachment),Bhakti-rasāmṛta-sindhu 3.1,TRADITIONAL
+rasa_dasya,Dāsya,दास्य,primary,"Servitorship. Active reverence and desire to serve. Hanumān is the exemplar.",dāsya-rati,Bhakti-rasāmṛta-sindhu 3.2,TRADITIONAL
+rasa_sakhya,Sakhya,सख्य,primary,"Friendship. Equality in love. The cowherd boys of Vṛndāvana.",sakhya-rati,Bhakti-rasāmṛta-sindhu 3.3,TRADITIONAL
+rasa_vatsalya,Vātsalya,वात्सल्य,primary,"Parental love. The devotee loves God as a child. Yaśodā and Nanda.",vātsalya-rati,Bhakti-rasāmṛta-sindhu 3.4,TRADITIONAL
+rasa_madhurya,Mādhurya,माधुर्य,primary,"Conjugal love. The highest rasa. Complete self-giving. The gopīs of Vṛndāvana.",madhurya-rati,Bhakti-rasāmṛta-sindhu 3.5,TRADITIONAL
+rasa_hasya,Hāsya,हास्य,secondary,"Humor. Laughter arising from incongruity in līlā.",hāsa,Bhakti-rasāmṛta-sindhu 4.1,TRADITIONAL
+rasa_adbhuta,Adbhuta,अद्भुत,secondary,"Wonder. Astonishment at the Lord's inconceivable potencies.",vismaya,Bhakti-rasāmṛta-sindhu 4.2,TRADITIONAL
+rasa_vira,Vīra,वीर,secondary,"Heroism. Valor in service. Arjuna on the battlefield.",utsāha,Bhakti-rasāmṛta-sindhu 4.3,TRADITIONAL
+rasa_karuna,Karuṇā,करुणा,secondary,"Compassion. Grief in separation. Rādhā's viraha.",śoka,Bhakti-rasāmṛta-sindhu 4.4,TRADITIONAL
+rasa_raudra,Raudra,रौद्र,secondary,"Fury. Righteous anger in protection of dharma.",krodha,Bhakti-rasāmṛta-sindhu 4.5,TRADITIONAL
+rasa_bhayanaka,Bhayānaka,भयानक,secondary,"Fear. Dread before the Lord's universal form.",bhaya,Bhakti-rasāmṛta-sindhu 4.6,TRADITIONAL
+rasa_bibhatsa,Bībhatsa,बीभत्स,secondary,"Disgust. Revulsion toward māyā and material attachment.",jugupsā,Bhakti-rasāmṛta-sindhu 4.7,TRADITIONAL

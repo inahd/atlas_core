@@ -1,0 +1,78 @@
+{
+  "entity_id": "graha_chandra",
+  "version": 1,
+
+  "identity": {
+    "name": "Chandra",
+    "iast": "Candra",
+    "devanagari": "चन्द्र",
+    "common": ["Moon", "Soma"],
+    "synonyms": ["Soma", "Indu", "Śaśi"],
+    "attestation": "OBSERVED:JYOTISHA_TRADITION"
+  },
+
+  "field_coordinates": {
+    "theta": "S1 (Archetype)",
+    "theta_note": "graha is an archetypal governing entity — S1 layer",
+    "phi": 0.25,
+    "phi_note": "path value from graha_master.csv — close to witness axis",
+    "psi_primary": "jijnasu",
+    "psi_note": "Moon as mind — reflective, curious, receptive"
+  },
+
+  "domains": {
+    "astrology": {
+      "source": "datasets/cosmology/graha_master.csv",
+      "attestation": "OBSERVED:JYOTISHA_TRADITION",
+      "category": "luminary",
+      "element": "water",
+      "guna": "sattva",
+      "dosha": "kapha",
+      "vehicle": "antelope",
+      "weapon": "lotus",
+      "domain": "mind",
+      "color_hex": "#E8E8FF",
+      "color_meaning": "silver-white of reflected consciousness",
+      "nakshatras_ruled": ["Rohini", "Hasta", "Shravana"]
+    },
+    "gandharva": {
+      "source": "datasets/compositions/navagraha_kritis.csv",
+      "attestation": "OBSERVED:PRIMARY_TEXT",
+      "navagraha_kriti": "Candram Bhaja Manasa",
+      "composer": "Muthuswami Dikshitar",
+      "raga": "Asaveri",
+      "tala": "Chaturashra Matya"
+    },
+    "gaudiya_vaishnava": {
+      "source": "Śrīmad Bhāgavatam",
+      "attestation": "OBSERVED:PRIMARY_TEXT",
+      "identity": "mind principle (manas) — born from the mind of Brahma",
+      "connection": "governs the tithis · each phase reveals a Nitya Devi"
+    }
+  },
+
+  "nakshatra_correspondence": {
+    "primary": "Rohini",
+    "primary_deity": "Brahma",
+    "secondary": "Hasta",
+    "source": "graha lordship of nakshatras",
+    "attestation": "OBSERVED:JYOTISHA_TRADITION"
+  },
+
+  "field_activation": {
+    "vara": ["somavara"],
+    "element": ["water"],
+    "tithi": [],
+    "nakshatra": ["Rohini", "Hasta", "Shravana"],
+    "note": "Active on Monday, water element days, and Moon nakshatras"
+  },
+
+  "use_ratings": {
+    "attestation": "SYNTHESIS",
+    "ratings": {
+      "meditation": {"phi": 0.5, "score": 1.0, "label": "pure_receptivity"},
+      "healing":    {"phi": 1.0, "score": 0.9, "label": "nurturing"},
+      "travel":     {"phi": 2.5, "score": 0.7, "label": "variable"}
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "relation": "rules",
+  "domain": "jyotisha",
+  "pairs": [
+    ["Ashwini", "Ketu"],
+    ["Bharani", "Venus"],
+    ["Krittika", "Sun"],
+    ["Rohini", "Moon"],
+    ["Mrigashira", "Mars"],
+    ["Ardra", "Rahu"],
+    ["Punarvasu", "Jupiter"],
+    ["Pushya", "Saturn"],
+    ["Ashlesha", "Mercury"]
+  ]
+}

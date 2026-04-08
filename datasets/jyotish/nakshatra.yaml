@@ -1,0 +1,15 @@
+nakshatra:
+
+  - name: Rohini
+    ruler: Moon
+    deity: Prajapati
+    qualities:
+      - fertility
+      - growth
+
+  - name: Pushya
+    ruler: Saturn
+    deity: Brihaspati
+    qualities:
+      - nourishment
+      - protection

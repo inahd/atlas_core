@@ -1,0 +1,70 @@
+{
+  "entity_id": "raga_yaman",
+  "version": 1,
+
+  "identity": {
+    "name": "Yaman",
+    "iast": "Yaman",
+    "devanagari": "यमन",
+    "common": ["Yaman", "Yaman Kalyan", "Iman"],
+    "synonyms": ["Kalyani (Carnatic)"],
+    "attestation": "OBSERVED:GANDHARVA_TRADITION"
+  },
+
+  "field_coordinates": {
+    "theta": "S2 (Sound / Rāga)",
+    "theta_note": "raga lives at the sound layer",
+    "phi": 1.0,
+    "phi_note": "slightly witness-side — evening raga invites listening",
+    "psi_primary": "jijnasu",
+    "psi_note": "Yaman invites exploration — the first raga many students learn"
+  },
+
+  "domains": {
+    "gandharva": {
+      "source": "Hindustani raga tradition",
+      "attestation": "OBSERVED:GANDHARVA_TRADITION",
+      "thaat": "Kalyan",
+      "arohana": "N R G M# P D N S'",
+      "avarohana": "S' N D P M# G R S",
+      "vadi": "Ga",
+      "samvadi": "Ni",
+      "prahar": "1st prahar of night (6-9pm)",
+      "rasa": "shringara · shanta",
+      "jati": "sampurna-sampurna",
+      "note": "Evening raga of devotion and beauty. Tivra Ma is the characteristic note."
+    },
+    "ashtakala": {
+      "source": "datasets/cosmology/ashtakala.csv",
+      "attestation": "OBSERVED:ASHTAKALA_TRADITION",
+      "period": 6,
+      "period_name": "Sayahna",
+      "time": "6:00pm-8:24pm",
+      "activity": "returning / evening"
+    }
+  },
+
+  "nakshatra_correspondence": {
+    "primary": "Rohini",
+    "primary_deity": "Brahma",
+    "source": "raga-nakshatra tradition (SYNTHESIS)",
+    "attestation": "SYNTHESIS"
+  },
+
+  "field_activation": {
+    "vara": [],
+    "element": ["ether", "air"],
+    "tithi": [],
+    "nakshatra": [],
+    "note": "Active during Sayahna (6-9pm). Ether/air element affinity."
+  },
+
+  "use_ratings": {
+    "attestation": "SYNTHESIS",
+    "ratings": {
+      "evening_practice": {"phi": 0.5, "score": 1.0, "label": "canonical_time"},
+      "any_time":         {"phi": 2.0, "score": 0.7, "label": "acceptable"},
+      "morning":          {"phi": 4.5, "score": 0.2, "label": "out_of_prahar"}
+    }
+  }
+}

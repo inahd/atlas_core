@@ -1,0 +1,83 @@
+from_id,relation,to_id,source_title,source_locator,excerpt,tradition,confidence,notes
+graha:chandra,kriti,kriti:candram_bhaja_manasa,carnatic/navagraha_kritis.csv,,,traditional,0.6,Candram bhaja manasa
+kriti:candram_bhaja_manasa,composer,composer:muttusvami_dikshitar,carnatic/navagraha_kritis.csv,,,traditional,0.6,
+kriti:candram_bhaja_manasa,tala_family,tala_family:matya,carnatic/navagraha_kritis.csv,,,traditional,0.6,
+graha:mangala,kriti,kriti:angarakam_ashrayamyaham,carnatic/navagraha_kritis.csv,,,traditional,0.6,Angarakam ashrayamyaham
+kriti:angarakam_ashrayamyaham,composer,composer:muttusvami_dikshitar,carnatic/navagraha_kritis.csv,,,traditional,0.6,
+kriti:angarakam_ashrayamyaham,tala_family,tala_family:rupaka,carnatic/navagraha_kritis.csv,,,traditional,0.6,
+graha:shukra,kriti,kriti:sri_sukra_bhagavantam,carnatic/navagraha_kritis.csv,,,traditional,0.6,Sri Sukra Bhagavantam
+kriti:sri_sukra_bhagavantam,composer,composer:muttusvami_dikshitar,carnatic/navagraha_kritis.csv,,,traditional,0.6,
+kriti:sri_sukra_bhagavantam,tala_family,tala_family:ata,carnatic/navagraha_kritis.csv,,,traditional,0.6,
+tala:dhruva_tisra,family,tala_family:dhruva,carnatic/35_talas.csv,,,traditional,0.9,
+tala:dhruva_tisra,beats,beats:11,carnatic/35_talas.csv,,,traditional,0.9,11 beats
+tala:dhruva_catusra,family,tala_family:dhruva,carnatic/35_talas.csv,,,traditional,0.9,
+tala:dhruva_catusra,beats,beats:14,carnatic/35_talas.csv,,,traditional,0.9,14 beats
+tala:dhruva_khanda,family,tala_family:dhruva,carnatic/35_talas.csv,,,traditional,0.9,
+tala:dhruva_khanda,beats,beats:17,carnatic/35_talas.csv,,,traditional,0.9,17 beats
+tala:dhruva_misra,family,tala_family:dhruva,carnatic/35_talas.csv,,,traditional,0.9,
+tala:dhruva_misra,beats,beats:23,carnatic/35_talas.csv,,,traditional,0.9,23 beats
+tala:dhruva_sankirna,family,tala_family:dhruva,carnatic/35_talas.csv,,,traditional,0.9,
+tala:dhruva_sankirna,beats,beats:29,carnatic/35_talas.csv,,,traditional,0.9,29 beats
+tala:matya_tisra,family,tala_family:matya,carnatic/35_talas.csv,,,traditional,0.9,
+tala:matya_tisra,beats,beats:8,carnatic/35_talas.csv,,,traditional,0.9,8 beats
+tala:matya_catusra,family,tala_family:matya,carnatic/35_talas.csv,,,traditional,0.9,
+tala:matya_catusra,beats,beats:10,carnatic/35_talas.csv,,,traditional,0.9,10 beats
+tala:matya_khanda,family,tala_family:matya,carnatic/35_talas.csv,,,traditional,0.9,
+tala:matya_khanda,beats,beats:12,carnatic/35_talas.csv,,,traditional,0.9,12 beats
+tala:matya_misra,family,tala_family:matya,carnatic/35_talas.csv,,,traditional,0.9,
+tala:matya_misra,beats,beats:16,carnatic/35_talas.csv,,,traditional,0.9,16 beats
+tala:matya_sankirna,family,tala_family:matya,carnatic/35_talas.csv,,,traditional,0.9,
+tala:matya_sankirna,beats,beats:20,carnatic/35_talas.csv,,,traditional,0.9,20 beats
+tala:rupaka_tisra,family,tala_family:rupaka,carnatic/35_talas.csv,,,traditional,0.9,
+tala:rupaka_tisra,beats,beats:5,carnatic/35_talas.csv,,,traditional,0.9,5 beats
+tala:rupaka_catusra,family,tala_family:rupaka,carnatic/35_talas.csv,,,traditional,0.9,
+tala:rupaka_catusra,beats,beats:6,carnatic/35_talas.csv,,,traditional,0.9,6 beats
+tala:rupaka_khanda,family,tala_family:rupaka,carnatic/35_talas.csv,,,traditional,0.9,
+tala:rupaka_khanda,beats,beats:7,carnatic/35_talas.csv,,,traditional,0.9,7 beats
+tala:rupaka_misra,family,tala_family:rupaka,carnatic/35_talas.csv,,,traditional,0.9,
+tala:rupaka_misra,beats,beats:9,carnatic/35_talas.csv,,,traditional,0.9,9 beats
+tala:rupaka_sankirna,family,tala_family:rupaka,carnatic/35_talas.csv,,,traditional,0.9,
+tala:rupaka_sankirna,beats,beats:11,carnatic/35_talas.csv,,,traditional,0.9,11 beats
+tala:jhampa_tisra,family,tala_family:jhampa,carnatic/35_talas.csv,,,traditional,0.9,
+tala:jhampa_tisra,beats,beats:6,carnatic/35_talas.csv,,,traditional,0.9,6 beats
+tala:jhampa_catusra,family,tala_family:jhampa,carnatic/35_talas.csv,,,traditional,0.9,
+tala:jhampa_catusra,beats,beats:7,carnatic/35_talas.csv,,,traditional,0.9,7 beats
+tala:jhampa_khanda,family,tala_family:jhampa,carnatic/35_talas.csv,,,traditional,0.9,
+tala:jhampa_khanda,beats,beats:8,carnatic/35_talas.csv,,,traditional,0.9,8 beats
+tala:jhampa_misra,family,tala_family:jhampa,carnatic/35_talas.csv,,,traditional,0.9,
+tala:jhampa_misra,beats,beats:10,carnatic/35_talas.csv,,,traditional,0.9,10 beats
+tala:jhampa_sankirna,family,tala_family:jhampa,carnatic/35_talas.csv,,,traditional,0.9,
+tala:jhampa_sankirna,beats,beats:12,carnatic/35_talas.csv,,,traditional,0.9,12 beats
+tala:triputa_tisra,family,tala_family:triputa,carnatic/35_talas.csv,,,traditional,0.9,
+tala:triputa_tisra,beats,beats:7,carnatic/35_talas.csv,,,traditional,0.9,7 beats
+tala:triputa_catusra,family,tala_family:triputa,carnatic/35_talas.csv,,,traditional,0.9,
+tala:triputa_catusra,beats,beats:8,carnatic/35_talas.csv,,,traditional,0.9,8 beats
+tala:triputa_khanda,family,tala_family:triputa,carnatic/35_talas.csv,,,traditional,0.9,
+tala:triputa_khanda,beats,beats:9,carnatic/35_talas.csv,,,traditional,0.9,9 beats
+tala:triputa_misra,family,tala_family:triputa,carnatic/35_talas.csv,,,traditional,0.9,
+tala:triputa_misra,beats,beats:11,carnatic/35_talas.csv,,,traditional,0.9,11 beats
+tala:triputa_sankirna,family,tala_family:triputa,carnatic/35_talas.csv,,,traditional,0.9,
+tala:triputa_sankirna,beats,beats:13,carnatic/35_talas.csv,,,traditional,0.9,13 beats
+tala:ata_tisra,family,tala_family:ata,carnatic/35_talas.csv,,,traditional,0.9,
+tala:ata_tisra,beats,beats:10,carnatic/35_talas.csv,,,traditional,0.9,10 beats
+tala:ata_catusra,family,tala_family:ata,carnatic/35_talas.csv,,,traditional,0.9,
+tala:ata_catusra,beats,beats:12,carnatic/35_talas.csv,,,traditional,0.9,12 beats
+tala:ata_khanda,family,tala_family:ata,carnatic/35_talas.csv,,,traditional,0.9,
+tala:ata_khanda,beats,beats:14,carnatic/35_talas.csv,,,traditional,0.9,14 beats
+tala:ata_misra,family,tala_family:ata,carnatic/35_talas.csv,,,traditional,0.9,
+tala:ata_misra,beats,beats:18,carnatic/35_talas.csv,,,traditional,0.9,18 beats
+tala:ata_sankirna,family,tala_family:ata,carnatic/35_talas.csv,,,traditional,0.9,
+tala:ata_sankirna,beats,beats:22,carnatic/35_talas.csv,,,traditional,0.9,22 beats
+tala:eka_tisra,family,tala_family:eka,carnatic/35_talas.csv,,,traditional,0.9,
+tala:eka_tisra,beats,beats:3,carnatic/35_talas.csv,,,traditional,0.9,3 beats
+tala:eka_catusra,family,tala_family:eka,carnatic/35_talas.csv,,,traditional,0.9,
+tala:eka_catusra,beats,beats:4,carnatic/35_talas.csv,,,traditional,0.9,4 beats
+tala:eka_khanda,family,tala_family:eka,carnatic/35_talas.csv,,,traditional,0.9,
+tala:eka_khanda,beats,beats:5,carnatic/35_talas.csv,,,traditional,0.9,5 beats
+tala:eka_misra,family,tala_family:eka,carnatic/35_talas.csv,,,traditional,0.9,
+tala:eka_misra,beats,beats:7,carnatic/35_talas.csv,,,traditional,0.9,7 beats
+tala:eka_sankirna,family,tala_family:eka,carnatic/35_talas.csv,,,traditional,0.9,
+tala:eka_sankirna,beats,beats:9,carnatic/35_talas.csv,,,traditional,0.9,9 beats
+tala_family:matya,graha,graha:chandra,carnatic/tala_families.csv,,,traditional,0.8,
+tala_family:rupaka,graha,graha:mangala,carnatic/tala_families.csv,,,traditional,0.8,
+tala_family:ata,graha,graha:shukra,carnatic/tala_families.csv,,,traditional,0.8,

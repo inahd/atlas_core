@@ -1,0 +1,38 @@
+name_iast,body_region,count,size_angula,category,element,dosha,chakra_nearest,nadi,raga_therapeutic,herb_primary,herb_secondary,treatment_approach,path,source_text
+Kṣipra,hand+foot,4,0.5,kālāntara-prāṇahara,air,Vāta,Anāhata,Hastijihvā,Bhairavī,Tulāsī,Aśvagandhā,prāṇa restoration,dakṣiṇa/vāma,Suśruta SS.6
+Tālāhṛdaya,palm+sole,4,0.5,kālāntara-prāṇahara,earth,Kapha,Mūlādhāra,Alambuṣā,Mārvā,Balā,Śatāvarī,grounding,dakṣiṇa,Suśruta SS.6
+Kūrcca,wrist+ankle,4,4,vaikalyakara,earth,Vāta+Kapha,Svādhiṣṭhāna,Kuhū,Kāfī,Guggulu,Eraṇḍa,joint stabilization,dakṣiṇa,Suśruta SS.6
+Kūrcca-śirah,wrist+ankle head,4,1,rujākara,air,Vāta,Anāhata,Hastijihvā,Yaman,Vacā,Śuṇṭhī,nerve calming,dakṣiṇa,Suśruta SS.6
+Māṇibandha,wrist,2,2,rujākara,air,Vāta,Viśuddha,Viśvodarā,Darbārī,Brahmi,Jyotiṣmatī,mental clarity,dakṣiṇa,Suśruta SS.6
+Gulpha,ankle,2,2,rujākara,earth,Vāta+Kapha,Mūlādhāra,Yaśasvinī,Bhimpalāsī,Punarnavā,Śatāvarī,ground+move,dakṣiṇa,Suśruta SS.6
+Indrāvasti,mid-forearm+calf,4,0.5,kālāntara-prāṇahara,fire,Pitta,Maṇipūra,Pūṣā,Mārvā,Kuṭaja,Nīm,digestive fire,dakṣiṇa,Suśruta SS.6
+Kūrpara,elbow,2,3,vaikalyakara,fire,Pitta,Maṇipūra,Pūṣā,Khamāj,Śāla,Devadāru,heat regulation,dakṣiṇa,Suśruta SS.6
+Jānu,knee,2,3,vaikalyakara,earth,Kapha+Vāta,Svādhiṣṭhāna,Gāndhārī,Bhairavī,Eraṇḍa,Balā,mobility,dakṣiṇa,Suśruta SS.6
+Āṇi,mid-upper arm+thigh,4,0.5,vaikalyakara,fire,Pitta,Maṇipūra,Alambuṣā,Tōḍī,Mañjiṣṭhā,Rakta candana,blood cooling,dakṣiṇa,Suśruta SS.6
+Ūrvi,upper arm+thigh,2,1,vaikalyakara,air,Vāta,Anāhata,Hastijihvā,Bāgeshṛī,Aśvagandhā,Vidarīkanda,strength,dakṣiṇa,Suśruta SS.6
+Kakṣadhara,axilla,2,0.5,vaikalyakara,air,Vāta+Pitta,Anāhata,Viśvodarā,Yaman,Harītakī,Pippalī,lymph flow,dakṣiṇa,Suśruta SS.6
+Vitapa,groin,2,1,vaikalyakara,water,Kapha,Svādhiṣṭhāna,Kuhū,Khamāj,Aśvagandhā,Kapikacchū,reproductive,dakṣiṇa,Suśruta SS.6
+Gūḍa,anus,1,4,sadyaḥ-prāṇahara,earth,Apāna Vāta,Mūlādhāra,Alambuṣā,,,Triphalā,evacuation,dakṣiṇa,Suśruta SS.6
+Vāstī,bladder,1,4,sadyaḥ-prāṇahara,water,Apāna Vāta,Svādhiṣṭhāna,Kuhū,,,Punarnavā,water regulation,dakṣiṇa,Suśruta SS.6
+Nābhi,navel,1,4,sadyaḥ-prāṇahara,fire,Samāna Vāta,Maṇipūra,Nābhi-nāḍī,Bhimpalāsī,Pippalī,Chitraka,agni center,dakṣiṇa,Suśruta SS.6
+Hṛdaya,heart,1,4,sadyaḥ-prāṇahara,ether,Prāṇa Vāta,Anāhata,Suṣumnā,Bhairavī,Tulāsī,Arjuna,cardiac,dakṣiṇa,Suśruta SS.6
+Stanāmūla,breast root,2,1,kālāntara-prāṇahara,water,Kapha,Anāhata,Gāndhārī,Kāfī,Śatāvarī,Shatapuṣpā,nourishment,dakṣiṇa,Suśruta SS.6
+Stanaroḥita,above breast,2,0.5,kālāntara-prāṇahara,ether,Prāṇa Vāta,Anāhata,Hastijihvā,Yaman,Vacā,Brahmi,prana flow,dakṣiṇa,Suśruta SS.6
+Apālapa,armpit-side,2,0.5,kālāntara-prāṇahara,air,Vyāna Vāta,Anāhata,Viśvodarā,Mārvā,Guggulu,Śallakī,side breath,dakṣiṇa,Suśruta SS.6
+Apastambha,chest-side channels,2,0.5,kālāntara-prāṇahara,ether,Prāṇa Vāta,Viśuddha,Suṣumnā,Darbārī,Vacā,Kaṇṭakārī,bronchial,dakṣiṇa,Suśruta SS.6
+Kaṭīkataruṇa,sacro-iliac,2,0.5,kālāntara-prāṇahara,earth,Apāna Vāta,Mūlādhāra,Gāndhārī,Bhairavī,Balā,Eraṇḍa,lower back,dakṣiṇa,Suśruta SS.6
+Kukuṇḍara,sacral dimples,2,0.5,vaikalyakara,earth,Apāna Vāta,Mūlādhāra,Kuhū,Bhimpalāsī,Eraṇḍa,Gudūcī,pelvis,dakṣiṇa,Suśruta SS.6
+Nitamba,buttock,2,0.5,kālāntara-prāṇahara,earth,Kapha+Vāta,Mūlādhāra,Yaśasvinī,Kāfī,Balā,Aśvagandhā,grounding,dakṣiṇa,Suśruta SS.6
+Parṣva-sandhi,side-trunk joint,2,0.5,kālāntara-prāṇahara,air,Vyāna Vāta,Maṇipūra,Pūṣā,Yaman,Pippalī,Harītakī,lateral breath,dakṣiṇa,Suśruta SS.6
+Bṛhatī,upper back,2,0.5,kālāntara-prāṇahara,ether,Vyāna Vāta,Anāhata,Viśvodarā,Mārvā,Devadāru,Śāla,back lung,dakṣiṇa,Suśruta SS.6
+Aṃśaphalaka,scapula,2,0.5,vaikalyakara,air,Vyāna Vāta,Anāhata,Hastijihvā,Khamāj,Guggulu,Śallakī,shoulder,dakṣiṇa,Suśruta SS.6
+Aṃśa,shoulder,2,0.5,vaikalyakara,air,Vyāna Vāta,Viśuddha,Hastijihvā,Bāgeshṛī,Aśvagandhā,Śāla,arm mobility,dakṣiṇa,Suśruta SS.6
+Phāṇā,side of nose,2,0.5,vaikalyakara,ether,Prāṇa Vāta,Ājñā,Suṣumnā,Tōḍī,Kaṇṭakārī,Vacā,sinus,dakṣiṇa,Suśruta SS.6
+Apāṅga,outer eye corner,2,0.5,vaikalyakara,ether,Ālochaka Pitta,Ājñā,Suṣumnā,Yaman,Triphala,Śatāvarī,vision,dakṣiṇa,Suśruta SS.6
+Nīlā-dhamanī,throat veins,2,0.5,vaikalyakara,ether,Udāna Vāta,Viśuddha,Alambuṣā,Darbārī,Vacā,Brahmi,speech,dakṣiṇa,Suśruta SS.6
+Maṇyā,nape vessels,2,0.5,vaikalyakara,ether,Udāna Vāta,Viśuddha,Hastijihvā,Kāfī,Brahmi,Jyotiṣmatī,neck-brain,dakṣiṇa,Suśruta SS.6
+Śṛṅgataka,hard palate junction,4,0.5,sadyaḥ-prāṇahara,ether,Prāṇa Vāta,Sahasrāra,Suṣumnā,Bihāg,Brahmi,Vacā,crown entry,dakṣiṇa,Suśruta SS.6
+Simanta,cranial sutures,5,0.5,kālāntara-prāṇahara,ether,Prāṇa Vāta,Sahasrāra,Suṣumnā,Mārvā,Brahmi,Śaṅkhapuṣpī,consciousness,dakṣiṇa,Suśruta SS.6
+Adhipati,crown of head,1,0.5,sadyaḥ-prāṇahara,ether,Prāṇa Vāta,Sahasrāra,Suṣumnā,all rāgas,Brahmi,Śaṅkhapuṣpī,highest prāṇa,dakṣiṇa,Suśruta SS.6
+Utkṣepa,temporal,2,0.5,viśalyāghna,ether,Prāṇa Vāta,Ājñā,Suṣumnā,Yaman,Brahmi,Harītakī,trauma,dakṣiṇa,Suśruta SS.6
+Sthāpanī,glabella,1,0.5,viśalyāghna,ether,Ālochaka Pitta,Ājñā,Suṣumnā,Tōḍī,Brahmi,Vacā,third eye,dakṣiṇa,Suśruta SS.6

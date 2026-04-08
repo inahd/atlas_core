@@ -1,0 +1,32 @@
+from_id,relation,to_id,source_title,source_locator,excerpt,tradition,confidence,notes
+nadi:ida,element,element:water,svara/nadis.csv,,,traditional,0.9,
+nadi:ida,graha,graha:moon,svara/nadis.csv,,,traditional,0.9,
+nadi:ida,quality,quality:cooling_receptive_auspicious,svara/nadis.csv,,,traditional,0.9,
+nadi:ida,favored_activity,activity:amiable_works,svara/nadis.csv,,,traditional,0.9,amiable works
+nadi:ida,favored_activity,activity:stable_prosperity_works,svara/nadis.csv,,,traditional,0.9,stable prosperity works
+nadi:ida,favored_activity,activity:study,svara/nadis.csv,,,traditional,0.9,study
+nadi:ida,favored_activity,activity:gentle_meetings,svara/nadis.csv,,,traditional,0.9,gentle meetings
+nadi:ida,favored_activity,activity:devotional_action,svara/nadis.csv,,,traditional,0.9,devotional action
+nadi:pingala,element,element:fire,svara/nadis.csv,,,traditional,0.9,
+nadi:pingala,graha,graha:sun,svara/nadis.csv,,,traditional,0.9,
+nadi:pingala,quality,quality:heating_active_daring,svara/nadis.csv,,,traditional,0.9,
+nadi:pingala,favored_activity,activity:travel,svara/nadis.csv,,,traditional,0.9,travel
+nadi:pingala,favored_activity,activity:hunting,svara/nadis.csv,,,traditional,0.9,hunting
+nadi:pingala,favored_activity,activity:forceful_action,svara/nadis.csv,,,traditional,0.9,forceful action
+nadi:pingala,favored_activity,activity:eating,svara/nadis.csv,,,traditional,0.9,eating
+nadi:pingala,favored_activity,activity:increasing_digestive_fire,svara/nadis.csv,,,traditional,0.9,increasing digestive fire
+nadi:pingala,favored_activity,activity:sleep,svara/nadis.csv,,,traditional,0.9,sleep
+nadi:sushumna,element,element:ether,svara/nadis.csv,,,traditional,0.7,
+nadi:sushumna,graha,graha:fire,svara/nadis.csv,,,traditional,0.7,
+nadi:sushumna,quality,quality:transitional_inward_nonworldly,svara/nadis.csv,,,traditional,0.7,
+nadi:sushumna,favored_activity,activity:meditation,svara/nadis.csv,,,traditional,0.7,meditation
+nadi:sushumna,favored_activity,activity:yoga,svara/nadis.csv,,,traditional,0.7,yoga
+nadi:sushumna,favored_activity,activity:dhyana,svara/nadis.csv,,,traditional,0.7,dhyana
+nadi:sushumna,favored_activity,activity:remembrance_of_the_supreme,svara/nadis.csv,,,traditional,0.7,remembrance of the supreme
+vara:ravivara,optimal_nadi,nadi:pingala,svara/vara_rules.csv,,,traditional,0.6,Sunday is grouped with the right-nadi days for active and roving work.
+vara:somavara,optimal_nadi,nadi:ida,svara/vara_rules.csv,,,traditional,0.6,Monday is grouped with the left-nadi days for auspicious and gentle work.
+vara:mangalavara,optimal_nadi,nadi:pingala,svara/vara_rules.csv,,,traditional,0.6,Tuesday is grouped with the right-nadi days for forceful and mobile work.
+vara:budhavara,optimal_nadi,nadi:ida,svara/vara_rules.csv,,,traditional,0.6,Wednesday is grouped with the left-nadi days.
+vara:guruvara,optimal_nadi,nadi:ida,svara/vara_rules.csv,,,traditional,0.6,Thursday is grouped with the left-nadi days.
+vara:shukravara,optimal_nadi,nadi:ida,svara/vara_rules.csv,,,traditional,0.6,Friday is grouped with the left-nadi days.
+vara:shanivara,optimal_nadi,nadi:pingala,svara/vara_rules.csv,,,traditional,0.6,Saturday is grouped with the right-nadi days.

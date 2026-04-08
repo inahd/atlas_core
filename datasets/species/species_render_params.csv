@@ -1,0 +1,23 @@
+species_id,body_form_primary,body_form_secondary,proportion_head,proportion_body,proportion_limbs,proportion_tail,dominant_curve,texture_quality,motion_vector,color_primary_hex,color_secondary_hex,line_weight,line_quality,geometric_equivalent,render_notes
+species_ashva,cone,cylinder,0.12,0.45,0.30,0.13,parabolic,smooth,swift_diagonal,#C41E3A,#FF6B35,1.5,flowing,triangle,Fire-air noble form; elongated diagonal stride
+species_gaja,sphere,cylinder,0.15,0.50,0.25,0.10,circular,rough,slow_steady,#8B6914,#5C4033,3.0,heavy,circle,Earth-water massive form; dome-like body curves
+species_mesha,cone,sphere,0.15,0.45,0.28,0.12,angular,woolly,bounding,#C41E3A,#FF6B35,1.8,textured,triangle,Fire-earth compact; angular horns and rounded fleece
+species_sarpa,wave,spiral,0.08,0.80,0.02,0.10,sinusoidal,scaled,lateral_wave,#1B4F72,#2E86C1,1.2,flowing,spiral,Water-fire limbless; continuous sine wave motion
+species_shvan,cone,cylinder,0.14,0.40,0.30,0.16,angular,short_fur,bounding,#2C7A51,#90EE90,1.5,dynamic,triangle,Air-fire lean form; alert angular posture
+species_marjara,curve,cylinder,0.15,0.40,0.25,0.20,catenary,sleek,swift_diagonal,#1B4F72,#2E86C1,1.0,fluid,vesica,Water-air fluid form; liquid curve transitions
+species_mushaka,sphere,cone,0.20,0.45,0.20,0.15,compact,fine_fur,swift_diagonal,#8B6914,#5C4033,0.8,fine,circle,Earth-fire small dense; compact spherical body
+species_go,sphere,cylinder,0.12,0.50,0.25,0.13,circular,smooth,slow_steady,#8B6914,#5C4033,2.5,steady,circle,Earth-water steady; broad cylindrical torso
+species_mahisha,sphere,cylinder,0.14,0.52,0.24,0.10,circular,rough,slow_steady,#1B4F72,#5C4033,3.0,heavy,circle,Water-earth massive; low center wide horns
+species_vyaghra,cone,cylinder,0.14,0.42,0.30,0.14,angular,striped,swift_diagonal,#C41E3A,#FF6B35,2.0,dynamic,triangle,Fire-water powerful; angular stripes diagonal motion
+species_shasha,curve,sphere,0.18,0.42,0.25,0.15,parabolic,soft,bounding,#2C7A51,#90EE90,0.8,soft,vesica,Air-earth gentle; rounded soft arcing leaps
+species_vanara,cone,cylinder,0.18,0.35,0.30,0.17,angular,coarse,bounding,#2C7A51,#90EE90,1.2,dynamic,triangle,Air-fire agile; long-limbed angular swinging
+species_nakula,cone,cylinder,0.12,0.50,0.18,0.20,sinusoidal,sleek,swift_diagonal,#C41E3A,#FF6B35,1.0,sharp,triangle,Fire-air swift; elongated low serpentine attack
+species_simha,cone,sphere,0.22,0.40,0.25,0.13,angular,mane,slow_steady,#C41E3A,#FF6B35,2.5,majestic,triangle,Fire-earth royal; large maned head radiating authority
+species_mayura,cone,fan,0.10,0.35,0.20,0.35,radial,iridescent,vertical_display,#C41E3A,#2E86C1,1.2,ornate,mandala,Fire-air display; radial tail fan dominates form
+species_hamsa,curve,cylinder,0.12,0.48,0.15,0.25,parabolic,feathered,circular,#E8E8E8,#C0C0C0,1.0,luminous,vesica,Ether-air graceful; elongated neck curve gliding arc
+species_garuda,cone,angular,0.15,0.35,0.35,0.15,angular,feathered,swift_diagonal,#C41E3A,#FF6B35,2.0,sharp,triangle,Fire-ether mythic; great wingspan angular dive
+species_nandi,sphere,cylinder,0.12,0.52,0.25,0.11,circular,smooth,slow_steady,#8B6914,#E8E8E8,2.5,steady,circle,Earth-water sacred; massive still seated form
+species_uluka,sphere,cone,0.25,0.40,0.15,0.20,circular,feathered,circular,#2C7A51,#5C4033,1.2,soft,circle,Air-earth nocturnal; large-headed silent rotation
+species_shuka,cone,curve,0.18,0.38,0.18,0.26,parabolic,feathered,bounding,#2C7A51,#90EE90,0.8,bright,triangle,Air-fire vibrant; curved beak angular perching
+species_makara,wave,spiral,0.15,0.55,0.10,0.20,sinusoidal,scaled,lateral_wave,#1B4F72,#2E86C1,2.0,ancient,spiral,Water-earth mythic; serpentine aquatic undulation
+species_airavata,sphere,cylinder,0.14,0.50,0.26,0.10,circular,luminous,slow_steady,#E8E8E8,#C0C0C0,3.0,radiant,circle,Ether-water celestial; luminous massive dome form

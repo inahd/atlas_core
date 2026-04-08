@@ -1,0 +1,8 @@
+syllable_group,jati,anga_type,syllables,count,usage_context,source_text,attestation_status
+anudrutam_basic,n/a,anudrutam,ta,1,single clap count,Carnatic tala report sollukattu section.,OBSERVED
+drutam_basic,n/a,drutam,ta ka,2,clap-wave count,Carnatic tala report sollukattu section.,OBSERVED
+laghu_tisra,tisra,laghu,ta ki ta,3,3-count laghu fill,Carnatic tala report gati teaching syllables.,OBSERVED
+laghu_catusra,catusra,laghu,ta ka dhi mi,4,4-count laghu fill,Carnatic tala report gati teaching syllables.,OBSERVED
+laghu_khanda,khanda,laghu,ta ka ta ki ta,5,5-count laghu fill,Carnatic tala report gati teaching syllables.,OBSERVED
+laghu_misra,misra,laghu,ta ki ta ta ka di mi,7,7-count laghu fill,Carnatic tala report gati teaching syllables.,OBSERVED
+laghu_sankirna,sankirna,laghu,ta ka dhi mi ta ka ta ki ta,9,9-count laghu fill,Carnatic tala report gati teaching syllables.,OBSERVED

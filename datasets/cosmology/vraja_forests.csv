@@ -1,0 +1,13 @@
+forest_id,name,sanskrit,direction,deity,presiding_sakhi,season,nakshatra_correspondence,element,lila_type,key_plant,ashtakala_period,rasa_quality,notes
+1,Madhuvana,Madhuvana,west,Madhu_Kaitabha,Lalita,spring,Rohini,water,Madhu_lila,Kadamba,1,madhura,First forest Krishna entered
+2,Talavana,Talavana,north,Dhenukasura,Vishakha,summer,Hasta,earth,Dhenuka_lila,Palm,6,vira,Liberation of Dhenuka
+3,Kumudavana,Kumudavana,northeast,Varuna,Chitra,autumn,Shravana,water,Lotus_lila,Kumuda,7,shanta,Night pastimes
+4,Bahulavana,Bahulavana,east,Bahulashva,Champakalata,monsoon,Rohini,water,Bahula_lila,Bahula_tree,4,karuna,Cow liberation
+5,Kamyavana,Kamyavana,south,Kamadeva,Tungavidya,spring,Punarvasu,air,Kamya_lila,Ashoka,5,shringara,Most intimate pastimes
+6,Khadyavana,Khadyavana,southeast,Khanda_Rishi,Indulekha,winter,Magha,fire,Khanda_lila,Khadira,3,adbhuta,Unusual pastimes
+7,Vrindavana,Vrindavana,center,Radha_Krishna,All_sakhis,all,Hasta,ether,Rasa_lila,Tulasi,1_and_8,madhura,Central eternal forest
+8,Bhadravana,Bhadravana,northwest,Bhadra,Rati,monsoon,Uttara_Phalguni,earth,Service_lila,Bhadra_grass,2,dasya,Service pastimes
+9,Bilvavana,Bilvavana,west,Shiva,Sudevi,winter,Ardra,ether,Shiva_bhakti,Bilva,7,shanta,Shiva as devotee
+10,Lohavana,Lohavana,north,Loha_Jata,Rangadevi,summer,Krittika,fire,Demon_lila,Iron_wood,3,vira,Demon liberation
+11,Mahavana,Mahavana,south,Brahma,Sudhakari,autumn,Rohini,earth,Childhood_lila,Banyan,4,vatsalya,Childhood pastimes Gokula
+12,Gokula,Gokula,center_south,Nanda_Yashoda,All,all,Rohini,earth,Bala_lila,All,1-8,vatsalya,Childhood home

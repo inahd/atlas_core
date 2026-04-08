@@ -1,0 +1,210 @@
+from_id,relation,to_id,tradition,source,confidence,gaudiya_aligned,notes
+devi:kamesvari,devi_weapon,weapon:sugarcane_bow,tantraraja,nitya_devi_master.csv,0.92,true,Kāmeśvarī wields sugarcane bow
+devi:kamesvari,devi_mantra,mantra:om_aim_hrim_srim,tantraraja,nitya_devi_master.csv,0.92,true,Kāmeśvarī mantra: Om Aim Hrīm Śrīm
+devi:kamesvari,devi_rasa,rasa:shringara,bhakti_rasamrita,nitya_devi_master.csv + BRS,0.85,true,Kāmeśvarī embodies shringara
+devi:kamesvari,tithi_nitya_devi,tithi:1,tantraraja,nitya_devi_master.csv,0.95,true,Kāmeśvarī presides over tithi 1
+devi:kamesvari,devi_shakti,shakti:desire_fulfillment,tantraraja,nitya_devi_master.csv,0.90,true,Kāmeśvarī shakti: desire fulfillment
+devi:bhagamalini,devi_weapon,weapon:noose,tantraraja,nitya_devi_master.csv,0.92,true,Bhagamālinī wields noose
+devi:bhagamalini,devi_weapon,weapon:goad,tantraraja,nitya_devi_master.csv,0.92,true,Bhagamālinī wields goad
+devi:bhagamalini,devi_mantra,mantra:om_hrim_bhagamalinyai,tantraraja,nitya_devi_master.csv,0.92,true,Bhagamālinī mantra: Om Hrīm Bhagamālinyai
+devi:bhagamalini,devi_rasa,rasa:shanta,bhakti_rasamrita,nitya_devi_master.csv + BRS,0.85,true,Bhagamālinī embodies shanta
+devi:bhagamalini,tithi_nitya_devi,tithi:2,tantraraja,nitya_devi_master.csv,0.95,true,Bhagamālinī presides over tithi 2
+devi:bhagamalini,devi_shakti,shakti:auspiciousness,tantraraja,nitya_devi_master.csv,0.90,true,Bhagamālinī shakti: auspiciousness
+devi:nityaklinna,devi_weapon,weapon:vessel_of_nectar,tantraraja,nitya_devi_master.csv,0.92,true,Nityaklinnā wields vessel of nectar
+devi:nityaklinna,devi_mantra,mantra:om_klim_nityaklinne,tantraraja,nitya_devi_master.csv,0.92,true,Nityaklinnā mantra: Om Klīm Nityaklinne
+devi:nityaklinna,devi_rasa,rasa:karuna,bhakti_rasamrita,nitya_devi_master.csv + BRS,0.85,true,Nityaklinnā embodies karuna
+devi:nityaklinna,tithi_nitya_devi,tithi:3,tantraraja,nitya_devi_master.csv,0.95,true,Nityaklinnā presides over tithi 3
+devi:nityaklinna,devi_shakti,shakti:perpetual_moisture,tantraraja,nitya_devi_master.csv,0.90,true,Nityaklinnā shakti: perpetual moisture
+devi:bherunda,devi_weapon,weapon:skull,tantraraja,nitya_devi_master.csv,0.92,true,Bheruṇḍā wields skull
+devi:bherunda,devi_weapon,weapon:trident,tantraraja,nitya_devi_master.csv,0.92,true,Bheruṇḍā wields trident
+devi:bherunda,devi_mantra,mantra:om_hrum_bherundayai,tantraraja,nitya_devi_master.csv,0.92,true,Bheruṇḍā mantra: Om Hrūm Bheruṇḍāyai
+devi:bherunda,devi_rasa,rasa:raudra,bhakti_rasamrita,nitya_devi_master.csv + BRS,0.85,true,Bheruṇḍā embodies raudra
+devi:bherunda,tithi_nitya_devi,tithi:4,tantraraja,nitya_devi_master.csv,0.95,true,Bheruṇḍā presides over tithi 4
+devi:bherunda,devi_shakti,shakti:fierce_protection,tantraraja,nitya_devi_master.csv,0.90,true,Bheruṇḍā shakti: fierce protection
+devi:vahnivasini,devi_weapon,weapon:fire,tantraraja,nitya_devi_master.csv,0.92,true,Vahnivāsinī wields fire
+devi:vahnivasini,devi_weapon,weapon:lotus,tantraraja,nitya_devi_master.csv,0.92,true,Vahnivāsinī wields lotus
+devi:vahnivasini,devi_mantra,mantra:om_raim_vahnivasinyai,tantraraja,nitya_devi_master.csv,0.92,true,Vahnivāsinī mantra: Om Raim Vahnivāsinyai
+devi:vahnivasini,devi_rasa,rasa:vira,bhakti_rasamrita,nitya_devi_master.csv + BRS,0.85,true,Vahnivāsinī embodies vira
+devi:vahnivasini,tithi_nitya_devi,tithi:5,tantraraja,nitya_devi_master.csv,0.95,true,Vahnivāsinī presides over tithi 5
+devi:vahnivasini,devi_shakti,shakti:fire_dwelling,tantraraja,nitya_devi_master.csv,0.90,true,Vahnivāsinī shakti: fire dwelling
+devi:mahavajresvari,devi_weapon,weapon:vajra,tantraraja,nitya_devi_master.csv,0.92,true,Mahāvajreśvarī wields vajra
+devi:mahavajresvari,devi_weapon,weapon:bell,tantraraja,nitya_devi_master.csv,0.92,true,Mahāvajreśvarī wields bell
+devi:mahavajresvari,devi_mantra,mantra:om_aim_hrim_mahavajresvaryai,tantraraja,nitya_devi_master.csv,0.92,true,Mahāvajreśvarī mantra: Om Aim Hrīm Mahāvajreśvaryai
+devi:mahavajresvari,devi_rasa,rasa:adbhuta,bhakti_rasamrita,nitya_devi_master.csv + BRS,0.85,true,Mahāvajreśvarī embodies adbhuta
+devi:mahavajresvari,tithi_nitya_devi,tithi:6,tantraraja,nitya_devi_master.csv,0.95,true,Mahāvajreśvarī presides over tithi 6
+devi:mahavajresvari,devi_shakti,shakti:thunderbolt_power,tantraraja,nitya_devi_master.csv,0.90,true,Mahāvajreśvarī shakti: thunderbolt power
+devi:shivaduti,devi_weapon,weapon:sword,tantraraja,nitya_devi_master.csv,0.92,true,Śivadūtī wields sword
+devi:shivaduti,devi_weapon,weapon:shield,tantraraja,nitya_devi_master.csv,0.92,true,Śivadūtī wields shield
+devi:shivaduti,devi_mantra,mantra:om_hum_sivadutyai,tantraraja,nitya_devi_master.csv,0.92,true,Śivadūtī mantra: Om Hūm Śivadūtyai
+devi:shivaduti,devi_rasa,rasa:bhayanaka,bhakti_rasamrita,nitya_devi_master.csv + BRS,0.85,true,Śivadūtī embodies bhayanaka
+devi:shivaduti,tithi_nitya_devi,tithi:7,tantraraja,nitya_devi_master.csv,0.95,true,Śivadūtī presides over tithi 7
+devi:shivaduti,devi_shakti,shakti:shiva_s_messenger,tantraraja,nitya_devi_master.csv,0.90,true,Śivadūtī shakti: Shiva's messenger
+devi:tvarita,devi_weapon,weapon:trident,tantraraja,nitya_devi_master.csv,0.92,true,Tvaritā wields trident
+devi:tvarita,devi_weapon,weapon:drum,tantraraja,nitya_devi_master.csv,0.92,true,Tvaritā wields drum
+devi:tvarita,devi_mantra,mantra:om_trim_tvaritayai,tantraraja,nitya_devi_master.csv,0.92,true,Tvaritā mantra: Om Trim Tvaritāyai
+devi:tvarita,devi_rasa,rasa:vira,bhakti_rasamrita,nitya_devi_master.csv + BRS,0.85,true,Tvaritā embodies vira
+devi:tvarita,tithi_nitya_devi,tithi:8,tantraraja,nitya_devi_master.csv,0.95,true,Tvaritā presides over tithi 8
+devi:tvarita,devi_shakti,shakti:swift_action,tantraraja,nitya_devi_master.csv,0.90,true,Tvaritā shakti: swift action
+devi:kulasundari,devi_weapon,weapon:noose,tantraraja,nitya_devi_master.csv,0.92,true,Kulasundarī wields noose
+devi:kulasundari,devi_weapon,weapon:goad,tantraraja,nitya_devi_master.csv,0.92,true,Kulasundarī wields goad
+devi:kulasundari,devi_weapon,weapon:lotus,tantraraja,nitya_devi_master.csv,0.92,true,Kulasundarī wields lotus
+devi:kulasundari,devi_mantra,mantra:om_aim_klim_kulasundaryai,tantraraja,nitya_devi_master.csv,0.92,true,Kulasundarī mantra: Om Aim Klīm Kulasundaryai
+devi:kulasundari,devi_rasa,rasa:shringara,bhakti_rasamrita,nitya_devi_master.csv + BRS,0.85,true,Kulasundarī embodies shringara
+devi:kulasundari,tithi_nitya_devi,tithi:9,tantraraja,nitya_devi_master.csv,0.95,true,Kulasundarī presides over tithi 9
+devi:kulasundari,devi_shakti,shakti:beauty_of_the_lineage,tantraraja,nitya_devi_master.csv,0.90,true,Kulasundarī shakti: beauty of the lineage
+devi:nitya,devi_weapon,weapon:conch,tantraraja,nitya_devi_master.csv,0.92,true,Nityā wields conch
+devi:nitya,devi_weapon,weapon:lotus,tantraraja,nitya_devi_master.csv,0.92,true,Nityā wields lotus
+devi:nitya,devi_mantra,mantra:om_aim_hrim_srim_nityayai,tantraraja,nitya_devi_master.csv,0.92,true,Nityā mantra: Om Aim Hrīm Śrīm Nityāyai
+devi:nitya,devi_rasa,rasa:shanta,bhakti_rasamrita,nitya_devi_master.csv + BRS,0.85,true,Nityā embodies shanta
+devi:nitya,tithi_nitya_devi,tithi:10,tantraraja,nitya_devi_master.csv,0.95,true,Nityā presides over tithi 10
+devi:nitya,devi_shakti,shakti:eternal_being,tantraraja,nitya_devi_master.csv,0.90,true,Nityā shakti: eternal being
+devi:nilapataka,devi_weapon,weapon:blue_flag,tantraraja,nitya_devi_master.csv,0.92,true,Nīlapatākā wields blue flag
+devi:nilapataka,devi_weapon,weapon:bow,tantraraja,nitya_devi_master.csv,0.92,true,Nīlapatākā wields bow
+devi:nilapataka,devi_mantra,mantra:om_aim_hrim_nilapatakayai,tantraraja,nitya_devi_master.csv,0.92,true,Nīlapatākā mantra: Om Aim Hrīm Nīlapatākāyai
+devi:nilapataka,devi_rasa,rasa:adbhuta,bhakti_rasamrita,nitya_devi_master.csv + BRS,0.85,true,Nīlapatākā embodies adbhuta
+devi:nilapataka,tithi_nitya_devi,tithi:11,tantraraja,nitya_devi_master.csv,0.95,true,Nīlapatākā presides over tithi 11
+devi:nilapataka,devi_shakti,shakti:blue_banner,tantraraja,nitya_devi_master.csv,0.90,true,Nīlapatākā shakti: blue banner
+devi:vijaya,devi_weapon,weapon:disc,tantraraja,nitya_devi_master.csv,0.92,true,Vijayā wields disc
+devi:vijaya,devi_weapon,weapon:spear,tantraraja,nitya_devi_master.csv,0.92,true,Vijayā wields spear
+devi:vijaya,devi_mantra,mantra:om_hrim_aim_vijayayai,tantraraja,nitya_devi_master.csv,0.92,true,Vijayā mantra: Om Hrīm Aim Vijayāyai
+devi:vijaya,devi_rasa,rasa:vira,bhakti_rasamrita,nitya_devi_master.csv + BRS,0.85,true,Vijayā embodies vira
+devi:vijaya,tithi_nitya_devi,tithi:12,tantraraja,nitya_devi_master.csv,0.95,true,Vijayā presides over tithi 12
+devi:vijaya,devi_shakti,shakti:victory,tantraraja,nitya_devi_master.csv,0.90,true,Vijayā shakti: victory
+devi:sarvangasundari,devi_weapon,weapon:mirror,tantraraja,nitya_devi_master.csv,0.92,true,Sarvāṅgasundarī wields mirror
+devi:sarvangasundari,devi_weapon,weapon:lotus,tantraraja,nitya_devi_master.csv,0.92,true,Sarvāṅgasundarī wields lotus
+devi:sarvangasundari,devi_mantra,mantra:om_aim_klim_sauh_sarvangasundaryai,tantraraja,nitya_devi_master.csv,0.92,true,Sarvāṅgasundarī mantra: Om Aim Klīm Sauḥ Sarvāṅgasundaryai
+devi:sarvangasundari,devi_rasa,rasa:shringara,bhakti_rasamrita,nitya_devi_master.csv + BRS,0.85,true,Sarvāṅgasundarī embodies shringara
+devi:sarvangasundari,tithi_nitya_devi,tithi:13,tantraraja,nitya_devi_master.csv,0.95,true,Sarvāṅgasundarī presides over tithi 13
+devi:sarvangasundari,devi_shakti,shakti:beauty_in_all_limbs,tantraraja,nitya_devi_master.csv,0.90,true,Sarvāṅgasundarī shakti: beauty in all limbs
+devi:jvalamalini,devi_weapon,weapon:fire_garland,tantraraja,nitya_devi_master.csv,0.92,true,Jvālāmālinī wields fire garland
+devi:jvalamalini,devi_weapon,weapon:sword,tantraraja,nitya_devi_master.csv,0.92,true,Jvālāmālinī wields sword
+devi:jvalamalini,devi_mantra,mantra:om_hrim_srim_jvalamalinyai,tantraraja,nitya_devi_master.csv,0.92,true,Jvālāmālinī mantra: Om Hrīm Śrīm Jvālāmālinyai
+devi:jvalamalini,devi_rasa,rasa:raudra,bhakti_rasamrita,nitya_devi_master.csv + BRS,0.85,true,Jvālāmālinī embodies raudra
+devi:jvalamalini,tithi_nitya_devi,tithi:14,tantraraja,nitya_devi_master.csv,0.95,true,Jvālāmālinī presides over tithi 14
+devi:jvalamalini,devi_shakti,shakti:garland_of_flames,tantraraja,nitya_devi_master.csv,0.90,true,Jvālāmālinī shakti: garland of flames
+devi:citra,devi_weapon,weapon:painted_lotus,tantraraja,nitya_devi_master.csv,0.92,true,Citrā wields painted lotus
+devi:citra,devi_weapon,weapon:noose,tantraraja,nitya_devi_master.csv,0.92,true,Citrā wields noose
+devi:citra,devi_mantra,mantra:om_aim_hrim_srim_klim_citrayai,tantraraja,nitya_devi_master.csv,0.92,true,Citrā mantra: Om Aim Hrīm Śrīm Klīm Citrāyai
+devi:citra,devi_rasa,rasa:adbhuta,bhakti_rasamrita,nitya_devi_master.csv + BRS,0.85,true,Citrā embodies adbhuta
+devi:citra,tithi_nitya_devi,tithi:15,tantraraja,nitya_devi_master.csv,0.95,true,Citrā presides over tithi 15
+devi:citra,devi_shakti,shakti:wonder_variety,tantraraja,nitya_devi_master.csv,0.90,true,Citrā shakti: wonder+variety
+raga:yaman,raga_rasa,rasa:shringara,natyashastra,Nāṭyaśāstra + Saṅgīta Ratnākara,0.88,false,evening raga of longing and beauty
+raga:bhairavi,raga_rasa,rasa:karuna,natyashastra,Nāṭyaśāstra + Saṅgīta Ratnākara,0.88,false,morning raga of compassion
+raga:todi,raga_rasa,rasa:karuna,natyashastra,Nāṭyaśāstra + Saṅgīta Ratnākara,0.88,false,morning raga of pathos
+raga:bhairav,raga_rasa,rasa:shanta,natyashastra,Nāṭyaśāstra + Saṅgīta Ratnākara,0.88,false,dawn raga of peace and devotion
+raga:marva,raga_rasa,rasa:shringara,natyashastra,Nāṭyaśāstra + Saṅgīta Ratnākara,0.88,false,sunset raga of yearning
+raga:darbari,raga_rasa,rasa:vira,sangita_ratnakara,Nāṭyaśāstra + Saṅgīta Ratnākara,0.88,false,night raga of majesty
+raga:malkauns,raga_rasa,rasa:shanta,natyashastra,Nāṭyaśāstra + Saṅgīta Ratnākara,0.88,false,midnight raga of stillness
+raga:bageshri,raga_rasa,rasa:shringara,sangita_ratnakara,Nāṭyaśāstra + Saṅgīta Ratnākara,0.88,false,night raga of intimacy
+raga:bihag,raga_rasa,rasa:shringara,sangita_ratnakara,Nāṭyaśāstra + Saṅgīta Ratnākara,0.88,false,late night raga of love
+raga:kafi,raga_rasa,rasa:shringara,sangita_ratnakara,Nāṭyaśāstra + Saṅgīta Ratnākara,0.88,false,spring raga of play
+raga:khamaj,raga_rasa,rasa:shringara,sangita_ratnakara,Nāṭyaśāstra + Saṅgīta Ratnākara,0.88,false,light evening raga
+raga:multani,raga_rasa,rasa:karuna,natyashastra,Nāṭyaśāstra + Saṅgīta Ratnākara,0.88,false,afternoon raga of depth
+raga:bhimpalasi,raga_rasa,rasa:shringara,sangita_ratnakara,Nāṭyaśāstra + Saṅgīta Ratnākara,0.88,false,afternoon raga of longing
+raga:yaman_kalyan,raga_rasa,rasa:shringara,natyashastra,Nāṭyaśāstra + Saṅgīta Ratnākara,0.88,false,evening raga of uplift
+raga:desh,raga_rasa,rasa:shringara,sangita_ratnakara,Nāṭyaśāstra + Saṅgīta Ratnākara,0.88,false,rain raga of romance
+raga:bhoop,raga_rasa,rasa:shanta,natyashastra,Nāṭyaśāstra + Saṅgīta Ratnākara,0.88,false,dawn raga of serenity
+rasa:shringara,rasa_devi,devi:kamesvari,bhakti_rasamrita,BRS + tantraraja correlation,0.85,true,Kāmeśvarī embodies creative desire
+rasa:karuna,rasa_devi,devi:nityaklinna,bhakti_rasamrita,BRS + tantraraja correlation,0.85,true,Nityaklinnā is ever-moist with compassion
+rasa:vira,rasa_devi,devi:vahnivasini,bhakti_rasamrita,BRS + tantraraja correlation,0.85,true,Vahnivāsinī dwells in transformative fire
+rasa:raudra,rasa_devi,devi:bherunda,bhakti_rasamrita,BRS + tantraraja correlation,0.85,true,Bheruṇḍā is the fierce protector
+rasa:adbhuta,rasa_devi,devi:mahavajresvari,bhakti_rasamrita,BRS + tantraraja correlation,0.85,true,Mahāvajreśvarī wields thunderbolt wonder
+rasa:bhayanaka,rasa_devi,devi:shivaduti,bhakti_rasamrita,BRS + tantraraja correlation,0.85,true,Śivadūtī carries messages across boundaries
+rasa:shanta,rasa_devi,devi:nitya,bhakti_rasamrita,BRS + tantraraja correlation,0.85,true,Nityā is the eternal itself
+rasa:hasya,rasa_devi,devi:kulasundari,bhakti_rasamrita,BRS + tantraraja correlation,0.85,true,Kulasundarī reveals beauty as liberation
+rasa:bibhatsa,rasa_devi,devi:jvalamalini,bhakti_rasamrita,BRS + tantraraja correlation,0.85,true,Jvālāmālinī burns away residue
+raga:yaman,raga_devi,devi:kamesvari,tantraraja,nitya_devi_master.csv raga assignment,0.85,true,Raga expresses this devi
+raga:bhairavi,raga_devi,devi:bhagamalini,tantraraja,nitya_devi_master.csv raga assignment,0.85,true,Raga expresses this devi
+raga:todi,raga_devi,devi:nityaklinna,tantraraja,nitya_devi_master.csv raga assignment,0.85,true,Raga expresses this devi
+raga:bhairav,raga_devi,devi:bherunda,tantraraja,nitya_devi_master.csv raga assignment,0.85,true,Raga expresses this devi
+raga:marva,raga_devi,devi:vahnivasini,tantraraja,nitya_devi_master.csv raga assignment,0.85,true,Raga expresses this devi
+raga:darbari,raga_devi,devi:tvarita,tantraraja,nitya_devi_master.csv raga assignment,0.85,true,Raga expresses this devi
+raga:bageshri,raga_devi,devi:kulasundari,tantraraja,nitya_devi_master.csv raga assignment,0.85,true,Raga expresses this devi
+raga:bihag,raga_devi,devi:nitya,tantraraja,nitya_devi_master.csv raga assignment,0.85,true,Raga expresses this devi
+raga:kafi,raga_devi,devi:nilapataka,tantraraja,nitya_devi_master.csv raga assignment,0.85,true,Raga expresses this devi
+raga:khamaj,raga_devi,devi:vijaya,tantraraja,nitya_devi_master.csv raga assignment,0.85,true,Raga expresses this devi
+raga:multani,raga_devi,devi:sarvangasundari,tantraraja,nitya_devi_master.csv raga assignment,0.85,true,Raga expresses this devi
+nakshatra:ashwini,nakshatra_element,element:fire,parashara,nakshatra_master.csv / BPHS,0.92,false,Ashwini element is fire
+nakshatra:ashwini,nakshatra_guna,guna:rajas,parashara,nakshatra_master.csv / BPHS,0.92,false,Ashwini guna is rajas
+nakshatra:bharani,nakshatra_element,element:earth,parashara,nakshatra_master.csv / BPHS,0.92,false,Bharani element is earth
+nakshatra:bharani,nakshatra_guna,guna:rajas,parashara,nakshatra_master.csv / BPHS,0.92,false,Bharani guna is rajas
+nakshatra:krittika,nakshatra_element,element:fire,parashara,nakshatra_master.csv / BPHS,0.92,false,Krittika element is fire
+nakshatra:krittika,nakshatra_guna,guna:rajas,parashara,nakshatra_master.csv / BPHS,0.92,false,Krittika guna is rajas
+nakshatra:rohini,nakshatra_element,element:earth,parashara,nakshatra_master.csv / BPHS,0.92,false,Rohini element is earth
+nakshatra:rohini,nakshatra_guna,guna:rajas,parashara,nakshatra_master.csv / BPHS,0.92,false,Rohini guna is rajas
+nakshatra:mrigashira,nakshatra_element,element:earth,parashara,nakshatra_master.csv / BPHS,0.92,false,Mrigashira element is earth
+nakshatra:mrigashira,nakshatra_guna,guna:tamas,parashara,nakshatra_master.csv / BPHS,0.92,false,Mrigashira guna is tamas
+nakshatra:ardra,nakshatra_element,element:water,parashara,nakshatra_master.csv / BPHS,0.92,false,Ardra element is water
+nakshatra:ardra,nakshatra_guna,guna:tamas,parashara,nakshatra_master.csv / BPHS,0.92,false,Ardra guna is tamas
+nakshatra:punarvasu,nakshatra_element,element:air,parashara,nakshatra_master.csv / BPHS,0.92,false,Punarvasu element is air
+nakshatra:punarvasu,nakshatra_guna,guna:sattva,parashara,nakshatra_master.csv / BPHS,0.92,false,Punarvasu guna is sattva
+nakshatra:pushya,nakshatra_element,element:water,parashara,nakshatra_master.csv / BPHS,0.92,false,Pushya element is water
+nakshatra:pushya,nakshatra_guna,guna:sattva,parashara,nakshatra_master.csv / BPHS,0.92,false,Pushya guna is sattva
+nakshatra:ashlesha,nakshatra_element,element:water,parashara,nakshatra_master.csv / BPHS,0.92,false,Ashlesha element is water
+nakshatra:ashlesha,nakshatra_guna,guna:tamas,parashara,nakshatra_master.csv / BPHS,0.92,false,Ashlesha guna is tamas
+nakshatra:magha,nakshatra_element,element:fire,parashara,nakshatra_master.csv / BPHS,0.92,false,Magha element is fire
+nakshatra:magha,nakshatra_guna,guna:tamas,parashara,nakshatra_master.csv / BPHS,0.92,false,Magha guna is tamas
+nakshatra:purva_phalguni,nakshatra_element,element:earth,parashara,nakshatra_master.csv / BPHS,0.92,false,Purva_Phalguni element is earth
+nakshatra:purva_phalguni,nakshatra_guna,guna:rajas,parashara,nakshatra_master.csv / BPHS,0.92,false,Purva_Phalguni guna is rajas
+nakshatra:uttara_phalguni,nakshatra_element,element:earth,parashara,nakshatra_master.csv / BPHS,0.92,false,Uttara_Phalguni element is earth
+nakshatra:uttara_phalguni,nakshatra_guna,guna:sattva,parashara,nakshatra_master.csv / BPHS,0.92,false,Uttara_Phalguni guna is sattva
+nakshatra:hasta,nakshatra_element,element:air,parashara,nakshatra_master.csv / BPHS,0.92,false,Hasta element is air
+nakshatra:hasta,nakshatra_guna,guna:sattva,parashara,nakshatra_master.csv / BPHS,0.92,false,Hasta guna is sattva
+nakshatra:chitra,nakshatra_element,element:fire,parashara,nakshatra_master.csv / BPHS,0.92,false,Chitra element is fire
+nakshatra:chitra,nakshatra_guna,guna:tamas,parashara,nakshatra_master.csv / BPHS,0.92,false,Chitra guna is tamas
+nakshatra:swati,nakshatra_element,element:air,parashara,nakshatra_master.csv / BPHS,0.92,false,Swati element is air
+nakshatra:swati,nakshatra_guna,guna:rajas,parashara,nakshatra_master.csv / BPHS,0.92,false,Swati guna is rajas
+nakshatra:vishakha,nakshatra_element,element:fire,parashara,nakshatra_master.csv / BPHS,0.92,false,Vishakha element is fire
+nakshatra:vishakha,nakshatra_guna,guna:rajas,parashara,nakshatra_master.csv / BPHS,0.92,false,Vishakha guna is rajas
+nakshatra:anuradha,nakshatra_element,element:water,parashara,nakshatra_master.csv / BPHS,0.92,false,Anuradha element is water
+nakshatra:anuradha,nakshatra_guna,guna:sattva,parashara,nakshatra_master.csv / BPHS,0.92,false,Anuradha guna is sattva
+nakshatra:jyeshtha,nakshatra_element,element:air,parashara,nakshatra_master.csv / BPHS,0.92,false,Jyeshtha element is air
+nakshatra:jyeshtha,nakshatra_guna,guna:tamas,parashara,nakshatra_master.csv / BPHS,0.92,false,Jyeshtha guna is tamas
+nakshatra:mula,nakshatra_element,element:air,parashara,nakshatra_master.csv / BPHS,0.92,false,Mula element is air
+nakshatra:mula,nakshatra_guna,guna:tamas,parashara,nakshatra_master.csv / BPHS,0.92,false,Mula guna is tamas
+nakshatra:purva_ashadha,nakshatra_element,element:water,parashara,nakshatra_master.csv / BPHS,0.92,false,Purva_Ashadha element is water
+nakshatra:purva_ashadha,nakshatra_guna,guna:rajas,parashara,nakshatra_master.csv / BPHS,0.92,false,Purva_Ashadha guna is rajas
+nakshatra:uttara_ashadha,nakshatra_element,element:earth,parashara,nakshatra_master.csv / BPHS,0.92,false,Uttara_Ashadha element is earth
+nakshatra:uttara_ashadha,nakshatra_guna,guna:sattva,parashara,nakshatra_master.csv / BPHS,0.92,false,Uttara_Ashadha guna is sattva
+nakshatra:shravana,nakshatra_element,element:air,parashara,nakshatra_master.csv / BPHS,0.92,false,Shravana element is air
+nakshatra:shravana,nakshatra_guna,guna:sattva,parashara,nakshatra_master.csv / BPHS,0.92,false,Shravana guna is sattva
+nakshatra:dhanishta,nakshatra_element,element:fire,parashara,nakshatra_master.csv / BPHS,0.92,false,Dhanishta element is fire
+nakshatra:dhanishta,nakshatra_guna,guna:rajas,parashara,nakshatra_master.csv / BPHS,0.92,false,Dhanishta guna is rajas
+nakshatra:shatabhisha,nakshatra_element,element:air,parashara,nakshatra_master.csv / BPHS,0.92,false,Shatabhisha element is air
+nakshatra:shatabhisha,nakshatra_guna,guna:tamas,parashara,nakshatra_master.csv / BPHS,0.92,false,Shatabhisha guna is tamas
+nakshatra:purva_bhadrapada,nakshatra_element,element:fire,parashara,nakshatra_master.csv / BPHS,0.92,false,Purva_Bhadrapada element is fire
+nakshatra:purva_bhadrapada,nakshatra_guna,guna:tamas,parashara,nakshatra_master.csv / BPHS,0.92,false,Purva_Bhadrapada guna is tamas
+nakshatra:uttara_bhadrapada,nakshatra_element,element:water,parashara,nakshatra_master.csv / BPHS,0.92,false,Uttara_Bhadrapada element is water
+nakshatra:uttara_bhadrapada,nakshatra_guna,guna:sattva,parashara,nakshatra_master.csv / BPHS,0.92,false,Uttara_Bhadrapada guna is sattva
+nakshatra:revati,nakshatra_element,element:water,parashara,nakshatra_master.csv / BPHS,0.92,false,Revati element is water
+nakshatra:revati,nakshatra_guna,guna:sattva,parashara,nakshatra_master.csv / BPHS,0.92,false,Revati guna is sattva
+bija:aim,bija_mantra,mantra:om_aim_hrim_srim,tantraraja,nitya_devi_master.csv,0.88,true,bija Aim expands to Om Aim Hrīm Śrīm
+bija:aim,bija_devi,devi:kamesvari,tantraraja,nitya_devi_master.csv,0.92,true,bija Aim belongs to devi_kamesvari
+bija:hrim,bija_mantra,mantra:om_hrim_bhagamalinyai,tantraraja,nitya_devi_master.csv,0.88,true,bija Hrīm expands to Om Hrīm Bhagamālinyai
+bija:hrim,bija_devi,devi:bhagamalini,tantraraja,nitya_devi_master.csv,0.92,true,bija Hrīm belongs to devi_bhagamalini
+bija:klim,bija_mantra,mantra:om_klim_nityaklinne,tantraraja,nitya_devi_master.csv,0.88,true,bija Klīm expands to Om Klīm Nityaklinne
+bija:klim,bija_devi,devi:nityaklinna,tantraraja,nitya_devi_master.csv,0.92,true,bija Klīm belongs to devi_nityaklinna
+bija:hrum,bija_mantra,mantra:om_hrum_bherundayai,tantraraja,nitya_devi_master.csv,0.88,true,bija Hrūm expands to Om Hrūm Bheruṇḍāyai
+bija:hrum,bija_devi,devi:bherunda,tantraraja,nitya_devi_master.csv,0.92,true,bija Hrūm belongs to devi_bherunda
+bija:raim,bija_mantra,mantra:om_raim_vahnivasinyai,tantraraja,nitya_devi_master.csv,0.88,true,bija Raim expands to Om Raim Vahnivāsinyai
+bija:raim,bija_devi,devi:vahnivasini,tantraraja,nitya_devi_master.csv,0.92,true,bija Raim belongs to devi_vahnivasini
+bija:aim_hrim,bija_mantra,mantra:om_aim_hrim_mahavajresvaryai,tantraraja,nitya_devi_master.csv,0.88,true,bija Aim Hrīm expands to Om Aim Hrīm Mahāvajreśvaryai
+bija:aim_hrim,bija_devi,devi:mahavajresvari,tantraraja,nitya_devi_master.csv,0.92,true,bija Aim Hrīm belongs to devi_mahavajresvari
+bija:hum,bija_mantra,mantra:om_hum_sivadutyai,tantraraja,nitya_devi_master.csv,0.88,true,bija Hūm expands to Om Hūm Śivadūtyai
+bija:hum,bija_devi,devi:shivaduti,tantraraja,nitya_devi_master.csv,0.92,true,bija Hūm belongs to devi_shivaduti
+bija:trim,bija_mantra,mantra:om_trim_tvaritayai,tantraraja,nitya_devi_master.csv,0.88,true,bija Trim expands to Om Trim Tvaritāyai
+bija:trim,bija_devi,devi:tvarita,tantraraja,nitya_devi_master.csv,0.92,true,bija Trim belongs to devi_tvarita
+bija:aim_klim,bija_mantra,mantra:om_aim_klim_kulasundaryai,tantraraja,nitya_devi_master.csv,0.88,true,bija Aim Klīm expands to Om Aim Klīm Kulasundaryai
+bija:aim_klim,bija_devi,devi:kulasundari,tantraraja,nitya_devi_master.csv,0.92,true,bija Aim Klīm belongs to devi_kulasundari
+bija:aim_hrim_srim,bija_mantra,mantra:om_aim_hrim_srim_nityayai,tantraraja,nitya_devi_master.csv,0.88,true,bija Aim Hrīm Śrīm expands to Om Aim Hrīm Śrīm Nityāyai
+bija:aim_hrim_srim,bija_devi,devi:nitya,tantraraja,nitya_devi_master.csv,0.92,true,bija Aim Hrīm Śrīm belongs to devi_nitya
+bija:aim_hrim,bija_mantra,mantra:om_aim_hrim_nilapatakayai,tantraraja,nitya_devi_master.csv,0.88,true,bija Aim Hrīm expands to Om Aim Hrīm Nīlapatākāyai
+bija:aim_hrim,bija_devi,devi:nilapataka,tantraraja,nitya_devi_master.csv,0.92,true,bija Aim Hrīm belongs to devi_nilapataka
+bija:hrim_aim,bija_mantra,mantra:om_hrim_aim_vijayayai,tantraraja,nitya_devi_master.csv,0.88,true,bija Hrīm Aim expands to Om Hrīm Aim Vijayāyai
+bija:hrim_aim,bija_devi,devi:vijaya,tantraraja,nitya_devi_master.csv,0.92,true,bija Hrīm Aim belongs to devi_vijaya
+bija:aim_klim_sauh,bija_mantra,mantra:om_aim_klim_sauh_sarvangasundaryai,tantraraja,nitya_devi_master.csv,0.88,true,bija Aim Klīm Sauḥ expands to Om Aim Klīm Sauḥ Sarvāṅgasundaryai
+bija:aim_klim_sauh,bija_devi,devi:sarvangasundari,tantraraja,nitya_devi_master.csv,0.92,true,bija Aim Klīm Sauḥ belongs to devi_sarvangasundari
+bija:hrim_srim,bija_mantra,mantra:om_hrim_srim_jvalamalinyai,tantraraja,nitya_devi_master.csv,0.88,true,bija Hrīm Śrīm expands to Om Hrīm Śrīm Jvālāmālinyai
+bija:hrim_srim,bija_devi,devi:jvalamalini,tantraraja,nitya_devi_master.csv,0.92,true,bija Hrīm Śrīm belongs to devi_jvalamalini
+bija:aim_hrim_srim_klim,bija_mantra,mantra:om_aim_hrim_srim_klim_citrayai,tantraraja,nitya_devi_master.csv,0.88,true,bija Aim Hrīm Śrīm Klīm expands to Om Aim Hrīm Śrīm Klīm Citrāyai
+bija:aim_hrim_srim_klim,bija_devi,devi:citra,tantraraja,nitya_devi_master.csv,0.92,true,bija Aim Hrīm Śrīm Klīm belongs to devi_citra

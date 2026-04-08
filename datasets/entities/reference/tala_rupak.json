@@ -1,0 +1,60 @@
+{
+  "entity_id": "tala_rupak",
+  "version": 1,
+
+  "identity": {
+    "name": "Rupak",
+    "iast": "Rūpak",
+    "devanagari": "रूपक",
+    "common": ["Rupak Tala", "Rupaka"],
+    "synonyms": ["Tisra Jati Rupaka"],
+    "attestation": "OBSERVED:GANDHARVA_TRADITION"
+  },
+
+  "field_coordinates": {
+    "theta": "S3 (Rhythm / Kāla)",
+    "theta_note": "tala lives at the rhythm layer",
+    "phi": 1.57,
+    "phi_note": "center — rhythm holds both witness and participant",
+    "psi_primary": "jijnasu",
+    "psi_note": "Rupak is an odd-meter tala — creates gentle asymmetry that holds attention"
+  },
+
+  "domains": {
+    "gandharva": {
+      "source": "Hindustani tala tradition",
+      "attestation": "OBSERVED:GANDHARVA_TRADITION",
+      "beats": 7,
+      "vibhag": [3, 2, 2],
+      "clap_pattern": ["wave", "clap", "clap"],
+      "sam_emphasis": "khali (wave) on sam — sam is NOT emphasized",
+      "theka": "tin tin na | dhi na | dhi na",
+      "laya": "vilambit to madhya",
+      "rasa_affinity": "karuna · shringara",
+      "note": "7-beat cycle. Sam on khali (wave) gives Rupak its contemplative quality — the downbeat is an absence."
+    }
+  },
+
+  "nakshatra_correspondence": {
+    "primary": "",
+    "source": "",
+    "attestation": "SYNTHESIS"
+  },
+
+  "field_activation": {
+    "vara": [],
+    "element": ["water", "ether"],
+    "tithi": [],
+    "nakshatra": [],
+    "note": "Rupak suits vilambit mood — waning paksha, water/ether elements, contemplative guna"
+  },
+
+  "use_ratings": {
+    "attestation": "SYNTHESIS",
+    "ratings": {
+      "vilambit_alap":   {"phi": 0.5, "score": 1.0, "label": "canonical"},
+      "madhya_gat":      {"phi": 1.0, "score": 0.9, "label": "common"},
+      "drut":            {"phi": 3.5, "score": 0.3, "label": "unusual"}
+    }
+  }
+}

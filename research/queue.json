@@ -1,0 +1,56 @@
+[
+  {
+    "id": "q001",
+    "title": "Shakti Pitha Geographic Body Map",
+    "type": "gpt_agent",
+    "priority": "high",
+    "field_optimal": {"vara": "Guruvara", "nakshatra": "Pushya"},
+    "status": "waiting",
+    "brief_file": "briefs/2026-04-04-shakti-pitha-brief.md"
+  },
+  {
+    "id": "q002",
+    "title": "Cross-tradition Doctrine of Signatures",
+    "type": "gpt_agent",
+    "priority": "medium",
+    "field_optimal": {"vara": "Shukravara"},
+    "status": "waiting",
+    "brief_file": "briefs/2026-04-04-doctrine-of-signatures-brief.md"
+  },
+  {
+    "id": "q003",
+    "title": "Aboriginal Cosmological Overlay",
+    "type": "gpt_agent",
+    "priority": "medium",
+    "field_optimal": {"nakshatra": "Ardra"},
+    "status": "waiting",
+    "brief_file": "briefs/2026-04-04-aboriginal-overlay-brief.md"
+  },
+  {
+    "id": "q004",
+    "title": "Classical Yoga Instructions",
+    "type": "gpt_agent",
+    "priority": "high",
+    "field_optimal": {"vara": "Guruvara"},
+    "status": "waiting",
+    "brief_file": "briefs/2026-04-04-yoga-classical-brief.md"
+  },
+  {
+    "id": "q005",
+    "title": "figure_renderer.py — fluid dynamics",
+    "type": "claude_code",
+    "priority": "high",
+    "field_optimal": {"vara": "Shanivara"},
+    "status": "waiting",
+    "brief_file": null
+  },
+  {
+    "id": "q006",
+    "title": "Bandhu skeleton — foot cosmology integration",
+    "type": "claude_code",
+    "priority": "medium",
+    "field_optimal": {"nakshatra": "Hasta"},
+    "status": "waiting",
+    "brief_file": null
+  }
+]

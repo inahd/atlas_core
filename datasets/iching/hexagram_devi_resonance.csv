@@ -1,0 +1,417 @@
+hexagram_id,devi_id,tithi_alignment,resonance_score,quality_match,notes
+hexagram_01,devi_kamesvari,direct,0.4,direct tithi 1 alignment,the creative resonates with Kāmeśvarī
+hexagram_01,devi_shivaduti,none,0.25,shared element ether,the creative resonates with Śivadūtī
+hexagram_01,devi_kulasundari,none,0.45,shared element ether + shared guna sattva,the creative resonates with Kulasundarī
+hexagram_01,devi_nilapataka,none,0.35,shared guna sattva + shared rasa adbhuta,the creative resonates with Nīlapatākā
+hexagram_01,devi_citra,none,0.6,shared element ether + shared guna sattva + shared rasa adbhuta,the creative resonates with Citrā
+hexagram_02,devi_bhagamalini,direct,0.55,direct tithi 2 alignment + shared rasa shanta,the receptive resonates with Bhagamālinī
+hexagram_02,devi_sarvangasundari,none,0.25,shared element earth,the receptive resonates with Sarvāṅgasundarī
+hexagram_03,devi_kamesvari,none,0.45,shared element fire + shared guna rajas,difficulty at the beginning resonates with Kāmeśvarī
+hexagram_03,devi_bhagamalini,none,0.25,shared element water,difficulty at the beginning resonates with Bhagamālinī
+hexagram_03,devi_nityaklinna,direct,0.8,direct tithi 3 alignment + shared element water + shared rasa karuna,difficulty at the beginning resonates with Nityaklinnā
+hexagram_03,devi_bherunda,none,0.25,shared element fire,difficulty at the beginning resonates with Bheruṇḍā
+hexagram_03,devi_vahnivasini,none,0.45,shared element fire + shared guna rajas,difficulty at the beginning resonates with Vahnivāsinī
+hexagram_03,devi_tvarita,none,0.45,shared element fire + shared guna rajas,difficulty at the beginning resonates with Tvaritā
+hexagram_03,devi_nitya,none,0.25,shared element water,difficulty at the beginning resonates with Nityā
+hexagram_03,devi_vijaya,none,0.45,shared element fire + shared guna rajas,difficulty at the beginning resonates with Vijayā
+hexagram_03,devi_jvalamalini,none,0.45,shared element fire + shared guna rajas,difficulty at the beginning resonates with Jvālāmālinī
+hexagram_04,devi_bhagamalini,none,0.25,shared element water,youthful folly resonates with Bhagamālinī
+hexagram_04,devi_nityaklinna,none,0.45,shared element water + shared guna tamas,youthful folly resonates with Nityaklinnā
+hexagram_04,devi_bherunda,direct,0.6,direct tithi 4 alignment + shared guna tamas,youthful folly resonates with Bheruṇḍā
+hexagram_04,devi_nitya,none,0.25,shared element water,youthful folly resonates with Nityā
+hexagram_04,devi_sarvangasundari,none,0.25,shared element earth,youthful folly resonates with Sarvāṅgasundarī
+hexagram_05,devi_bhagamalini,none,0.6,shared element water + shared guna sattva + shared rasa shanta,waiting resonates with Bhagamālinī
+hexagram_05,devi_nityaklinna,none,0.25,shared element water,waiting resonates with Nityaklinnā
+hexagram_05,devi_vahnivasini,direct,0.4,direct tithi 5 alignment,waiting resonates with Vahnivāsinī
+hexagram_05,devi_shivaduti,none,0.25,shared element ether,waiting resonates with Śivadūtī
+hexagram_05,devi_kulasundari,none,0.45,shared element ether + shared guna sattva,waiting resonates with Kulasundarī
+hexagram_05,devi_nitya,none,0.6,shared element water + shared guna sattva + shared rasa shanta,waiting resonates with Nityā
+hexagram_05,devi_citra,none,0.45,shared element ether + shared guna sattva,waiting resonates with Citrā
+hexagram_06,devi_bhagamalini,none,0.25,shared element water,conflict resonates with Bhagamālinī
+hexagram_06,devi_nityaklinna,none,0.25,shared element water,conflict resonates with Nityaklinnā
+hexagram_06,devi_mahavajresvari,direct,0.6,direct tithi 6 alignment + shared guna rajas,conflict resonates with Mahāvajreśvarī
+hexagram_06,devi_shivaduti,none,0.25,shared element ether,conflict resonates with Śivadūtī
+hexagram_06,devi_kulasundari,none,0.25,shared element ether,conflict resonates with Kulasundarī
+hexagram_06,devi_nitya,none,0.25,shared element water,conflict resonates with Nityā
+hexagram_06,devi_jvalamalini,none,0.35,shared guna rajas + shared rasa raudra,conflict resonates with Jvālāmālinī
+hexagram_06,devi_citra,none,0.25,shared element ether,conflict resonates with Citrā
+hexagram_07,devi_bhagamalini,none,0.25,shared element water,the army resonates with Bhagamālinī
+hexagram_07,devi_nityaklinna,none,0.25,shared element water,the army resonates with Nityaklinnā
+hexagram_07,devi_vahnivasini,none,0.35,shared guna rajas + shared rasa vira,the army resonates with Vahnivāsinī
+hexagram_07,devi_shivaduti,direct,0.4,direct tithi 7 alignment,the army resonates with Śivadūtī
+hexagram_07,devi_tvarita,none,0.35,shared guna rajas + shared rasa vira,the army resonates with Tvaritā
+hexagram_07,devi_nitya,none,0.25,shared element water,the army resonates with Nityā
+hexagram_07,devi_vijaya,none,0.35,shared guna rajas + shared rasa vira,the army resonates with Vijayā
+hexagram_07,devi_sarvangasundari,none,0.25,shared element earth,the army resonates with Sarvāṅgasundarī
+hexagram_08,devi_bhagamalini,none,0.45,shared element water + shared guna sattva,holding together resonates with Bhagamālinī
+hexagram_08,devi_nityaklinna,none,0.25,shared element water,holding together resonates with Nityaklinnā
+hexagram_08,devi_tvarita,direct,0.4,direct tithi 8 alignment,holding together resonates with Tvaritā
+hexagram_08,devi_kulasundari,none,0.35,shared guna sattva + shared rasa shringara,holding together resonates with Kulasundarī
+hexagram_08,devi_nitya,none,0.45,shared element water + shared guna sattva,holding together resonates with Nityā
+hexagram_08,devi_sarvangasundari,none,0.6,shared element earth + shared guna sattva + shared rasa shringara,holding together resonates with Sarvāṅgasundarī
+hexagram_09,devi_mahavajresvari,none,0.25,shared element air,taming power of the small resonates with Mahāvajreśvarī
+hexagram_09,devi_shivaduti,none,0.25,shared element ether,taming power of the small resonates with Śivadūtī
+hexagram_09,devi_kulasundari,direct,1.0,direct tithi 9 alignment + shared element ether + shared guna sattva + shared rasa shringara,taming power of the small resonates with Kulasundarī
+hexagram_09,devi_nilapataka,none,0.45,shared element air + shared guna sattva,taming power of the small resonates with Nīlapatākā
+hexagram_09,devi_sarvangasundari,none,0.35,shared guna sattva + shared rasa shringara,taming power of the small resonates with Sarvāṅgasundarī
+hexagram_09,devi_citra,none,0.45,shared element ether + shared guna sattva,taming power of the small resonates with Citrā
+hexagram_10,devi_bhagamalini,none,0.25,shared element water,treading resonates with Bhagamālinī
+hexagram_10,devi_nityaklinna,none,0.25,shared element water,treading resonates with Nityaklinnā
+hexagram_10,devi_shivaduti,none,0.4,shared element ether + shared rasa bhayanaka,treading resonates with Śivadūtī
+hexagram_10,devi_kulasundari,none,0.25,shared element ether,treading resonates with Kulasundarī
+hexagram_10,devi_nitya,direct,0.65,direct tithi 10 alignment + shared element water,treading resonates with Nityā
+hexagram_10,devi_citra,none,0.25,shared element ether,treading resonates with Citrā
+hexagram_11,devi_bhagamalini,none,0.35,shared guna sattva + shared rasa shanta,peace resonates with Bhagamālinī
+hexagram_11,devi_shivaduti,none,0.25,shared element ether,peace resonates with Śivadūtī
+hexagram_11,devi_kulasundari,none,0.45,shared element ether + shared guna sattva,peace resonates with Kulasundarī
+hexagram_11,devi_nitya,none,0.35,shared guna sattva + shared rasa shanta,peace resonates with Nityā
+hexagram_11,devi_nilapataka,direct,0.6,direct tithi 11 alignment + shared guna sattva,peace resonates with Nīlapatākā
+hexagram_11,devi_sarvangasundari,none,0.45,shared element earth + shared guna sattva,peace resonates with Sarvāṅgasundarī
+hexagram_11,devi_citra,none,0.45,shared element ether + shared guna sattva,peace resonates with Citrā
+hexagram_12,devi_shivaduti,none,0.45,shared element ether + shared guna tamas,standstill resonates with Śivadūtī
+hexagram_12,devi_kulasundari,none,0.25,shared element ether,standstill resonates with Kulasundarī
+hexagram_12,devi_vijaya,direct,0.4,direct tithi 12 alignment,standstill resonates with Vijayā
+hexagram_12,devi_sarvangasundari,none,0.25,shared element earth,standstill resonates with Sarvāṅgasundarī
+hexagram_12,devi_citra,none,0.25,shared element ether,standstill resonates with Citrā
+hexagram_13,devi_kamesvari,none,0.4,shared element fire + shared rasa shringara,fellowship resonates with Kāmeśvarī
+hexagram_13,devi_bherunda,none,0.25,shared element fire,fellowship resonates with Bheruṇḍā
+hexagram_13,devi_vahnivasini,none,0.25,shared element fire,fellowship resonates with Vahnivāsinī
+hexagram_13,devi_shivaduti,none,0.25,shared element ether,fellowship resonates with Śivadūtī
+hexagram_13,devi_tvarita,none,0.25,shared element fire,fellowship resonates with Tvaritā
+hexagram_13,devi_kulasundari,none,0.6,shared element ether + shared guna sattva + shared rasa shringara,fellowship resonates with Kulasundarī
+hexagram_13,devi_vijaya,none,0.25,shared element fire,fellowship resonates with Vijayā
+hexagram_13,devi_sarvangasundari,direct,0.75,direct tithi 13 alignment + shared guna sattva + shared rasa shringara,fellowship resonates with Sarvāṅgasundarī
+hexagram_13,devi_jvalamalini,none,0.25,shared element fire,fellowship resonates with Jvālāmālinī
+hexagram_13,devi_citra,none,0.45,shared element ether + shared guna sattva,fellowship resonates with Citrā
+hexagram_14,devi_kamesvari,none,0.25,shared element fire,great possession resonates with Kāmeśvarī
+hexagram_14,devi_bherunda,none,0.25,shared element fire,great possession resonates with Bheruṇḍā
+hexagram_14,devi_vahnivasini,none,0.25,shared element fire,great possession resonates with Vahnivāsinī
+hexagram_14,devi_shivaduti,none,0.25,shared element ether,great possession resonates with Śivadūtī
+hexagram_14,devi_tvarita,none,0.25,shared element fire,great possession resonates with Tvaritā
+hexagram_14,devi_kulasundari,none,0.45,shared element ether + shared guna sattva,great possession resonates with Kulasundarī
+hexagram_14,devi_nilapataka,none,0.35,shared guna sattva + shared rasa adbhuta,great possession resonates with Nīlapatākā
+hexagram_14,devi_vijaya,none,0.25,shared element fire,great possession resonates with Vijayā
+hexagram_14,devi_jvalamalini,direct,0.65,direct tithi 14 alignment + shared element fire,great possession resonates with Jvālāmālinī
+hexagram_14,devi_citra,none,0.6,shared element ether + shared guna sattva + shared rasa adbhuta,great possession resonates with Citrā
+hexagram_15,devi_bhagamalini,none,0.35,shared guna sattva + shared rasa shanta,modesty resonates with Bhagamālinī
+hexagram_15,devi_nitya,none,0.35,shared guna sattva + shared rasa shanta,modesty resonates with Nityā
+hexagram_15,devi_sarvangasundari,none,0.45,shared element earth + shared guna sattva,modesty resonates with Sarvāṅgasundarī
+hexagram_15,devi_citra,direct,0.6,direct tithi 15 alignment + shared guna sattva,modesty resonates with Citrā
+hexagram_16,devi_kamesvari,secondary,0.65,secondary tithi cycle alignment + shared element fire + shared guna rajas,enthusiasm resonates with Kāmeśvarī
+hexagram_16,devi_bherunda,none,0.25,shared element fire,enthusiasm resonates with Bheruṇḍā
+hexagram_16,devi_vahnivasini,none,0.45,shared element fire + shared guna rajas,enthusiasm resonates with Vahnivāsinī
+hexagram_16,devi_tvarita,none,0.45,shared element fire + shared guna rajas,enthusiasm resonates with Tvaritā
+hexagram_16,devi_vijaya,none,0.45,shared element fire + shared guna rajas,enthusiasm resonates with Vijayā
+hexagram_16,devi_sarvangasundari,none,0.25,shared element earth,enthusiasm resonates with Sarvāṅgasundarī
+hexagram_16,devi_jvalamalini,none,0.45,shared element fire + shared guna rajas,enthusiasm resonates with Jvālāmālinī
+hexagram_17,devi_kamesvari,none,0.6,shared element fire + shared guna rajas + shared rasa shringara,following resonates with Kāmeśvarī
+hexagram_17,devi_bhagamalini,secondary,0.45,secondary tithi cycle alignment + shared element water,following resonates with Bhagamālinī
+hexagram_17,devi_nityaklinna,none,0.25,shared element water,following resonates with Nityaklinnā
+hexagram_17,devi_bherunda,none,0.25,shared element fire,following resonates with Bheruṇḍā
+hexagram_17,devi_vahnivasini,none,0.45,shared element fire + shared guna rajas,following resonates with Vahnivāsinī
+hexagram_17,devi_tvarita,none,0.45,shared element fire + shared guna rajas,following resonates with Tvaritā
+hexagram_17,devi_nitya,none,0.25,shared element water,following resonates with Nityā
+hexagram_17,devi_vijaya,none,0.45,shared element fire + shared guna rajas,following resonates with Vijayā
+hexagram_17,devi_jvalamalini,none,0.45,shared element fire + shared guna rajas,following resonates with Jvālāmālinī
+hexagram_18,devi_nityaklinna,secondary,0.35,secondary tithi cycle alignment + shared rasa karuna,work on the decayed resonates with Nityaklinnā
+hexagram_18,devi_mahavajresvari,none,0.45,shared element air + shared guna rajas,work on the decayed resonates with Mahāvajreśvarī
+hexagram_18,devi_nilapataka,none,0.25,shared element air,work on the decayed resonates with Nīlapatākā
+hexagram_18,devi_sarvangasundari,none,0.25,shared element earth,work on the decayed resonates with Sarvāṅgasundarī
+hexagram_19,devi_bhagamalini,none,0.45,shared element water + shared guna sattva,approach resonates with Bhagamālinī
+hexagram_19,devi_nityaklinna,none,0.25,shared element water,approach resonates with Nityaklinnā
+hexagram_19,devi_kulasundari,none,0.35,shared guna sattva + shared rasa shringara,approach resonates with Kulasundarī
+hexagram_19,devi_nitya,none,0.45,shared element water + shared guna sattva,approach resonates with Nityā
+hexagram_19,devi_sarvangasundari,none,0.6,shared element earth + shared guna sattva + shared rasa shringara,approach resonates with Sarvāṅgasundarī
+hexagram_20,devi_bhagamalini,none,0.35,shared guna sattva + shared rasa shanta,contemplation resonates with Bhagamālinī
+hexagram_20,devi_mahavajresvari,none,0.25,shared element air,contemplation resonates with Mahāvajreśvarī
+hexagram_20,devi_nitya,none,0.35,shared guna sattva + shared rasa shanta,contemplation resonates with Nityā
+hexagram_20,devi_nilapataka,none,0.45,shared element air + shared guna sattva,contemplation resonates with Nīlapatākā
+hexagram_20,devi_sarvangasundari,none,0.45,shared element earth + shared guna sattva,contemplation resonates with Sarvāṅgasundarī
+hexagram_21,devi_kamesvari,none,0.45,shared element fire + shared guna rajas,biting through resonates with Kāmeśvarī
+hexagram_21,devi_bherunda,none,0.4,shared element fire + shared rasa raudra,biting through resonates with Bheruṇḍā
+hexagram_21,devi_vahnivasini,none,0.45,shared element fire + shared guna rajas,biting through resonates with Vahnivāsinī
+hexagram_21,devi_mahavajresvari,secondary,0.4,secondary tithi cycle alignment + shared guna rajas,biting through resonates with Mahāvajreśvarī
+hexagram_21,devi_tvarita,none,0.45,shared element fire + shared guna rajas,biting through resonates with Tvaritā
+hexagram_21,devi_vijaya,none,0.45,shared element fire + shared guna rajas,biting through resonates with Vijayā
+hexagram_21,devi_jvalamalini,none,0.6,shared element fire + shared guna rajas + shared rasa raudra,biting through resonates with Jvālāmālinī
+hexagram_22,devi_kamesvari,none,0.4,shared element fire + shared rasa shringara,grace resonates with Kāmeśvarī
+hexagram_22,devi_bherunda,none,0.25,shared element fire,grace resonates with Bheruṇḍā
+hexagram_22,devi_vahnivasini,none,0.25,shared element fire,grace resonates with Vahnivāsinī
+hexagram_22,devi_tvarita,none,0.25,shared element fire,grace resonates with Tvaritā
+hexagram_22,devi_kulasundari,none,0.35,shared guna sattva + shared rasa shringara,grace resonates with Kulasundarī
+hexagram_22,devi_vijaya,none,0.25,shared element fire,grace resonates with Vijayā
+hexagram_22,devi_sarvangasundari,none,0.6,shared element earth + shared guna sattva + shared rasa shringara,grace resonates with Sarvāṅgasundarī
+hexagram_22,devi_jvalamalini,none,0.25,shared element fire,grace resonates with Jvālāmālinī
+hexagram_23,devi_shivaduti,none,0.35,shared guna tamas + shared rasa bhayanaka,splitting apart resonates with Śivadūtī
+hexagram_23,devi_sarvangasundari,none,0.25,shared element earth,splitting apart resonates with Sarvāṅgasundarī
+hexagram_24,devi_kamesvari,none,0.25,shared element fire,return resonates with Kāmeśvarī
+hexagram_24,devi_bherunda,none,0.25,shared element fire,return resonates with Bheruṇḍā
+hexagram_24,devi_vahnivasini,none,0.25,shared element fire,return resonates with Vahnivāsinī
+hexagram_24,devi_tvarita,none,0.25,shared element fire,return resonates with Tvaritā
+hexagram_24,devi_kulasundari,secondary,0.4,secondary tithi cycle alignment + shared guna sattva,return resonates with Kulasundarī
+hexagram_24,devi_nilapataka,none,0.35,shared guna sattva + shared rasa adbhuta,return resonates with Nīlapatākā
+hexagram_24,devi_vijaya,none,0.25,shared element fire,return resonates with Vijayā
+hexagram_24,devi_sarvangasundari,none,0.45,shared element earth + shared guna sattva,return resonates with Sarvāṅgasundarī
+hexagram_24,devi_jvalamalini,none,0.25,shared element fire,return resonates with Jvālāmālinī
+hexagram_24,devi_citra,none,0.35,shared guna sattva + shared rasa adbhuta,return resonates with Citrā
+hexagram_25,devi_kamesvari,none,0.25,shared element fire,innocence resonates with Kāmeśvarī
+hexagram_25,devi_bherunda,none,0.25,shared element fire,innocence resonates with Bheruṇḍā
+hexagram_25,devi_vahnivasini,none,0.25,shared element fire,innocence resonates with Vahnivāsinī
+hexagram_25,devi_shivaduti,none,0.25,shared element ether,innocence resonates with Śivadūtī
+hexagram_25,devi_tvarita,none,0.25,shared element fire,innocence resonates with Tvaritā
+hexagram_25,devi_kulasundari,none,0.45,shared element ether + shared guna sattva,innocence resonates with Kulasundarī
+hexagram_25,devi_nitya,secondary,0.4,secondary tithi cycle alignment + shared guna sattva,innocence resonates with Nityā
+hexagram_25,devi_nilapataka,none,0.35,shared guna sattva + shared rasa adbhuta,innocence resonates with Nīlapatākā
+hexagram_25,devi_vijaya,none,0.25,shared element fire,innocence resonates with Vijayā
+hexagram_25,devi_jvalamalini,none,0.25,shared element fire,innocence resonates with Jvālāmālinī
+hexagram_25,devi_citra,none,0.6,shared element ether + shared guna sattva + shared rasa adbhuta,innocence resonates with Citrā
+hexagram_26,devi_shivaduti,none,0.25,shared element ether,taming power of the great resonates with Śivadūtī
+hexagram_26,devi_kulasundari,none,0.45,shared element ether + shared guna sattva,taming power of the great resonates with Kulasundarī
+hexagram_26,devi_nilapataka,secondary,0.4,secondary tithi cycle alignment + shared guna sattva,taming power of the great resonates with Nīlapatākā
+hexagram_26,devi_sarvangasundari,none,0.45,shared element earth + shared guna sattva,taming power of the great resonates with Sarvāṅgasundarī
+hexagram_26,devi_citra,none,0.45,shared element ether + shared guna sattva,taming power of the great resonates with Citrā
+hexagram_27,devi_kamesvari,none,0.4,shared element fire + shared rasa shringara,nourishment resonates with Kāmeśvarī
+hexagram_27,devi_bherunda,none,0.25,shared element fire,nourishment resonates with Bheruṇḍā
+hexagram_27,devi_vahnivasini,none,0.25,shared element fire,nourishment resonates with Vahnivāsinī
+hexagram_27,devi_tvarita,none,0.25,shared element fire,nourishment resonates with Tvaritā
+hexagram_27,devi_kulasundari,none,0.35,shared guna sattva + shared rasa shringara,nourishment resonates with Kulasundarī
+hexagram_27,devi_vijaya,secondary,0.45,secondary tithi cycle alignment + shared element fire,nourishment resonates with Vijayā
+hexagram_27,devi_sarvangasundari,none,0.6,shared element earth + shared guna sattva + shared rasa shringara,nourishment resonates with Sarvāṅgasundarī
+hexagram_27,devi_jvalamalini,none,0.25,shared element fire,nourishment resonates with Jvālāmālinī
+hexagram_28,devi_bhagamalini,none,0.25,shared element water,great preponderance resonates with Bhagamālinī
+hexagram_28,devi_nityaklinna,none,0.25,shared element water,great preponderance resonates with Nityaklinnā
+hexagram_28,devi_mahavajresvari,none,0.45,shared element air + shared guna rajas,great preponderance resonates with Mahāvajreśvarī
+hexagram_28,devi_nitya,none,0.25,shared element water,great preponderance resonates with Nityā
+hexagram_28,devi_nilapataka,none,0.25,shared element air,great preponderance resonates with Nīlapatākā
+hexagram_29,devi_bhagamalini,none,0.25,shared element water,the abysmal resonates with Bhagamālinī
+hexagram_29,devi_nityaklinna,none,0.45,shared element water + shared guna tamas,the abysmal resonates with Nityaklinnā
+hexagram_29,devi_shivaduti,none,0.35,shared guna tamas + shared rasa bhayanaka,the abysmal resonates with Śivadūtī
+hexagram_29,devi_nitya,none,0.25,shared element water,the abysmal resonates with Nityā
+hexagram_30,devi_kamesvari,none,0.45,shared element fire + shared guna rajas,the clinging resonates with Kāmeśvarī
+hexagram_30,devi_bherunda,none,0.25,shared element fire,the clinging resonates with Bheruṇḍā
+hexagram_30,devi_vahnivasini,none,0.45,shared element fire + shared guna rajas,the clinging resonates with Vahnivāsinī
+hexagram_30,devi_mahavajresvari,none,0.35,shared guna rajas + shared rasa adbhuta,the clinging resonates with Mahāvajreśvarī
+hexagram_30,devi_tvarita,none,0.45,shared element fire + shared guna rajas,the clinging resonates with Tvaritā
+hexagram_30,devi_vijaya,none,0.45,shared element fire + shared guna rajas,the clinging resonates with Vijayā
+hexagram_30,devi_jvalamalini,none,0.45,shared element fire + shared guna rajas,the clinging resonates with Jvālāmālinī
+hexagram_30,devi_citra,secondary,0.35,secondary tithi cycle alignment + shared rasa adbhuta,the clinging resonates with Citrā
+hexagram_31,devi_bhagamalini,none,0.45,shared element water + shared guna sattva,influence resonates with Bhagamālinī
+hexagram_31,devi_nityaklinna,none,0.25,shared element water,influence resonates with Nityaklinnā
+hexagram_31,devi_kulasundari,none,0.35,shared guna sattva + shared rasa shringara,influence resonates with Kulasundarī
+hexagram_31,devi_nitya,none,0.45,shared element water + shared guna sattva,influence resonates with Nityā
+hexagram_31,devi_sarvangasundari,none,0.6,shared element earth + shared guna sattva + shared rasa shringara,influence resonates with Sarvāṅgasundarī
+hexagram_32,devi_kamesvari,none,0.25,shared element fire,duration resonates with Kāmeśvarī
+hexagram_32,devi_bhagamalini,none,0.35,shared guna sattva + shared rasa shanta,duration resonates with Bhagamālinī
+hexagram_32,devi_bherunda,none,0.25,shared element fire,duration resonates with Bheruṇḍā
+hexagram_32,devi_vahnivasini,none,0.25,shared element fire,duration resonates with Vahnivāsinī
+hexagram_32,devi_mahavajresvari,none,0.25,shared element air,duration resonates with Mahāvajreśvarī
+hexagram_32,devi_tvarita,none,0.25,shared element fire,duration resonates with Tvaritā
+hexagram_32,devi_nitya,none,0.35,shared guna sattva + shared rasa shanta,duration resonates with Nityā
+hexagram_32,devi_nilapataka,none,0.45,shared element air + shared guna sattva,duration resonates with Nīlapatākā
+hexagram_32,devi_vijaya,none,0.25,shared element fire,duration resonates with Vijayā
+hexagram_32,devi_jvalamalini,none,0.25,shared element fire,duration resonates with Jvālāmālinī
+hexagram_33,devi_bhagamalini,none,0.35,shared guna sattva + shared rasa shanta,retreat resonates with Bhagamālinī
+hexagram_33,devi_shivaduti,none,0.25,shared element ether,retreat resonates with Śivadūtī
+hexagram_33,devi_kulasundari,none,0.45,shared element ether + shared guna sattva,retreat resonates with Kulasundarī
+hexagram_33,devi_nitya,none,0.35,shared guna sattva + shared rasa shanta,retreat resonates with Nityā
+hexagram_33,devi_sarvangasundari,none,0.45,shared element earth + shared guna sattva,retreat resonates with Sarvāṅgasundarī
+hexagram_33,devi_citra,none,0.45,shared element ether + shared guna sattva,retreat resonates with Citrā
+hexagram_34,devi_kamesvari,none,0.45,shared element fire + shared guna rajas,great power resonates with Kāmeśvarī
+hexagram_34,devi_bherunda,none,0.25,shared element fire,great power resonates with Bheruṇḍā
+hexagram_34,devi_vahnivasini,none,0.6,shared element fire + shared guna rajas + shared rasa vira,great power resonates with Vahnivāsinī
+hexagram_34,devi_shivaduti,none,0.25,shared element ether,great power resonates with Śivadūtī
+hexagram_34,devi_tvarita,none,0.6,shared element fire + shared guna rajas + shared rasa vira,great power resonates with Tvaritā
+hexagram_34,devi_kulasundari,none,0.25,shared element ether,great power resonates with Kulasundarī
+hexagram_34,devi_vijaya,none,0.6,shared element fire + shared guna rajas + shared rasa vira,great power resonates with Vijayā
+hexagram_34,devi_jvalamalini,none,0.45,shared element fire + shared guna rajas,great power resonates with Jvālāmālinī
+hexagram_34,devi_citra,none,0.25,shared element ether,great power resonates with Citrā
+hexagram_35,devi_kamesvari,none,0.45,shared element fire + shared guna rajas,progress resonates with Kāmeśvarī
+hexagram_35,devi_bherunda,none,0.25,shared element fire,progress resonates with Bheruṇḍā
+hexagram_35,devi_vahnivasini,none,0.45,shared element fire + shared guna rajas,progress resonates with Vahnivāsinī
+hexagram_35,devi_mahavajresvari,none,0.35,shared guna rajas + shared rasa adbhuta,progress resonates with Mahāvajreśvarī
+hexagram_35,devi_tvarita,none,0.45,shared element fire + shared guna rajas,progress resonates with Tvaritā
+hexagram_35,devi_vijaya,none,0.45,shared element fire + shared guna rajas,progress resonates with Vijayā
+hexagram_35,devi_sarvangasundari,none,0.25,shared element earth,progress resonates with Sarvāṅgasundarī
+hexagram_35,devi_jvalamalini,none,0.45,shared element fire + shared guna rajas,progress resonates with Jvālāmālinī
+hexagram_36,devi_kamesvari,none,0.25,shared element fire,darkening of the light resonates with Kāmeśvarī
+hexagram_36,devi_nityaklinna,none,0.35,shared guna tamas + shared rasa karuna,darkening of the light resonates with Nityaklinnā
+hexagram_36,devi_bherunda,none,0.45,shared element fire + shared guna tamas,darkening of the light resonates with Bheruṇḍā
+hexagram_36,devi_vahnivasini,none,0.25,shared element fire,darkening of the light resonates with Vahnivāsinī
+hexagram_36,devi_tvarita,none,0.25,shared element fire,darkening of the light resonates with Tvaritā
+hexagram_36,devi_vijaya,none,0.25,shared element fire,darkening of the light resonates with Vijayā
+hexagram_36,devi_sarvangasundari,none,0.25,shared element earth,darkening of the light resonates with Sarvāṅgasundarī
+hexagram_36,devi_jvalamalini,none,0.25,shared element fire,darkening of the light resonates with Jvālāmālinī
+hexagram_37,devi_kamesvari,none,0.4,shared element fire + shared rasa shringara,the family resonates with Kāmeśvarī
+hexagram_37,devi_bherunda,none,0.25,shared element fire,the family resonates with Bheruṇḍā
+hexagram_37,devi_vahnivasini,none,0.25,shared element fire,the family resonates with Vahnivāsinī
+hexagram_37,devi_mahavajresvari,none,0.25,shared element air,the family resonates with Mahāvajreśvarī
+hexagram_37,devi_tvarita,none,0.25,shared element fire,the family resonates with Tvaritā
+hexagram_37,devi_kulasundari,none,0.35,shared guna sattva + shared rasa shringara,the family resonates with Kulasundarī
+hexagram_37,devi_nilapataka,none,0.45,shared element air + shared guna sattva,the family resonates with Nīlapatākā
+hexagram_37,devi_vijaya,none,0.25,shared element fire,the family resonates with Vijayā
+hexagram_37,devi_sarvangasundari,none,0.35,shared guna sattva + shared rasa shringara,the family resonates with Sarvāṅgasundarī
+hexagram_37,devi_jvalamalini,none,0.25,shared element fire,the family resonates with Jvālāmālinī
+hexagram_38,devi_kamesvari,none,0.45,shared element fire + shared guna rajas,opposition resonates with Kāmeśvarī
+hexagram_38,devi_bhagamalini,none,0.25,shared element water,opposition resonates with Bhagamālinī
+hexagram_38,devi_nityaklinna,none,0.25,shared element water,opposition resonates with Nityaklinnā
+hexagram_38,devi_bherunda,none,0.4,shared element fire + shared rasa raudra,opposition resonates with Bheruṇḍā
+hexagram_38,devi_vahnivasini,none,0.45,shared element fire + shared guna rajas,opposition resonates with Vahnivāsinī
+hexagram_38,devi_tvarita,none,0.45,shared element fire + shared guna rajas,opposition resonates with Tvaritā
+hexagram_38,devi_nitya,none,0.25,shared element water,opposition resonates with Nityā
+hexagram_38,devi_vijaya,none,0.45,shared element fire + shared guna rajas,opposition resonates with Vijayā
+hexagram_38,devi_jvalamalini,none,0.6,shared element fire + shared guna rajas + shared rasa raudra,opposition resonates with Jvālāmālinī
+hexagram_39,devi_bhagamalini,none,0.25,shared element water,obstruction resonates with Bhagamālinī
+hexagram_39,devi_nityaklinna,none,0.6,shared element water + shared guna tamas + shared rasa karuna,obstruction resonates with Nityaklinnā
+hexagram_39,devi_nitya,none,0.25,shared element water,obstruction resonates with Nityā
+hexagram_39,devi_sarvangasundari,none,0.25,shared element earth,obstruction resonates with Sarvāṅgasundarī
+hexagram_40,devi_kamesvari,none,0.45,shared element fire + shared guna rajas,deliverance resonates with Kāmeśvarī
+hexagram_40,devi_bhagamalini,none,0.25,shared element water,deliverance resonates with Bhagamālinī
+hexagram_40,devi_nityaklinna,none,0.25,shared element water,deliverance resonates with Nityaklinnā
+hexagram_40,devi_bherunda,none,0.25,shared element fire,deliverance resonates with Bheruṇḍā
+hexagram_40,devi_vahnivasini,none,0.45,shared element fire + shared guna rajas,deliverance resonates with Vahnivāsinī
+hexagram_40,devi_tvarita,none,0.45,shared element fire + shared guna rajas,deliverance resonates with Tvaritā
+hexagram_40,devi_nitya,none,0.25,shared element water,deliverance resonates with Nityā
+hexagram_40,devi_vijaya,none,0.45,shared element fire + shared guna rajas,deliverance resonates with Vijayā
+hexagram_40,devi_jvalamalini,none,0.45,shared element fire + shared guna rajas,deliverance resonates with Jvālāmālinī
+hexagram_41,devi_bhagamalini,none,0.25,shared element water,decrease resonates with Bhagamālinī
+hexagram_41,devi_nityaklinna,none,0.6,shared element water + shared guna tamas + shared rasa karuna,decrease resonates with Nityaklinnā
+hexagram_41,devi_nitya,none,0.25,shared element water,decrease resonates with Nityā
+hexagram_41,devi_sarvangasundari,none,0.25,shared element earth,decrease resonates with Sarvāṅgasundarī
+hexagram_42,devi_kamesvari,none,0.25,shared element fire,increase resonates with Kāmeśvarī
+hexagram_42,devi_bherunda,none,0.25,shared element fire,increase resonates with Bheruṇḍā
+hexagram_42,devi_vahnivasini,none,0.25,shared element fire,increase resonates with Vahnivāsinī
+hexagram_42,devi_mahavajresvari,none,0.4,shared element air + shared rasa adbhuta,increase resonates with Mahāvajreśvarī
+hexagram_42,devi_tvarita,none,0.25,shared element fire,increase resonates with Tvaritā
+hexagram_42,devi_nilapataka,none,0.6,shared element air + shared guna sattva + shared rasa adbhuta,increase resonates with Nīlapatākā
+hexagram_42,devi_vijaya,none,0.25,shared element fire,increase resonates with Vijayā
+hexagram_42,devi_jvalamalini,none,0.25,shared element fire,increase resonates with Jvālāmālinī
+hexagram_42,devi_citra,none,0.35,shared guna sattva + shared rasa adbhuta,increase resonates with Citrā
+hexagram_43,devi_bhagamalini,none,0.25,shared element water,breakthrough resonates with Bhagamālinī
+hexagram_43,devi_nityaklinna,none,0.25,shared element water,breakthrough resonates with Nityaklinnā
+hexagram_43,devi_vahnivasini,none,0.35,shared guna rajas + shared rasa vira,breakthrough resonates with Vahnivāsinī
+hexagram_43,devi_shivaduti,none,0.25,shared element ether,breakthrough resonates with Śivadūtī
+hexagram_43,devi_tvarita,none,0.35,shared guna rajas + shared rasa vira,breakthrough resonates with Tvaritā
+hexagram_43,devi_kulasundari,none,0.25,shared element ether,breakthrough resonates with Kulasundarī
+hexagram_43,devi_nitya,none,0.25,shared element water,breakthrough resonates with Nityā
+hexagram_43,devi_vijaya,none,0.35,shared guna rajas + shared rasa vira,breakthrough resonates with Vijayā
+hexagram_43,devi_citra,none,0.25,shared element ether,breakthrough resonates with Citrā
+hexagram_44,devi_kamesvari,none,0.35,shared guna rajas + shared rasa shringara,coming to meet resonates with Kāmeśvarī
+hexagram_44,devi_mahavajresvari,none,0.45,shared element air + shared guna rajas,coming to meet resonates with Mahāvajreśvarī
+hexagram_44,devi_shivaduti,none,0.25,shared element ether,coming to meet resonates with Śivadūtī
+hexagram_44,devi_kulasundari,none,0.4,shared element ether + shared rasa shringara,coming to meet resonates with Kulasundarī
+hexagram_44,devi_nilapataka,none,0.25,shared element air,coming to meet resonates with Nīlapatākā
+hexagram_44,devi_citra,none,0.25,shared element ether,coming to meet resonates with Citrā
+hexagram_45,devi_bhagamalini,none,0.45,shared element water + shared guna sattva,gathering together resonates with Bhagamālinī
+hexagram_45,devi_nityaklinna,none,0.25,shared element water,gathering together resonates with Nityaklinnā
+hexagram_45,devi_kulasundari,none,0.35,shared guna sattva + shared rasa shringara,gathering together resonates with Kulasundarī
+hexagram_45,devi_nitya,none,0.45,shared element water + shared guna sattva,gathering together resonates with Nityā
+hexagram_45,devi_sarvangasundari,none,0.6,shared element earth + shared guna sattva + shared rasa shringara,gathering together resonates with Sarvāṅgasundarī
+hexagram_46,devi_mahavajresvari,none,0.25,shared element air,pushing upward resonates with Mahāvajreśvarī
+hexagram_46,devi_nilapataka,none,0.45,shared element air + shared guna sattva,pushing upward resonates with Nīlapatākā
+hexagram_46,devi_sarvangasundari,none,0.45,shared element earth + shared guna sattva,pushing upward resonates with Sarvāṅgasundarī
+hexagram_47,devi_bhagamalini,none,0.25,shared element water,oppression resonates with Bhagamālinī
+hexagram_47,devi_nityaklinna,none,0.6,shared element water + shared guna tamas + shared rasa karuna,oppression resonates with Nityaklinnā
+hexagram_47,devi_nitya,none,0.25,shared element water,oppression resonates with Nityā
+hexagram_48,devi_bhagamalini,none,0.6,shared element water + shared guna sattva + shared rasa shanta,the well resonates with Bhagamālinī
+hexagram_48,devi_nityaklinna,none,0.25,shared element water,the well resonates with Nityaklinnā
+hexagram_48,devi_mahavajresvari,none,0.25,shared element air,the well resonates with Mahāvajreśvarī
+hexagram_48,devi_nitya,none,0.6,shared element water + shared guna sattva + shared rasa shanta,the well resonates with Nityā
+hexagram_48,devi_nilapataka,none,0.45,shared element air + shared guna sattva,the well resonates with Nīlapatākā
+hexagram_49,devi_kamesvari,none,0.45,shared element fire + shared guna rajas,revolution resonates with Kāmeśvarī
+hexagram_49,devi_bhagamalini,none,0.25,shared element water,revolution resonates with Bhagamālinī
+hexagram_49,devi_nityaklinna,none,0.25,shared element water,revolution resonates with Nityaklinnā
+hexagram_49,devi_bherunda,none,0.4,shared element fire + shared rasa raudra,revolution resonates with Bheruṇḍā
+hexagram_49,devi_vahnivasini,none,0.45,shared element fire + shared guna rajas,revolution resonates with Vahnivāsinī
+hexagram_49,devi_tvarita,none,0.45,shared element fire + shared guna rajas,revolution resonates with Tvaritā
+hexagram_49,devi_nitya,none,0.25,shared element water,revolution resonates with Nityā
+hexagram_49,devi_vijaya,none,0.45,shared element fire + shared guna rajas,revolution resonates with Vijayā
+hexagram_49,devi_jvalamalini,none,0.6,shared element fire + shared guna rajas + shared rasa raudra,revolution resonates with Jvālāmālinī
+hexagram_50,devi_kamesvari,none,0.25,shared element fire,the caldron resonates with Kāmeśvarī
+hexagram_50,devi_bherunda,none,0.25,shared element fire,the caldron resonates with Bheruṇḍā
+hexagram_50,devi_vahnivasini,none,0.25,shared element fire,the caldron resonates with Vahnivāsinī
+hexagram_50,devi_mahavajresvari,none,0.4,shared element air + shared rasa adbhuta,the caldron resonates with Mahāvajreśvarī
+hexagram_50,devi_tvarita,none,0.25,shared element fire,the caldron resonates with Tvaritā
+hexagram_50,devi_nilapataka,none,0.6,shared element air + shared guna sattva + shared rasa adbhuta,the caldron resonates with Nīlapatākā
+hexagram_50,devi_vijaya,none,0.25,shared element fire,the caldron resonates with Vijayā
+hexagram_50,devi_jvalamalini,none,0.25,shared element fire,the caldron resonates with Jvālāmālinī
+hexagram_50,devi_citra,none,0.35,shared guna sattva + shared rasa adbhuta,the caldron resonates with Citrā
+hexagram_51,devi_kamesvari,none,0.45,shared element fire + shared guna rajas,the arousing resonates with Kāmeśvarī
+hexagram_51,devi_bherunda,none,0.25,shared element fire,the arousing resonates with Bheruṇḍā
+hexagram_51,devi_vahnivasini,none,0.45,shared element fire + shared guna rajas,the arousing resonates with Vahnivāsinī
+hexagram_51,devi_tvarita,none,0.45,shared element fire + shared guna rajas,the arousing resonates with Tvaritā
+hexagram_51,devi_vijaya,none,0.45,shared element fire + shared guna rajas,the arousing resonates with Vijayā
+hexagram_51,devi_jvalamalini,none,0.45,shared element fire + shared guna rajas,the arousing resonates with Jvālāmālinī
+hexagram_52,devi_sarvangasundari,none,0.25,shared element earth,keeping still resonates with Sarvāṅgasundarī
+hexagram_53,devi_mahavajresvari,none,0.25,shared element air,development resonates with Mahāvajreśvarī
+hexagram_53,devi_kulasundari,none,0.35,shared guna sattva + shared rasa shringara,development resonates with Kulasundarī
+hexagram_53,devi_nilapataka,none,0.45,shared element air + shared guna sattva,development resonates with Nīlapatākā
+hexagram_53,devi_sarvangasundari,none,0.6,shared element earth + shared guna sattva + shared rasa shringara,development resonates with Sarvāṅgasundarī
+hexagram_54,devi_kamesvari,none,0.45,shared element fire + shared guna rajas,the marrying maiden resonates with Kāmeśvarī
+hexagram_54,devi_bhagamalini,none,0.25,shared element water,the marrying maiden resonates with Bhagamālinī
+hexagram_54,devi_nityaklinna,none,0.4,shared element water + shared rasa karuna,the marrying maiden resonates with Nityaklinnā
+hexagram_54,devi_bherunda,none,0.25,shared element fire,the marrying maiden resonates with Bheruṇḍā
+hexagram_54,devi_vahnivasini,none,0.45,shared element fire + shared guna rajas,the marrying maiden resonates with Vahnivāsinī
+hexagram_54,devi_tvarita,none,0.45,shared element fire + shared guna rajas,the marrying maiden resonates with Tvaritā
+hexagram_54,devi_nitya,none,0.25,shared element water,the marrying maiden resonates with Nityā
+hexagram_54,devi_vijaya,none,0.45,shared element fire + shared guna rajas,the marrying maiden resonates with Vijayā
+hexagram_54,devi_jvalamalini,none,0.45,shared element fire + shared guna rajas,the marrying maiden resonates with Jvālāmālinī
+hexagram_55,devi_kamesvari,none,0.45,shared element fire + shared guna rajas,abundance resonates with Kāmeśvarī
+hexagram_55,devi_bherunda,none,0.25,shared element fire,abundance resonates with Bheruṇḍā
+hexagram_55,devi_vahnivasini,none,0.45,shared element fire + shared guna rajas,abundance resonates with Vahnivāsinī
+hexagram_55,devi_mahavajresvari,none,0.35,shared guna rajas + shared rasa adbhuta,abundance resonates with Mahāvajreśvarī
+hexagram_55,devi_tvarita,none,0.45,shared element fire + shared guna rajas,abundance resonates with Tvaritā
+hexagram_55,devi_vijaya,none,0.45,shared element fire + shared guna rajas,abundance resonates with Vijayā
+hexagram_55,devi_jvalamalini,none,0.45,shared element fire + shared guna rajas,abundance resonates with Jvālāmālinī
+hexagram_56,devi_kamesvari,none,0.45,shared element fire + shared guna rajas,the wanderer resonates with Kāmeśvarī
+hexagram_56,devi_bherunda,none,0.25,shared element fire,the wanderer resonates with Bheruṇḍā
+hexagram_56,devi_vahnivasini,none,0.45,shared element fire + shared guna rajas,the wanderer resonates with Vahnivāsinī
+hexagram_56,devi_tvarita,none,0.45,shared element fire + shared guna rajas,the wanderer resonates with Tvaritā
+hexagram_56,devi_vijaya,none,0.45,shared element fire + shared guna rajas,the wanderer resonates with Vijayā
+hexagram_56,devi_sarvangasundari,none,0.25,shared element earth,the wanderer resonates with Sarvāṅgasundarī
+hexagram_56,devi_jvalamalini,none,0.45,shared element fire + shared guna rajas,the wanderer resonates with Jvālāmālinī
+hexagram_57,devi_mahavajresvari,none,0.25,shared element air,the gentle resonates with Mahāvajreśvarī
+hexagram_57,devi_kulasundari,none,0.35,shared guna sattva + shared rasa shringara,the gentle resonates with Kulasundarī
+hexagram_57,devi_nilapataka,none,0.45,shared element air + shared guna sattva,the gentle resonates with Nīlapatākā
+hexagram_57,devi_sarvangasundari,none,0.35,shared guna sattva + shared rasa shringara,the gentle resonates with Sarvāṅgasundarī
+hexagram_58,devi_bhagamalini,none,0.45,shared element water + shared guna sattva,the joyous resonates with Bhagamālinī
+hexagram_58,devi_nityaklinna,none,0.25,shared element water,the joyous resonates with Nityaklinnā
+hexagram_58,devi_nitya,none,0.45,shared element water + shared guna sattva,the joyous resonates with Nityā
+hexagram_59,devi_bhagamalini,none,0.6,shared element water + shared guna sattva + shared rasa shanta,dispersion resonates with Bhagamālinī
+hexagram_59,devi_nityaklinna,none,0.25,shared element water,dispersion resonates with Nityaklinnā
+hexagram_59,devi_mahavajresvari,none,0.25,shared element air,dispersion resonates with Mahāvajreśvarī
+hexagram_59,devi_nitya,none,0.6,shared element water + shared guna sattva + shared rasa shanta,dispersion resonates with Nityā
+hexagram_59,devi_nilapataka,none,0.45,shared element air + shared guna sattva,dispersion resonates with Nīlapatākā
+hexagram_60,devi_bhagamalini,none,0.6,shared element water + shared guna sattva + shared rasa shanta,limitation resonates with Bhagamālinī
+hexagram_60,devi_nityaklinna,none,0.25,shared element water,limitation resonates with Nityaklinnā
+hexagram_60,devi_nitya,none,0.6,shared element water + shared guna sattva + shared rasa shanta,limitation resonates with Nityā
+hexagram_61,devi_bhagamalini,none,0.6,shared element water + shared guna sattva + shared rasa shanta,inner truth resonates with Bhagamālinī
+hexagram_61,devi_nityaklinna,none,0.25,shared element water,inner truth resonates with Nityaklinnā
+hexagram_61,devi_mahavajresvari,none,0.25,shared element air,inner truth resonates with Mahāvajreśvarī
+hexagram_61,devi_nitya,none,0.6,shared element water + shared guna sattva + shared rasa shanta,inner truth resonates with Nityā
+hexagram_61,devi_nilapataka,none,0.45,shared element air + shared guna sattva,inner truth resonates with Nīlapatākā
+hexagram_62,devi_kamesvari,none,0.45,shared element fire + shared guna rajas,small preponderance resonates with Kāmeśvarī
+hexagram_62,devi_bherunda,none,0.25,shared element fire,small preponderance resonates with Bheruṇḍā
+hexagram_62,devi_vahnivasini,none,0.45,shared element fire + shared guna rajas,small preponderance resonates with Vahnivāsinī
+hexagram_62,devi_tvarita,none,0.45,shared element fire + shared guna rajas,small preponderance resonates with Tvaritā
+hexagram_62,devi_vijaya,none,0.45,shared element fire + shared guna rajas,small preponderance resonates with Vijayā
+hexagram_62,devi_sarvangasundari,none,0.25,shared element earth,small preponderance resonates with Sarvāṅgasundarī
+hexagram_62,devi_jvalamalini,none,0.45,shared element fire + shared guna rajas,small preponderance resonates with Jvālāmālinī
+hexagram_63,devi_kamesvari,none,0.25,shared element fire,after completion resonates with Kāmeśvarī
+hexagram_63,devi_bhagamalini,none,0.6,shared element water + shared guna sattva + shared rasa shanta,after completion resonates with Bhagamālinī
+hexagram_63,devi_nityaklinna,none,0.25,shared element water,after completion resonates with Nityaklinnā
+hexagram_63,devi_bherunda,none,0.25,shared element fire,after completion resonates with Bheruṇḍā
+hexagram_63,devi_vahnivasini,none,0.25,shared element fire,after completion resonates with Vahnivāsinī
+hexagram_63,devi_tvarita,none,0.25,shared element fire,after completion resonates with Tvaritā
+hexagram_63,devi_nitya,none,0.6,shared element water + shared guna sattva + shared rasa shanta,after completion resonates with Nityā
+hexagram_63,devi_vijaya,none,0.25,shared element fire,after completion resonates with Vijayā
+hexagram_63,devi_jvalamalini,none,0.25,shared element fire,after completion resonates with Jvālāmālinī
+hexagram_64,devi_kamesvari,none,0.45,shared element fire + shared guna rajas,before completion resonates with Kāmeśvarī
+hexagram_64,devi_bhagamalini,none,0.25,shared element water,before completion resonates with Bhagamālinī
+hexagram_64,devi_nityaklinna,none,0.25,shared element water,before completion resonates with Nityaklinnā
+hexagram_64,devi_bherunda,none,0.25,shared element fire,before completion resonates with Bheruṇḍā
+hexagram_64,devi_vahnivasini,none,0.45,shared element fire + shared guna rajas,before completion resonates with Vahnivāsinī
+hexagram_64,devi_mahavajresvari,none,0.35,shared guna rajas + shared rasa adbhuta,before completion resonates with Mahāvajreśvarī
+hexagram_64,devi_tvarita,none,0.45,shared element fire + shared guna rajas,before completion resonates with Tvaritā
+hexagram_64,devi_nitya,none,0.25,shared element water,before completion resonates with Nityā
+hexagram_64,devi_vijaya,none,0.45,shared element fire + shared guna rajas,before completion resonates with Vijayā
+hexagram_64,devi_jvalamalini,none,0.45,shared element fire + shared guna rajas,before completion resonates with Jvālāmālinī

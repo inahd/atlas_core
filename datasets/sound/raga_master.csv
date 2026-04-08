@@ -1,0 +1,21 @@
+id,name_iast,tradition,time_of_day,season,element,guna,rasa_primary,deity,graha,vadi,samvadi,aroha,avaroha,dosha_balance,therapeutic_note,color_hex
+raga_bhoop,Bhūp,hindustani,evening,autumn,ether,sattva,shanta,Sarasvati,Chandra,Ga,Dha,Sa Ri Ga Pa Dha Sa,Sa Dha Pa Ga Ri Sa,vata,Calms the mind and reduces stress,#FFD700
+raga_yaman_kalyan,Yaman Kalyān,hindustani,evening,autumn,air,sattva,shringara,Krishna,Guru,Ga,Ni,Ni Ri Ga Ma# Pa Dha Ni Sa,Sa Ni Dha Pa Ma# Ga Ri Sa,pitta,Enhances concentration and reduces anxiety,#1E90FF
+raga_bihag,Bihāg,hindustani,night,all,air,sattva,shringara,Lakshmi,Chandra,Ga,Ni,Sa Ma Ga Pa Ni Sa,Sa Ni Dha Pa Ma Ga Ma Ga Ri Sa,vata,Promotes relaxation and joy,#8A2BE2
+raga_kedar,Kedāra,hindustani,evening,monsoon,ether,sattva,shanta,Shiva,Jupiter,Ma,Sa,Sa Ma Ga Pa Dha Ni Sa,Sa Ni Dha Pa Ma Ga Ma Ri Sa,pitta,Encourages peace and devotion,#00FF7F
+raga_bhairavi,Bhairavī,hindustani,morning,spring,earth,tamas,karuna,Parvati,Mars,Ma,Sa,Sa re ga Ma Pa dha ni Sa,Sa ni dha Pa Ma ga re Sa,kapha,Promotes compassion and relieves melancholy,#FF69B4
+raga_todi,Ṭoḍī,hindustani,midday,spring,water,rajas,vira,Sarasvati,Saturn,Ma,Sa,Sa re ga Ma# Pa dha Ni Sa,Sa Ni dha Pa Ma# ga re Sa,pitta,Boosts courage and reduces arrogance,#DC143C
+raga_puriya,Pūriyā,hindustani,evening,winter,air,rajas,raudra,Shiva,Saturn,Ga,Ni,Ni re ga Ma# Dha Ni Sa,Sa Ni dha Pa Ma# ga re Sa,pitta,Enhances introspection and reduces anger,#FF8C00
+raga_hindol,Hindol,hindustani,morning,spring,fire,sattva,shringara,Surya,Sun,Dha,Ga,Sa Ga Ma# Dha Ni Sa,Sa Ni Dha Ma# Ga Sa,kapha,Stimulates alertness and reduces lethargy,#00CED1
+raga_malkauns,Mālkauns,hindustani,latenight,winter,earth,tamas,shanta,Bhū Devi,Saturn,Ma,Sa,Sa ga Ma Pa dha Sa,Sa dha Pa Ma ga Sa,kapha,Promotes serenity and reduces fear,#800000
+raga_desh,Deśa,hindustani,night,monsoon,water,sattva,adbhuta,Bharat Mata,Chandra,Ri,Pa,Sa Ri Ma Pa Ni Sa,Sa ni Dha Pa Ma Ga Ri Sa,vata,Uplifts the mood and encourages patriotism,#4169E1
+raga_khamaj,Khāmaj,hindustani,night,summer,earth,rajas,hasya,Krishna,Venus,Ga,Ni,Sa Ri Ga Ma Pa Dha ni Sa,Sa ni Dha Pa Ma Ga Ri Sa,pitta,Stimulates vitality and reduces sadness,#20B2AA
+raga_pilu,Pīlu,hindustani,evening,summer,earth,rajas,shringara,Radha,Venus,Ga,Ni,Sa Ri Ga Ma Pa Dha ni Sa,Sa ni Dha Pa Ma Ga Ri Sa,vata,Improves mood and fosters romance,#DAA520
+raga_lalit,Lalit,hindustani,dawn,spring,air,sattva,shanta,Shiva,Mercury,Ma#,Re,Sa re Ga Ma# Ni Dha Ni Sa,Sa Ni Dha Ma# Ga re Sa,vata,Encourages introspection and meditation,#BA55D3
+raga_purvi,Pūrvī,hindustani,afternoon,spring,fire,rajas,vira,Surya,Venus,Ga,Ni,Sa re Ga Ma# Pa dha Ni Sa,Sa Ni dha Pa Ma# Ga re Sa,pitta,Energizes and reduces fatigue,#228B22
+raga_shree,Śrī,hindustani,afternoon,autumn,air,sattva,adbhuta,Lakshmi,Jupiter,Re,Pa,Ni re Ga Ma# Dha Ni Sa,Sa Ni Dha Ma# Ga re Sa,pitta,Promotes inspiration and spiritual uplift,#FF4500
+raga_miya_malhar,Mīyā Mālhar,hindustani,evening,monsoon,water,rajas,adbhuta,Krishna,Mercury,Re,Pa,Sa Re Ma Pa Ni Sa,Sa Ni Dha Pa Ma Ga Ma Re Sa,kapha,Invokes rains and cools the mind,#48D1CC
+raga_nat_bhairav,Nāṭa Bhairav,hindustani,morning,autumn,earth,tamas,vira,Shiva,Mars,Dha,Re,Sa re Ga Ma Pa Dha Ni Sa,Sa Ni Dha Pa Ma Ga re Sa,vata,Invokes courage and discipline,#A52A2A
+raga_tilak_kamod,Tilaka Kāmod,hindustani,evening,summer,ether,rajas,shringara,Krishna,Venus,Sa,Pa,"Sa Re Ga Re Sa, Re Ga Ma Pa Dha Ni Sa",Sa Ni Dha Pa Ma Ga Re Sa,pitta,Encourages playfulness and love,#FFC0CB
+raga_bagesri,Bāgeshrī,hindustani,night,monsoon,water,sattva,shringara,Vishnu,Moon,Ma,Sa,Sa Ga Ma Dha ni Sa,Sa ni Dha Ma Ga re Sa,kapha,Creates serenity and gentle love,#6B8E23
+raga_jhinjhoti,Jhinjhoṭī,hindustani,night,monsoon,water,rajas,hasya,Krishna,Mercury,Dha,Ga,Sa Ri Ga Ma Pa Dha ni Sa,Sa ni Dha Pa Ma Ga Ri Sa,vata,Encourages joy and lightness,#00BFFF

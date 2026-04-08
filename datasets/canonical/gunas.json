@@ -1,0 +1,9 @@
+{
+  "system": "gunas",
+  "expected_count": 3,
+  "items": [
+    "Sattva",
+    "Rajas",
+    "Tamas"
+  ]
+}

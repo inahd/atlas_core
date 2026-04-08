@@ -1,0 +1,39 @@
+schools:
+
+  - name: Advaita Vedanta
+    founder: Shankara
+    oneness: 1.0
+    difference: 0.0
+    core_idea: Brahman alone is real; the world is ultimately non-dual.
+
+  - name: Visistadvaita
+    founder: Ramanuja
+    oneness: 0.7
+    difference: 0.3
+    core_idea: Brahman is one with qualified diversity.
+
+  - name: Dvaita
+    founder: Madhva
+    oneness: 0.2
+    difference: 0.8
+    core_idea: God and the individual soul are eternally distinct.
+
+  - name: Acintya-bheda-abheda
+    founder: Chaitanya tradition
+    oneness: 0.5
+    difference: 0.5
+    core_idea: Simultaneous oneness and difference between the divine and creation.
+
+concepts:
+
+  - name: Brahman
+    category: ultimate_reality
+
+  - name: Jiva
+    category: individual_soul
+
+  - name: Ishvara
+    category: supreme_controller
+
+  - name: Bhakti
+    category: devotional_practice

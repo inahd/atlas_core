@@ -1,0 +1,9 @@
+measure,parts,notes,source
+total_height,124,uttama_dasatala_total_height,user_specified_silpa_shastra
+face,13,one_tala,user_specified_silpa_shastra
+arm,17,each_arm_segment_base_measure,user_specified_silpa_shastra
+thigh,27,upper_leg,user_specified_silpa_shastra
+lower_leg,27,below_knee,user_specified_silpa_shastra
+neck,4.5,griva_measure,user_specified_silpa_shastra
+vanara_arm_factor,1.5,arms_extend_below_knees,user_specified_hanuman_iconometry
+tail_pose,raised_overhead,anjaneya_iconography,user_specified_hanuman_iconometry

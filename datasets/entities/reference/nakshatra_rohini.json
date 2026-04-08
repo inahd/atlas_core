@@ -1,0 +1,81 @@
+{
+  "entity_id": "nakshatra_rohini",
+  "version": 1,
+
+  "identity": {
+    "name": "Rohini",
+    "iast": "Rohiṇī",
+    "devanagari": "रोहिणी",
+    "common": ["Rohini", "The Red One"],
+    "synonyms": [],
+    "attestation": "OBSERVED:JYOTISHA_TRADITION"
+  },
+
+  "field_coordinates": {
+    "theta": "S3 (Kāla / Rhythm)",
+    "theta_note": "nakshatra is a panchanga element — lives at the rhythm layer",
+    "phi": 0.31,
+    "phi_note": "path value from nakshatra_master.csv",
+    "psi_primary": "jijnasu",
+    "psi_note": "Rohini invites creative engagement — most fertile nakshatra"
+  },
+
+  "domains": {
+    "astrology": {
+      "source": "datasets/cosmology/nakshatra_master.csv",
+      "attestation": "OBSERVED:JYOTISHA_TRADITION",
+      "element": "earth",
+      "guna": "rajas",
+      "gana": "manushya",
+      "dosha": "kapha",
+      "yoni_animal": "serpent",
+      "yoni_gender": "female",
+      "symbol": "chariot",
+      "ruling_deity": "Brahma (Prajapati)",
+      "ruling_graha": "Chandra (Moon)",
+      "pada_count": 4,
+      "color_hex": "#e7e7ff"
+    },
+    "agriculture": {
+      "source": "datasets/plants/nakshatra_agriculture.csv",
+      "attestation": "OBSERVED:JYOTISHA_TRADITION",
+      "quality": "earth/fertile",
+      "activity": "planting ALL",
+      "avoid": "none",
+      "crops": "everything",
+      "notes": "most fertile nakshatra · Brahma/Prajapati · abundance"
+    },
+    "gaudiya_vaishnava": {
+      "source": "Śrīmad Bhāgavatam",
+      "attestation": "OBSERVED:PRIMARY_TEXT",
+      "identity": "Moon's most beloved wife · where Kṛṣṇa's lagna rises",
+      "significance": "Atlas user's lagna nakshatra",
+      "connection": "Brahma — the creator aspect"
+    }
+  },
+
+  "nakshatra_correspondence": {
+    "primary": "Rohini",
+    "primary_deity": "Brahma",
+    "source": "datasets/cosmology/nakshatra_master.csv",
+    "attestation": "OBSERVED:JYOTISHA_TRADITION"
+  },
+
+  "field_activation": {
+    "vara": ["somavara"],
+    "element": ["earth", "water"],
+    "tithi": [],
+    "nakshatra": ["Rohini"],
+    "note": "Active when Moon is strong, earth element, Rohini transit"
+  },
+
+  "use_ratings": {
+    "attestation": "SYNTHESIS",
+    "ratings": {
+      "meditation":    {"phi": 0.8, "score": 0.95, "label": "contemplative"},
+      "planting":      {"phi": 1.2, "score": 1.0,  "label": "most_fertile"},
+      "starting_work": {"phi": 1.5, "score": 0.9,  "label": "creative_impulse"},
+      "travel":        {"phi": 3.0, "score": 0.6,  "label": "mixed"}
+    }
+  }
+}

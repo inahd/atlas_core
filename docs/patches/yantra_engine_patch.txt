@@ -1,0 +1,24 @@
+--- yantra_engine.py PATCH ---
+In generate_yantra(), replace the central bindu shape:
+
+BEFORE:
+    shapes.append({
+        "type": "circle",
+        "cx": 0, "cy": 0, "r": 3,
+        "element": element,
+        "layer": "bindu",
+    })
+
+AFTER:
+    shapes.append({
+        "type": "circle",
+        "cx": 0, "cy": 0, "r": 3,
+        "layer": "bindu",
+        "source_layer": "S0",
+        "tattva": "tattva_svayam_bhagavan",
+        "rasa": "madhurya",
+        "description": "Goloka — transcendent source. Non-material. The material yantra blooms from here.",
+        # NOTE: bindu deliberately carries NO element/guna from panchanga.
+        # It is the eternal ground, not a material quality.
+        # All material shapes (ring_0, ring_1...) bloom outward from this point.
+    })

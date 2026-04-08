@@ -1,0 +1,8 @@
+family_id,name_iast,anga_sequence,description,graha_correspondence,navagraha_kriti_example,attestation_graha_link,source_text,attestation_status
+dhruva,Dhruva,L D L L,expansive four-part tala family (3L+2).,,,UNSPECIFIED,"Carnatic tala research tables; Dikshitar kriti associations are repertory observations, not universal tala law.",OBSERVED
+matya,Matya,L D L,balanced three-part tala family (2L+2).,Chandra,Candram bhaja manasa,INTERPRETATION,"Carnatic tala research tables; Dikshitar kriti associations are repertory observations, not universal tala law.",OBSERVED
+rupaka,Rupaka,D L,compact drutam-led tala family (L+2).,Mangala,Angarakam ashrayamyaham,INTERPRETATION,"Carnatic tala research tables; Dikshitar kriti associations are repertory observations, not universal tala law.",OBSERVED
+jhampa,Jhampa,L U D,laghu-anudrutam-drutam family (L+3).,,,UNSPECIFIED,"Carnatic tala research tables; Dikshitar kriti associations are repertory observations, not universal tala law.",OBSERVED
+triputa,Triputa,L D D,laghu plus two drutams; source of Adi tala (L+4).,,,UNSPECIFIED,"Carnatic tala research tables; Dikshitar kriti associations are repertory observations, not universal tala law.",OBSERVED
+ata,Ata,L L D D,two laghus plus two drutams; important in varnams (2L+4).,Shukra,Sri Sukra Bhagavantam,INTERPRETATION,"Carnatic tala research tables; Dikshitar kriti associations are repertory observations, not universal tala law.",OBSERVED
+eka,Eka,L,single laghu tala family (L).,,,UNSPECIFIED,"Carnatic tala research tables; Dikshitar kriti associations are repertory observations, not universal tala law.",OBSERVED

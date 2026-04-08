@@ -1,0 +1,153 @@
+Isa-Upanisad (Isopanisad or Isavasyopanisad) 
+ 
+ 
+ 
+ Isa-Upanisad (Isopanisad or Isavasyopanisad), 
+Kanva recension with the commentary ascribed to Samkara 
+ 
+ 
+Input by Input by members of the Sansknet project 
+(formerly: www.sansknet.org) 
+[GRETIL-Version: 2018-08-02] 
+ 
+ 
+Revision: 
+ 2018-08-02: syayambhūr corrected to svayambhūr in IsUp_8 by Jovan Jakić 
+ 
+ 
+STRUCTURE OF REFERENCES 
+IsUp_n = mūla text 
+ 
+ 
+ADDITIONAL NOTES 
+This GRETIL version has been converted from a custom Devanagari encoding. 
+ 
+The mula text has been checked against the ed. by V.P. Limaye and R.D. Vadekar 
+(Eighteen Principal Upanisads, vol. 1, Poona 1958). 
+ 
+ 
+ 
+ 
+ 
+THIS GRETIL TEXT FILE IS FOR REFERENCE PURPOSES ONLY! 
+COPYRIGHT AND TERMS OF USAGE AS FOR SOURCE FILE. 
+ 
+Text converted to Unicode (UTF-8). 
+(This file is to be used with a UTF-8 font and your browser's VIEW configuration 
+set to UTF-8.)
+ 
+ 
+ 
+ description: multibyte sequence: 
+ long a ā 
+ long A Ā 
+ long i ī 
+ long I Ī 
+ long u ū 
+ long U Ū 
+ vocalic r ṛ 
+ vocalic R Ṛ 
+ long vocalic r ṝ 
+ vocalic l ḷ 
+ vocalic L Ḷ 
+ long vocalic l ḹ 
+ velar n ṅ 
+ velar N Ṅ 
+ palatal n ñ 
+ palatal N Ñ 
+ retroflex t ṭ 
+ retroflex T Ṭ 
+ retroflex d ḍ 
+ retroflex D Ḍ 
+ retroflex n ṇ 
+ retroflex N Ṇ 
+ palatal s ś 
+ palatal S Ś 
+ retroflex s ṣ 
+ retroflex S Ṣ 
+ anusvara ṃ 
+ visarga ḥ 
+ long e ē 
+ long o ō 
+ l underbar ḻ 
+ r underbar ṟ 
+ n underbar ṉ 
+ k underbar ḵ 
+ t underbar ṯ 
+ 
+ 
+ 
+Unless indicated otherwise, accents have been dropped in order 
+to facilitate word search. 
+ 
+For a comprehensive list of GRETIL encodings and formats see: 
+http://gretil.sub.uni-goettingen.de/gretil/gretdiac.pdf 
+and 
+http://gretil.sub.uni-goettingen.de/gretil/gretdias.pdf 
+ 
+For further information see: 
+http://gretil.sub.uni-goettingen.de/gretil.htm 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Īśa-Upaniṣad (Īśopaniṣad or Īśāvāsyopanisad), Kāṇva recension 
+ 
+ 
+īśā vāsyam idaṃ sarvaṃ yat kiñca jagatyāṃ jagat | 
+tena tyaktena bhuñjīthā mā gṛdhaḥ kasya sviddhanam || IsUp_1 || 
+ 
+kurvann eveha karmāṇi jijīviṣecchataṃ samāḥ | 
+evaṃ tvayi nānyatheto 'sti na karma lipyate nare || IsUp_2 || 
+ 
+asuryā nāma te lokā andhena tamasāvṛtāḥ | 
+tāṃste pretyābhigacchanti ye ke cātmahano janāḥ || IsUp_3 || 
+ 
+anejad ekaṃ manaso javīyo nainaddevā āpnuvanpūrvamarṣat | 
+taddhāvato 'nyānatyeti tiṣṭhat tasminn apo mātariśvā dadhāti || IsUp_4 || 
+ 
+tad ejati tan naijati tad dūre tad v antike | 
+tad antar asya sarvasya tad u sarvasyāsya bāhyataḥ || IsUp_5 || 
+ 
+yas tu sarvāṇi bhūtāny ātmany evānupaśyati | 
+sarvabhūteṣu cātmānaṃ tato na vijugupsate || IsUp_6 || 
+ 
+yasmin sarvāṇi bhūtāny ātmaivābhūd vijānataḥ | 
+tatra ko mohaḥ kaḥ śoka ekatvam anupaśyataḥ || IsUp_7 || 
+ 
+sa paryagāc chukram akāyam avraṇam asnāviraṃ śuddham apāpaviddham | 
+kavir manīṣī paribhūḥ svayambhūr yāthātathyator 'thān vyadadhāc chāśvatībhyaḥ samābhyaḥ || IsUp_8 || 
+ 
+andhaṃ tamaḥ praviśanti ye 'vidyām upāsate | 
+tato bhūya iva te tamo ya uvidyāyāṃ ratāḥ || IsUp_9 || 
+ 
+anyad evāhur vidyayān yad āhur avidyayā | 
+iti śuśruma dhīrāṇāṃ ye nas tad vicacakṣire || IsUp_10 || 
+ 
+vidyāṃ cāvidyāṃ ca yas tad vedobhayaṃ saha | 
+avidyayā mṛtyuṃ tīrtvā vidyayāmṛtam aśnute || IsUp_11 || 
+ 
+andhaṃ tamaḥ praviśanti ye 'sambhūtim upāsate | 
+tato bhūya iva te tamo ya u sambhūtyāṃ ratāḥ || IsUp_12 || 
+ 
+anyad evāhuḥ saṃbhavād anyad āhur asaṃbhavāt | 
+iti śuśruma dhīrāṇāṃ ye nas tad vicacakṣire || IsUp_13 || 
+ 
+saṃbhūtiṃ ca vināśaṃ ca yas tad vedobhayaṃ saha | 
+vināśena mṛtyuṃ tīrtvā saṃbhūtyāmṛtam aśnute || IsUp_14 || 
+ 
+hiraṇmayena pātreṇa satyasyāpihitaṃ mukham | 
+tat tvaṃ pūṣann apāvṛṇu satyadharmāya dṛṣṭaye || IsUp_15 || 
+ 
+pūṣann ekarṣe yama sūrya prājāpatya vyūha raśmīn samūha tejaḥ | 
+yat te rūpaṃ kalyāṇatamaṃ tat te paśyāmi yo 'sāv asau puruṣaḥ so 'ham asmi || IsUp_16 || 
+ 
+vāyur anilam amṛtam athedaṃ bhasmāntaṃ śarīram | 
+oṃ krato smara kṛtaṃ smara krato smara kṛtaṃ smara || IsUp_17 || 
+ 
+agne naya supathā rāye asmān viśvāni deva vayunāni vidvān | 
+yuyodhy asmaj juhurāṇam eno bhūyiṣṭhāṃ te nama uktiṃ vidhema || IsUp_18 ||

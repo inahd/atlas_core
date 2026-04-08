@@ -1,0 +1,407 @@
+[
+  {
+    "id": "kameshvari",
+    "name": "Kāmeśvarī",
+    "sk": "कामेश्वरी",
+    "emoji": "✦",
+    "tithi": 1,
+    "paksha": "Śukla",
+    "process": "the will that initiates · creative impulse · Sṛṣṭi's first breath",
+    "raga": "Yaman",
+    "element": "ether",
+    "guna": "sattva",
+    "layer": "S0→S1",
+    "color": [
+      255,
+      208,
+      96
+    ],
+    "windA": 3,
+    "windB": 4,
+    "reading": "The field opens. Something wants to be born. Do not hesitate at the threshold.",
+    "qualities": [
+      "initiating force",
+      "pure desire",
+      "dawn of creation"
+    ],
+    "shadow": "will without direction becomes restlessness"
+  },
+  {
+    "id": "bhagamalini",
+    "name": "Bhagamālinī",
+    "sk": "भगमालिनी",
+    "emoji": "☀",
+    "tithi": 2,
+    "paksha": "Śukla",
+    "process": "solar manifestation chain · luminaries as garland · sequential unfoldment",
+    "raga": "Bhairavi",
+    "element": "fire",
+    "guna": "rajas",
+    "layer": "S1",
+    "color": [
+      240,
+      160,
+      64
+    ],
+    "windA": 4,
+    "windB": 6,
+    "reading": "The chain unfolds petal by petal. Trust the sequence. Each link is necessary.",
+    "qualities": [
+      "luminous succession",
+      "ordered manifestation",
+      "solar clarity"
+    ],
+    "shadow": "attachment to sequence — the garland can become a chain"
+  },
+  {
+    "id": "nityaklinna",
+    "name": "Nityāklinā",
+    "sk": "नित्यक्लिन्ना",
+    "emoji": "🌊",
+    "tithi": 3,
+    "paksha": "Śukla",
+    "process": "ever-wet · Soma current perpetual · dissolution of dryness",
+    "raga": "Todi",
+    "element": "water",
+    "guna": "tamas",
+    "layer": "S2",
+    "color": [
+      93,
+      202,
+      165
+    ],
+    "windA": 3,
+    "windB": 5,
+    "reading": "What has become rigid must be softened. Let the Soma current flow through the dry places.",
+    "qualities": [
+      "perpetual moisture",
+      "dissolution of hardness",
+      "lunar receptivity"
+    ],
+    "shadow": "dissolution without discernment — what should be preserved may also dissolve"
+  },
+  {
+    "id": "bherunda",
+    "name": "Bheruṇḍā",
+    "sk": "भेरुण्डा",
+    "emoji": "⚡",
+    "tithi": 4,
+    "paksha": "Śukla",
+    "process": "the terrible pair · dual-force held · productive tension",
+    "raga": "Bhairava",
+    "element": "fire+air",
+    "guna": "rajas",
+    "layer": "S1",
+    "color": [
+      232,
+      80,
+      80
+    ],
+    "windA": 5,
+    "windB": 7,
+    "reading": "Two forces that seem opposed are actually one force bifurcated. Hold both without choosing.",
+    "qualities": [
+      "dual power",
+      "productive tension",
+      "paradox as strength"
+    ],
+    "shadow": "the pair collapses into one — either collapse is a loss"
+  },
+  {
+    "id": "vahnivasini",
+    "name": "Vahnivasini",
+    "sk": "वह्निवासिनी",
+    "emoji": "🔥",
+    "tithi": 5,
+    "paksha": "Śukla",
+    "process": "dwelling in fire · Agni as home · purification as natural state",
+    "raga": "Marwa",
+    "element": "fire",
+    "guna": "sattva",
+    "layer": "S2",
+    "color": [
+      255,
+      120,
+      40
+    ],
+    "windA": 4,
+    "windB": 7,
+    "reading": "Fire is her home. What you fear will consume you may be the very thing that purifies.",
+    "qualities": [
+      "fearless purification",
+      "Agni as sanctuary",
+      "transformation as comfort"
+    ],
+    "shadow": "purification becomes destruction — knows not when to stop burning"
+  },
+  {
+    "id": "mahavajreshvari",
+    "name": "Mahāvajreśvarī",
+    "sk": "महावज्रेश्वरी",
+    "emoji": "💎",
+    "tithi": 6,
+    "paksha": "Śukla",
+    "process": "diamond sovereignty · indestructible will · Vajra pervades all",
+    "raga": "Shankarabharanam",
+    "element": "ether",
+    "guna": "sattva",
+    "layer": "S1",
+    "color": [
+      200,
+      200,
+      255
+    ],
+    "windA": 6,
+    "windB": 9,
+    "reading": "The diamond does not yield. Some things in you are indestructible. Know which.",
+    "qualities": [
+      "indestructible clarity",
+      "vajra will",
+      "sovereign stillness"
+    ],
+    "shadow": "rigidity mistaken for strength — diamond that will not be cut remains unformed"
+  },
+  {
+    "id": "shivaduti",
+    "name": "Śivadūtī",
+    "sk": "शिवदूती",
+    "emoji": "🕊",
+    "tithi": 7,
+    "paksha": "Śukla",
+    "process": "S0→S1 bridge · messenger across the boundary · descent made personal",
+    "raga": "Bhimpalasi",
+    "element": "ether",
+    "guna": "sattva",
+    "layer": "S0→S1",
+    "color": [
+      180,
+      140,
+      255
+    ],
+    "windA": 3,
+    "windB": 5,
+    "reading": "A message is being transmitted from the uncreated to the created. Are you listening?",
+    "qualities": [
+      "divine messenger",
+      "bridge between worlds",
+      "personal transmission"
+    ],
+    "shadow": "the messenger becomes attached to the message — forgets to deliver it"
+  },
+  {
+    "id": "tvarita",
+    "name": "Tvaritā",
+    "sk": "त्वरिता",
+    "emoji": "⚡",
+    "tithi": 8,
+    "paksha": "Śukla",
+    "process": "the swift one · time compression · years complete in days",
+    "raga": "Darbari",
+    "element": "air",
+    "guna": "rajas",
+    "layer": "S3",
+    "color": [
+      167,
+      139,
+      250
+    ],
+    "windA": 7,
+    "windB": 11,
+    "reading": "The window is compressed. What normally takes years can complete now. Move.",
+    "qualities": [
+      "swift completion",
+      "time acceleration",
+      "compressed grace"
+    ],
+    "shadow": "speed becomes haste — what is rushed cannot be recalled"
+  },
+  {
+    "id": "kulasundari",
+    "name": "Kulasundarī",
+    "sk": "कुलसुन्दरी",
+    "emoji": "🌸",
+    "tithi": 9,
+    "paksha": "Śukla",
+    "process": "lineage transmission · tradition as living form · kula beauty",
+    "raga": "Bageshri",
+    "element": "earth",
+    "guna": "sattva",
+    "layer": "S1",
+    "color": [
+      220,
+      140,
+      180
+    ],
+    "windA": 5,
+    "windB": 8,
+    "reading": "The tradition is beautiful because it is alive. You carry something older than you know.",
+    "qualities": [
+      "living lineage",
+      "tradition as beauty",
+      "kula shakti"
+    ],
+    "shadow": "lineage as identity rather than transmission — carries the form, loses the spirit"
+  },
+  {
+    "id": "nitya",
+    "name": "Nityā",
+    "sk": "नित्या",
+    "emoji": "∞",
+    "tithi": 10,
+    "paksha": "Śukla",
+    "process": "the eternal itself · S0 brushing S3 · pure permanence operative",
+    "raga": "Bihag",
+    "element": "ether",
+    "guna": "sattva",
+    "layer": "S0",
+    "color": [
+      255,
+      255,
+      200
+    ],
+    "windA": 3,
+    "windB": 4,
+    "reading": "Beneath all change, something does not change. Rest there. Even briefly.",
+    "qualities": [
+      "pure permanence",
+      "eternal ground",
+      "stillness that acts"
+    ],
+    "shadow": "eternity as escape from time — the eternal must also manifest"
+  },
+  {
+    "id": "nilapataka",
+    "name": "Nīlapatākā",
+    "sk": "नीलपताका",
+    "emoji": "🏴",
+    "tithi": 11,
+    "paksha": "Śukla",
+    "process": "blue banner raised · direction established · victory standard",
+    "raga": "Kafi",
+    "element": "ether+water",
+    "guna": "rajas",
+    "layer": "S3",
+    "color": [
+      60,
+      120,
+      200
+    ],
+    "windA": 4,
+    "windB": 7,
+    "reading": "The banner is raised. Direction is established. Follow it without looking back.",
+    "qualities": [
+      "clear direction",
+      "victory declared",
+      "standard bearer"
+    ],
+    "shadow": "the banner becomes the destination — direction mistaken for arrival"
+  },
+  {
+    "id": "vijaya",
+    "name": "Vijayā",
+    "sk": "विजया",
+    "emoji": "🏆",
+    "tithi": 12,
+    "paksha": "Śukla",
+    "process": "complete victory · dharmic culmination · field at resolution",
+    "raga": "Khamaj",
+    "element": "fire",
+    "guna": "sattva",
+    "layer": "S4",
+    "color": [
+      240,
+      192,
+      64
+    ],
+    "windA": 6,
+    "windB": 9,
+    "reading": "The dharmic arc completes here. This is not triumph — it is resolution. Receive it quietly.",
+    "qualities": [
+      "dharmic victory",
+      "field resolution",
+      "culmination"
+    ],
+    "shadow": "victory as possession — what is won must be given"
+  },
+  {
+    "id": "sarvamangala",
+    "name": "Sarvamangalā",
+    "sk": "सर्वमङ्गला",
+    "emoji": "🌺",
+    "tithi": 13,
+    "paksha": "Śukla",
+    "process": "all-auspiciousness · total benediction · coherence as grace",
+    "raga": "Multani",
+    "element": "earth",
+    "guna": "sattva",
+    "layer": "S1",
+    "color": [
+      200,
+      169,
+      110
+    ],
+    "windA": 5,
+    "windB": 8,
+    "reading": "The field is auspicious. All things are aligned. Move forward — the way is blessed.",
+    "qualities": [
+      "total auspiciousness",
+      "universal benediction",
+      "grace as coherence"
+    ],
+    "shadow": "auspiciousness taken for granted — the blessing must be received consciously"
+  },
+  {
+    "id": "jvalamalini",
+    "name": "Jvālāmālinī",
+    "sk": "ज्वालामालिनी",
+    "emoji": "🔥",
+    "tithi": 14,
+    "paksha": "Śukla",
+    "process": "fire-garlanded · transformation ring · destruction as beauty",
+    "raga": "Bhairava",
+    "element": "fire",
+    "guna": "tamas",
+    "layer": "S1",
+    "color": [
+      255,
+      80,
+      40
+    ],
+    "windA": 7,
+    "windB": 11,
+    "reading": "What must end is garlanded in fire. The ring of destruction is also a ring of beauty. Let it complete.",
+    "qualities": [
+      "transformative destruction",
+      "fire as ornament",
+      "beautiful endings"
+    ],
+    "shadow": "destruction without renewal — fire that does not fertilize"
+  },
+  {
+    "id": "chitra",
+    "name": "Citrā",
+    "sk": "चित्रा",
+    "emoji": "🌈",
+    "tithi": 15,
+    "paksha": "Pūrṇimā",
+    "process": "the variegated · māyā as full display · all colors present",
+    "raga": "all ragas",
+    "element": "all",
+    "guna": "all",
+    "layer": "S0→S6",
+    "color": [
+      180,
+      100,
+      255
+    ],
+    "windA": 12,
+    "windB": 13,
+    "reading": "Full moon. Māyā at complete display. Everything is visible, everything is illusion. Both are true.",
+    "qualities": [
+      "full manifestation",
+      "māyā as totality",
+      "all colors simultaneous"
+    ],
+    "shadow": "overwhelm in full display — when everything shines equally, nothing can be seen"
+  }
+]

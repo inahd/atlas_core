@@ -1,0 +1,33 @@
+position,deity,x,y,direction,element,function,source_text,attestation_status
+east_1,Agni / Shikhi,9,9,east,fire,ignition and transformative threshold,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+east_2,Parjanya,9,8,east,water,rain and fertility,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+east_3,Jayanta,9,7,east,air,victory and ascent,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+east_4,Indra,9,6,east,ether,kingship and divine authority,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+east_5,Surya,9,5,east,fire,solar illumination,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+east_6,Satya,9,4,east,ether,truth and order,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+east_7,Bhrisha,9,3,east,earth,strength and firmness,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+east_8,Antariksha,9,2,east,air,mid-space and transmission,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+south_1,Vayu,9,1,south,air,movement,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+south_2,Pusha,8,1,south,earth,nourishment and roads,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+south_3,Vitatha,7,1,south,ether,"record, contract, witness",Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+south_4,Brihatkshata,6,1,south,earth,defense and protection,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+south_5,Yama,5,1,south,fire,"death, restraint, law",Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+south_6,Gandharva,4,1,south,air,music and refinement,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+south_7,Bhringaraja,3,1,south,earth,vitality and scent,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+south_8,Mriga,2,1,south,earth,animal instinct and roaming,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+west_1,Pitr,1,1,west,earth,ancestors,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+west_2,Dauvarika,1,2,west,earth,gatekeeping,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+west_3,Sugriva,1,3,west,air,alliance and service,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+west_4,Kusumadanta,1,4,west,earth,fragrance and subtle guardianship,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+west_5,Varuna,1,5,west,water,"waters, law, oath",Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+west_6,Asura,1,6,west,fire,pressure and subterranean force,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+west_7,Shesha,1,7,west,water,serpentine support,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+west_8,Papayakshma,1,8,west,air,decay and wasting,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+north_1,Roga,1,9,north,air,disease and vulnerability,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+north_2,Ahi,2,9,north,water,serpent power,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+north_3,Mukhya,3,9,north,air,chief pranic movement,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+north_4,Bhallata,4,9,north,earth,weight and resources,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+north_5,Soma,5,9,north,water,"moon, cooling, nourishment",Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+north_6,Bhujaga,6,9,north,water,serpent current,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+north_7,Aditi,7,9,north,ether,vastness and containment,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED
+north_8,Diti,8,9,north,earth,embodiment and division,Brihat Samhita Vastuvidya square-number perimeter table for the 81-pada mandala.,OBSERVED

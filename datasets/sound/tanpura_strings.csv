@@ -1,0 +1,8 @@
+string_id,name,default_ratio,graha,jivari,decay_s,level,pluck_offset_s,raga_variant,detune_cents,element,guna,notes
+pa,Pa,1.5,Venus,0.30,9.0,0.22,0.0,Pa,0.0,water,rajas,Pa string — Venus (beauty) · rose-pink · soft jivari · default 5th
+sa1,Sa1,1.0,Sun,0.45,8.0,0.30,0.55,Sa,0.0,fire,sattva,Sa string 1 — Sun (sovereignty) · gold · moderate jivari · fundamental
+sa2,Sa2,1.0,Sun,0.45,8.0,0.28,1.1,Sa,3.5,fire,sattva,Sa string 2 — Sun · slight sharp detune for shimmer · 3.5 cents
+sa_low,Sa_low,0.5,Jupiter,0.40,12.0,0.20,1.65,Sa,0.0,ether,sattva,Sa low octave — Jupiter (wisdom) · yellow · long decay · grounding
+ma,Ma,1.333,Mars,0.55,7.0,0.22,0.0,Ma,0.0,fire,rajas,Ma variant — Mars (energy) · crimson · sharp jivari · for Todi/Bhairavi raga family
+dha,Dha,1.667,Mercury,0.35,8.5,0.22,0.0,Dha,0.0,earth,rajas,Dha variant — Mercury (intellect) · green · subtle jivari · for Kafi/Khamaj raga family
+ni,Ni,1.875,Saturn,0.50,10.0,0.22,0.0,Ni,0.0,air,tamas,Ni variant — Saturn (discipline) · slate · heavy jivari · for Marwa/Puriya raga family

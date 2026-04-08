@@ -1,0 +1,908 @@
+Gheranda-Samhita 
+ 
+ 
+ 
+
+Gheranda-Samhita 
+Electronic text based on the edition: 
+Gherandasamhita : Sanskrit-deutsch. Ed. Peter Thomi. 
+Wichtrach: Institut fuer Indologie, 1993 (ISBN 3 7187 0013 1). 
+ 
+Input by Peter Thomi, edited by Peter Schreiner 
+ 
+Plain text version 
+ 
+
+ 
+ 
+THIS GRETIL TEXT FILE IS FOR REFERENCE PURPOSES ONLY! 
+COPYRIGHT AND TERMS OF USAGE AS FOR SOURCE FILE. 
+ 
+Text converted to Unicode (UTF-8). 
+(This file is to be used with a UTF-8 font and your browser's VIEW configuration 
+set to UTF-8.)
+ 
+ 
+ 
+ description: multibyte sequence: 
+ long a ā 
+ long A Ā 
+ long i ī 
+ long I Ī 
+ long u ū 
+ long U Ū 
+ vocalic r ṛ 
+ vocalic R Ṛ 
+ long vocalic r ṝ 
+ vocalic l ḷ 
+ vocalic L Ḷ 
+ long vocalic l ḹ 
+ velar n ṅ 
+ velar N Ṅ 
+ palatal n ñ 
+ palatal N Ñ 
+ retroflex t ṭ 
+ retroflex T Ṭ 
+ retroflex d ḍ 
+ retroflex D Ḍ 
+ retroflex n ṇ 
+ retroflex N Ṇ 
+ palatal s ś 
+ palatal S Ś 
+ retroflex s ṣ 
+ retroflex S Ṣ 
+ anusvara ṃ 
+ visarga ḥ 
+ long e ē 
+ long o ō 
+ l underbar ḻ 
+ r underbar ṟ 
+ n underbar ṉ 
+ k underbar ḵ 
+ t underbar ṯ 
+ 
+ 
+ 
+Unless indicated otherwise, accents have been dropped in order 
+to facilitate word search. 
+ 
+For a comprehensive list of GRETIL encodings and formats see: 
+http://gretil.sub.uni-goettingen.de/gretil/gretdiac.pdf 
+and 
+http://gretil.sub.uni-goettingen.de/gretil/gretdias.pdf 
+ 
+For further information see: 
+http://gretil.sub.uni-goettingen.de/gretil.htm 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ ādīśvarāya praṇanāmi tasmai ! 
+ yenopadiṣṭā haṭhayogavidyā ! 
+ virājate pronnatarājayogam ! 
+ āroḍhum icchor adhirohiṇīva !!1.0! 
+ ekadā caṇḍakāpālir gatvā gheraṇḍakuṭṭiram ! 
+ praṇamya vinayād bhaktyā gheraṇḍaṃ paripṛcchhati !!1.1! 
+ caṇḍakāpālir uvāca: ghaṭasthayogaṃ yogeśa tattvajñānasya kāraṇam ! 
+ idānīṃ śrotum icchāmi yogeśvara vada prabho !!1.2! 
+ gheraṇḍa uvāca: sādhu sādhu mahābāho yan māṃ tvaṃ paripṛcchasi ! 
+ kathayāmi hi te tattvaṃ sāvadhāno 'vadhāraya !!1.3! 
+ nāsti māyāsamaḥ pāśo nāsti yogāt paraṃ balam ! 
+ na hi jñānāt paro bandhur nāhaṃkārāt paro ripuḥ !!1.4! 
+ abhyāsāt kādivarṇāder yathā śāstrāṇi bodhayet ! 
+ tathā yogaṃ samāsādya tattvajñānaṃ ca labhyate !!1.5! 
+ sukṛtair duṣkṛtaiḥ kāryair jāyate prāṇināṃ ghaṭaḥ ! 
+ ghaṭād utpadyate karma ghaṭayantraṃ yathā bhramet !!1.6! 
+ ūrdhvādho bhramate yadvad ghaṭayantraṃ gavāṃ vaśāt ! 
+ tadvat karmavaśāj jīvo bhramate janmamṛtyunā !!1.7! 
+ āmakumbha ivāmbhaḥstho jīryamāṇaḥ sadā ghaṭaḥ ! 
+ yogānalena saṃdahya ghaṭaśuddhiṃ samācaret !!1.8! 
+ śodhanaṃ dṛḍhatā caiva sthairyaṃ dhairyaṃ ca lāghavam ! 
+ pratyakṣaṃ ca nirliptaṃ ca ghatasthaṃ saptasādhanam !!1.9! 
+ ṣaṭkarmaṇā śodhanaṃ ca āsanena bhaved dṛḍham ! 
+ mudrayā sthiratā caiva pratyāhāreṇa dhairyatā !!1.10! 
+ prāṇāyāmāl lāghavaṃ ca dhyānāt pratyakṣam ātmani ! 
+ samādhinā nirliptaṃ ca muktir eva na saṃśayaḥ !!1.11! 
+ dhautir vastis tathā netir laulikī trāṭakaṃ tathā ! 
+ kapālabhātiś caitāni ṣaṭkarmāṇi samācaret !!1.12! 
+ antardhautir dantadhautir hṛddhautir mūlaśodhanam ! 
+ dhautyaś caturvidhā proktā ghaṭaṃ kurvanti nirmalam !!1.13! 
+ vātasāraṃ vārisāraṃ vahnisāraṃ bahiṣkṛtam ! 
+ ghaṭasya nirmalārthāya hy antardhautiś caturvidhā !!1.14! 
+ kākacañcūvad āsyena pibed vāyuṃ śanaiḥ śanaiḥ ! 
+ cālayed udaraṃ paścād vartmanā recayec chanaiḥ !!1.15! 
+ vātasāraṃ paraṃ gopyaṃ dehanirmalakārakam ! 
+ sarvarogakṣayakaraṃ dehānalavivardhakam !!1.16! 
+ ākaṇṭhaṃ pūrayed vāri vaktreṇa ca pibec chanaiḥ ! 
+ cālayed udareṇaiva codarād recayed adhaḥ !!1.17! 
+ vārisāraṃ paraṃ gopyaṃ dehanirmalakārakam ! 
+ sādhayed yaḥ prayatnena devadehaṃ prapadyate !!1.18! 
+ vārisāraṃ parāṃ dhautiṃ sādhayed yaḥ prayatnataḥ ! 
+ maladehaṃ śodhayitvā devadehaṃ prapadyate !!1.19! 
+ nābhigranthiṃ merupṛṣṭhe śatavāraṃ ca kārayet ! 
+ udarāmayajaṃ tyaktvā jāṭharāgniṃ vivardhayet ! 
+ vahnisāram iyaṃ dhautir yogināṃ yogasiddhidā !!1.20! 
+ eṣā dhautiḥ parā gopyā na prakāśyā kadācana ! 
+ kevalaṃ dhautimātreṇa devadeho bhaved dhruvam !!1.21! 
+ kākīmudrāṃ sādhayitvā pūrayed udaraṃ mahat ! 
+ dhārayed ardhayāmaṃ tu cālayed adhavartmanā ! 
+ eṣā dhautiḥ parā gopyā na prakāśyā kadācana !!1.22! 
+ nābhimagnajale sthitvā śaktināḍīṃ vimarjayet ! 
+ kārābhyāṃ kṣālayen nāḍīṃ yāvan malavisarjanam !!1.23! 
+ tāvat prakṣālya nāḍīṃ ca udare veśayet punaḥ ! 
+ idaṃ prakṣālanaṃ gopyaṃ devānām api durlabham ! 
+ kevalaṃ dhautimātreṇa devadeho bhaved dhruvam !!1.24! 
+ yām ārdhadhāraṇāśaktiṃ yāvan na sādhayen naraḥ ! 
+ bahiṣkṛtaṃ mahādhautī tāvan naiva tu jāyate !!1.25! 
+ dantamūlaṃ jihvāmūlaṃ randhraṃ ca karṇayugmayoḥ ! 
+ kapālarandhraṃ pañceti@ dantadhautirvidhīyate !!1.26! 
+ khadireṇa rasenātha mṛttikayā ca śuddhayā ! 
+ mārjayed dantamūlaṃ ca yāvat kilbiṣam āharet !!1.27! 
+ dantamūlaṃ parā dhautir yogināṃ yogasādhane ! 
+ nityaṃ kuryāt prabhāte ca dantarakṣāya yogavit ! 
+ dantamūlaṃ dhāraṇādi+ !kāryeṣu yogināṃ yataḥ !!1.28! 
+ athātaḥ saṃpravakṣyāmi jihvāśodhanakāraṇam ! 
+ jarāmaraṇarogādīn nāśayed dīrghalambikā !!1.29! 
+ tarjanīmadhyamānāmā aṅgulitrayayogataḥ ! 
+ veśayed galamadhye tu mārjayel lambikāmalam ! 
+ śanaiḥ śanair mārjayitvā kaphadoṣaṃ nivārayet !!1.30! 
+ mārjayen navanītena dohayec ca punaḥ punaḥ ! 
+ tadagraṃ lauhayantreṇa karṣayitvā punaḥ punaḥ !!1.31! 
+ nityaṃ kuryāt prayatnena raver udayake śtake ! 
+ evaṃ kṛte tu nitye ca lambikā dīrghatāṃ gatā !!1.32! 
+ tarjanyaṅgulyagrayogān@ mārjayet karṇarandhrayoḥ ! 
+ nityam abhyāsayogena nādāntaraṃ prakāśanam !!1.33! 
+ vṛddhāṅguṣṭhena dakṣeṇa mardayed bhālarandhrakam ! 
+ evam abhyāsayogena kaphadoṣaṃ nivārayet !!1.34! 
+ nāḍī nirmalatāṃ yāti divyadṛṣṭiḥ prajāyate ! 
+ nidrānte bhojanānte ca divānte ca dine dine !!1.35! 
+ hṛddhautiṃ trividhāṃ kuryād daṇḍavamanavāsasā !!1.36! 
+ rambhādaṇḍaṃ hariddaṇḍaṃ vetradaṇḍaṃ tathaiva ca ! 
+ hṛnmadhye cālayitvā tu punaḥ pratyāharec chanaiḥ !!1.37! 
+ kaphapittaṃ tathā kledaṃ recayed ūrdhvavartmanā ! 
+ daṇḍadhautividhānena hṛdrogaṃ nāśayed dhruvam !!1.38! 
+ bhojanānte pibed vāri ākarṇapūritaṃ sudhīḥ ! 
+ ūrdhvadṛṣṭiṃ kṣaṇaṃ kṛtvā taj jalaṃ vamayet punaḥ ! 
+ nityam abhyāsayogena kaphapittaṃ nivārayet !!1.39! 
+ ekonaviṃśatiḥ hastaḥ pañcaviṃśati vai tathā ! 
+ caturaṅgulavistāraṃ sūkṣmavastraṃ śanair graset ! 
+ punaḥ pratyāhared etat procyate dhautikarmakam !!1.40! 
+ gulmajvaraplīhākuṣṭha+ !kaphapittaṃ vinaśyati ! 
+ ārogyaṃ balapuṣṭiś ca bhavet tasya dine dine !!1.41! 
+ apānakrūratā tāvad yāvanmūlaṃ na śodhayet ! 
+ tasmāt sarvaprayatnena mūlaśodhanam ācaret !!1.42! 
+ pītamūlasya daṇḍena madhyamāṅgulināpi vā ! 
+ yatnena kṣālayed guhyaṃ vāriṇā ca punaḥ punaḥ !!1.43! 
+ vārayet koṣṭhakāṭhinyam āmājīrṇaṃ nivārayet ! 
+ kāraṇaṃ kāntipuṣṭyoś ca dīpanaṃ vahnimaṇḍalam !!1.44! 
+ jalavastiḥ śuṣkavastir vastī ca dvividhau smṛtau ! 
+ jalavastiṃ jale kuryāc chuṣkavastiṃ kṣitau sadā !!1.45! 
+ nābhimagnajale pāyu+ !nyastanālotkaṭāsanaḥ ! 
+ ākuñcanaṃ prakāśaṃ ca jalavastiṃ samācaret !!1.46! 
+ pramehaṃ ca gudāvartaṃ krūravāyuṃ nivārayet ! 
+ bhavet svacchandadehaś ca kāmadevasamo bhavet !!1.47! 
+ vastiṃ paścimatānena cālayitvā śanaiḥ śanaiḥ ! 
+ aśvinīmudrayā pāyum ākuñcayet prakāśayet !!1.48! 
+ evam abhyāsayogena koṣṭhadoṣo na vidyate ! 
+ vivardhayej jāṭharāgnim āmavātaṃ vināśayet !!1.49! 
+ vitastimānaṃ sūkṣmasūtraṃ nāsānāle praveśayet ! 
+ mukhān nirgamayet paścāt procyate netikarmakam !!1.50! 
+ sādhanān netikarmāpi khecarīsiddhim āpnuyāt ! 
+ kaphadoṣā vinaśyanti divyadṛṣṭiḥ prajāyate !!1.51! 
+ amandavegaṃ tundaṃ ca bhrāmayed ubhapārśvayoḥ ! 
+ sarvarogān nihantīha dehānalavivardhanam !!1.52! 
+ nimeṣonmeṣakaṃ tyaktvā sūkṣmalakṣyaṃ nirīkṣayet ! 
+ yāvad aśrū nipatate trāṭakaṃ procyate budhaiḥ !!1.53! 
+ evam abhyāsayogena śāṃbhavī jāyate dhruvam ! 
+ na jāyate netrarogaḥ divyadṛṣṭipradāyakam !!1.54! 
+ vāmakrameṇa vyutkrameṇa śītkrameṇa viśeṣataḥ ! 
+ bhālabhātiṃ tridhā kuryāt kaphadoṣaṃ nivārayet !!1.55! 
+ iḍayā pūrayed vāyuṃ recayet piṅgalā punaḥ ! 
+ piṅgalayā pūrayitvā punaś candreṇa recayet !!1.56! 
+ pūrakaṃ recakaṃ kṛtvā vegena na tu cālayet ! 
+ evam abhyāsayogena kaphadoṣaṃ nivārayet !!1.57! 
+ nāsābhyāṃ jalam ākṛṣya punar vaktreṇa recayet ! 
+ pāyaṃ pāyaṃ prakurvaṃś cec chleṣmadoṣaṃ nivārayet !!1.58! 
+ śītkṛtya pītvā vaktreṇa nāsānalair virecayet ! 
+ evam abhyāsayogena kāmadevasamo bhavet !!1.59! 
+ na jāyate vārddhakaṃ ca jvaro naiva prajāyate ! 
+ bhavet svacchandadehaś ca kaphadoṣaṃ nivārayet !!1.60! 
+ [[iti śrīgheraṇḍasaṃhitāyāṃ gheraṇḍacaṇḍasaṃvāde ghaṭasthayoge ṣaṭkarmasādhanaṃ nāma prathamopadeśaḥ !!1! ]] 
+ gheraṇḍa uvāca: 
+ āsanāni samastāni yāvanto jīvajantavaḥ ! 
+ caturaśīti lakṣāṇi śivena kathitaṃ purā !!2.1! 
+ teṣāṃ madhye viśiṣṭāni ṣoḍaśonaṃ śataṃ kṛtam ! 
+ teṣāṃ madhye martyaloke dvātriṃśad āsanaṃ śubham !!2.2! 
+ siddhaṃ padmaṃ tathā bhadraṃ muktaṃ vajraṃ ca svastikam ! 
+ siṃhaṃ ca gomukhaṃ vīraṃ dhanurāsanam eva ca !!2.3! 
+ mṛtaṃ guptaṃ tathā mātsyaṃ matsyendrāsanam eva ca ! 
+ gorakṣaṃ paścimottānam utkaṭaṃ saṃkaṭaṃ tathā !!2.4! 
+ mayūraṃ kukkuṭaṃ kūrmaṃ tathā uttānakūrmakam ! 
+ uttānamaṇḍukaṃ vṛkṣaṃ maṇḍūkaṃ garuḍaṃ vṛṣam !!2.5! 
+ śalabhaṃ makaraṃ coṣṭraṃ bhujaṃgaṃ ca yogāsanam ! 
+ dvātriṃśad āsanāny eva martyaloke ca siddhidā !!2.6! 
+ yonisthānakam aṅghrimūlaghaṭitaṃ saṃpīḍya gulphetaraṃ ! 
+ meḍhropary atha saṃnidhāya cibukaṃ kṛtvā hṛdi sthāpitam ! 
+ sthāṇuḥ saṃyamitendriyo 'caladṛśā paśyan bhruvor antare ! 
+ etan mokṣakapāṭabhedanakaraṃ siddhāsanaṃ procyate !!2.7! 
+ vāmor ūpari dakṣiṇaṃ hi caraṇaṃ saṃsthāpya vāmaṃ tathā ! 
+ dakṣor ūpari paścimena vidhinā kṛtvā karābhyāṃ dṛḍham ! 
+ aṅguṣṭhau hṛdaye nidhāya cibukaṃ nāsāgram ālokayed ! 
+ etad vyādhivikāranāśanakaraṃ padmāsanaṃ procyate !!2.8! 
+ gulphau ca vṛṣaṇasyādho vyutkrameṇa samāhitau@ ! 
+ pādāṅguṣṭhau karābhyāṃ ca dhṛtvā ca pṛṣṭhadeśataḥ !!2.9! 
+ jālaṃdharaṃ samāsādya nāsāgram avalokayet ! 
+ bhadrāsanaṃ bhaved etat sarvavyādhivināśakam !!2.10! 
+ pāyumūle vāmagulphaṃ dakṣagulphaṃ tathopari ! 
+ śirogrīvāsame kāye@ muktāsanaṃ tu siddhidam !!2.11! 
+ jaṅghayor vajravat kṛtvā gudapārśve padāv ubhau ! 
+ vajrāsanaṃ bhaved etad yogināṃ siddhidāyakam !!2.12! 
+ jānūrvor antare kṛtvā yogī pādatale ubhe ! 
+ ṛjukāyaḥ samāsīnaḥ svastikaṃ tat pracakṣate !!2.13! 
+ gulphau ca vṛṣaṇasyādho vyutkrameṇordhvatāṃ gatau ! 
+ citimūlau bhūmisaṃsthau karau ca jānunopari !!2.14! 
+ vyāttavaktro jalaṃdhreṇa nāsāgram avalokayet ! 
+ siṃhāsanaṃ bhaved etat sarvavyādhivināśakam !!2.15! 
+ pādau bhūmau ca saṃsthāpya pṛṣṭhapārśve niveśayet ! 
+ sthirakāyaṃ samāsādya gomukhaṃ gomukhākṛti !!2.16! 
+ ekapādam athaikasmin vinyased ūrusaṃsthitam ! 
+ itarasmiṃs tathā paścād vīrāsanam itīritam !!2.17! 
+ prasārya pādau bhuvi daṇḍarūpau ! 
+ karau ca pṛṣṭhaṃ dhṛtapādayugmam ! 
+ kṛtvā dhanustulyavivartitāṅgaṃ ! 
+ nigadyate vai dhanurāsanaṃ tat !!2.18! 
+ uttānaṃ śavavad bhūmau śayānaṃ tu śavāsanam ! 
+ śavāsanaṃ śramaharaṃ cittaviśrāntikāraṇam !!2.19! 
+ jānūrvor antare pādau kṛtvā pādau ca gopayet ! 
+ pādaupari ca saṃsthāpya gudaṃ guptāsanaṃ viduḥ !!2.20! 
+ muktapadmāsanaṃ kṛtvā uttānaśayanaṃ caret ! 
+ kūrparābhyāṃ śiro veṣṭya matsyāsanaṃ tu rogahā !!2.21! 
+ udare paścimaṃ@ tānaṃ kṛtvā tiṣṭhati yatnataḥ ! 
+ namrāṅgaṃ vāmapadaṃ hi dakṣajānūpari nyaset !!2.22! 
+ tatra yāmyaṃ kūrparaṃ ca yāmyakare ca vaktrakam ! 
+ bhruvor madhye gatā dṛṣṭiḥ pīṭhaṃ matsyendram ucyate !!2.23! 
+ jānūrvor antare pādau uttānau vyaktasaṃsthitau ! 
+ gulphau cācchādya hastābhyām uttānābhyaṃ prayatnataḥ !!2.24! 
+ kaṇṭhasaṃkocanaṃ kṛtvā nāsāgram avalokayet ! 
+ gorakṣāsanam ity āhur yogināṃ siddhikāraṇam !!2.25! 
+ prasārya pādau bhuvi daṇḍarūpau ! 
+ saṃnyastabhālaṃ citiyugmamadhye ! 
+ yatnena pādau ca dhṛtau karābhyāṃ ! 
+ yogendrapīṭhaṃ paścimatānam āhuḥ !!2.26! 
+ aṅguṣṭhābhyām avaṣṭabhya dharāṃ gulphau ca khe gatau ! 
+ tatropari gudaṃ nyased vijñeyam utkaṭāsanam !!2.27! 
+ vāmapādaciter mūlaṃ saṃnyasya dharaṇītale ! 
+ pādadaṇḍena yāmyena veṣṭayed vāmapādakam ! 
+ jānuyugme karayugmam etat saṃkaṭam āsanam !!2.28! 
+ dharām avaṣṭabhya karadvayābhyāṃ ! 
+ tat kūrpare sthāpitanābhipārśvam ! 
+ uccāsane daṇḍavad utthitaḥ khe ! 
+ mayūram etat pravadanti pīṭham !!2.29! 
+ bahukadaśanabhuktaṃ bhasma kuryād aśeṣaṃ ! 
+ janayati jaṭharāgniṃ jārayet kālakūṭam ! 
+ harati sakalarogān āśu gulmajvarādīn ! 
+ bhavati vigatadoṣaṃ hy āsanaṃ śrīmayūram !!2.30! 
+ padmāsanaṃ samāsādya jānūrvor antare karau ! 
+ kūrparābhyāṃ samāsīno mañcasthaḥ kukkuṭāsanam !!2.31! 
+ gulphau ca vṛṣaṇasyādho vyutkrameṇa samāhitau ! 
+ ṛjukāyaśirogrīvaṃ kūrmāsanam itīritam !!2.32! 
+ kukkuṭāsanabandhasthaṃ karābhyāṃ dhṛtakandharam ! 
+ khagakūrmavad uttānam etad uttānakūrmakam !!2.33! 
+ pādatalau pṛṣṭhadeśe aṅguṣṭhau dvau ca saṃspṛśet ! 
+ jānuyugmaṃ puraskṛtya sādhayen maṇḍukāsanam !!2.34! 
+ maṇḍūkāsanabandhasthaṃ kūrparābhyāṃ dhṛtaṃ śiraḥ ! 
+ etad bhekavad uttānam etad uttānamaṇḍukam !!2.35! 
+ vāmorumūladeśe ca yāmyaṃ pādaṃ nidhāya tu ! 
+ tiṣṭhati vṛkṣavad bhūmau vṛkṣāsanam idaṃ viduḥ !!2.36! 
+ jaṅghorubhyāṃ dharāṃ pīḍya sthirakāyo dvijānunā ! 
+ jānūpari karayugmaṃ garuḍāsanam ucyate !!2.37! 
+ yāmyagulphe pāyumūlaṃ vāmabhāge padetaram ! 
+ viparītaṃ spṛśed bhūmiṃ vṛṣāsanam idaṃ bhavet !!2.38! 
+ adhyāsya śete padayugmavakṣe ! 
+ bhūmim avaṣṭabhya karadvayābhyām ! 
+ pādau ca śūnye ca vitasti cordhvaṃ ! 
+ vadanti pīṭhaṃ śalabhaṃ munīndrāḥ !!2.39! 
+ adhyāsya śete hṛdayaṃ nidhāya ! 
+ bhūmau ca pādau pravisāryamāṇau ! 
+ śiraś ca dhṛtvā karadaṇḍayugme ! 
+ dehāgnikāraṃ makarāsanaṃ tat !!2.40! 
+ adhyāsya śete padayugmam astaṃ@ ! 
+ pṛṣṭhe nidhāyāpi dhṛtaṃ karābhyām ! 
+ ākuñcya samyag ghy udarāsyagaṇḍam@ ! 
+ uṣṭraṃ ca pīṭhaṃ yatayo vadanti !!2.41! 
+ aṅguṣṭhanābhiparyantam adho bhūmau ca vinyaset ! 
+ karatalābhyāṃ dharāṃ dhṛtvā ūrdhvaṃ śīrṣaṃ phaṇīva hi !!2.42! 
+ dehāgnir vardhate nityaṃ sarvarogavināśanam ! 
+ jāgarti bhujagī devī sādhanād bhujaṃgāsanam !!2.43! 
+ uttānau caraṇau kṛtvā saṃsthāpya jānunopari ! 
+ āsanopari saṃsthāpya uttānaṃ karayugmakam !!2.44! 
+ pūrakair vāyum ākṛṣya nāsāgram avalokayet ! 
+ yogāsanaṃ bhaved etad yogināṃ yogasādhane !!2.45! 
+ [[iti śrīgheraṇḍasaṃhitāyāṃ gheraṇḍacaṇḍasaṃvāde ghatasthayoga āsanaprayogo nāma dvitīyopadeśaḥ !!2! ]] 
+ gheraṇḍa uvāca: mahāmudrā nabhomudrā uḍḍīyānaṃ jalaṃdharam ! 
+ mūlabandhaṃ mahābandhaṃ mahāvedhaś ca khecarī !!3.1! 
+ viparītakaraṇī yonir vajrolī śakticālanī ! 
+ taḍāgī māṇḍukī mudrā śāṃbhavī pañcadhāraṇā !!3.2! 
+ aśvinī pāśinī kākī mātaṅgī ca bhujaṃginī ! 
+ pañcaviṃśatimudrāś ca siddhidā iha yoginām !!3.3! 
+ mudrāṇāṃ paṭalaṃ devi kathitaṃ tava saṃnidhau ! 
+ yena vijñātamātreṇa sarvasiddhiḥ prajāyate !!3.4! 
+ gopanīyaṃ prayatnena na deyaṃ yasya kasyacit ! 
+ prītidaṃ yogināṃ caiva durlabhaṃ marutām api !!3.5! 
+ pāyumūlaṃ vāmagulphe saṃpīḍya dṛḍhayatnataḥ ! 
+ yāmyapādaṃ prasāryātha karābhyāṃ dhṛtapadāṅguliḥ !!3.6! 
+ kaṇṭhasaṃkocanaṃ kṛtvā bhruvor madhye nirīkṣayet ! 
+ pūrakair vāyuṃ saṃpūrya mahāmudrā nigadyate !!3.7! 
+ valitaṃ palitaṃ caiva jarāṃ@ mṛtyuṃ nivārayet ! 
+ kṣayakāsaṃ gudāvartaṃ plīhājīrṇaṃ jvaraṃ tathā ! 
+ nāśayet sarvarogāṃś ca mahāmudrābhisevanāt !!3.8! 
+ yatra yatra sthito yogī sarvakāryeṣu sarvadā ! 
+ ūrdhvajihvaḥ sthiro bhūtvā dhārayet pavanaṃ sadā ! 
+ nabhomudrā bhaved eṣā yogināṃ roganāśinī !!3.9! 
+ udare paścimaṃ tānaṃ nābher ūrdhvaṃ tu kārayet ! 
+ uḍḍīnaṃ kurute yasmād aviśrāntaṃ mahākhagaḥ ! 
+ uḍḍīyānaṃ tv asau bandho mṛtyumātaṃgakesarī !!3.10! 
+ samagrād bandhanād dhy etad uḍḍīyānaṃ viśiṣyate ! 
+ uḍḍīyāne samabhyaste muktiḥ svābhāvikī bhavet !!3.11! 
+ kaṇṭhasaṃkocanaṃ kṛtvā cibukaṃ hṛdaye nyaset ! 
+ jālaṃdhare kṛte bandhe ṣoḍaśādhārabandhanam ! 
+ jālaṃdharamahāmudrā mṛtyoś ca kṣayakāriṇī !!3.12! 
+ siddhaṃ jālaṃdharaṃ bandhaṃ yogināṃ siddhidāyakam ! 
+ ṣaṇmāsam abhyased yo hi sa siddho nātra saṃśayaḥ !!3.13! 
+ pārṣṇinā vāmapādasya yonim ākuñcayet tataḥ ! 
+ nābhigranthiṃ merudaṇḍe saṃpīḍya yatnataḥ sudhīḥ !!3.14! 
+ meḍhraṃ dakṣiṇagulphena dṛḍhabandhaṃ samācaret ! 
+ nābher ūrdhvam adhaś cāpi tānaṃ kuryāt prayatnataḥ ! 
+ jarāvināśinī mudrā mūlabandho nigadyate !!3.15! 
+ saṃsārasāgaraṃ tartum abhilaṣati yaḥ pumān ! 
+ virale sugupto bhūtvā mudrām etāṃ samabhyaset !!3.16! 
+ abhyāsād bandhanasyāsya marutsiddhir bhaved dhruvam ! 
+ sādhayed yatnatas tarhi maunī tu vijitālasaḥ !!3.17! 
+ vāmapādasya gulphena pāyumūlaṃ nirodhayet ! 
+ dakṣapādena tad gulphaṃ saṃpīḍya yatnataḥ sudhīḥ !!3.18! 
+ śanaiḥ śanaiś cālayet pārṣṇiṃ yonim ākuñcayec chanaiḥ ! 
+ jālaṃdhare dhārayet prāṇaṃ mahābandho nigadyate !!3.19! 
+ mahābandhaḥ paro bandho jarāmaraṇanāśanaḥ ! 
+ prasādād asya bandhasya sādhayet sarvavāñchitam !!3.20! 
+ rūpayauvanalāvaṇyaṃ nārīṇāṃ puruṣaṃ vinā ! 
+ mūlabandhamahābandhau mahāvedhaṃ vinā tathā !!3.21! 
+ mahābandhaṃ samāsādya uḍḍānakumbhakaṃ caret ! 
+ mahāvedhaḥ samākhyāto yogināṃ siddhidāyakaḥ !!3.22! 
+ mahābandhamūlabandhau mahāvedhasamanvitau ! 
+ pratyahaṃ kurute yas tu sa yogī yogavittamaḥ !!3.23! 
+ na mṛtyuto bhayaṃ tasya na jarā tasya vidyate ! 
+ gopanīyaḥ prayatnena vedho yaṃ yogipuṃgavaiḥ !!3.24! 
+ jihvādho nāḍīṃ saṃchitya rasanāṃ cālayet sadā ! 
+ dohayen navanītena lauhayantreṇa karṣayet !!3.25! 
+ evaṃ nityaṃ samabhyāsāl lambikā dīrghatāṃ vrajet ! 
+ yāvadgacchedbhruvormadhye tadā sidhyati khecarī !!3.26! 
+ rasanāṃ tālumadhye tu śanaiḥ śanaiḥ praveśayet ! 
+ kapālakuhare jihvā praviṣṭā viparītagā ! 
+ bhruvor madhye gatā dṛṣṭir mudrā bhavati khecarī !!3.27! 
+ na ca mūrcchā kṣudhā tṛṣṇā naivālasyaṃ prajāyate ! 
+ na ca rogo jarā mṛtyur devadehaṃ prapadyate !!3.28! 
+ na cāgnir dahate gātraṃ na śoṣayati mārutaḥ ! 
+ na dehaṃ kledayanty āpo daṃśayen na bhujaṃgamaḥ !!3.29! 
+ lāvaṇyaṃ ca bhaved gātre samādhir jāyate dhruvam ! 
+ kapālavaktrasaṃyoge rasanā rasam āpnuyāt !!3.30! 
+ nānāvidhisamudbhūtam ānandaṃ ca dine dine ! 
+ ādau lavaṇakṣāraṃ ca tatas tiktakaṣāyakam !!3.31! 
+ navanītaṃ ghṛtaṃ kṣīraṃ dadhitakramadhūni ca ! 
+ drākṣārasaṃ ca pīyūṣaṃ jāyate rasanodakam !!3.32! 
+ nābhimūle vaset sūryas tālumūle ca candramāḥ ! 
+ amṛtaṃ grasate sūryas tato mṛtyuvaśo naraḥ !!3.33! 
+ ūrdhvaṃ ca yojayet sūryaṃ candraṃ ca adha ānayet ! 
+ viparītakarī mudrā sarvatantreṣu gopitā !!3.34! 
+ bhūmau śiraś ca saṃsthāpya karayugmaṃ samāhitaḥ ! 
+ ūrdhvapādaḥ sthiro bhūtvā viparītakarī matā !!3.35! 
+ mudreyaṃ sādhayen nityaṃ jarāṃ mṛtyuṃ ca nāśayet ! 
+ sa siddhaḥ sarvalokeṣu pralaye 'pi na sīdati !!3.36! 
+ siddhāsanaṃ samāsādya karṇākṣināsikāmukham ! 
+ aṅguṣṭhatarjanīmadhyā+ !nāmādibhiś ca dhārayet !!3.37! 
+ kākībhiḥ prāṇaṃ saṃkṛṣya apāne yojayet tataḥ ! 
+ ṣaṭ cakrāṇi kramād dhṛtvā huṃhaṃsamanunā sudhīḥ !!3.38! 
+ caitanyam ānayed devīṃ nidritā yā bhujaṃginī ! 
+ jīvena sahitāṃ śaktiṃ samutthāpya parāmbuje !!3.39! 
+ śaktimayaṃ svayaṃ bhūtvā paraṃ śivena saṃgamam ! 
+ nānāsukhaṃ vihāraṃ ca cintayet paramaṃ sukham !!3.40! 
+ śivaśaktisamāyogād ekāntaṃ bhuvi bhāvayet ! 
+ ānandamānaso bhūtvā ahaṃ brahmeti saṃbhavet !!3.41! 
+ yonimudrā parā gopyā devānām api durlabhā ! 
+ sakṛttadbhāvasaṃsiddhaḥ samādhisthaḥ sa eva hi !!3.42! 
+ brahmahā bhrūṇahā caiva surāpo gurutalpagaḥ ! 
+ etaiḥ pāpair na lipyate yonimudrānibandhanāt !!3.43! 
+ yāni pāpāni ghorāṇi upapāpāni yāni ca ! 
+ tāni sarvāṇi naśyanti yonimudrānibandhanāt ! 
+ tasmād abhyasanaṃ kuryād yadi muktiṃ samicchati !!3.44! 
+ dharām avaṣṭabhya karadvayābhyām ! 
+ ūrdhvaṃ kṣipet pādayugaṃ śiraḥ khe ! 
+ śaktiprabodhāya cirajīvanāya ! 
+ vajrolimudrāṃ munayo vadanti !!3.45! 
+ ayaṃ yogo yogaśreṣṭho yogināṃ muktikāraṇam ! 
+ ayaṃ hitaprado yogo yogināṃ siddhidāyakaḥ !!3.46! 
+ etad yogaprasādena bindusiddhir bhaved dhruvam ! 
+ siddhe bindau mahāyatne kiṃ na sidhyati bhūtale !!3.47! 
+ bhogena mahatā yukto yadi mudrāṃ samācaret ! 
+ tathāpi sakalā siddhis tasya bhavati niścitam !!3.48! 
+ mūlādhāre ātmaśaktiḥ kuṇḍalī paradevatā ! 
+ śayitā bhujagākārā sārdhatrivalayānvitā !!3.49! 
+ yāvat sā nidritā dehe tāvaj jīvaḥ paśur yathā ! 
+ jñānaṃ na jāyate tāvat koṭiyogaṃ samabhyaset !!3.50! 
+ udghāṭayet kavāṭaṃ ca yathā kuñcikayā haṭhāt ! 
+ kuṇḍalinyāḥ prabodhena brahmadvāraṃ vibhedayet !!3.51! 
+ nābhiṃ bṛhadveṣṭanaṃ ca na ca nagnaṃ bahiḥ sthitam ! 
+ gopanīyagṛhe sthitvā śakticālanam abhyaset !!3.52! 
+ vitastipramitaṃ dīrghaṃ vistāre caturaṅgulam ! 
+ mṛdulaṃ dhavalaṃ sūkṣma+ !@veṣṭanāmbaralakṣaṇam ! 
+ evam ambaram uktaṃ @ ca kaṭisūtreṇa yojayet !!3.53! 
+ bhāsmanā gātrasaṃliptaṃ siddhāsanaṃ samācaret ! 
+ nāsābhyāṃ prāṇam ākṛṣya apāne yojayed balāt !!3.54! 
+ tāvad ākuñcayed guhyaṃ śanair aśvinimudrayā ! 
+ yāvad gacchet suṣumṇāyāṃ vāyuḥ prakāśayed dhaṭhāt !!3.55! 
+ tāvad vāyuprabhedena kumbhikā ca bhujaṃginī ! 
+ baddhaśvāsas tato bhūtvā ca ūrdhvamātraṃ prapadyate ! 
+ śabdadvayaṃ phalaikaṃ tu yonimudrāṃ ca cālayet !!3.56! 
+ vinā śakticālanena yonimudrā na sidhyati ! 
+ ādau cālanam abhyasya yonimudrāṃ samabhyaset !!3.57! 
+ iti te kathitaṃ caṇḍa prakāraṃ śakticālanam ! 
+ gopanīyaṃ prayatnena dine dine samabhyaset !!3.58! 
+ mudreyaṃ paramā gopyā jarāmaraṇanāśinī ! 
+ tasmād abhyasanaṃ kāryaṃ yogibhiḥ siddhikāṅkṣibhiḥ !!3.59! 
+ nityaṃ yo 'bhyasate yogī siddhis tasya kare sthitā ! 
+ tasya vigrahasiddhiḥ syād rogāṇāṃ saṃkṣayo bhavet !!3.60! 
+ udare paścimaṃ @ tānaṃ kṛtvā ca taḍāgākṛti ! 
+ taḍāgī sā parā mudrā jarāmṛtyuvināśinī !!3.61! 
+ mukhaṃ saṃmudritaṃ kṛtvā jihvāmūlaṃ pracālayet ! 
+ śanair grased amṛtaṃ tan māṇḍukīṃ mudrikāṃ viduḥ !!3.62! 
+ valitaṃ palitaṃ naiva jāyate nityayauvanam ! 
+ na keśe jāyate pāko yaḥ kuryān nitya māṇḍukīm !!3.63! 
+ netrāñjanaṃ samālokya ātmārāmaṃ nirīkṣayet ! 
+ sā bhavec chāṃbhavī mudrā sarvatantreṣu gopitā !!3.64! 
+ vedaśāstrapurāṇāni sāmānyagaṇikā iva ! 
+ iyaṃ tu śāṃbhavī mudrā guptā kulavadhūr iva !!3.65! 
+ sa eva ādināthaś ca sa ca nārāyaṇaḥ svayam ! 
+ sa ca brahmā sṛṣṭikārī yo mudrāṃ vetti śāṃbhavīm !!3.66! 
+ satyaṃ satyaṃ punaḥ satyaṃ satyam uktaṃ maheśvara ! 
+ śāṃbhavīṃ yo vijānīyāt sa ca brahma na cānyathā !!3.67! 
+ kathitā śāṃbhavī mudrā śṛṇuṣva pañcadhāraṇām ! 
+ dhāraṇāni samāsādya kiṃ na sidhyati bhūtale !!3.68! 
+ anena naradehena svargeṣu gamanāgamam ! 
+ manogatir bhavet tasya khecaratvaṃ na cānyathā !!3.69! 
+ yat tattvaṃ haritāladeśaracitaṃ bhaumaṃ lakārānvitaṃ ! 
+ vedāsraṃ kamalāsanena sahitaṃ kṛtvā hṛdi sthāyinam ! 
+ prāṇaṃ tatra vinīya pañcaghaṭikāś cittānvitaṃ dhārayed ! 
+ eṣā stambhakarī sadā kṣitijayaṃ kuryād adhodhāraṇā !!3.70! 
+ pārthivīdhāraṇāmudrāṃ yaḥ karoti ca nityaśaḥ ! 
+ mṛtyuṃjayaḥ svayaṃ so 'pi sa siddho vicared bhuvi !!3.71! 
+ śaṅkhendupratimaṃ ca kundadhavalaṃ tattvaṃ kilālaṃ śubhaṃ ! 
+ tat pīyūṣavakārabījasahitaṃ yuktaṃ sadā viṣṇunā ! 
+ prāṇaṃ tatra vinīya pañcaghaṭikāś cittānvitaṃ dhārayed ! 
+ eṣā duḥsahatāpapāpahariṇī syād āmbhasī dhāraṇā !!3.72! 
+ āmbhasīṃ paramāṃ mudrāṃ yo jānāti sa yogavit ! 
+ jale ca gabhīre ghore maraṇaṃ tasya no bhavet !!3.73! 
+ iyaṃ tu paramā mudrā gopanīyā prayatnataḥ ! 
+ prakāśāt siddhihāniḥ syāt satyaṃ vacmi ca tattvataḥ !!3.74! 
+ yan nābhisthitam indra=gopasadṛśaṃ bījatrikoṇānvitaṃ @ ! 
+ tattvaṃ tejamayaṃ pradīptam aruṇaṃ rudreṇa yat siddhidam ! 
+ prāṇaṃ tatra vinīya pañcaghaṭikāś cittānvitaṃ dhārayed ! 
+ eṣā kālagabhīrabhītiharaṇī vaiśvānarī dhāraṇā !!3.75! 
+ pradīpte jvalite vahnau yadi patati sādhakaḥ ! 
+ etanmudrāprasādena sa jīvati na mṛtyubhāk !!3.76! 
+ yad bhinnāñjanapuñjasaṃnibham idaṃ dhūmrāvabhāsaṃ paraṃ ! 
+ tattvaṃ sattvamayaṃ yakārasahitaṃ yatreśvaro devatā ! 
+ prāṇaṃ tatra vinīya pañcaghaṭikāś cittānvitaṃ dhārayed ! 
+ eṣā khe gamanaṃ karoti yamināṃ syād vāyavī dhāraṇā !!3.77! 
+ iyaṃ tu paramā mudrā jarāmṛtyuvināśinī ! 
+ vāyunā mriyate nāpi khe ca gatipradāyinī !!3.78! 
+ śaṭhāya bhaktihīnāya na deyā yasya kasyacit ! 
+ datte ca siddhihāniḥ syāt satyaṃ vacmi ca caṇḍa te !!3.79! 
+ yat sindhau varaśuddhavārisadṛśaṃ vyomaṃ paraṃ bhāsitaṃ ! 
+ tattvaṃ devasadāśivena sahitaṃ bījaṃ hakārānvitam ! 
+ prāṇaṃ tatra vinīya pañcaghaṭikāś cittānvitaṃ dhārayed ! 
+ eṣā mokṣakavāṭabhedanakarī tu syān @ nabhodhāraṇā !!3.80! 
+ ākāśīdhāraṇāṃ mudrāṃ yo vetti sa ca yogavit ! 
+ na mṛtyur jāyate tasya pralaye nāvasīdati !!3.81! 
+ ākuñcayed gudadvāraṃ prakāśayet punaḥ punaḥ ! 
+ sā bhaved aśvinī mudrā śaktiprabodhakāriṇī !!3.82! 
+ aśvinī paramā mudrā guhyarogavināśinī ! 
+ balapuṣṭikarī caiva akālamaraṇaṃ haret !!3.83! 
+ kaṇṭhapṛṣṭe kṣipet pādau pāśavad dṛḍhabandhanam ! 
+ sā eva pāśinī mudrā śaktiprabodhakāriṇī !!3.84! 
+ pāśinī mahatī mudrā balapuṣṭividhāyinī ! 
+ sādhanīyā prayatnena sādhakaiḥ siddhikāṅkṣibhiḥ !!3.85! 
+ kākacañcuvad āsyena pibed vāyuṃ śanaiḥ śanaiḥ ! 
+ kākī mudrā bhaved eṣā sarvarogavināśinī !!3.86! 
+ kākīmudrā parā mudrā sarvatantreṣu gopitā ! 
+ asyāḥ prasādamātreṇa na rogī kākavad bhavet !!3.87! 
+ kaṇṭhamagnajale sthitvā nāsābhyāṃ jalam āharet ! 
+ mukhān nirgamayet paścāt punar vaktreṇa cāharet !!3.88! 
+ nāsābhyāṃ recayet paścāt kuryād evaṃ punaḥ punaḥ ! 
+ mātaṅginī parā mudrā jarāmṛtyuvināśinī !!3.89! 
+ virale nirjane deśe sthitvā caikāgramānasaḥ ! 
+ kuryān mātaṅginīṃ mudrāṃ mātaṅga iva jāyate !!3.90! 
+ yatra yatra sthito yogī sukham atyantam aśnute ! 
+ tasmāt sarvaprayatnena sādhayen mudrikāṃ parām !!3.91! 
+ vaktraṃ kiṃcitsuprasārya cālinaṃ galayā pibet ! 
+ sā bhaved bhujagī mudrā jarāmṛtyuvināśinī !!3.92! 
+ yāvac ca udare rogam ajīrṇādi viśeṣataḥ ! 
+ tat sarvaṃ nāśayed āśu yatra mudrā bhujaṃginī !!3.93! 
+ idaṃ tu mudrāpaṭalaṃ kathitaṃ caṇḍa te śubham ! 
+ vallabhaṃ sarvasiddhānāṃ jarāmaraṇanāśanam !!3.94! 
+ śaṭhāya bhaktihīnāya na deyaṃ yasya kasyacit ! 
+ gopanīyaṃ prayatnena durlabhaṃ marutām api !!3.95! 
+ ṛjave śāntacittāya gurubhaktiparāya ca ! 
+ kulīnāya pradātavyaṃ bhogamuktipradāyakam !!3.96! 
+ mudrāṇāṃ paṭalaṃ hy etat sarvavyādhivināśanam ! 
+ nityam abhyāsaśīlasya jaṭharāgnivivardhanam !!3.97! 
+ na tasya jāyate mṛtyur nāsya jarādikaṃ tathā ! 
+ nāgnijalabhayaṃ tasya vāyor api kuto bhayam !!3.98! 
+ kāsaḥ śvāsaḥ plīhā kuṣṭhaṃ śleṣmarogāś ca viṃśatiḥ ! 
+ mudrāṇāṃ sādhanāc caiva vinaśyanti na saṃśayaḥ !!3.99! 
+ bahunā kim ihoktena sāraṃ vacmi ca caṇḍa te ! 
+ nāsti mudrāsamaṃ kiṃcit siddhidaṃ kṣitimaṇḍale !!3.100! 
+ [[iti śrīgheraṇḍasaṃhitāyāṃ gheraṇḍacaṇḍasaṃvāde ghaṭasthayogaprakaraṇe mudrāprayogo nāma tṛtīyopadeśaḥ !!3! ]] 
+ 
+ gheraṇḍa uvāca: 
+ athātaḥ saṃpravakṣyāmi pratyāhārakam uttamam ! 
+ yasya vijñānamātreṇa kāmādiripunāśanam !!4.1! 
+ yato yato niścarati manaś cañcalam asthiram ! 
+ tatas tato niyamyaitad ātmany eva vaśaṃ nayet !!4.2! 
+ yatra yatra gatā dṛṣṭir manas tatra pragacchati ! 
+ tataḥ pratyāhared etad ātmany eva vaśaṃ nayet !!4.3! 
+ puraskāraṃ tiraskāraṃ suśrāvyaṃ vā bhayānakam ! 
+ manas tasmān niyamyaitad ātmany eva vaśaṃ nayet !!4.4! 
+ śītaṃ vāpi tathā coṣṇaṃ yan manaḥsparśayogataḥ ! 
+ tasmāt pratyāhared etad ātmany eva vaśaṃ nayet !!4.5! 
+ sugandhe vāpi durgandhe ghrāṇeṣu jāyate manaḥ ! 
+ tasmāt pratyāhared etad ātmany eva vaśaṃ nayet !!4.6! 
+ madhurāmlakatiktādi+ !rasaṃ gataṃ yadā manaḥ ! 
+ tasmāt pratyāhared etad ātmany eva vaśaṃ nayet !!4.7! 
+ śabdādiṣv anuraktāni nigṛhyākṣāṇi yogavit ! 
+ kuryāc cittānucārīṇi pratyāhāraparāyaṇaḥ !!4.8! 
+ vaśyatā paramā tena jāyate 'ticalātmanām ! 
+ indriyāṇām avaśyais tair na yogī yogasādhakaḥ !!4.9! 
+ prāṇāyāmair dahed doṣān dhāraṇābhiś ca kilbiṣam ! 
+ pratyāhāreṇa viṣayān dhyānenānīśvarān guṇān !!4.10! 
+ yathā parvatadhātūnāṃ doṣā dahyanti dhāmyatām ! 
+ tathendriyakṛtā doṣā dahyante prāṇanigrahāt !!4.11! 
+ samaḥ samāsano bhūtvā saṃhṛtya caraṇāv ubhau ! 
+ saṃvṛtāsyas tathaivorū samyag viṣṭabhya cāgrataḥ !!4.12! 
+ pārṣṇibhyāṃ liṅgavṛṣaṇāv aspṛśan prayataḥ sthitaḥ ! 
+ kiṃcidunnāmitaśirā dantair dantān na saṃspṛśet ! 
+ saṃpaśyan nāsikāgraṃ svaṃ diśaś cānavalokayan !!4.13! 
+ rajasā tamaso vṛttiṃ sattvena rajasas tathā ! 
+ saṃchādya nirmale sattve sthito yuñjīta yogavit !!4.14! 
+ indriyāṇīndriyārthebhyaḥ prāṇādīn mana eva ca ! 
+ nigṛhya samavāyena pratyāhāram upakramet !!4.15! 
+ yas tu pratyāharet kāmān sarvāṅgān īva kacchapaḥ ! 
+ sadātmaratir ekasthaḥ paśyaty ātmānam ātmani !!4.16! 
+ sa bāhyābhyantaraṃ śaucaṃ niṣpādyākaṇṭhanābhitaḥ ! 
+ pūrayitvā budho dehaṃ pratyāhāram upakramet !!4.17! 
+ tathā vai yogayuktasya yogino niyatātmanaḥ ! 
+ (sarve doṣāḥ praṇaśyanti svasthaś caivopajāyate) !!4.18! 
+ [[iti śrīgheraṇḍasaṃhitāyāṃ gheraṇḍacaṇḍasaṃvāde ghaṭasthayoge pratyāhāraprayogo nāma caturthopadeśaḥ !!4! ]] 
+ gheraṇḍa uvāca: 
+ athātaḥ saṃpravakṣyāmi prāṇāyāmasya yadvidhim ! 
+ yasya sādhanamātreṇa devatulyo bhaven naraḥ !!5.1! 
+ ādau sthānaṃ tathā kālaṃ mitāhāraṃ tathāparam ! 
+ nāḍīśuddhiṃ tataḥ paścāt prāṇāyāmaṃ ca sādhayet !!5.2! 
+ dūradeśe tathāraṇye rājadhānyāṃ janāntike ! 
+ yogārambhaṃ na kurvīta kṛtaś cet siddhihā bhavet !!5.3! 
+ aviśvāsaṃ dūradeśe araṇye bhakṣavarjitam ! 
+ lokāraṇye prakāśaś ca tasmāt trīṇi vivarjayet !!5.4! 
+ sudeśe dhārmike rājye subhikṣe nirupadrave ! 
+ tatraikaṃ kuṭiraṃ kṛtvā prācīraiḥ pariveṣṭayet !!5.5! 
+ vāpīkūpataḍāgaṃ ca prācīramadhyavarti ca ! 
+ nātyuccaṃ nātinīcaṃ vā kuṭiraṃ kīṭavarjitam !!5.6! 
+ samyaggomayaliptaṃ ca kuṭiraṃ randhravarjitam ! 
+ evaṃ sthāne hi gupte ca prāṇāyāmaṃ samabhyaset !!5.7! 
+ hemante śiśire grīṣme varṣāyāṃ ca ṛtau tathā ! 
+ yogārambhaṃ na kurvīta kṛte yogo hi rogadaḥ !!5.8! 
+ vasante śaradi proktaṃ yogārambhaṃ samācaret ! 
+ tadā yogo bhavet siddho rogān mukto bhaved dhruvam !!5.9! 
+ caitrādiphālgunānte ca māghādiphālgunāntike ! 
+ dvau dvau māsau ṛtubhāgau anubhāvaś catuś catuḥ !!5.10! 
+ vasantaś caitravaiśākhau jyeṣṭhāṣāḍhau ca grīṣmakau ! 
+ varṣā śrāvaṇabhādrābhyāṃ śarad āśvinakārtikau ! 
+ mārgapauṣau ca hemantaḥ śiśiro māghaphālgunau !!5.11! 
+ anubhāvaṃ pravakṣyāmi ṛtūnāṃ ca yathoditam ! 
+ māghādimādhavānte hi vasantānubhavaś catuḥ !!5.12! 
+ caitrādi cāṣāḍhāntaṃ ca grīṣmaś cānubhavaś catuḥ ! 
+ āṣāḍhādi cāśvināntaṃ varṣā cānubhavaś catuḥ !!5.13! 
+ bhādrādi mārgaśīrṣāntaṃ śarado 'nubhavaś catuḥ ! 
+ kārtikādimāghamāsāntaṃ hemantānubhavaś catuḥ ! 
+ mārgādīṃś caturo māsāñ śiśirānubhavaṃ viduḥ !!5.14! 
+ vasante vāpi śaradi yogārambhaṃ tu samācaret ! 
+ tadā yogo bhavet siddho vināyāsena kathyate !!5.15! 
+ mitāhāraṃ vinā yas tu yogārambhaṃ tu kārayet ! 
+ nānārogo bhavet tasya kiṃcid yogo na sidhyati !!5.16! 
+ śālyannaṃ yavapiṇḍaṃ vā godhūmapiṇḍakaṃ tathā ! 
+ mudgaṃ māṣacaṇakādi śubhraṃ ca tuṣavarjitam !!5.17! 
+ paṭolaṃ panasaṃ mānaṃ kakkolaṃ ca śukāśakam ! 
+ drāḍhikāṃ karkaṭīṃ rambhāṃ ḍumbarīṃ kaṇṭakaṇṭakam !!5.18! 
+ āmarambhāṃ bālarambhāṃ rambhādaṇḍaṃ ca mūlakam ! 
+ vārtākīṃ mūlakam ṛddhiṃ yogī bhakṣaṇam ācaret !!5.19! 
+ bālaśākaṃ kāla śākaṃ tathā paṭolapatrakam ! 
+ pañcaśākaṃ praśaṃsīyād vāstūkaṃ hilamocikāṃ !!5.20! 
+ śuddhaṃ sumadhuraṃ snigdham udarārdhavivarjitam ! 
+ bhujyate surasaṃprītyā [surasaṃ prityā] mitāhāram imaṃ viduḥ !!5.21! 
+ annena pūrayed ardhaṃ toyena tu tṛtīyakam ! 
+ udarasya turīyāṃśaṃ saṃrakṣed vāyucāraṇe !!5.22! 
+ kaṭv amlaṃ lavaṇaṃ tiktaṃ bhṛṣṭaṃ ca dadhi takrakam ! 
+ śākotkaṭaṃ tathā madyaṃ tālaṃ ca panasaṃ tathā !!5.23! 
+ kulatthaṃ masūraṃ pāṇḍuṃ kūṣmāṇḍaṃ śākadaṇḍakam ! 
+ tumbīkolakapitthaṃ ca kaṇṭabilvaṃ palāśakam !!5.24! 
+ kadambaṃ jambīraṃ bimbaṃ lakucaṃ laśunaṃ viṣam ! 
+ kāmaraṅgaṃ piyālaṃ ca hiṅguśālmalikemukam !!5.25! 
+ yogārambhe varjayec ca pathastrīvahnisevanam !!5.26! 
+ navanītaṃ ghṛtaṃ kṣīraṃ guḍaṃ śarkarādi cekṣavaṃ ! 
+ pakvarambhāṃ nārikelaṃ dāḍimbam aśivāsavam ! 
+ drākṣāṃ tu lavalīṃ dhātrīṃ rasam amlavivarjitam !!5.27! 
+ elājātilavaṅgaṃ ca pauruṣaṃ jambujāmbalam ! 
+ harītakīṃ kharjūraṃ ca yogī bhakṣaṇam ācaret !!5.28! 
+ laghupākaṃ priyaṃ snigdhaṃ tathā dhātuprapoṣaṇam ! 
+ manobhilaṣitaṃ yogyaṃ yogī bhojanam ācaret !!5.29! 
+ kāṭhinyaṃ duritaṃ pūtim uṣṇaṃ paryuṣitaṃ tathā ! 
+ atiśītaṃ cāti coṣṇaṃ bhakṣyaṃ yogī vivarjayet !!5.30! 
+ prātaḥsnānopavāsādi+ !kāyakleśavidhiṃ tathā ! 
+ ekāhāraṃ nirāhāraṃ yāmānte ca na kārayet !!5.31! 
+ evaṃvidhividhānena prāṇāyāmaṃ samācaret ! 
+ ārambhe prathame kuryāt kṣīrādyaṃ nityabhojanam ! 
+ madhyāhne caiva sāyāhne bhojanadvayam ācaret !!5.32! 
+ kuśāsane mṛgājine vyāghrājine ca kambale ! 
+ sthūlāsane samāsīnaḥ prāṅmukho vāpyudaṅmukhaḥ ! 
+ nāḍīśuddhiṃ samāsādya prāṇāyāmaṃ samabhyaset !!5.33! 
+ caṇḍakāpālir uvāca: 
+ nāḍīśuddhiṃ kathaṃ kuryān nāḍīśuddhis tu kīdṛśī ! 
+ tat sarvaṃ śrotum icchāmi tad vadasva dayānidhe !!5.34! 
+ gheraṇḍa uvāca: 
+ malākulāsu nāḍīṣu māruto naiva gacchati ! 
+ prāṇāyāmaḥ kathaṃ sidhyet tattvajñānaṃ kathaṃ bhavet ! 
+ tasmād ādau naḍīśuddhiṃ prāṇāyāmaṃ tato 'bhyaset !!5.35! 
+ nāḍīśuddhir dvidhā proktā samanur nirmanus tathā ! 
+ bījena samanuṃ kuryān nirmanuṃ dhautikarmaṇi !!5.36! 
+ dhautikarma purā proktaṃ ṣaṭkarmasādhane yathā ! 
+ śṛṇuṣva samanuṃ caṇḍa nāḍīśuddhir yathā bhavet !!5.37! 
+ upaviśyāsane yogī padmāsanaṃ samācaret ! 
+ gurvādinyāsanaṃ kṛtvā yathaiva gurubhāṣitam ! 
+ nāḍīśuddhiṃ prakurvīta prāṇāyāmaviśuddhaye !!5.38! 
+ vāyubījaṃ tato dhyātvā dhūmravarṇaṃ satejasam ! 
+ candreṇa pūrayed vāyuṃ bījaṃ ṣoḍaśakaiḥ sudhīḥ !!5.39! 
+ catuḥṣaṣṭyā mātrayā ca kumbhakenaiva dhārayet ! 
+ dvātriṃśanmātrayā vāyuṃ sūryanāḍyā ca recayet !!5.40! 
+ nābhimūlād vahnim utthāpya dhyāyet tejo vanīyutam ! 
+ vahnibījaṃ @ ṣoḍaśena sūryanāḍyā ca pūrayet !!5.41! 
+ catuḥṣaṣṭyā mātrayā ca kumbhakenaiva dhārayet ! 
+ dvātriṃśanmātrayā vāyuṃ śaśināḍyā ca recayet !!5.42! 
+ nāsāgre śaśadhṛg bimbaṃ dhyātvā jyotsnāsamanvitam ! 
+ ṭhaṃ bījaṃ ṣoḍaśenaiva iḍayā pūrayen marut !!5.43! 
+ catuḥṣaṣṭyā mātrayā ca [kumbhakenaiva] dhārayet ! 
+ amṛtaplāvitaṃ dhyātvā prāṇāyāmaṃ samabhyaset !!5.44! 
+ [vaṃ bījaṃ śoḍaśenaiva sūryanāḍyā ca pūrayet] ! 
+ dvātriṃśena lakāreṇa dṛḍhaṃ bhāvyaṃ virecayet !!5.45! 
+ evaṃvidhāṃ nāḍīśuddhiṃ kṛtvā nāḍīṃ viśodhayet ! 
+ dṛḍho bhūtvāsanaṃ kṛtvā prāṇāyāmaṃ samācaret !!5.46! 
+ sahitaḥ sūryabhedaś ca ujjāyī śītalī tathā ! 
+ bhastrikā bhrāmarī mūrcchā kevalī cāṣṭa kumbhikāḥ !!5.47! 
+ sahitau dvividhau proktau prāṇāyāmaṃ samācaret ! 
+ sagarbho bījam uccārya nirgarbho bījavarjitaḥ ! 
+ prāṇāyāmaṃ sagarbhaṃ ca prathamaṃ kathayāmi te !!5.48! 
+ sukhāsane copaviśya prāṅmukho vāpy udaṅmukhaḥ ! 
+ dhyāyed vidhiṃ rajoguṇaṃ raktavarṇam avarṇakam !!5.49! 
+ iḍayā pūrayed vāyuṃ mātrayā ṣoḍaśaiḥ sudhīḥ ! 
+ pūrakānte kumbhakādye kartavyas tūḍḍiyānakaḥ !!5.50! 
+ sattvamayaṃ hariṃ dhyātvā ukāraiḥ śuklavarṇakaiḥ ! 
+ catuḥṣaṣṭyā ca mātrayā anilaṃ kumbhakaṃ caret ! 
+ kumbhakānte recakādye kartavyaṃ ca jālaṃdharam !!5.51! 
+ rudraṃ tamoguṇaṃ dhyātvā makāraiḥ kṛṣṇavarṇakaiḥ ! 
+ dvātriṃśanmātrayā caiva recayed vidhinā punaḥ !!5.52! 
+ punaḥ piṅgalayāpūrya kumbhakenaiva dhārayet ! 
+ iḍayā recayet paścāt tadbījena krameṇa tu !!5.53! 
+ anulomavilomena vāraṃ vāraṃ ca sādhayet ! 
+ pūrakānte kumbhakādye dhṛtaṃ nāsāpuṭadvayam ! 
+ kaniṣṭhānāmikāṅguṣṭhais tarjanīmadhyame vinā !!5.54! 
+ prāṇāyāmaṃ nigarbhaṃ tu vinā bījena jāyate ! 
+ vāmajānūpari nyasta+ !vāmapāṇitalaṃ bhramet ! 
+ mātrādiśataparyantaṃ pūrakumbhakarecanam !!5.55! 
+ uttamā viṃśatir mātrā madhyamā ṣoḍaśī smṛtā ! 
+ adhamā dvādaśī mātrā prāṇāyāmās tridhā smṛtāḥ !!5.56! 
+ adhamāj jāyate gharmo merukampaś ca madhyamāt ! 
+ uttamāc ca bhūmityāgas trividhaṃ siddhilakṣaṇam !!5.57! 
+ prāṇāyāmāt khecaratvaṃ prāṇāyāmād roganāśanam ! 
+ prāṇāyāmād bodhayec chaktiṃ prāṇāyāmān manonmanī ! 
+ ānando jāyate citte prāṇāyāmī sukhī bhavet !!5.58! 
+ kathitaṃ sahitaṃ kumbhaṃ sūryabhedanakaṃ śṛṇu ! 
+ pūrayet sūryanāḍyā ca yathāśakti bahirmarut !!5.59! 
+ dhārayed bahuyatnena kumbhakena jalaṃdharaiḥ ! 
+ yāvat svedaṃ nakhakeśābhyāṃ tāvat kurvantu kumbhakam !!5.60! 
+ prāṇo 'pānaḥ samānaś codānavyānau ca vāyavaḥ ! 
+ nāgaḥ kūrmaś ca kṛkaro devadatto dhanaṃjayaḥ !!5.61! 
+ hṛdi prāṇo vahen nityam apāno gudamaṇḍale ! 
+ samāno nābhideśe tu udānaḥ kaṇṭhamadhyagaḥ ! 
+ vyāno vyāpya śarīre tu pradhānāḥ pañca vāyavaḥ !!5.62! 
+ prāṇādyāḥ pañca vikhyātā nāgādyāḥ pañca vāyavaḥ ! 
+ teṣām api ca pañcānāṃ sthānāni ca vadāmy aham !!5.63! 
+ udgāre nāga ākhyātaḥ kūrmas tūnmīlane smṛtaḥ ! 
+ kṛkaraḥ kṣuttṛṣe @ jñeyo devadatto vijṛmbhaṇe ! 
+ na jahāti mṛte kvāpi sarvavyāpī dhanaṃjayaḥ !!5.64! 
+ nāgo gṛhṇāti caitanyaṃ kūrmaś caiva nimeṣaṇam ! 
+ kṣuttṛṣaṃ kṛkaraś caiva jṛmbhaṇaṃ caturthena tu ! 
+ bhaved dhanaṃjayāc chabdaṃ kṣaṇamātraṃ na niḥsaret !!5.65! 
+ sarvaṃ ca sūryakaṃ bhitvā nābhimūlāt samuddharet !!5.66! 
+ iḍayā recayet paścād dhairyeṇākhaṇḍavegataḥ ! 
+ punaḥ sūryeṇa cākṛṣya kumbhayitvā yathāvidhi !!5.67! 
+ recayitvā sādhayet tu krameṇa ca punaḥ punaḥ ! 
+ kumbhakaḥ sūryabhedas tu jarāmṛtyuvināśakaḥ !!5.68! 
+ bodhayet kuṇḍalīṃ śaktiṃ dehānalavivardhanam ! 
+ iti te kathitaṃ caṇḍa sūryabhedanam uttamam !!5.69! 
+ nāsābhyāṃ vāyum ākṛṣya mukhamadhye ca dhārayet ! 
+ hṛdgalābhyāṃ samākṛṣya vāyuṃ vaktreṇa dhārayet !!5.70! 
+ mukhaṃ praphullaṃ saṃrakṣya kuryāj jālaṃdharaṃ tataḥ ! 
+ āśakti kumbhakaṃ kṛtvā dhārayed avirodhataḥ !!5.71! 
+ ujjāyīkumbhakaṃ kṛtvā sarvakāryāṇi sādhayet ! 
+ na bhavet kapharogaś ca krūravāyur ajīrṇakam !!5.72! 
+ āmavātaḥ kṣayaḥ kāso jvaraplīhā na jāyate ! 
+ jarāmṛtyuvināśāya cojjāyīṃ sādhayen naraḥ !!5.73! 
+ jihvayā vāyum ākṛṣya udare pūrayec chanaiḥ ! 
+ kṣaṇaṃ ca kumbhakaṃ kṛtvā nāsābhyāṃ recayet punaḥ !!5.74! 
+ sarvadā sādhayed yogī śītalīkumbhakaṃ śubham ! 
+ ajīrṇaṃ kaphapittaṃ ca naiva tasya prajāyate !!5.75 bhastreva lohakārāṇāṃ yathākrameṇa saṃbhramet ! 
+ tato vāyuṃ ca nāsābhyām ubhābhyāṃ cālayec chanaiḥ !!5.76! 
+ evaṃ viṃśativāraṃ ca kṛtvā kuryāc ca kumbhakam ! 
+ tadante cālayed vāyuṃ pūrvoktaṃ ca yathāvidhi !!5.77! 
+ trivāraṃ sādhayed enaṃ bhastrikākumbhakaṃ sudhīḥ ! 
+ na ca rogo na ca kleśa ārogyaṃ ca dine dine !!5.78! 
+ ardharātre gate yogī jantūnāṃ śabdavarjite ! 
+ karṇau nidhāya hastābhyāṃ kuryāt pūrakam uttamam !!5.79! 
+ śṛṇuyād dakṣiṇe karṇe nādam antargataṃ sudhīḥ ! 
+ prathamaṃ jhiṃjhīnādaṃ ca vaṃśīnādaṃ tataḥ param ! 
+ meghaghargharabhrāmarī ca ghaṇṭākāṃsyaṃ tataḥ param !!5.80! 
+ turībherīmṛdaṅgādi+ !vīṇānādakadundubhiḥ ! 
+ evaṃ nānāvidho nādo jāyate nityam abhyasāt !!5.81! 
+ anāhatasya śabdasya tasya śabdasya yo dhvaniḥ ! 
+ dhvaner antargataṃ jyotir jyotir antargataṃ manaḥ !!5.82! 
+ tasmiṃs tu vilayaṃ yāti tad viṣṇoḥ paramaṃ padam ! 
+ evaṃ bhrāmarīsaṃsiddhiḥ samādhisiddhim āpnuyāt !!5.83! 
+ mukhe ca kumbhakaṃ kṛtvā bhruvor antargataṃ manaḥ ! 
+ saṃtyajya viṣayān sarvān manomūrcchā sukhapradā !!5.84! 
+ ātmani manasaṃyogād ānandaṃ jāyate dhruvam ! 
+ evaṃ nānāvidhānando jāyate nityam abhyasāt ! 
+ evam abhyāsayogena samādhisiddhim āpnuyāt !!5.85! 
+ bhujaṃginyāḥ śvāsavaśād ajapā jāyate nanu ! 
+ haṃkāreṇa bahir yāti saḥkāreṇa viśet punaḥ !!5.86! 
+ ṣaṭ śatāni divārātrau sahasrāṇy ekaviṃśatiḥ ! 
+ ajapāṃ nāma gāyatrīṃ jīvo japati sarvadā !!5.87! 
+ mūlādhāre yathā haṃsas tathā hi hṛdi paṅkaje ! 
+ tathā nāsāpuṭadvandve triveṇīsaṃgamāgamam !!5.88! 
+ ṣaṇṇavatyaṅgulīmānaṃ śarīraṃ karmarūpakam ! 
+ dehād bahirgato vāyuḥ svabhāvād dvādaśāṅguliḥ !!5.89! 
+ śayane ṣoḍaśāṅgulyo bhojane viṃśatis tathā ! 
+ caturviṃśāṅguliḥ panthe nidrāyāṃ triṃśadaṅguliḥ ! 
+ maithune ṣaṭtriṃśad uktaṃ vyāyāme ca tato 'dhikam !!5.90! 
+ svabhāve śya gater nyūne param āyuḥ pravardhate ! 
+ āyuḥkṣayo 'dhike prokto mārute cāntarād gate !!5.91! 
+ tasmāt prāṇe sthite dehe maraṇaṃ naiva jāyate ! 
+ vāyunā ghaṭasaṃbandhe bhavet kevalakumbhakaḥ !!5.92! 
+ yāvajjīvaṃ japen mantram ajapāsaṃkhyakevalam ! 
+ adyāvadhi dhṛtaṃ saṃkhyā+ !vibhramaṃ kevalīkṛte !!5.93! 
+ ata eva hi kartavyaḥ kevalīkumbhako naraiḥ ! 
+ kevalī cājapāsaṃkhyā dviguṇā ca manonmanī !!5.94! 
+ nāsābhyāṃ vāyum ākṛṣya kevalaṃ kumbhakaṃ caret ! 
+ ekādikacatuḥṣaṣṭiṃ dhārayet prathame dine !!5.95! 
+ kevalīm aṣṭadhā kuryād yāme yāme dine dine ! 
+ atha vā pañcadhā kuryād yathā tat kathayāmi te !!5.96! 
+ prātar madhyāhnasāyāhne madhyarātre caturthake ! 
+ trisaṃdhyam atha vā kuryāt samamāne dine dine !!5.97! 
+ pañcavāraṃ dine vṛddhir vāraikaṃ ca dine tathā ! 
+ ajapāparimāṇe @ ca yāvat siddhiḥ prajāyate !!5.98! 
+ prāṇāyāmaṃ kevalīṃ nāma tadā vadati yogavit ! 
+ kumbhake kevale siddhe kiṃ na sidhyati bhūtale !!5.99! 
+ [[iti śrīgheraṇḍasaṃhitāyāṃ gheraṇḍacaṇḍasaṃvāde ghatasthayogaprakaraṇe prāṇāyāmaprayogo nāma pañcamopadeśaḥ !!5 ]] 
+ gheraṇḍa uvāca: 
+ sthūlaṃ jyotis tathā sūkṣmaṃ dhyānasya trividhaṃ viduḥ ! 
+ sthūlaṃ mūrtimayaṃ proktaṃ jyotis tejomayaṃ tathā ! 
+ sūkṣmaṃ bindumayaṃ brahma kuṇḍalī paradevatā !!6.1! 
+ svakīyahṛdaye dhyāyet sudhāsāgaram uttamam ! 
+ tanmadhye ratnadvīpaṃ tu suratnavālukāmayam !!6.2! 
+ caturdikṣu nīpataruṃ bahupuṣpasamanvitam ! 
+ nīpopavanasaṃkulair veṣṭitaṃ paritā @ iva !!6.3! 
+ mālatīmallikājātī+kesaraiś campakais tathā ! 
+ pārijātaiḥ sthalapadmair gandhāmoditadiṅmukhaiḥ !!6.4! 
+ tanmadhye saṃsmared yogī kalpavṛkṣaṃ manoramam ! 
+ catuḥśākhācaturvedaṃ nityapuṣpaphalānvitam !!6.5! 
+ bhramarāḥ kokilās tatra guñjanti nigadanti ca ! 
+ dhyāyettatra sthiro bhūtvā mahāmāṇikyamaṇḍapam !!6.6! 
+ tanmadhye tu smared yogī paryaṅkaṃ sumanoharam ! 
+ tatreṣṭadevatāṃ dhyāyed yaddhyānaṃ gurubhāṣitam !!6.7! 
+ yasya devasya yad rūpaṃ yathā bhūṣaṇavāhanam ! 
+ tad rūpaṃ dhyāyate nityaṃ sthūladhyānam idaṃ viduḥ !!6.8! 
+ sahasrāramahāpadme karṇikāyāṃ vicintayet ! 
+ vilagnasahitaṃ padmaṃ dvādaśair dalasaṃyutam !!6.9! 
+ śubhravarṇaṃ mahātejo dvādaśair bījabhāṣitam ! 
+ sahakṣamavalariyuṃ haṃsaśaktiṃ yathākramam !!6.10! 
+ tanmadhye karṇikāyāṃ tu akathādirekhātrayam ! 
+ halakṣakoṇasaṃyuktaṃ praṇavaṃ tatra vartate !!6.11! 
+ nādabindumayaṃ pīṭhaṃ dhyāyet tatra manoharam ! 
+ tatropari haṃsayugmaṃ pādukā tatra vartate !!6.12! 
+ dhyāyettatra guruṃ devaṃ vibhujaṃ ca trilocanam ! 
+ śvetāmbaradharaṃ devaṃ śuklagandhānulepanam !!6.13! 
+ śuklapuṣpamayaṃ mālyaṃ raktaśaktisamanvitam ! 
+ evaṃvidhagurudhyānāt sthūladhyānaṃ prasidhyati !!6.14! 
+ kathitaṃ sthūladhyānaṃ tu tejodhyānaṃ śṛṇuṣva me ! 
+ yaddhyānena yogasiddhir ātmapratyakṣam eva ca ! 
+ mūlādhāre kuṇḍalinī bhujagākārarūpiṇī !!6.15! 
+ jīvātmā tiṣṭhati tatra pradīpakalikākṛtiḥ ! 
+ dhyāyet tejomayaṃ brahma tejodhyānaṃ tad eva hi !!6.16! 
+ nābhimūle sthitaṃ sūrya+ !maṇḍalaṃ vahnisaṃyutam ! 
+ dhyāyet tejo mahad vyāptaṃ tejodhyānaṃ tad eva hi !!6.17! 
+ bhruvor madhye manordhve ca yat tejaḥ praṇavātmakam ! 
+ dhyāyej jvālāvalīyuktaṃ tejodhyānaṃ tad eva hi !!6.18! 
+ tejodhyānaṃ śrutaṃ caṇḍa sūkṣmadhyānaṃ vadāmy aham ! 
+ bahubhāgyavaśād yasya kuṇḍalī jāgratī bhavet !!6.19! 
+ ātmanā saha yogena netrarandhrād vinirgatā ! 
+ vihared rājamārge ca cañcalatvān na dṛśyate !!6.20! 
+ śāṃbhavīmudrayā yogī dhyānayogena sidhyati ! 
+ sūkṣmadhyānam idaṃ gopyaṃ devānām api durlabham !!6.21! 
+ sthūladhyānāc chataguṇaṃ tejodhyānaṃ pracakṣate ! 
+ tejodhyānāl lakṣaguṇaṃ sūkṣmadhyānaṃ parātparam !!6.22! 
+ iti te kathitaṃ caṇḍa dhyānayogaṃ sudurlabham ! 
+ ātmā sākṣād bhaved yasmāt tasmād dhyānaṃ viśiṣyate !!6.23! 
+ [[iti śrīgheraṇḍasaṃhitāyāṃ gheraṇḍacaṇḍasaṃvāde ghatasthayoge saptasādhane dhyānayogo nāma ṣaṣṭhopadeśaḥ !!6 ]] 
+ gheraṇḍa uvāca: 
+ samādhiś ca paraṃ tattvaṃ bahubhāgyena labhyate ! 
+ guroḥ kṛpāprasādena prāpyate gurubhaktitaḥ !!7.1! 
+ vidyāpratītiḥ svagurupratītir ! 
+ ātmapratītir manasaḥ prabodhaḥ ! 
+ dine dine yasya bhavet sa yogī ! 
+ suśobhanābhyāsam upaiti sadyaḥ !!7.2! 
+ ghaṭād bhinnaṃ manaḥ kṛtvā aikyaṃ kuryāt parātmani ! 
+ samādhiṃ taṃ vijānīyān muktasaṃjño daśādibhiḥ !!7.3! 
+ ahaṃ brahma na cānyo śmi brahmaivāhaṃ na śokabhāk ! 
+ saccidānandarūpo 'haṃ nityamuktaḥ svabhāvavān !!7.4! 
+ śāṃbhavyā caiva khecaryā bhrāmaryā yonimudrayā ! 
+ dhyānaṃ nādaṃ rasānandaṃ layasiddhiś caturvidhā !!7.5! 
+ pañcadhā bhaktiyogena manomūrcchā ca ṣaḍvidhā ! 
+ ṣaḍvidho 'yaṃ rājayogaḥ pratyekam avadhārayet !!7.6! 
+ śāṃbhavīṃ mudrikāṃ kṛtvā ātmapratyakṣam ānayet ! 
+ bindu brahmamayaṃ dṛṣṭvā manas tatra niyojayet !!7.7! 
+ khamadhye kuru cātmānam ātmamadhye ca khaṃ kuru ! 
+ ātmānaṃ khamayaṃ dṛṣṭvā na kiṃcid api bādhyate ! 
+ sadānandamayo bhūtvā samādhistho bhaven naraḥ !!7.8! 
+ khecarīmudrāsādhanād rasanā ūrdhvagatā yadā ! 
+ tadā samādhisiddhiḥ syād dhitvā sādhāraṇakriyām !!7.9! 
+ anilaṃ mandavegena bhrāmarīkumbhakaṃ caret ! 
+ mandaṃ mandaṃ recayed vāyuṃ bhṛṅganādaṃ tato bhavet !!7.10! 
+ antaḥsthaṃ bhramarīnādaṃ śrutvā tatra mano nayet ! 
+ samādhir jāyate tatra ānandaḥ so 'ham ity ataḥ !!7.11! 
+ yonimudrāṃ samāsādya svayaṃ śaktimayo bhavet ! 
+ suśṛṅgārarasenaiva viharet paramātmani !!7.12! 
+ ānandamayaḥ saṃbhūtvā aikyaṃ brahmaṇi saṃbhavet ! 
+ ahaṃ brahmeti cādvaitaṃ samādhis tena jāyate !!7.13! 
+ svakīyahṛdaye dhyāyed iṣṭadevasvarūpakam ! 
+ cintayed bhaktiyogena paramāhlādapūrvakam !!7.14! 
+ ānandāśrupulakena daśābhāvaḥ prajāyate ! 
+ samādhiḥ saṃbhavet tena saṃbhavec ca manonmanī !!7.15! 
+ manomūrcchāṃ samāsādya mana ātmani yojayet ! 
+ parātmanaḥ samāyogāt samādhiṃ samavāpnuyāt !!7.16! 
+ iti te kathitaṃ caṇḍa samādhir muktilakṣaṇam ! 
+ rājayogaḥ samādhiḥ syād ekātmany eva sādhanam ! 
+ unmanī sahajāvasthā sarve caikātmavācakāḥ !!7.17! 
+ jale viṣṇuḥ sthale viṣṇur viṣṇuḥ parvatamastake ! 
+ jvālāmālākule viṣṇuḥ sarvaṃ viṣṇumayaṃ jagat !!7.18! 
+ bhūcarāḥ khecarāś cāmī yāvanto jīvajantavaḥ ! 
+ vṛkṣagulmalatāvallī+ !tṛṇādyā vāri parvatāḥ ! 
+ sarvaṃ brahma vijānīyāt sarvaṃ paśyati cātmani !!7.19! 
+ ātmā ghatasthacaitanyam advaitaṃ śāśvataṃ param ! 
+ ghaṭād bhinnataraṃ jñānaṃ vītarāgaṃ vivāsanam !!7.20! 
+ evaṃvidhiḥ samādhiḥ syāt sarvasaṃkalpavarjitaḥ ! 
+ svadehe putradārādi+ !bāndhaveṣu dhanādiṣu ! 
+ sarveṣu nirmamo bhūtvā samādhiṃ samavāpnuyāt !!7.21! 
+ layāmṛtaṃ paraṃ tattvaṃ śivoktaṃ vividhāni ca ! 
+ teṣāṃ saṃkṣepam ādāya kathitaṃ muktilakṣaṇam !!7.22! 
+ iti te kathitaś caṇḍa samādhir durlabhaḥ paraḥ ! 
+ yaṃ jñātvā na punarjanma jāyate bhūmimaṇḍale !!7.23! 
+ [[iti śrīgheraṇḍasaṃhitāyāṃ gheraṇḍacaṇḍasaṃvāde ghatasthayogasādhane yogasya saptasāre samādhiyogo nāma saptamopadeśaḥ samāptaḥ !!7 ]]

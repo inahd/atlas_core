@@ -1,0 +1,146 @@
+from_id,relation,to_id,source_title,source_locator,excerpt,tradition,confidence,notes
+direction:east,element,element:fire,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:east,deity,deity:indra,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:east,graha,graha:sun,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:east,activity,activity:entrance,cosmology/vastu_directions.csv,,,traditional,0.8,entrance
+direction:southeast,element,element:fire,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:southeast,deity,deity:agni,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:southeast,graha,graha:venus,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:southeast,activity,activity:kitchen,cosmology/vastu_directions.csv,,,traditional,0.8,kitchen
+direction:south,element,element:fire,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:south,deity,deity:yama,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:south,graha,graha:mars,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:south,activity,activity:storage,cosmology/vastu_directions.csv,,,traditional,0.8,storage
+direction:southwest,element,element:earth,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:southwest,deity,deity:nirrti,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:southwest,graha,graha:rahu,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:southwest,activity,activity:heavy_structure,cosmology/vastu_directions.csv,,,traditional,0.8,heavy_structure
+direction:west,element,element:water,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:west,deity,deity:varuna,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:west,graha,graha:saturn,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:west,activity,activity:dining,cosmology/vastu_directions.csv,,,traditional,0.8,dining
+direction:northwest,element,element:air,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:northwest,deity,deity:vayu,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:northwest,graha,graha:moon,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:northwest,activity,activity:movement,cosmology/vastu_directions.csv,,,traditional,0.8,movement
+direction:north,element,element:water,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:north,deity,deity:kubera,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:north,graha,graha:mercury,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:north,activity,activity:treasury,cosmology/vastu_directions.csv,,,traditional,0.8,treasury
+direction:northeast,element,element:ether,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:northeast,deity,deity:ishana,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:northeast,graha,graha:jupiter,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:northeast,activity,activity:altar,cosmology/vastu_directions.csv,,,traditional,0.8,altar
+direction:center,element,element:ether,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:center,deity,deity:brahma,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:center,graha,graha:none,cosmology/vastu_directions.csv,,,traditional,0.8,
+direction:center,activity,activity:open_space,cosmology/vastu_directions.csv,,,traditional,0.8,open_space
+vastu_deity:apa,domain,domain:waters_and_circulation,vastu/inner_deities.csv,,,traditional,0.9,
+vastu_deity:savitra,domain,domain:solar_generative_impulse,vastu/inner_deities.csv,,,traditional,0.9,
+vastu_deity:java,domain,domain:speed_and_kinetic_force,vastu/inner_deities.csv,,,traditional,0.9,
+vastu_deity:rudra,domain,domain:fierce_transformation,vastu/inner_deities.csv,,,traditional,0.9,
+vastu_deity:aryaman,domain,domain:social_order_and_nobility,vastu/inner_deities.csv,,,traditional,0.9,
+vastu_deity:savita,domain,domain:solar_impulsion,vastu/inner_deities.csv,,,traditional,0.9,
+vastu_deity:vivasvan,domain,domain:radiant_sun,vastu/inner_deities.csv,,,traditional,0.9,
+vastu_deity:indra,domain,domain:sovereignty_and_charge,vastu/inner_deities.csv,,,traditional,0.9,
+vastu_deity:mitra,domain,domain:covenant_and_alliance,vastu/inner_deities.csv,,,traditional,0.9,
+vastu_deity:rajayakshma,domain,domain:royal_wasting___depletion_warning,vastu/inner_deities.csv,,,traditional,0.9,
+vastu_deity:prithvidhara,domain,domain:earth_support,vastu/inner_deities.csv,,,traditional,0.9,
+vastu_deity:apavatsa,domain,domain:subtle_water_support,vastu/inner_deities.csv,,,traditional,0.9,
+vastu_deity:brahma,domain,domain:central_generative_field___brahma_sthana,vastu/inner_deities.csv,,,traditional,0.9,
+vastu_deity:agni___shikhi,direction,direction:east,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:agni___shikhi,element,element:fire,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:agni___shikhi,function,function:ignition_and_transformative_threshold,vastu/perimeter_deities.csv,,,traditional,0.9,ignition and transformative threshold
+vastu_deity:parjanya,direction,direction:east,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:parjanya,element,element:water,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:parjanya,function,function:rain_and_fertility,vastu/perimeter_deities.csv,,,traditional,0.9,rain and fertility
+vastu_deity:jayanta,direction,direction:east,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:jayanta,element,element:air,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:jayanta,function,function:victory_and_ascent,vastu/perimeter_deities.csv,,,traditional,0.9,victory and ascent
+vastu_deity:indra,direction,direction:east,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:indra,element,element:ether,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:indra,function,function:kingship_and_divine_authority,vastu/perimeter_deities.csv,,,traditional,0.9,kingship and divine authority
+vastu_deity:surya,direction,direction:east,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:surya,element,element:fire,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:surya,function,function:solar_illumination,vastu/perimeter_deities.csv,,,traditional,0.9,solar illumination
+vastu_deity:satya,direction,direction:east,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:satya,element,element:ether,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:satya,function,function:truth_and_order,vastu/perimeter_deities.csv,,,traditional,0.9,truth and order
+vastu_deity:bhrisha,direction,direction:east,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:bhrisha,element,element:earth,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:bhrisha,function,function:strength_and_firmness,vastu/perimeter_deities.csv,,,traditional,0.9,strength and firmness
+vastu_deity:antariksha,direction,direction:east,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:antariksha,element,element:air,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:antariksha,function,function:mid_space_and_transmission,vastu/perimeter_deities.csv,,,traditional,0.9,mid-space and transmission
+vastu_deity:vayu,direction,direction:south,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:vayu,element,element:air,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:vayu,function,function:movement,vastu/perimeter_deities.csv,,,traditional,0.9,movement
+vastu_deity:pusha,direction,direction:south,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:pusha,element,element:earth,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:pusha,function,function:nourishment_and_roads,vastu/perimeter_deities.csv,,,traditional,0.9,nourishment and roads
+vastu_deity:vitatha,direction,direction:south,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:vitatha,element,element:ether,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:vitatha,function,"function:record,_contract,_witness",vastu/perimeter_deities.csv,,,traditional,0.9,"record, contract, witness"
+vastu_deity:brihatkshata,direction,direction:south,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:brihatkshata,element,element:earth,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:brihatkshata,function,function:defense_and_protection,vastu/perimeter_deities.csv,,,traditional,0.9,defense and protection
+vastu_deity:yama,direction,direction:south,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:yama,element,element:fire,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:yama,function,"function:death,_restraint,_law",vastu/perimeter_deities.csv,,,traditional,0.9,"death, restraint, law"
+vastu_deity:gandharva,direction,direction:south,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:gandharva,element,element:air,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:gandharva,function,function:music_and_refinement,vastu/perimeter_deities.csv,,,traditional,0.9,music and refinement
+vastu_deity:bhringaraja,direction,direction:south,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:bhringaraja,element,element:earth,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:bhringaraja,function,function:vitality_and_scent,vastu/perimeter_deities.csv,,,traditional,0.9,vitality and scent
+vastu_deity:mriga,direction,direction:south,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:mriga,element,element:earth,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:mriga,function,function:animal_instinct_and_roaming,vastu/perimeter_deities.csv,,,traditional,0.9,animal instinct and roaming
+vastu_deity:pitr,direction,direction:west,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:pitr,element,element:earth,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:pitr,function,function:ancestors,vastu/perimeter_deities.csv,,,traditional,0.9,ancestors
+vastu_deity:dauvarika,direction,direction:west,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:dauvarika,element,element:earth,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:dauvarika,function,function:gatekeeping,vastu/perimeter_deities.csv,,,traditional,0.9,gatekeeping
+vastu_deity:sugriva,direction,direction:west,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:sugriva,element,element:air,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:sugriva,function,function:alliance_and_service,vastu/perimeter_deities.csv,,,traditional,0.9,alliance and service
+vastu_deity:kusumadanta,direction,direction:west,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:kusumadanta,element,element:earth,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:kusumadanta,function,function:fragrance_and_subtle_guardianship,vastu/perimeter_deities.csv,,,traditional,0.9,fragrance and subtle guardianship
+vastu_deity:varuna,direction,direction:west,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:varuna,element,element:water,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:varuna,function,"function:waters,_law,_oath",vastu/perimeter_deities.csv,,,traditional,0.9,"waters, law, oath"
+vastu_deity:asura,direction,direction:west,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:asura,element,element:fire,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:asura,function,function:pressure_and_subterranean_force,vastu/perimeter_deities.csv,,,traditional,0.9,pressure and subterranean force
+vastu_deity:shesha,direction,direction:west,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:shesha,element,element:water,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:shesha,function,function:serpentine_support,vastu/perimeter_deities.csv,,,traditional,0.9,serpentine support
+vastu_deity:papayakshma,direction,direction:west,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:papayakshma,element,element:air,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:papayakshma,function,function:decay_and_wasting,vastu/perimeter_deities.csv,,,traditional,0.9,decay and wasting
+vastu_deity:roga,direction,direction:north,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:roga,element,element:air,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:roga,function,function:disease_and_vulnerability,vastu/perimeter_deities.csv,,,traditional,0.9,disease and vulnerability
+vastu_deity:ahi,direction,direction:north,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:ahi,element,element:water,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:ahi,function,function:serpent_power,vastu/perimeter_deities.csv,,,traditional,0.9,serpent power
+vastu_deity:mukhya,direction,direction:north,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:mukhya,element,element:air,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:mukhya,function,function:chief_pranic_movement,vastu/perimeter_deities.csv,,,traditional,0.9,chief pranic movement
+vastu_deity:bhallata,direction,direction:north,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:bhallata,element,element:earth,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:bhallata,function,function:weight_and_resources,vastu/perimeter_deities.csv,,,traditional,0.9,weight and resources
+vastu_deity:soma,direction,direction:north,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:soma,element,element:water,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:soma,function,"function:moon,_cooling,_nourishment",vastu/perimeter_deities.csv,,,traditional,0.9,"moon, cooling, nourishment"
+vastu_deity:bhujaga,direction,direction:north,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:bhujaga,element,element:water,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:bhujaga,function,function:serpent_current,vastu/perimeter_deities.csv,,,traditional,0.9,serpent current
+vastu_deity:aditi,direction,direction:north,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:aditi,element,element:ether,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:aditi,function,function:vastness_and_containment,vastu/perimeter_deities.csv,,,traditional,0.9,vastness and containment
+vastu_deity:diti,direction,direction:north,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:diti,element,element:earth,vastu/perimeter_deities.csv,,,traditional,0.9,
+vastu_deity:diti,function,function:embodiment_and_division,vastu/perimeter_deities.csv,,,traditional,0.9,embodiment and division

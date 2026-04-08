@@ -1,0 +1,7 @@
+rule_id,structure,formula,example,source_text,attestation_status
+korvai_a,triple repetition,P + P + P landing on samam,simple 3x phrase with no gap,Carnatic tala report and korvai discussion note threefold repetition and exact landing.,INTERPRETATION
+korvai_b,mora closure,(P+k) + (P+k) + P,Adi tala closure with fixed gap,Korvai sections describe mora-style cadence logic.,INTERPRETATION
+korvai_c,eduppu closure,total_pulses ≡ -eduppu mod cycle_window,start after samam and still resolve correctly,Korvai sections formalized into count-closure arithmetic.,INTERPRETATION
+korvai_d,purvanga_uttaranga,opening development + cadential close,two-part tani avartanam ending,Korvai and tani avartanam sections discuss staged closing structures.,INTERPRETATION
+korvai_e,arudi emphasis,accent or stress point before final landing,accent before final samam,Pedagogical korvai explanations reference landing-point emphasis.,INTERPRETATION
+korvai_f,nadai-aware accountancy,aksharas x gati = pulse inventory,Adi tala 8 x 4 = 32 pulses,"Carnatic tala report connects tala, gati, and pulse counting.",INTERPRETATION

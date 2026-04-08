@@ -1,0 +1,34 @@
+from_id,relation,to_id,source_title,source_locator,excerpt,tradition,confidence,notes
+bija:om,deity,deity:universal,cosmology/bija_master.csv,,,traditional,0.8,universal
+bija:om,element,element:ether,cosmology/bija_master.csv,,,traditional,0.8,ether
+bija:om,chakra,chakra:cosmic_sound,cosmology/bija_master.csv,,,traditional,0.8,cosmic_sound
+bija:hrim,deity,deity:devi,cosmology/bija_master.csv,,,traditional,0.8,devi
+bija:hrim,element,element:fire,cosmology/bija_master.csv,,,traditional,0.8,fire
+bija:hrim,chakra,chakra:creative_power,cosmology/bija_master.csv,,,traditional,0.8,creative_power
+bija:shrim,deity,deity:lakshmi,cosmology/bija_master.csv,,,traditional,0.8,lakshmi
+bija:shrim,element,element:water,cosmology/bija_master.csv,,,traditional,0.8,water
+bija:shrim,chakra,chakra:prosperity,cosmology/bija_master.csv,,,traditional,0.8,prosperity
+bija:klim,deity,deity:krishna,cosmology/bija_master.csv,,,traditional,0.8,krishna
+bija:klim,element,element:air,cosmology/bija_master.csv,,,traditional,0.8,air
+bija:klim,chakra,chakra:attraction,cosmology/bija_master.csv,,,traditional,0.8,attraction
+bija:gam,deity,deity:ganesha,cosmology/bija_master.csv,,,traditional,0.8,ganesha
+bija:gam,element,element:earth,cosmology/bija_master.csv,,,traditional,0.8,earth
+bija:gam,chakra,chakra:obstacle_removal,cosmology/bija_master.csv,,,traditional,0.8,obstacle_removal
+bija:aim,deity,deity:saraswati,cosmology/bija_master.csv,,,traditional,0.8,saraswati
+bija:aim,element,element:air,cosmology/bija_master.csv,,,traditional,0.8,air
+bija:aim,chakra,chakra:knowledge,cosmology/bija_master.csv,,,traditional,0.8,knowledge
+bija:krim,deity,deity:kali,cosmology/bija_master.csv,,,traditional,0.8,kali
+bija:krim,element,element:fire,cosmology/bija_master.csv,,,traditional,0.8,fire
+bija:krim,chakra,chakra:transformation,cosmology/bija_master.csv,,,traditional,0.8,transformation
+bija:dum,deity,deity:durga,cosmology/bija_master.csv,,,traditional,0.8,durga
+bija:dum,element,element:fire,cosmology/bija_master.csv,,,traditional,0.8,fire
+bija:dum,chakra,chakra:protection,cosmology/bija_master.csv,,,traditional,0.8,protection
+graha:sun,bija,bija:ram,cosmology/graha_bija.csv,,,traditional,0.8,Sun bija
+graha:moon,bija,bija:shram,cosmology/graha_bija.csv,,,traditional,0.8,Moon bija
+graha:mars,bija,bija:krim,cosmology/graha_bija.csv,,,traditional,0.8,Mars bija
+graha:mercury,bija,bija:bum,cosmology/graha_bija.csv,,,traditional,0.8,Mercury bija
+graha:jupiter,bija,bija:brim,cosmology/graha_bija.csv,,,traditional,0.8,Jupiter bija
+graha:venus,bija,bija:shum,cosmology/graha_bija.csv,,,traditional,0.8,Venus bija
+graha:saturn,bija,bija:sham,cosmology/graha_bija.csv,,,traditional,0.8,Saturn bija
+graha:rahu,bija,bija:rahm,cosmology/graha_bija.csv,,,traditional,0.8,Rahu bija
+graha:ketu,bija,bija:kem,cosmology/graha_bija.csv,,,traditional,0.8,Ketu bija

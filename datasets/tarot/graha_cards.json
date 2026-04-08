@@ -1,0 +1,254 @@
+[
+  {
+    "id": "surya",
+    "name": "Sūrya",
+    "sk": "सूर्य",
+    "emoji": "☉",
+    "suit": "graha",
+    "element": "fire",
+    "guna": "sattva",
+    "dosha": "pitta",
+    "domain": "illumination",
+    "color": [
+      255,
+      180,
+      40
+    ],
+    "windA": 1,
+    "windB": 1,
+    "raga": "Bhairava",
+    "layer": "S1",
+    "process": "the solar king · self as light source · sovereign clarity",
+    "reading": "You are the source. Stop looking outward for the light that lives in you.",
+    "qualities": [
+      "sovereign authority",
+      "self-luminosity",
+      "dharmic clarity"
+    ],
+    "shadow": "ego as sun — everything must orbit me"
+  },
+  {
+    "id": "chandra",
+    "name": "Candra",
+    "sk": "चन्द्र",
+    "emoji": "☽",
+    "suit": "graha",
+    "element": "water",
+    "guna": "sattva",
+    "dosha": "kapha",
+    "domain": "mind",
+    "color": [
+      200,
+      220,
+      255
+    ],
+    "windA": 2,
+    "windB": 3,
+    "raga": "Bhimpalasi",
+    "layer": "S3",
+    "process": "the lunar mind · reflection of light · tidal consciousness",
+    "reading": "The mind is a mirror. What it reflects tonight is what is most alive in you.",
+    "qualities": [
+      "receptive awareness",
+      "emotional intelligence",
+      "cyclic renewal"
+    ],
+    "shadow": "reflection without discernment"
+  },
+  {
+    "id": "mangala",
+    "name": "Maṅgala",
+    "sk": "मङ्गल",
+    "emoji": "♂",
+    "suit": "graha",
+    "element": "fire",
+    "guna": "rajas",
+    "dosha": "pitta",
+    "domain": "energy",
+    "color": [
+      220,
+      60,
+      60
+    ],
+    "windA": 3,
+    "windB": 5,
+    "raga": "Darbari",
+    "layer": "S2",
+    "process": "the red one · directed force · Kṣatriya energy operative",
+    "reading": "The spear must be aimed before thrown. Direct your force. Scattered energy is wasted.",
+    "qualities": [
+      "directed will",
+      "martial precision",
+      "courageous action"
+    ],
+    "shadow": "aggression without aim"
+  },
+  {
+    "id": "budha",
+    "name": "Budha",
+    "sk": "बुध",
+    "emoji": "☿",
+    "suit": "graha",
+    "element": "earth",
+    "guna": "rajas",
+    "dosha": "vata",
+    "domain": "intellect",
+    "color": [
+      100,
+      200,
+      120
+    ],
+    "windA": 4,
+    "windB": 6,
+    "raga": "Yaman",
+    "layer": "S2",
+    "process": "the swift intellect · Mercury bridge · between worlds",
+    "reading": "The sword of discernment. Cut through confusion with precise thought. Name what you see.",
+    "qualities": [
+      "discriminating intellect",
+      "swift communication",
+      "adaptive intelligence"
+    ],
+    "shadow": "cleverness without wisdom"
+  },
+  {
+    "id": "guru",
+    "name": "Guru",
+    "sk": "गुरु",
+    "emoji": "♃",
+    "suit": "graha",
+    "element": "ether",
+    "guna": "sattva",
+    "dosha": "kapha",
+    "domain": "wisdom",
+    "color": [
+      240,
+      192,
+      64
+    ],
+    "windA": 5,
+    "windB": 8,
+    "raga": "Bageshri",
+    "layer": "S1",
+    "process": "the guru principle · Jupiter expanding · wisdom as abundance",
+    "reading": "Bṛhaspati blesses the seeker. The teacher has always been present. Are you ready to learn?",
+    "qualities": [
+      "expanding wisdom",
+      "dharmic guidance",
+      "spiritual abundance"
+    ],
+    "shadow": "inflation — Jupiter without Saturn becomes doctrine"
+  },
+  {
+    "id": "shukra",
+    "name": "Śukra",
+    "sk": "शुक्र",
+    "emoji": "♀",
+    "suit": "graha",
+    "element": "water",
+    "guna": "rajas",
+    "dosha": "kapha",
+    "domain": "desire",
+    "color": [
+      220,
+      140,
+      200
+    ],
+    "windA": 5,
+    "windB": 7,
+    "raga": "Khamaj",
+    "layer": "S6",
+    "process": "the bright one · Venus as beauty · Śukra surviving the world",
+    "reading": "Beauty is not decoration — it is how the sacred makes itself desirable. Let beauty work.",
+    "qualities": [
+      "aesthetic intelligence",
+      "desire as dharma",
+      "world-interface mastery"
+    ],
+    "shadow": "beauty serving the wrong master"
+  },
+  {
+    "id": "shani",
+    "name": "Śani",
+    "sk": "शनि",
+    "emoji": "♄",
+    "suit": "graha",
+    "element": "air",
+    "guna": "tamas",
+    "dosha": "vata",
+    "domain": "discipline",
+    "color": [
+      100,
+      100,
+      160
+    ],
+    "windA": 7,
+    "windB": 11,
+    "raga": "Malkauns",
+    "layer": "S3",
+    "process": "the slow one · Saturn as teacher · karma made visible",
+    "reading": "Śani does not punish. He reveals. What you are being shown needs your full attention.",
+    "qualities": [
+      "karmic clarity",
+      "disciplined endurance",
+      "structural integrity"
+    ],
+    "shadow": "contraction as identity"
+  },
+  {
+    "id": "rahu",
+    "name": "Rāhu",
+    "sk": "राहु",
+    "emoji": "☊",
+    "suit": "graha",
+    "element": "air",
+    "guna": "tamas",
+    "dosha": "vata",
+    "domain": "eclipse",
+    "color": [
+      80,
+      60,
+      120
+    ],
+    "windA": 6,
+    "windB": 9,
+    "raga": "Todi",
+    "layer": "S3",
+    "process": "the north node · obsessive hunger · future dharma pulling",
+    "reading": "Rāhu amplifies. What you are obsessed with is your dharmic frontier. Go there carefully.",
+    "qualities": [
+      "evolutionary hunger",
+      "boundary dissolution",
+      "future-pulling"
+    ],
+    "shadow": "consuming without digesting"
+  },
+  {
+    "id": "ketu",
+    "name": "Ketu",
+    "sk": "केतु",
+    "emoji": "☋",
+    "suit": "graha",
+    "element": "fire",
+    "guna": "sattva",
+    "dosha": "pitta",
+    "domain": "liberation",
+    "color": [
+      160,
+      120,
+      80
+    ],
+    "windA": 7,
+    "windB": 12,
+    "raga": "Bhupali",
+    "layer": "S0",
+    "process": "the south node · what is already mastered · mokṣa current",
+    "reading": "Ketu points toward what is already complete. Release what you no longer need to become.",
+    "qualities": [
+      "spiritual detachment",
+      "past mastery",
+      "liberation current"
+    ],
+    "shadow": "detachment as avoidance"
+  }
+]

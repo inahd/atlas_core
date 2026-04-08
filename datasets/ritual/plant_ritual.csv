@@ -1,0 +1,8 @@
+plant,mantra,offering_type,deity_affinity,tithi_best,graha,element
+Tulsi,Om Aim Hrim Shrim Tulasyai Namah,water_offering,Vishnu,Ekadashi,Mercury,ether
+Bilva,Om Namah Shivaya,leaf_offering,Shiva,Pradosha,Saturn,earth
+Lotus,Om Padmayai Namah,flower_offering,Lakshmi,Purnima,Venus,water
+Neem,Om Neem Nimba Namah,paste_offering,Durga,Saptami,Mars,fire
+Peepal,Om Ashvatthaya Namah,circumambulation,Vishnu,Saturday,Saturn,earth
+Arka,Om Suryaya Namah,leaf_offering,Surya,Sunday,Sun,fire
+Bamboo,Om Ganeshaya Namah,water_offering,Ganesha,Chaturthi,Jupiter,air

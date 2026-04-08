@@ -1,0 +1,182 @@
+{
+  "bindu": {
+    "name": "Vyāsāsana",
+    "role": "Center of the Atlas mandala"
+  },
+  "cycle": [
+    "observe",
+    "seed",
+    "graph",
+    "research",
+    "refine",
+    "canon"
+  ],
+  "petal_rows": [
+    [
+      "seeds",
+      "graph",
+      "research"
+    ],
+    [
+      "visual",
+      "music",
+      "wiki"
+    ],
+    [
+      "artifacts",
+      "cosmos",
+      "system"
+    ]
+  ],
+  "petals": {
+    "seeds": {
+      "title": "Seeds",
+      "symbol": "🌱",
+      "description": "Concept seeds, prompts, journals, and early fragments.",
+      "roots": [
+        "seeds",
+        "data/seeds",
+        "journals"
+      ],
+      "extensions": [
+        ".md",
+        ".txt"
+      ]
+    },
+    "graph": {
+      "title": "Graph",
+      "symbol": "🕸",
+      "description": "Knowledge graph models, node stores, and relation data.",
+      "roots": [
+        "graph",
+        "atlas_graph",
+        "ontology",
+        "data/graph.json"
+      ],
+      "extensions": [
+        ".json",
+        ".yaml",
+        ".yml",
+        ".csv"
+      ]
+    },
+    "research": {
+      "title": "Research",
+      "symbol": "🔬",
+      "description": "Ingestion pipelines, corpora, manifests, and research datasets.",
+      "roots": [
+        "research",
+        "datasets",
+        "texts",
+        "manifests",
+        "capsules"
+      ],
+      "extensions": [
+        ".csv",
+        ".pdf",
+        ".md",
+        ".txt"
+      ]
+    },
+    "visual": {
+      "title": "Visual",
+      "symbol": "✨",
+      "description": "Visualizations, mandalas, rendered maps, and interface views.",
+      "roots": [
+        "visual",
+        "atlas_cards",
+        "lib",
+        "schemas"
+      ],
+      "extensions": [
+        ".html",
+        ".svg",
+        ".png",
+        ".css",
+        ".js"
+      ]
+    },
+    "music": {
+      "title": "Music",
+      "symbol": "♫",
+      "description": "Sound geometry, svara, tala, and music-oriented cosmology.",
+      "roots": [
+        "wiki/sound_geometry.md",
+        "manifests/wget_music.txt"
+      ],
+      "extensions": [
+        ".mid",
+        ".midi",
+        ".wav",
+        ".mp3"
+      ]
+    },
+    "wiki": {
+      "title": "Wiki",
+      "symbol": "📜",
+      "description": "Explanatory writing, docs, guides, and current state summaries.",
+      "roots": [
+        "wiki",
+        "docs",
+        "README.md",
+        "ATLAS_PRINCIPLES.md"
+      ],
+      "extensions": [
+        ".md"
+      ]
+    },
+    "artifacts": {
+      "title": "Artifacts",
+      "symbol": "🧿",
+      "description": "Generated cards, exports, memory outputs, and built artifacts.",
+      "roots": [
+        "memory",
+        "artifacts",
+        "patches"
+      ],
+      "extensions": [
+        ".html",
+        ".json",
+        ".png",
+        ".svg"
+      ]
+    },
+    "cosmos": {
+      "title": "Cosmos",
+      "symbol": "☉",
+      "description": "Cosmology architecture, astronomical models, and ritual calendars.",
+      "roots": [
+        "architecture",
+        "panchanga",
+        "data/cosmology",
+        "datasets/cosmology",
+        "datasets/astro"
+      ],
+      "extensions": [
+        ".json",
+        ".yaml",
+        ".yml",
+        ".csv",
+        ".md"
+      ]
+    },
+    "system": {
+      "title": "System",
+      "symbol": "⚙",
+      "description": "Automation, runtime code, CLI tooling, and operational scripts.",
+      "roots": [
+        "atlas",
+        "scripts",
+        "tools",
+        "tests",
+        "setup.py",
+        "atlasctl",
+        "atlas_console.sh"
+      ],
+      "extensions": [
+        ".py",
+        ".sh"
+      ]
+    }
+  }
+}

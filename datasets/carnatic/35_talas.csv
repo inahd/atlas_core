@@ -1,0 +1,36 @@
+tala_id,family,jati,laghu_aksharas,beat_count,anga_breakdown,sollukattu,traditional_usage,rasa,source_text,attestation_status
+dhruva_tisra,Dhruva,tisra,3,11,L D L L,ta ki ta,Mani technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+dhruva_catusra,Dhruva,catusra,4,14,L D L L,ta ka dhi mi,Shrikara technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+dhruva_khanda,Dhruva,khanda,5,17,L D L L,ta ka ta ki ta,Pramaana technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+dhruva_misra,Dhruva,misra,7,23,L D L L,ta ki ta ta ka di mi,Poorana technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+dhruva_sankirna,Dhruva,sankirna,9,29,L D L L,ta ka dhi mi ta ka ta ki ta,Bhuvana technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+matya_tisra,Matya,tisra,3,8,L D L,ta ki ta,Saara technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+matya_catusra,Matya,catusra,4,10,L D L,ta ka dhi mi,Sama technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+matya_khanda,Matya,khanda,5,12,L D L,ta ka ta ki ta,Udaya technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+matya_misra,Matya,misra,7,16,L D L,ta ki ta ta ka di mi,Udeerna technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+matya_sankirna,Matya,sankirna,9,20,L D L,ta ka dhi mi ta ka ta ki ta,Raava technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+rupaka_tisra,Rupaka,tisra,3,5,D L,ta ki ta,Chakra technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+rupaka_catusra,Rupaka,catusra,4,6,D L,ta ka dhi mi,common 6-beat rupaka usage,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+rupaka_khanda,Rupaka,khanda,5,7,D L,ta ka ta ki ta,Raaja technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+rupaka_misra,Rupaka,misra,7,9,D L,ta ki ta ta ka di mi,Kula technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+rupaka_sankirna,Rupaka,sankirna,9,11,D L,ta ka dhi mi ta ka ta ki ta,Bindu technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+jhampa_tisra,Jhampa,tisra,3,6,L U D,ta ki ta,Kadamba technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+jhampa_catusra,Jhampa,catusra,4,7,L U D,ta ka dhi mi,Madhura technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+jhampa_khanda,Jhampa,khanda,5,8,L U D,ta ka ta ki ta,Chana technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+jhampa_misra,Jhampa,misra,7,10,L U D,ta ki ta ta ka di mi,widely taught common jhampa instantiation,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+jhampa_sankirna,Jhampa,sankirna,9,12,L U D,ta ka dhi mi ta ka ta ki ta,Kara technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+triputa_tisra,Triputa,tisra,3,7,L D D,ta ki ta,Shanka technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+triputa_catusra,Triputa,catusra,4,8,L D D,ta ka dhi mi,"Adi tala, the most common concert tala",varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+triputa_khanda,Triputa,khanda,5,9,L D D,ta ka ta ki ta,Dushkara technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+triputa_misra,Triputa,misra,7,11,L D D,ta ki ta ta ka di mi,Leela technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+triputa_sankirna,Triputa,sankirna,9,13,L D D,ta ka dhi mi ta ka ta ki ta,Bhoga technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+ata_tisra,Ata,tisra,3,10,L L D D,ta ki ta,Guptha technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+ata_catusra,Ata,catusra,4,12,L L D D,ta ka dhi mi,Lekha technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+ata_khanda,Ata,khanda,5,14,L L D D,ta ka ta ki ta,important in advanced varnam practice,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+ata_misra,Ata,misra,7,18,L L D D,ta ki ta ta ka di mi,Loya technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+ata_sankirna,Ata,sankirna,9,22,L L D D,ta ka dhi mi ta ka ta ki ta,Dheera technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+eka_tisra,Eka,tisra,3,3,L,ta ki ta,Sudha technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+eka_catusra,Eka,catusra,4,4,L,ta ka dhi mi,common pedagogical default,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+eka_khanda,Eka,khanda,5,5,L,ta ka ta ki ta,Raatha technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+eka_misra,Eka,misra,7,7,L,ta ki ta ta ka di mi,Raaga technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED
+eka_sankirna,Eka,sankirna,9,9,L,ta ka dhi mi ta ka ta ki ta,Vasu technical name in modern 35-tala charts,varied,Carnatic tala complete report 35-tala table with SIFAS technical names and akshara totals.,OBSERVED

@@ -1,0 +1,318 @@
+from_id,relation,to_id,layer,confidence,notes
+tithi:1,tithi_in_paksha,paksha:shukla,structure,model_layered,derived paksha from position 1
+tithi:1,tithi_index_in_paksha,tithi_index:1,structure,model_layered,derived index 1 from position 1
+tithi:2,tithi_in_paksha,paksha:shukla,structure,model_layered,derived paksha from position 2
+tithi:2,tithi_index_in_paksha,tithi_index:2,structure,model_layered,derived index 2 from position 2
+tithi:3,tithi_in_paksha,paksha:shukla,structure,model_layered,derived paksha from position 3
+tithi:3,tithi_index_in_paksha,tithi_index:3,structure,model_layered,derived index 3 from position 3
+tithi:4,tithi_in_paksha,paksha:shukla,structure,model_layered,derived paksha from position 4
+tithi:4,tithi_index_in_paksha,tithi_index:4,structure,model_layered,derived index 4 from position 4
+tithi:5,tithi_in_paksha,paksha:shukla,structure,model_layered,derived paksha from position 5
+tithi:5,tithi_index_in_paksha,tithi_index:5,structure,model_layered,derived index 5 from position 5
+tithi:6,tithi_in_paksha,paksha:shukla,structure,model_layered,derived paksha from position 6
+tithi:6,tithi_index_in_paksha,tithi_index:6,structure,model_layered,derived index 6 from position 6
+tithi:7,tithi_in_paksha,paksha:shukla,structure,model_layered,derived paksha from position 7
+tithi:7,tithi_index_in_paksha,tithi_index:7,structure,model_layered,derived index 7 from position 7
+tithi:8,tithi_in_paksha,paksha:shukla,structure,model_layered,derived paksha from position 8
+tithi:8,tithi_index_in_paksha,tithi_index:8,structure,model_layered,derived index 8 from position 8
+tithi:9,tithi_in_paksha,paksha:shukla,structure,model_layered,derived paksha from position 9
+tithi:9,tithi_index_in_paksha,tithi_index:9,structure,model_layered,derived index 9 from position 9
+tithi:10,tithi_in_paksha,paksha:shukla,structure,model_layered,derived paksha from position 10
+tithi:10,tithi_index_in_paksha,tithi_index:10,structure,model_layered,derived index 10 from position 10
+tithi:11,tithi_in_paksha,paksha:shukla,structure,model_layered,derived paksha from position 11
+tithi:11,tithi_index_in_paksha,tithi_index:11,structure,model_layered,derived index 11 from position 11
+tithi:12,tithi_in_paksha,paksha:shukla,structure,model_layered,derived paksha from position 12
+tithi:12,tithi_index_in_paksha,tithi_index:12,structure,model_layered,derived index 12 from position 12
+tithi:13,tithi_in_paksha,paksha:shukla,structure,model_layered,derived paksha from position 13
+tithi:13,tithi_index_in_paksha,tithi_index:13,structure,model_layered,derived index 13 from position 13
+tithi:14,tithi_in_paksha,paksha:shukla,structure,model_layered,derived paksha from position 14
+tithi:14,tithi_index_in_paksha,tithi_index:14,structure,model_layered,derived index 14 from position 14
+tithi:15,tithi_in_paksha,paksha:shukla,structure,model_layered,derived paksha from position 15
+tithi:15,tithi_index_in_paksha,tithi_index:15,structure,model_layered,derived index 15 from position 15
+nakshatra:1,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:1,nakshatra_pada_entity,nakshatra_pada:1_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:1,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:1,nakshatra_pada_entity,nakshatra_pada:1_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:1,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:1,nakshatra_pada_entity,nakshatra_pada:1_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:1,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:1,nakshatra_pada_entity,nakshatra_pada:1_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:2,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:2,nakshatra_pada_entity,nakshatra_pada:2_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:2,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:2,nakshatra_pada_entity,nakshatra_pada:2_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:2,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:2,nakshatra_pada_entity,nakshatra_pada:2_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:2,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:2,nakshatra_pada_entity,nakshatra_pada:2_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:3,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:3,nakshatra_pada_entity,nakshatra_pada:3_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:3,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:3,nakshatra_pada_entity,nakshatra_pada:3_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:3,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:3,nakshatra_pada_entity,nakshatra_pada:3_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:3,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:3,nakshatra_pada_entity,nakshatra_pada:3_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:4,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:4,nakshatra_pada_entity,nakshatra_pada:4_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:4,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:4,nakshatra_pada_entity,nakshatra_pada:4_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:4,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:4,nakshatra_pada_entity,nakshatra_pada:4_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:4,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:4,nakshatra_pada_entity,nakshatra_pada:4_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:5,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:5,nakshatra_pada_entity,nakshatra_pada:5_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:5,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:5,nakshatra_pada_entity,nakshatra_pada:5_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:5,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:5,nakshatra_pada_entity,nakshatra_pada:5_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:5,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:5,nakshatra_pada_entity,nakshatra_pada:5_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:6,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:6,nakshatra_pada_entity,nakshatra_pada:6_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:6,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:6,nakshatra_pada_entity,nakshatra_pada:6_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:6,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:6,nakshatra_pada_entity,nakshatra_pada:6_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:6,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:6,nakshatra_pada_entity,nakshatra_pada:6_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:7,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:7,nakshatra_pada_entity,nakshatra_pada:7_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:7,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:7,nakshatra_pada_entity,nakshatra_pada:7_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:7,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:7,nakshatra_pada_entity,nakshatra_pada:7_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:7,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:7,nakshatra_pada_entity,nakshatra_pada:7_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:8,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:8,nakshatra_pada_entity,nakshatra_pada:8_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:8,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:8,nakshatra_pada_entity,nakshatra_pada:8_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:8,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:8,nakshatra_pada_entity,nakshatra_pada:8_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:8,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:8,nakshatra_pada_entity,nakshatra_pada:8_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:9,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:9,nakshatra_pada_entity,nakshatra_pada:9_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:9,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:9,nakshatra_pada_entity,nakshatra_pada:9_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:9,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:9,nakshatra_pada_entity,nakshatra_pada:9_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:9,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:9,nakshatra_pada_entity,nakshatra_pada:9_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:10,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:10,nakshatra_pada_entity,nakshatra_pada:10_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:10,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:10,nakshatra_pada_entity,nakshatra_pada:10_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:10,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:10,nakshatra_pada_entity,nakshatra_pada:10_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:10,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:10,nakshatra_pada_entity,nakshatra_pada:10_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:11,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:11,nakshatra_pada_entity,nakshatra_pada:11_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:11,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:11,nakshatra_pada_entity,nakshatra_pada:11_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:11,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:11,nakshatra_pada_entity,nakshatra_pada:11_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:11,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:11,nakshatra_pada_entity,nakshatra_pada:11_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:12,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:12,nakshatra_pada_entity,nakshatra_pada:12_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:12,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:12,nakshatra_pada_entity,nakshatra_pada:12_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:12,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:12,nakshatra_pada_entity,nakshatra_pada:12_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:12,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:12,nakshatra_pada_entity,nakshatra_pada:12_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:13,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:13,nakshatra_pada_entity,nakshatra_pada:13_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:13,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:13,nakshatra_pada_entity,nakshatra_pada:13_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:13,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:13,nakshatra_pada_entity,nakshatra_pada:13_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:13,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:13,nakshatra_pada_entity,nakshatra_pada:13_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:14,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:14,nakshatra_pada_entity,nakshatra_pada:14_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:14,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:14,nakshatra_pada_entity,nakshatra_pada:14_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:14,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:14,nakshatra_pada_entity,nakshatra_pada:14_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:14,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:14,nakshatra_pada_entity,nakshatra_pada:14_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:15,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:15,nakshatra_pada_entity,nakshatra_pada:15_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:15,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:15,nakshatra_pada_entity,nakshatra_pada:15_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:15,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:15,nakshatra_pada_entity,nakshatra_pada:15_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:15,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:15,nakshatra_pada_entity,nakshatra_pada:15_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:16,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:16,nakshatra_pada_entity,nakshatra_pada:16_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:16,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:16,nakshatra_pada_entity,nakshatra_pada:16_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:16,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:16,nakshatra_pada_entity,nakshatra_pada:16_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:16,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:16,nakshatra_pada_entity,nakshatra_pada:16_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:17,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:17,nakshatra_pada_entity,nakshatra_pada:17_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:17,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:17,nakshatra_pada_entity,nakshatra_pada:17_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:17,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:17,nakshatra_pada_entity,nakshatra_pada:17_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:17,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:17,nakshatra_pada_entity,nakshatra_pada:17_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:18,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:18,nakshatra_pada_entity,nakshatra_pada:18_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:18,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:18,nakshatra_pada_entity,nakshatra_pada:18_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:18,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:18,nakshatra_pada_entity,nakshatra_pada:18_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:18,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:18,nakshatra_pada_entity,nakshatra_pada:18_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:19,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:19,nakshatra_pada_entity,nakshatra_pada:19_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:19,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:19,nakshatra_pada_entity,nakshatra_pada:19_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:19,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:19,nakshatra_pada_entity,nakshatra_pada:19_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:19,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:19,nakshatra_pada_entity,nakshatra_pada:19_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:20,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:20,nakshatra_pada_entity,nakshatra_pada:20_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:20,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:20,nakshatra_pada_entity,nakshatra_pada:20_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:20,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:20,nakshatra_pada_entity,nakshatra_pada:20_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:20,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:20,nakshatra_pada_entity,nakshatra_pada:20_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:21,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:21,nakshatra_pada_entity,nakshatra_pada:21_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:21,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:21,nakshatra_pada_entity,nakshatra_pada:21_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:21,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:21,nakshatra_pada_entity,nakshatra_pada:21_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:21,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:21,nakshatra_pada_entity,nakshatra_pada:21_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:22,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:22,nakshatra_pada_entity,nakshatra_pada:22_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:22,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:22,nakshatra_pada_entity,nakshatra_pada:22_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:22,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:22,nakshatra_pada_entity,nakshatra_pada:22_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:22,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:22,nakshatra_pada_entity,nakshatra_pada:22_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:23,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:23,nakshatra_pada_entity,nakshatra_pada:23_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:23,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:23,nakshatra_pada_entity,nakshatra_pada:23_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:23,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:23,nakshatra_pada_entity,nakshatra_pada:23_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:23,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:23,nakshatra_pada_entity,nakshatra_pada:23_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:24,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:24,nakshatra_pada_entity,nakshatra_pada:24_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:24,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:24,nakshatra_pada_entity,nakshatra_pada:24_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:24,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:24,nakshatra_pada_entity,nakshatra_pada:24_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:24,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:24,nakshatra_pada_entity,nakshatra_pada:24_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:25,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:25,nakshatra_pada_entity,nakshatra_pada:25_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:25,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:25,nakshatra_pada_entity,nakshatra_pada:25_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:25,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:25,nakshatra_pada_entity,nakshatra_pada:25_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:25,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:25,nakshatra_pada_entity,nakshatra_pada:25_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:26,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:26,nakshatra_pada_entity,nakshatra_pada:26_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:26,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:26,nakshatra_pada_entity,nakshatra_pada:26_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:26,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:26,nakshatra_pada_entity,nakshatra_pada:26_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:26,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:26,nakshatra_pada_entity,nakshatra_pada:26_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:27,nakshatra_has_pada,pada:1,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:27,nakshatra_pada_entity,nakshatra_pada:27_1,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:27,nakshatra_has_pada,pada:2,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:27,nakshatra_pada_entity,nakshatra_pada:27_2,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:27,nakshatra_has_pada,pada:3,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:27,nakshatra_pada_entity,nakshatra_pada:27_3,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:27,nakshatra_has_pada,pada:4,structure,model_layered,derived: 4 padas per nakshatra
+nakshatra:27,nakshatra_pada_entity,nakshatra_pada:27_4,derived_set,model_layered,derived: nakshatra×pada (108) carrier node
+nakshatra:1,nakshatra_associated_deity,deity:ashwini_kumaras,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:1,nakshatra_ruling_graha,graha:ketu,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:2,nakshatra_associated_deity,deity:yama,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:2,nakshatra_ruling_graha,graha:venus,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:3,nakshatra_associated_deity,deity:agni,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:3,nakshatra_ruling_graha,graha:sun,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:4,nakshatra_associated_deity,deity:brahma,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:4,nakshatra_ruling_graha,graha:moon,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:5,nakshatra_associated_deity,deity:soma,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:5,nakshatra_ruling_graha,graha:mars,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:6,nakshatra_associated_deity,deity:rudra,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:6,nakshatra_ruling_graha,graha:rahu,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:7,nakshatra_associated_deity,deity:aditi,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:7,nakshatra_ruling_graha,graha:jupiter,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:8,nakshatra_associated_deity,deity:brihaspati,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:8,nakshatra_ruling_graha,graha:saturn,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:9,nakshatra_associated_deity,deity:nagas,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:9,nakshatra_ruling_graha,graha:mercury,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:10,nakshatra_associated_deity,deity:pitrs,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:10,nakshatra_ruling_graha,graha:ketu,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:11,nakshatra_associated_deity,deity:bhaga,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:11,nakshatra_ruling_graha,graha:venus,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:12,nakshatra_associated_deity,deity:aryaman,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:12,nakshatra_ruling_graha,graha:sun,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:13,nakshatra_associated_deity,deity:savitar,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:13,nakshatra_ruling_graha,graha:moon,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:14,nakshatra_associated_deity,deity:vishvakarma,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:14,nakshatra_ruling_graha,graha:mars,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:15,nakshatra_associated_deity,deity:vayu,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:15,nakshatra_ruling_graha,graha:rahu,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:16,nakshatra_associated_deity,deity:indraagni,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:16,nakshatra_ruling_graha,graha:jupiter,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:17,nakshatra_associated_deity,deity:mitra,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:17,nakshatra_ruling_graha,graha:saturn,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:18,nakshatra_associated_deity,deity:indra,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:18,nakshatra_ruling_graha,graha:mercury,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:19,nakshatra_associated_deity,deity:nirriti,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:19,nakshatra_ruling_graha,graha:ketu,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:20,nakshatra_associated_deity,deity:apas,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:20,nakshatra_ruling_graha,graha:venus,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:21,nakshatra_associated_deity,deity:vishvadevas,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:21,nakshatra_ruling_graha,graha:sun,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:22,nakshatra_associated_deity,deity:vishnu,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:22,nakshatra_ruling_graha,graha:moon,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:23,nakshatra_associated_deity,deity:vasus,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:23,nakshatra_ruling_graha,graha:mars,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:24,nakshatra_associated_deity,deity:varuna,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:24,nakshatra_ruling_graha,graha:rahu,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:25,nakshatra_associated_deity,deity:ajaekapada,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:25,nakshatra_ruling_graha,graha:jupiter,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:26,nakshatra_associated_deity,deity:ahirbudhnya,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:26,nakshatra_ruling_graha,graha:saturn,jyotisha,model_layered,from nakshatra.yaml ruler
+nakshatra:27,nakshatra_associated_deity,deity:pushan,jyotisha,model_layered,from nakshatra.yaml deity
+nakshatra:27,nakshatra_ruling_graha,graha:mercury,jyotisha,model_layered,from nakshatra.yaml ruler
+tithi:1,tithi_associated_nitya_devi,nitya_devi:kameshvari,tantra_time,model_layered,from nitya_devi_mapping.csv
+tithi:2,tithi_associated_nitya_devi,nitya_devi:bhagamalini,tantra_time,model_layered,from nitya_devi_mapping.csv
+tithi:3,tithi_associated_nitya_devi,nitya_devi:nityaklinna,tantra_time,model_layered,from nitya_devi_mapping.csv
+tithi:4,tithi_associated_nitya_devi,nitya_devi:bherunda,tantra_time,model_layered,from nitya_devi_mapping.csv
+tithi:5,tithi_associated_nitya_devi,nitya_devi:vahnivasini,tantra_time,model_layered,from nitya_devi_mapping.csv
+tithi:6,tithi_associated_nitya_devi,nitya_devi:mahavajreshvari,tantra_time,model_layered,from nitya_devi_mapping.csv
+tithi:7,tithi_associated_nitya_devi,nitya_devi:shivaduti,tantra_time,model_layered,from nitya_devi_mapping.csv
+tithi:8,tithi_associated_nitya_devi,nitya_devi:tvarita,tantra_time,model_layered,from nitya_devi_mapping.csv
+tithi:9,tithi_associated_nitya_devi,nitya_devi:kulasundari,tantra_time,model_layered,from nitya_devi_mapping.csv
+tithi:10,tithi_associated_nitya_devi,nitya_devi:nitya,tantra_time,model_layered,from nitya_devi_mapping.csv
+tithi:11,tithi_associated_nitya_devi,nitya_devi:nilapataka,tantra_time,model_layered,from nitya_devi_mapping.csv
+tithi:12,tithi_associated_nitya_devi,nitya_devi:vijaya,tantra_time,model_layered,from nitya_devi_mapping.csv
+tithi:13,tithi_associated_nitya_devi,nitya_devi:sarvamangala,tantra_time,model_layered,from nitya_devi_mapping.csv
+tithi:14,tithi_associated_nitya_devi,nitya_devi:jvalamalini,tantra_time,model_layered,from nitya_devi_mapping.csv
+tithi:15,tithi_associated_nitya_devi,nitya_devi:chitra,tantra_time,model_layered,from nitya_devi_mapping.csv
+deity:surya,identity_bridge,graha:surya,heuristic,model_layered,very conservative identity bridge
+deity:chandra,identity_bridge,graha:chandra,heuristic,model_layered,very conservative identity bridge

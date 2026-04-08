@@ -1,0 +1,109 @@
+id,idx,nakshatra,pada_n,element,ribbon,longitude_deg,knot_x,knot_y,knot_z,opposite_pada,triangle_pada,element_next,yantra_triangle_id,yantra_polarity,yantra_yuga
+pada_001,1,Ashwini,1,fire,matter,0.0,3.25,0.0,0.0,pada_055,pada_037;pada_073,earth,shiva_dvapara_1,Shiva,Dvapara
+pada_002,2,Ashwini,2,earth,matter,3.3333,3.2152,0.7814,0.3758,pada_056,pada_038;pada_074,air,shiva_dvapara_1,Shiva,Dvapara
+pada_003,3,Ashwini,3,air,matter,6.6667,3.1125,1.5391,0.7377,pada_057,pada_039;pada_075,water,shiva_dvapara_1,Shiva,Dvapara
+pada_004,4,Ashwini,4,water,matter,10.0,2.947,2.25,1.0726,pada_058,pada_040;pada_076,fire,shiva_dvapara_1,Shiva,Dvapara
+pada_005,5,Bharani,1,fire,antimatter,13.3333,-0.7849,-2.8925,1.5628,pada_059,pada_041;pada_077,earth,shakti_dvapara,Shakti,Dvapara
+pada_006,6,Bharani,2,earth,antimatter,16.6667,-1.0186,-3.4472,1.5487,pada_060,pada_042;pada_078,air,shakti_dvapara,Shakti,Dvapara
+pada_007,7,Bharani,3,air,antimatter,20.0,-1.2695,-3.8971,1.5129,pada_061,pada_043;pada_079,water,shakti_dvapara,Shakti,Dvapara
+pada_008,8,Bharani,4,water,antimatter,23.3333,-1.5342,-4.2286,1.4475,pada_062,pada_044;pada_080,fire,shakti_dvapara,Shakti,Dvapara
+pada_009,9,Krttika,1,fire,matter,26.6667,1.5213,4.4316,2.0435,pada_063,pada_045;pada_081,earth,shiva_satya,Shiva,Satya
+pada_010,10,Krttika,2,earth,matter,30.0,1.2,4.5,2.0785,pada_064,pada_046;pada_082,air,shiva_satya,Shiva,Satya
+pada_011,11,Krttika,3,air,matter,33.3333,0.8921,4.4316,2.0682,pada_065,pada_047;pada_083,water,shiva_satya,Shiva,Satya
+pada_012,12,Krttika,4,water,matter,36.6667,0.6049,4.2286,2.0207,pada_066,pada_048;pada_084,fire,shiva_satya,Shiva,Satya
+pada_013,13,Rohini,1,fire,antimatter,40.0,-2.7821,-3.8971,0.4906,pada_067,pada_049;pada_085,earth,shakti_kali,Shakti,Kali
+pada_014,14,Rohini,2,earth,antimatter,43.3333,-2.9414,-3.4472,0.1713,pada_068,pada_050;pada_086,air,shakti_kali,Shakti,Kali
+pada_015,15,Rohini,3,air,antimatter,46.6667,-3.046,-2.8925,-0.1774,pada_069,pada_051;pada_087,water,shakti_kali,Shakti,Kali
+pada_016,16,Rohini,4,water,antimatter,50.0,-3.0885,-2.25,-0.5446,pada_070,pada_052;pada_088,fire,shakti_kali,Shakti,Kali
+pada_017,17,Mrgasirsa,1,fire,matter,53.3333,-0.4592,1.5391,1.534,pada_071,pada_053;pada_089,earth,shiva_treta,Shiva,Treta
+pada_018,18,Mrgasirsa,2,earth,matter,56.6667,-0.619,0.7814,1.4351,pada_072,pada_054;pada_090,air,shiva_treta,Shiva,Treta
+pada_019,19,Mrgasirsa,3,air,matter,60.0,-0.775,0.0,1.3423,pada_073,pada_055;pada_091,water,shiva_treta,Shiva,Treta
+pada_020,20,Mrgasirsa,4,water,matter,63.3333,-0.9333,-0.7814,1.2536,pada_074,pada_056;pada_092,fire,shiva_treta,Shiva,Treta
+pada_021,21,Ardra,1,fire,antimatter,66.6667,-2.3267,1.5391,-2.1951,pada_075,pada_057;pada_093,earth,shakti_treta,Shakti,Treta
+pada_022,22,Ardra,2,earth,antimatter,70.0,-2.0159,2.25,-2.4024,pada_076,pada_058;pada_094,air,shakti_treta,Shakti,Treta
+pada_023,23,Ardra,3,air,antimatter,73.3333,-1.6766,2.8925,-2.5492,pada_077,pada_059;pada_095,water,shakti_treta,Shakti,Treta
+pada_024,24,Ardra,4,water,antimatter,76.6667,-1.3223,3.4472,-2.633,pada_078,pada_060;pada_096,fire,shakti_treta,Shakti,Treta
+pada_025,25,Punarvasu,1,fire,matter,80.0,-1.8559,-3.8971,0.6755,pada_079,pada_061;pada_097,earth,shiva_kali,Shiva,Kali
+pada_026,26,Punarvasu,2,earth,matter,83.3333,-2.0524,-4.2286,0.4864,pada_080,pada_062;pada_098,air,shiva_kali,Shiva,Kali
+pada_027,27,Punarvasu,3,air,matter,86.6667,-2.2372,-4.4316,0.2615,pada_081,pada_063;pada_099,water,shiva_kali,Shiva,Kali
+pada_028,28,Punarvasu,4,water,matter,90.0,-2.4,-4.5,0.0,pada_082,pada_064;pada_100,fire,shiva_kali,Shiva,Kali
+pada_029,29,Pusya,1,fire,antimatter,93.3333,0.2615,4.4316,-2.2372,pada_083,pada_065;pada_101,earth,shakti_satya,Shakti,Satya
+pada_030,30,Pusya,2,earth,antimatter,96.6667,0.4864,4.2286,-2.0524,pada_084,pada_066;pada_102,air,shakti_satya,Shakti,Satya
+pada_031,31,Pusya,3,air,antimatter,100.0,0.6755,3.8971,-1.8559,pada_085,pada_067;pada_103,water,shakti_satya,Shakti,Satya
+pada_032,32,Pusya,4,water,antimatter,103.3333,0.8319,3.4472,-1.6565,pada_086,pada_068;pada_104,fire,shakti_satya,Shakti,Satya
+pada_033,33,Aslesа,1,fire,matter,106.6667,-2.5492,-2.8925,-1.6766,pada_087,pada_069;pada_105,earth,shiva_dvapara_2,Shiva,Dvapara
+pada_034,34,Aslesа,2,earth,matter,110.0,-2.4024,-2.25,-2.0159,pada_088,pada_070;pada_106,air,shiva_dvapara_2,Shiva,Dvapara
+pada_035,35,Aslesа,3,air,matter,113.3333,-2.1951,-1.5391,-2.3267,pada_089,pada_071;pada_107,water,shiva_dvapara_2,Shiva,Dvapara
+pada_036,36,Aslesа,4,water,matter,116.6667,-1.9331,-0.7814,-2.5965,pada_090,pada_072;pada_108,fire,shiva_dvapara_2,Shiva,Dvapara
+pada_037,37,Magha,1,fire,antimatter,120.0,1.3423,0.0,-0.775,pada_091,pada_001;pada_073,earth,shiva_dvapara_1,Shiva,Dvapara
+pada_038,38,Magha,2,earth,antimatter,123.3333,1.4351,-0.7814,-0.619,pada_092,pada_002;pada_074,air,shiva_dvapara_1,Shiva,Dvapara
+pada_039,39,Magha,3,air,antimatter,126.6667,1.534,-1.5391,-0.4592,pada_093,pada_003;pada_075,water,shiva_dvapara_1,Shiva,Dvapara
+pada_040,40,Magha,4,water,antimatter,130.0,1.6386,-2.25,-0.2889,pada_094,pada_004;pada_076,fire,shiva_dvapara_1,Shiva,Dvapara
+pada_041,41,Purva Phalguni,1,fire,matter,133.3333,-0.1774,2.8925,-3.046,pada_095,pada_005;pada_077,earth,shakti_dvapara,Shakti,Dvapara
+pada_042,42,Purva Phalguni,2,earth,matter,136.6667,0.1713,3.4472,-2.9414,pada_096,pada_006;pada_078,air,shakti_dvapara,Shakti,Dvapara
+pada_043,43,Purva Phalguni,3,air,matter,140.0,0.4906,3.8971,-2.7821,pada_097,pada_007;pada_079,water,shakti_dvapara,Shakti,Dvapara
+pada_044,44,Purva Phalguni,4,water,matter,143.3333,0.7717,4.2286,-2.5777,pada_098,pada_008;pada_080,fire,shakti_dvapara,Shakti,Dvapara
+pada_045,45,Uttara Phalguni,1,fire,antimatter,146.6667,2.0682,-4.4316,0.8921,pada_099,pada_009;pada_081,earth,shiva_satya,Shiva,Satya
+pada_046,46,Uttara Phalguni,2,earth,antimatter,150.0,2.0785,-4.5,1.2,pada_100,pada_010;pada_082,air,shiva_satya,Shiva,Satya
+pada_047,47,Uttara Phalguni,3,air,antimatter,153.3333,2.0435,-4.4316,1.5213,pada_101,pada_011;pada_083,water,shiva_satya,Shiva,Satya
+pada_048,48,Uttara Phalguni,4,water,antimatter,156.6667,1.9572,-4.2286,1.8465,pada_102,pada_012;pada_084,fire,shiva_satya,Shiva,Satya
+pada_049,49,Hasta,1,fire,matter,160.0,1.5129,3.8971,-1.2695,pada_103,pada_013;pada_085,earth,shakti_kali,Shakti,Kali
+pada_050,50,Hasta,2,earth,matter,163.3333,1.5487,3.4472,-1.0186,pada_104,pada_014;pada_086,air,shakti_kali,Shakti,Kali
+pada_051,51,Hasta,3,air,matter,166.6667,1.5628,2.8925,-0.7849,pada_105,pada_015;pada_087,water,shakti_kali,Shakti,Kali
+pada_052,52,Hasta,4,water,matter,170.0,1.5635,2.25,-0.5691,pada_106,pada_016;pada_088,fire,shakti_kali,Shakti,Kali
+pada_053,53,Citra,1,fire,antimatter,173.3333,0.7377,-1.5391,3.1125,pada_107,pada_017;pada_089,earth,shiva_treta,Shiva,Treta
+pada_054,54,Citra,2,earth,antimatter,176.6667,0.3758,-0.7814,3.2152,pada_108,pada_018;pada_090,air,shiva_treta,Shiva,Treta
+pada_055,55,Citra,3,air,antimatter,180.0,0.0,-0.0,3.25,pada_001,pada_019;pada_091,water,shiva_treta,Shiva,Treta
+pada_056,56,Citra,4,water,antimatter,183.3333,-0.3758,0.7814,3.2152,pada_002,pada_020;pada_092,fire,shiva_treta,Shiva,Treta
+pada_057,57,Svati,1,fire,matter,186.6667,1.5581,-1.5391,0.3693,pada_003,pada_021;pada_093,earth,shakti_treta,Shakti,Treta
+pada_058,58,Svati,2,earth,matter,190.0,1.5635,-2.25,0.5691,pada_004,pada_022;pada_094,air,shakti_treta,Shakti,Treta
+pada_059,59,Svati,3,air,matter,193.3333,1.5628,-2.8925,0.7849,pada_005,pada_023;pada_095,water,shakti_treta,Shakti,Treta
+pada_060,60,Svati,4,water,matter,196.6667,1.5487,-3.4472,1.0186,pada_006,pada_024;pada_096,fire,shakti_treta,Shakti,Treta
+pada_061,61,Visakha,1,fire,antimatter,200.0,-1.8159,3.8971,2.1641,pada_007,pada_025;pada_097,earth,shiva_kali,Shiva,Kali
+pada_062,62,Visakha,2,earth,antimatter,203.3333,-1.9572,4.2286,1.8465,pada_008,pada_026;pada_098,air,shiva_kali,Shiva,Kali
+pada_063,63,Visakha,3,air,antimatter,206.6667,-2.0435,4.4316,1.5213,pada_009,pada_027;pada_099,water,shiva_kali,Shiva,Kali
+pada_064,64,Visakha,4,water,antimatter,210.0,-2.0785,4.5,1.2,pada_010,pada_028;pada_100,fire,shiva_kali,Shiva,Kali
+pada_065,65,Anuradha,1,fire,matter,213.3333,1.0091,-4.4316,2.3392,pada_011,pada_029;pada_101,earth,shakti_satya,Shakti,Satya
+pada_066,66,Anuradha,2,earth,matter,216.6667,0.7717,-4.2286,2.5777,pada_012,pada_030;pada_102,air,shakti_satya,Shakti,Satya
+pada_067,67,Anuradha,3,air,matter,220.0,0.4906,-3.8971,2.7821,pada_013,pada_031;pada_103,water,shakti_satya,Shakti,Satya
+pada_068,68,Anuradha,4,water,matter,223.3333,0.1713,-3.4472,2.9414,pada_014,pada_032;pada_104,fire,shakti_satya,Shakti,Satya
+pada_069,69,Jyestha,1,fire,antimatter,226.6667,-1.7459,2.8925,-0.1017,pada_015,pada_033;pada_105,earth,shiva_dvapara_2,Shiva,Dvapara
+pada_070,70,Jyestha,2,earth,antimatter,230.0,-1.6386,2.25,-0.2889,pada_016,pada_034;pada_106,air,shiva_dvapara_2,Shiva,Dvapara
+pada_071,71,Jyestha,3,air,antimatter,233.3333,-1.534,1.5391,-0.4592,pada_017,pada_035;pada_107,water,shiva_dvapara_2,Shiva,Dvapara
+pada_072,72,Jyestha,4,water,antimatter,236.6667,-1.4351,0.7814,-0.619,pada_018,pada_036;pada_108,fire,shiva_dvapara_2,Shiva,Dvapara
+pada_073,73,Mula,1,fire,matter,240.0,-1.625,-0.0,2.8146,pada_019,pada_001;pada_037,earth,shiva_dvapara_1,Shiva,Dvapara
+pada_074,74,Mula,2,earth,matter,243.3333,-1.9331,0.7814,2.5965,pada_020,pada_002;pada_038,air,shiva_dvapara_1,Shiva,Dvapara
+pada_075,75,Mula,3,air,matter,246.6667,-2.1951,1.5391,2.3267,pada_021,pada_003;pada_039,water,shiva_dvapara_1,Shiva,Dvapara
+pada_076,76,Mula,4,water,matter,250.0,-2.4024,2.25,2.0159,pada_022,pada_004;pada_040,fire,shiva_dvapara_1,Shiva,Dvapara
+pada_077,77,Purva Ashadha,1,fire,antimatter,253.3333,-0.961,-2.8925,-1.4612,pada_023,pada_005;pada_041,earth,shakti_dvapara,Shakti,Dvapara
+pada_078,78,Purva Ashadha,2,earth,antimatter,256.6667,-0.8319,-3.4472,-1.6565,pada_024,pada_006;pada_042,air,shakti_dvapara,Shakti,Dvapara
+pada_079,79,Purva Ashadha,3,air,antimatter,260.0,-0.6755,-3.8971,-1.8559,pada_025,pada_007;pada_043,water,shakti_dvapara,Shakti,Dvapara
+pada_080,80,Purva Ashadha,4,water,antimatter,263.3333,-0.4864,-4.2286,-2.0524,pada_026,pada_008;pada_044,fire,shakti_dvapara,Shakti,Dvapara
+pada_081,81,Uttara Ashadha,1,fire,matter,266.6667,-2.5304,4.4316,0.2958,pada_027,pada_009;pada_045,earth,shiva_satya,Shiva,Satya
+pada_082,82,Uttara Ashadha,2,earth,matter,270.0,-2.4,4.5,0.0,pada_028,pada_010;pada_046,air,shiva_satya,Shiva,Satya
+pada_083,83,Uttara Ashadha,3,air,matter,273.3333,-2.2372,4.4316,-0.2615,pada_029,pada_011;pada_047,water,shiva_satya,Shiva,Satya
+pada_084,84,Uttara Ashadha,4,water,matter,276.6667,-2.0524,4.2286,-0.4864,pada_030,pada_012;pada_048,fire,shiva_satya,Shiva,Satya
+pada_085,85,Sravana,1,fire,antimatter,280.0,0.9662,-3.8971,-2.6546,pada_031,pada_013;pada_049,earth,shakti_kali,Shakti,Kali
+pada_086,86,Sravana,2,earth,antimatter,283.3333,1.3223,-3.4472,-2.633,pada_032,pada_014;pada_050,air,shakti_kali,Shakti,Kali
+pada_087,87,Sravana,3,air,antimatter,286.6667,1.6766,-2.8925,-2.5492,pada_033,pada_015;pada_051,water,shakti_kali,Shakti,Kali
+pada_088,88,Sravana,4,water,antimatter,290.0,2.0159,-2.25,-2.4024,pada_034,pada_016;pada_052,fire,shakti_kali,Shakti,Kali
+pada_089,89,Dhanistha,1,fire,matter,293.3333,-1.0989,1.5391,-1.1647,pada_035,pada_017;pada_053,earth,shiva_treta,Shiva,Treta
+pada_090,90,Dhanistha,2,earth,matter,296.6667,-0.9333,0.7814,-1.2536,pada_036,pada_018;pada_054,air,shiva_treta,Shiva,Treta
+pada_091,91,Dhanistha,3,air,matter,300.0,-0.775,0.0,-1.3423,pada_037,pada_019;pada_055,water,shiva_treta,Shiva,Treta
+pada_092,92,Dhanistha,4,water,matter,303.3333,-0.619,-0.7814,-1.4351,pada_038,pada_020;pada_056,fire,shiva_treta,Shiva,Treta
+pada_093,93,Satabhi,1,fire,antimatter,306.6667,3.0644,1.5391,-0.9174,pada_039,pada_021;pada_057,earth,shakti_treta,Shakti,Treta
+pada_094,94,Satabhi,2,earth,antimatter,310.0,3.0885,2.25,-0.5446,pada_040,pada_022;pada_058,air,shakti_treta,Shakti,Treta
+pada_095,95,Satabhi,3,air,antimatter,313.3333,3.046,2.8925,-0.1774,pada_041,pada_023;pada_059,water,shakti_treta,Shakti,Treta
+pada_096,96,Satabhi,4,water,antimatter,316.6667,2.9414,3.4472,0.1713,pada_042,pada_024;pada_060,fire,shakti_treta,Shakti,Treta
+pada_097,97,Purva Bhadra,1,fire,matter,320.0,0.343,-3.8971,-1.945,pada_043,pada_025;pada_061,earth,shiva_kali,Shiva,Kali
+pada_098,98,Purva Bhadra,2,earth,matter,323.3333,0.6049,-4.2286,-2.0207,pada_044,pada_026;pada_062,air,shiva_kali,Shiva,Kali
+pada_099,99,Purva Bhadra,3,air,matter,326.6667,0.8921,-4.4316,-2.0682,pada_045,pada_027;pada_063,water,shiva_kali,Shiva,Kali
+pada_100,100,Purva Bhadra,4,water,matter,330.0,1.2,-4.5,-2.0785,pada_046,pada_028;pada_064,fire,shiva_kali,Shiva,Kali
+pada_101,101,Uttara Bhadra,1,fire,antimatter,333.3333,1.8067,4.4316,1.345,pada_047,pada_029;pada_065,earth,shakti_satya,Shakti,Satya
+pada_102,102,Uttara Bhadra,2,earth,antimatter,336.6667,1.5342,4.2286,1.4475,pada_048,pada_030;pada_066,air,shakti_satya,Shakti,Satya
+pada_103,103,Uttara Bhadra,3,air,antimatter,340.0,1.2695,3.8971,1.5129,pada_049,pada_031;pada_067,water,shakti_satya,Shakti,Satya
+pada_104,104,Uttara Bhadra,4,water,antimatter,343.3333,1.0186,3.4472,1.5487,pada_050,pada_032;pada_068,fire,shakti_satya,Shakti,Satya
+pada_105,105,Revati,1,fire,matter,346.6667,2.7266,-2.8925,-1.3693,pada_051,pada_033;pada_069,earth,shiva_dvapara_2,Shiva,Dvapara
+pada_106,106,Revati,2,earth,matter,350.0,2.947,-2.25,-1.0726,pada_052,pada_034;pada_070,air,shiva_dvapara_2,Shiva,Dvapara
+pada_107,107,Revati,3,air,matter,353.3333,3.1125,-1.5391,-0.7377,pada_053,pada_035;pada_071,water,shiva_dvapara_2,Shiva,Dvapara
+pada_108,108,Revati,4,water,matter,356.6667,3.2152,-0.7814,-0.3758,pada_054,pada_036;pada_072,fire,shiva_dvapara_2,Shiva,Dvapara

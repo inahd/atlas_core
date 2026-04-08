@@ -1,0 +1,14 @@
+{
+  "system": "directions",
+  "expected_count": 8,
+  "items": [
+    "East",
+    "Southeast",
+    "South",
+    "Southwest",
+    "West",
+    "Northwest",
+    "North",
+    "Northeast"
+  ]
+}

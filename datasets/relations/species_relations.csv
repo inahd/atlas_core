@@ -1,0 +1,164 @@
+from_id,relation,to_id,tradition,source,confidence,gaudiya_aligned,notes
+species:ashva,species_graha,graha:ketu,parashara,species_entities.csv / BPHS,0.95,false,Horse ruled by ketu
+species:ashva,species_graha,graha:sun,parashara,species_entities.csv / BPHS,0.855,false,Horse secondary ruler sun
+species:ashva,species_element,element:fire,ayurveda,species_entities.csv / Charaka Samhita,0.95,false,Horse primary element is fire
+species:ashva,species_element,element:air,ayurveda,species_entities.csv / Charaka Samhita,0.8075,false,Horse secondary element is air
+species:gaja,species_graha,graha:jupiter,parashara,species_entities.csv / BPHS,0.95,false,Elephant ruled by jupiter
+species:gaja,species_graha,graha:moon,parashara,species_entities.csv / BPHS,0.855,false,Elephant secondary ruler moon
+species:gaja,species_element,element:earth,ayurveda,species_entities.csv / Charaka Samhita,0.95,false,Elephant primary element is earth
+species:gaja,species_element,element:water,ayurveda,species_entities.csv / Charaka Samhita,0.8075,false,Elephant secondary element is water
+species:mesha,species_graha,graha:sun,parashara,species_entities.csv / BPHS,0.95,false,Sheep ruled by sun
+species:mesha,species_graha,graha:mars,parashara,species_entities.csv / BPHS,0.855,false,Sheep secondary ruler mars
+species:mesha,species_element,element:fire,ayurveda,species_entities.csv / Charaka Samhita,0.95,false,Sheep primary element is fire
+species:mesha,species_element,element:earth,ayurveda,species_entities.csv / Charaka Samhita,0.8075,false,Sheep secondary element is earth
+species:sarpa,species_graha,graha:rahu,parashara,species_entities.csv / BPHS,0.95,false,Serpent ruled by rahu
+species:sarpa,species_graha,graha:moon,parashara,species_entities.csv / BPHS,0.855,false,Serpent secondary ruler moon
+species:sarpa,species_element,element:water,ayurveda,species_entities.csv / Charaka Samhita,0.95,false,Serpent primary element is water
+species:sarpa,species_element,element:fire,ayurveda,species_entities.csv / Charaka Samhita,0.8075,false,Serpent secondary element is fire
+species:shvan,species_graha,graha:ketu,parashara,species_entities.csv / BPHS,0.95,false,Dog ruled by ketu
+species:shvan,species_graha,graha:mars,parashara,species_entities.csv / BPHS,0.855,false,Dog secondary ruler mars
+species:shvan,species_element,element:air,ayurveda,species_entities.csv / Charaka Samhita,0.95,false,Dog primary element is air
+species:shvan,species_element,element:fire,ayurveda,species_entities.csv / Charaka Samhita,0.8075,false,Dog secondary element is fire
+species:marjara,species_graha,graha:venus,parashara,species_entities.csv / BPHS,0.95,false,Cat ruled by venus
+species:marjara,species_graha,graha:moon,parashara,species_entities.csv / BPHS,0.855,false,Cat secondary ruler moon
+species:marjara,species_element,element:water,ayurveda,species_entities.csv / Charaka Samhita,0.95,false,Cat primary element is water
+species:marjara,species_element,element:air,ayurveda,species_entities.csv / Charaka Samhita,0.8075,false,Cat secondary element is air
+species:mushaka,species_graha,graha:mercury,parashara,species_entities.csv / BPHS,0.95,false,Mouse ruled by mercury
+species:mushaka,species_graha,graha:ketu,parashara,species_entities.csv / BPHS,0.855,false,Mouse secondary ruler ketu
+species:mushaka,species_element,element:earth,ayurveda,species_entities.csv / Charaka Samhita,0.95,false,Mouse primary element is earth
+species:mushaka,species_element,element:fire,ayurveda,species_entities.csv / Charaka Samhita,0.8075,false,Mouse secondary element is fire
+species:go,species_graha,graha:jupiter,parashara,species_entities.csv / BPHS,0.95,false,Cow ruled by jupiter
+species:go,species_graha,graha:venus,parashara,species_entities.csv / BPHS,0.855,false,Cow secondary ruler venus
+species:go,species_element,element:earth,ayurveda,species_entities.csv / Charaka Samhita,0.95,false,Cow primary element is earth
+species:go,species_element,element:water,ayurveda,species_entities.csv / Charaka Samhita,0.8075,false,Cow secondary element is water
+species:mahisha,species_graha,graha:saturn,parashara,species_entities.csv / BPHS,0.95,false,Buffalo ruled by saturn
+species:mahisha,species_graha,graha:mars,parashara,species_entities.csv / BPHS,0.855,false,Buffalo secondary ruler mars
+species:mahisha,species_element,element:water,ayurveda,species_entities.csv / Charaka Samhita,0.95,false,Buffalo primary element is water
+species:mahisha,species_element,element:earth,ayurveda,species_entities.csv / Charaka Samhita,0.8075,false,Buffalo secondary element is earth
+species:vyaghra,species_graha,graha:mars,parashara,species_entities.csv / BPHS,0.95,false,Tiger ruled by mars
+species:vyaghra,species_graha,graha:sun,parashara,species_entities.csv / BPHS,0.855,false,Tiger secondary ruler sun
+species:vyaghra,species_element,element:fire,ayurveda,species_entities.csv / Charaka Samhita,0.95,false,Tiger primary element is fire
+species:vyaghra,species_element,element:water,ayurveda,species_entities.csv / Charaka Samhita,0.8075,false,Tiger secondary element is water
+species:shasha,species_graha,graha:moon,parashara,species_entities.csv / BPHS,0.95,false,Rabbit ruled by moon
+species:shasha,species_graha,graha:venus,parashara,species_entities.csv / BPHS,0.855,false,Rabbit secondary ruler venus
+species:shasha,species_element,element:air,ayurveda,species_entities.csv / Charaka Samhita,0.95,false,Rabbit primary element is air
+species:shasha,species_element,element:earth,ayurveda,species_entities.csv / Charaka Samhita,0.8075,false,Rabbit secondary element is earth
+species:vanara,species_graha,graha:mercury,parashara,species_entities.csv / BPHS,0.95,false,Monkey ruled by mercury
+species:vanara,species_graha,graha:mars,parashara,species_entities.csv / BPHS,0.855,false,Monkey secondary ruler mars
+species:vanara,species_element,element:air,ayurveda,species_entities.csv / Charaka Samhita,0.95,false,Monkey primary element is air
+species:vanara,species_element,element:fire,ayurveda,species_entities.csv / Charaka Samhita,0.8075,false,Monkey secondary element is fire
+species:nakula,species_graha,graha:mars,parashara,species_entities.csv / BPHS,0.95,false,Mongoose ruled by mars
+species:nakula,species_graha,graha:ketu,parashara,species_entities.csv / BPHS,0.855,false,Mongoose secondary ruler ketu
+species:nakula,species_element,element:fire,ayurveda,species_entities.csv / Charaka Samhita,0.95,false,Mongoose primary element is fire
+species:nakula,species_element,element:air,ayurveda,species_entities.csv / Charaka Samhita,0.8075,false,Mongoose secondary element is air
+species:simha,species_graha,graha:sun,parashara,species_entities.csv / BPHS,0.95,false,Lion ruled by sun
+species:simha,species_graha,graha:mars,parashara,species_entities.csv / BPHS,0.855,false,Lion secondary ruler mars
+species:simha,species_element,element:fire,ayurveda,species_entities.csv / Charaka Samhita,0.95,false,Lion primary element is fire
+species:simha,species_element,element:earth,ayurveda,species_entities.csv / Charaka Samhita,0.8075,false,Lion secondary element is earth
+species:mayura,species_graha,graha:mars,parashara,species_entities.csv / BPHS,0.92,false,Peacock ruled by mars
+species:mayura,species_graha,graha:venus,parashara,species_entities.csv / BPHS,0.8280000000000001,false,Peacock secondary ruler venus
+species:mayura,species_element,element:fire,ayurveda,species_entities.csv / Charaka Samhita,0.92,false,Peacock primary element is fire
+species:mayura,species_element,element:air,ayurveda,species_entities.csv / Charaka Samhita,0.782,false,Peacock secondary element is air
+species:hamsa,species_graha,graha:jupiter,parashara,species_entities.csv / BPHS,0.92,false,Swan ruled by jupiter
+species:hamsa,species_graha,graha:venus,parashara,species_entities.csv / BPHS,0.8280000000000001,false,Swan secondary ruler venus
+species:hamsa,species_element,element:ether,ayurveda,species_entities.csv / Charaka Samhita,0.92,false,Swan primary element is ether
+species:hamsa,species_element,element:air,ayurveda,species_entities.csv / Charaka Samhita,0.782,false,Swan secondary element is air
+species:garuda,species_graha,graha:sun,parashara,species_entities.csv / BPHS,0.92,false,Garuda ruled by sun
+species:garuda,species_graha,graha:jupiter,parashara,species_entities.csv / BPHS,0.8280000000000001,false,Garuda secondary ruler jupiter
+species:garuda,species_element,element:fire,ayurveda,species_entities.csv / Charaka Samhita,0.92,false,Garuda primary element is fire
+species:garuda,species_element,element:ether,ayurveda,species_entities.csv / Charaka Samhita,0.782,false,Garuda secondary element is ether
+species:nandi,species_graha,graha:saturn,parashara,species_entities.csv / BPHS,0.92,false,Nandi Bull ruled by saturn
+species:nandi,species_graha,graha:jupiter,parashara,species_entities.csv / BPHS,0.8280000000000001,false,Nandi Bull secondary ruler jupiter
+species:nandi,species_element,element:earth,ayurveda,species_entities.csv / Charaka Samhita,0.92,false,Nandi Bull primary element is earth
+species:nandi,species_element,element:water,ayurveda,species_entities.csv / Charaka Samhita,0.782,false,Nandi Bull secondary element is water
+species:uluka,species_graha,graha:saturn,parashara,species_entities.csv / BPHS,0.92,false,Owl ruled by saturn
+species:uluka,species_graha,graha:rahu,parashara,species_entities.csv / BPHS,0.8280000000000001,false,Owl secondary ruler rahu
+species:uluka,species_element,element:air,ayurveda,species_entities.csv / Charaka Samhita,0.92,false,Owl primary element is air
+species:uluka,species_element,element:earth,ayurveda,species_entities.csv / Charaka Samhita,0.782,false,Owl secondary element is earth
+species:shuka,species_graha,graha:venus,parashara,species_entities.csv / BPHS,0.90,false,Parrot ruled by venus
+species:shuka,species_graha,graha:mercury,parashara,species_entities.csv / BPHS,0.81,false,Parrot secondary ruler mercury
+species:shuka,species_element,element:air,ayurveda,species_entities.csv / Charaka Samhita,0.90,false,Parrot primary element is air
+species:shuka,species_element,element:fire,ayurveda,species_entities.csv / Charaka Samhita,0.765,false,Parrot secondary element is fire
+species:makara,species_graha,graha:saturn,parashara,species_entities.csv / BPHS,0.90,false,Makara ruled by saturn
+species:makara,species_graha,graha:moon,parashara,species_entities.csv / BPHS,0.81,false,Makara secondary ruler moon
+species:makara,species_element,element:water,ayurveda,species_entities.csv / Charaka Samhita,0.90,false,Makara primary element is water
+species:makara,species_element,element:earth,ayurveda,species_entities.csv / Charaka Samhita,0.765,false,Makara secondary element is earth
+species:airavata,species_graha,graha:jupiter,parashara,species_entities.csv / BPHS,0.90,false,Airavata ruled by jupiter
+species:airavata,species_graha,graha:moon,parashara,species_entities.csv / BPHS,0.81,false,Airavata secondary ruler moon
+species:airavata,species_element,element:ether,ayurveda,species_entities.csv / Charaka Samhita,0.90,false,Airavata primary element is ether
+species:airavata,species_element,element:water,ayurveda,species_entities.csv / Charaka Samhita,0.765,false,Airavata secondary element is water
+nakshatra:ashwini,nakshatra_yoni,species:ashva,parashara,nakshatra_species.csv / BPHS,0.95,false,Ashwini yoni_male → Horse
+nakshatra:shatabhisha,nakshatra_yoni,species:ashva,parashara,nakshatra_species.csv / BPHS,0.95,false,Shatabhisha yoni_female → Horse
+nakshatra:bharani,nakshatra_yoni,species:gaja,parashara,nakshatra_species.csv / BPHS,0.95,false,Bharani yoni_male → Elephant
+nakshatra:revati,nakshatra_yoni,species:gaja,parashara,nakshatra_species.csv / BPHS,0.95,false,Revati yoni_female → Elephant
+nakshatra:krittika,nakshatra_yoni,species:mesha,parashara,nakshatra_species.csv / BPHS,0.95,false,Krittika yoni_male → Sheep
+nakshatra:pushya,nakshatra_yoni,species:mesha,parashara,nakshatra_species.csv / BPHS,0.95,false,Pushya yoni_female → Sheep
+nakshatra:rohini,nakshatra_yoni,species:sarpa,parashara,nakshatra_species.csv / BPHS,0.95,false,Rohini yoni_male → Serpent
+nakshatra:mrigashira,nakshatra_yoni,species:sarpa,parashara,nakshatra_species.csv / BPHS,0.95,false,Mrigashira yoni_female → Serpent
+nakshatra:mula,nakshatra_yoni,species:shvan,parashara,nakshatra_species.csv / BPHS,0.95,false,Mula yoni_male → Dog
+nakshatra:ardra,nakshatra_yoni,species:shvan,parashara,nakshatra_species.csv / BPHS,0.95,false,Ardra yoni_female → Dog
+nakshatra:punarvasu,nakshatra_yoni,species:marjara,parashara,nakshatra_species.csv / BPHS,0.95,false,Punarvasu yoni_male → Cat
+nakshatra:ashlesha,nakshatra_yoni,species:marjara,parashara,nakshatra_species.csv / BPHS,0.95,false,Ashlesha yoni_female → Cat
+nakshatra:magha,nakshatra_yoni,species:mushaka,parashara,nakshatra_species.csv / BPHS,0.95,false,Magha yoni_male → Mouse
+nakshatra:purva_phalguni,nakshatra_yoni,species:mushaka,parashara,nakshatra_species.csv / BPHS,0.95,false,Purva Phalguni yoni_female → Mouse
+nakshatra:uttara_phalguni,nakshatra_yoni,species:go,parashara,nakshatra_species.csv / BPHS,0.95,false,Uttara Phalguni yoni_male → Cow
+nakshatra:uttara_bhadrapada,nakshatra_yoni,species:go,parashara,nakshatra_species.csv / BPHS,0.95,false,Uttara Bhadrapada yoni_female → Cow
+nakshatra:hasta,nakshatra_yoni,species:mahisha,parashara,nakshatra_species.csv / BPHS,0.95,false,Hasta yoni_male → Buffalo
+nakshatra:swati,nakshatra_yoni,species:mahisha,parashara,nakshatra_species.csv / BPHS,0.95,false,Swati yoni_female → Buffalo
+nakshatra:chitra,nakshatra_yoni,species:vyaghra,parashara,nakshatra_species.csv / BPHS,0.95,false,Chitra yoni_male → Tiger
+nakshatra:vishakha,nakshatra_yoni,species:vyaghra,parashara,nakshatra_species.csv / BPHS,0.95,false,Vishakha yoni_female → Tiger
+nakshatra:anuradha,nakshatra_yoni,species:shasha,parashara,nakshatra_species.csv / BPHS,0.95,false,Anuradha yoni_male → Rabbit
+nakshatra:jyeshtha,nakshatra_yoni,species:shasha,parashara,nakshatra_species.csv / BPHS,0.95,false,Jyeshtha yoni_female → Rabbit
+nakshatra:purva_ashadha,nakshatra_yoni,species:vanara,parashara,nakshatra_species.csv / BPHS,0.95,false,Purva Ashadha yoni_male → Monkey
+nakshatra:shravana,nakshatra_yoni,species:vanara,parashara,nakshatra_species.csv / BPHS,0.95,false,Shravana yoni_female → Monkey
+nakshatra:uttara_ashadha,nakshatra_yoni,species:nakula,parashara,nakshatra_species.csv / BPHS,0.95,false,Uttara Ashadha yoni_female → Mongoose
+nakshatra:dhanishtha,nakshatra_yoni,species:simha,parashara,nakshatra_species.csv / BPHS,0.95,false,Dhanishtha yoni_male → Lion
+nakshatra:purva_bhadrapada,nakshatra_yoni,species:simha,parashara,nakshatra_species.csv / BPHS,0.95,false,Purva Bhadrapada yoni_female → Lion
+deity:shiva,deity_vahana,species:nandi,shaiva,Shiva Purana,0.95,false,Stillness bears the cosmic dance; Nandi faces Shiva in eternal meditation
+deity:vishnu,deity_vahana,species:garuda,vaishnava,Garuda Purana,0.95,true,Speed conquers serpent of maya; wings carry supreme preserver across creation
+deity:brahma,deity_vahana,species:hamsa,vedic,Upanishads,0.92,false,Swan discerns essence from appearance; Brahma creates through discernment
+deity:saraswati,deity_vahana,species:hamsa,vedic,Upanishads,0.92,false,Swan glides on waters of learning; Saraswati flows as knowledge itself
+deity:ganesha,deity_vahana,species:mushaka,ganapatya,Ganapati Upanishad,0.92,false,Mouse penetrates where elephant cannot; together they open every path
+deity:kartikeya,deity_vahana,species:mayura,shaiva,Skanda Purana,0.92,false,Peacock devours serpent; Kartikeya destroys demon of ego with beauty and valor
+deity:indra,deity_vahana,species:airavata,vedic,Bhagavata Purana,0.90,false,White elephant churns clouds; Indra rules the sky-realm and sends rain
+deity:lakshmi,deity_vahana,species:uluka,vaishnava,Lakshmi Tantra,0.88,true,Owl sees in darkness as Lakshmi reveals hidden prosperity to the devoted
+deity:kamadeva,deity_vahana,species:shuka,vaishnava,Kama Sutra,0.88,true,Parrot repeats love-words; Kama shoots arrows of attraction that echo endlessly
+deity:varuna,deity_vahana,species:makara,vedic,Matsya Purana,0.90,false,Makara guards oceanic gateway; Varuna upholds cosmic order from the deep
+deity:durga,deity_vahana,species:simha,shakta,Devi Mahatmya,0.95,false,Lion roars away fear; Durga rides lion to protect creation from demons
+deity:parvati,deity_vahana,species:vyaghra,shakta,Markandeya Purana,0.85,false,Tiger carries wild shakti; Parvati in fierce form rides raw natural power
+deity:yama,deity_vahana,species:go,vedic,Garuda Purana,0.88,false,Bull carries the weight of dharma; Yama judges by dharmic law with patient measure
+species:ashva,species_plant,plant:ashwagandha,ayurveda,BPHS + Charaka Samhita,0.92,false,Ashwagandha (horse smell) restores vitality like the horse yoni of Ashwini
+species:ashva,species_plant,plant:shatavari,ayurveda,BPHS + Charaka Samhita,0.80,false,Shatavari shares Shatabhisha nakshatra with horse yoni
+species:gaja,species_plant,plant:banana,ayurveda,BPHS + Ayurveda,0.78,false,Banana shares earth element and Jupiter rulership with elephant
+species:gaja,species_plant,plant:lotus,ayurveda,BPHS + Puranas,0.82,false,Lotus and elephant share auspicious Jupiter quality in Revati
+species:mesha,species_plant,plant:agnihotra_grass,ayurveda,BPHS + Yajurveda,0.72,false,Fire grasses share Krittika solar fire with sacrificial sheep
+species:mesha,species_plant,plant:kusha,ayurveda,Yajurveda,0.75,false,Kusha grass and sheep both central to Vedic yajna
+species:sarpa,species_plant,plant:neem,ayurveda,BPHS + Charaka Samhita,0.85,false,Neem cools serpent fire; both share Rahu and water element
+species:sarpa,species_plant,plant:nagakesara,ayurveda,Bhavaprakasha,0.80,false,Nagakesara (serpent-stamen) is traditionally paired with Naga/Sarpa
+species:shvan,species_plant,plant:tulsi,ayurveda,BPHS + Bhavaprakasha,0.78,false,Tulsi and dog both bear Ketu transformative quality at Mula
+species:shvan,species_plant,plant:calotropis,ayurveda,BPHS + Ayurveda,0.72,false,Calotropis (arka) shares Ardra fierce energy with dog yoni
+species:marjara,species_plant,plant:brahmi,ayurveda,BPHS + Charaka Samhita,0.82,false,Brahmi and cat share lunar water sattva at Punarvasu
+species:marjara,species_plant,plant:jasmine,ayurveda,Bhavaprakasha,0.75,false,Jasmine and cat share Venus refinement and nocturnal quality
+species:mushaka,species_plant,plant:durva,ayurveda,BPHS + Puranas,0.80,false,Durva grass and mouse share Mercury earth quality; both sacred to Ganesha
+species:mushaka,species_plant,plant:palasha,ayurveda,BPHS + Ayurveda,0.72,false,Palasha shares Purva Phalguni creative earth energy with mouse
+species:go,species_plant,plant:tulsi,ayurveda,BPHS + Bhagavata Purana,0.88,false,Tulsi and cow are both supreme sattvic beings in Vaishnava tradition
+species:go,species_plant,plant:darbha,ayurveda,Dharmashastra,0.82,false,Darbha grass and cow both essential to dharmic ritual
+species:mahisha,species_plant,plant:lotus,ayurveda,BPHS + Devi Mahatmya,0.75,false,Lotus and buffalo share water endurance; Durga stands on buffalo near lotus
+species:mahisha,species_plant,plant:vetiver,ayurveda,BPHS + Ayurveda,0.70,false,Vetiver shares Swati water grounding with buffalo
+species:vyaghra,species_plant,plant:bilva,ayurveda,BPHS + Shiva Purana,0.78,false,Bilva and tiger share Mars fire; both sacred to Shiva
+species:vyaghra,species_plant,plant:red_sandalwood,ayurveda,Ayurveda,0.72,false,Red sandalwood and tiger share Mars sovereign fire quality
+species:shasha,species_plant,plant:chandana,ayurveda,BPHS + Charaka Samhita,0.78,false,Sandalwood and rabbit share gentle lunar air quality
+species:shasha,species_plant,plant:jasmine,ayurveda,Bhavaprakasha,0.70,false,Jasmine and rabbit share Venus devotional gentleness
+species:vanara,species_plant,plant:amla,ayurveda,BPHS + Charaka Samhita,0.78,false,Amla and monkey share Mercury air intelligence
+species:vanara,species_plant,plant:banana,ayurveda,BPHS + Ramayana,0.75,false,Banana shares Shravana with monkey; Hanuman fond of banana
+species:nakula,species_plant,plant:haridra,ayurveda,BPHS + Charaka Samhita,0.80,false,Turmeric and mongoose both antidotes to serpent venom
+species:simha,species_plant,plant:sunflower,ayurveda,BPHS + Ayurveda,0.75,false,Sunflower and lion share solar fire sovereignty
+species:simha,species_plant,plant:palasha,ayurveda,BPHS + Puranas,0.70,false,Palasha flame-of-forest shares fierce fire with lion
+species:mayura,species_plant,plant:neem,ayurveda,Brihat Samhita,0.78,false,Peacock eats serpents; neem purifies serpent poison
+species:hamsa,species_plant,plant:lotus,ayurveda,Upanishads,0.85,false,Swan discriminates milk from water as lotus rises from mud
+species:garuda,species_plant,plant:amrita,ayurveda,Garuda Purana,0.82,false,Garuda carries amrita; serpent-enemy brings immortal nectar
+species:nandi,species_plant,plant:bilva,ayurveda,Shiva Purana,0.85,false,Nandi and bilva both sacred to Shiva; earth-sattva pair
+species:uluka,species_plant,plant:ashoka,ayurveda,Lakshmi Tantra,0.68,false,Owl and ashoka tree share Saturn patience in darkness
+species:shuka,species_plant,plant:mango,ayurveda,Kama Sutra,0.78,false,Parrot perches in mango; both symbols of Kamadeva desire
+species:makara,species_plant,plant:lotus,ayurveda,Matsya Purana,0.75,false,Makara guards gateway as lotus emerges from water
+species:airavata,species_plant,plant:lotus,ayurveda,Bhagavata Purana,0.80,false,Airavata draws water that becomes rain; lotus receives rain

@@ -1,0 +1,101 @@
+herb_name,class_id,class_name,notes,attestation_status
+ginger,C1,SOLAR-FIRE (Agni),from report example list,TRADITIONAL/INTERPRETIVE
+turmeric,C1,SOLAR-FIRE (Agni),from report example list,TRADITIONAL/INTERPRETIVE
+black pepper,C1,SOLAR-FIRE (Agni),from report example list,TRADITIONAL/INTERPRETIVE
+long pepper,C1,SOLAR-FIRE (Agni),from report example list,TRADITIONAL/INTERPRETIVE
+cayenne,C1,SOLAR-FIRE (Agni),from report example list,TRADITIONAL/INTERPRETIVE
+cinnamon,C1,SOLAR-FIRE (Agni),from report example list,TRADITIONAL/INTERPRETIVE
+garlic,C1,SOLAR-FIRE (Agni),from report example list,TRADITIONAL/INTERPRETIVE
+rosemary,C1,SOLAR-FIRE (Agni),from report example list,TRADITIONAL/INTERPRETIVE
+thyme,C1,SOLAR-FIRE (Agni),from report example list,TRADITIONAL/INTERPRETIVE
+oregano,C1,SOLAR-FIRE (Agni),from report example list,TRADITIONAL/INTERPRETIVE
+eucalyptus,C1,SOLAR-FIRE (Agni),from report example list,TRADITIONAL/INTERPRETIVE
+neem,C1,SOLAR-FIRE (Agni),leaf but strongly heat-clearing antimicrobial in many systems; flag as mixed,TRADITIONAL/INTERPRETIVE
+goldenseal,C1,SOLAR-FIRE (Agni),berberine-rich; non-Florida,TRADITIONAL/INTERPRETIVE
+andrographis,C1,SOLAR-FIRE (Agni),from report example list,TRADITIONAL/INTERPRETIVE
+mustard seed,C1,SOLAR-FIRE (Agni),from report example list,TRADITIONAL/INTERPRETIVE
+cumin seed,C1,SOLAR-FIRE (Agni),from report example list,TRADITIONAL/INTERPRETIVE
+fennel seed,C1,SOLAR-FIRE (Agni),mixed,TRADITIONAL/INTERPRETIVE
+clove,C1,SOLAR-FIRE (Agni),from report example list,TRADITIONAL/INTERPRETIVE
+galangal,C1,SOLAR-FIRE (Agni),from report example list,TRADITIONAL/INTERPRETIVE
+asafoetida,C1,SOLAR-FIRE (Agni),from report example list,TRADITIONAL/INTERPRETIVE
+licorice,C2,LUNAR-WATER (Soma),from report example list,TRADITIONAL/INTERPRETIVE
+marshmallow,C2,LUNAR-WATER (Soma),from report example list,TRADITIONAL/INTERPRETIVE
+plantain leaf,C2,LUNAR-WATER (Soma),from report example list,TRADITIONAL/INTERPRETIVE
+aloe,C2,LUNAR-WATER (Soma),Florida-possible but not in UF table; verify,TRADITIONAL/INTERPRETIVE
+shatavari,C2,LUNAR-WATER (Soma),from report example list,TRADITIONAL/INTERPRETIVE
+amalaki,C2,LUNAR-WATER (Soma),cooling rasayana profile in Ayurveda; validate in chosen materia medica source,TRADITIONAL/INTERPRETIVE
+goji fruit,C2,LUNAR-WATER (Soma),from report example list,TRADITIONAL/INTERPRETIVE
+longan fruit,C2,LUNAR-WATER (Soma),from report example list,TRADITIONAL/INTERPRETIVE
+rehmannia,C2,LUNAR-WATER (Soma),Shu Di; if included later,TRADITIONAL/INTERPRETIVE
+oats (milky),C2,LUNAR-WATER (Soma),from report example list,TRADITIONAL/INTERPRETIVE
+slippery elm,C2,LUNAR-WATER (Soma),from report example list,TRADITIONAL/INTERPRETIVE
+mullein leaf,C2,LUNAR-WATER (Soma),from report example list,TRADITIONAL/INTERPRETIVE
+violet,C2,LUNAR-WATER (Soma),from report example list,TRADITIONAL/INTERPRETIVE
+chrysanthemum,C2,LUNAR-WATER (Soma),cooling,TRADITIONAL/INTERPRETIVE
+bai shao,C2,LUNAR-WATER (Soma),white peony,TRADITIONAL/INTERPRETIVE
+dong quai,C2,LUNAR-WATER (Soma),blood-nourishing but warm; flag as mixed,TRADITIONAL/INTERPRETIVE
+pearl powder,C2,LUNAR-WATER (Soma),from report example list,TRADITIONAL/INTERPRETIVE
+rose,C2,LUNAR-WATER (Soma),cooling heart,TRADITIONAL/INTERPRETIVE
+lotus seed,C2,LUNAR-WATER (Soma),from report example list,TRADITIONAL/INTERPRETIVE
+centella (gotu kola),C2,LUNAR-WATER (Soma),from report example list,TRADITIONAL/INTERPRETIVE
+peppermint,C3,WIND-AIR (Vayu),from report example list,TRADITIONAL/INTERPRETIVE
+lemon balm,C3,WIND-AIR (Vayu),from report example list,TRADITIONAL/INTERPRETIVE
+lavender,C3,WIND-AIR (Vayu),from report example list,TRADITIONAL/INTERPRETIVE
+basil,C3,WIND-AIR (Vayu),tulsi/hot basil can go here or C1,TRADITIONAL/INTERPRETIVE
+fennel,C3,WIND-AIR (Vayu),also digestive,TRADITIONAL/INTERPRETIVE
+chamomile,C3,WIND-AIR (Vayu),flower,TRADITIONAL/INTERPRETIVE
+skullcap,C3,WIND-AIR (Vayu),from report example list,TRADITIONAL/INTERPRETIVE
+passionflower,C3,WIND-AIR (Vayu),also C5,TRADITIONAL/INTERPRETIVE
+violet flower,C3,WIND-AIR (Vayu),from report example list,TRADITIONAL/INTERPRETIVE
+chrysanthemum flower,C3,WIND-AIR (Vayu),from report example list,TRADITIONAL/INTERPRETIVE
+schisandra,C3,WIND-AIR (Vayu),astringent + adaptogenic; mixed,TRADITIONAL/INTERPRETIVE
+sage,C3,WIND-AIR (Vayu),from report example list,TRADITIONAL/INTERPRETIVE
+thyme,C3,WIND-AIR (Vayu),shared with C1,TRADITIONAL/INTERPRETIVE
+yarrow,C3,WIND-AIR (Vayu),flower,TRADITIONAL/INTERPRETIVE
+calendula flower,C3,WIND-AIR (Vayu),from report example list,TRADITIONAL/INTERPRETIVE
+hops,C3,WIND-AIR (Vayu),from report example list,TRADITIONAL/INTERPRETIVE
+rosemary flower tops,C3,WIND-AIR (Vayu),from report example list,TRADITIONAL/INTERPRETIVE
+holy basil flower spikes,C3,WIND-AIR (Vayu),from report example list,TRADITIONAL/INTERPRETIVE
+anise seed,C3,WIND-AIR (Vayu),from report example list,TRADITIONAL/INTERPRETIVE
+dill seed,C3,WIND-AIR (Vayu),from report example list,TRADITIONAL/INTERPRETIVE
+ashwagandha root,C4,EARTH-ROOT (Prithvi),from report example list,TRADITIONAL/INTERPRETIVE
+burdock root,C4,EARTH-ROOT (Prithvi),from report example list,TRADITIONAL/INTERPRETIVE
+dandelion root,C4,EARTH-ROOT (Prithvi),from report example list,TRADITIONAL/INTERPRETIVE
+codonopsis root,C4,EARTH-ROOT (Prithvi),from report example list,TRADITIONAL/INTERPRETIVE
+astragalus root,C4,EARTH-ROOT (Prithvi),from report example list,TRADITIONAL/INTERPRETIVE
+ginseng root,C4,EARTH-ROOT (Prithvi),climate-limited in Florida,TRADITIONAL/INTERPRETIVE
+eleuthero root,C4,EARTH-ROOT (Prithvi),from report example list,TRADITIONAL/INTERPRETIVE
+haritaki/bibhitaki,C4,EARTH-ROOT (Prithvi),fruits but deep building/clearing; mixed,TRADITIONAL/INTERPRETIVE
+yellow dock root,C4,EARTH-ROOT (Prithvi),from report example list,TRADITIONAL/INTERPRETIVE
+maca,C4,EARTH-ROOT (Prithvi),if added later,TRADITIONAL/INTERPRETIVE
+shilajit,C4,EARTH-ROOT (Prithvi),mineral; if modeled,TRADITIONAL/INTERPRETIVE
+rehmannia,C4,EARTH-ROOT (Prithvi),root,TRADITIONAL/INTERPRETIVE
+licorice root,C4,EARTH-ROOT (Prithvi),overlaps C2,TRADITIONAL/INTERPRETIVE
+nettle root,C4,EARTH-ROOT (Prithvi),if used,TRADITIONAL/INTERPRETIVE
+gotu kola,C4,EARTH-ROOT (Prithvi),if used as grounding,TRADITIONAL/INTERPRETIVE
+chicory root,C4,EARTH-ROOT (Prithvi),from report example list,TRADITIONAL/INTERPRETIVE
+ginger family rhizomes,C4,EARTH-ROOT (Prithvi),shared,TRADITIONAL/INTERPRETIVE
+turmeric rhizome,C4,EARTH-ROOT (Prithvi),shared,TRADITIONAL/INTERPRETIVE
+galangal rhizome,C4,EARTH-ROOT (Prithvi),shared,TRADITIONAL/INTERPRETIVE
+ashwagandha,C4,EARTH-ROOT (Prithvi),root-tonic duplicate emphasis from report bucket,TRADITIONAL/INTERPRETIVE
+brahmi,C5,ETHER-NERVINE (Akasha),bacopa,TRADITIONAL/INTERPRETIVE
+gotu kola,C5,ETHER-NERVINE (Akasha),centella,TRADITIONAL/INTERPRETIVE
+shankhpushpi,C5,ETHER-NERVINE (Akasha),if later,TRADITIONAL/INTERPRETIVE
+reishi,C5,ETHER-NERVINE (Akasha),from report example list,TRADITIONAL/INTERPRETIVE
+lion's mane,C5,ETHER-NERVINE (Akasha),if later,TRADITIONAL/INTERPRETIVE
+tulsi,C5,ETHER-NERVINE (Akasha),spiritual tonifier,TRADITIONAL/INTERPRETIVE
+lavender,C5,ETHER-NERVINE (Akasha),shared,TRADITIONAL/INTERPRETIVE
+lemon balm,C5,ETHER-NERVINE (Akasha),shared,TRADITIONAL/INTERPRETIVE
+passionflower,C5,ETHER-NERVINE (Akasha),from report example list,TRADITIONAL/INTERPRETIVE
+valerian,C5,ETHER-NERVINE (Akasha),from report example list,TRADITIONAL/INTERPRETIVE
+skullcap,C5,ETHER-NERVINE (Akasha),shared,TRADITIONAL/INTERPRETIVE
+schisandra,C5,ETHER-NERVINE (Akasha),shen stabilization,TRADITIONAL/INTERPRETIVE
+peony,C5,ETHER-NERVINE (Akasha),spirit/blood,TRADITIONAL/INTERPRETIVE
+saffron,C5,ETHER-NERVINE (Akasha),if later,TRADITIONAL/INTERPRETIVE
+blue lotus,C5,ETHER-NERVINE (Akasha),if later,TRADITIONAL/INTERPRETIVE
+ashwagandha,C5,ETHER-NERVINE (Akasha),medhya/balya overlap,TRADITIONAL/INTERPRETIVE
+guduchi,C5,ETHER-NERVINE (Akasha),rasayana adaptogen,TRADITIONAL/INTERPRETIVE
+rhodiola,C5,ETHER-NERVINE (Akasha),climate-limited,TRADITIONAL/INTERPRETIVE
+holy basil,C5,ETHER-NERVINE (Akasha),from report example list,TRADITIONAL/INTERPRETIVE
+ginseng,C5,ETHER-NERVINE (Akasha),if used as cognition tonifier,TRADITIONAL/INTERPRETIVE

@@ -1,0 +1,28 @@
+deity_id,nakshatra,deity,item_1,item_2,item_3,item_4,vahana,mudra,color_body,color_garment,direction,gemstone,metal,time_of_day,day,mantra_bija,shakti_name,tattva,rasa
+deity_ashvini_kumaras,Ashwini,Ashvini Kumaras,pot_of_amrita,herbs_bouquet,lotus,bandage,horse,abhaya_mudra,golden,white,east,coral,gold,dawn,Sunday,ham,Saubhagya,vayu,vira
+deity_yama,Bharani,Yama,staff_danda,noose_pasha,mace_gada,scales,buffalo,varada_mudra,dark_blue,red,south,onyx,iron,late_night,Saturday,yam,Dhumorna,earth,bhayanaka
+deity_agni,Krittika,Agni,flame,ladle_sruk,spoon_sruva,water_pot,ram,abhaya_mudra,red,yellow,southeast,ruby,copper,midday,Tuesday,ram,Swaha,agni,raudra
+deity_brahma_prajapati,Rohini,Brahma/Prajapati,rosary_aksha_mala,book_pustaka,water_pot_kamandalu,lotus_padma,swan,abhaya_mudra,golden,white,east,pearl,gold,morning,Thursday,rim,Sarasvati,akasha,adbhuta
+deity_soma_chandra,Mrigashira,Soma/Chandra,crescent_moon,lotus,conch_shankha,rod_danda,deer,varada_mudra,white,silver,northwest,pearl,silver,night,Monday,som,Rohini,jala,shringara
+deity_rudra,Ardra,Rudra,trident_trishula,drum_damaru,bow_dhanush,deer_skin,bull,abhaya_mudra,blue,tiger_skin,northeast,turquoise,bronze,midday,Monday,hum,Gauri,vayu,raudra
+deity_aditi,Punarvasu,Aditi,lotus_padma,corn_anna,water_pot_kamandalu,rosary_aksha_mala,eagle,varada_mudra,golden,green,north,yellow_sapphire,gold,morning,Monday,aim,Ananta,akasha,karuna
+deity_brihaspati,Pushya,Brihaspati,staff_danda,book,rosary_aksha_mala,lotus_padma,elephant,abhaya_mudra,yellow,yellow,northeast,yellow_sapphire,gold,morning,Thursday,gum,Tara,akasha,shanta
+deity_sarpa_nagas,Ashlesha,Sarpa/Nagas,serpent_naga,gem_mani,water_pot,protective_staff,serpent,naga_mudra,dark_green,dark_blue,southwest,cats_eye,copper,midnight,Wednesday,sam,Manasa,earth,bhayanaka
+deity_pitrs_ancestors,Magha,Pitrs/Ancestors,rice_ball_pinda,staff_danda,water_pot,rosary_aksha_mala,crow,varada_mudra,pale,white,south,smoky_quartz,iron,twilight,Saturday,pit,Swadha,earth,karuna
+deity_aryaman,Purva Phalguni,Aryaman,goad_ankusha,noose_pasha,lotus,rosary,horse,varada_mudra,golden,green,southeast,garnet,bronze,afternoon,Friday,yam,Usha,air,shringara
+deity_bhaga,Uttara Phalguni,Bhaga,discus_chakra,conch_shankha,lotus,mace_gada,lion,varada_mudra,golden,red,north,ruby,gold,morning,Sunday,bhm,Lakshmi,earth,shringara
+deity_savitar_surya,Hasta,Savitar/Surya,lotus,rosary,water_pot,abhaya_mudra,seven_horses,abhaya_mudra,golden,crimson,east,ruby,gold,morning,Sunday,hrm,Gayatri,agni,adbhuta
+deity_tvashtar_vishvakarma,Chitra,Tvashtar/Vishvakarma,hammer,chisel,bow,axe,elephant,abhaya_mudra,golden,multicolored,west,carnelian,brass,midday,Wednesday,tvam,Chitrini,earth,adbhuta
+deity_vayu,Swati,Vayu,flag_dhvaja,conch_shankha,staff_danda,scarf,antelope,abhaya_mudra,crystal_blue,white,northwest,sapphire,silver,afternoon,Saturday,yam,Anjana,air,shanta
+deity_indra_agni,Vishakha,Indra+Agni,thunderbolt_vajra,bow_dhanush,torch_flame,lotus,elephant,abhaya_mudra,golden,red,east,blue_sapphire,gold,afternoon,Thursday,im,Shachi,agni,vira
+deity_mitra,Anuradha,Mitra,rosary_aksha_mala,lotus,soma_flask,staff_danda,horse,abhaya_mudra,golden,blue,south,topaz,bronze,morning,Friday,mim,Rashmi,water,shanta
+deity_indra,Jyeshtha,Indra,thunderbolt_vajra,bow_dhanush,conch_shankha,banner,elephant,abhaya_mudra,yellow,green,east,yellow_sapphire,gold,noon,Thursday,lam,Shachi,air,vira
+deity_nirriti,Mula,Nirriti,sword,noose_pasha,trident_trishula,skull_cup,crow,abhaya_mudra,black,dark_red,southwest,black_onyx,iron,night,Saturday,rm,Alakshmi,earth,bhayanaka
+deity_apas_waters,Purva Ashadha,Apas/Waters,water_pot,lotus,conch_shankha,fish,makara,varada_mudra,blue,white,west,pearl,silver,afternoon,Monday,vam,Varuni,jala,shanta
+deity_vishvedevas,Uttara Ashadha,Vishvedevas,lotus,banner,conch_shankha,staff,horse,abhaya_mudra,golden,rainbow,north,crystal,gold,morning,Sunday,om,Samanya_Devi,akasha,shanta
+deity_vishnu_hari,Shravana,Vishnu/Hari,conch_shankha,discus_chakra,mace_gada,lotus,garuda,abhaya_mudra,dark_blue,yellow,east,blue_sapphire,gold,evening,Thursday,hrim,Lakshmi,jala,shanta
+deity_vasus_eight,Dhanishta,Vasus/Eight,drum_damaru,mace_gada,lamp,treasure_pot,goat,varada_mudra,multicolored,red,east,garnet,iron,evening,Tuesday,vam,Pratyusha,earth,vira
+deity_varuna,Shatabhisha,Varuna,noose_pasha,lotus,conch_shankha,mace_gada,makara,varada_mudra,blue_black,deep_blue,west,blue_sapphire,silver,night,Monday,vam,Varuni,jala,shanta
+deity_aja_ekapada,Purva Bhadrapada,Aja Ekapada,staff_danda,fire_pot,noose_pasha,spear,goat,abhaya_mudra,dark,red,south,agate,copper,midnight,Tuesday,am,Shobhini,agni,adbhuta
+deity_ahirbudhnya,Uttara Bhadrapada,Ahirbudhnya,sword,lotus,noose_pasha,shield,serpent,varada_mudra,dark_blue,white,north,aquamarine,lead,night,Wednesday,sam,Mahalakshmi,jala,shanta
+deity_pushan,Revati,Pushan,shepherds_staff,spoon,grain_bag,harp,goat,abhaya_mudra,golden,yellow,southeast,peridot,bronze,morning,Sunday,pom,Revati,earth,shanta

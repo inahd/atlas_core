@@ -1,0 +1,117 @@
+from_id,relation,to_id,source_title,source_locator,excerpt,tradition,confidence,notes
+nakshatra:1,nakshatra_associated_deity,deity:ashwini_kumaras,passages.csv,"page 22, lines 83-85","21   It is said that each tithi, lunar day and each of the fifteen manifestation of the Goddess Herself has two aspects: Prakashamsa, which rules the day portion of the tithi, and Vimarshamsa, which rules the night portion of the tithi. At night the Goddess in one of Her fifteen forms collects the nectar reflecting some of its qualities, while during the day She releases it, so it can recharge us. During the night nectar is replenished by Soma or the Moon, while during the day the nectar is burned or consumed by Agni or Surya. Being so, the main quality of the Moon and moonlight is to make things grow (rohana shakti of Rohini nakshatra), while the main qualitiy of the Sun is to burn things (dahana shakti of Krittika nakshatra). Therefore our life itself is a metaphor of Vedic fire sacrifice, in which soma, the sacred nectar of life is offered to the sacred fire.  One Krishna paksha and o",,seed_unverified,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | AUTO_EVID: matched passages.csv
+nakshatra:2,nakshatra_associated_deity,deity:yama,lunar_music_atlas.html,lines 186-198,"{id:""hemanta"", name:""Hemanta (Early Winter)"",densityAdj:-1, ragaTilt:""Warm depth (Kafi, Bageshri, Bhairavi-moods)"",     harmonicTilt:""Lean I + vi warmth; slower change-rate""},
+  {id:""sisira"",  name:""Śiśira (Late Winter)"",  densityAdj: 0, ragaTilt:""Gentle ignit…",unknown,attested_secondary,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | EVID: auto-found in research corpus
+nakshatra:3,nakshatra_associated_deity,deity:agni,journey-with-the-moon.txt,lines 78-90,"[page 21]
+20 
+  Sixteen qualities of the nectar  “In the waxing fortnight kalas shoot and expand; in the waning fortnight they shrink and small become. They who can know the mystery of kalas sixteen, may well reach the Feet of the Lord of glory indescribable.”…",unknown,attested_secondary,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | EVID: auto-found in research corpus
+nakshatra:4,nakshatra_associated_deity,deity:brahma,lunar_music_atlas.html,lines 186-198,"{id:""hemanta"", name:""Hemanta (Early Winter)"",densityAdj:-1, ragaTilt:""Warm depth (Kafi, Bageshri, Bhairavi-moods)"",     harmonicTilt:""Lean I + vi warmth; slower change-rate""},
+  {id:""sisira"",  name:""Śiśira (Late Winter)"",  densityAdj: 0, ragaTilt:""Gentle ignit…",unknown,attested_secondary,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | EVID: auto-found in research corpus
+nakshatra:5,nakshatra_associated_deity,deity:soma,journey-with-the-moon.txt,lines 102-114,"[page 27]
+26 
+ Soli-lunar breathing pattern  In a healthy body the breath changes every hour. For one hour it should be more active in the left nostril, ida nadi, and for one hour it should be more active in the right nostril, pingala nadi. If you take a littl…",unknown,attested_secondary,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | EVID: auto-found in research corpus
+nakshatra:6,nakshatra_associated_deity,deity:rudra,journey-with-the-moon.txt,lines 510-522,"[page 126]
+125 
+and they can act quite impulsively or even be a bit stingy, when they are disrespected.  There are also four petals in muladhara chakra, the energy center at the base of our spine. Muladhara chakra is strongly connected with Ganesha, similarly…",unknown,attested_secondary,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | EVID: auto-found in research corpus
+nakshatra:7,nakshatra_associated_deity,deity:aditi,journey-with-the-moon.txt,lines 15-27,Chapter 21: Jwalamalini – Garlanded with flames                           283  Chapter 22: Citra – Colourful Goddess                   300  Chapter 23: Your chart from perspective of Tithis                                 315  Chapter 24: Sadhana – praying wit…,unknown,attested_secondary,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | EVID: auto-found in research corpus
+nakshatra:8,nakshatra_associated_deity,deity:brihaspati,journey-with-the-moon.txt,lines 269-281,"Goddess Kameshwari is, indeed, sexual energy itself. She is the one, who controls sexual desires, as well as the Mother of five Kamadevas, gods of desire, who are said to be Her five senses, jnanendriyas. Their names are: Kamaraja (yellow-hued “king of desire”…",unknown,attested_secondary,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | EVID: auto-found in research corpus
+nakshatra:9,nakshatra_associated_deity,deity:nagas,journey-with-the-moon.txt,lines 363-375,"to its power, rohana shakti, so Shravana has the power to connect everything and to reach with any idea to a much bigger audience. Similarly Dvitiya tithi is a true lunar day of our influence in the world.    Tithi, vara and nakshatra resonance  Goddess Bhagam…",unknown,attested_secondary,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | EVID: auto-found in research corpus
+nakshatra:10,nakshatra_associated_deity,deity:pitrs,passages.csv,"page 28, lines 107-109","27  NADI TO BE ACTIVE AT SUNRISE DURING DIFFERENT TITHIS  Tithi Nadi in Shukla Paksha Nadi in Krishna Paksha Pratipad (1) ida pingala Dvitiya (2) ida pingala Tritiya (3) ida pingala Caturti (4) pingala ida Panchami (5) pingala ida Shashti (6) pingala ida Saptami (7) ida pingala Ashtami (8) ida pingala Navami (9) ida pingala Dashami (10) pingala ida Ekadashi (11) pingala ida Dvadashi (12) pingala ida Trayodashi (13) ida pingala Caturdashi (14) ida pingala Purnima / Amavasya  (15) ida pingala    Tithis and the breath  The intimate connection between the tithis, fifteen phases of the Moon in each paksha, and the breath, is very obvious both in Vedic astrology and old tantric scriptures. It is said that each tithi is 1440 breaths long. Being so, one lunar fortnight (paksha) is 21600 breaths - which is the number of a whole sacred breathing cycle. In one fortnight there would be 10800 breaths",,seed_unverified,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | AUTO_EVID: matched passages.csv
+nakshatra:11,nakshatra_associated_deity,deity:bhaga,journey-with-the-moon.txt,lines 5-17,"[page 3]
+2 
+                                Copyright © 2018 by Achala Sylwia Mihajlović  All rights reserved. This book or any portion thereof may not be reproduced or used in any manner whatsoever without the express written permission of the publisher excep…",unknown,attested_secondary,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | EVID: auto-found in research corpus
+nakshatra:12,nakshatra_associated_deity,deity:aryaman,source:7716d429c7c2,"page 1, lines 1609-1632","K. bähus Sing.), rudra: — 5. punarvasıi (Dual, K. °vasus Sing., auch 8, 15), 
+aditi: — 6. tishya, brihaspati: — 7. äcreshäs (Plural, wohl Fem.: X. hat 
+ocle’(!)), sarpds: — 8. maghäd's (Plur., wohl Fem.), pitaras: — 9. phalguni (iti, 
+also Dual (?): X. phalgunis, auch 8, 1, wo pürväsu phalgunishu), aryaman 
+(K. bhaga): — 10. phalguni (ii, wie eben: Ä.uttarah phalgunis, auch 8, ı, 
+wo ultarasu), bhaga (K. aryaman): — 11. hasta (K. hastau, ob Schreib- 
+febler?), savitar: — 12. citrd’ (Sing.), indra (K. twashiar): — 13. sväti' (Sing,, 
+K.nishiyä), väyu: — 14. vicäkhe (Dual., X. °khä nax. was Sing. sein wird, 
+da die Plural-Form bei diesem Stern sich sonst nie findet, vgl. auch Pän. 1,2,62), 
+indrägni’: — 15.anürädhäd's (Plur., cuius generis? In X. 8, 15 Plur. Mascul.), 
+mitrd: — 16.rohint' (s. oben p.277, K.jyeshihä), indra: — 17. vicritau (s. oben 
+p: 291. 292, X. mülam), pitäras (K.nirrit",unknown,attested_secondary,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | EVID2: tag/text match
+nakshatra:13,nakshatra_associated_deity,deity:savitar,source:7716d429c7c2,"page 1, lines 1609-1632","K. bähus Sing.), rudra: — 5. punarvasıi (Dual, K. °vasus Sing., auch 8, 15), 
+aditi: — 6. tishya, brihaspati: — 7. äcreshäs (Plural, wohl Fem.: X. hat 
+ocle’(!)), sarpds: — 8. maghäd's (Plur., wohl Fem.), pitaras: — 9. phalguni (iti, 
+also Dual (?): X. phalgunis, auch 8, 1, wo pürväsu phalgunishu), aryaman 
+(K. bhaga): — 10. phalguni (ii, wie eben: Ä.uttarah phalgunis, auch 8, ı, 
+wo ultarasu), bhaga (K. aryaman): — 11. hasta (K. hastau, ob Schreib- 
+febler?), savitar: — 12. citrd’ (Sing.), indra (K. twashiar): — 13. sväti' (Sing,, 
+K.nishiyä), väyu: — 14. vicäkhe (Dual., X. °khä nax. was Sing. sein wird, 
+da die Plural-Form bei diesem Stern sich sonst nie findet, vgl. auch Pän. 1,2,62), 
+indrägni’: — 15.anürädhäd's (Plur., cuius generis? In X. 8, 15 Plur. Mascul.), 
+mitrd: — 16.rohint' (s. oben p.277, K.jyeshihä), indra: — 17. vicritau (s. oben 
+p: 291. 292, X. mülam), pitäras (K.nirrit",unknown,attested_secondary,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | EVID2: tag/text match
+nakshatra:14,nakshatra_associated_deity,deity:vishvakarma,passages.csv,"page 28, lines 107-109","27  NADI TO BE ACTIVE AT SUNRISE DURING DIFFERENT TITHIS  Tithi Nadi in Shukla Paksha Nadi in Krishna Paksha Pratipad (1) ida pingala Dvitiya (2) ida pingala Tritiya (3) ida pingala Caturti (4) pingala ida Panchami (5) pingala ida Shashti (6) pingala ida Saptami (7) ida pingala Ashtami (8) ida pingala Navami (9) ida pingala Dashami (10) pingala ida Ekadashi (11) pingala ida Dvadashi (12) pingala ida Trayodashi (13) ida pingala Caturdashi (14) ida pingala Purnima / Amavasya  (15) ida pingala    Tithis and the breath  The intimate connection between the tithis, fifteen phases of the Moon in each paksha, and the breath, is very obvious both in Vedic astrology and old tantric scriptures. It is said that each tithi is 1440 breaths long. Being so, one lunar fortnight (paksha) is 21600 breaths - which is the number of a whole sacred breathing cycle. In one fortnight there would be 10800 breaths",,seed_unverified,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | AUTO_EVID: matched passages.csv
+nakshatra:15,nakshatra_associated_deity,deity:vayu,journey-with-the-moon.txt,lines 137-149,"[page 34]
+33 
+  Tithis, elements and gunas  Each lunar day is also connected to one of the five elements, which our body is made of, and which are governing its different moods - as well as to on of the three gunas or modes of Nature. Kamakala vilasa states:…",unknown,attested_secondary,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | EVID: auto-found in research corpus
+nakshatra:16,nakshatra_associated_deity,deity:indraagni,passages.csv,"page 23, lines 87-89","22  Lunar day Tithi (Vedic name) Kala Svara First Pratipad  daya (compassion) a अ Second Dvitiya  dhairya (patience) ā आ Third Tritiya  pusha (nourishment) i इ Fourth Caturti tushti (contentment) ī ई Fifth Panchami pushti (comfort) u उ Sixth Shashti rati (passion) ū ऊ Seventh Saptami dhrti (courage) ṛ ऋ Eight Ashtami shashini (swiftness) ṝ ॠ Ninth Navami candrika (moonlight) ḷr ऌ Tenth Dashami kanti (beauty) ḹr ॡ Eleventh Ekadashi jyotsna (halo) e ए Twelfth Dvadashi sri (opulence) ai ऐ Thirteenth Trayodashi priti (love) o ओ Fourteenth Caturdashi angada (self-sacrifice) au औ Fifteenth: Full Moon / New Moon  Purnima / Amavasya  purna (fullness)  aṁ अं     Unique vibrations of these 16 vowels are directly connected to vishuddha, throat chakra in our energy body. Each of them dwells on one of the petals of this chakra, which symbolically represents 16 nadis, energy channels connecting in thi",,seed_unverified,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | AUTO_EVID: matched passages.csv
+nakshatra:17,nakshatra_associated_deity,deity:mitra,passages.csv,"page 91, lines 370-372",90  YOGAS FORMED WITH DVITIYA TITHI   1 2 3 4 5 6 7 1  amrita  vinasha  siddha  2 tripushkar amrita tripushkar vinasha  siddha tripushkar 3  amrita  visha / siddha    4  siddha  siddha  vinasha siddha / suta 5 dvipushkar siddha dvipushkar siddha   dvipushkar 6  amrita vinasha siddha  siddha  7 tripushkar siddha vinasha / tripushkar visha / siddha  siddha / vinasha tripushkar 8  amrita  vinasha    9  amrita  vinasha    10  amrita gains vinasha  vinasha  11 tripushkar amrita tripushkar visha / siddha   tripushkar 12  amrita  siddha  siddha  13  amrita  visha / siddha    14 dvipushkar visha dvipushkar visha / siddha  siddha dvipushkar 15  amrita  visha / siddha  siddha siddha / suta 16 tripushkar amrita tripushkar visha / siddha  vinasha siddha / tripushkar 17  amrita  siddha  vinasha siddha 18  amrita vinasha visha / siddha  vinasha  19  amrita  vinasha    20 tripushkar amrita vinasha / tr,,seed_unverified,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | AUTO_EVID: matched passages.csv
+nakshatra:18,nakshatra_associated_deity,deity:indra,journey-with-the-moon.txt,lines 267-279,"[page 66]
+65 
+Goddess Kameshwari is, indeed, sexual energy itself. She is the one, who controls sexual desires, as well as the Mother of five Kamadevas, gods of desire, who are said to be Her five senses, jnanendriyas. Their names are: Kamaraja (yellow-hued “k…",unknown,attested_secondary,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | EVID: auto-found in research corpus
+nakshatra:19,nakshatra_associated_deity,deity:nirriti,source:7716d429c7c2,"page 1, lines 1633-1656","schen den dortigen Namensformen und den obigen heraus: 3. invakd's (schol.): 
+— 4. bähü' (Dual): — 5. Dual: — 7. ägleshäs: — 9. pürve phalguni (Dual), 
+aryaman: — 10. ütiare, bhaga: — 11. Singular: — 12. indra: — 13. nish- 
+iyd: — 14. viräkhe: — 16. rohini’: — 17. mülavarhani (vgl. oben p.291. 292), 
+nirriti: — 18. pürvä ashädha'h, also Femin. — 19. uttardh: — 20. crond: — 
+
+
+m m m mon mn nn nn m 
+
+
+(') ungewils ob ag/. oder dgl., denn es heilst sarpd devardgleshä naxatram. 
+(*) und zwar wohl vedischer Dual vom Feminin-Thema pAa/gunf: könnte an und für sich 
+auch Dual. neutr. von phalgu sein. 
+
+
+Fr 
+
+
+301 
+
+
+22. indra: — 23. pürve, also Mascul.: — 24. uttare, Mascul.: Es findet somit 
+bei 5. 9. 10.11. 12. 14. 16. 20. 22 eine Übereinstimmung mit der T's., bei 3. 4 
+(aber Dual!). 7. 13., resp. auch bei 18. 19. 23. 24. (wo Ts. unsicher ist) dagegen",unknown,attested_secondary,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | EVID2: tag/text match
+nakshatra:20,nakshatra_associated_deity,deity:apas,journey-with-the-moon.txt,lines 68-80,Chapter Three  Consciousness full of Nectar    ॐ पूणर्मदः पूणर्िमदं पूणार्त्पुणर्मुदच्यते पूणर्स्य पूणर्मादाय पूणर्मेवाविशष्यते ॥  oḿ pūrṇam adaḥ pūrṇam idaḿ pūrṇāt pūrṇam udacyate pūrṇasya pūrṇam ādāya pūrṇam evāvaśiṣyate  - Isha Upanishad   That is purnam (f…,unknown,attested_secondary,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | EVID: auto-found in research corpus
+nakshatra:21,nakshatra_associated_deity,deity:vishvadevas,passages.csv,"page 22, lines 83-85","21   It is said that each tithi, lunar day and each of the fifteen manifestation of the Goddess Herself has two aspects: Prakashamsa, which rules the day portion of the tithi, and Vimarshamsa, which rules the night portion of the tithi. At night the Goddess in one of Her fifteen forms collects the nectar reflecting some of its qualities, while during the day She releases it, so it can recharge us. During the night nectar is replenished by Soma or the Moon, while during the day the nectar is burned or consumed by Agni or Surya. Being so, the main quality of the Moon and moonlight is to make things grow (rohana shakti of Rohini nakshatra), while the main qualitiy of the Sun is to burn things (dahana shakti of Krittika nakshatra). Therefore our life itself is a metaphor of Vedic fire sacrifice, in which soma, the sacred nectar of life is offered to the sacred fire.  One Krishna paksha and o",,seed_unverified,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | AUTO_EVID: matched passages.csv
+nakshatra:22,nakshatra_associated_deity,deity:vishnu,journey-with-the-moon.txt,lines 489-501,"[page 121]
+120 
+storm and rain. This is one of the most beautiful messages of Goddess Bherunda for all Her children.  Within waking state of consciousness, Chaturti tithi stands for turiya or spiritually awakened state of bliss, when we can consciously perceiv…",unknown,attested_secondary,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | EVID: auto-found in research corpus
+nakshatra:23,nakshatra_associated_deity,deity:vasus,source:58fa163dc705,"page 104, lines 2582-2601","7.
+lPttttsuasa
+(20000' Gemini - 3020' Cancer)
+In tfu SKy t
+Punaruasu, the root of Jupiterian energy, consists of the two bright stars in the constellation of
+Gemini, known in modern astronomy as hstor (Alpha-Geminorium) & Pollux (Beta-Geminorium).
+With visual magnitudes of 1.58 and L.22 respectively, Castor& folluxare easily visible in the night
+sky. They can be located at the top left hand comer above Oion within the constellation of Gemini.
+In most ancient cultures these stars were seen as twins (brothers or lovers). The ancient vedic seers
+however saw this asterism as a ""quiver.of arrows"".
+9{gtnrc :
+Punaruasutranslates into ""Good Again"", ""Wealthy Again"" or the ""Visible Infinity"". The Vasusare
+demigods carrying all the desirable qualities like goodness, strength, prosperity etc. (refer to the
+Deity section of Dhanistha, the 23rd asterism). The fact that the term ""Punarvasu"" literally t",unknown,attested_secondary,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | EVID: passages.csv
+nakshatra:24,nakshatra_associated_deity,deity:varuna,journey-with-the-moon.txt,lines 365-377,"[page 90]
+89 
+• Dvitiya tithi + Saturday + Rohini, Swati, Vishakha, Anuradha, Dhanishta or Shatabhisha  In Agni Purana it is also stated that whenever Dvitiya tithi happens on Tuesday along with Moon dwelling in Magha nakshatra, it will bring gains.  Being so,…",unknown,attested_secondary,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | EVID: auto-found in research corpus
+nakshatra:25,nakshatra_associated_deity,deity:ajaekapada,passages.csv,"page 45, lines 182-184",44  RATIOS AND MUSIC INTERVALS FORMED IN SHUKLA PAKSHA  Tithi Ratio range Music interval Pratipad (1) 360:348 to 360:360 from unison to minor second Dvitiya (2) 360:336 to 360:348 minor second (360:337.5 = 16:15) Tritiya (3) 360:324 to 360:336 between minor second and major second Caturti (4) 360:312 to 360:324 major second (360:320 = 9:8) Panchami (5) 360:300 to 360:312 minor third (360:300 = 6:5) Shashti (6) 360:288 to 360:300 from minor third (360:300 = 6:5) to major third (360:288 = 5:4)  Saptami (7) 360:276 to 360:288 major third (360:288 = 5:4) Ashtami (8) 360:264 to 360:276 perfect fourth (360:270 = 4:3) Navami (9) 360:252 to 360:264 augmented fourth Dashami (10) 360:240 to 360:252 diminished fifth Ekadashi (11) 360:228 to 360:240 perfect fifth (360:240 = 3:2) Dvadashi (12) 360:216 to 360:228 from minor sixth (360:225 = 8:5) to major sixth (360:216 = 5:3)  Trayodashi (13) 360:204,,seed_unverified,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | AUTO_EVID: matched passages.csv
+nakshatra:26,nakshatra_associated_deity,deity:ahirbudhnya,source:3cf2b395ae5b,"page 112, lines 4344-4368","376
+beiden Grundlagen ” ist, ebenso wie der Name des Regenten „ der ein füſsige
+Bock ”, auf Füſse bezüglich : nach Whitney ( Súryas . p . 323 ) „ in evident
+allusion to the disposition of the four bright stars , which compose it , like
+the four feet of a stand , table , bedstead or the like ”. Der Plural der äl
+teren Form , besonders wenn dieselbe als bahuvrihi zu fassen ist , lehnt die
+Anwendung dieser „ allusion ” auf die Zeit seines Gebrauches natürlich ab .
+24 [ 25 ]. wie eben . Gottheit ahi budhniya Ts . A. C. D. J. Ç11 . ahi
+budhnya K. ahirbudhnya ( !) Çg . aditya ( !) N. Über die bei Somákara
+vorliegende Vertauschung der Gottheit mit der des vorhergehenden naxatra
+s . das so eben dazu Bemerkte .
+25 [26 ] . revati „ die reiche ”, Gottheit púshan : so durchweg , nur
+daſs Ath . 9 , 7, 3 den Plural revatis bat (s. oben p 293 ) .
+26 [27 ] . aqvayujau „ die beiden Rosseschirrer ” Ts . K",unknown,attested_secondary,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | EVID2: tag/text match
+nakshatra:27,nakshatra_associated_deity,deity:pushan,passages.csv,"page 28, lines 107-109","27  NADI TO BE ACTIVE AT SUNRISE DURING DIFFERENT TITHIS  Tithi Nadi in Shukla Paksha Nadi in Krishna Paksha Pratipad (1) ida pingala Dvitiya (2) ida pingala Tritiya (3) ida pingala Caturti (4) pingala ida Panchami (5) pingala ida Shashti (6) pingala ida Saptami (7) ida pingala Ashtami (8) ida pingala Navami (9) ida pingala Dashami (10) pingala ida Ekadashi (11) pingala ida Dvadashi (12) pingala ida Trayodashi (13) ida pingala Caturdashi (14) ida pingala Purnima / Amavasya  (15) ida pingala    Tithis and the breath  The intimate connection between the tithis, fifteen phases of the Moon in each paksha, and the breath, is very obvious both in Vedic astrology and old tantric scriptures. It is said that each tithi is 1440 breaths long. Being so, one lunar fortnight (paksha) is 21600 breaths - which is the number of a whole sacred breathing cycle. In one fortnight there would be 10800 breaths",,seed_unverified,TODO: fill deity + evidence | AUTO: deity from nakshatra.yaml | AUTO_EVID: matched passages.csv

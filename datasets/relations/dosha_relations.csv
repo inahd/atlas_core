@@ -1,0 +1,75 @@
+from_id,relation,to_id,source_title,source_locator,excerpt,tradition,confidence,notes
+nakshatra:ashwini,dosha,dosha:vata,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Vata
+nakshatra:ashwini,secondary_dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Pitta
+nakshatra:bharani,dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Pitta
+nakshatra:bharani,secondary_dosha,dosha:vata,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Vata
+nakshatra:krittika,dosha,dosha:kapha,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Kapha
+nakshatra:krittika,secondary_dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Pitta
+nakshatra:rohini,dosha,dosha:kapha,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Kapha
+nakshatra:rohini,secondary_dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Pitta
+nakshatra:mrigashirsha,dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Pitta
+nakshatra:mrigashirsha,secondary_dosha,dosha:vata,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Vata
+nakshatra:ardra,dosha,dosha:vata,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Vata
+nakshatra:ardra,secondary_dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Pitta
+nakshatra:punarvasu,dosha,dosha:vata,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Vata
+nakshatra:punarvasu,secondary_dosha,dosha:kapha,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Kapha
+nakshatra:pushya,dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Pitta
+nakshatra:pushya,secondary_dosha,dosha:kapha,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Kapha
+nakshatra:ashlesha,dosha,dosha:kapha,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Kapha
+nakshatra:ashlesha,secondary_dosha,dosha:vata,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Vata
+nakshatra:magha,dosha,dosha:kapha,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Kapha
+nakshatra:magha,secondary_dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Pitta
+nakshatra:purva_phalguni,dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Pitta
+nakshatra:purva_phalguni,secondary_dosha,dosha:kapha,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Kapha
+nakshatra:uttara_phalguni,dosha,dosha:vata,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Vata
+nakshatra:uttara_phalguni,secondary_dosha,dosha:kapha,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Kapha
+nakshatra:hasta,dosha,dosha:vata,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Vata
+nakshatra:hasta,secondary_dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Pitta
+nakshatra:chitra,dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Pitta
+nakshatra:chitra,secondary_dosha,dosha:vata,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Vata
+nakshatra:swati,dosha,dosha:kapha,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Kapha
+nakshatra:swati,secondary_dosha,dosha:vata,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Vata
+nakshatra:vishakha,dosha,dosha:kapha,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Kapha
+nakshatra:vishakha,secondary_dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Pitta
+nakshatra:anuradha,dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Pitta
+nakshatra:anuradha,secondary_dosha,dosha:kapha,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Kapha
+nakshatra:jyeshtha,dosha,dosha:vata,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Vata
+nakshatra:jyeshtha,secondary_dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Pitta
+nakshatra:moola,dosha,dosha:vata,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Vata
+nakshatra:moola,secondary_dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Pitta
+nakshatra:purva_ashadha,dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Pitta
+nakshatra:purva_ashadha,secondary_dosha,dosha:vata,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Vata
+nakshatra:uttara_ashadha,dosha,dosha:kapha,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Kapha
+nakshatra:uttara_ashadha,secondary_dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Pitta
+nakshatra:shravana,dosha,dosha:kapha,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Kapha
+nakshatra:shravana,secondary_dosha,dosha:vata,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Vata
+nakshatra:dhanishta,dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Pitta
+nakshatra:dhanishta,secondary_dosha,dosha:vata,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Vata
+nakshatra:shatabhisha,dosha,dosha:vata,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Vata
+nakshatra:shatabhisha,secondary_dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Pitta
+nakshatra:purva_bhadrapada,dosha,dosha:vata,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Vata
+nakshatra:purva_bhadrapada,secondary_dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Pitta
+nakshatra:uttara_bhadrapada,dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Pitta
+nakshatra:uttara_bhadrapada,secondary_dosha,dosha:kapha,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Kapha
+nakshatra:revati,dosha,dosha:kapha,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Kapha
+nakshatra:revati,secondary_dosha,dosha:vata,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Vata
+rasa:sweet,taste_quality,quality:sweet,ayurveda/rasa.csv,,,traditional,0.8,sweet
+rasa:sour,taste_quality,quality:sour,ayurveda/rasa.csv,,,traditional,0.8,sour
+rasa:salty,taste_quality,quality:salty,ayurveda/rasa.csv,,,traditional,0.8,salty
+rasa:pungent,taste_quality,quality:pungent,ayurveda/rasa.csv,,,traditional,0.8,pungent
+rasa:bitter,taste_quality,quality:bitter,ayurveda/rasa.csv,,,traditional,0.8,bitter
+rasa:astringent,taste_quality,quality:astringent,ayurveda/rasa.csv,,,traditional,0.8,astringent
+dhatu:rasa,element,element:water,ayurveda/sapta_dhatu.csv,,,traditional,0.7,water
+dhatu:rasa,governing_graha,graha:(to_be_sourced_from_bphs_edition),ayurveda/sapta_dhatu.csv,,,traditional,0.7,(to be sourced from BPHS edition)
+dhatu:rakta,element,element:fire,ayurveda/sapta_dhatu.csv,,,traditional,0.7,fire
+dhatu:rakta,governing_graha,graha:(to_be_sourced_from_bphs_edition),ayurveda/sapta_dhatu.csv,,,traditional,0.7,(to be sourced from BPHS edition)
+dhatu:mamsa,element,element:earth,ayurveda/sapta_dhatu.csv,,,traditional,0.6,earth
+dhatu:mamsa,governing_graha,graha:(to_be_sourced_from_bphs_edition),ayurveda/sapta_dhatu.csv,,,traditional,0.6,(to be sourced from BPHS edition)
+dhatu:meda,element,element:water_earth,ayurveda/sapta_dhatu.csv,,,traditional,0.6,water/earth
+dhatu:meda,governing_graha,graha:(to_be_sourced),ayurveda/sapta_dhatu.csv,,,traditional,0.6,(to be sourced)
+dhatu:asthi,element,element:earth_air,ayurveda/sapta_dhatu.csv,,,traditional,0.6,earth/air
+dhatu:asthi,governing_graha,graha:(to_be_sourced),ayurveda/sapta_dhatu.csv,,,traditional,0.6,(to be sourced)
+dhatu:majja,element,element:ether_air,ayurveda/sapta_dhatu.csv,,,traditional,0.6,ether/air
+dhatu:majja,governing_graha,graha:(to_be_sourced),ayurveda/sapta_dhatu.csv,,,traditional,0.6,(to be sourced)
+dhatu:shukra_artava,element,element:water,ayurveda/sapta_dhatu.csv,,,traditional,0.6,water
+dhatu:shukra_artava,governing_graha,graha:(to_be_sourced),ayurveda/sapta_dhatu.csv,,,traditional,0.6,(to be sourced)

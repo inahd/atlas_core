@@ -1,0 +1,10 @@
+raga,dosha_target,time,conditions,duration,attestation,source
+Bhimpalasi,pitta,afternoon,BP_HRV,10,PEER_REVIEWED,IJPP RCT
+Bhairavi,vata,morning,"anxiety,sleep,grief",20,TRADITIONAL,Sangita Ratnakara
+Bhairava,pitta,dawn,"pitta_module,anger",15,PEER_REVIEWED,Nagarajan+Varma 2022
+Darbari,vata,night,"BP,sleep",22,TRADITIONAL,raga therapy literature
+Yaman,kapha,evening,"creative,uplift",15,TRADITIONAL,Sangita Ratnakara
+Bageshri,vata,night,"devotion,grief",20,TRADITIONAL,Sangita Ratnakara
+Marwa,pitta,dusk,pitta_tension,15,TRADITIONAL,Sangita Ratnakara
+Shree,pitta,evening,"anger,pitta",15,PEER_REVIEWED,Nagarajan+Varma 2022
+Lalit,pitta,dawn,pitta_calm,15,PEER_REVIEWED,Nagarajan+Varma 2022

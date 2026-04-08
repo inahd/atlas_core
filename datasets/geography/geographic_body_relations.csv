@@ -1,0 +1,46 @@
+relation_id,source_type,source_id,target_type,target_id,relation,direction,weight,attestation,notes
+GBR001,pitha,SP001,body_region,skull_vault,body_part_fell,pitha→body,1.0,OBSERVED:PRIMARY_TEXT,Brahmarandhra = crown opening; Devi Bhagavata
+GBR002,pitha,SP005,body_region,pelvis,body_part_fell,pitha→body,1.0,OBSERVED:PRIMARY_TEXT,Kamakhya yoni; menstruation temple
+GBR003,pitha,SP003,body_region,cochlea,body_part_fell,pitha→body,0.9,OBSERVED:PRIMARY_TEXT,Ear ornaments fell at Varanasi
+GBR004,pitha,SP006,body_region,nasal_cavity,body_part_fell,pitha→body,0.9,OBSERVED:PRIMARY_TEXT,Tongue at Jwalamukhi; oral-nasal shared
+GBR005,pitha,SP007,body_region,tarsals,body_part_fell,pitha→body,1.0,OBSERVED:PRIMARY_TEXT,Right toes at Kalighat
+GBR006,pitha,SP008,body_region,skull_vault,body_part_fell,pitha→body,0.9,OBSERVED:PRIMARY_TEXT,Third eye/forehead at Tarapith
+GBR007,pitha,SP025,body_region,heart_muscle,body_part_fell,pitha→body,1.0,OBSERVED:PRIMARY_TEXT,Heart at Vaidyanath Deoghar
+GBR008,pitha,SP019,body_region,cervical_spine,body_part_fell,pitha→body,0.9,OBSERVED:PRIMARY_TEXT,Neck at Srisailam
+GBR009,pitha,SP023,body_region,ribs,body_part_fell,pitha→body,0.9,OBSERVED:PRIMARY_TEXT,Left breast at Jalandhar
+GBR010,pitha,SP021,body_region,ribs,body_part_fell,pitha→body,0.8,OBSERVED:PRIMARY_TEXT,Stomach at Somnath; abdominal region
+GBR011,pitha,SP027,body_region,femur,body_part_fell,pitha→body,0.8,OBSERVED:TRADITIONAL,Skeleton/bones at Kanchipuram
+GBR012,pitha,SP010,body_region,carpals,body_part_fell,pitha→body,1.0,OBSERVED:PRIMARY_TEXT,Palms/hands at Jessoreswari
+GBR013,pitha,SP013,body_region,scapula,body_part_fell,pitha→body,0.9,OBSERVED:PRIMARY_TEXT,Left shoulder at Mithila
+GBR014,pitha,SP016,body_region,femur,body_part_fell,pitha→body,0.9,OBSERVED:PRIMARY_TEXT,Left thigh at Jayanti/Sylhet
+GBR015,pitha,SP031,body_region,skull_vault,body_part_fell,pitha→body,0.8,OBSERVED:PRIMARY_TEXT,Mind/manas at Bakreshwar
+GBR016,pitha,SP040,body_region,eye_socket,body_part_fell,pitha→body,0.9,OBSERVED:PRIMARY_TEXT,Three eyes at Kolhapur
+GBR017,pitha,SP044,body_region,tarsals,body_part_fell,pitha→body,0.9,OBSERVED:TRADITIONAL,Feet soles at Tripura
+GBR018,pitha,SP057,body_region,femur,body_part_fell,pitha→body,0.9,OBSERVED:PRIMARY_TEXT,Bone at Kankalitala; asthi dhatu
+GBR019,pitha,SP047,body_region,nasal_cavity,body_part_fell,pitha→body,1.0,OBSERVED:TRADITIONAL,Nose at Sugandha
+GBR020,pitha,SP038,body_region,skull_vault,body_part_fell,pitha→body,0.7,OBSERVED:TRADITIONAL,Hair at Vrindavan
+GBR021,body_region,skull_vault,chakra,chakra_sahasrara,anatomical_seat,body→chakra,1.0,OBSERVED:PRIMARY_TEXT,Crown = Sahasrara canonical mapping
+GBR022,body_region,eye_socket,chakra,chakra_ajna,anatomical_seat,body→chakra,1.0,OBSERVED:PRIMARY_TEXT,Third eye = Ajna canonical
+GBR023,body_region,cervical_spine,chakra,chakra_vishuddha,anatomical_seat,body→chakra,1.0,OBSERVED:PRIMARY_TEXT,Throat = Vishuddha canonical
+GBR024,body_region,heart_muscle,chakra,chakra_anahata,anatomical_seat,body→chakra,1.0,OBSERVED:PRIMARY_TEXT,Heart = Anahata canonical
+GBR025,body_region,ribs,chakra,chakra_manipura,anatomical_seat,body→chakra,0.8,OBSERVED:PRIMARY_TEXT,Solar plexus region = Manipura
+GBR026,body_region,pelvis,chakra,chakra_svadhishthana,anatomical_seat,body→chakra,1.0,OBSERVED:PRIMARY_TEXT,Sacrum/reproductive = Svadhishthana
+GBR027,body_region,tarsals,chakra,chakra_muladhara,anatomical_seat,body→chakra,0.9,OBSERVED:PRIMARY_TEXT,Feet/root = Muladhara
+GBR028,pitha,SP001,graha,surya,graha_governance,pitha→graha,0.8,SYNTHESIS,Crown pitha governed by Surya/gold
+GBR029,pitha,SP005,graha,shukra,graha_governance,pitha→graha,0.9,SYNTHESIS,Reproductive pitha governed by Shukra
+GBR030,pitha,SP025,graha,surya,graha_governance,pitha→graha,0.9,SYNTHESIS,Heart pitha governed by Surya
+GBR031,pitha,SP007,graha,shani,graha_governance,pitha→graha,0.8,SYNTHESIS,Feet/root pitha governed by Shani
+GBR032,pitha,SP019,graha,budha,graha_governance,pitha→graha,0.8,SYNTHESIS,Neck/throat pitha governed by Budha
+GBR033,geography,indian_subcontinent,body_region,full_body,purusha_projection,geo→body,0.6,SYNTHESIS,Subcontinent maps onto cosmic Purusha; head=Himalayas feet=Lanka
+GBR034,geography,himalaya,body_region,skull_vault,purusha_projection,geo→body,0.7,SYNTHESIS,Mountains = crown; highest points = sahasrara
+GBR035,geography,kanyakumari,body_region,tarsals,purusha_projection,geo→body,0.7,SYNTHESIS,Southern tip = feet of the cosmic body
+GBR036,geography,gangetic_plain,body_region,ribs,purusha_projection,geo→body,0.6,SYNTHESIS,Central plains = torso; river as nadi
+GBR037,geography,lanka,body_region,tarsals,purusha_projection,geo→body,0.6,OBSERVED:TRADITIONAL,Lanka = extremity; Ravana held Sati ankle
+GBR038,pitha,SP032,geography,himalaya,geographic_extremity,pitha→geo,0.9,OBSERVED:TRADITIONAL,Manas Sarovar; highest pitha; Tibet
+GBR039,pitha,SP033,geography,lanka,geographic_extremity,pitha→geo,0.9,OBSERVED:TRADITIONAL,Lanka; southernmost pitha; Sri Lanka
+GBR040,dhatu,D005,pitha,SP027,dhatu_correspondence,dhatu→pitha,0.8,SYNTHESIS,Asthi (bone) dhatu → Kanchipuram (skeleton pitha)
+GBR041,dhatu,D005,pitha,SP057,dhatu_correspondence,dhatu→pitha,0.9,SYNTHESIS,Asthi → Kankalitala (bone relic pitha)
+GBR042,dhatu,D001,pitha,SP021,dhatu_correspondence,dhatu→pitha,0.7,SYNTHESIS,Rasa (plasma) → Somnath (stomach/digestion)
+GBR043,dhatu,D002,pitha,SP025,dhatu_correspondence,dhatu→pitha,0.8,SYNTHESIS,Rakta (blood) → Vaidyanath (heart seat)
+GBR044,dhatu,D007,pitha,SP005,dhatu_correspondence,dhatu→pitha,0.9,SYNTHESIS,Shukra (reproductive) → Kamakhya (yoni pitha)
+GBR045,dhatu,D006,pitha,SP031,dhatu_correspondence,dhatu→pitha,0.8,SYNTHESIS,Majja (nerve/mind) → Bakreshwar (manas pitha)

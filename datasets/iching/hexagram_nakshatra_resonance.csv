@@ -1,0 +1,1016 @@
+hexagram_id,nakshatra_id,resonance_score,resonance_reason,shared_element,shared_quality,shared_graha,notes
+hexagram_01,nakshatra_punarvasu,0.4,shared guna sattva + deva-sattva alignment,,sattva,,the creative resonates with Punarvasu
+hexagram_01,nakshatra_pushya,0.4,shared guna sattva + deva-sattva alignment,,sattva,,the creative resonates with Pushya
+hexagram_01,nakshatra_uttara_phalguni,0.3,shared guna sattva,,sattva,,the creative resonates with Uttara_Phalguni
+hexagram_01,nakshatra_hasta,0.4,shared guna sattva + deva-sattva alignment,,sattva,,the creative resonates with Hasta
+hexagram_01,nakshatra_anuradha,0.4,shared guna sattva + deva-sattva alignment,,sattva,,the creative resonates with Anuradha
+hexagram_01,nakshatra_uttara_ashadha,0.3,shared guna sattva,,sattva,,the creative resonates with Uttara_Ashadha
+hexagram_01,nakshatra_shravana,0.4,shared guna sattva + deva-sattva alignment,,sattva,,the creative resonates with Shravana
+hexagram_01,nakshatra_uttara_bhadrapada,0.3,shared guna sattva,,sattva,,the creative resonates with Uttara_Bhadrapada
+hexagram_01,nakshatra_revati,0.4,shared guna sattva + deva-sattva alignment,,sattva,,the creative resonates with Revati
+hexagram_02,nakshatra_bharani,0.35,shared element earth,earth,,,the receptive resonates with Bharani
+hexagram_02,nakshatra_rohini,0.5,shared element earth + dosha-body alignment kapha/belly,earth,,,the receptive resonates with Rohini
+hexagram_02,nakshatra_mrigashira,0.65,shared element earth + shared guna tamas,earth,tamas,,the receptive resonates with Mrigashira
+hexagram_02,nakshatra_ardra,0.3,shared guna tamas,,tamas,,the receptive resonates with Ardra
+hexagram_02,nakshatra_ashlesha,0.55,shared guna tamas + dosha-body alignment kapha/belly + rakshasa-tamas alignment,,tamas,,the receptive resonates with Ashlesha
+hexagram_02,nakshatra_magha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,the receptive resonates with Magha
+hexagram_02,nakshatra_purva_phalguni,0.35,shared element earth,earth,,,the receptive resonates with Purva_Phalguni
+hexagram_02,nakshatra_uttara_phalguni,0.5,shared element earth + dosha-body alignment kapha/belly,earth,,,the receptive resonates with Uttara_Phalguni
+hexagram_02,nakshatra_chitra,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,the receptive resonates with Chitra
+hexagram_02,nakshatra_jyeshtha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,the receptive resonates with Jyeshtha
+hexagram_02,nakshatra_mula,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,the receptive resonates with Mula
+hexagram_02,nakshatra_uttara_ashadha,0.5,shared element earth + dosha-body alignment kapha/belly,earth,,,the receptive resonates with Uttara_Ashadha
+hexagram_02,nakshatra_shatabhisha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,the receptive resonates with Shatabhisha
+hexagram_02,nakshatra_purva_bhadrapada,0.3,shared guna tamas,,tamas,,the receptive resonates with Purva_Bhadrapada
+hexagram_03,nakshatra_ashwini,0.8,shared element fire + shared guna rajas + dosha-body alignment vata/foot,fire,rajas,,difficulty at the beginning resonates with Ashwini
+hexagram_03,nakshatra_bharani,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,difficulty at the beginning resonates with Bharani
+hexagram_03,nakshatra_krittika,0.65,shared element fire + shared guna rajas,fire,rajas,,difficulty at the beginning resonates with Krittika
+hexagram_03,nakshatra_rohini,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,difficulty at the beginning resonates with Rohini
+hexagram_03,nakshatra_ardra,0.6,shared element water + dosha-body alignment vata/foot + manushya-rajas alignment,water,,,difficulty at the beginning resonates with Ardra
+hexagram_03,nakshatra_pushya,0.35,shared element water,water,,,difficulty at the beginning resonates with Pushya
+hexagram_03,nakshatra_ashlesha,0.35,shared element water,water,,,difficulty at the beginning resonates with Ashlesha
+hexagram_03,nakshatra_magha,0.35,shared element fire,fire,,,difficulty at the beginning resonates with Magha
+hexagram_03,nakshatra_purva_phalguni,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,difficulty at the beginning resonates with Purva_Phalguni
+hexagram_03,nakshatra_chitra,0.35,shared element fire,fire,,,difficulty at the beginning resonates with Chitra
+hexagram_03,nakshatra_swati,0.45,shared guna rajas + dosha-body alignment vata/foot,,rajas,,difficulty at the beginning resonates with Swati
+hexagram_03,nakshatra_vishakha,0.65,shared element fire + shared guna rajas,fire,rajas,,difficulty at the beginning resonates with Vishakha
+hexagram_03,nakshatra_anuradha,0.35,shared element water,water,,,difficulty at the beginning resonates with Anuradha
+hexagram_03,nakshatra_purva_ashadha,0.75,shared element water + shared guna rajas + manushya-rajas alignment,water,rajas,,difficulty at the beginning resonates with Purva_Ashadha
+hexagram_03,nakshatra_dhanishta,0.65,shared element fire + shared guna rajas,fire,rajas,,difficulty at the beginning resonates with Dhanishta
+hexagram_03,nakshatra_purva_bhadrapada,0.45,shared element fire + manushya-rajas alignment,fire,,,difficulty at the beginning resonates with Purva_Bhadrapada
+hexagram_03,nakshatra_uttara_bhadrapada,0.45,shared element water + manushya-rajas alignment,water,,,difficulty at the beginning resonates with Uttara_Bhadrapada
+hexagram_03,nakshatra_revati,0.35,shared element water,water,,,difficulty at the beginning resonates with Revati
+hexagram_04,nakshatra_bharani,0.35,shared element earth,earth,,,youthful folly resonates with Bharani
+hexagram_04,nakshatra_rohini,0.35,shared element earth,earth,,,youthful folly resonates with Rohini
+hexagram_04,nakshatra_mrigashira,0.8,shared element earth + shared guna tamas + dosha-body alignment vata/ear,earth,tamas,,youthful folly resonates with Mrigashira
+hexagram_04,nakshatra_ardra,0.8,shared element water + shared guna tamas + dosha-body alignment vata/ear,water,tamas,,youthful folly resonates with Ardra
+hexagram_04,nakshatra_pushya,0.35,shared element water,water,,,youthful folly resonates with Pushya
+hexagram_04,nakshatra_ashlesha,0.75,shared element water + shared guna tamas + rakshasa-tamas alignment,water,tamas,,youthful folly resonates with Ashlesha
+hexagram_04,nakshatra_magha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,youthful folly resonates with Magha
+hexagram_04,nakshatra_purva_phalguni,0.35,shared element earth,earth,,,youthful folly resonates with Purva_Phalguni
+hexagram_04,nakshatra_uttara_phalguni,0.35,shared element earth,earth,,,youthful folly resonates with Uttara_Phalguni
+hexagram_04,nakshatra_chitra,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,youthful folly resonates with Chitra
+hexagram_04,nakshatra_anuradha,0.35,shared element water,water,,,youthful folly resonates with Anuradha
+hexagram_04,nakshatra_jyeshtha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,youthful folly resonates with Jyeshtha
+hexagram_04,nakshatra_mula,0.55,shared guna tamas + dosha-body alignment vata/ear + rakshasa-tamas alignment,,tamas,,youthful folly resonates with Mula
+hexagram_04,nakshatra_purva_ashadha,0.35,shared element water,water,,,youthful folly resonates with Purva_Ashadha
+hexagram_04,nakshatra_uttara_ashadha,0.35,shared element earth,earth,,,youthful folly resonates with Uttara_Ashadha
+hexagram_04,nakshatra_shatabhisha,0.55,shared guna tamas + dosha-body alignment vata/ear + rakshasa-tamas alignment,,tamas,,youthful folly resonates with Shatabhisha
+hexagram_04,nakshatra_purva_bhadrapada,0.3,shared guna tamas,,tamas,,youthful folly resonates with Purva_Bhadrapada
+hexagram_04,nakshatra_uttara_bhadrapada,0.35,shared element water,water,,,youthful folly resonates with Uttara_Bhadrapada
+hexagram_04,nakshatra_revati,0.35,shared element water,water,,,youthful folly resonates with Revati
+hexagram_05,nakshatra_ardra,0.35,shared element water,water,,,waiting resonates with Ardra
+hexagram_05,nakshatra_punarvasu,0.4,shared guna sattva + deva-sattva alignment,,sattva,,waiting resonates with Punarvasu
+hexagram_05,nakshatra_pushya,0.75,shared element water + shared guna sattva + deva-sattva alignment,water,sattva,,waiting resonates with Pushya
+hexagram_05,nakshatra_ashlesha,0.35,shared element water,water,,,waiting resonates with Ashlesha
+hexagram_05,nakshatra_uttara_phalguni,0.3,shared guna sattva,,sattva,,waiting resonates with Uttara_Phalguni
+hexagram_05,nakshatra_hasta,0.4,shared guna sattva + deva-sattva alignment,,sattva,,waiting resonates with Hasta
+hexagram_05,nakshatra_anuradha,0.75,shared element water + shared guna sattva + deva-sattva alignment,water,sattva,,waiting resonates with Anuradha
+hexagram_05,nakshatra_purva_ashadha,0.5,shared element water + dosha-body alignment pitta/head,water,,,waiting resonates with Purva_Ashadha
+hexagram_05,nakshatra_uttara_ashadha,0.3,shared guna sattva,,sattva,,waiting resonates with Uttara_Ashadha
+hexagram_05,nakshatra_shravana,0.4,shared guna sattva + deva-sattva alignment,,sattva,,waiting resonates with Shravana
+hexagram_05,nakshatra_uttara_bhadrapada,0.65,shared element water + shared guna sattva,water,sattva,,waiting resonates with Uttara_Bhadrapada
+hexagram_05,nakshatra_revati,0.75,shared element water + shared guna sattva + deva-sattva alignment,water,sattva,,waiting resonates with Revati
+hexagram_06,nakshatra_ashwini,0.45,shared guna rajas + dosha-body alignment vata/ear,,rajas,,conflict resonates with Ashwini
+hexagram_06,nakshatra_bharani,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,conflict resonates with Bharani
+hexagram_06,nakshatra_krittika,0.3,shared guna rajas,,rajas,,conflict resonates with Krittika
+hexagram_06,nakshatra_rohini,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,conflict resonates with Rohini
+hexagram_06,nakshatra_ardra,0.6,shared element water + dosha-body alignment vata/ear + manushya-rajas alignment,water,,,conflict resonates with Ardra
+hexagram_06,nakshatra_pushya,0.35,shared element water,water,,,conflict resonates with Pushya
+hexagram_06,nakshatra_ashlesha,0.35,shared element water,water,,,conflict resonates with Ashlesha
+hexagram_06,nakshatra_purva_phalguni,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,conflict resonates with Purva_Phalguni
+hexagram_06,nakshatra_swati,0.45,shared guna rajas + dosha-body alignment vata/ear,,rajas,,conflict resonates with Swati
+hexagram_06,nakshatra_vishakha,0.3,shared guna rajas,,rajas,,conflict resonates with Vishakha
+hexagram_06,nakshatra_anuradha,0.35,shared element water,water,,,conflict resonates with Anuradha
+hexagram_06,nakshatra_purva_ashadha,0.75,shared element water + shared guna rajas + manushya-rajas alignment,water,rajas,,conflict resonates with Purva_Ashadha
+hexagram_06,nakshatra_dhanishta,0.3,shared guna rajas,,rajas,,conflict resonates with Dhanishta
+hexagram_06,nakshatra_uttara_bhadrapada,0.45,shared element water + manushya-rajas alignment,water,,,conflict resonates with Uttara_Bhadrapada
+hexagram_06,nakshatra_revati,0.35,shared element water,water,,,conflict resonates with Revati
+hexagram_07,nakshatra_ashwini,0.3,shared guna rajas,,rajas,,the army resonates with Ashwini
+hexagram_07,nakshatra_bharani,0.75,shared element earth + shared guna rajas + manushya-rajas alignment,earth,rajas,,the army resonates with Bharani
+hexagram_07,nakshatra_krittika,0.3,shared guna rajas,,rajas,,the army resonates with Krittika
+hexagram_07,nakshatra_rohini,0.9,shared element earth + shared guna rajas + dosha-body alignment kapha/belly + manushya-rajas alignment,earth,rajas,,the army resonates with Rohini
+hexagram_07,nakshatra_mrigashira,0.35,shared element earth,earth,,,the army resonates with Mrigashira
+hexagram_07,nakshatra_ardra,0.45,shared element water + manushya-rajas alignment,water,,,the army resonates with Ardra
+hexagram_07,nakshatra_pushya,0.5,shared element water + dosha-body alignment kapha/belly,water,,,the army resonates with Pushya
+hexagram_07,nakshatra_ashlesha,0.5,shared element water + dosha-body alignment kapha/belly,water,,,the army resonates with Ashlesha
+hexagram_07,nakshatra_purva_phalguni,0.75,shared element earth + shared guna rajas + manushya-rajas alignment,earth,rajas,,the army resonates with Purva_Phalguni
+hexagram_07,nakshatra_uttara_phalguni,0.6,shared element earth + dosha-body alignment kapha/belly + manushya-rajas alignment,earth,,,the army resonates with Uttara_Phalguni
+hexagram_07,nakshatra_swati,0.3,shared guna rajas,,rajas,,the army resonates with Swati
+hexagram_07,nakshatra_vishakha,0.3,shared guna rajas,,rajas,,the army resonates with Vishakha
+hexagram_07,nakshatra_anuradha,0.5,shared element water + dosha-body alignment kapha/belly,water,,,the army resonates with Anuradha
+hexagram_07,nakshatra_purva_ashadha,0.75,shared element water + shared guna rajas + manushya-rajas alignment,water,rajas,,the army resonates with Purva_Ashadha
+hexagram_07,nakshatra_uttara_ashadha,0.6,shared element earth + dosha-body alignment kapha/belly + manushya-rajas alignment,earth,,,the army resonates with Uttara_Ashadha
+hexagram_07,nakshatra_dhanishta,0.3,shared guna rajas,,rajas,,the army resonates with Dhanishta
+hexagram_07,nakshatra_uttara_bhadrapada,0.6,shared element water + dosha-body alignment kapha/belly + manushya-rajas alignment,water,,,the army resonates with Uttara_Bhadrapada
+hexagram_07,nakshatra_revati,0.5,shared element water + dosha-body alignment kapha/belly,water,,,the army resonates with Revati
+hexagram_08,nakshatra_bharani,0.35,shared element earth,earth,,,holding together resonates with Bharani
+hexagram_08,nakshatra_rohini,0.35,shared element earth,earth,,,holding together resonates with Rohini
+hexagram_08,nakshatra_mrigashira,0.6,shared element earth + dosha-body alignment vata/ear + deva-sattva alignment,earth,,,holding together resonates with Mrigashira
+hexagram_08,nakshatra_ardra,0.5,shared element water + dosha-body alignment vata/ear,water,,,holding together resonates with Ardra
+hexagram_08,nakshatra_punarvasu,0.55,shared guna sattva + dosha-body alignment vata/ear + deva-sattva alignment,,sattva,,holding together resonates with Punarvasu
+hexagram_08,nakshatra_pushya,0.75,shared element water + shared guna sattva + deva-sattva alignment,water,sattva,,holding together resonates with Pushya
+hexagram_08,nakshatra_ashlesha,0.35,shared element water,water,,,holding together resonates with Ashlesha
+hexagram_08,nakshatra_purva_phalguni,0.35,shared element earth,earth,,,holding together resonates with Purva_Phalguni
+hexagram_08,nakshatra_uttara_phalguni,0.65,shared element earth + shared guna sattva,earth,sattva,,holding together resonates with Uttara_Phalguni
+hexagram_08,nakshatra_hasta,0.55,shared guna sattva + dosha-body alignment vata/ear + deva-sattva alignment,,sattva,,holding together resonates with Hasta
+hexagram_08,nakshatra_anuradha,0.75,shared element water + shared guna sattva + deva-sattva alignment,water,sattva,,holding together resonates with Anuradha
+hexagram_08,nakshatra_purva_ashadha,0.35,shared element water,water,,,holding together resonates with Purva_Ashadha
+hexagram_08,nakshatra_uttara_ashadha,0.65,shared element earth + shared guna sattva,earth,sattva,,holding together resonates with Uttara_Ashadha
+hexagram_08,nakshatra_shravana,0.55,shared guna sattva + dosha-body alignment vata/ear + deva-sattva alignment,,sattva,,holding together resonates with Shravana
+hexagram_08,nakshatra_uttara_bhadrapada,0.65,shared element water + shared guna sattva,water,sattva,,holding together resonates with Uttara_Bhadrapada
+hexagram_08,nakshatra_revati,0.75,shared element water + shared guna sattva + deva-sattva alignment,water,sattva,,holding together resonates with Revati
+hexagram_09,nakshatra_punarvasu,0.75,shared element air + shared guna sattva + deva-sattva alignment,air,sattva,,taming power of the small resonates with Punarvasu
+hexagram_09,nakshatra_pushya,0.4,shared guna sattva + deva-sattva alignment,,sattva,,taming power of the small resonates with Pushya
+hexagram_09,nakshatra_uttara_phalguni,0.3,shared guna sattva,,sattva,,taming power of the small resonates with Uttara_Phalguni
+hexagram_09,nakshatra_hasta,0.75,shared element air + shared guna sattva + deva-sattva alignment,air,sattva,,taming power of the small resonates with Hasta
+hexagram_09,nakshatra_swati,0.45,shared element air + deva-sattva alignment,air,,,taming power of the small resonates with Swati
+hexagram_09,nakshatra_anuradha,0.4,shared guna sattva + deva-sattva alignment,,sattva,,taming power of the small resonates with Anuradha
+hexagram_09,nakshatra_jyeshtha,0.5,shared element air + dosha-body alignment pitta/head,air,,,taming power of the small resonates with Jyeshtha
+hexagram_09,nakshatra_mula,0.35,shared element air,air,,,taming power of the small resonates with Mula
+hexagram_09,nakshatra_uttara_ashadha,0.3,shared guna sattva,,sattva,,taming power of the small resonates with Uttara_Ashadha
+hexagram_09,nakshatra_shravana,0.75,shared element air + shared guna sattva + deva-sattva alignment,air,sattva,,taming power of the small resonates with Shravana
+hexagram_09,nakshatra_shatabhisha,0.35,shared element air,air,,,taming power of the small resonates with Shatabhisha
+hexagram_09,nakshatra_uttara_bhadrapada,0.3,shared guna sattva,,sattva,,taming power of the small resonates with Uttara_Bhadrapada
+hexagram_09,nakshatra_revati,0.4,shared guna sattva + deva-sattva alignment,,sattva,,taming power of the small resonates with Revati
+hexagram_10,nakshatra_ashwini,0.3,shared guna rajas,,rajas,,treading resonates with Ashwini
+hexagram_10,nakshatra_bharani,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,treading resonates with Bharani
+hexagram_10,nakshatra_krittika,0.3,shared guna rajas,,rajas,,treading resonates with Krittika
+hexagram_10,nakshatra_rohini,0.55,shared guna rajas + dosha-body alignment kapha/mouth + manushya-rajas alignment,,rajas,,treading resonates with Rohini
+hexagram_10,nakshatra_ardra,0.45,shared element water + manushya-rajas alignment,water,,,treading resonates with Ardra
+hexagram_10,nakshatra_pushya,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,treading resonates with Pushya
+hexagram_10,nakshatra_ashlesha,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,treading resonates with Ashlesha
+hexagram_10,nakshatra_purva_phalguni,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,treading resonates with Purva_Phalguni
+hexagram_10,nakshatra_swati,0.3,shared guna rajas,,rajas,,treading resonates with Swati
+hexagram_10,nakshatra_vishakha,0.3,shared guna rajas,,rajas,,treading resonates with Vishakha
+hexagram_10,nakshatra_anuradha,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,treading resonates with Anuradha
+hexagram_10,nakshatra_purva_ashadha,0.75,shared element water + shared guna rajas + manushya-rajas alignment,water,rajas,,treading resonates with Purva_Ashadha
+hexagram_10,nakshatra_dhanishta,0.3,shared guna rajas,,rajas,,treading resonates with Dhanishta
+hexagram_10,nakshatra_uttara_bhadrapada,0.6,shared element water + dosha-body alignment kapha/mouth + manushya-rajas alignment,water,,,treading resonates with Uttara_Bhadrapada
+hexagram_10,nakshatra_revati,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,treading resonates with Revati
+hexagram_11,nakshatra_bharani,0.5,shared element earth + dosha-body alignment pitta/head,earth,,,peace resonates with Bharani
+hexagram_11,nakshatra_rohini,0.35,shared element earth,earth,,,peace resonates with Rohini
+hexagram_11,nakshatra_mrigashira,0.45,shared element earth + deva-sattva alignment,earth,,,peace resonates with Mrigashira
+hexagram_11,nakshatra_punarvasu,0.4,shared guna sattva + deva-sattva alignment,,sattva,,peace resonates with Punarvasu
+hexagram_11,nakshatra_pushya,0.4,shared guna sattva + deva-sattva alignment,,sattva,,peace resonates with Pushya
+hexagram_11,nakshatra_purva_phalguni,0.5,shared element earth + dosha-body alignment pitta/head,earth,,,peace resonates with Purva_Phalguni
+hexagram_11,nakshatra_uttara_phalguni,0.65,shared element earth + shared guna sattva,earth,sattva,,peace resonates with Uttara_Phalguni
+hexagram_11,nakshatra_hasta,0.4,shared guna sattva + deva-sattva alignment,,sattva,,peace resonates with Hasta
+hexagram_11,nakshatra_anuradha,0.4,shared guna sattva + deva-sattva alignment,,sattva,,peace resonates with Anuradha
+hexagram_11,nakshatra_uttara_ashadha,0.65,shared element earth + shared guna sattva,earth,sattva,,peace resonates with Uttara_Ashadha
+hexagram_11,nakshatra_shravana,0.4,shared guna sattva + deva-sattva alignment,,sattva,,peace resonates with Shravana
+hexagram_11,nakshatra_uttara_bhadrapada,0.3,shared guna sattva,,sattva,,peace resonates with Uttara_Bhadrapada
+hexagram_11,nakshatra_revati,0.4,shared guna sattva + deva-sattva alignment,,sattva,,peace resonates with Revati
+hexagram_12,nakshatra_bharani,0.35,shared element earth,earth,,,standstill resonates with Bharani
+hexagram_12,nakshatra_rohini,0.5,shared element earth + dosha-body alignment kapha/belly,earth,,,standstill resonates with Rohini
+hexagram_12,nakshatra_mrigashira,0.65,shared element earth + shared guna tamas,earth,tamas,,standstill resonates with Mrigashira
+hexagram_12,nakshatra_ardra,0.3,shared guna tamas,,tamas,,standstill resonates with Ardra
+hexagram_12,nakshatra_ashlesha,0.55,shared guna tamas + dosha-body alignment kapha/belly + rakshasa-tamas alignment,,tamas,,standstill resonates with Ashlesha
+hexagram_12,nakshatra_magha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,standstill resonates with Magha
+hexagram_12,nakshatra_purva_phalguni,0.35,shared element earth,earth,,,standstill resonates with Purva_Phalguni
+hexagram_12,nakshatra_uttara_phalguni,0.5,shared element earth + dosha-body alignment kapha/belly,earth,,,standstill resonates with Uttara_Phalguni
+hexagram_12,nakshatra_chitra,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,standstill resonates with Chitra
+hexagram_12,nakshatra_jyeshtha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,standstill resonates with Jyeshtha
+hexagram_12,nakshatra_mula,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,standstill resonates with Mula
+hexagram_12,nakshatra_uttara_ashadha,0.5,shared element earth + dosha-body alignment kapha/belly,earth,,,standstill resonates with Uttara_Ashadha
+hexagram_12,nakshatra_shatabhisha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,standstill resonates with Shatabhisha
+hexagram_12,nakshatra_purva_bhadrapada,0.3,shared guna tamas,,tamas,,standstill resonates with Purva_Bhadrapada
+hexagram_13,nakshatra_ashwini,0.45,shared element fire + deva-sattva alignment,fire,,,fellowship resonates with Ashwini
+hexagram_13,nakshatra_krittika,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,fellowship resonates with Krittika
+hexagram_13,nakshatra_punarvasu,0.4,shared guna sattva + deva-sattva alignment,,sattva,,fellowship resonates with Punarvasu
+hexagram_13,nakshatra_pushya,0.4,shared guna sattva + deva-sattva alignment,,sattva,,fellowship resonates with Pushya
+hexagram_13,nakshatra_magha,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,fellowship resonates with Magha
+hexagram_13,nakshatra_uttara_phalguni,0.3,shared guna sattva,,sattva,,fellowship resonates with Uttara_Phalguni
+hexagram_13,nakshatra_hasta,0.4,shared guna sattva + deva-sattva alignment,,sattva,,fellowship resonates with Hasta
+hexagram_13,nakshatra_chitra,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,fellowship resonates with Chitra
+hexagram_13,nakshatra_vishakha,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,fellowship resonates with Vishakha
+hexagram_13,nakshatra_anuradha,0.4,shared guna sattva + deva-sattva alignment,,sattva,,fellowship resonates with Anuradha
+hexagram_13,nakshatra_uttara_ashadha,0.3,shared guna sattva,,sattva,,fellowship resonates with Uttara_Ashadha
+hexagram_13,nakshatra_shravana,0.4,shared guna sattva + deva-sattva alignment,,sattva,,fellowship resonates with Shravana
+hexagram_13,nakshatra_dhanishta,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,fellowship resonates with Dhanishta
+hexagram_13,nakshatra_purva_bhadrapada,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,fellowship resonates with Purva_Bhadrapada
+hexagram_13,nakshatra_uttara_bhadrapada,0.3,shared guna sattva,,sattva,,fellowship resonates with Uttara_Bhadrapada
+hexagram_13,nakshatra_revati,0.4,shared guna sattva + deva-sattva alignment,,sattva,,fellowship resonates with Revati
+hexagram_14,nakshatra_ashwini,0.45,shared element fire + deva-sattva alignment,fire,,,great possession resonates with Ashwini
+hexagram_14,nakshatra_krittika,0.5,shared element fire + dosha-body alignment pitta/head,fire,,,great possession resonates with Krittika
+hexagram_14,nakshatra_punarvasu,0.4,shared guna sattva + deva-sattva alignment,,sattva,,great possession resonates with Punarvasu
+hexagram_14,nakshatra_pushya,0.4,shared guna sattva + deva-sattva alignment,,sattva,,great possession resonates with Pushya
+hexagram_14,nakshatra_magha,0.5,shared element fire + dosha-body alignment pitta/head,fire,,,great possession resonates with Magha
+hexagram_14,nakshatra_uttara_phalguni,0.3,shared guna sattva,,sattva,,great possession resonates with Uttara_Phalguni
+hexagram_14,nakshatra_hasta,0.4,shared guna sattva + deva-sattva alignment,,sattva,,great possession resonates with Hasta
+hexagram_14,nakshatra_chitra,0.5,shared element fire + dosha-body alignment pitta/head,fire,,,great possession resonates with Chitra
+hexagram_14,nakshatra_vishakha,0.5,shared element fire + dosha-body alignment pitta/head,fire,,,great possession resonates with Vishakha
+hexagram_14,nakshatra_anuradha,0.4,shared guna sattva + deva-sattva alignment,,sattva,,great possession resonates with Anuradha
+hexagram_14,nakshatra_uttara_ashadha,0.3,shared guna sattva,,sattva,,great possession resonates with Uttara_Ashadha
+hexagram_14,nakshatra_shravana,0.4,shared guna sattva + deva-sattva alignment,,sattva,,great possession resonates with Shravana
+hexagram_14,nakshatra_dhanishta,0.5,shared element fire + dosha-body alignment pitta/head,fire,,,great possession resonates with Dhanishta
+hexagram_14,nakshatra_purva_bhadrapada,0.5,shared element fire + dosha-body alignment pitta/head,fire,,,great possession resonates with Purva_Bhadrapada
+hexagram_14,nakshatra_uttara_bhadrapada,0.3,shared guna sattva,,sattva,,great possession resonates with Uttara_Bhadrapada
+hexagram_14,nakshatra_revati,0.4,shared guna sattva + deva-sattva alignment,,sattva,,great possession resonates with Revati
+hexagram_15,nakshatra_bharani,0.35,shared element earth,earth,,,modesty resonates with Bharani
+hexagram_15,nakshatra_rohini,0.5,shared element earth + dosha-body alignment kapha/hand,earth,,,modesty resonates with Rohini
+hexagram_15,nakshatra_mrigashira,0.45,shared element earth + deva-sattva alignment,earth,,,modesty resonates with Mrigashira
+hexagram_15,nakshatra_punarvasu,0.4,shared guna sattva + deva-sattva alignment,,sattva,,modesty resonates with Punarvasu
+hexagram_15,nakshatra_pushya,0.55,shared guna sattva + dosha-body alignment kapha/hand + deva-sattva alignment,,sattva,,modesty resonates with Pushya
+hexagram_15,nakshatra_purva_phalguni,0.35,shared element earth,earth,,,modesty resonates with Purva_Phalguni
+hexagram_15,nakshatra_uttara_phalguni,0.8,shared element earth + shared guna sattva + dosha-body alignment kapha/hand,earth,sattva,,modesty resonates with Uttara_Phalguni
+hexagram_15,nakshatra_hasta,0.4,shared guna sattva + deva-sattva alignment,,sattva,,modesty resonates with Hasta
+hexagram_15,nakshatra_anuradha,0.55,shared guna sattva + dosha-body alignment kapha/hand + deva-sattva alignment,,sattva,,modesty resonates with Anuradha
+hexagram_15,nakshatra_uttara_ashadha,0.8,shared element earth + shared guna sattva + dosha-body alignment kapha/hand,earth,sattva,,modesty resonates with Uttara_Ashadha
+hexagram_15,nakshatra_shravana,0.4,shared guna sattva + deva-sattva alignment,,sattva,,modesty resonates with Shravana
+hexagram_15,nakshatra_uttara_bhadrapada,0.45,shared guna sattva + dosha-body alignment kapha/hand,,sattva,,modesty resonates with Uttara_Bhadrapada
+hexagram_15,nakshatra_revati,0.55,shared guna sattva + dosha-body alignment kapha/hand + deva-sattva alignment,,sattva,,modesty resonates with Revati
+hexagram_16,nakshatra_ashwini,0.65,shared element fire + shared guna rajas,fire,rajas,,enthusiasm resonates with Ashwini
+hexagram_16,nakshatra_bharani,0.75,shared element earth + shared guna rajas + manushya-rajas alignment,earth,rajas,,enthusiasm resonates with Bharani
+hexagram_16,nakshatra_krittika,0.65,shared element fire + shared guna rajas,fire,rajas,,enthusiasm resonates with Krittika
+hexagram_16,nakshatra_rohini,0.9,shared element earth + shared guna rajas + dosha-body alignment kapha/belly + manushya-rajas alignment,earth,rajas,,enthusiasm resonates with Rohini
+hexagram_16,nakshatra_mrigashira,0.35,shared element earth,earth,,,enthusiasm resonates with Mrigashira
+hexagram_16,nakshatra_magha,0.35,shared element fire,fire,,,enthusiasm resonates with Magha
+hexagram_16,nakshatra_purva_phalguni,0.75,shared element earth + shared guna rajas + manushya-rajas alignment,earth,rajas,,enthusiasm resonates with Purva_Phalguni
+hexagram_16,nakshatra_uttara_phalguni,0.6,shared element earth + dosha-body alignment kapha/belly + manushya-rajas alignment,earth,,,enthusiasm resonates with Uttara_Phalguni
+hexagram_16,nakshatra_chitra,0.35,shared element fire,fire,,,enthusiasm resonates with Chitra
+hexagram_16,nakshatra_swati,0.3,shared guna rajas,,rajas,,enthusiasm resonates with Swati
+hexagram_16,nakshatra_vishakha,0.65,shared element fire + shared guna rajas,fire,rajas,,enthusiasm resonates with Vishakha
+hexagram_16,nakshatra_purva_ashadha,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,enthusiasm resonates with Purva_Ashadha
+hexagram_16,nakshatra_uttara_ashadha,0.6,shared element earth + dosha-body alignment kapha/belly + manushya-rajas alignment,earth,,,enthusiasm resonates with Uttara_Ashadha
+hexagram_16,nakshatra_dhanishta,0.65,shared element fire + shared guna rajas,fire,rajas,,enthusiasm resonates with Dhanishta
+hexagram_16,nakshatra_purva_bhadrapada,0.45,shared element fire + manushya-rajas alignment,fire,,,enthusiasm resonates with Purva_Bhadrapada
+hexagram_17,nakshatra_ashwini,0.8,shared element fire + shared guna rajas + dosha-body alignment vata/foot,fire,rajas,,following resonates with Ashwini
+hexagram_17,nakshatra_bharani,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,following resonates with Bharani
+hexagram_17,nakshatra_krittika,0.65,shared element fire + shared guna rajas,fire,rajas,,following resonates with Krittika
+hexagram_17,nakshatra_rohini,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,following resonates with Rohini
+hexagram_17,nakshatra_ardra,0.6,shared element water + dosha-body alignment vata/foot + manushya-rajas alignment,water,,,following resonates with Ardra
+hexagram_17,nakshatra_pushya,0.35,shared element water,water,,,following resonates with Pushya
+hexagram_17,nakshatra_ashlesha,0.35,shared element water,water,,,following resonates with Ashlesha
+hexagram_17,nakshatra_magha,0.35,shared element fire,fire,,,following resonates with Magha
+hexagram_17,nakshatra_purva_phalguni,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,following resonates with Purva_Phalguni
+hexagram_17,nakshatra_chitra,0.35,shared element fire,fire,,,following resonates with Chitra
+hexagram_17,nakshatra_swati,0.45,shared guna rajas + dosha-body alignment vata/foot,,rajas,,following resonates with Swati
+hexagram_17,nakshatra_vishakha,0.65,shared element fire + shared guna rajas,fire,rajas,,following resonates with Vishakha
+hexagram_17,nakshatra_anuradha,0.35,shared element water,water,,,following resonates with Anuradha
+hexagram_17,nakshatra_purva_ashadha,0.75,shared element water + shared guna rajas + manushya-rajas alignment,water,rajas,,following resonates with Purva_Ashadha
+hexagram_17,nakshatra_dhanishta,0.65,shared element fire + shared guna rajas,fire,rajas,,following resonates with Dhanishta
+hexagram_17,nakshatra_purva_bhadrapada,0.45,shared element fire + manushya-rajas alignment,fire,,,following resonates with Purva_Bhadrapada
+hexagram_17,nakshatra_uttara_bhadrapada,0.45,shared element water + manushya-rajas alignment,water,,,following resonates with Uttara_Bhadrapada
+hexagram_17,nakshatra_revati,0.35,shared element water,water,,,following resonates with Revati
+hexagram_18,nakshatra_ashwini,0.45,shared guna rajas + dosha-body alignment vata/thigh,,rajas,,work on the decayed resonates with Ashwini
+hexagram_18,nakshatra_bharani,0.75,shared element earth + shared guna rajas + manushya-rajas alignment,earth,rajas,,work on the decayed resonates with Bharani
+hexagram_18,nakshatra_krittika,0.3,shared guna rajas,,rajas,,work on the decayed resonates with Krittika
+hexagram_18,nakshatra_rohini,0.75,shared element earth + shared guna rajas + manushya-rajas alignment,earth,rajas,,work on the decayed resonates with Rohini
+hexagram_18,nakshatra_mrigashira,0.5,shared element earth + dosha-body alignment vata/thigh,earth,,,work on the decayed resonates with Mrigashira
+hexagram_18,nakshatra_punarvasu,0.5,shared element air + dosha-body alignment vata/thigh,air,,,work on the decayed resonates with Punarvasu
+hexagram_18,nakshatra_purva_phalguni,0.75,shared element earth + shared guna rajas + manushya-rajas alignment,earth,rajas,,work on the decayed resonates with Purva_Phalguni
+hexagram_18,nakshatra_uttara_phalguni,0.45,shared element earth + manushya-rajas alignment,earth,,,work on the decayed resonates with Uttara_Phalguni
+hexagram_18,nakshatra_hasta,0.5,shared element air + dosha-body alignment vata/thigh,air,,,work on the decayed resonates with Hasta
+hexagram_18,nakshatra_swati,0.8,shared element air + shared guna rajas + dosha-body alignment vata/thigh,air,rajas,,work on the decayed resonates with Swati
+hexagram_18,nakshatra_vishakha,0.3,shared guna rajas,,rajas,,work on the decayed resonates with Vishakha
+hexagram_18,nakshatra_jyeshtha,0.35,shared element air,air,,,work on the decayed resonates with Jyeshtha
+hexagram_18,nakshatra_mula,0.5,shared element air + dosha-body alignment vata/thigh,air,,,work on the decayed resonates with Mula
+hexagram_18,nakshatra_purva_ashadha,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,work on the decayed resonates with Purva_Ashadha
+hexagram_18,nakshatra_uttara_ashadha,0.45,shared element earth + manushya-rajas alignment,earth,,,work on the decayed resonates with Uttara_Ashadha
+hexagram_18,nakshatra_shravana,0.5,shared element air + dosha-body alignment vata/thigh,air,,,work on the decayed resonates with Shravana
+hexagram_18,nakshatra_dhanishta,0.3,shared guna rajas,,rajas,,work on the decayed resonates with Dhanishta
+hexagram_18,nakshatra_shatabhisha,0.5,shared element air + dosha-body alignment vata/thigh,air,,,work on the decayed resonates with Shatabhisha
+hexagram_19,nakshatra_bharani,0.35,shared element earth,earth,,,approach resonates with Bharani
+hexagram_19,nakshatra_rohini,0.5,shared element earth + dosha-body alignment kapha/mouth,earth,,,approach resonates with Rohini
+hexagram_19,nakshatra_mrigashira,0.45,shared element earth + deva-sattva alignment,earth,,,approach resonates with Mrigashira
+hexagram_19,nakshatra_ardra,0.35,shared element water,water,,,approach resonates with Ardra
+hexagram_19,nakshatra_punarvasu,0.4,shared guna sattva + deva-sattva alignment,,sattva,,approach resonates with Punarvasu
+hexagram_19,nakshatra_pushya,0.9,shared element water + shared guna sattva + dosha-body alignment kapha/mouth + deva-sattva alignment,water,sattva,,approach resonates with Pushya
+hexagram_19,nakshatra_ashlesha,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,approach resonates with Ashlesha
+hexagram_19,nakshatra_purva_phalguni,0.35,shared element earth,earth,,,approach resonates with Purva_Phalguni
+hexagram_19,nakshatra_uttara_phalguni,0.8,shared element earth + shared guna sattva + dosha-body alignment kapha/mouth,earth,sattva,,approach resonates with Uttara_Phalguni
+hexagram_19,nakshatra_hasta,0.4,shared guna sattva + deva-sattva alignment,,sattva,,approach resonates with Hasta
+hexagram_19,nakshatra_anuradha,0.9,shared element water + shared guna sattva + dosha-body alignment kapha/mouth + deva-sattva alignment,water,sattva,,approach resonates with Anuradha
+hexagram_19,nakshatra_purva_ashadha,0.35,shared element water,water,,,approach resonates with Purva_Ashadha
+hexagram_19,nakshatra_uttara_ashadha,0.8,shared element earth + shared guna sattva + dosha-body alignment kapha/mouth,earth,sattva,,approach resonates with Uttara_Ashadha
+hexagram_19,nakshatra_shravana,0.4,shared guna sattva + deva-sattva alignment,,sattva,,approach resonates with Shravana
+hexagram_19,nakshatra_uttara_bhadrapada,0.8,shared element water + shared guna sattva + dosha-body alignment kapha/mouth,water,sattva,,approach resonates with Uttara_Bhadrapada
+hexagram_19,nakshatra_revati,0.9,shared element water + shared guna sattva + dosha-body alignment kapha/mouth + deva-sattva alignment,water,sattva,,approach resonates with Revati
+hexagram_20,nakshatra_bharani,0.35,shared element earth,earth,,,contemplation resonates with Bharani
+hexagram_20,nakshatra_rohini,0.5,shared element earth + dosha-body alignment kapha/belly,earth,,,contemplation resonates with Rohini
+hexagram_20,nakshatra_mrigashira,0.45,shared element earth + deva-sattva alignment,earth,,,contemplation resonates with Mrigashira
+hexagram_20,nakshatra_punarvasu,0.75,shared element air + shared guna sattva + deva-sattva alignment,air,sattva,,contemplation resonates with Punarvasu
+hexagram_20,nakshatra_pushya,0.55,shared guna sattva + dosha-body alignment kapha/belly + deva-sattva alignment,,sattva,,contemplation resonates with Pushya
+hexagram_20,nakshatra_purva_phalguni,0.35,shared element earth,earth,,,contemplation resonates with Purva_Phalguni
+hexagram_20,nakshatra_uttara_phalguni,0.8,shared element earth + shared guna sattva + dosha-body alignment kapha/belly,earth,sattva,,contemplation resonates with Uttara_Phalguni
+hexagram_20,nakshatra_hasta,0.75,shared element air + shared guna sattva + deva-sattva alignment,air,sattva,,contemplation resonates with Hasta
+hexagram_20,nakshatra_swati,0.45,shared element air + deva-sattva alignment,air,,,contemplation resonates with Swati
+hexagram_20,nakshatra_anuradha,0.55,shared guna sattva + dosha-body alignment kapha/belly + deva-sattva alignment,,sattva,,contemplation resonates with Anuradha
+hexagram_20,nakshatra_jyeshtha,0.35,shared element air,air,,,contemplation resonates with Jyeshtha
+hexagram_20,nakshatra_mula,0.35,shared element air,air,,,contemplation resonates with Mula
+hexagram_20,nakshatra_uttara_ashadha,0.8,shared element earth + shared guna sattva + dosha-body alignment kapha/belly,earth,sattva,,contemplation resonates with Uttara_Ashadha
+hexagram_20,nakshatra_shravana,0.75,shared element air + shared guna sattva + deva-sattva alignment,air,sattva,,contemplation resonates with Shravana
+hexagram_20,nakshatra_shatabhisha,0.35,shared element air,air,,,contemplation resonates with Shatabhisha
+hexagram_20,nakshatra_uttara_bhadrapada,0.45,shared guna sattva + dosha-body alignment kapha/belly,,sattva,,contemplation resonates with Uttara_Bhadrapada
+hexagram_20,nakshatra_revati,0.55,shared guna sattva + dosha-body alignment kapha/belly + deva-sattva alignment,,sattva,,contemplation resonates with Revati
+hexagram_21,nakshatra_ashwini,0.8,shared element fire + shared guna rajas + dosha-body alignment vata/foot,fire,rajas,,biting through resonates with Ashwini
+hexagram_21,nakshatra_bharani,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,biting through resonates with Bharani
+hexagram_21,nakshatra_krittika,0.65,shared element fire + shared guna rajas,fire,rajas,,biting through resonates with Krittika
+hexagram_21,nakshatra_rohini,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,biting through resonates with Rohini
+hexagram_21,nakshatra_magha,0.35,shared element fire,fire,,,biting through resonates with Magha
+hexagram_21,nakshatra_purva_phalguni,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,biting through resonates with Purva_Phalguni
+hexagram_21,nakshatra_chitra,0.35,shared element fire,fire,,,biting through resonates with Chitra
+hexagram_21,nakshatra_swati,0.45,shared guna rajas + dosha-body alignment vata/foot,,rajas,,biting through resonates with Swati
+hexagram_21,nakshatra_vishakha,0.65,shared element fire + shared guna rajas,fire,rajas,,biting through resonates with Vishakha
+hexagram_21,nakshatra_purva_ashadha,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,biting through resonates with Purva_Ashadha
+hexagram_21,nakshatra_dhanishta,0.65,shared element fire + shared guna rajas,fire,rajas,,biting through resonates with Dhanishta
+hexagram_21,nakshatra_purva_bhadrapada,0.45,shared element fire + manushya-rajas alignment,fire,,,biting through resonates with Purva_Bhadrapada
+hexagram_22,nakshatra_ashwini,0.45,shared element fire + deva-sattva alignment,fire,,,grace resonates with Ashwini
+hexagram_22,nakshatra_bharani,0.5,shared element earth + dosha-body alignment pitta/eye,earth,,,grace resonates with Bharani
+hexagram_22,nakshatra_krittika,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,grace resonates with Krittika
+hexagram_22,nakshatra_rohini,0.35,shared element earth,earth,,,grace resonates with Rohini
+hexagram_22,nakshatra_mrigashira,0.45,shared element earth + deva-sattva alignment,earth,,,grace resonates with Mrigashira
+hexagram_22,nakshatra_punarvasu,0.4,shared guna sattva + deva-sattva alignment,,sattva,,grace resonates with Punarvasu
+hexagram_22,nakshatra_pushya,0.4,shared guna sattva + deva-sattva alignment,,sattva,,grace resonates with Pushya
+hexagram_22,nakshatra_magha,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,grace resonates with Magha
+hexagram_22,nakshatra_purva_phalguni,0.5,shared element earth + dosha-body alignment pitta/eye,earth,,,grace resonates with Purva_Phalguni
+hexagram_22,nakshatra_uttara_phalguni,0.65,shared element earth + shared guna sattva,earth,sattva,,grace resonates with Uttara_Phalguni
+hexagram_22,nakshatra_hasta,0.4,shared guna sattva + deva-sattva alignment,,sattva,,grace resonates with Hasta
+hexagram_22,nakshatra_chitra,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,grace resonates with Chitra
+hexagram_22,nakshatra_vishakha,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,grace resonates with Vishakha
+hexagram_22,nakshatra_anuradha,0.4,shared guna sattva + deva-sattva alignment,,sattva,,grace resonates with Anuradha
+hexagram_22,nakshatra_uttara_ashadha,0.65,shared element earth + shared guna sattva,earth,sattva,,grace resonates with Uttara_Ashadha
+hexagram_22,nakshatra_shravana,0.4,shared guna sattva + deva-sattva alignment,,sattva,,grace resonates with Shravana
+hexagram_22,nakshatra_dhanishta,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,grace resonates with Dhanishta
+hexagram_22,nakshatra_purva_bhadrapada,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,grace resonates with Purva_Bhadrapada
+hexagram_22,nakshatra_uttara_bhadrapada,0.3,shared guna sattva,,sattva,,grace resonates with Uttara_Bhadrapada
+hexagram_22,nakshatra_revati,0.4,shared guna sattva + deva-sattva alignment,,sattva,,grace resonates with Revati
+hexagram_23,nakshatra_bharani,0.35,shared element earth,earth,,,splitting apart resonates with Bharani
+hexagram_23,nakshatra_rohini,0.5,shared element earth + dosha-body alignment kapha/belly,earth,,,splitting apart resonates with Rohini
+hexagram_23,nakshatra_mrigashira,0.65,shared element earth + shared guna tamas,earth,tamas,,splitting apart resonates with Mrigashira
+hexagram_23,nakshatra_ardra,0.3,shared guna tamas,,tamas,,splitting apart resonates with Ardra
+hexagram_23,nakshatra_ashlesha,0.55,shared guna tamas + dosha-body alignment kapha/belly + rakshasa-tamas alignment,,tamas,,splitting apart resonates with Ashlesha
+hexagram_23,nakshatra_magha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,splitting apart resonates with Magha
+hexagram_23,nakshatra_purva_phalguni,0.35,shared element earth,earth,,,splitting apart resonates with Purva_Phalguni
+hexagram_23,nakshatra_uttara_phalguni,0.5,shared element earth + dosha-body alignment kapha/belly,earth,,,splitting apart resonates with Uttara_Phalguni
+hexagram_23,nakshatra_chitra,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,splitting apart resonates with Chitra
+hexagram_23,nakshatra_jyeshtha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,splitting apart resonates with Jyeshtha
+hexagram_23,nakshatra_mula,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,splitting apart resonates with Mula
+hexagram_23,nakshatra_uttara_ashadha,0.5,shared element earth + dosha-body alignment kapha/belly,earth,,,splitting apart resonates with Uttara_Ashadha
+hexagram_23,nakshatra_shatabhisha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,splitting apart resonates with Shatabhisha
+hexagram_23,nakshatra_purva_bhadrapada,0.3,shared guna tamas,,tamas,,splitting apart resonates with Purva_Bhadrapada
+hexagram_24,nakshatra_ashwini,0.6,shared element fire + dosha-body alignment vata/foot + deva-sattva alignment,fire,,,return resonates with Ashwini
+hexagram_24,nakshatra_bharani,0.35,shared element earth,earth,,,return resonates with Bharani
+hexagram_24,nakshatra_krittika,0.35,shared element fire,fire,,,return resonates with Krittika
+hexagram_24,nakshatra_rohini,0.35,shared element earth,earth,,,return resonates with Rohini
+hexagram_24,nakshatra_mrigashira,0.6,shared element earth + dosha-body alignment vata/foot + deva-sattva alignment,earth,,,return resonates with Mrigashira
+hexagram_24,nakshatra_punarvasu,0.55,shared guna sattva + dosha-body alignment vata/foot + deva-sattva alignment,,sattva,,return resonates with Punarvasu
+hexagram_24,nakshatra_pushya,0.4,shared guna sattva + deva-sattva alignment,,sattva,,return resonates with Pushya
+hexagram_24,nakshatra_magha,0.35,shared element fire,fire,,,return resonates with Magha
+hexagram_24,nakshatra_purva_phalguni,0.35,shared element earth,earth,,,return resonates with Purva_Phalguni
+hexagram_24,nakshatra_uttara_phalguni,0.65,shared element earth + shared guna sattva,earth,sattva,,return resonates with Uttara_Phalguni
+hexagram_24,nakshatra_hasta,0.55,shared guna sattva + dosha-body alignment vata/foot + deva-sattva alignment,,sattva,,return resonates with Hasta
+hexagram_24,nakshatra_chitra,0.35,shared element fire,fire,,,return resonates with Chitra
+hexagram_24,nakshatra_vishakha,0.35,shared element fire,fire,,,return resonates with Vishakha
+hexagram_24,nakshatra_anuradha,0.4,shared guna sattva + deva-sattva alignment,,sattva,,return resonates with Anuradha
+hexagram_24,nakshatra_uttara_ashadha,0.65,shared element earth + shared guna sattva,earth,sattva,,return resonates with Uttara_Ashadha
+hexagram_24,nakshatra_shravana,0.55,shared guna sattva + dosha-body alignment vata/foot + deva-sattva alignment,,sattva,,return resonates with Shravana
+hexagram_24,nakshatra_dhanishta,0.35,shared element fire,fire,,,return resonates with Dhanishta
+hexagram_24,nakshatra_purva_bhadrapada,0.35,shared element fire,fire,,,return resonates with Purva_Bhadrapada
+hexagram_24,nakshatra_uttara_bhadrapada,0.3,shared guna sattva,,sattva,,return resonates with Uttara_Bhadrapada
+hexagram_24,nakshatra_revati,0.4,shared guna sattva + deva-sattva alignment,,sattva,,return resonates with Revati
+hexagram_25,nakshatra_ashwini,0.6,shared element fire + dosha-body alignment vata/foot + deva-sattva alignment,fire,,,innocence resonates with Ashwini
+hexagram_25,nakshatra_krittika,0.35,shared element fire,fire,,,innocence resonates with Krittika
+hexagram_25,nakshatra_punarvasu,0.55,shared guna sattva + dosha-body alignment vata/foot + deva-sattva alignment,,sattva,,innocence resonates with Punarvasu
+hexagram_25,nakshatra_pushya,0.4,shared guna sattva + deva-sattva alignment,,sattva,,innocence resonates with Pushya
+hexagram_25,nakshatra_magha,0.35,shared element fire,fire,,,innocence resonates with Magha
+hexagram_25,nakshatra_uttara_phalguni,0.3,shared guna sattva,,sattva,,innocence resonates with Uttara_Phalguni
+hexagram_25,nakshatra_hasta,0.55,shared guna sattva + dosha-body alignment vata/foot + deva-sattva alignment,,sattva,,innocence resonates with Hasta
+hexagram_25,nakshatra_chitra,0.35,shared element fire,fire,,,innocence resonates with Chitra
+hexagram_25,nakshatra_vishakha,0.35,shared element fire,fire,,,innocence resonates with Vishakha
+hexagram_25,nakshatra_anuradha,0.4,shared guna sattva + deva-sattva alignment,,sattva,,innocence resonates with Anuradha
+hexagram_25,nakshatra_uttara_ashadha,0.3,shared guna sattva,,sattva,,innocence resonates with Uttara_Ashadha
+hexagram_25,nakshatra_shravana,0.55,shared guna sattva + dosha-body alignment vata/foot + deva-sattva alignment,,sattva,,innocence resonates with Shravana
+hexagram_25,nakshatra_dhanishta,0.35,shared element fire,fire,,,innocence resonates with Dhanishta
+hexagram_25,nakshatra_purva_bhadrapada,0.35,shared element fire,fire,,,innocence resonates with Purva_Bhadrapada
+hexagram_25,nakshatra_uttara_bhadrapada,0.3,shared guna sattva,,sattva,,innocence resonates with Uttara_Bhadrapada
+hexagram_25,nakshatra_revati,0.4,shared guna sattva + deva-sattva alignment,,sattva,,innocence resonates with Revati
+hexagram_26,nakshatra_bharani,0.5,shared element earth + dosha-body alignment pitta/head,earth,,,taming power of the great resonates with Bharani
+hexagram_26,nakshatra_rohini,0.35,shared element earth,earth,,,taming power of the great resonates with Rohini
+hexagram_26,nakshatra_mrigashira,0.45,shared element earth + deva-sattva alignment,earth,,,taming power of the great resonates with Mrigashira
+hexagram_26,nakshatra_punarvasu,0.4,shared guna sattva + deva-sattva alignment,,sattva,,taming power of the great resonates with Punarvasu
+hexagram_26,nakshatra_pushya,0.4,shared guna sattva + deva-sattva alignment,,sattva,,taming power of the great resonates with Pushya
+hexagram_26,nakshatra_purva_phalguni,0.5,shared element earth + dosha-body alignment pitta/head,earth,,,taming power of the great resonates with Purva_Phalguni
+hexagram_26,nakshatra_uttara_phalguni,0.65,shared element earth + shared guna sattva,earth,sattva,,taming power of the great resonates with Uttara_Phalguni
+hexagram_26,nakshatra_hasta,0.4,shared guna sattva + deva-sattva alignment,,sattva,,taming power of the great resonates with Hasta
+hexagram_26,nakshatra_anuradha,0.4,shared guna sattva + deva-sattva alignment,,sattva,,taming power of the great resonates with Anuradha
+hexagram_26,nakshatra_uttara_ashadha,0.65,shared element earth + shared guna sattva,earth,sattva,,taming power of the great resonates with Uttara_Ashadha
+hexagram_26,nakshatra_shravana,0.4,shared guna sattva + deva-sattva alignment,,sattva,,taming power of the great resonates with Shravana
+hexagram_26,nakshatra_uttara_bhadrapada,0.3,shared guna sattva,,sattva,,taming power of the great resonates with Uttara_Bhadrapada
+hexagram_26,nakshatra_revati,0.4,shared guna sattva + deva-sattva alignment,,sattva,,taming power of the great resonates with Revati
+hexagram_27,nakshatra_ashwini,0.6,shared element fire + dosha-body alignment vata/foot + deva-sattva alignment,fire,,,nourishment resonates with Ashwini
+hexagram_27,nakshatra_bharani,0.35,shared element earth,earth,,,nourishment resonates with Bharani
+hexagram_27,nakshatra_krittika,0.35,shared element fire,fire,,,nourishment resonates with Krittika
+hexagram_27,nakshatra_rohini,0.35,shared element earth,earth,,,nourishment resonates with Rohini
+hexagram_27,nakshatra_mrigashira,0.6,shared element earth + dosha-body alignment vata/foot + deva-sattva alignment,earth,,,nourishment resonates with Mrigashira
+hexagram_27,nakshatra_punarvasu,0.55,shared guna sattva + dosha-body alignment vata/foot + deva-sattva alignment,,sattva,,nourishment resonates with Punarvasu
+hexagram_27,nakshatra_pushya,0.4,shared guna sattva + deva-sattva alignment,,sattva,,nourishment resonates with Pushya
+hexagram_27,nakshatra_magha,0.35,shared element fire,fire,,,nourishment resonates with Magha
+hexagram_27,nakshatra_purva_phalguni,0.35,shared element earth,earth,,,nourishment resonates with Purva_Phalguni
+hexagram_27,nakshatra_uttara_phalguni,0.65,shared element earth + shared guna sattva,earth,sattva,,nourishment resonates with Uttara_Phalguni
+hexagram_27,nakshatra_hasta,0.55,shared guna sattva + dosha-body alignment vata/foot + deva-sattva alignment,,sattva,,nourishment resonates with Hasta
+hexagram_27,nakshatra_chitra,0.35,shared element fire,fire,,,nourishment resonates with Chitra
+hexagram_27,nakshatra_vishakha,0.35,shared element fire,fire,,,nourishment resonates with Vishakha
+hexagram_27,nakshatra_anuradha,0.4,shared guna sattva + deva-sattva alignment,,sattva,,nourishment resonates with Anuradha
+hexagram_27,nakshatra_uttara_ashadha,0.65,shared element earth + shared guna sattva,earth,sattva,,nourishment resonates with Uttara_Ashadha
+hexagram_27,nakshatra_shravana,0.55,shared guna sattva + dosha-body alignment vata/foot + deva-sattva alignment,,sattva,,nourishment resonates with Shravana
+hexagram_27,nakshatra_dhanishta,0.35,shared element fire,fire,,,nourishment resonates with Dhanishta
+hexagram_27,nakshatra_purva_bhadrapada,0.35,shared element fire,fire,,,nourishment resonates with Purva_Bhadrapada
+hexagram_27,nakshatra_uttara_bhadrapada,0.3,shared guna sattva,,sattva,,nourishment resonates with Uttara_Bhadrapada
+hexagram_27,nakshatra_revati,0.4,shared guna sattva + deva-sattva alignment,,sattva,,nourishment resonates with Revati
+hexagram_28,nakshatra_ashwini,0.45,shared guna rajas + dosha-body alignment vata/thigh,,rajas,,great preponderance resonates with Ashwini
+hexagram_28,nakshatra_bharani,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,great preponderance resonates with Bharani
+hexagram_28,nakshatra_krittika,0.3,shared guna rajas,,rajas,,great preponderance resonates with Krittika
+hexagram_28,nakshatra_rohini,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,great preponderance resonates with Rohini
+hexagram_28,nakshatra_ardra,0.6,shared element water + dosha-body alignment vata/thigh + manushya-rajas alignment,water,,,great preponderance resonates with Ardra
+hexagram_28,nakshatra_punarvasu,0.5,shared element air + dosha-body alignment vata/thigh,air,,,great preponderance resonates with Punarvasu
+hexagram_28,nakshatra_pushya,0.35,shared element water,water,,,great preponderance resonates with Pushya
+hexagram_28,nakshatra_ashlesha,0.35,shared element water,water,,,great preponderance resonates with Ashlesha
+hexagram_28,nakshatra_purva_phalguni,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,great preponderance resonates with Purva_Phalguni
+hexagram_28,nakshatra_hasta,0.5,shared element air + dosha-body alignment vata/thigh,air,,,great preponderance resonates with Hasta
+hexagram_28,nakshatra_swati,0.8,shared element air + shared guna rajas + dosha-body alignment vata/thigh,air,rajas,,great preponderance resonates with Swati
+hexagram_28,nakshatra_vishakha,0.3,shared guna rajas,,rajas,,great preponderance resonates with Vishakha
+hexagram_28,nakshatra_anuradha,0.35,shared element water,water,,,great preponderance resonates with Anuradha
+hexagram_28,nakshatra_jyeshtha,0.35,shared element air,air,,,great preponderance resonates with Jyeshtha
+hexagram_28,nakshatra_mula,0.5,shared element air + dosha-body alignment vata/thigh,air,,,great preponderance resonates with Mula
+hexagram_28,nakshatra_purva_ashadha,0.75,shared element water + shared guna rajas + manushya-rajas alignment,water,rajas,,great preponderance resonates with Purva_Ashadha
+hexagram_28,nakshatra_shravana,0.5,shared element air + dosha-body alignment vata/thigh,air,,,great preponderance resonates with Shravana
+hexagram_28,nakshatra_dhanishta,0.3,shared guna rajas,,rajas,,great preponderance resonates with Dhanishta
+hexagram_28,nakshatra_shatabhisha,0.5,shared element air + dosha-body alignment vata/thigh,air,,,great preponderance resonates with Shatabhisha
+hexagram_28,nakshatra_uttara_bhadrapada,0.45,shared element water + manushya-rajas alignment,water,,,great preponderance resonates with Uttara_Bhadrapada
+hexagram_28,nakshatra_revati,0.35,shared element water,water,,,great preponderance resonates with Revati
+hexagram_29,nakshatra_mrigashira,0.45,shared guna tamas + dosha-body alignment vata/ear,,tamas,,the abysmal resonates with Mrigashira
+hexagram_29,nakshatra_ardra,0.8,shared element water + shared guna tamas + dosha-body alignment vata/ear,water,tamas,,the abysmal resonates with Ardra
+hexagram_29,nakshatra_pushya,0.35,shared element water,water,,,the abysmal resonates with Pushya
+hexagram_29,nakshatra_ashlesha,0.75,shared element water + shared guna tamas + rakshasa-tamas alignment,water,tamas,,the abysmal resonates with Ashlesha
+hexagram_29,nakshatra_magha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,the abysmal resonates with Magha
+hexagram_29,nakshatra_chitra,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,the abysmal resonates with Chitra
+hexagram_29,nakshatra_anuradha,0.35,shared element water,water,,,the abysmal resonates with Anuradha
+hexagram_29,nakshatra_jyeshtha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,the abysmal resonates with Jyeshtha
+hexagram_29,nakshatra_mula,0.55,shared guna tamas + dosha-body alignment vata/ear + rakshasa-tamas alignment,,tamas,,the abysmal resonates with Mula
+hexagram_29,nakshatra_purva_ashadha,0.35,shared element water,water,,,the abysmal resonates with Purva_Ashadha
+hexagram_29,nakshatra_shatabhisha,0.55,shared guna tamas + dosha-body alignment vata/ear + rakshasa-tamas alignment,,tamas,,the abysmal resonates with Shatabhisha
+hexagram_29,nakshatra_purva_bhadrapada,0.3,shared guna tamas,,tamas,,the abysmal resonates with Purva_Bhadrapada
+hexagram_29,nakshatra_uttara_bhadrapada,0.35,shared element water,water,,,the abysmal resonates with Uttara_Bhadrapada
+hexagram_29,nakshatra_revati,0.35,shared element water,water,,,the abysmal resonates with Revati
+hexagram_30,nakshatra_ashwini,0.65,shared element fire + shared guna rajas,fire,rajas,,the clinging resonates with Ashwini
+hexagram_30,nakshatra_bharani,0.55,shared guna rajas + dosha-body alignment pitta/eye + manushya-rajas alignment,,rajas,,the clinging resonates with Bharani
+hexagram_30,nakshatra_krittika,0.8,shared element fire + shared guna rajas + dosha-body alignment pitta/eye,fire,rajas,,the clinging resonates with Krittika
+hexagram_30,nakshatra_rohini,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,the clinging resonates with Rohini
+hexagram_30,nakshatra_magha,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,the clinging resonates with Magha
+hexagram_30,nakshatra_purva_phalguni,0.55,shared guna rajas + dosha-body alignment pitta/eye + manushya-rajas alignment,,rajas,,the clinging resonates with Purva_Phalguni
+hexagram_30,nakshatra_chitra,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,the clinging resonates with Chitra
+hexagram_30,nakshatra_swati,0.3,shared guna rajas,,rajas,,the clinging resonates with Swati
+hexagram_30,nakshatra_vishakha,0.8,shared element fire + shared guna rajas + dosha-body alignment pitta/eye,fire,rajas,,the clinging resonates with Vishakha
+hexagram_30,nakshatra_purva_ashadha,0.55,shared guna rajas + dosha-body alignment pitta/eye + manushya-rajas alignment,,rajas,,the clinging resonates with Purva_Ashadha
+hexagram_30,nakshatra_dhanishta,0.8,shared element fire + shared guna rajas + dosha-body alignment pitta/eye,fire,rajas,,the clinging resonates with Dhanishta
+hexagram_30,nakshatra_purva_bhadrapada,0.6,shared element fire + dosha-body alignment pitta/eye + manushya-rajas alignment,fire,,,the clinging resonates with Purva_Bhadrapada
+hexagram_31,nakshatra_bharani,0.35,shared element earth,earth,,,influence resonates with Bharani
+hexagram_31,nakshatra_rohini,0.5,shared element earth + dosha-body alignment kapha/hand,earth,,,influence resonates with Rohini
+hexagram_31,nakshatra_mrigashira,0.45,shared element earth + deva-sattva alignment,earth,,,influence resonates with Mrigashira
+hexagram_31,nakshatra_ardra,0.35,shared element water,water,,,influence resonates with Ardra
+hexagram_31,nakshatra_punarvasu,0.4,shared guna sattva + deva-sattva alignment,,sattva,,influence resonates with Punarvasu
+hexagram_31,nakshatra_pushya,0.9,shared element water + shared guna sattva + dosha-body alignment kapha/hand + deva-sattva alignment,water,sattva,,influence resonates with Pushya
+hexagram_31,nakshatra_ashlesha,0.5,shared element water + dosha-body alignment kapha/hand,water,,,influence resonates with Ashlesha
+hexagram_31,nakshatra_purva_phalguni,0.35,shared element earth,earth,,,influence resonates with Purva_Phalguni
+hexagram_31,nakshatra_uttara_phalguni,0.8,shared element earth + shared guna sattva + dosha-body alignment kapha/hand,earth,sattva,,influence resonates with Uttara_Phalguni
+hexagram_31,nakshatra_hasta,0.4,shared guna sattva + deva-sattva alignment,,sattva,,influence resonates with Hasta
+hexagram_31,nakshatra_anuradha,0.9,shared element water + shared guna sattva + dosha-body alignment kapha/hand + deva-sattva alignment,water,sattva,,influence resonates with Anuradha
+hexagram_31,nakshatra_purva_ashadha,0.35,shared element water,water,,,influence resonates with Purva_Ashadha
+hexagram_31,nakshatra_uttara_ashadha,0.8,shared element earth + shared guna sattva + dosha-body alignment kapha/hand,earth,sattva,,influence resonates with Uttara_Ashadha
+hexagram_31,nakshatra_shravana,0.4,shared guna sattva + deva-sattva alignment,,sattva,,influence resonates with Shravana
+hexagram_31,nakshatra_uttara_bhadrapada,0.8,shared element water + shared guna sattva + dosha-body alignment kapha/hand,water,sattva,,influence resonates with Uttara_Bhadrapada
+hexagram_31,nakshatra_revati,0.9,shared element water + shared guna sattva + dosha-body alignment kapha/hand + deva-sattva alignment,water,sattva,,influence resonates with Revati
+hexagram_32,nakshatra_ashwini,0.6,shared element fire + dosha-body alignment vata/thigh + deva-sattva alignment,fire,,,duration resonates with Ashwini
+hexagram_32,nakshatra_krittika,0.35,shared element fire,fire,,,duration resonates with Krittika
+hexagram_32,nakshatra_punarvasu,0.9,shared element air + shared guna sattva + dosha-body alignment vata/thigh + deva-sattva alignment,air,sattva,,duration resonates with Punarvasu
+hexagram_32,nakshatra_pushya,0.4,shared guna sattva + deva-sattva alignment,,sattva,,duration resonates with Pushya
+hexagram_32,nakshatra_magha,0.35,shared element fire,fire,,,duration resonates with Magha
+hexagram_32,nakshatra_uttara_phalguni,0.3,shared guna sattva,,sattva,,duration resonates with Uttara_Phalguni
+hexagram_32,nakshatra_hasta,0.9,shared element air + shared guna sattva + dosha-body alignment vata/thigh + deva-sattva alignment,air,sattva,,duration resonates with Hasta
+hexagram_32,nakshatra_chitra,0.35,shared element fire,fire,,,duration resonates with Chitra
+hexagram_32,nakshatra_swati,0.6,shared element air + dosha-body alignment vata/thigh + deva-sattva alignment,air,,,duration resonates with Swati
+hexagram_32,nakshatra_vishakha,0.35,shared element fire,fire,,,duration resonates with Vishakha
+hexagram_32,nakshatra_anuradha,0.4,shared guna sattva + deva-sattva alignment,,sattva,,duration resonates with Anuradha
+hexagram_32,nakshatra_jyeshtha,0.35,shared element air,air,,,duration resonates with Jyeshtha
+hexagram_32,nakshatra_mula,0.5,shared element air + dosha-body alignment vata/thigh,air,,,duration resonates with Mula
+hexagram_32,nakshatra_uttara_ashadha,0.3,shared guna sattva,,sattva,,duration resonates with Uttara_Ashadha
+hexagram_32,nakshatra_shravana,0.9,shared element air + shared guna sattva + dosha-body alignment vata/thigh + deva-sattva alignment,air,sattva,,duration resonates with Shravana
+hexagram_32,nakshatra_dhanishta,0.35,shared element fire,fire,,,duration resonates with Dhanishta
+hexagram_32,nakshatra_shatabhisha,0.5,shared element air + dosha-body alignment vata/thigh,air,,,duration resonates with Shatabhisha
+hexagram_32,nakshatra_purva_bhadrapada,0.35,shared element fire,fire,,,duration resonates with Purva_Bhadrapada
+hexagram_32,nakshatra_uttara_bhadrapada,0.3,shared guna sattva,,sattva,,duration resonates with Uttara_Bhadrapada
+hexagram_32,nakshatra_revati,0.4,shared guna sattva + deva-sattva alignment,,sattva,,duration resonates with Revati
+hexagram_33,nakshatra_bharani,0.35,shared element earth,earth,,,retreat resonates with Bharani
+hexagram_33,nakshatra_rohini,0.5,shared element earth + dosha-body alignment kapha/hand,earth,,,retreat resonates with Rohini
+hexagram_33,nakshatra_mrigashira,0.45,shared element earth + deva-sattva alignment,earth,,,retreat resonates with Mrigashira
+hexagram_33,nakshatra_punarvasu,0.4,shared guna sattva + deva-sattva alignment,,sattva,,retreat resonates with Punarvasu
+hexagram_33,nakshatra_pushya,0.55,shared guna sattva + dosha-body alignment kapha/hand + deva-sattva alignment,,sattva,,retreat resonates with Pushya
+hexagram_33,nakshatra_purva_phalguni,0.35,shared element earth,earth,,,retreat resonates with Purva_Phalguni
+hexagram_33,nakshatra_uttara_phalguni,0.8,shared element earth + shared guna sattva + dosha-body alignment kapha/hand,earth,sattva,,retreat resonates with Uttara_Phalguni
+hexagram_33,nakshatra_hasta,0.4,shared guna sattva + deva-sattva alignment,,sattva,,retreat resonates with Hasta
+hexagram_33,nakshatra_anuradha,0.55,shared guna sattva + dosha-body alignment kapha/hand + deva-sattva alignment,,sattva,,retreat resonates with Anuradha
+hexagram_33,nakshatra_uttara_ashadha,0.8,shared element earth + shared guna sattva + dosha-body alignment kapha/hand,earth,sattva,,retreat resonates with Uttara_Ashadha
+hexagram_33,nakshatra_shravana,0.4,shared guna sattva + deva-sattva alignment,,sattva,,retreat resonates with Shravana
+hexagram_33,nakshatra_uttara_bhadrapada,0.45,shared guna sattva + dosha-body alignment kapha/hand,,sattva,,retreat resonates with Uttara_Bhadrapada
+hexagram_33,nakshatra_revati,0.55,shared guna sattva + dosha-body alignment kapha/hand + deva-sattva alignment,,sattva,,retreat resonates with Revati
+hexagram_34,nakshatra_ashwini,0.65,shared element fire + shared guna rajas,fire,rajas,,great power resonates with Ashwini
+hexagram_34,nakshatra_bharani,0.55,shared guna rajas + dosha-body alignment pitta/head + manushya-rajas alignment,,rajas,,great power resonates with Bharani
+hexagram_34,nakshatra_krittika,0.8,shared element fire + shared guna rajas + dosha-body alignment pitta/head,fire,rajas,,great power resonates with Krittika
+hexagram_34,nakshatra_rohini,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,great power resonates with Rohini
+hexagram_34,nakshatra_magha,0.5,shared element fire + dosha-body alignment pitta/head,fire,,,great power resonates with Magha
+hexagram_34,nakshatra_purva_phalguni,0.55,shared guna rajas + dosha-body alignment pitta/head + manushya-rajas alignment,,rajas,,great power resonates with Purva_Phalguni
+hexagram_34,nakshatra_chitra,0.5,shared element fire + dosha-body alignment pitta/head,fire,,,great power resonates with Chitra
+hexagram_34,nakshatra_swati,0.3,shared guna rajas,,rajas,,great power resonates with Swati
+hexagram_34,nakshatra_vishakha,0.8,shared element fire + shared guna rajas + dosha-body alignment pitta/head,fire,rajas,,great power resonates with Vishakha
+hexagram_34,nakshatra_purva_ashadha,0.55,shared guna rajas + dosha-body alignment pitta/head + manushya-rajas alignment,,rajas,,great power resonates with Purva_Ashadha
+hexagram_34,nakshatra_dhanishta,0.8,shared element fire + shared guna rajas + dosha-body alignment pitta/head,fire,rajas,,great power resonates with Dhanishta
+hexagram_34,nakshatra_purva_bhadrapada,0.6,shared element fire + dosha-body alignment pitta/head + manushya-rajas alignment,fire,,,great power resonates with Purva_Bhadrapada
+hexagram_35,nakshatra_ashwini,0.65,shared element fire + shared guna rajas,fire,rajas,,progress resonates with Ashwini
+hexagram_35,nakshatra_bharani,0.75,shared element earth + shared guna rajas + manushya-rajas alignment,earth,rajas,,progress resonates with Bharani
+hexagram_35,nakshatra_krittika,0.65,shared element fire + shared guna rajas,fire,rajas,,progress resonates with Krittika
+hexagram_35,nakshatra_rohini,0.9,shared element earth + shared guna rajas + dosha-body alignment kapha/belly + manushya-rajas alignment,earth,rajas,,progress resonates with Rohini
+hexagram_35,nakshatra_mrigashira,0.35,shared element earth,earth,,,progress resonates with Mrigashira
+hexagram_35,nakshatra_magha,0.35,shared element fire,fire,,,progress resonates with Magha
+hexagram_35,nakshatra_purva_phalguni,0.75,shared element earth + shared guna rajas + manushya-rajas alignment,earth,rajas,,progress resonates with Purva_Phalguni
+hexagram_35,nakshatra_uttara_phalguni,0.6,shared element earth + dosha-body alignment kapha/belly + manushya-rajas alignment,earth,,,progress resonates with Uttara_Phalguni
+hexagram_35,nakshatra_chitra,0.35,shared element fire,fire,,,progress resonates with Chitra
+hexagram_35,nakshatra_swati,0.3,shared guna rajas,,rajas,,progress resonates with Swati
+hexagram_35,nakshatra_vishakha,0.65,shared element fire + shared guna rajas,fire,rajas,,progress resonates with Vishakha
+hexagram_35,nakshatra_purva_ashadha,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,progress resonates with Purva_Ashadha
+hexagram_35,nakshatra_uttara_ashadha,0.6,shared element earth + dosha-body alignment kapha/belly + manushya-rajas alignment,earth,,,progress resonates with Uttara_Ashadha
+hexagram_35,nakshatra_dhanishta,0.65,shared element fire + shared guna rajas,fire,rajas,,progress resonates with Dhanishta
+hexagram_35,nakshatra_purva_bhadrapada,0.45,shared element fire + manushya-rajas alignment,fire,,,progress resonates with Purva_Bhadrapada
+hexagram_36,nakshatra_ashwini,0.35,shared element fire,fire,,,darkening of the light resonates with Ashwini
+hexagram_36,nakshatra_bharani,0.5,shared element earth + dosha-body alignment pitta/eye,earth,,,darkening of the light resonates with Bharani
+hexagram_36,nakshatra_krittika,0.6,shared element fire + dosha-body alignment pitta/eye + rakshasa-tamas alignment,fire,,,darkening of the light resonates with Krittika
+hexagram_36,nakshatra_rohini,0.35,shared element earth,earth,,,darkening of the light resonates with Rohini
+hexagram_36,nakshatra_mrigashira,0.65,shared element earth + shared guna tamas,earth,tamas,,darkening of the light resonates with Mrigashira
+hexagram_36,nakshatra_ardra,0.3,shared guna tamas,,tamas,,darkening of the light resonates with Ardra
+hexagram_36,nakshatra_ashlesha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,darkening of the light resonates with Ashlesha
+hexagram_36,nakshatra_magha,0.9,shared element fire + shared guna tamas + dosha-body alignment pitta/eye + rakshasa-tamas alignment,fire,tamas,,darkening of the light resonates with Magha
+hexagram_36,nakshatra_purva_phalguni,0.5,shared element earth + dosha-body alignment pitta/eye,earth,,,darkening of the light resonates with Purva_Phalguni
+hexagram_36,nakshatra_uttara_phalguni,0.35,shared element earth,earth,,,darkening of the light resonates with Uttara_Phalguni
+hexagram_36,nakshatra_chitra,0.9,shared element fire + shared guna tamas + dosha-body alignment pitta/eye + rakshasa-tamas alignment,fire,tamas,,darkening of the light resonates with Chitra
+hexagram_36,nakshatra_vishakha,0.6,shared element fire + dosha-body alignment pitta/eye + rakshasa-tamas alignment,fire,,,darkening of the light resonates with Vishakha
+hexagram_36,nakshatra_jyeshtha,0.55,shared guna tamas + dosha-body alignment pitta/eye + rakshasa-tamas alignment,,tamas,,darkening of the light resonates with Jyeshtha
+hexagram_36,nakshatra_mula,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,darkening of the light resonates with Mula
+hexagram_36,nakshatra_uttara_ashadha,0.35,shared element earth,earth,,,darkening of the light resonates with Uttara_Ashadha
+hexagram_36,nakshatra_dhanishta,0.6,shared element fire + dosha-body alignment pitta/eye + rakshasa-tamas alignment,fire,,,darkening of the light resonates with Dhanishta
+hexagram_36,nakshatra_shatabhisha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,darkening of the light resonates with Shatabhisha
+hexagram_36,nakshatra_purva_bhadrapada,0.8,shared element fire + shared guna tamas + dosha-body alignment pitta/eye,fire,tamas,,darkening of the light resonates with Purva_Bhadrapada
+hexagram_37,nakshatra_ashwini,0.45,shared element fire + deva-sattva alignment,fire,,,the family resonates with Ashwini
+hexagram_37,nakshatra_krittika,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,the family resonates with Krittika
+hexagram_37,nakshatra_punarvasu,0.75,shared element air + shared guna sattva + deva-sattva alignment,air,sattva,,the family resonates with Punarvasu
+hexagram_37,nakshatra_pushya,0.4,shared guna sattva + deva-sattva alignment,,sattva,,the family resonates with Pushya
+hexagram_37,nakshatra_magha,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,the family resonates with Magha
+hexagram_37,nakshatra_uttara_phalguni,0.3,shared guna sattva,,sattva,,the family resonates with Uttara_Phalguni
+hexagram_37,nakshatra_hasta,0.75,shared element air + shared guna sattva + deva-sattva alignment,air,sattva,,the family resonates with Hasta
+hexagram_37,nakshatra_chitra,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,the family resonates with Chitra
+hexagram_37,nakshatra_swati,0.45,shared element air + deva-sattva alignment,air,,,the family resonates with Swati
+hexagram_37,nakshatra_vishakha,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,the family resonates with Vishakha
+hexagram_37,nakshatra_anuradha,0.4,shared guna sattva + deva-sattva alignment,,sattva,,the family resonates with Anuradha
+hexagram_37,nakshatra_jyeshtha,0.5,shared element air + dosha-body alignment pitta/eye,air,,,the family resonates with Jyeshtha
+hexagram_37,nakshatra_mula,0.35,shared element air,air,,,the family resonates with Mula
+hexagram_37,nakshatra_uttara_ashadha,0.3,shared guna sattva,,sattva,,the family resonates with Uttara_Ashadha
+hexagram_37,nakshatra_shravana,0.75,shared element air + shared guna sattva + deva-sattva alignment,air,sattva,,the family resonates with Shravana
+hexagram_37,nakshatra_dhanishta,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,the family resonates with Dhanishta
+hexagram_37,nakshatra_shatabhisha,0.35,shared element air,air,,,the family resonates with Shatabhisha
+hexagram_37,nakshatra_purva_bhadrapada,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,the family resonates with Purva_Bhadrapada
+hexagram_37,nakshatra_uttara_bhadrapada,0.3,shared guna sattva,,sattva,,the family resonates with Uttara_Bhadrapada
+hexagram_37,nakshatra_revati,0.4,shared guna sattva + deva-sattva alignment,,sattva,,the family resonates with Revati
+hexagram_38,nakshatra_ashwini,0.65,shared element fire + shared guna rajas,fire,rajas,,opposition resonates with Ashwini
+hexagram_38,nakshatra_bharani,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,opposition resonates with Bharani
+hexagram_38,nakshatra_krittika,0.65,shared element fire + shared guna rajas,fire,rajas,,opposition resonates with Krittika
+hexagram_38,nakshatra_rohini,0.55,shared guna rajas + dosha-body alignment kapha/mouth + manushya-rajas alignment,,rajas,,opposition resonates with Rohini
+hexagram_38,nakshatra_ardra,0.45,shared element water + manushya-rajas alignment,water,,,opposition resonates with Ardra
+hexagram_38,nakshatra_pushya,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,opposition resonates with Pushya
+hexagram_38,nakshatra_ashlesha,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,opposition resonates with Ashlesha
+hexagram_38,nakshatra_magha,0.35,shared element fire,fire,,,opposition resonates with Magha
+hexagram_38,nakshatra_purva_phalguni,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,opposition resonates with Purva_Phalguni
+hexagram_38,nakshatra_chitra,0.35,shared element fire,fire,,,opposition resonates with Chitra
+hexagram_38,nakshatra_swati,0.3,shared guna rajas,,rajas,,opposition resonates with Swati
+hexagram_38,nakshatra_vishakha,0.65,shared element fire + shared guna rajas,fire,rajas,,opposition resonates with Vishakha
+hexagram_38,nakshatra_anuradha,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,opposition resonates with Anuradha
+hexagram_38,nakshatra_purva_ashadha,0.75,shared element water + shared guna rajas + manushya-rajas alignment,water,rajas,,opposition resonates with Purva_Ashadha
+hexagram_38,nakshatra_dhanishta,0.65,shared element fire + shared guna rajas,fire,rajas,,opposition resonates with Dhanishta
+hexagram_38,nakshatra_purva_bhadrapada,0.45,shared element fire + manushya-rajas alignment,fire,,,opposition resonates with Purva_Bhadrapada
+hexagram_38,nakshatra_uttara_bhadrapada,0.6,shared element water + dosha-body alignment kapha/mouth + manushya-rajas alignment,water,,,opposition resonates with Uttara_Bhadrapada
+hexagram_38,nakshatra_revati,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,opposition resonates with Revati
+hexagram_39,nakshatra_bharani,0.35,shared element earth,earth,,,obstruction resonates with Bharani
+hexagram_39,nakshatra_rohini,0.5,shared element earth + dosha-body alignment kapha/hand,earth,,,obstruction resonates with Rohini
+hexagram_39,nakshatra_mrigashira,0.65,shared element earth + shared guna tamas,earth,tamas,,obstruction resonates with Mrigashira
+hexagram_39,nakshatra_ardra,0.65,shared element water + shared guna tamas,water,tamas,,obstruction resonates with Ardra
+hexagram_39,nakshatra_pushya,0.5,shared element water + dosha-body alignment kapha/hand,water,,,obstruction resonates with Pushya
+hexagram_39,nakshatra_ashlesha,0.9,shared element water + shared guna tamas + dosha-body alignment kapha/hand + rakshasa-tamas alignment,water,tamas,,obstruction resonates with Ashlesha
+hexagram_39,nakshatra_magha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,obstruction resonates with Magha
+hexagram_39,nakshatra_purva_phalguni,0.35,shared element earth,earth,,,obstruction resonates with Purva_Phalguni
+hexagram_39,nakshatra_uttara_phalguni,0.5,shared element earth + dosha-body alignment kapha/hand,earth,,,obstruction resonates with Uttara_Phalguni
+hexagram_39,nakshatra_chitra,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,obstruction resonates with Chitra
+hexagram_39,nakshatra_anuradha,0.5,shared element water + dosha-body alignment kapha/hand,water,,,obstruction resonates with Anuradha
+hexagram_39,nakshatra_jyeshtha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,obstruction resonates with Jyeshtha
+hexagram_39,nakshatra_mula,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,obstruction resonates with Mula
+hexagram_39,nakshatra_purva_ashadha,0.35,shared element water,water,,,obstruction resonates with Purva_Ashadha
+hexagram_39,nakshatra_uttara_ashadha,0.5,shared element earth + dosha-body alignment kapha/hand,earth,,,obstruction resonates with Uttara_Ashadha
+hexagram_39,nakshatra_shatabhisha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,obstruction resonates with Shatabhisha
+hexagram_39,nakshatra_purva_bhadrapada,0.3,shared guna tamas,,tamas,,obstruction resonates with Purva_Bhadrapada
+hexagram_39,nakshatra_uttara_bhadrapada,0.5,shared element water + dosha-body alignment kapha/hand,water,,,obstruction resonates with Uttara_Bhadrapada
+hexagram_39,nakshatra_revati,0.5,shared element water + dosha-body alignment kapha/hand,water,,,obstruction resonates with Revati
+hexagram_40,nakshatra_ashwini,0.8,shared element fire + shared guna rajas + dosha-body alignment vata/ear,fire,rajas,,deliverance resonates with Ashwini
+hexagram_40,nakshatra_bharani,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,deliverance resonates with Bharani
+hexagram_40,nakshatra_krittika,0.65,shared element fire + shared guna rajas,fire,rajas,,deliverance resonates with Krittika
+hexagram_40,nakshatra_rohini,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,deliverance resonates with Rohini
+hexagram_40,nakshatra_ardra,0.6,shared element water + dosha-body alignment vata/ear + manushya-rajas alignment,water,,,deliverance resonates with Ardra
+hexagram_40,nakshatra_pushya,0.35,shared element water,water,,,deliverance resonates with Pushya
+hexagram_40,nakshatra_ashlesha,0.35,shared element water,water,,,deliverance resonates with Ashlesha
+hexagram_40,nakshatra_magha,0.35,shared element fire,fire,,,deliverance resonates with Magha
+hexagram_40,nakshatra_purva_phalguni,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,deliverance resonates with Purva_Phalguni
+hexagram_40,nakshatra_chitra,0.35,shared element fire,fire,,,deliverance resonates with Chitra
+hexagram_40,nakshatra_swati,0.45,shared guna rajas + dosha-body alignment vata/ear,,rajas,,deliverance resonates with Swati
+hexagram_40,nakshatra_vishakha,0.65,shared element fire + shared guna rajas,fire,rajas,,deliverance resonates with Vishakha
+hexagram_40,nakshatra_anuradha,0.35,shared element water,water,,,deliverance resonates with Anuradha
+hexagram_40,nakshatra_purva_ashadha,0.75,shared element water + shared guna rajas + manushya-rajas alignment,water,rajas,,deliverance resonates with Purva_Ashadha
+hexagram_40,nakshatra_dhanishta,0.65,shared element fire + shared guna rajas,fire,rajas,,deliverance resonates with Dhanishta
+hexagram_40,nakshatra_purva_bhadrapada,0.45,shared element fire + manushya-rajas alignment,fire,,,deliverance resonates with Purva_Bhadrapada
+hexagram_40,nakshatra_uttara_bhadrapada,0.45,shared element water + manushya-rajas alignment,water,,,deliverance resonates with Uttara_Bhadrapada
+hexagram_40,nakshatra_revati,0.35,shared element water,water,,,deliverance resonates with Revati
+hexagram_41,nakshatra_bharani,0.35,shared element earth,earth,,,decrease resonates with Bharani
+hexagram_41,nakshatra_rohini,0.5,shared element earth + dosha-body alignment kapha/mouth,earth,,,decrease resonates with Rohini
+hexagram_41,nakshatra_mrigashira,0.65,shared element earth + shared guna tamas,earth,tamas,,decrease resonates with Mrigashira
+hexagram_41,nakshatra_ardra,0.65,shared element water + shared guna tamas,water,tamas,,decrease resonates with Ardra
+hexagram_41,nakshatra_pushya,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,decrease resonates with Pushya
+hexagram_41,nakshatra_ashlesha,0.9,shared element water + shared guna tamas + dosha-body alignment kapha/mouth + rakshasa-tamas alignment,water,tamas,,decrease resonates with Ashlesha
+hexagram_41,nakshatra_magha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,decrease resonates with Magha
+hexagram_41,nakshatra_purva_phalguni,0.35,shared element earth,earth,,,decrease resonates with Purva_Phalguni
+hexagram_41,nakshatra_uttara_phalguni,0.5,shared element earth + dosha-body alignment kapha/mouth,earth,,,decrease resonates with Uttara_Phalguni
+hexagram_41,nakshatra_chitra,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,decrease resonates with Chitra
+hexagram_41,nakshatra_anuradha,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,decrease resonates with Anuradha
+hexagram_41,nakshatra_jyeshtha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,decrease resonates with Jyeshtha
+hexagram_41,nakshatra_mula,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,decrease resonates with Mula
+hexagram_41,nakshatra_purva_ashadha,0.35,shared element water,water,,,decrease resonates with Purva_Ashadha
+hexagram_41,nakshatra_uttara_ashadha,0.5,shared element earth + dosha-body alignment kapha/mouth,earth,,,decrease resonates with Uttara_Ashadha
+hexagram_41,nakshatra_shatabhisha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,decrease resonates with Shatabhisha
+hexagram_41,nakshatra_purva_bhadrapada,0.3,shared guna tamas,,tamas,,decrease resonates with Purva_Bhadrapada
+hexagram_41,nakshatra_uttara_bhadrapada,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,decrease resonates with Uttara_Bhadrapada
+hexagram_41,nakshatra_revati,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,decrease resonates with Revati
+hexagram_42,nakshatra_ashwini,0.6,shared element fire + dosha-body alignment vata/foot + deva-sattva alignment,fire,,,increase resonates with Ashwini
+hexagram_42,nakshatra_krittika,0.35,shared element fire,fire,,,increase resonates with Krittika
+hexagram_42,nakshatra_punarvasu,0.9,shared element air + shared guna sattva + dosha-body alignment vata/foot + deva-sattva alignment,air,sattva,,increase resonates with Punarvasu
+hexagram_42,nakshatra_pushya,0.4,shared guna sattva + deva-sattva alignment,,sattva,,increase resonates with Pushya
+hexagram_42,nakshatra_magha,0.35,shared element fire,fire,,,increase resonates with Magha
+hexagram_42,nakshatra_uttara_phalguni,0.3,shared guna sattva,,sattva,,increase resonates with Uttara_Phalguni
+hexagram_42,nakshatra_hasta,0.9,shared element air + shared guna sattva + dosha-body alignment vata/foot + deva-sattva alignment,air,sattva,,increase resonates with Hasta
+hexagram_42,nakshatra_chitra,0.35,shared element fire,fire,,,increase resonates with Chitra
+hexagram_42,nakshatra_swati,0.6,shared element air + dosha-body alignment vata/foot + deva-sattva alignment,air,,,increase resonates with Swati
+hexagram_42,nakshatra_vishakha,0.35,shared element fire,fire,,,increase resonates with Vishakha
+hexagram_42,nakshatra_anuradha,0.4,shared guna sattva + deva-sattva alignment,,sattva,,increase resonates with Anuradha
+hexagram_42,nakshatra_jyeshtha,0.35,shared element air,air,,,increase resonates with Jyeshtha
+hexagram_42,nakshatra_mula,0.5,shared element air + dosha-body alignment vata/foot,air,,,increase resonates with Mula
+hexagram_42,nakshatra_uttara_ashadha,0.3,shared guna sattva,,sattva,,increase resonates with Uttara_Ashadha
+hexagram_42,nakshatra_shravana,0.9,shared element air + shared guna sattva + dosha-body alignment vata/foot + deva-sattva alignment,air,sattva,,increase resonates with Shravana
+hexagram_42,nakshatra_dhanishta,0.35,shared element fire,fire,,,increase resonates with Dhanishta
+hexagram_42,nakshatra_shatabhisha,0.5,shared element air + dosha-body alignment vata/foot,air,,,increase resonates with Shatabhisha
+hexagram_42,nakshatra_purva_bhadrapada,0.35,shared element fire,fire,,,increase resonates with Purva_Bhadrapada
+hexagram_42,nakshatra_uttara_bhadrapada,0.3,shared guna sattva,,sattva,,increase resonates with Uttara_Bhadrapada
+hexagram_42,nakshatra_revati,0.4,shared guna sattva + deva-sattva alignment,,sattva,,increase resonates with Revati
+hexagram_43,nakshatra_ashwini,0.3,shared guna rajas,,rajas,,breakthrough resonates with Ashwini
+hexagram_43,nakshatra_bharani,0.55,shared guna rajas + dosha-body alignment pitta/head + manushya-rajas alignment,,rajas,,breakthrough resonates with Bharani
+hexagram_43,nakshatra_krittika,0.45,shared guna rajas + dosha-body alignment pitta/head,,rajas,,breakthrough resonates with Krittika
+hexagram_43,nakshatra_rohini,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,breakthrough resonates with Rohini
+hexagram_43,nakshatra_ardra,0.45,shared element water + manushya-rajas alignment,water,,,breakthrough resonates with Ardra
+hexagram_43,nakshatra_pushya,0.35,shared element water,water,,,breakthrough resonates with Pushya
+hexagram_43,nakshatra_ashlesha,0.35,shared element water,water,,,breakthrough resonates with Ashlesha
+hexagram_43,nakshatra_purva_phalguni,0.55,shared guna rajas + dosha-body alignment pitta/head + manushya-rajas alignment,,rajas,,breakthrough resonates with Purva_Phalguni
+hexagram_43,nakshatra_swati,0.3,shared guna rajas,,rajas,,breakthrough resonates with Swati
+hexagram_43,nakshatra_vishakha,0.45,shared guna rajas + dosha-body alignment pitta/head,,rajas,,breakthrough resonates with Vishakha
+hexagram_43,nakshatra_anuradha,0.35,shared element water,water,,,breakthrough resonates with Anuradha
+hexagram_43,nakshatra_purva_ashadha,0.9,shared element water + shared guna rajas + dosha-body alignment pitta/head + manushya-rajas alignment,water,rajas,,breakthrough resonates with Purva_Ashadha
+hexagram_43,nakshatra_dhanishta,0.45,shared guna rajas + dosha-body alignment pitta/head,,rajas,,breakthrough resonates with Dhanishta
+hexagram_43,nakshatra_uttara_bhadrapada,0.45,shared element water + manushya-rajas alignment,water,,,breakthrough resonates with Uttara_Bhadrapada
+hexagram_43,nakshatra_revati,0.35,shared element water,water,,,breakthrough resonates with Revati
+hexagram_44,nakshatra_ashwini,0.45,shared guna rajas + dosha-body alignment vata/thigh,,rajas,,coming to meet resonates with Ashwini
+hexagram_44,nakshatra_bharani,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,coming to meet resonates with Bharani
+hexagram_44,nakshatra_krittika,0.3,shared guna rajas,,rajas,,coming to meet resonates with Krittika
+hexagram_44,nakshatra_rohini,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,coming to meet resonates with Rohini
+hexagram_44,nakshatra_punarvasu,0.5,shared element air + dosha-body alignment vata/thigh,air,,,coming to meet resonates with Punarvasu
+hexagram_44,nakshatra_purva_phalguni,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,coming to meet resonates with Purva_Phalguni
+hexagram_44,nakshatra_hasta,0.5,shared element air + dosha-body alignment vata/thigh,air,,,coming to meet resonates with Hasta
+hexagram_44,nakshatra_swati,0.8,shared element air + shared guna rajas + dosha-body alignment vata/thigh,air,rajas,,coming to meet resonates with Swati
+hexagram_44,nakshatra_vishakha,0.3,shared guna rajas,,rajas,,coming to meet resonates with Vishakha
+hexagram_44,nakshatra_jyeshtha,0.35,shared element air,air,,,coming to meet resonates with Jyeshtha
+hexagram_44,nakshatra_mula,0.5,shared element air + dosha-body alignment vata/thigh,air,,,coming to meet resonates with Mula
+hexagram_44,nakshatra_purva_ashadha,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,coming to meet resonates with Purva_Ashadha
+hexagram_44,nakshatra_shravana,0.5,shared element air + dosha-body alignment vata/thigh,air,,,coming to meet resonates with Shravana
+hexagram_44,nakshatra_dhanishta,0.3,shared guna rajas,,rajas,,coming to meet resonates with Dhanishta
+hexagram_44,nakshatra_shatabhisha,0.5,shared element air + dosha-body alignment vata/thigh,air,,,coming to meet resonates with Shatabhisha
+hexagram_45,nakshatra_bharani,0.35,shared element earth,earth,,,gathering together resonates with Bharani
+hexagram_45,nakshatra_rohini,0.5,shared element earth + dosha-body alignment kapha/belly,earth,,,gathering together resonates with Rohini
+hexagram_45,nakshatra_mrigashira,0.45,shared element earth + deva-sattva alignment,earth,,,gathering together resonates with Mrigashira
+hexagram_45,nakshatra_ardra,0.35,shared element water,water,,,gathering together resonates with Ardra
+hexagram_45,nakshatra_punarvasu,0.4,shared guna sattva + deva-sattva alignment,,sattva,,gathering together resonates with Punarvasu
+hexagram_45,nakshatra_pushya,0.9,shared element water + shared guna sattva + dosha-body alignment kapha/belly + deva-sattva alignment,water,sattva,,gathering together resonates with Pushya
+hexagram_45,nakshatra_ashlesha,0.5,shared element water + dosha-body alignment kapha/belly,water,,,gathering together resonates with Ashlesha
+hexagram_45,nakshatra_purva_phalguni,0.35,shared element earth,earth,,,gathering together resonates with Purva_Phalguni
+hexagram_45,nakshatra_uttara_phalguni,0.8,shared element earth + shared guna sattva + dosha-body alignment kapha/belly,earth,sattva,,gathering together resonates with Uttara_Phalguni
+hexagram_45,nakshatra_hasta,0.4,shared guna sattva + deva-sattva alignment,,sattva,,gathering together resonates with Hasta
+hexagram_45,nakshatra_anuradha,0.9,shared element water + shared guna sattva + dosha-body alignment kapha/belly + deva-sattva alignment,water,sattva,,gathering together resonates with Anuradha
+hexagram_45,nakshatra_purva_ashadha,0.35,shared element water,water,,,gathering together resonates with Purva_Ashadha
+hexagram_45,nakshatra_uttara_ashadha,0.8,shared element earth + shared guna sattva + dosha-body alignment kapha/belly,earth,sattva,,gathering together resonates with Uttara_Ashadha
+hexagram_45,nakshatra_shravana,0.4,shared guna sattva + deva-sattva alignment,,sattva,,gathering together resonates with Shravana
+hexagram_45,nakshatra_uttara_bhadrapada,0.8,shared element water + shared guna sattva + dosha-body alignment kapha/belly,water,sattva,,gathering together resonates with Uttara_Bhadrapada
+hexagram_45,nakshatra_revati,0.9,shared element water + shared guna sattva + dosha-body alignment kapha/belly + deva-sattva alignment,water,sattva,,gathering together resonates with Revati
+hexagram_46,nakshatra_bharani,0.35,shared element earth,earth,,,pushing upward resonates with Bharani
+hexagram_46,nakshatra_rohini,0.35,shared element earth,earth,,,pushing upward resonates with Rohini
+hexagram_46,nakshatra_mrigashira,0.6,shared element earth + dosha-body alignment vata/thigh + deva-sattva alignment,earth,,,pushing upward resonates with Mrigashira
+hexagram_46,nakshatra_punarvasu,0.9,shared element air + shared guna sattva + dosha-body alignment vata/thigh + deva-sattva alignment,air,sattva,,pushing upward resonates with Punarvasu
+hexagram_46,nakshatra_pushya,0.4,shared guna sattva + deva-sattva alignment,,sattva,,pushing upward resonates with Pushya
+hexagram_46,nakshatra_purva_phalguni,0.35,shared element earth,earth,,,pushing upward resonates with Purva_Phalguni
+hexagram_46,nakshatra_uttara_phalguni,0.65,shared element earth + shared guna sattva,earth,sattva,,pushing upward resonates with Uttara_Phalguni
+hexagram_46,nakshatra_hasta,0.9,shared element air + shared guna sattva + dosha-body alignment vata/thigh + deva-sattva alignment,air,sattva,,pushing upward resonates with Hasta
+hexagram_46,nakshatra_swati,0.6,shared element air + dosha-body alignment vata/thigh + deva-sattva alignment,air,,,pushing upward resonates with Swati
+hexagram_46,nakshatra_anuradha,0.4,shared guna sattva + deva-sattva alignment,,sattva,,pushing upward resonates with Anuradha
+hexagram_46,nakshatra_jyeshtha,0.35,shared element air,air,,,pushing upward resonates with Jyeshtha
+hexagram_46,nakshatra_mula,0.5,shared element air + dosha-body alignment vata/thigh,air,,,pushing upward resonates with Mula
+hexagram_46,nakshatra_uttara_ashadha,0.65,shared element earth + shared guna sattva,earth,sattva,,pushing upward resonates with Uttara_Ashadha
+hexagram_46,nakshatra_shravana,0.9,shared element air + shared guna sattva + dosha-body alignment vata/thigh + deva-sattva alignment,air,sattva,,pushing upward resonates with Shravana
+hexagram_46,nakshatra_shatabhisha,0.5,shared element air + dosha-body alignment vata/thigh,air,,,pushing upward resonates with Shatabhisha
+hexagram_46,nakshatra_uttara_bhadrapada,0.3,shared guna sattva,,sattva,,pushing upward resonates with Uttara_Bhadrapada
+hexagram_46,nakshatra_revati,0.4,shared guna sattva + deva-sattva alignment,,sattva,,pushing upward resonates with Revati
+hexagram_47,nakshatra_mrigashira,0.45,shared guna tamas + dosha-body alignment vata/ear,,tamas,,oppression resonates with Mrigashira
+hexagram_47,nakshatra_ardra,0.8,shared element water + shared guna tamas + dosha-body alignment vata/ear,water,tamas,,oppression resonates with Ardra
+hexagram_47,nakshatra_pushya,0.35,shared element water,water,,,oppression resonates with Pushya
+hexagram_47,nakshatra_ashlesha,0.75,shared element water + shared guna tamas + rakshasa-tamas alignment,water,tamas,,oppression resonates with Ashlesha
+hexagram_47,nakshatra_magha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,oppression resonates with Magha
+hexagram_47,nakshatra_chitra,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,oppression resonates with Chitra
+hexagram_47,nakshatra_anuradha,0.35,shared element water,water,,,oppression resonates with Anuradha
+hexagram_47,nakshatra_jyeshtha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,oppression resonates with Jyeshtha
+hexagram_47,nakshatra_mula,0.55,shared guna tamas + dosha-body alignment vata/ear + rakshasa-tamas alignment,,tamas,,oppression resonates with Mula
+hexagram_47,nakshatra_purva_ashadha,0.35,shared element water,water,,,oppression resonates with Purva_Ashadha
+hexagram_47,nakshatra_shatabhisha,0.55,shared guna tamas + dosha-body alignment vata/ear + rakshasa-tamas alignment,,tamas,,oppression resonates with Shatabhisha
+hexagram_47,nakshatra_purva_bhadrapada,0.3,shared guna tamas,,tamas,,oppression resonates with Purva_Bhadrapada
+hexagram_47,nakshatra_uttara_bhadrapada,0.35,shared element water,water,,,oppression resonates with Uttara_Bhadrapada
+hexagram_47,nakshatra_revati,0.35,shared element water,water,,,oppression resonates with Revati
+hexagram_48,nakshatra_ardra,0.5,shared element water + dosha-body alignment vata/thigh,water,,,the well resonates with Ardra
+hexagram_48,nakshatra_punarvasu,0.9,shared element air + shared guna sattva + dosha-body alignment vata/thigh + deva-sattva alignment,air,sattva,,the well resonates with Punarvasu
+hexagram_48,nakshatra_pushya,0.75,shared element water + shared guna sattva + deva-sattva alignment,water,sattva,,the well resonates with Pushya
+hexagram_48,nakshatra_ashlesha,0.35,shared element water,water,,,the well resonates with Ashlesha
+hexagram_48,nakshatra_uttara_phalguni,0.3,shared guna sattva,,sattva,,the well resonates with Uttara_Phalguni
+hexagram_48,nakshatra_hasta,0.9,shared element air + shared guna sattva + dosha-body alignment vata/thigh + deva-sattva alignment,air,sattva,,the well resonates with Hasta
+hexagram_48,nakshatra_swati,0.6,shared element air + dosha-body alignment vata/thigh + deva-sattva alignment,air,,,the well resonates with Swati
+hexagram_48,nakshatra_anuradha,0.75,shared element water + shared guna sattva + deva-sattva alignment,water,sattva,,the well resonates with Anuradha
+hexagram_48,nakshatra_jyeshtha,0.35,shared element air,air,,,the well resonates with Jyeshtha
+hexagram_48,nakshatra_mula,0.5,shared element air + dosha-body alignment vata/thigh,air,,,the well resonates with Mula
+hexagram_48,nakshatra_purva_ashadha,0.35,shared element water,water,,,the well resonates with Purva_Ashadha
+hexagram_48,nakshatra_uttara_ashadha,0.3,shared guna sattva,,sattva,,the well resonates with Uttara_Ashadha
+hexagram_48,nakshatra_shravana,0.9,shared element air + shared guna sattva + dosha-body alignment vata/thigh + deva-sattva alignment,air,sattva,,the well resonates with Shravana
+hexagram_48,nakshatra_shatabhisha,0.5,shared element air + dosha-body alignment vata/thigh,air,,,the well resonates with Shatabhisha
+hexagram_48,nakshatra_uttara_bhadrapada,0.65,shared element water + shared guna sattva,water,sattva,,the well resonates with Uttara_Bhadrapada
+hexagram_48,nakshatra_revati,0.75,shared element water + shared guna sattva + deva-sattva alignment,water,sattva,,the well resonates with Revati
+hexagram_49,nakshatra_ashwini,0.65,shared element fire + shared guna rajas,fire,rajas,,revolution resonates with Ashwini
+hexagram_49,nakshatra_bharani,0.55,shared guna rajas + dosha-body alignment pitta/eye + manushya-rajas alignment,,rajas,,revolution resonates with Bharani
+hexagram_49,nakshatra_krittika,0.8,shared element fire + shared guna rajas + dosha-body alignment pitta/eye,fire,rajas,,revolution resonates with Krittika
+hexagram_49,nakshatra_rohini,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,revolution resonates with Rohini
+hexagram_49,nakshatra_ardra,0.45,shared element water + manushya-rajas alignment,water,,,revolution resonates with Ardra
+hexagram_49,nakshatra_pushya,0.35,shared element water,water,,,revolution resonates with Pushya
+hexagram_49,nakshatra_ashlesha,0.35,shared element water,water,,,revolution resonates with Ashlesha
+hexagram_49,nakshatra_magha,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,revolution resonates with Magha
+hexagram_49,nakshatra_purva_phalguni,0.55,shared guna rajas + dosha-body alignment pitta/eye + manushya-rajas alignment,,rajas,,revolution resonates with Purva_Phalguni
+hexagram_49,nakshatra_chitra,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,revolution resonates with Chitra
+hexagram_49,nakshatra_swati,0.3,shared guna rajas,,rajas,,revolution resonates with Swati
+hexagram_49,nakshatra_vishakha,0.8,shared element fire + shared guna rajas + dosha-body alignment pitta/eye,fire,rajas,,revolution resonates with Vishakha
+hexagram_49,nakshatra_anuradha,0.35,shared element water,water,,,revolution resonates with Anuradha
+hexagram_49,nakshatra_purva_ashadha,0.9,shared element water + shared guna rajas + dosha-body alignment pitta/eye + manushya-rajas alignment,water,rajas,,revolution resonates with Purva_Ashadha
+hexagram_49,nakshatra_dhanishta,0.8,shared element fire + shared guna rajas + dosha-body alignment pitta/eye,fire,rajas,,revolution resonates with Dhanishta
+hexagram_49,nakshatra_purva_bhadrapada,0.6,shared element fire + dosha-body alignment pitta/eye + manushya-rajas alignment,fire,,,revolution resonates with Purva_Bhadrapada
+hexagram_49,nakshatra_uttara_bhadrapada,0.45,shared element water + manushya-rajas alignment,water,,,revolution resonates with Uttara_Bhadrapada
+hexagram_49,nakshatra_revati,0.35,shared element water,water,,,revolution resonates with Revati
+hexagram_50,nakshatra_ashwini,0.6,shared element fire + dosha-body alignment vata/thigh + deva-sattva alignment,fire,,,the caldron resonates with Ashwini
+hexagram_50,nakshatra_krittika,0.35,shared element fire,fire,,,the caldron resonates with Krittika
+hexagram_50,nakshatra_punarvasu,0.9,shared element air + shared guna sattva + dosha-body alignment vata/thigh + deva-sattva alignment,air,sattva,,the caldron resonates with Punarvasu
+hexagram_50,nakshatra_pushya,0.4,shared guna sattva + deva-sattva alignment,,sattva,,the caldron resonates with Pushya
+hexagram_50,nakshatra_magha,0.35,shared element fire,fire,,,the caldron resonates with Magha
+hexagram_50,nakshatra_uttara_phalguni,0.3,shared guna sattva,,sattva,,the caldron resonates with Uttara_Phalguni
+hexagram_50,nakshatra_hasta,0.9,shared element air + shared guna sattva + dosha-body alignment vata/thigh + deva-sattva alignment,air,sattva,,the caldron resonates with Hasta
+hexagram_50,nakshatra_chitra,0.35,shared element fire,fire,,,the caldron resonates with Chitra
+hexagram_50,nakshatra_swati,0.6,shared element air + dosha-body alignment vata/thigh + deva-sattva alignment,air,,,the caldron resonates with Swati
+hexagram_50,nakshatra_vishakha,0.35,shared element fire,fire,,,the caldron resonates with Vishakha
+hexagram_50,nakshatra_anuradha,0.4,shared guna sattva + deva-sattva alignment,,sattva,,the caldron resonates with Anuradha
+hexagram_50,nakshatra_jyeshtha,0.35,shared element air,air,,,the caldron resonates with Jyeshtha
+hexagram_50,nakshatra_mula,0.5,shared element air + dosha-body alignment vata/thigh,air,,,the caldron resonates with Mula
+hexagram_50,nakshatra_uttara_ashadha,0.3,shared guna sattva,,sattva,,the caldron resonates with Uttara_Ashadha
+hexagram_50,nakshatra_shravana,0.9,shared element air + shared guna sattva + dosha-body alignment vata/thigh + deva-sattva alignment,air,sattva,,the caldron resonates with Shravana
+hexagram_50,nakshatra_dhanishta,0.35,shared element fire,fire,,,the caldron resonates with Dhanishta
+hexagram_50,nakshatra_shatabhisha,0.5,shared element air + dosha-body alignment vata/thigh,air,,,the caldron resonates with Shatabhisha
+hexagram_50,nakshatra_purva_bhadrapada,0.35,shared element fire,fire,,,the caldron resonates with Purva_Bhadrapada
+hexagram_50,nakshatra_uttara_bhadrapada,0.3,shared guna sattva,,sattva,,the caldron resonates with Uttara_Bhadrapada
+hexagram_50,nakshatra_revati,0.4,shared guna sattva + deva-sattva alignment,,sattva,,the caldron resonates with Revati
+hexagram_51,nakshatra_ashwini,0.8,shared element fire + shared guna rajas + dosha-body alignment vata/foot,fire,rajas,,the arousing resonates with Ashwini
+hexagram_51,nakshatra_bharani,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,the arousing resonates with Bharani
+hexagram_51,nakshatra_krittika,0.65,shared element fire + shared guna rajas,fire,rajas,,the arousing resonates with Krittika
+hexagram_51,nakshatra_rohini,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,the arousing resonates with Rohini
+hexagram_51,nakshatra_magha,0.35,shared element fire,fire,,,the arousing resonates with Magha
+hexagram_51,nakshatra_purva_phalguni,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,the arousing resonates with Purva_Phalguni
+hexagram_51,nakshatra_chitra,0.35,shared element fire,fire,,,the arousing resonates with Chitra
+hexagram_51,nakshatra_swati,0.45,shared guna rajas + dosha-body alignment vata/foot,,rajas,,the arousing resonates with Swati
+hexagram_51,nakshatra_vishakha,0.65,shared element fire + shared guna rajas,fire,rajas,,the arousing resonates with Vishakha
+hexagram_51,nakshatra_purva_ashadha,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,the arousing resonates with Purva_Ashadha
+hexagram_51,nakshatra_dhanishta,0.65,shared element fire + shared guna rajas,fire,rajas,,the arousing resonates with Dhanishta
+hexagram_51,nakshatra_purva_bhadrapada,0.45,shared element fire + manushya-rajas alignment,fire,,,the arousing resonates with Purva_Bhadrapada
+hexagram_52,nakshatra_bharani,0.35,shared element earth,earth,,,keeping still resonates with Bharani
+hexagram_52,nakshatra_rohini,0.5,shared element earth + dosha-body alignment kapha/hand,earth,,,keeping still resonates with Rohini
+hexagram_52,nakshatra_mrigashira,0.65,shared element earth + shared guna tamas,earth,tamas,,keeping still resonates with Mrigashira
+hexagram_52,nakshatra_ardra,0.3,shared guna tamas,,tamas,,keeping still resonates with Ardra
+hexagram_52,nakshatra_ashlesha,0.55,shared guna tamas + dosha-body alignment kapha/hand + rakshasa-tamas alignment,,tamas,,keeping still resonates with Ashlesha
+hexagram_52,nakshatra_magha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,keeping still resonates with Magha
+hexagram_52,nakshatra_purva_phalguni,0.35,shared element earth,earth,,,keeping still resonates with Purva_Phalguni
+hexagram_52,nakshatra_uttara_phalguni,0.5,shared element earth + dosha-body alignment kapha/hand,earth,,,keeping still resonates with Uttara_Phalguni
+hexagram_52,nakshatra_chitra,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,keeping still resonates with Chitra
+hexagram_52,nakshatra_jyeshtha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,keeping still resonates with Jyeshtha
+hexagram_52,nakshatra_mula,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,keeping still resonates with Mula
+hexagram_52,nakshatra_uttara_ashadha,0.5,shared element earth + dosha-body alignment kapha/hand,earth,,,keeping still resonates with Uttara_Ashadha
+hexagram_52,nakshatra_shatabhisha,0.4,shared guna tamas + rakshasa-tamas alignment,,tamas,,keeping still resonates with Shatabhisha
+hexagram_52,nakshatra_purva_bhadrapada,0.3,shared guna tamas,,tamas,,keeping still resonates with Purva_Bhadrapada
+hexagram_53,nakshatra_bharani,0.35,shared element earth,earth,,,development resonates with Bharani
+hexagram_53,nakshatra_rohini,0.5,shared element earth + dosha-body alignment kapha/hand,earth,,,development resonates with Rohini
+hexagram_53,nakshatra_mrigashira,0.45,shared element earth + deva-sattva alignment,earth,,,development resonates with Mrigashira
+hexagram_53,nakshatra_punarvasu,0.75,shared element air + shared guna sattva + deva-sattva alignment,air,sattva,,development resonates with Punarvasu
+hexagram_53,nakshatra_pushya,0.55,shared guna sattva + dosha-body alignment kapha/hand + deva-sattva alignment,,sattva,,development resonates with Pushya
+hexagram_53,nakshatra_purva_phalguni,0.35,shared element earth,earth,,,development resonates with Purva_Phalguni
+hexagram_53,nakshatra_uttara_phalguni,0.8,shared element earth + shared guna sattva + dosha-body alignment kapha/hand,earth,sattva,,development resonates with Uttara_Phalguni
+hexagram_53,nakshatra_hasta,0.75,shared element air + shared guna sattva + deva-sattva alignment,air,sattva,,development resonates with Hasta
+hexagram_53,nakshatra_swati,0.45,shared element air + deva-sattva alignment,air,,,development resonates with Swati
+hexagram_53,nakshatra_anuradha,0.55,shared guna sattva + dosha-body alignment kapha/hand + deva-sattva alignment,,sattva,,development resonates with Anuradha
+hexagram_53,nakshatra_jyeshtha,0.35,shared element air,air,,,development resonates with Jyeshtha
+hexagram_53,nakshatra_mula,0.35,shared element air,air,,,development resonates with Mula
+hexagram_53,nakshatra_uttara_ashadha,0.8,shared element earth + shared guna sattva + dosha-body alignment kapha/hand,earth,sattva,,development resonates with Uttara_Ashadha
+hexagram_53,nakshatra_shravana,0.75,shared element air + shared guna sattva + deva-sattva alignment,air,sattva,,development resonates with Shravana
+hexagram_53,nakshatra_shatabhisha,0.35,shared element air,air,,,development resonates with Shatabhisha
+hexagram_53,nakshatra_uttara_bhadrapada,0.45,shared guna sattva + dosha-body alignment kapha/hand,,sattva,,development resonates with Uttara_Bhadrapada
+hexagram_53,nakshatra_revati,0.55,shared guna sattva + dosha-body alignment kapha/hand + deva-sattva alignment,,sattva,,development resonates with Revati
+hexagram_54,nakshatra_ashwini,0.65,shared element fire + shared guna rajas,fire,rajas,,the marrying maiden resonates with Ashwini
+hexagram_54,nakshatra_bharani,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,the marrying maiden resonates with Bharani
+hexagram_54,nakshatra_krittika,0.65,shared element fire + shared guna rajas,fire,rajas,,the marrying maiden resonates with Krittika
+hexagram_54,nakshatra_rohini,0.55,shared guna rajas + dosha-body alignment kapha/mouth + manushya-rajas alignment,,rajas,,the marrying maiden resonates with Rohini
+hexagram_54,nakshatra_ardra,0.45,shared element water + manushya-rajas alignment,water,,,the marrying maiden resonates with Ardra
+hexagram_54,nakshatra_pushya,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,the marrying maiden resonates with Pushya
+hexagram_54,nakshatra_ashlesha,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,the marrying maiden resonates with Ashlesha
+hexagram_54,nakshatra_magha,0.35,shared element fire,fire,,,the marrying maiden resonates with Magha
+hexagram_54,nakshatra_purva_phalguni,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,the marrying maiden resonates with Purva_Phalguni
+hexagram_54,nakshatra_chitra,0.35,shared element fire,fire,,,the marrying maiden resonates with Chitra
+hexagram_54,nakshatra_swati,0.3,shared guna rajas,,rajas,,the marrying maiden resonates with Swati
+hexagram_54,nakshatra_vishakha,0.65,shared element fire + shared guna rajas,fire,rajas,,the marrying maiden resonates with Vishakha
+hexagram_54,nakshatra_anuradha,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,the marrying maiden resonates with Anuradha
+hexagram_54,nakshatra_purva_ashadha,0.75,shared element water + shared guna rajas + manushya-rajas alignment,water,rajas,,the marrying maiden resonates with Purva_Ashadha
+hexagram_54,nakshatra_dhanishta,0.65,shared element fire + shared guna rajas,fire,rajas,,the marrying maiden resonates with Dhanishta
+hexagram_54,nakshatra_purva_bhadrapada,0.45,shared element fire + manushya-rajas alignment,fire,,,the marrying maiden resonates with Purva_Bhadrapada
+hexagram_54,nakshatra_uttara_bhadrapada,0.6,shared element water + dosha-body alignment kapha/mouth + manushya-rajas alignment,water,,,the marrying maiden resonates with Uttara_Bhadrapada
+hexagram_54,nakshatra_revati,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,the marrying maiden resonates with Revati
+hexagram_55,nakshatra_ashwini,0.65,shared element fire + shared guna rajas,fire,rajas,,abundance resonates with Ashwini
+hexagram_55,nakshatra_bharani,0.55,shared guna rajas + dosha-body alignment pitta/eye + manushya-rajas alignment,,rajas,,abundance resonates with Bharani
+hexagram_55,nakshatra_krittika,0.8,shared element fire + shared guna rajas + dosha-body alignment pitta/eye,fire,rajas,,abundance resonates with Krittika
+hexagram_55,nakshatra_rohini,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,abundance resonates with Rohini
+hexagram_55,nakshatra_magha,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,abundance resonates with Magha
+hexagram_55,nakshatra_purva_phalguni,0.55,shared guna rajas + dosha-body alignment pitta/eye + manushya-rajas alignment,,rajas,,abundance resonates with Purva_Phalguni
+hexagram_55,nakshatra_chitra,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,abundance resonates with Chitra
+hexagram_55,nakshatra_swati,0.3,shared guna rajas,,rajas,,abundance resonates with Swati
+hexagram_55,nakshatra_vishakha,0.8,shared element fire + shared guna rajas + dosha-body alignment pitta/eye,fire,rajas,,abundance resonates with Vishakha
+hexagram_55,nakshatra_purva_ashadha,0.55,shared guna rajas + dosha-body alignment pitta/eye + manushya-rajas alignment,,rajas,,abundance resonates with Purva_Ashadha
+hexagram_55,nakshatra_dhanishta,0.8,shared element fire + shared guna rajas + dosha-body alignment pitta/eye,fire,rajas,,abundance resonates with Dhanishta
+hexagram_55,nakshatra_purva_bhadrapada,0.6,shared element fire + dosha-body alignment pitta/eye + manushya-rajas alignment,fire,,,abundance resonates with Purva_Bhadrapada
+hexagram_56,nakshatra_ashwini,0.65,shared element fire + shared guna rajas,fire,rajas,,the wanderer resonates with Ashwini
+hexagram_56,nakshatra_bharani,0.75,shared element earth + shared guna rajas + manushya-rajas alignment,earth,rajas,,the wanderer resonates with Bharani
+hexagram_56,nakshatra_krittika,0.65,shared element fire + shared guna rajas,fire,rajas,,the wanderer resonates with Krittika
+hexagram_56,nakshatra_rohini,0.9,shared element earth + shared guna rajas + dosha-body alignment kapha/hand + manushya-rajas alignment,earth,rajas,,the wanderer resonates with Rohini
+hexagram_56,nakshatra_mrigashira,0.35,shared element earth,earth,,,the wanderer resonates with Mrigashira
+hexagram_56,nakshatra_magha,0.35,shared element fire,fire,,,the wanderer resonates with Magha
+hexagram_56,nakshatra_purva_phalguni,0.75,shared element earth + shared guna rajas + manushya-rajas alignment,earth,rajas,,the wanderer resonates with Purva_Phalguni
+hexagram_56,nakshatra_uttara_phalguni,0.6,shared element earth + dosha-body alignment kapha/hand + manushya-rajas alignment,earth,,,the wanderer resonates with Uttara_Phalguni
+hexagram_56,nakshatra_chitra,0.35,shared element fire,fire,,,the wanderer resonates with Chitra
+hexagram_56,nakshatra_swati,0.3,shared guna rajas,,rajas,,the wanderer resonates with Swati
+hexagram_56,nakshatra_vishakha,0.65,shared element fire + shared guna rajas,fire,rajas,,the wanderer resonates with Vishakha
+hexagram_56,nakshatra_purva_ashadha,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,the wanderer resonates with Purva_Ashadha
+hexagram_56,nakshatra_uttara_ashadha,0.6,shared element earth + dosha-body alignment kapha/hand + manushya-rajas alignment,earth,,,the wanderer resonates with Uttara_Ashadha
+hexagram_56,nakshatra_dhanishta,0.65,shared element fire + shared guna rajas,fire,rajas,,the wanderer resonates with Dhanishta
+hexagram_56,nakshatra_purva_bhadrapada,0.45,shared element fire + manushya-rajas alignment,fire,,,the wanderer resonates with Purva_Bhadrapada
+hexagram_57,nakshatra_punarvasu,0.9,shared element air + shared guna sattva + dosha-body alignment vata/thigh + deva-sattva alignment,air,sattva,,the gentle resonates with Punarvasu
+hexagram_57,nakshatra_pushya,0.4,shared guna sattva + deva-sattva alignment,,sattva,,the gentle resonates with Pushya
+hexagram_57,nakshatra_uttara_phalguni,0.3,shared guna sattva,,sattva,,the gentle resonates with Uttara_Phalguni
+hexagram_57,nakshatra_hasta,0.9,shared element air + shared guna sattva + dosha-body alignment vata/thigh + deva-sattva alignment,air,sattva,,the gentle resonates with Hasta
+hexagram_57,nakshatra_swati,0.6,shared element air + dosha-body alignment vata/thigh + deva-sattva alignment,air,,,the gentle resonates with Swati
+hexagram_57,nakshatra_anuradha,0.4,shared guna sattva + deva-sattva alignment,,sattva,,the gentle resonates with Anuradha
+hexagram_57,nakshatra_jyeshtha,0.35,shared element air,air,,,the gentle resonates with Jyeshtha
+hexagram_57,nakshatra_mula,0.5,shared element air + dosha-body alignment vata/thigh,air,,,the gentle resonates with Mula
+hexagram_57,nakshatra_uttara_ashadha,0.3,shared guna sattva,,sattva,,the gentle resonates with Uttara_Ashadha
+hexagram_57,nakshatra_shravana,0.9,shared element air + shared guna sattva + dosha-body alignment vata/thigh + deva-sattva alignment,air,sattva,,the gentle resonates with Shravana
+hexagram_57,nakshatra_shatabhisha,0.5,shared element air + dosha-body alignment vata/thigh,air,,,the gentle resonates with Shatabhisha
+hexagram_57,nakshatra_uttara_bhadrapada,0.3,shared guna sattva,,sattva,,the gentle resonates with Uttara_Bhadrapada
+hexagram_57,nakshatra_revati,0.4,shared guna sattva + deva-sattva alignment,,sattva,,the gentle resonates with Revati
+hexagram_58,nakshatra_ardra,0.35,shared element water,water,,,the joyous resonates with Ardra
+hexagram_58,nakshatra_punarvasu,0.4,shared guna sattva + deva-sattva alignment,,sattva,,the joyous resonates with Punarvasu
+hexagram_58,nakshatra_pushya,0.9,shared element water + shared guna sattva + dosha-body alignment kapha/mouth + deva-sattva alignment,water,sattva,,the joyous resonates with Pushya
+hexagram_58,nakshatra_ashlesha,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,the joyous resonates with Ashlesha
+hexagram_58,nakshatra_uttara_phalguni,0.45,shared guna sattva + dosha-body alignment kapha/mouth,,sattva,,the joyous resonates with Uttara_Phalguni
+hexagram_58,nakshatra_hasta,0.4,shared guna sattva + deva-sattva alignment,,sattva,,the joyous resonates with Hasta
+hexagram_58,nakshatra_anuradha,0.9,shared element water + shared guna sattva + dosha-body alignment kapha/mouth + deva-sattva alignment,water,sattva,,the joyous resonates with Anuradha
+hexagram_58,nakshatra_purva_ashadha,0.35,shared element water,water,,,the joyous resonates with Purva_Ashadha
+hexagram_58,nakshatra_uttara_ashadha,0.45,shared guna sattva + dosha-body alignment kapha/mouth,,sattva,,the joyous resonates with Uttara_Ashadha
+hexagram_58,nakshatra_shravana,0.4,shared guna sattva + deva-sattva alignment,,sattva,,the joyous resonates with Shravana
+hexagram_58,nakshatra_uttara_bhadrapada,0.8,shared element water + shared guna sattva + dosha-body alignment kapha/mouth,water,sattva,,the joyous resonates with Uttara_Bhadrapada
+hexagram_58,nakshatra_revati,0.9,shared element water + shared guna sattva + dosha-body alignment kapha/mouth + deva-sattva alignment,water,sattva,,the joyous resonates with Revati
+hexagram_59,nakshatra_ardra,0.5,shared element water + dosha-body alignment vata/ear,water,,,dispersion resonates with Ardra
+hexagram_59,nakshatra_punarvasu,0.9,shared element air + shared guna sattva + dosha-body alignment vata/ear + deva-sattva alignment,air,sattva,,dispersion resonates with Punarvasu
+hexagram_59,nakshatra_pushya,0.75,shared element water + shared guna sattva + deva-sattva alignment,water,sattva,,dispersion resonates with Pushya
+hexagram_59,nakshatra_ashlesha,0.35,shared element water,water,,,dispersion resonates with Ashlesha
+hexagram_59,nakshatra_uttara_phalguni,0.3,shared guna sattva,,sattva,,dispersion resonates with Uttara_Phalguni
+hexagram_59,nakshatra_hasta,0.9,shared element air + shared guna sattva + dosha-body alignment vata/ear + deva-sattva alignment,air,sattva,,dispersion resonates with Hasta
+hexagram_59,nakshatra_swati,0.6,shared element air + dosha-body alignment vata/ear + deva-sattva alignment,air,,,dispersion resonates with Swati
+hexagram_59,nakshatra_anuradha,0.75,shared element water + shared guna sattva + deva-sattva alignment,water,sattva,,dispersion resonates with Anuradha
+hexagram_59,nakshatra_jyeshtha,0.35,shared element air,air,,,dispersion resonates with Jyeshtha
+hexagram_59,nakshatra_mula,0.5,shared element air + dosha-body alignment vata/ear,air,,,dispersion resonates with Mula
+hexagram_59,nakshatra_purva_ashadha,0.35,shared element water,water,,,dispersion resonates with Purva_Ashadha
+hexagram_59,nakshatra_uttara_ashadha,0.3,shared guna sattva,,sattva,,dispersion resonates with Uttara_Ashadha
+hexagram_59,nakshatra_shravana,0.9,shared element air + shared guna sattva + dosha-body alignment vata/ear + deva-sattva alignment,air,sattva,,dispersion resonates with Shravana
+hexagram_59,nakshatra_shatabhisha,0.5,shared element air + dosha-body alignment vata/ear,air,,,dispersion resonates with Shatabhisha
+hexagram_59,nakshatra_uttara_bhadrapada,0.65,shared element water + shared guna sattva,water,sattva,,dispersion resonates with Uttara_Bhadrapada
+hexagram_59,nakshatra_revati,0.75,shared element water + shared guna sattva + deva-sattva alignment,water,sattva,,dispersion resonates with Revati
+hexagram_60,nakshatra_ardra,0.35,shared element water,water,,,limitation resonates with Ardra
+hexagram_60,nakshatra_punarvasu,0.4,shared guna sattva + deva-sattva alignment,,sattva,,limitation resonates with Punarvasu
+hexagram_60,nakshatra_pushya,0.9,shared element water + shared guna sattva + dosha-body alignment kapha/mouth + deva-sattva alignment,water,sattva,,limitation resonates with Pushya
+hexagram_60,nakshatra_ashlesha,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,limitation resonates with Ashlesha
+hexagram_60,nakshatra_uttara_phalguni,0.45,shared guna sattva + dosha-body alignment kapha/mouth,,sattva,,limitation resonates with Uttara_Phalguni
+hexagram_60,nakshatra_hasta,0.4,shared guna sattva + deva-sattva alignment,,sattva,,limitation resonates with Hasta
+hexagram_60,nakshatra_anuradha,0.9,shared element water + shared guna sattva + dosha-body alignment kapha/mouth + deva-sattva alignment,water,sattva,,limitation resonates with Anuradha
+hexagram_60,nakshatra_purva_ashadha,0.35,shared element water,water,,,limitation resonates with Purva_Ashadha
+hexagram_60,nakshatra_uttara_ashadha,0.45,shared guna sattva + dosha-body alignment kapha/mouth,,sattva,,limitation resonates with Uttara_Ashadha
+hexagram_60,nakshatra_shravana,0.4,shared guna sattva + deva-sattva alignment,,sattva,,limitation resonates with Shravana
+hexagram_60,nakshatra_uttara_bhadrapada,0.8,shared element water + shared guna sattva + dosha-body alignment kapha/mouth,water,sattva,,limitation resonates with Uttara_Bhadrapada
+hexagram_60,nakshatra_revati,0.9,shared element water + shared guna sattva + dosha-body alignment kapha/mouth + deva-sattva alignment,water,sattva,,limitation resonates with Revati
+hexagram_61,nakshatra_ardra,0.35,shared element water,water,,,inner truth resonates with Ardra
+hexagram_61,nakshatra_punarvasu,0.75,shared element air + shared guna sattva + deva-sattva alignment,air,sattva,,inner truth resonates with Punarvasu
+hexagram_61,nakshatra_pushya,0.9,shared element water + shared guna sattva + dosha-body alignment kapha/mouth + deva-sattva alignment,water,sattva,,inner truth resonates with Pushya
+hexagram_61,nakshatra_ashlesha,0.5,shared element water + dosha-body alignment kapha/mouth,water,,,inner truth resonates with Ashlesha
+hexagram_61,nakshatra_uttara_phalguni,0.45,shared guna sattva + dosha-body alignment kapha/mouth,,sattva,,inner truth resonates with Uttara_Phalguni
+hexagram_61,nakshatra_hasta,0.75,shared element air + shared guna sattva + deva-sattva alignment,air,sattva,,inner truth resonates with Hasta
+hexagram_61,nakshatra_swati,0.45,shared element air + deva-sattva alignment,air,,,inner truth resonates with Swati
+hexagram_61,nakshatra_anuradha,0.9,shared element water + shared guna sattva + dosha-body alignment kapha/mouth + deva-sattva alignment,water,sattva,,inner truth resonates with Anuradha
+hexagram_61,nakshatra_jyeshtha,0.35,shared element air,air,,,inner truth resonates with Jyeshtha
+hexagram_61,nakshatra_mula,0.35,shared element air,air,,,inner truth resonates with Mula
+hexagram_61,nakshatra_purva_ashadha,0.35,shared element water,water,,,inner truth resonates with Purva_Ashadha
+hexagram_61,nakshatra_uttara_ashadha,0.45,shared guna sattva + dosha-body alignment kapha/mouth,,sattva,,inner truth resonates with Uttara_Ashadha
+hexagram_61,nakshatra_shravana,0.75,shared element air + shared guna sattva + deva-sattva alignment,air,sattva,,inner truth resonates with Shravana
+hexagram_61,nakshatra_shatabhisha,0.35,shared element air,air,,,inner truth resonates with Shatabhisha
+hexagram_61,nakshatra_uttara_bhadrapada,0.8,shared element water + shared guna sattva + dosha-body alignment kapha/mouth,water,sattva,,inner truth resonates with Uttara_Bhadrapada
+hexagram_61,nakshatra_revati,0.9,shared element water + shared guna sattva + dosha-body alignment kapha/mouth + deva-sattva alignment,water,sattva,,inner truth resonates with Revati
+hexagram_62,nakshatra_ashwini,0.65,shared element fire + shared guna rajas,fire,rajas,,small preponderance resonates with Ashwini
+hexagram_62,nakshatra_bharani,0.75,shared element earth + shared guna rajas + manushya-rajas alignment,earth,rajas,,small preponderance resonates with Bharani
+hexagram_62,nakshatra_krittika,0.65,shared element fire + shared guna rajas,fire,rajas,,small preponderance resonates with Krittika
+hexagram_62,nakshatra_rohini,0.9,shared element earth + shared guna rajas + dosha-body alignment kapha/hand + manushya-rajas alignment,earth,rajas,,small preponderance resonates with Rohini
+hexagram_62,nakshatra_mrigashira,0.35,shared element earth,earth,,,small preponderance resonates with Mrigashira
+hexagram_62,nakshatra_magha,0.35,shared element fire,fire,,,small preponderance resonates with Magha
+hexagram_62,nakshatra_purva_phalguni,0.75,shared element earth + shared guna rajas + manushya-rajas alignment,earth,rajas,,small preponderance resonates with Purva_Phalguni
+hexagram_62,nakshatra_uttara_phalguni,0.6,shared element earth + dosha-body alignment kapha/hand + manushya-rajas alignment,earth,,,small preponderance resonates with Uttara_Phalguni
+hexagram_62,nakshatra_chitra,0.35,shared element fire,fire,,,small preponderance resonates with Chitra
+hexagram_62,nakshatra_swati,0.3,shared guna rajas,,rajas,,small preponderance resonates with Swati
+hexagram_62,nakshatra_vishakha,0.65,shared element fire + shared guna rajas,fire,rajas,,small preponderance resonates with Vishakha
+hexagram_62,nakshatra_purva_ashadha,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,small preponderance resonates with Purva_Ashadha
+hexagram_62,nakshatra_uttara_ashadha,0.6,shared element earth + dosha-body alignment kapha/hand + manushya-rajas alignment,earth,,,small preponderance resonates with Uttara_Ashadha
+hexagram_62,nakshatra_dhanishta,0.65,shared element fire + shared guna rajas,fire,rajas,,small preponderance resonates with Dhanishta
+hexagram_62,nakshatra_purva_bhadrapada,0.45,shared element fire + manushya-rajas alignment,fire,,,small preponderance resonates with Purva_Bhadrapada
+hexagram_63,nakshatra_ashwini,0.45,shared element fire + deva-sattva alignment,fire,,,after completion resonates with Ashwini
+hexagram_63,nakshatra_krittika,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,after completion resonates with Krittika
+hexagram_63,nakshatra_ardra,0.35,shared element water,water,,,after completion resonates with Ardra
+hexagram_63,nakshatra_punarvasu,0.4,shared guna sattva + deva-sattva alignment,,sattva,,after completion resonates with Punarvasu
+hexagram_63,nakshatra_pushya,0.75,shared element water + shared guna sattva + deva-sattva alignment,water,sattva,,after completion resonates with Pushya
+hexagram_63,nakshatra_ashlesha,0.35,shared element water,water,,,after completion resonates with Ashlesha
+hexagram_63,nakshatra_magha,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,after completion resonates with Magha
+hexagram_63,nakshatra_uttara_phalguni,0.3,shared guna sattva,,sattva,,after completion resonates with Uttara_Phalguni
+hexagram_63,nakshatra_hasta,0.4,shared guna sattva + deva-sattva alignment,,sattva,,after completion resonates with Hasta
+hexagram_63,nakshatra_chitra,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,after completion resonates with Chitra
+hexagram_63,nakshatra_vishakha,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,after completion resonates with Vishakha
+hexagram_63,nakshatra_anuradha,0.75,shared element water + shared guna sattva + deva-sattva alignment,water,sattva,,after completion resonates with Anuradha
+hexagram_63,nakshatra_purva_ashadha,0.5,shared element water + dosha-body alignment pitta/eye,water,,,after completion resonates with Purva_Ashadha
+hexagram_63,nakshatra_uttara_ashadha,0.3,shared guna sattva,,sattva,,after completion resonates with Uttara_Ashadha
+hexagram_63,nakshatra_shravana,0.4,shared guna sattva + deva-sattva alignment,,sattva,,after completion resonates with Shravana
+hexagram_63,nakshatra_dhanishta,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,after completion resonates with Dhanishta
+hexagram_63,nakshatra_purva_bhadrapada,0.5,shared element fire + dosha-body alignment pitta/eye,fire,,,after completion resonates with Purva_Bhadrapada
+hexagram_63,nakshatra_uttara_bhadrapada,0.65,shared element water + shared guna sattva,water,sattva,,after completion resonates with Uttara_Bhadrapada
+hexagram_63,nakshatra_revati,0.75,shared element water + shared guna sattva + deva-sattva alignment,water,sattva,,after completion resonates with Revati
+hexagram_64,nakshatra_ashwini,0.8,shared element fire + shared guna rajas + dosha-body alignment vata/ear,fire,rajas,,before completion resonates with Ashwini
+hexagram_64,nakshatra_bharani,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,before completion resonates with Bharani
+hexagram_64,nakshatra_krittika,0.65,shared element fire + shared guna rajas,fire,rajas,,before completion resonates with Krittika
+hexagram_64,nakshatra_rohini,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,before completion resonates with Rohini
+hexagram_64,nakshatra_ardra,0.6,shared element water + dosha-body alignment vata/ear + manushya-rajas alignment,water,,,before completion resonates with Ardra
+hexagram_64,nakshatra_pushya,0.35,shared element water,water,,,before completion resonates with Pushya
+hexagram_64,nakshatra_ashlesha,0.35,shared element water,water,,,before completion resonates with Ashlesha
+hexagram_64,nakshatra_magha,0.35,shared element fire,fire,,,before completion resonates with Magha
+hexagram_64,nakshatra_purva_phalguni,0.4,shared guna rajas + manushya-rajas alignment,,rajas,,before completion resonates with Purva_Phalguni
+hexagram_64,nakshatra_chitra,0.35,shared element fire,fire,,,before completion resonates with Chitra
+hexagram_64,nakshatra_swati,0.45,shared guna rajas + dosha-body alignment vata/ear,,rajas,,before completion resonates with Swati
+hexagram_64,nakshatra_vishakha,0.65,shared element fire + shared guna rajas,fire,rajas,,before completion resonates with Vishakha
+hexagram_64,nakshatra_anuradha,0.35,shared element water,water,,,before completion resonates with Anuradha
+hexagram_64,nakshatra_purva_ashadha,0.75,shared element water + shared guna rajas + manushya-rajas alignment,water,rajas,,before completion resonates with Purva_Ashadha
+hexagram_64,nakshatra_dhanishta,0.65,shared element fire + shared guna rajas,fire,rajas,,before completion resonates with Dhanishta
+hexagram_64,nakshatra_purva_bhadrapada,0.45,shared element fire + manushya-rajas alignment,fire,,,before completion resonates with Purva_Bhadrapada
+hexagram_64,nakshatra_uttara_bhadrapada,0.45,shared element water + manushya-rajas alignment,water,,,before completion resonates with Uttara_Bhadrapada
+hexagram_64,nakshatra_revati,0.35,shared element water,water,,,before completion resonates with Revati

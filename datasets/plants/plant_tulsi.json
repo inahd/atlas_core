@@ -1,0 +1,162 @@
+{
+  "entity_id": "plant_tulsi",
+  "version": 1,
+
+  "identity": {
+    "latin": "Ocimum tenuiflorum",
+    "iast": "Tulasī",
+    "devanagari": "तुलसी",
+    "common": ["Tulsi", "Holy Basil", "Sacred Basil"],
+    "family": "Lamiaceae",
+    "synonyms": ["Ocimum sanctum", "Geniosporum tenuiflorum"],
+    "origin": "E. Asia · Indian subcontinent",
+    "attestation": "OBSERVED:PFAF"
+  },
+
+  "field_coordinates": {
+    "theta": "S5 (Prakṛti / Nature)",
+    "theta_note": "plant entity lives at the nature layer; activates S3 (rhythm) through seasonal timing",
+    "phi": 1.57,
+    "phi_note": "center-left · contemplative engagement · plant as medicine · Āyurveda domain (φ ≈ π/2 per TWO_AXIS_FIELD_SPEC)",
+    "psi_primary": "jijnasu",
+    "psi_note": "Tulsi invites inquiry and approach; not crisis (arta) nor pure knowledge (jnani)"
+  },
+
+  "domains": {
+
+    "astrology": {
+      "source": "datasets/plants/nakshatra_plants.csv · Jyotiṣa tradition",
+      "attestation": "OBSERVED:JYOTISHA_TRADITION",
+      "nakshatra_primary": "Anuradha",
+      "nakshatra_deity": "Mitra",
+      "nakshatra_element": "Water",
+      "nakshatra_dosha": "Kapha",
+      "nakshatra_secondary": "Rohiṇī",
+      "nakshatra_secondary_note": "most fertile nakshatra · Brahma · abundance",
+      "seasonal_timing": "varṣā (monsoon) · hemanta (early winter)",
+      "mantra": "oṃ mitrāya namaḥ",
+      "field_activation_note": "appears in coherence peaks when: vara=Somavāra · element=fire · tithi=Ekādaśī · nakshatra=Anuradha or Rohiṇī"
+    },
+
+    "ayurveda": {
+      "source": "datasets/ayurveda/herb_exemplars.csv · Amidha dataset · Charaka · Bhāvaprakāśa",
+      "attestation": "OBSERVED:MODERN_SECONDARY",
+      "herb_id": "H009",
+      "rasa": "pungent · bitter",
+      "virya": "heating (uṣṇa)",
+      "vipaka": "pungent",
+      "guna": "laghu (light)",
+      "dosha_effect": "pacifies Kapha and Vāta; may aggravate Pitta",
+      "dhatu_affinity": "rasa · prāṇa",
+      "srota_affinity": "prāṇavaha",
+      "prabhava": "rasāyana · krimighna · kāsahara",
+      "part_used": "leaf",
+      "preparation": "infusion · decoction",
+      "best_season": "varṣā · hemanta",
+      "best_time": "morning (prātaḥ)",
+      "contraindication": "excess heat / high Pitta conditions (interpretation)",
+      "note": "Āyurvedic properties from Amidha dataset. Timing is interpretive. Rasa/vīrya/vipāka are observed from dravyaguṇa tradition."
+    },
+
+    "ethnobotany": {
+      "source": "PFAF database · pfaf.org",
+      "attestation": "OBSERVED:PFAF",
+      "edible": "leaves raw/cooked · tea · flowers · seeds as cooling beverage",
+      "medicinal_traditional": "fever · respiratory · immune · antiseptic · lowers blood sugar · anti-inflammatory · pain relief · digestive",
+      "other_uses": "stems cut into rosary beads · essential oil as insect repellent",
+      "edibility_rating": 4,
+      "medicinal_rating": 4,
+      "known_hazards": "none known",
+      "note": "PFAF medicinal data is ethnobotanical, NOT Āyurvedic. It describes observed uses across traditions without rasa/vīrya/vipāka framework."
+    },
+
+    "gaudiya_vaishnava": {
+      "source": "Hari-bhakti-vilāsa · Sanātana Gosvāmī (16th c.) · Arcana-dīpikā · Gaudiya Vedanta Publications",
+      "attestation": "OBSERVED:PRIMARY_TEXT",
+      "identity": "Vṛndādevī · forest of Vṛndāvana",
+      "relationship": "eternal devotee of Kṛṣṇa · not a herb but a person",
+      "ritual_status": "paraphernalia of worship",
+      "parikrama": "108 circumambulations · traditional",
+      "mantra": "oṁ tulasyai namaḥ",
+      "offering_to": ["Viṣṇu", "Kṛṣṇa", "Vaiṣṇava deities"],
+      "never_offer_to": ["Śiva", "Gaṇeśa", "Durgā"],
+      "do_not_pluck": "Ekādaśī · after sunset · at night",
+      "watering": "daily · at sunrise · with mantra",
+      "note": "She is addressed as a person. She participates in worship. This is observed practice from living Gauḍīya Vaiṣṇava tradition.",
+      "primary_text_passage": "After bathing and performing āhnika (the chanting of the dīkṣā-mantras), bathe tulasī [by pouring water on her soil], while chanting her bathing mantra. Then offer her praṇāma while chanting her praṇāma-mantra. Then, while chanting the mantra for picking tulasī (cayana-mantra), pick the leaf that is joined with the stem, or else pick soft mañjarīs (flower buds) that are joined with the leaves and stem.",
+      "primary_text_rule": "For pure Vaiṣṇavas though, picking tulasī is only prohibited on the day of Dvādaśī.",
+      "primary_text_restriction": "One should not pick flowers or tulasī once the sun has started to set.",
+      "attribution": {
+        "source": "Arcana-dīpikā",
+        "author": "Śrīla Bhaktivedānta Nārāyaṇa Gosvāmī Mahārāja",
+        "publisher": "Gaudiya Vedanta Publications",
+        "license": "CC BY-ND 3.0",
+        "url": "purebhakti.com",
+        "attestation": "OBSERVED:PRIMARY_TEXT"
+      }
+    },
+
+    "permaculture": {
+      "source": "PFAF cultivation data · permaculture literature",
+      "attestation": "OBSERVED:PFAF + SYNTHESIS:permaculture_mapping",
+      "layer": "herbaceous",
+      "zone": "0–1 (kitchen garden · daily harvest)",
+      "functions": ["medicinal", "culinary", "insect_repellent", "pollinator_attractor", "spiritual_anchor"],
+      "guild_role": "aromatic companion · pest repellent",
+      "soil": "well-drained · loamy · light to heavy · pH 6–7.5",
+      "sun": "full sun · cannot tolerate shade",
+      "moisture": "moist · not waterlogged",
+      "height_m": 1.0,
+      "spacing": "30–45 cm",
+      "growth_rate": "fast",
+      "maturity_days": "65–70 from transplant",
+      "climate": "moist lowland tropics · 20–28°C optimal · frost tender",
+      "hardiness_zone": "UK 10–12",
+      "rainfall_mm": "1000–3000 optimal"
+    },
+
+    "vastu": {
+      "source": "traditional practice · living architectural tradition",
+      "attestation": "TRADITIONAL",
+      "direction": "northeast · east (Īśāna / Indra zone)",
+      "never_place": "south (Yama zone)",
+      "placement_rule": "near entrance · in courtyard · not inside house",
+      "element_affinity": "fire · air",
+      "brahmasthana_note": "center must remain unobstructed — Tulsi placed adjacent, not in center",
+      "note": "Vāstu placement of Tulsi is living tradition, widely practiced. Direction associations are from traditional texts."
+    },
+
+    "synthesis": {
+      "source": "Coherence Atlas",
+      "attestation": "SYNTHESIS",
+      "content": "Three irreducible relationships coexist: medicinal (Charaka / Āyurveda), devotional (Hari-bhakti-vilāsa / Gauḍīya Vaiṣṇava), and ecological (PFAF / permaculture). None generates the others. All are OBSERVED in their own domain. The ethnobotanical description from PFAF overlaps with but is not identical to the Āyurvedic account — they share the plant but not the framework.",
+      "field_activation": "Tulsi coherence peaks when: vara=Somavāra · element=fire · tithi=Ekādaśī · nakshatra=Anuradha or Rohiṇī"
+    }
+  },
+
+  "nakshatra_correspondence": {
+    "primary": "Anuradha",
+    "primary_deity": "Mitra",
+    "primary_note": "covenant · devotion · water element",
+    "secondary": "Rohiṇī",
+    "secondary_note": "fertility · Brahma · abundance",
+    "source": "datasets/plants/nakshatra_plants.csv",
+    "attestation": "OBSERVED:JYOTISHA_TRADITION"
+  },
+
+  "use_ratings": {
+    "note": "φ measures relationship mode, not moral judgment. Descriptive not prescriptive.",
+    "attestation": "SYNTHESIS",
+    "ratings": {
+      "devotional":     {"phi": 0.5,  "score": 1.0,  "label": "pure_relationship"},
+      "home_garden":    {"phi": 1.8,  "score": 0.9,  "label": "sustainable_use"},
+      "medicinal":      {"phi": 2.5,  "score": 0.85, "label": "traditional_use"},
+      "commercial":     {"phi": 4.0,  "score": 0.6,  "label": "context_dependent"},
+      "pharmaceutical": {"phi": 5.0,  "score": 0.4,  "label": "relationship_severed",
+        "flag": "extraction without relationship · industrial scale"},
+      "biopiracy":      {"phi": 6.28, "score": 0.1,  "label": "incoherent",
+        "flag": "USDA Tulsi patents 1990s · TKDL documented · traditional knowledge appropriation",
+        "attestation": "OBSERVED:LEGAL_RECORD"}
+    }
+  }
+}

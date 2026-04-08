@@ -1,0 +1,385 @@
+hexagram_id,line_number,yang_or_yin,line_text_wilhelm,field_meaning,changing_to_hexagram,lifecycle_transition,intensity_threshold
+hexagram_01,1,yang,Line 1 of the creative,foundation,hexagram_10,seed_to_change,0.15
+hexagram_01,2,yang,Line 2 of the creative,inner_world,hexagram_13,seed_to_change,0.3
+hexagram_01,3,yang,Line 3 of the creative,transition,hexagram_44,seed_to_change,0.45
+hexagram_01,4,yang,Line 4 of the creative,outer_world,hexagram_43,seed_to_change,0.6
+hexagram_01,5,yang,Line 5 of the creative,authority,hexagram_14,seed_to_change,0.75
+hexagram_01,6,yang,Line 6 of the creative,culmination,hexagram_09,seed_to_change,0.9
+hexagram_02,1,yin,Line 1 of the receptive,foundation,hexagram_15,harvest_to_change,0.15
+hexagram_02,2,yin,Line 2 of the receptive,inner_world,hexagram_08,harvest_to_change,0.3
+hexagram_02,3,yin,Line 3 of the receptive,transition,hexagram_24,harvest_to_change,0.45
+hexagram_02,4,yin,Line 4 of the receptive,outer_world,hexagram_23,harvest_to_change,0.6
+hexagram_02,5,yin,Line 5 of the receptive,authority,hexagram_07,harvest_to_change,0.75
+hexagram_02,6,yin,Line 6 of the receptive,culmination,hexagram_16,harvest_to_change,0.9
+hexagram_03,1,yin,Line 1 of difficulty at the beginning,foundation,hexagram_63,sprout_to_change,0.15
+hexagram_03,2,yin,Line 2 of difficulty at the beginning,inner_world,hexagram_60,sprout_to_change,0.3
+hexagram_03,3,yang,Line 3 of difficulty at the beginning,transition,hexagram_07,sprout_to_change,0.45
+hexagram_03,4,yin,Line 4 of difficulty at the beginning,outer_world,hexagram_42,sprout_to_change,0.6
+hexagram_03,5,yang,Line 5 of difficulty at the beginning,authority,hexagram_24,sprout_to_change,0.75
+hexagram_03,6,yin,Line 6 of difficulty at the beginning,culmination,hexagram_17,sprout_to_change,0.9
+hexagram_04,1,yin,Line 1 of youthful folly,foundation,hexagram_18,sprout_to_change,0.15
+hexagram_04,2,yang,Line 2 of youthful folly,inner_world,hexagram_23,sprout_to_change,0.3
+hexagram_04,3,yin,Line 3 of youthful folly,transition,hexagram_41,sprout_to_change,0.45
+hexagram_04,4,yang,Line 4 of youthful folly,outer_world,hexagram_08,sprout_to_change,0.6
+hexagram_04,5,yin,Line 5 of youthful folly,authority,hexagram_59,sprout_to_change,0.75
+hexagram_04,6,yin,Line 6 of youthful folly,culmination,hexagram_64,sprout_to_change,0.9
+hexagram_05,1,yang,Line 1 of waiting,foundation,hexagram_60,growth_to_change,0.15
+hexagram_05,2,yang,Line 2 of waiting,inner_world,hexagram_63,growth_to_change,0.3
+hexagram_05,3,yang,Line 3 of waiting,transition,hexagram_48,growth_to_change,0.45
+hexagram_05,4,yin,Line 4 of waiting,outer_world,hexagram_09,growth_to_change,0.6
+hexagram_05,5,yang,Line 5 of waiting,authority,hexagram_11,growth_to_change,0.75
+hexagram_05,6,yin,Line 6 of waiting,culmination,hexagram_43,growth_to_change,0.9
+hexagram_06,1,yin,Line 1 of conflict,foundation,hexagram_44,growth_to_change,0.15
+hexagram_06,2,yang,Line 2 of conflict,inner_world,hexagram_12,growth_to_change,0.3
+hexagram_06,3,yin,Line 3 of conflict,transition,hexagram_10,growth_to_change,0.45
+hexagram_06,4,yang,Line 4 of conflict,outer_world,hexagram_47,growth_to_change,0.6
+hexagram_06,5,yang,Line 5 of conflict,authority,hexagram_64,growth_to_change,0.75
+hexagram_06,6,yang,Line 6 of conflict,culmination,hexagram_59,growth_to_change,0.9
+hexagram_07,1,yin,Line 1 of the army,foundation,hexagram_39,growth_to_change,0.15
+hexagram_07,2,yin,Line 2 of the army,inner_world,hexagram_29,growth_to_change,0.3
+hexagram_07,3,yin,Line 3 of the army,transition,hexagram_03,growth_to_change,0.45
+hexagram_07,4,yin,Line 4 of the army,outer_world,hexagram_20,growth_to_change,0.6
+hexagram_07,5,yang,Line 5 of the army,authority,hexagram_02,growth_to_change,0.75
+hexagram_07,6,yin,Line 6 of the army,culmination,hexagram_45,growth_to_change,0.9
+hexagram_08,1,yin,Line 1 of holding together,foundation,hexagram_46,growth_to_change,0.15
+hexagram_08,2,yang,Line 2 of holding together,inner_world,hexagram_02,growth_to_change,0.3
+hexagram_08,3,yin,Line 3 of holding together,transition,hexagram_19,growth_to_change,0.45
+hexagram_08,4,yin,Line 4 of holding together,outer_world,hexagram_04,growth_to_change,0.6
+hexagram_08,5,yin,Line 5 of holding together,authority,hexagram_29,growth_to_change,0.75
+hexagram_08,6,yin,Line 6 of holding together,culmination,hexagram_40,growth_to_change,0.9
+hexagram_09,1,yang,Line 1 of taming power of the small,foundation,hexagram_61,growth_to_change,0.15
+hexagram_09,2,yang,Line 2 of taming power of the small,inner_world,hexagram_37,growth_to_change,0.3
+hexagram_09,3,yang,Line 3 of taming power of the small,transition,hexagram_57,growth_to_change,0.45
+hexagram_09,4,yang,Line 4 of taming power of the small,outer_world,hexagram_05,growth_to_change,0.6
+hexagram_09,5,yang,Line 5 of taming power of the small,authority,hexagram_26,growth_to_change,0.75
+hexagram_09,6,yin,Line 6 of taming power of the small,culmination,hexagram_01,growth_to_change,0.9
+hexagram_10,1,yin,Line 1 of treading,foundation,hexagram_01,growth_to_change,0.15
+hexagram_10,2,yang,Line 2 of treading,inner_world,hexagram_25,growth_to_change,0.3
+hexagram_10,3,yang,Line 3 of treading,transition,hexagram_06,growth_to_change,0.45
+hexagram_10,4,yang,Line 4 of treading,outer_world,hexagram_58,growth_to_change,0.6
+hexagram_10,5,yang,Line 5 of treading,authority,hexagram_38,growth_to_change,0.75
+hexagram_10,6,yang,Line 6 of treading,culmination,hexagram_61,growth_to_change,0.9
+hexagram_11,1,yang,Line 1 of peace,foundation,hexagram_19,bloom_to_change,0.15
+hexagram_11,2,yang,Line 2 of peace,inner_world,hexagram_36,bloom_to_change,0.3
+hexagram_11,3,yang,Line 3 of peace,transition,hexagram_46,bloom_to_change,0.45
+hexagram_11,4,yin,Line 4 of peace,outer_world,hexagram_26,bloom_to_change,0.6
+hexagram_11,5,yin,Line 5 of peace,authority,hexagram_05,bloom_to_change,0.75
+hexagram_11,6,yin,Line 6 of peace,culmination,hexagram_34,bloom_to_change,0.9
+hexagram_12,1,yin,Line 1 of standstill,foundation,hexagram_33,dormancy_to_change,0.15
+hexagram_12,2,yin,Line 2 of standstill,inner_world,hexagram_06,dormancy_to_change,0.3
+hexagram_12,3,yin,Line 3 of standstill,transition,hexagram_25,dormancy_to_change,0.45
+hexagram_12,4,yang,Line 4 of standstill,outer_world,hexagram_45,dormancy_to_change,0.6
+hexagram_12,5,yang,Line 5 of standstill,authority,hexagram_35,dormancy_to_change,0.75
+hexagram_12,6,yang,Line 6 of standstill,culmination,hexagram_20,dormancy_to_change,0.9
+hexagram_13,1,yang,Line 1 of fellowship,foundation,hexagram_25,bloom_to_change,0.15
+hexagram_13,2,yin,Line 2 of fellowship,inner_world,hexagram_01,bloom_to_change,0.3
+hexagram_13,3,yang,Line 3 of fellowship,transition,hexagram_33,bloom_to_change,0.45
+hexagram_13,4,yang,Line 4 of fellowship,outer_world,hexagram_49,bloom_to_change,0.6
+hexagram_13,5,yang,Line 5 of fellowship,authority,hexagram_30,bloom_to_change,0.75
+hexagram_13,6,yang,Line 6 of fellowship,culmination,hexagram_37,bloom_to_change,0.9
+hexagram_14,1,yang,Line 1 of great possession,foundation,hexagram_38,bloom_to_change,0.15
+hexagram_14,2,yang,Line 2 of great possession,inner_world,hexagram_30,bloom_to_change,0.3
+hexagram_14,3,yang,Line 3 of great possession,transition,hexagram_50,bloom_to_change,0.45
+hexagram_14,4,yang,Line 4 of great possession,outer_world,hexagram_34,bloom_to_change,0.6
+hexagram_14,5,yin,Line 5 of great possession,authority,hexagram_01,bloom_to_change,0.75
+hexagram_14,6,yang,Line 6 of great possession,culmination,hexagram_26,bloom_to_change,0.9
+hexagram_15,1,yang,Line 1 of modesty,foundation,hexagram_02,fruit_to_change,0.15
+hexagram_15,2,yin,Line 2 of modesty,inner_world,hexagram_46,fruit_to_change,0.3
+hexagram_15,3,yin,Line 3 of modesty,transition,hexagram_36,fruit_to_change,0.45
+hexagram_15,4,yin,Line 4 of modesty,outer_world,hexagram_52,fruit_to_change,0.6
+hexagram_15,5,yin,Line 5 of modesty,authority,hexagram_39,fruit_to_change,0.75
+hexagram_15,6,yin,Line 6 of modesty,culmination,hexagram_62,fruit_to_change,0.9
+hexagram_16,1,yin,Line 1 of enthusiasm,foundation,hexagram_62,bloom_to_change,0.15
+hexagram_16,2,yin,Line 2 of enthusiasm,inner_world,hexagram_40,bloom_to_change,0.3
+hexagram_16,3,yin,Line 3 of enthusiasm,transition,hexagram_51,bloom_to_change,0.45
+hexagram_16,4,yin,Line 4 of enthusiasm,outer_world,hexagram_35,bloom_to_change,0.6
+hexagram_16,5,yin,Line 5 of enthusiasm,authority,hexagram_45,bloom_to_change,0.75
+hexagram_16,6,yang,Line 6 of enthusiasm,culmination,hexagram_02,bloom_to_change,0.9
+hexagram_17,1,yin,Line 1 of following,foundation,hexagram_49,growth_to_change,0.15
+hexagram_17,2,yin,Line 2 of following,inner_world,hexagram_58,growth_to_change,0.3
+hexagram_17,3,yang,Line 3 of following,transition,hexagram_45,growth_to_change,0.45
+hexagram_17,4,yin,Line 4 of following,outer_world,hexagram_25,growth_to_change,0.6
+hexagram_17,5,yang,Line 5 of following,authority,hexagram_51,growth_to_change,0.75
+hexagram_17,6,yang,Line 6 of following,culmination,hexagram_03,growth_to_change,0.9
+hexagram_18,1,yang,Line 1 of work on the decayed,foundation,hexagram_04,fruit_to_change,0.15
+hexagram_18,2,yang,Line 2 of work on the decayed,inner_world,hexagram_52,fruit_to_change,0.3
+hexagram_18,3,yin,Line 3 of work on the decayed,transition,hexagram_26,fruit_to_change,0.45
+hexagram_18,4,yang,Line 4 of work on the decayed,outer_world,hexagram_46,fruit_to_change,0.6
+hexagram_18,5,yin,Line 5 of work on the decayed,authority,hexagram_57,fruit_to_change,0.75
+hexagram_18,6,yin,Line 6 of work on the decayed,culmination,hexagram_50,fruit_to_change,0.9
+hexagram_19,1,yin,Line 1 of approach,foundation,hexagram_11,growth_to_change,0.15
+hexagram_19,2,yang,Line 2 of approach,inner_world,hexagram_24,growth_to_change,0.3
+hexagram_19,3,yang,Line 3 of approach,transition,hexagram_08,growth_to_change,0.45
+hexagram_19,4,yin,Line 4 of approach,outer_world,hexagram_41,growth_to_change,0.6
+hexagram_19,5,yin,Line 5 of approach,authority,hexagram_60,growth_to_change,0.75
+hexagram_19,6,yin,Line 6 of approach,culmination,hexagram_54,growth_to_change,0.9
+hexagram_20,1,yin,Line 1 of contemplation,foundation,hexagram_53,rest_to_change,0.15
+hexagram_20,2,yin,Line 2 of contemplation,inner_world,hexagram_59,rest_to_change,0.3
+hexagram_20,3,yin,Line 3 of contemplation,transition,hexagram_42,rest_to_change,0.45
+hexagram_20,4,yang,Line 4 of contemplation,outer_world,hexagram_07,rest_to_change,0.6
+hexagram_20,5,yang,Line 5 of contemplation,authority,hexagram_23,rest_to_change,0.75
+hexagram_20,6,yin,Line 6 of contemplation,culmination,hexagram_12,rest_to_change,0.9
+hexagram_21,1,yin,Line 1 of biting through,foundation,hexagram_30,bloom_to_change,0.15
+hexagram_21,2,yin,Line 2 of biting through,inner_world,hexagram_38,bloom_to_change,0.3
+hexagram_21,3,yang,Line 3 of biting through,transition,hexagram_35,bloom_to_change,0.45
+hexagram_21,4,yang,Line 4 of biting through,outer_world,hexagram_51,bloom_to_change,0.6
+hexagram_21,5,yin,Line 5 of biting through,authority,hexagram_25,bloom_to_change,0.75
+hexagram_21,6,yang,Line 6 of biting through,culmination,hexagram_27,bloom_to_change,0.9
+hexagram_22,1,yang,Line 1 of grace,foundation,hexagram_27,bloom_to_change,0.15
+hexagram_22,2,yin,Line 2 of grace,inner_world,hexagram_26,bloom_to_change,0.3
+hexagram_22,3,yang,Line 3 of grace,transition,hexagram_52,bloom_to_change,0.45
+hexagram_22,4,yang,Line 4 of grace,outer_world,hexagram_36,bloom_to_change,0.6
+hexagram_22,5,yin,Line 5 of grace,authority,hexagram_37,bloom_to_change,0.75
+hexagram_22,6,yin,Line 6 of grace,culmination,hexagram_30,bloom_to_change,0.9
+hexagram_23,1,yin,Line 1 of splitting apart,foundation,hexagram_52,dormancy_to_change,0.15
+hexagram_23,2,yin,Line 2 of splitting apart,inner_world,hexagram_04,dormancy_to_change,0.3
+hexagram_23,3,yin,Line 3 of splitting apart,transition,hexagram_27,dormancy_to_change,0.45
+hexagram_23,4,yang,Line 4 of splitting apart,outer_world,hexagram_02,dormancy_to_change,0.6
+hexagram_23,5,yin,Line 5 of splitting apart,authority,hexagram_20,dormancy_to_change,0.75
+hexagram_23,6,yin,Line 6 of splitting apart,culmination,hexagram_35,dormancy_to_change,0.9
+hexagram_24,1,yin,Line 1 of return,foundation,hexagram_36,seed_to_change,0.15
+hexagram_24,2,yin,Line 2 of return,inner_world,hexagram_19,seed_to_change,0.3
+hexagram_24,3,yang,Line 3 of return,transition,hexagram_02,seed_to_change,0.45
+hexagram_24,4,yin,Line 4 of return,outer_world,hexagram_27,seed_to_change,0.6
+hexagram_24,5,yin,Line 5 of return,authority,hexagram_03,seed_to_change,0.75
+hexagram_24,6,yin,Line 6 of return,culmination,hexagram_51,seed_to_change,0.9
+hexagram_25,1,yin,Line 1 of innocence,foundation,hexagram_13,seed_to_change,0.15
+hexagram_25,2,yin,Line 2 of innocence,inner_world,hexagram_10,seed_to_change,0.3
+hexagram_25,3,yang,Line 3 of innocence,transition,hexagram_12,seed_to_change,0.45
+hexagram_25,4,yang,Line 4 of innocence,outer_world,hexagram_17,seed_to_change,0.6
+hexagram_25,5,yang,Line 5 of innocence,authority,hexagram_21,seed_to_change,0.75
+hexagram_25,6,yang,Line 6 of innocence,culmination,hexagram_42,seed_to_change,0.9
+hexagram_26,1,yang,Line 1 of taming power of the great,foundation,hexagram_41,rest_to_change,0.15
+hexagram_26,2,yang,Line 2 of taming power of the great,inner_world,hexagram_22,rest_to_change,0.3
+hexagram_26,3,yang,Line 3 of taming power of the great,transition,hexagram_18,rest_to_change,0.45
+hexagram_26,4,yang,Line 4 of taming power of the great,outer_world,hexagram_11,rest_to_change,0.6
+hexagram_26,5,yin,Line 5 of taming power of the great,authority,hexagram_09,rest_to_change,0.75
+hexagram_26,6,yin,Line 6 of taming power of the great,culmination,hexagram_14,rest_to_change,0.9
+hexagram_27,1,yin,Line 1 of nourishment,foundation,hexagram_22,growth_to_change,0.15
+hexagram_27,2,yin,Line 2 of nourishment,inner_world,hexagram_41,growth_to_change,0.3
+hexagram_27,3,yang,Line 3 of nourishment,transition,hexagram_23,growth_to_change,0.45
+hexagram_27,4,yang,Line 4 of nourishment,outer_world,hexagram_24,growth_to_change,0.6
+hexagram_27,5,yin,Line 5 of nourishment,authority,hexagram_42,growth_to_change,0.75
+hexagram_27,6,yin,Line 6 of nourishment,culmination,hexagram_21,growth_to_change,0.9
+hexagram_28,1,yang,Line 1 of great preponderance,foundation,hexagram_47,bloom_to_change,0.15
+hexagram_28,2,yang,Line 2 of great preponderance,inner_world,hexagram_31,bloom_to_change,0.3
+hexagram_28,3,yin,Line 3 of great preponderance,transition,hexagram_43,bloom_to_change,0.45
+hexagram_28,4,yin,Line 4 of great preponderance,outer_world,hexagram_44,bloom_to_change,0.6
+hexagram_28,5,yang,Line 5 of great preponderance,authority,hexagram_32,bloom_to_change,0.75
+hexagram_28,6,yang,Line 6 of great preponderance,culmination,hexagram_48,bloom_to_change,0.9
+hexagram_29,1,yin,Line 1 of the abysmal,foundation,hexagram_48,dormancy_to_change,0.15
+hexagram_29,2,yang,Line 2 of the abysmal,inner_world,hexagram_07,dormancy_to_change,0.3
+hexagram_29,3,yin,Line 3 of the abysmal,transition,hexagram_60,dormancy_to_change,0.45
+hexagram_29,4,yin,Line 4 of the abysmal,outer_world,hexagram_59,dormancy_to_change,0.6
+hexagram_29,5,yang,Line 5 of the abysmal,authority,hexagram_08,dormancy_to_change,0.75
+hexagram_29,6,yin,Line 6 of the abysmal,culmination,hexagram_47,dormancy_to_change,0.9
+hexagram_30,1,yang,Line 1 of the clinging,foundation,hexagram_21,bloom_to_change,0.15
+hexagram_30,2,yin,Line 2 of the clinging,inner_world,hexagram_14,bloom_to_change,0.3
+hexagram_30,3,yang,Line 3 of the clinging,transition,hexagram_56,bloom_to_change,0.45
+hexagram_30,4,yang,Line 4 of the clinging,outer_world,hexagram_55,bloom_to_change,0.6
+hexagram_30,5,yin,Line 5 of the clinging,authority,hexagram_13,bloom_to_change,0.75
+hexagram_30,6,yang,Line 6 of the clinging,culmination,hexagram_22,bloom_to_change,0.9
+hexagram_31,1,yang,Line 1 of influence,foundation,hexagram_45,bloom_to_change,0.15
+hexagram_31,2,yin,Line 2 of influence,inner_world,hexagram_28,bloom_to_change,0.3
+hexagram_31,3,yin,Line 3 of influence,transition,hexagram_49,bloom_to_change,0.45
+hexagram_31,4,yin,Line 4 of influence,outer_world,hexagram_33,bloom_to_change,0.6
+hexagram_31,5,yang,Line 5 of influence,authority,hexagram_62,bloom_to_change,0.75
+hexagram_31,6,yang,Line 6 of influence,culmination,hexagram_39,bloom_to_change,0.9
+hexagram_32,1,yang,Line 1 of duration,foundation,hexagram_40,growth_to_change,0.15
+hexagram_32,2,yang,Line 2 of duration,inner_world,hexagram_62,growth_to_change,0.3
+hexagram_32,3,yin,Line 3 of duration,transition,hexagram_34,growth_to_change,0.45
+hexagram_32,4,yin,Line 4 of duration,outer_world,hexagram_50,growth_to_change,0.6
+hexagram_32,5,yin,Line 5 of duration,authority,hexagram_28,growth_to_change,0.75
+hexagram_32,6,yang,Line 6 of duration,culmination,hexagram_46,growth_to_change,0.9
+hexagram_33,1,yang,Line 1 of retreat,foundation,hexagram_12,dormancy_to_change,0.15
+hexagram_33,2,yin,Line 2 of retreat,inner_world,hexagram_44,dormancy_to_change,0.3
+hexagram_33,3,yin,Line 3 of retreat,transition,hexagram_13,dormancy_to_change,0.45
+hexagram_33,4,yang,Line 4 of retreat,outer_world,hexagram_31,dormancy_to_change,0.6
+hexagram_33,5,yang,Line 5 of retreat,authority,hexagram_56,dormancy_to_change,0.75
+hexagram_33,6,yang,Line 6 of retreat,culmination,hexagram_53,dormancy_to_change,0.9
+hexagram_34,1,yang,Line 1 of great power,foundation,hexagram_54,bloom_to_change,0.15
+hexagram_34,2,yang,Line 2 of great power,inner_world,hexagram_55,bloom_to_change,0.3
+hexagram_34,3,yang,Line 3 of great power,transition,hexagram_32,bloom_to_change,0.45
+hexagram_34,4,yin,Line 4 of great power,outer_world,hexagram_14,bloom_to_change,0.6
+hexagram_34,5,yin,Line 5 of great power,authority,hexagram_43,bloom_to_change,0.75
+hexagram_34,6,yang,Line 6 of great power,culmination,hexagram_11,bloom_to_change,0.9
+hexagram_35,1,yin,Line 1 of progress,foundation,hexagram_56,growth_to_change,0.15
+hexagram_35,2,yin,Line 2 of progress,inner_world,hexagram_64,growth_to_change,0.3
+hexagram_35,3,yin,Line 3 of progress,transition,hexagram_21,growth_to_change,0.45
+hexagram_35,4,yang,Line 4 of progress,outer_world,hexagram_16,growth_to_change,0.6
+hexagram_35,5,yin,Line 5 of progress,authority,hexagram_12,growth_to_change,0.75
+hexagram_35,6,yang,Line 6 of progress,culmination,hexagram_23,growth_to_change,0.9
+hexagram_36,1,yang,Line 1 of darkening of the light,foundation,hexagram_24,dormancy_to_change,0.15
+hexagram_36,2,yin,Line 2 of darkening of the light,inner_world,hexagram_11,dormancy_to_change,0.3
+hexagram_36,3,yang,Line 3 of darkening of the light,transition,hexagram_15,dormancy_to_change,0.45
+hexagram_36,4,yin,Line 4 of darkening of the light,outer_world,hexagram_22,dormancy_to_change,0.6
+hexagram_36,5,yin,Line 5 of darkening of the light,authority,hexagram_63,dormancy_to_change,0.75
+hexagram_36,6,yin,Line 6 of darkening of the light,culmination,hexagram_55,dormancy_to_change,0.9
+hexagram_37,1,yang,Line 1 of the family,foundation,hexagram_42,growth_to_change,0.15
+hexagram_37,2,yin,Line 2 of the family,inner_world,hexagram_09,growth_to_change,0.3
+hexagram_37,3,yang,Line 3 of the family,transition,hexagram_53,growth_to_change,0.45
+hexagram_37,4,yang,Line 4 of the family,outer_world,hexagram_63,growth_to_change,0.6
+hexagram_37,5,yang,Line 5 of the family,authority,hexagram_22,growth_to_change,0.75
+hexagram_37,6,yin,Line 6 of the family,culmination,hexagram_13,growth_to_change,0.9
+hexagram_38,1,yin,Line 1 of opposition,foundation,hexagram_14,bloom_to_change,0.15
+hexagram_38,2,yang,Line 2 of opposition,inner_world,hexagram_21,bloom_to_change,0.3
+hexagram_38,3,yang,Line 3 of opposition,transition,hexagram_64,bloom_to_change,0.45
+hexagram_38,4,yang,Line 4 of opposition,outer_world,hexagram_54,bloom_to_change,0.6
+hexagram_38,5,yin,Line 5 of opposition,authority,hexagram_10,bloom_to_change,0.75
+hexagram_38,6,yang,Line 6 of opposition,culmination,hexagram_41,bloom_to_change,0.9
+hexagram_39,1,yang,Line 1 of obstruction,foundation,hexagram_07,dormancy_to_change,0.15
+hexagram_39,2,yin,Line 2 of obstruction,inner_world,hexagram_48,dormancy_to_change,0.3
+hexagram_39,3,yin,Line 3 of obstruction,transition,hexagram_63,dormancy_to_change,0.45
+hexagram_39,4,yin,Line 4 of obstruction,outer_world,hexagram_53,dormancy_to_change,0.6
+hexagram_39,5,yang,Line 5 of obstruction,authority,hexagram_15,dormancy_to_change,0.75
+hexagram_39,6,yin,Line 6 of obstruction,culmination,hexagram_31,dormancy_to_change,0.9
+hexagram_40,1,yin,Line 1 of deliverance,foundation,hexagram_32,seed_to_change,0.15
+hexagram_40,2,yang,Line 2 of deliverance,inner_world,hexagram_16,seed_to_change,0.3
+hexagram_40,3,yin,Line 3 of deliverance,transition,hexagram_54,seed_to_change,0.45
+hexagram_40,4,yin,Line 4 of deliverance,outer_world,hexagram_64,seed_to_change,0.6
+hexagram_40,5,yin,Line 5 of deliverance,authority,hexagram_47,seed_to_change,0.75
+hexagram_40,6,yang,Line 6 of deliverance,culmination,hexagram_08,seed_to_change,0.9
+hexagram_41,1,yin,Line 1 of decrease,foundation,hexagram_26,fruit_to_change,0.15
+hexagram_41,2,yang,Line 2 of decrease,inner_world,hexagram_27,fruit_to_change,0.3
+hexagram_41,3,yang,Line 3 of decrease,transition,hexagram_04,fruit_to_change,0.45
+hexagram_41,4,yang,Line 4 of decrease,outer_world,hexagram_19,fruit_to_change,0.6
+hexagram_41,5,yin,Line 5 of decrease,authority,hexagram_61,fruit_to_change,0.75
+hexagram_41,6,yin,Line 6 of decrease,culmination,hexagram_38,fruit_to_change,0.9
+hexagram_42,1,yin,Line 1 of increase,foundation,hexagram_37,growth_to_change,0.15
+hexagram_42,2,yin,Line 2 of increase,inner_world,hexagram_61,growth_to_change,0.3
+hexagram_42,3,yang,Line 3 of increase,transition,hexagram_20,growth_to_change,0.45
+hexagram_42,4,yang,Line 4 of increase,outer_world,hexagram_03,growth_to_change,0.6
+hexagram_42,5,yang,Line 5 of increase,authority,hexagram_27,growth_to_change,0.75
+hexagram_42,6,yin,Line 6 of increase,culmination,hexagram_25,growth_to_change,0.9
+hexagram_43,1,yang,Line 1 of breakthrough,foundation,hexagram_58,bloom_to_change,0.15
+hexagram_43,2,yang,Line 2 of breakthrough,inner_world,hexagram_49,bloom_to_change,0.3
+hexagram_43,3,yang,Line 3 of breakthrough,transition,hexagram_28,bloom_to_change,0.45
+hexagram_43,4,yin,Line 4 of breakthrough,outer_world,hexagram_01,bloom_to_change,0.6
+hexagram_43,5,yang,Line 5 of breakthrough,authority,hexagram_34,bloom_to_change,0.75
+hexagram_43,6,yang,Line 6 of breakthrough,culmination,hexagram_05,bloom_to_change,0.9
+hexagram_44,1,yang,Line 1 of coming to meet,foundation,hexagram_06,bloom_to_change,0.15
+hexagram_44,2,yang,Line 2 of coming to meet,inner_world,hexagram_33,bloom_to_change,0.3
+hexagram_44,3,yin,Line 3 of coming to meet,transition,hexagram_01,bloom_to_change,0.45
+hexagram_44,4,yang,Line 4 of coming to meet,outer_world,hexagram_28,bloom_to_change,0.6
+hexagram_44,5,yang,Line 5 of coming to meet,authority,hexagram_50,bloom_to_change,0.75
+hexagram_44,6,yang,Line 6 of coming to meet,culmination,hexagram_57,bloom_to_change,0.9
+hexagram_45,1,yin,Line 1 of gathering together,foundation,hexagram_31,growth_to_change,0.15
+hexagram_45,2,yin,Line 2 of gathering together,inner_world,hexagram_47,growth_to_change,0.3
+hexagram_45,3,yin,Line 3 of gathering together,transition,hexagram_17,growth_to_change,0.45
+hexagram_45,4,yin,Line 4 of gathering together,outer_world,hexagram_12,growth_to_change,0.6
+hexagram_45,5,yang,Line 5 of gathering together,authority,hexagram_16,growth_to_change,0.75
+hexagram_45,6,yang,Line 6 of gathering together,culmination,hexagram_07,growth_to_change,0.9
+hexagram_46,1,yang,Line 1 of pushing upward,foundation,hexagram_08,growth_to_change,0.15
+hexagram_46,2,yang,Line 2 of pushing upward,inner_world,hexagram_15,growth_to_change,0.3
+hexagram_46,3,yin,Line 3 of pushing upward,transition,hexagram_11,growth_to_change,0.45
+hexagram_46,4,yin,Line 4 of pushing upward,outer_world,hexagram_18,growth_to_change,0.6
+hexagram_46,5,yin,Line 5 of pushing upward,authority,hexagram_48,growth_to_change,0.75
+hexagram_46,6,yin,Line 6 of pushing upward,culmination,hexagram_32,growth_to_change,0.9
+hexagram_47,1,yin,Line 1 of oppression,foundation,hexagram_28,dormancy_to_change,0.15
+hexagram_47,2,yang,Line 2 of oppression,inner_world,hexagram_45,dormancy_to_change,0.3
+hexagram_47,3,yin,Line 3 of oppression,transition,hexagram_58,dormancy_to_change,0.45
+hexagram_47,4,yin,Line 4 of oppression,outer_world,hexagram_06,dormancy_to_change,0.6
+hexagram_47,5,yang,Line 5 of oppression,authority,hexagram_40,dormancy_to_change,0.75
+hexagram_47,6,yang,Line 6 of oppression,culmination,hexagram_29,dormancy_to_change,0.9
+hexagram_48,1,yang,Line 1 of the well,foundation,hexagram_29,rest_to_change,0.15
+hexagram_48,2,yang,Line 2 of the well,inner_world,hexagram_39,rest_to_change,0.3
+hexagram_48,3,yin,Line 3 of the well,transition,hexagram_05,rest_to_change,0.45
+hexagram_48,4,yin,Line 4 of the well,outer_world,hexagram_57,rest_to_change,0.6
+hexagram_48,5,yang,Line 5 of the well,authority,hexagram_46,rest_to_change,0.75
+hexagram_48,6,yin,Line 6 of the well,culmination,hexagram_28,rest_to_change,0.9
+hexagram_49,1,yang,Line 1 of revolution,foundation,hexagram_17,seed_to_change,0.15
+hexagram_49,2,yin,Line 2 of revolution,inner_world,hexagram_43,seed_to_change,0.3
+hexagram_49,3,yang,Line 3 of revolution,transition,hexagram_31,seed_to_change,0.45
+hexagram_49,4,yin,Line 4 of revolution,outer_world,hexagram_13,seed_to_change,0.6
+hexagram_49,5,yang,Line 5 of revolution,authority,hexagram_55,seed_to_change,0.75
+hexagram_49,6,yang,Line 6 of revolution,culmination,hexagram_63,seed_to_change,0.9
+hexagram_50,1,yang,Line 1 of the caldron,foundation,hexagram_64,bloom_to_change,0.15
+hexagram_50,2,yang,Line 2 of the caldron,inner_world,hexagram_56,bloom_to_change,0.3
+hexagram_50,3,yin,Line 3 of the caldron,transition,hexagram_14,bloom_to_change,0.45
+hexagram_50,4,yang,Line 4 of the caldron,outer_world,hexagram_32,bloom_to_change,0.6
+hexagram_50,5,yin,Line 5 of the caldron,authority,hexagram_44,bloom_to_change,0.75
+hexagram_50,6,yang,Line 6 of the caldron,culmination,hexagram_18,bloom_to_change,0.9
+hexagram_51,1,yin,Line 1 of the arousing,foundation,hexagram_55,seed_to_change,0.15
+hexagram_51,2,yin,Line 2 of the arousing,inner_world,hexagram_54,seed_to_change,0.3
+hexagram_51,3,yang,Line 3 of the arousing,transition,hexagram_16,seed_to_change,0.45
+hexagram_51,4,yin,Line 4 of the arousing,outer_world,hexagram_21,seed_to_change,0.6
+hexagram_51,5,yin,Line 5 of the arousing,authority,hexagram_17,seed_to_change,0.75
+hexagram_51,6,yang,Line 6 of the arousing,culmination,hexagram_24,seed_to_change,0.9
+hexagram_52,1,yang,Line 1 of keeping still,foundation,hexagram_23,rest_to_change,0.15
+hexagram_52,2,yin,Line 2 of keeping still,inner_world,hexagram_18,rest_to_change,0.3
+hexagram_52,3,yin,Line 3 of keeping still,transition,hexagram_22,rest_to_change,0.45
+hexagram_52,4,yang,Line 4 of keeping still,outer_world,hexagram_15,rest_to_change,0.6
+hexagram_52,5,yin,Line 5 of keeping still,authority,hexagram_53,rest_to_change,0.75
+hexagram_52,6,yin,Line 6 of keeping still,culmination,hexagram_56,rest_to_change,0.9
+hexagram_53,1,yang,Line 1 of development,foundation,hexagram_20,growth_to_change,0.15
+hexagram_53,2,yin,Line 2 of development,inner_world,hexagram_57,growth_to_change,0.3
+hexagram_53,3,yin,Line 3 of development,transition,hexagram_37,growth_to_change,0.45
+hexagram_53,4,yang,Line 4 of development,outer_world,hexagram_39,growth_to_change,0.6
+hexagram_53,5,yang,Line 5 of development,authority,hexagram_52,growth_to_change,0.75
+hexagram_53,6,yin,Line 6 of development,culmination,hexagram_33,growth_to_change,0.9
+hexagram_54,1,yin,Line 1 of the marrying maiden,foundation,hexagram_34,growth_to_change,0.15
+hexagram_54,2,yang,Line 2 of the marrying maiden,inner_world,hexagram_51,growth_to_change,0.3
+hexagram_54,3,yang,Line 3 of the marrying maiden,transition,hexagram_40,growth_to_change,0.45
+hexagram_54,4,yin,Line 4 of the marrying maiden,outer_world,hexagram_38,growth_to_change,0.6
+hexagram_54,5,yin,Line 5 of the marrying maiden,authority,hexagram_58,growth_to_change,0.75
+hexagram_54,6,yang,Line 6 of the marrying maiden,culmination,hexagram_19,growth_to_change,0.9
+hexagram_55,1,yang,Line 1 of abundance,foundation,hexagram_51,bloom_to_change,0.15
+hexagram_55,2,yin,Line 2 of abundance,inner_world,hexagram_34,bloom_to_change,0.3
+hexagram_55,3,yang,Line 3 of abundance,transition,hexagram_62,bloom_to_change,0.45
+hexagram_55,4,yin,Line 4 of abundance,outer_world,hexagram_30,bloom_to_change,0.6
+hexagram_55,5,yin,Line 5 of abundance,authority,hexagram_49,bloom_to_change,0.75
+hexagram_55,6,yang,Line 6 of abundance,culmination,hexagram_36,bloom_to_change,0.9
+hexagram_56,1,yang,Line 1 of the wanderer,foundation,hexagram_35,growth_to_change,0.15
+hexagram_56,2,yin,Line 2 of the wanderer,inner_world,hexagram_50,growth_to_change,0.3
+hexagram_56,3,yin,Line 3 of the wanderer,transition,hexagram_30,growth_to_change,0.45
+hexagram_56,4,yang,Line 4 of the wanderer,outer_world,hexagram_62,growth_to_change,0.6
+hexagram_56,5,yin,Line 5 of the wanderer,authority,hexagram_33,growth_to_change,0.75
+hexagram_56,6,yang,Line 6 of the wanderer,culmination,hexagram_52,growth_to_change,0.9
+hexagram_57,1,yang,Line 1 of the gentle,foundation,hexagram_59,growth_to_change,0.15
+hexagram_57,2,yang,Line 2 of the gentle,inner_world,hexagram_53,growth_to_change,0.3
+hexagram_57,3,yin,Line 3 of the gentle,transition,hexagram_09,growth_to_change,0.45
+hexagram_57,4,yang,Line 4 of the gentle,outer_world,hexagram_48,growth_to_change,0.6
+hexagram_57,5,yang,Line 5 of the gentle,authority,hexagram_18,growth_to_change,0.75
+hexagram_57,6,yin,Line 6 of the gentle,culmination,hexagram_44,growth_to_change,0.9
+hexagram_58,1,yin,Line 1 of the joyous,foundation,hexagram_43,bloom_to_change,0.15
+hexagram_58,2,yang,Line 2 of the joyous,inner_world,hexagram_17,bloom_to_change,0.3
+hexagram_58,3,yang,Line 3 of the joyous,transition,hexagram_47,bloom_to_change,0.45
+hexagram_58,4,yin,Line 4 of the joyous,outer_world,hexagram_10,bloom_to_change,0.6
+hexagram_58,5,yang,Line 5 of the joyous,authority,hexagram_54,bloom_to_change,0.75
+hexagram_58,6,yang,Line 6 of the joyous,culmination,hexagram_60,bloom_to_change,0.9
+hexagram_59,1,yin,Line 1 of dispersion,foundation,hexagram_57,seed_to_change,0.15
+hexagram_59,2,yang,Line 2 of dispersion,inner_world,hexagram_20,seed_to_change,0.3
+hexagram_59,3,yin,Line 3 of dispersion,transition,hexagram_61,seed_to_change,0.45
+hexagram_59,4,yang,Line 4 of dispersion,outer_world,hexagram_29,seed_to_change,0.6
+hexagram_59,5,yang,Line 5 of dispersion,authority,hexagram_04,seed_to_change,0.75
+hexagram_59,6,yin,Line 6 of dispersion,culmination,hexagram_06,seed_to_change,0.9
+hexagram_60,1,yin,Line 1 of limitation,foundation,hexagram_05,rest_to_change,0.15
+hexagram_60,2,yang,Line 2 of limitation,inner_world,hexagram_03,rest_to_change,0.3
+hexagram_60,3,yang,Line 3 of limitation,transition,hexagram_29,rest_to_change,0.45
+hexagram_60,4,yin,Line 4 of limitation,outer_world,hexagram_61,rest_to_change,0.6
+hexagram_60,5,yang,Line 5 of limitation,authority,hexagram_19,rest_to_change,0.75
+hexagram_60,6,yin,Line 6 of limitation,culmination,hexagram_58,rest_to_change,0.9
+hexagram_61,1,yin,Line 1 of inner truth,foundation,hexagram_09,rest_to_change,0.15
+hexagram_61,2,yang,Line 2 of inner truth,inner_world,hexagram_42,rest_to_change,0.3
+hexagram_61,3,yang,Line 3 of inner truth,transition,hexagram_59,rest_to_change,0.45
+hexagram_61,4,yang,Line 4 of inner truth,outer_world,hexagram_60,rest_to_change,0.6
+hexagram_61,5,yang,Line 5 of inner truth,authority,hexagram_41,rest_to_change,0.75
+hexagram_61,6,yin,Line 6 of inner truth,culmination,hexagram_10,rest_to_change,0.9
+hexagram_62,1,yang,Line 1 of small preponderance,foundation,hexagram_16,growth_to_change,0.15
+hexagram_62,2,yin,Line 2 of small preponderance,inner_world,hexagram_32,growth_to_change,0.3
+hexagram_62,3,yin,Line 3 of small preponderance,transition,hexagram_55,growth_to_change,0.45
+hexagram_62,4,yin,Line 4 of small preponderance,outer_world,hexagram_56,growth_to_change,0.6
+hexagram_62,5,yin,Line 5 of small preponderance,authority,hexagram_31,growth_to_change,0.75
+hexagram_62,6,yang,Line 6 of small preponderance,culmination,hexagram_15,growth_to_change,0.9
+hexagram_63,1,yang,Line 1 of after completion,foundation,hexagram_03,fruit_to_change,0.15
+hexagram_63,2,yin,Line 2 of after completion,inner_world,hexagram_05,fruit_to_change,0.3
+hexagram_63,3,yang,Line 3 of after completion,transition,hexagram_39,fruit_to_change,0.45
+hexagram_63,4,yin,Line 4 of after completion,outer_world,hexagram_37,fruit_to_change,0.6
+hexagram_63,5,yang,Line 5 of after completion,authority,hexagram_36,fruit_to_change,0.75
+hexagram_63,6,yin,Line 6 of after completion,culmination,hexagram_49,fruit_to_change,0.9
+hexagram_64,1,yin,Line 1 of before completion,foundation,hexagram_50,seed_to_change,0.15
+hexagram_64,2,yang,Line 2 of before completion,inner_world,hexagram_35,seed_to_change,0.3
+hexagram_64,3,yin,Line 3 of before completion,transition,hexagram_38,seed_to_change,0.45
+hexagram_64,4,yang,Line 4 of before completion,outer_world,hexagram_40,seed_to_change,0.6
+hexagram_64,5,yin,Line 5 of before completion,authority,hexagram_06,seed_to_change,0.75
+hexagram_64,6,yang,Line 6 of before completion,culmination,hexagram_04,seed_to_change,0.9

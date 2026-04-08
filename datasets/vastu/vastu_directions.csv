@@ -1,0 +1,10 @@
+direction,element,guna,deity,graha,zone_activity
+East,fire,sattva,Indra,Sun,entrance
+SouthEast,fire,rajas,Agni,Venus,kitchen
+South,fire,rajas,Yama,Mars,storage
+SouthWest,earth,tamas,Nirrti,Rahu,heavy_structure
+West,water,tamas,Varuna,Saturn,dining
+NorthWest,air,rajas,Vayu,Moon,movement
+North,water,sattva,Kubera,Mercury,treasury
+NorthEast,ether,sattva,Ishana,Jupiter,altar
+Center,ether,sattva,Brahma,none,open_space

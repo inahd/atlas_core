@@ -1,0 +1,53 @@
+{
+  "_comment": "Atlas entity template — canonical schema derived from plant_tulsi.json",
+  "_version": 1,
+
+  "entity_id": "",
+  "version": 1,
+
+  "identity": {
+    "name": "",
+    "iast": "",
+    "devanagari": "",
+    "latin": "",
+    "common": [],
+    "family": "",
+    "synonyms": [],
+    "attestation": ""
+  },
+
+  "field_coordinates": {
+    "theta": "",
+    "theta_note": "",
+    "phi": 0.0,
+    "phi_note": "",
+    "psi_primary": "",
+    "psi_note": ""
+  },
+
+  "domains": {
+    "_comment": "Each domain: {source, attestation, ...domain_specific_data}"
+  },
+
+  "nakshatra_correspondence": {
+    "primary": "",
+    "primary_deity": "",
+    "secondary": "",
+    "source": "",
+    "attestation": ""
+  },
+
+  "field_activation": {
+    "vara": [],
+    "element": [],
+    "tithi": [],
+    "nakshatra": [],
+    "note": ""
+  },
+
+  "use_ratings": {
+    "note": "phi measures relationship mode. 0=pure, 2pi=incoherent. Descriptive not prescriptive.",
+    "attestation": "SYNTHESIS",
+    "ratings": {}
+  }
+}

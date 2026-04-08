@@ -1,0 +1,7 @@
+formula_id,name,calculation,divisor,remainder_meanings,source_text,attestation_status
+yoni,Yoni,(3P) mod 8,8,maps to 8-fold directional yoni classes; detailed animal/directional tables vary by tradition,Manushyalaya Chandrika Ayadi formula list.,OBSERVED
+vyaya,Vyaya,P mod 14,14,"expense index; compare against Aya, and note alternate traditions are acknowledged in the commentary",Manushyalaya Chandrika Ayadi formula list.,OBSERVED
+aya,Aya,(8P) mod 12,12,gain index; Aya greater than Vyaya is favorable in the commentary logic,Manushyalaya Chandrika Ayadi formula list.,OBSERVED
+nakshatra,Nakshatra / Riksha,(8P) mod 27,27,maps to the 27 nakshatras,Manushyalaya Chandrika Ayadi formula list.,OBSERVED
+tithi,Tithi,(8P) mod 30,30,maps to the 30 lunar tithis,Manushyalaya Chandrika Ayadi formula list.,OBSERVED
+vara,Vara,P mod 7,7,maps to the 7 weekdays,Manushyalaya Chandrika Ayadi formula list.,OBSERVED

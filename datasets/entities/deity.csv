@@ -1,0 +1,3 @@
+id,type,name,aliases,notes,source_file
+deity:nodes,deity,nodes,,,deities.yaml
+deity:edges,deity,edges,,,deities.yaml

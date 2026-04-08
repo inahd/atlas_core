@@ -1,0 +1,13 @@
+bhajan_id,title,composer,language,ashtakala,lila_reference,raga,deity,vraja_location,rasa,text_source,authority
+1,Guruvastakam,Vishvanatha_Chakravarti,Sanskrit,1,guru_parampara,Bhairava,Guru,Navadvipa,dasya,Stavamala,shastra
+2,Jaya_Radha_Madhava,Bhaktivinoda_Thakura,Bengali,2,morning_darshan,Bilaval,Radha_Krishna,Vrindavana,madhura,Gitavali,shastra
+3,Govindam_Adi_Purusam,Brahma_Samhita_5.29,Sanskrit,2,Brahma_realization,Gurjari_Todi,Govinda,Goloka,shanta,Brahma_Samhita,shastra
+4,Hare_Krishna_Mahamantra,Kali_Santarana_Upanishad,Sanskrit,all,all_lila,all,all,all,all,Vedic,shastra
+5,Gaura_Arati,Bhaktivinoda_Thakura,Bengali,6,evening_darshan,Bhairavi,Chaitanya,Navadvipa,dasya,Gitavali,shastra
+6,Sri_Krishna_Chaitanya,traditional,Sanskrit,all,Mahaprabhu_sankirtan,all,Chaitanya,Navadvipa,all,traditional,sadhu
+7,Nitai_Pada_Kamala,Narottama_Das_Thakura,Bengali,1,Nitai_mercy,Bhairava,Nityananda,Vrindavana,dasya,Prarthana,shastra
+8,Radha_Bhajanu_Kori,Narottama_Das_Thakura,Bengali,6,Radha_service,Yaman,Radharani,Vrindavana,madhura,Prarthana,shastra
+9,Vrindavana_Ramya_Sthana,Bhaktivinoda_Thakura,Bengali,all,Vraja_longing,Bhairavi,Vrindavana_dhama,Vrindavana,shanta,Gitavali,shastra
+10,Jiv_Jago,Bhaktivinoda_Thakura,Bengali,1,waking_call,Bhairava,devotee,Navadvipa,vira,Gitavali,shastra
+11,Bhaja_Bhakata_Vatsala,Narottama_Das_Thakura,Bengali,all,devotee_protection,Darbari,Krishna,Vrindavana,dasya,Prarthana,shastra
+12,Hari_Haraye_Namah,traditional,Sanskrit,6,sandhya_kirtan,Yaman,Hari,all,shanta,traditional,sadhu

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pada — The Foot as Cosmological Mandala</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap');
+body { margin:0; background:#060c0a; display:flex; justify-content:center; align-items:center; min-height:100vh; }
+</style>
+</head>
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" style="background:#060c0a">
+<defs>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&amp;family=Space+Mono:wght@400;700&amp;display=swap');
+    .title { font-family:'Cormorant Garamond',serif; fill:#c8a96e; }
+    .label { font-family:'Space Mono',monospace; fill:#4a8a5a; font-size:8px; }
+    .label-bright { font-family:'Space Mono',monospace; fill:#6aaa7a; font-size:8.5px; }
+    .label-dim { font-family:'Space Mono',monospace; fill:#3a6a4a; font-size:7px; }
+    .attest { font-family:'Space Mono',monospace; fill:#3a5a4a; font-size:7.5px; }
+    @keyframes ses-pulse { 0%{opacity:0.4} 50%{opacity:0.9} 100%{opacity:0.4} }
+    @keyframes nav-glow { 0%{stroke-opacity:0.7} 50%{stroke-opacity:1.0} 100%{stroke-opacity:0.7} }
+    @keyframes talus-pulse { 0%{stroke-opacity:0.6} 50%{stroke-opacity:0.95} 100%{stroke-opacity:0.6} }
+    .ses-pulse { animation: ses-pulse 2s ease-in-out infinite; }
+    .nav-glow { animation: nav-glow 3s ease-in-out infinite; }
+    .talus-pulse { animation: talus-pulse 4s ease-in-out infinite; }
+  </style>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="2" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glow-sm">
+    <feGaussianBlur stdDeviation="1" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- TITLE                                              -->
+<!-- ═══════════════════════════════════════════════════ -->
+<text x="400" y="32" text-anchor="middle" class="title" font-size="20" font-weight="600">Pada · The Foot as Cosmological Mandala</text>
+<text x="400" y="50" text-anchor="middle" class="title" font-size="11" font-style="italic" opacity="0.6">26 bones · 3 arches · 7 graha · the earth interface</text>
+
+<!-- Dividing line -->
+<line x1="395" y1="65" x2="395" y2="570" stroke="#1a2a1e" stroke-width="0.5" stroke-dasharray="2,6"/>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- TOP VIEW (dorsal) — left half                      -->
+<!-- ═══════════════════════════════════════════════════ -->
+<text x="200" y="72" text-anchor="middle" class="label-bright" font-size="9">DORSAL VIEW (top down)</text>
+
+<!-- CALCANEUS — the foundation stone -->
+<ellipse cx="200" cy="420" rx="45" ry="30" fill="#1a1208" stroke="#e8c86a" stroke-width="1.5"/>
+<text x="200" y="423" text-anchor="middle" class="label" font-size="7">CALCANEUS</text>
+<text x="200" y="460" text-anchor="middle" class="label-dim">S6 · Meru · Ketu/Moola · foundation</text>
+
+<!-- TALUS — the unmoved transmitter -->
+<ellipse cx="200" cy="370" rx="28" ry="22" fill="#0a0a14" stroke="#9060c0" stroke-width="1.2" class="talus-pulse"/>
+<text x="200" y="373" text-anchor="middle" class="label" font-size="7">TALUS</text>
+<text x="318" y="370" class="label-dim">S0 · Bindu · unmoved</text>
+
+<!-- NAVICULAR — the boat / lunar keystone -->
+<ellipse cx="185" cy="335" rx="22" ry="14" fill="#0a1018" stroke="#c8d8e8" stroke-width="1.2" class="nav-glow"/>
+<text x="185" y="338" text-anchor="middle" class="label" font-size="6.5">NAVICULAR</text>
+<text x="105" y="335" text-anchor="end" class="label-dim">Moon · arch keystone</text>
+
+<!-- CUBOID — earth cube / lateral -->
+<ellipse cx="228" cy="335" rx="18" ry="16" fill="#1a1208" stroke="#8090a8" stroke-width="1.0"/>
+<text x="228" y="338" text-anchor="middle" class="label" font-size="6.5">CUBOID</text>
+<text x="305" y="338" class="label-dim">Saturn · lateral</text>
+
+<!-- THREE CUNEIFORMS — yantra keystones -->
+<!-- Medial -->
+<ellipse cx="172" cy="308" rx="12" ry="10" fill="#120808" stroke="#c84040" stroke-width="0.8"/>
+<text x="172" y="311" text-anchor="middle" class="label" font-size="5">Med</text>
+<!-- Intermediate -->
+<ellipse cx="193" cy="306" rx="9" ry="10" fill="#120808" stroke="#c84040" stroke-width="0.8"/>
+<text x="193" y="309" text-anchor="middle" class="label" font-size="5">Int</text>
+<!-- Lateral -->
+<ellipse cx="212" cy="308" rx="10" ry="10" fill="#120808" stroke="#c84040" stroke-width="0.8"/>
+<text x="212" y="311" text-anchor="middle" class="label" font-size="5">Lat</text>
+<text x="105" y="308" text-anchor="end" class="label-dim">3 Cuneiforms · S4 · fire keystones</text>
+
+<!-- FIVE METATARSALS — pañca prāṇa rays -->
+<!-- 1st — Surya axis ray -->
+<ellipse cx="163" cy="268" rx="5" ry="28" fill="none" stroke="#e8c86a" stroke-width="0.8" transform="rotate(-8,163,268)"/>
+<!-- 2nd — Mangal -->
+<ellipse cx="182" cy="264" rx="5" ry="28" fill="none" stroke="#c84040" stroke-width="0.8" transform="rotate(-3,182,264)"/>
+<!-- 3rd — Budha -->
+<ellipse cx="198" cy="264" rx="5" ry="28" fill="none" stroke="#40c080" stroke-width="0.8" transform="rotate(0,198,264)"/>
+<!-- 4th — Guru -->
+<ellipse cx="214" cy="266" rx="5" ry="28" fill="none" stroke="#c8a050" stroke-width="0.8" transform="rotate(4,214,266)"/>
+<!-- 5th — Shani -->
+<ellipse cx="230" cy="270" rx="5" ry="28" fill="none" stroke="#8090a8" stroke-width="0.8" transform="rotate(8,230,270)"/>
+
+<!-- Metatarsal graha labels -->
+<text x="148" y="268" text-anchor="end" class="label-dim">1 Sū</text>
+<text x="182" y="248" text-anchor="middle" class="label-dim">2 Ma</text>
+<text x="198" y="245" text-anchor="middle" class="label-dim">3 Bu</text>
+<text x="214" y="248" text-anchor="middle" class="label-dim">4 Gu</text>
+<text x="248" y="268" class="label-dim">5 Śa</text>
+
+<!-- PHALANGES — 14 bones / 14 manvantara -->
+<!-- Big toe: 2 phalanges (Surya/Chandra unified) -->
+<ellipse cx="156" cy="228" rx="6" ry="10" fill="none" stroke="#e8c86a" stroke-width="0.7" transform="rotate(-8,156,228)"/>
+<ellipse cx="153" cy="212" rx="5" ry="8" fill="none" stroke="#e8c86a" stroke-width="0.7" transform="rotate(-8,153,212)"/>
+
+<!-- Toe 2: 3 phalanges (Mangal) -->
+<ellipse cx="180" cy="228" rx="4" ry="9" fill="none" stroke="#c84040" stroke-width="0.6" transform="rotate(-3,180,228)"/>
+<ellipse cx="179" cy="214" rx="3.5" ry="7" fill="none" stroke="#c84040" stroke-width="0.5" transform="rotate(-3,179,214)"/>
+<ellipse cx="178" cy="202" rx="3" ry="6" fill="none" stroke="#c84040" stroke-width="0.5" transform="rotate(-3,178,202)"/>
+
+<!-- Toe 3: 3 phalanges (Budha) -->
+<ellipse cx="197" cy="228" rx="4" ry="9" fill="none" stroke="#40c080" stroke-width="0.6"/>
+<ellipse cx="197" cy="214" rx="3.5" ry="7" fill="none" stroke="#40c080" stroke-width="0.5"/>
+<ellipse cx="197" cy="202" rx="3" ry="6" fill="none" stroke="#40c080" stroke-width="0.5"/>
+
+<!-- Toe 4: 3 phalanges (Guru) -->
+<ellipse cx="214" cy="230" rx="3.5" ry="8" fill="none" stroke="#c8a050" stroke-width="0.6" transform="rotate(4,214,230)"/>
+<ellipse cx="215" cy="217" rx="3" ry="6.5" fill="none" stroke="#c8a050" stroke-width="0.5" transform="rotate(4,215,217)"/>
+<ellipse cx="216" cy="206" rx="2.5" ry="5.5" fill="none" stroke="#c8a050" stroke-width="0.5" transform="rotate(4,216,206)"/>
+
+<!-- Toe 5: 3 phalanges (Shani — most vestigial, most Ketu-like) -->
+<ellipse cx="232" cy="234" rx="3" ry="7" fill="none" stroke="#8090a8" stroke-width="0.5" transform="rotate(8,232,234)"/>
+<ellipse cx="233" cy="222" rx="2.5" ry="6" fill="none" stroke="#8090a8" stroke-width="0.5" transform="rotate(8,233,222)"/>
+<ellipse cx="234" cy="212" rx="2" ry="5" fill="none" stroke="#8090a8" stroke-width="0.4" transform="rotate(8,234,212)"/>
+
+<!-- SESAMOID PAIR — hidden nodal bones (Rahu/Ketu) -->
+<circle cx="160" cy="245" r="4" fill="#090912" stroke="#9060c0" stroke-width="0.8" class="ses-pulse" filter="url(#glow-sm)"/>
+<circle cx="168" cy="245" r="4" fill="#090912" stroke="#c84040" stroke-width="0.8" class="ses-pulse" filter="url(#glow-sm)"/>
+<text x="140" y="252" text-anchor="end" class="label-dim">Sesamoids · Rāhu·Ketu</text>
+
+<!-- Bone count annotation -->
+<text x="200" y="485" text-anchor="middle" class="label" font-size="7.5">7 tarsal + 5 metatarsal + 14 phalanx = 26 bones</text>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- SIDE VIEW (medial arch) — right half               -->
+<!-- ═══════════════════════════════════════════════════ -->
+<text x="590" y="72" text-anchor="middle" class="label-bright" font-size="9">MEDIAL VIEW (side · inner arch)</text>
+
+<!-- Ground line -->
+<line x1="440" y1="440" x2="730" y2="440" stroke="#2a3a2e" stroke-width="1.0"/>
+<text x="735" y="443" class="label-dim">ground</text>
+
+<!-- Ground contact dots -->
+<circle cx="670" cy="440" r="3" fill="#e8c86a" filter="url(#glow-sm)"/>
+<circle cx="505" cy="440" r="3" fill="#e8c86a" filter="url(#glow-sm)"/>
+<circle cx="490" cy="440" r="3" fill="#e8c86a" filter="url(#glow-sm)"/>
+<text x="670" y="454" text-anchor="middle" class="label-dim">heel</text>
+<text x="498" y="454" text-anchor="middle" class="label-dim">ball</text>
+
+<!-- CALCANEUS — posterior anchor -->
+<ellipse cx="665" cy="408" rx="40" ry="25" fill="#1a1208" stroke="#e8c86a" stroke-width="1.5"/>
+<text x="665" y="411" text-anchor="middle" class="label" font-size="7">CALCANEUS</text>
+
+<!-- TALUS — sits atop calcaneus -->
+<ellipse cx="640" cy="370" rx="25" ry="20" fill="#0a0a14" stroke="#9060c0" stroke-width="1.2" class="talus-pulse"/>
+<text x="640" y="373" text-anchor="middle" class="label" font-size="7">TALUS</text>
+
+<!-- NAVICULAR — apex of medial arch -->
+<ellipse cx="600" cy="348" rx="20" ry="13" fill="#0a1018" stroke="#c8d8e8" stroke-width="1.2" class="nav-glow" filter="url(#glow-sm)"/>
+<text x="600" y="351" text-anchor="middle" class="label" font-size="6.5">NAVICULAR</text>
+<text x="600" y="328" text-anchor="middle" class="label-dim">↑ arch apex</text>
+
+<!-- THREE CUNEIFORMS — descending forward -->
+<ellipse cx="568" cy="358" rx="12" ry="10" fill="#120808" stroke="#c84040" stroke-width="0.8"/>
+<text x="568" y="361" text-anchor="middle" class="label" font-size="5">Med</text>
+<ellipse cx="552" cy="362" rx="10" ry="9" fill="#120808" stroke="#c84040" stroke-width="0.8"/>
+<text x="552" y="365" text-anchor="middle" class="label" font-size="5">Int</text>
+<ellipse cx="537" cy="366" rx="9" ry="8" fill="#120808" stroke="#c84040" stroke-width="0.8"/>
+<text x="537" y="369" text-anchor="middle" class="label" font-size="5">Lat</text>
+
+<!-- METATARSAL 1 — the primary ray -->
+<line x1="528" y1="370" x2="498" y2="410" stroke="#e8c86a" stroke-width="2.0"/>
+
+<!-- Big toe phalanges -->
+<ellipse cx="493" cy="418" rx="6" ry="9" fill="none" stroke="#e8c86a" stroke-width="0.8" transform="rotate(15,493,418)"/>
+<ellipse cx="484" cy="428" rx="5" ry="7" fill="none" stroke="#e8c86a" stroke-width="0.7" transform="rotate(18,484,428)"/>
+
+<!-- ── THREE ARCH LINES ── -->
+
+<!-- Medial arch (Ida / Moon / inner — highest) -->
+<path d="M670,430 Q630,340 600,340 Q560,345 498,430" fill="none" stroke="#c8d8e8" stroke-width="1.5" stroke-dasharray="4,2" opacity="0.7"/>
+<text x="590" y="310" text-anchor="middle" class="label" fill="#c8d8e8" font-size="8">Medial arch · Iḍā · Moon</text>
+
+<!-- Lateral arch (Pingala / Sun / outer — lower) -->
+<path d="M670,434 Q640,380 610,385 Q560,390 498,434" fill="none" stroke="#e8c86a" stroke-width="1.0" stroke-dasharray="4,2" opacity="0.5"/>
+<text x="625" y="392" class="label-dim" fill="#e8c86a" font-size="7">Lateral · Piṅgalā · Sun</text>
+
+<!-- Transverse arch (Sushumna — across the ball) -->
+<path d="M510,400 Q520,385 530,400" fill="none" stroke="#c8a96e" stroke-width="1.2" opacity="0.6"/>
+<text x="520" y="414" text-anchor="middle" class="label-dim" fill="#c8a96e" font-size="7">Transverse · Suṣumnā</text>
+
+<!-- Arch void annotation -->
+<text x="595" y="408" text-anchor="middle" class="label-dim" font-size="6" opacity="0.5">void beneath arch</text>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- COSMOLOGICAL ANNOTATIONS — right column             -->
+<!-- ═══════════════════════════════════════════════════ -->
+<text x="420" y="490" class="label" font-size="8">Cosmological Correspondences:</text>
+
+<text x="420" y="504" class="label-dim">Calcaneus = Meru / Foundation / Ketu·Moola</text>
+<text x="420" y="514" class="label-dim">Talus = Bindu / Unmoved Transmitter / S0</text>
+<text x="420" y="524" class="label-dim">Navicular = Nāvika / The Boat / Chandra</text>
+<text x="420" y="534" class="label-dim">Cuneiforms = Yantra Keystones / S4 / Agni</text>
+<text x="420" y="544" class="label-dim">Metatarsals = Pañca Prāṇa / Five Rays</text>
+<text x="420" y="554" class="label-dim">Phalanges = Navagraha terminals / 14 Manvantara</text>
+<text x="420" y="564" class="label-dim">Sesamoids = Rāhu·Ketu / Hidden Lunar Nodes</text>
+
+<!-- Left column annotations -->
+<text x="15" y="490" class="label" font-size="8">Arch as Nāḍī:</text>
+<text x="15" y="504" class="label-dim">Medial (inner) = Iḍā nāḍī · lunar · silver</text>
+<text x="15" y="514" class="label-dim">Lateral (outer) = Piṅgalā nāḍī · solar · gold</text>
+<text x="15" y="524" class="label-dim">Transverse (ball) = Suṣumnā · central · gold</text>
+<text x="15" y="540" class="label-dim">Navicular = keystone of the Moon arch</text>
+<text x="15" y="550" class="label-dim">Talus = receives weight without muscle attachment</text>
+<text x="15" y="560" class="label-dim">Calcaneus = the only bone touching Meru (earth)</text>
+
+<!-- Attestation -->
+<text x="400" y="590" text-anchor="middle" class="attest">◎ SYNTHESIS · morphological correspondence · ✦ TRADITIONAL · pada/marma tradition · ○ OBSERVED · anatomical</text>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- CONNECTING LINES (subtle anatomy wiring)           -->
+<!-- ═══════════════════════════════════════════════════ -->
+
+<!-- Top view: subtle connection lines between bone groups -->
+<!-- Calcaneus → Talus -->
+<line x1="200" y1="395" x2="200" y2="388" stroke="#2a3a2e" stroke-width="0.5"/>
+<!-- Talus → Navicular -->
+<line x1="193" y1="352" x2="187" y2="347" stroke="#2a3a2e" stroke-width="0.5"/>
+<!-- Talus → Cuboid -->
+<line x1="212" y1="352" x2="222" y2="347" stroke="#2a3a2e" stroke-width="0.5"/>
+<!-- Navicular → Cuneiforms -->
+<line x1="178" y1="323" x2="175" y2="316" stroke="#2a3a2e" stroke-width="0.4"/>
+<line x1="185" y1="323" x2="193" y2="314" stroke="#2a3a2e" stroke-width="0.4"/>
+<line x1="193" y1="323" x2="210" y2="316" stroke="#2a3a2e" stroke-width="0.4"/>
+
+<!-- S-layer ring labels on top view -->
+<text x="62" y="92" class="label" font-size="8" fill="#4a6a5a">S-Layer Mapping:</text>
+<text x="62" y="105" class="label-dim">S0 — Talus (bindu, unmoved)</text>
+<text x="62" y="115" class="label-dim">S1 — Navicular (archetype, Moon)</text>
+<text x="62" y="125" class="label-dim">S2 — (sound resonance in arch void)</text>
+<text x="62" y="135" class="label-dim">S3 — Phalanges (rhythm, 14 units)</text>
+<text x="62" y="145" class="label-dim">S4 — Cuneiforms (geometry, yantra)</text>
+<text x="62" y="155" class="label-dim">S5 — Metatarsals (5 prāṇa rays)</text>
+<text x="62" y="165" class="label-dim">S6 — Calcaneus (earth, Meru)</text>
+
+<!-- Graha ray key -->
+<text x="62" y="185" class="label" font-size="8" fill="#4a6a5a">Metatarsal Graha:</text>
+<line x1="62" y1="193" x2="72" y2="193" stroke="#e8c86a" stroke-width="2"/>
+<text x="76" y="196" class="label-dim">1st · Sūrya (axis)</text>
+<line x1="62" y1="203" x2="72" y2="203" stroke="#c84040" stroke-width="2"/>
+<text x="76" y="206" class="label-dim">2nd · Maṅgala</text>
+<line x1="62" y1="213" x2="72" y2="213" stroke="#40c080" stroke-width="2"/>
+<text x="76" y="216" class="label-dim">3rd · Budha</text>
+<line x1="62" y1="223" x2="72" y2="223" stroke="#c8a050" stroke-width="2"/>
+<text x="76" y="226" class="label-dim">4th · Guru</text>
+<line x1="62" y1="233" x2="72" y2="233" stroke="#8090a8" stroke-width="2"/>
+<text x="76" y="236" class="label-dim">5th · Śani</text>
+
+</svg>
+</body>
+</html>

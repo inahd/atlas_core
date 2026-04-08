@@ -1,0 +1,1463 @@
+[
+  {
+    "id": "manusmriti",
+    "name": "Manusmriti (Laws of Manu)",
+    "domain": "dharma",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/dharma/manusmriti_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/dharma/manusmriti_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 507660,
+        "status": "fetched",
+        "archive_id": "manusmriti-ed-1"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:31:21.473333"
+  },
+  {
+    "id": "arthashastra",
+    "name": "Arthashastra (Kautilya)",
+    "domain": "dharma",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/dharma/arthashastra_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/dharma/arthashastra_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 1014475,
+        "status": "fetched",
+        "archive_id": "kautilyas-arthashastra"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:31:38.033439"
+  },
+  {
+    "id": "nitisara",
+    "name": "Nitisara (Kamandaki)",
+    "domain": "dharma",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/dharma/nitisara_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/dharma/nitisara_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 538252,
+        "status": "fetched",
+        "archive_id": "kamandakiyanitis00kamarich"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:31:52.892180"
+  },
+  {
+    "id": "vishnu_purana",
+    "name": "Vishnu Purana",
+    "domain": "cosmology",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/cosmology/vishnu_purana_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/cosmology/vishnu_purana_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 98313,
+        "status": "fetched",
+        "archive_id": "cia-readingroom-document-05998606"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:31:21.471478"
+  },
+  {
+    "id": "devi_bhagavata",
+    "name": "Devi Bhagavata Purana",
+    "domain": "cosmology",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/cosmology/devi_bhagavata_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/cosmology/devi_bhagavata_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 753306,
+        "status": "fetched",
+        "archive_id": "bhagavata-purana-abridged-version-by-parama-karuna-devi"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:31:34.219049"
+  },
+  {
+    "id": "markandeya_purana",
+    "name": "Markandeya Purana (Devi Mahatmya)",
+    "domain": "cosmology",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/cosmology/markandeya_purana_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/cosmology/markandeya_purana_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 1336464,
+        "status": "fetched",
+        "archive_id": "tripura-rahasya-mahatmya-khanda_202412"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:31:47.027562"
+  },
+  {
+    "id": "shiva_purana",
+    "name": "Shiva Purana",
+    "domain": "cosmology",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/cosmology/shiva_purana_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/cosmology/shiva_purana_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 2738484,
+        "status": "fetched",
+        "archive_id": "index-shivarchana-chandrika-index-merged"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:32:00.919172"
+  },
+  {
+    "id": "brahma_vaivarta_purana",
+    "name": "Brahma Vaivarta Purana",
+    "domain": "cosmology",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/cosmology/brahma_vaivarta_purana_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/cosmology/brahma_vaivarta_purana_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 632917,
+        "status": "fetched",
+        "archive_id": "wqcb_the-brahma-vaivarta-purana-ganesh-khanda-part-3-bahadurgunj-panini-office"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:32:19.120298"
+  },
+  {
+    "id": "charaka_samhita",
+    "name": "Charaka Samhita",
+    "domain": "ayurveda",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/ayurveda/charaka_samhita_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 399347,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/ayurveda/charaka_samhita_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 2763454,
+        "status": "fetched",
+        "archive_id": "jeam_charaka-samhita-part-5-with-translation-hindi-gujrati-english-1949-sri-gulab-kum"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:31:21.470720"
+  },
+  {
+    "id": "sushruta_samhita",
+    "name": "Sushruta Samhita",
+    "domain": "ayurveda",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/ayurveda/sushruta_samhita_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/ayurveda/sushruta_samhita_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 1426792,
+        "status": "fetched",
+        "archive_id": "in.ernet.dli.2015.63714"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:31:44.359797"
+  },
+  {
+    "id": "ashtanga_hridayam",
+    "name": "Ashtanga Hridayam (Vagbhata)",
+    "domain": "ayurveda",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/ayurveda/ashtanga_hridayam_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/ayurveda/ashtanga_hridayam_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:31:58.221644"
+  },
+  {
+    "id": "ashtanga_sangraha",
+    "name": "Ashtanga Sangraha",
+    "domain": "ayurveda",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/ayurveda/ashtanga_sangraha_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/ayurveda/ashtanga_sangraha_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:32:33.590394"
+  },
+  {
+    "id": "bhavaprakasha",
+    "name": "Bhavaprakasha (herbal pharmacopoeia)",
+    "domain": "ayurveda",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/ayurveda/bhavaprakasha_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 57378,
+        "status": "fetched",
+        "archive_id": null
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:32:42.312054"
+  },
+  {
+    "id": "mahabharata",
+    "name": "Mahabharata (Vyasa)",
+    "domain": "epics",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/epics/mahabharata_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 1872515,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/epics/mahabharata_sa_1.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 764282,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/epics/mahabharata_sa_2.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 1895727,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/epics/mahabharata_sa_3.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 738263,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/epics/mahabharata_sa_4.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 1053432,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/epics/mahabharata_sa_5.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 927628,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/epics/mahabharata_sa_6.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 1594977,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/epics/mahabharata_sa_7.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 954533,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/epics/mahabharata_sa_8.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 568860,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/epics/mahabharata_sa_9.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 128096,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/epics/mahabharata_sa_10.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 125410,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/epics/mahabharata_sa_11.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 2403723,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/epics/mahabharata_sa_12.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 1920169,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/epics/mahabharata_sa_13.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 713573,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/epics/mahabharata_sa_14.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 169191,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/epics/mahabharata_sa_15.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 52243,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/epics/mahabharata_sa_16.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 20182,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/epics/mahabharata_sa_17.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 48555,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/epics/mahabharata_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 15155149,
+        "status": "fetched",
+        "archive_id": "the-mahabharata-of-krishna-dwaipayana-vyasa-complete-18-volumes-kisari-mohan-ganguli_202008"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:31:58.919800"
+  },
+  {
+    "id": "ramayana",
+    "name": "Ramayana (Valmiki)",
+    "domain": "epics",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/epics/ramayana_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/epics/ramayana_sa_1.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/epics/ramayana_sa_2.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/epics/ramayana_sa_3.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/epics/ramayana_sa_4.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/epics/ramayana_sa_5.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/epics/ramayana_sa_6.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/epics/ramayana_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 803329,
+        "status": "fetched",
+        "archive_id": "daarsanik-aur-vidwaan-kavi-evam-kaavy-shastragy-seshendra-sharma"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:32:37.974420"
+  },
+  {
+    "id": "harivamsa",
+    "name": "Harivamsa",
+    "domain": "epics",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/epics/harivamsa_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/epics/harivamsa_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 443339,
+        "status": "fetched",
+        "archive_id": "krishna-pastimes-in-vrindavan-and-mathura-from-harivamsa-purana-visnu-parva"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:32:50.288387"
+  },
+  {
+    "id": "brihat_parashara_hora",
+    "name": "Brihat Parashara Hora Shastra",
+    "domain": "jyotish",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/jyotish/brihat_parashara_hora_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/jyotish/brihat_parashara_hora_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 745236,
+        "status": "fetched",
+        "archive_id": "BPHSEnglish"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:32:42.532986"
+  },
+  {
+    "id": "brihat_jataka",
+    "name": "Brihat Jataka (Varahamihira)",
+    "domain": "jyotish",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/jyotish/brihat_jataka_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 99700,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/jyotish/brihat_jataka_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 827366,
+        "status": "fetched",
+        "archive_id": "BrihatJatakaOfVarahamihiraBySwamiVijnananda"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:32:55.401709"
+  },
+  {
+    "id": "saravali",
+    "name": "Saravali (Kalyanvarma)",
+    "domain": "jyotish",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/jyotish/saravali_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/jyotish/saravali_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:33:06.700575"
+  },
+  {
+    "id": "phala_deepika",
+    "name": "Phala Deepika (Mantreswara)",
+    "domain": "jyotish",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/jyotish/phala_deepika_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:33:09.113116"
+  },
+  {
+    "id": "jataka_parijata",
+    "name": "Jataka Parijata",
+    "domain": "jyotish",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/jyotish/jataka_parijata_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/jyotish/jataka_parijata_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 668711,
+        "status": "fetched",
+        "archive_id": "JatakaParijataVolIIOfIIByVSubrahmanyaSastri"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:33:12.191285"
+  },
+  {
+    "id": "uttara_kalamrita",
+    "name": "Uttara Kalamrita",
+    "domain": "jyotish",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/jyotish/uttara_kalamrita_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:33:28.828253"
+  },
+  {
+    "id": "surya_siddhanta",
+    "name": "Surya Siddhanta",
+    "domain": "jyotish",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/jyotish/surya_siddhanta_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 70710,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/jyotish/surya_siddhanta_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 1222374,
+        "status": "fetched",
+        "archive_id": "TranslationOfTheSuryaSiddhanta"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:33:30.002952"
+  },
+  {
+    "id": "bhakti_rasamrita_sindhu",
+    "name": "Bhakti Rasamrita Sindhu (Rupa Gosvami)",
+    "domain": "gaudiya",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/gaudiya/bhakti_rasamrita_sindhu_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 2828402,
+        "status": "fetched",
+        "archive_id": "p_BRS"
+      },
+      {
+        "path": "datasets/sources/gaudiya/bhakti_rasamrita_sindhu_en_1.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 52528,
+        "status": "fetched",
+        "archive_id": "mathura-yatra-the-advent-place-of-lord-krishna"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:32:31.387367"
+  },
+  {
+    "id": "ujjvala_nilamani",
+    "name": "Ujjvala Nilamani (Rupa Gosvami)",
+    "domain": "gaudiya",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/gaudiya/ujjvala_nilamani_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:33:02.748251"
+  },
+  {
+    "id": "brihad_bhagavatamrita",
+    "name": "Brihad Bhagavatamrita (Sanatana Gosvami)",
+    "domain": "gaudiya",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/gaudiya/brihad_bhagavatamrita_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 4204271,
+        "status": "fetched",
+        "archive_id": "Bhagavatamrita"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:33:05.225041"
+  },
+  {
+    "id": "hari_bhakti_vilasa",
+    "name": "Hari Bhakti Vilasa (Sanatana Gosvami)",
+    "domain": "gaudiya",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/gaudiya/hari_bhakti_vilasa_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 1526535,
+        "status": "fetched",
+        "archive_id": "HariBhaktiVilasa"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:33:12.822830"
+  },
+  {
+    "id": "vedanta_sutra",
+    "name": "Vedanta Sutra (Brahma Sutra)",
+    "domain": "gaudiya",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/gaudiya/vedanta_sutra_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/gaudiya/vedanta_sutra_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 5226842,
+        "status": "fetched",
+        "archive_id": "Bibliotheca_Indica_Series"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:33:28.851523"
+  },
+  {
+    "id": "natyashastra",
+    "name": "Natyashastra (Bharata)",
+    "domain": "music",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/music/natyashastra_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/music/natyashastra_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:33:08.097760"
+  },
+  {
+    "id": "sangita_ratnakara",
+    "name": "Sangita Ratnakara (Sarangadeva)",
+    "domain": "music",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/music/sangita_ratnakara_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/music/sangita_ratnakara_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:33:28.859256"
+  },
+  {
+    "id": "brihaddeshi",
+    "name": "Brihaddeshi (Matanga)",
+    "domain": "music",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/music/brihaddeshi_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/music/brihaddeshi_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:33:31.643493"
+  },
+  {
+    "id": "brihat_samhita",
+    "name": "Brihat Samhita (Varahamihira)",
+    "domain": "vastu",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/vastu/brihat_samhita_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 521560,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/vastu/brihat_samhita_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 981366,
+        "status": "fetched",
+        "archive_id": "bihatsahitvarah00iyergoog"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:33:45.549194"
+  },
+  {
+    "id": "vishvakarma_prakash",
+    "name": "Vishvakarma Prakash",
+    "domain": "vastu",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/vastu/vishvakarma_prakash_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:33:54.084484"
+  },
+  {
+    "id": "manasara",
+    "name": "Manasara (architecture treatise)",
+    "domain": "vastu",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/vastu/manasara_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/vastu/manasara_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 34888,
+        "status": "fetched",
+        "archive_id": "kvr-rao-stone-art-and-architecture-the-technology-behind-and-the-tools-used"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:34:08.751252"
+  },
+  {
+    "id": "mayamata",
+    "name": "Mayamata (temple architecture)",
+    "domain": "vastu",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/vastu/mayamata_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/vastu/mayamata_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:34:22.247538"
+  },
+  {
+    "id": "rigveda",
+    "name": "Rigveda",
+    "domain": "vedic",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/vedic/rigveda_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/vedic/rigveda_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 1621757,
+        "status": "fetched",
+        "archive_id": "hymns-of-the-rigveda-volume-1"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:33:58.767823"
+  },
+  {
+    "id": "atharvaveda",
+    "name": "Atharvaveda",
+    "domain": "vedic",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/vedic/atharvaveda_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/vedic/atharvaveda_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 14405,
+        "status": "fetched",
+        "archive_id": "viswambhar-upanishad-with-english-translation"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:34:12.445696"
+  },
+  {
+    "id": "isha_upanishad",
+    "name": "Isha Upanishad",
+    "domain": "vedic",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/vedic/isha_upanishad_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 4578,
+        "status": "fetched",
+        "archive_id": null
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:34:26.296986"
+  },
+  {
+    "id": "kena_upanishad",
+    "name": "Kena Upanishad",
+    "domain": "vedic",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/vedic/kena_upanishad_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:34:26.519943"
+  },
+  {
+    "id": "katha_upanishad",
+    "name": "Katha Upanishad",
+    "domain": "vedic",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/vedic/katha_upanishad_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:34:26.994553"
+  },
+  {
+    "id": "mundaka_upanishad",
+    "name": "Mundaka Upanishad",
+    "domain": "vedic",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/vedic/mundaka_upanishad_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:34:27.308769"
+  },
+  {
+    "id": "mandukya_upanishad",
+    "name": "Mandukya Upanishad",
+    "domain": "vedic",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/vedic/mandukya_upanishad_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:34:27.724436"
+  },
+  {
+    "id": "taittiriya_upanishad",
+    "name": "Taittiriya Upanishad",
+    "domain": "vedic",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/vedic/taittiriya_upanishad_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:34:28.093805"
+  },
+  {
+    "id": "chandogya_upanishad",
+    "name": "Chandogya Upanishad",
+    "domain": "vedic",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/vedic/chandogya_upanishad_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:34:28.378233"
+  },
+  {
+    "id": "brihadaranyaka_upanishad",
+    "name": "Brihadaranyaka Upanishad",
+    "domain": "vedic",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/vedic/brihadaranyaka_upanishad_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:34:28.718247"
+  },
+  {
+    "id": "prashna_upanishad",
+    "name": "Prashna Upanishad",
+    "domain": "vedic",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/vedic/prashna_upanishad_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:34:29.011843"
+  },
+  {
+    "id": "aitareya_upanishad",
+    "name": "Aitareya Upanishad",
+    "domain": "vedic",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/vedic/aitareya_upanishad_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 9176,
+        "status": "fetched",
+        "archive_id": null
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:34:29.432276"
+  },
+  {
+    "id": "shvetashvatara_upanishad",
+    "name": "Shvetashvatara Upanishad",
+    "domain": "vedic",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/vedic/shvetashvatara_upanishad_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      }
+    ],
+    "status": "failed",
+    "fetched_at": "2026-04-01T09:34:29.715312"
+  },
+  {
+    "id": "upanishads_english",
+    "name": "Principal Upanishads (English translations)",
+    "domain": "vedic",
+    "authority": "sadhu",
+    "files": [
+      {
+        "path": "datasets/sources/vedic/upanishads_english_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 2002587,
+        "status": "fetched",
+        "archive_id": "in.ernet.dli.2015.148291"
+      },
+      {
+        "path": "datasets/sources/vedic/upanishads_english_en_1.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 1144580,
+        "status": "fetched",
+        "archive_id": "1922707.0008.001.umich.edu"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:34:30.041050"
+  },
+  {
+    "id": "yoga_sutras",
+    "name": "Yoga Sutras (Patanjali)",
+    "domain": "yoga",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/yoga/yoga_sutras_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 18750,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/yoga/yoga_sutras_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 801748,
+        "status": "fetched",
+        "archive_id": "kundalini-science-a-spiritual-psychology"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:33:58.968118"
+  },
+  {
+    "id": "hatha_yoga_pradipika",
+    "name": "Hatha Yoga Pradipika",
+    "domain": "yoga",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/yoga/hatha_yoga_pradipika_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 57649,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/yoga/hatha_yoga_pradipika_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 117714,
+        "status": "fetched",
+        "archive_id": "hathayogapradipi0000panc"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:34:13.899219"
+  },
+  {
+    "id": "gheranda_samhita",
+    "name": "Gheranda Samhita",
+    "domain": "yoga",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/yoga/gheranda_samhita_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 53071,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/yoga/gheranda_samhita_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 25317,
+        "status": "fetched",
+        "archive_id": "GherandaSamhita_131"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:34:30.503048"
+  },
+  {
+    "id": "shiva_samhita",
+    "name": "Shiva Samhita",
+    "domain": "yoga",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/yoga/shiva_samhita_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/yoga/shiva_samhita_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 7892284,
+        "status": "fetched",
+        "archive_id": "1-naradiya-purana"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:34:38.820620"
+  },
+  {
+    "id": "vijnana_bhairava",
+    "name": "Vijnana Bhairava Tantra",
+    "domain": "yoga",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/yoga/vijnana_bhairava_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/yoga/vijnana_bhairava_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 463664,
+        "status": "fetched",
+        "archive_id": "2750_20190715"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:34:55.125600"
+  },
+  {
+    "id": "tantraloka",
+    "name": "Tantraloka (Abhinavagupta)",
+    "domain": "yoga",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/yoga/tantraloka_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 877060,
+        "status": "fetched",
+        "archive_id": null
+      },
+      {
+        "path": "datasets/sources/yoga/tantraloka_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 1249931,
+        "status": "fetched",
+        "archive_id": "in.ernet.dli.2015.345399"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:35:01.480741"
+  },
+  {
+    "id": "kularnava_tantra",
+    "name": "Kularnava Tantra",
+    "domain": "yoga",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/yoga/kularnava_tantra_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 1711385,
+        "status": "fetched",
+        "archive_id": "Tantric-Texts-Series-CompletePDF-works-of-SirJohnWoodroffe-ArthurAvalon"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:35:09.548818"
+  },
+  {
+    "id": "mahanirvana_tantra",
+    "name": "Mahanirvana Tantra",
+    "domain": "yoga",
+    "authority": "shastra",
+    "files": [
+      {
+        "path": "datasets/sources/yoga/mahanirvana_tantra_sa.txt",
+        "lang": "sa",
+        "source": "gretil",
+        "size": 0,
+        "status": "failed"
+      },
+      {
+        "path": "datasets/sources/yoga/mahanirvana_tantra_en.txt",
+        "lang": "en",
+        "source": "archive",
+        "size": 7892284,
+        "status": "fetched",
+        "archive_id": "1-naradiya-purana"
+      }
+    ],
+    "status": "ok",
+    "fetched_at": "2026-04-01T09:35:17.117977"
+  }
+]

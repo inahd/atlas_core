@@ -1,0 +1,7 @@
+rule_id,condition,recommendation,coherence_score,attestation_status
+svara_001,"nadi=ida AND element in (earth,water)","favor auspicious, stable, and relational works",0.9,INTERPRETATION
+svara_002,nadi=pingala AND element=fire,"favor forceful, mobile, and digestive actions",0.88,INTERPRETATION
+svara_003,nadi=sushumna AND element=ether,suspend worldly work and enter meditation or yoga,0.96,INTERPRETATION
+svara_004,weekday optimal_nadi matches active_nadi,treat the day as aligned and proceed with planned work,0.76,SPECULATIVE
+svara_005,tithi optimal_nadi mismatches active_nadi,switch nostril or postpone delicate actions,0.32,SPECULATIVE
+svara_006,nadi=sushumna AND activity!=meditation,avoid material action and wait for a cleaner current,0.12,INTERPRETATION

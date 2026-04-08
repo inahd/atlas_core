@@ -1,0 +1,162 @@
+[
+  {
+    "id": "ashwini",
+    "name": "Ashvinī",
+    "sk": "अश्विनी",
+    "deity": "Aśvinī Kumāras",
+    "emoji": "🐴",
+    "element": "fire",
+    "guna": "rajas",
+    "symbol": "horse_head",
+    "dosha": "vata",
+    "color": [
+      240,
+      160,
+      80
+    ],
+    "windA": 3,
+    "windB": 5,
+    "process": "the healers · swift arrival · medicine at the threshold",
+    "reading": "Healing arrives faster than expected. The physicians are already at the door."
+  },
+  {
+    "id": "bharani",
+    "name": "Bharaṇī",
+    "sk": "भरणी",
+    "deity": "Yama",
+    "emoji": "⚖",
+    "element": "earth",
+    "guna": "rajas",
+    "symbol": "yoni",
+    "dosha": "pitta",
+    "color": [
+      200,
+      80,
+      80
+    ],
+    "windA": 4,
+    "windB": 6,
+    "process": "the bearer · what must be carried · dharmic weight",
+    "reading": "Yama weighs. What are you carrying that belongs to another? What is truly yours?"
+  },
+  {
+    "id": "krittika",
+    "name": "Kṛttikā",
+    "sk": "कृत्तिका",
+    "deity": "Agni",
+    "emoji": "🔥",
+    "element": "fire",
+    "guna": "rajas",
+    "symbol": "razor",
+    "dosha": "pitta",
+    "color": [
+      255,
+      100,
+      40
+    ],
+    "windA": 6,
+    "windB": 9,
+    "process": "the cutter · Agni's blade · purification through severance",
+    "reading": "Something must be cut clean. Agni does not hesitate. Neither should you."
+  },
+  {
+    "id": "rohini",
+    "name": "Rohiṇī",
+    "sk": "रोहिणी",
+    "deity": "Brahmā",
+    "emoji": "🌸",
+    "element": "earth",
+    "guna": "rajas",
+    "symbol": "chariot",
+    "dosha": "kapha",
+    "color": [
+      220,
+      160,
+      100
+    ],
+    "windA": 4,
+    "windB": 7,
+    "process": "the red one · fertile ground · Brahmā's beloved nakshatra",
+    "reading": "Creation favors this moment. Plant what you want to grow. The soil is ready."
+  },
+  {
+    "id": "mrigashira",
+    "name": "Mṛgaśirā",
+    "sk": "मृगशिरा",
+    "deity": "Soma",
+    "emoji": "🦌",
+    "element": "earth",
+    "guna": "tamas",
+    "symbol": "deer_head",
+    "dosha": "vata",
+    "color": [
+      120,
+      200,
+      160
+    ],
+    "windA": 3,
+    "windB": 5,
+    "process": "the searching · Soma's gentle quest · beauty sought not forced",
+    "reading": "The deer moves softly. Search without grasping. What you seek is near — do not startle it."
+  },
+  {
+    "id": "ardra",
+    "name": "Ārdrā",
+    "sk": "आर्द्रा",
+    "deity": "Rudra",
+    "emoji": "💧",
+    "element": "water",
+    "guna": "tamas",
+    "symbol": "teardrop",
+    "dosha": "vata",
+    "color": [
+      100,
+      160,
+      220
+    ],
+    "windA": 5,
+    "windB": 8,
+    "process": "the moist · Rudra's storm · grief that opens",
+    "reading": "Rudra weeps. The storm is necessary. What breaks open in you makes space for new life."
+  },
+  {
+    "id": "punarvasu",
+    "name": "Punarvasu",
+    "sk": "पुनर्वसु",
+    "deity": "Aditi",
+    "emoji": "🏠",
+    "element": "air",
+    "guna": "sattva",
+    "symbol": "quiver",
+    "dosha": "vata",
+    "color": [
+      180,
+      220,
+      140
+    ],
+    "windA": 4,
+    "windB": 6,
+    "process": "the return home · Aditi's boundlessness · restoration",
+    "reading": "Return is possible. Aditi holds space for all her children. Come home."
+  },
+  {
+    "id": "pushya",
+    "name": "Puṣya",
+    "sk": "पुष्य",
+    "deity": "Bṛhaspati",
+    "emoji": "🌼",
+    "element": "water",
+    "guna": "sattva",
+    "symbol": "lotus",
+    "dosha": "kapha",
+    "color": [
+      200,
+      200,
+      80
+    ],
+    "windA": 5,
+    "windB": 8,
+    "process": "the nourisher · guru's abundance · spiritual prosperity",
+    "reading": "Bṛhaspati blesses. Nourishment flows freely now. Receive without guilt."
+  }
+]

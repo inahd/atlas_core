@@ -1,0 +1,13 @@
+id,type,name,aliases,notes,source_file
+rashi:aries,rashi,Aries,,,rashi.yaml
+rashi:taurus,rashi,Taurus,,,rashi.yaml
+rashi:gemini,rashi,Gemini,,,rashi.yaml
+rashi:cancer,rashi,Cancer,,,rashi.yaml
+rashi:leo,rashi,Leo,,,rashi.yaml
+rashi:virgo,rashi,Virgo,,,rashi.yaml
+rashi:libra,rashi,Libra,,,rashi.yaml
+rashi:scorpio,rashi,Scorpio,,,rashi.yaml
+rashi:sagittarius,rashi,Sagittarius,,,rashi.yaml
+rashi:capricorn,rashi,Capricorn,,,rashi.yaml
+rashi:aquarius,rashi,Aquarius,,,rashi.yaml
+rashi:pisces,rashi,Pisces,,,rashi.yaml

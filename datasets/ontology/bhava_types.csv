@@ -1,0 +1,13 @@
+id,sanskrit,iast,description,category
+bhava_santa,शान्त,śānta,peaceful contemplative relation,primary
+bhava_dasya,दास्य,dāsya,servitude devotion,primary
+bhava_sakhya,सख्य,sakhya,friendship devotion,primary
+bhava_vatsalya,वात्सल्य,vātsalya,parental affection devotion,primary
+bhava_madhurya,माधुर्य,mādhurya,conjugal devotion,primary
+bhava_raudra,रौद्र,raudra,fierce emotional mode,secondary
+bhava_virya,वीर्य,vīrya,heroic energy,secondary
+bhava_adbhuta,अद्भुत,adbhuta,wonder or astonishment,secondary
+bhava_bhayanaka,भयानक,bhayānaka,fearful mood,secondary
+bhava_bibhatsa,बीभत्स,bībhatsa,disgust or aversion,secondary
+bhava_karuna,करुण,karuṇa,compassionate sorrow,secondary
+bhava_hasya,हास्य,hāsya,laughter or humor,secondary

@@ -1,0 +1,6 @@
+from_id,relation,to_id,source_title,source_locator,excerpt,tradition,confidence,notes
+mythic:krishna,friend_of,mythic:arjuna,mythic_relations.csv,,,traditional,0.8,bhava_sakhya
+mythic:krishna,instructs,mythic:arjuna,mythic_relations.csv,,,traditional,0.8,bhava_santa
+mythic:radha,beloved_of,mythic:krishna,mythic_relations.csv,,,traditional,0.8,bhava_madhurya
+mythic:yashoda,cares_for,mythic:krishna,mythic_relations.csv,,,traditional,0.8,bhava_vatsalya
+mythic:hanuman,serves,mythic:rama,mythic_relations.csv,,,traditional,0.8,bhava_dasya

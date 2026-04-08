@@ -1,0 +1,76 @@
+layer,dataset_path,domain,description
+S0,ontology/vaishnava_tattva.csv,philosophy,Acintya-bhedābheda tattva and Gauḍīya siddhānta
+S0,ontology/rasa_siddhanta.csv,philosophy,12 rasas from Bhakti-rasāmṛta-sindhu
+S0,ontology/parampara.csv,philosophy,Brahma-Madhva-Gauḍīya paramparā
+S0,ontology/bhava_types.csv,philosophy,Bhāva relationship types
+S0,ontology/bhava_relations.csv,philosophy,Bhāva relational ontology
+S0,ontology/knowledge_layers.csv,philosophy,Knowledge layer taxonomy
+S0,sources/sources.csv,textual,Source texts and references
+S0,sources/passages.csv,textual,Cited passages from source texts
+S1,cosmology/deity_master.csv,deity,27 deities with vahana weapon element domain
+S1,cosmology/deity_domains.csv,deity,Deity domain assignments
+S1,cosmology/deity_vahana.csv,deity,Deity vehicles
+S1,cosmology/deity_vahana_extended.csv,deity,Extended vahana symbolism
+S1,nitya_devi_mapping.csv,deity,15 Nitya Devī tithi mapping
+S1,cosmology/graha_master.csv,deity,9 grahas with element guna dosha
+S1,cosmology/grahas.csv,deity,Graha supplementary data
+S1,cosmology/graha_bija.csv,deity,Graha bīja mantras
+S1,cosmology/bija_master.csv,deity,Bīja syllable master
+S2,gandharva/raga_therapeutic.csv,sound,Therapeutic raga prescriptions
+S2,svara/elements.csv,sound,Svara element correspondences
+S2,svara/nadis.csv,sound,Svara nāḍī flows
+S2,svara/activity_matrix.csv,sound,Svara activity timing matrix
+S2,svara/tithi_rules.csv,sound,Svara tithi rules
+S2,svara/vara_rules.csv,sound,Svara vara rules
+S2,svara/coherence_rules.csv,sound,Svara coherence rules
+S2,carnatic/35_talas.csv,sound,35 tāla system
+S2,carnatic/tala_families.csv,sound,Tāla family classification
+S2,carnatic/gati_definitions.csv,sound,Gati subdivision definitions
+S2,carnatic/korvai_rules.csv,sound,Korvai compositional rules
+S2,carnatic/sollukattu.csv,sound,Sollukaṭṭu syllable patterns
+S2,carnatic/navagraha_kritis.csv,sound,Navagraha kṛti raga assignments
+S2,chandas/metres_forms.csv,sound,Vedic metre forms
+S2,chandas/metre_correspondence_matrix.csv,sound,Metre correspondence matrix
+S3,astro/nakshatra_full.csv,rhythm,Full nakshatra data with shakti themes
+S3,astro/nakshatra_core.csv,rhythm,Core nakshatra attributes
+S3,astro/nakshatra_padas.csv,rhythm,108 nakshatra padas
+S3,astro/tithi_core.csv,rhythm,30 tithis with deity and quality
+S3,cosmology/nakshatra_master.csv,rhythm,Nakshatra master with gana dosha yoni
+S3,cosmology/nakshatra_deities.csv,rhythm,Nakshatra deity assignments
+S3,cosmology/nakshatra_extended.csv,rhythm,Extended nakshatra symbolism
+S3,cosmology/nakshatra_syllables.csv,rhythm,Nakshatra initial syllables
+S3,cosmology/tithi_deities.csv,rhythm,Tithi deity assignments
+S3,jyotish/nakshatra.yaml,rhythm,Jyotish nakshatra traditions
+S3,jyotish/graha.yaml,rhythm,Jyotish graha data
+S3,jyotish/rashi.yaml,rhythm,Jyotish rashi data
+S4,cosmology/geometry_archetypes.csv,geometry,Sacred geometry archetypes
+S4,silpa/bandhu_geometry.csv,geometry,Bandhu geometric correspondences
+S4,vastu/ayadi_formulas.csv,geometry,Āyādi vāstu formulas
+S4,vastu/inner_deities.csv,geometry,Vāstu maṇḍala inner deities
+S4,vastu/perimeter_deities.csv,geometry,Vāstu maṇḍala perimeter deities
+S4,vastu/marma_sthana.csv,geometry,Vāstu marma points
+S4,cosmology/doshas.csv,geometry,Dosha geometry
+S4,cosmology/gunas.csv,geometry,Guṇa geometry
+S4,cosmology/mahabhutas.csv,geometry,Mahābhūta element geometry
+S4,cosmology/sacred_plants.csv,geometry,Sacred plant geometry correspondences
+S5,ayurveda/dosha.csv,nature,Three doshas
+S5,ayurveda/guna.csv,nature,Guṇa qualities
+S5,ayurveda/rasa.csv,nature,Six rasas (taste)
+S5,ayurveda/virya.csv,nature,Vīrya (potency)
+S5,ayurveda/vipaka.csv,nature,Vipāka (post-digestive)
+S5,ayurveda/sapta_dhatu.csv,nature,Seven dhātus (tissues)
+S5,ayurveda/herb_spine_108.csv,nature,108 key herbs
+S5,ayurveda/herb_exemplars.csv,nature,Herb exemplars
+S5,ayurveda/amidha_herbs.csv,nature,Amidha herb formulations
+S5,ayurveda/dinacharya_panchanga.csv,nature,Dinacharya daily routine rules
+S5,ayurveda/dosha_nakshatra_matrix.csv,nature,Dosha-nakshatra matrix
+S5,ayurveda/coherence_rules.csv,nature,Āyurveda coherence rules
+S5,plants/nakshatra_plants.csv,nature,Nakshatra plant correspondences
+S5,plants/nakshatra_agriculture.csv,nature,Nakshatra agriculture timing
+S5,marma/body_region_marma.csv,nature,Body region marma points
+S5,marma/marma_field.csv,nature,Marma field coordinates
+S5,yoga/nakshatra_body_map.csv,nature,Nakshatra body map
+S5,ratna/graha_gems.csv,nature,Graha gemstone prescriptions
+S6,semantics/vedic_arts_semantic_layer.csv,lila,64 Vedic arts semantic layer
+S6,ritual/rituals.yaml,lila,Ritual calendar
+S6,cosmology/vedic_arts_64.csv,lila,64 Vedic arts

@@ -1,0 +1,217 @@
+guild_id,anchor_plant,companion_plant,relationship_type,guild_function,vastu_zone,element,graha_companion,ayurvedic_synergy,planting_nakshatra,planting_phase,planting_vara,source,attestation,notes
+G001,Poison nut,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Ashwini,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G002,Poison nut,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Ashwini,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G003,Poison nut,Marigold,companion,pest_repellent,SE,Fire,Surya,,Ashwini,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G004,Poison nut,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Ashwini,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G005,Poison nut,Clover,companion,ground_cover,SW,Earth,Chandra,,Ashwini,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G006,Poison nut,Bean,companion,climber,E,Space,Mangala,,Ashwini,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G007,Poison nut,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Ashwini,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G008,Poison nut,Black walnut,conflict,conflict,SW,Earth,Rahu,,Ashwini,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G009,Amla,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Bharani,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G010,Amla,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Bharani,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G011,Amla,Marigold,companion,pest_repellent,SE,Fire,Surya,,Bharani,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G012,Amla,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Bharani,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G013,Amla,Clover,companion,ground_cover,SW,Earth,Chandra,,Bharani,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G014,Amla,Bean,companion,climber,E,Space,Mangala,,Bharani,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G015,Amla,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Bharani,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G016,Amla,Black walnut,conflict,conflict,SW,Earth,Rahu,,Bharani,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G017,Cluster fig,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Krittika,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G018,Cluster fig,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Krittika,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G019,Cluster fig,Marigold,companion,pest_repellent,SE,Fire,Surya,,Krittika,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G020,Cluster fig,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Krittika,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G021,Cluster fig,Clover,companion,ground_cover,SW,Earth,Chandra,,Krittika,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G022,Cluster fig,Bean,companion,climber,E,Space,Mangala,,Krittika,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G023,Cluster fig,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Krittika,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G024,Cluster fig,Black walnut,conflict,conflict,SW,Earth,Rahu,,Krittika,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G025,Jamun,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Rohini,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G026,Jamun,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Rohini,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G027,Jamun,Marigold,companion,pest_repellent,SE,Fire,Surya,,Rohini,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G028,Jamun,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Rohini,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G029,Jamun,Clover,companion,ground_cover,SW,Earth,Chandra,,Rohini,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G030,Jamun,Bean,companion,climber,E,Space,Mangala,,Rohini,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G031,Jamun,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Rohini,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G032,Jamun,Black walnut,conflict,conflict,SW,Earth,Rahu,,Rohini,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G033,Kadhira,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Mrigashira,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G034,Kadhira,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Mrigashira,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G035,Kadhira,Marigold,companion,pest_repellent,SE,Fire,Surya,,Mrigashira,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G036,Kadhira,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Mrigashira,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G037,Kadhira,Clover,companion,ground_cover,SW,Earth,Chandra,,Mrigashira,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G038,Kadhira,Bean,companion,climber,E,Space,Mangala,,Mrigashira,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G039,Kadhira,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Mrigashira,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G040,Kadhira,Black walnut,conflict,conflict,SW,Earth,Rahu,,Mrigashira,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G041,Agar wood,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Ardra,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G042,Agar wood,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Ardra,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G043,Agar wood,Marigold,companion,pest_repellent,SE,Fire,Surya,,Ardra,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G044,Agar wood,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Ardra,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G045,Agar wood,Clover,companion,ground_cover,SW,Earth,Chandra,,Ardra,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G046,Agar wood,Bean,companion,climber,E,Space,Mangala,,Ardra,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G047,Agar wood,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Ardra,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G048,Agar wood,Black walnut,conflict,conflict,SW,Earth,Rahu,,Ardra,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G049,Bamboo,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Punarvasu,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G050,Bamboo,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Punarvasu,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G051,Bamboo,Marigold,companion,pest_repellent,SE,Fire,Surya,,Punarvasu,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G052,Bamboo,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Punarvasu,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G053,Bamboo,Clover,companion,ground_cover,SW,Earth,Chandra,,Punarvasu,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G054,Bamboo,Bean,companion,climber,E,Space,Mangala,,Punarvasu,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G055,Bamboo,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Punarvasu,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G056,Bamboo,Black walnut,conflict,conflict,SW,Earth,Rahu,,Punarvasu,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G057,Peepal,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Pushya,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G058,Peepal,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Pushya,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G059,Peepal,Marigold,companion,pest_repellent,SE,Fire,Surya,,Pushya,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G060,Peepal,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Pushya,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G061,Peepal,Clover,companion,ground_cover,SW,Earth,Chandra,,Pushya,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G062,Peepal,Bean,companion,climber,E,Space,Mangala,,Pushya,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G063,Peepal,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Pushya,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G064,Peepal,Black walnut,conflict,conflict,SW,Earth,Rahu,,Pushya,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G065,Naga Champa,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Ashlesha,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G066,Naga Champa,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Ashlesha,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G067,Naga Champa,Marigold,companion,pest_repellent,SE,Fire,Surya,,Ashlesha,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G068,Naga Champa,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Ashlesha,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G069,Naga Champa,Clover,companion,ground_cover,SW,Earth,Chandra,,Ashlesha,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G070,Naga Champa,Bean,companion,climber,E,Space,Mangala,,Ashlesha,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G071,Naga Champa,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Ashlesha,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G072,Naga Champa,Black walnut,conflict,conflict,SW,Earth,Rahu,,Ashlesha,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G073,Banyan,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Magha,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G074,Banyan,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Magha,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G075,Banyan,Marigold,companion,pest_repellent,SE,Fire,Surya,,Magha,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G076,Banyan,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Magha,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G077,Banyan,Clover,companion,ground_cover,SW,Earth,Chandra,,Magha,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G078,Banyan,Bean,companion,climber,E,Space,Mangala,,Magha,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G079,Banyan,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Magha,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G080,Banyan,Black walnut,conflict,conflict,SW,Earth,Rahu,,Magha,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G081,Flame of the forest,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Purva Phalguni,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G082,Flame of the forest,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Purva Phalguni,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G083,Flame of the forest,Marigold,companion,pest_repellent,SE,Fire,Surya,,Purva Phalguni,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G084,Flame of the forest,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Purva Phalguni,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G085,Flame of the forest,Clover,companion,ground_cover,SW,Earth,Chandra,,Purva Phalguni,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G086,Flame of the forest,Bean,companion,climber,E,Space,Mangala,,Purva Phalguni,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G087,Flame of the forest,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Purva Phalguni,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G088,Flame of the forest,Black walnut,conflict,conflict,SW,Earth,Rahu,,Purva Phalguni,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G089,Ficus infectoria,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Uttara Phalguni,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G090,Ficus infectoria,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Uttara Phalguni,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G091,Ficus infectoria,Marigold,companion,pest_repellent,SE,Fire,Surya,,Uttara Phalguni,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G092,Ficus infectoria,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Uttara Phalguni,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G093,Ficus infectoria,Clover,companion,ground_cover,SW,Earth,Chandra,,Uttara Phalguni,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G094,Ficus infectoria,Bean,companion,climber,E,Space,Mangala,,Uttara Phalguni,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G095,Ficus infectoria,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Uttara Phalguni,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G096,Ficus infectoria,Black walnut,conflict,conflict,SW,Earth,Rahu,,Uttara Phalguni,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G097,Wild mango,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Hasta,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G098,Wild mango,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Hasta,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G099,Wild mango,Marigold,companion,pest_repellent,SE,Fire,Surya,,Hasta,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G100,Wild mango,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Hasta,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G101,Wild mango,Clover,companion,ground_cover,SW,Earth,Chandra,,Hasta,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G102,Wild mango,Bean,companion,climber,E,Space,Mangala,,Hasta,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G103,Wild mango,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Hasta,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G104,Wild mango,Black walnut,conflict,conflict,SW,Earth,Rahu,,Hasta,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G105,Bilva,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Chitra,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G106,Bilva,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Chitra,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G107,Bilva,Marigold,companion,pest_repellent,SE,Fire,Surya,,Chitra,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G108,Bilva,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Chitra,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G109,Bilva,Clover,companion,ground_cover,SW,Earth,Chandra,,Chitra,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G110,Bilva,Bean,companion,climber,E,Space,Mangala,,Chitra,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G111,Bilva,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Chitra,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G112,Bilva,Black walnut,conflict,conflict,SW,Earth,Rahu,,Chitra,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G113,Arjun,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Swati,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G114,Arjun,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Swati,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G115,Arjun,Marigold,companion,pest_repellent,SE,Fire,Surya,,Swati,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G116,Arjun,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Swati,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G117,Arjun,Clover,companion,ground_cover,SW,Earth,Chandra,,Swati,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G118,Arjun,Bean,companion,climber,E,Space,Mangala,,Swati,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G119,Arjun,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Swati,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G120,Arjun,Black walnut,conflict,conflict,SW,Earth,Rahu,,Swati,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G121,Elephant apple,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Vishakha,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G122,Elephant apple,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Vishakha,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G123,Elephant apple,Marigold,companion,pest_repellent,SE,Fire,Surya,,Vishakha,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G124,Elephant apple,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Vishakha,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G125,Elephant apple,Clover,companion,ground_cover,SW,Earth,Chandra,,Vishakha,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G126,Elephant apple,Bean,companion,climber,E,Space,Mangala,,Vishakha,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G127,Elephant apple,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Vishakha,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G128,Elephant apple,Black walnut,conflict,conflict,SW,Earth,Rahu,,Vishakha,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G129,Bakul,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Anuradha,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G130,Bakul,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Anuradha,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G131,Bakul,Marigold,companion,pest_repellent,SE,Fire,Surya,,Anuradha,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G132,Bakul,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Anuradha,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G133,Bakul,Clover,companion,ground_cover,SW,Earth,Chandra,,Anuradha,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G134,Bakul,Bean,companion,climber,E,Space,Mangala,,Anuradha,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G135,Bakul,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Anuradha,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G136,Bakul,Black walnut,conflict,conflict,SW,Earth,Rahu,,Anuradha,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G137,Pine,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Jyeshta,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G138,Pine,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Jyeshta,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G139,Pine,Marigold,companion,pest_repellent,SE,Fire,Surya,,Jyeshta,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G140,Pine,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Jyeshta,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G141,Pine,Clover,companion,ground_cover,SW,Earth,Chandra,,Jyeshta,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G142,Pine,Bean,companion,climber,E,Space,Mangala,,Jyeshta,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G143,Pine,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Jyeshta,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G144,Pine,Black walnut,conflict,conflict,SW,Earth,Rahu,,Jyeshta,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G145,Black dammar,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Moola,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G146,Black dammar,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Moola,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G147,Black dammar,Marigold,companion,pest_repellent,SE,Fire,Surya,,Moola,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G148,Black dammar,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Moola,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G149,Black dammar,Clover,companion,ground_cover,SW,Earth,Chandra,,Moola,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G150,Black dammar,Bean,companion,climber,E,Space,Mangala,,Moola,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G151,Black dammar,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Moola,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G152,Black dammar,Black walnut,conflict,conflict,SW,Earth,Rahu,,Moola,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G153,Sita Ashoka,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Purvashada,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G154,Sita Ashoka,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Purvashada,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G155,Sita Ashoka,Marigold,companion,pest_repellent,SE,Fire,Surya,,Purvashada,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G156,Sita Ashoka,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Purvashada,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G157,Sita Ashoka,Clover,companion,ground_cover,SW,Earth,Chandra,,Purvashada,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G158,Sita Ashoka,Bean,companion,climber,E,Space,Mangala,,Purvashada,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G159,Sita Ashoka,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Purvashada,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G160,Sita Ashoka,Black walnut,conflict,conflict,SW,Earth,Rahu,,Purvashada,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G161,Jackfruit,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Uttarashada,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G162,Jackfruit,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Uttarashada,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G163,Jackfruit,Marigold,companion,pest_repellent,SE,Fire,Surya,,Uttarashada,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G164,Jackfruit,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Uttarashada,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G165,Jackfruit,Clover,companion,ground_cover,SW,Earth,Chandra,,Uttarashada,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G166,Jackfruit,Bean,companion,climber,E,Space,Mangala,,Uttarashada,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G167,Jackfruit,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Uttarashada,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G168,Jackfruit,Black walnut,conflict,conflict,SW,Earth,Rahu,,Uttarashada,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G169,Milk weed,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Shravana,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G170,Milk weed,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Shravana,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G171,Milk weed,Marigold,companion,pest_repellent,SE,Fire,Surya,,Shravana,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G172,Milk weed,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Shravana,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G173,Milk weed,Clover,companion,ground_cover,SW,Earth,Chandra,,Shravana,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G174,Milk weed,Bean,companion,climber,E,Space,Mangala,,Shravana,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G175,Milk weed,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Shravana,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G176,Milk weed,Black walnut,conflict,conflict,SW,Earth,Rahu,,Shravana,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G177,Shami,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Dhanishta,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G178,Shami,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Dhanishta,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G179,Shami,Marigold,companion,pest_repellent,SE,Fire,Surya,,Dhanishta,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G180,Shami,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Dhanishta,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G181,Shami,Clover,companion,ground_cover,SW,Earth,Chandra,,Dhanishta,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G182,Shami,Bean,companion,climber,E,Space,Mangala,,Dhanishta,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G183,Shami,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Dhanishta,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G184,Shami,Black walnut,conflict,conflict,SW,Earth,Rahu,,Dhanishta,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G185,Kadamba,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Shatabhisha,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G186,Kadamba,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Shatabhisha,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G187,Kadamba,Marigold,companion,pest_repellent,SE,Fire,Surya,,Shatabhisha,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G188,Kadamba,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Shatabhisha,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G189,Kadamba,Clover,companion,ground_cover,SW,Earth,Chandra,,Shatabhisha,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G190,Kadamba,Bean,companion,climber,E,Space,Mangala,,Shatabhisha,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G191,Kadamba,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Shatabhisha,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G192,Kadamba,Black walnut,conflict,conflict,SW,Earth,Rahu,,Shatabhisha,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G193,Neem,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Purvabhadra,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G194,Neem,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Purvabhadra,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G195,Neem,Marigold,companion,pest_repellent,SE,Fire,Surya,,Purvabhadra,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G196,Neem,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Purvabhadra,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G197,Neem,Clover,companion,ground_cover,SW,Earth,Chandra,,Purvabhadra,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G198,Neem,Bean,companion,climber,E,Space,Mangala,,Purvabhadra,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G199,Neem,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Purvabhadra,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G200,Neem,Black walnut,conflict,conflict,SW,Earth,Rahu,,Purvabhadra,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G201,Mango,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Uttarabhadra,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G202,Mango,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Uttarabhadra,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G203,Mango,Marigold,companion,pest_repellent,SE,Fire,Surya,,Uttarabhadra,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G204,Mango,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Uttarabhadra,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G205,Mango,Clover,companion,ground_cover,SW,Earth,Chandra,,Uttarabhadra,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G206,Mango,Bean,companion,climber,E,Space,Mangala,,Uttarabhadra,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G207,Mango,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Uttarabhadra,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G208,Mango,Black walnut,conflict,conflict,SW,Earth,Rahu,,Uttarabhadra,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari
+G209,Mahua,Fenugreek,companion,nitrogen_fixer,SW,Earth,Budha,,Revathi,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G210,Mahua,Comfrey,companion,dynamic_accumulator,NE,Water/Earth,Brihaspati,,Revathi,waxing,Thursday,,the need for synthetic fertilizers,Mercury Kumari
+G211,Mahua,Marigold,companion,pest_repellent,SE,Fire,Surya,,Revathi,waxing,Sunday,,the need for synthetic fertilizers,Mercury Kumari
+G212,Mahua,Lavender,companion,pollinator_attractor,NW,Air,Budha,,Revathi,waxing,Wednesday,,the need for synthetic fertilizers,Mercury Kumari
+G213,Mahua,Clover,companion,ground_cover,SW,Earth,Chandra,,Revathi,waxing,Monday,,the need for synthetic fertilizers,Mercury Kumari
+G214,Mahua,Bean,companion,climber,E,Space,Mangala,,Revathi,waxing,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G215,Mahua,Ginger,companion,root_crop,SW,Earth,Ketu,Tulsi+ginger tea reduces vata and enhances immunity,Revathi,waning,Tuesday,,the need for synthetic fertilizers,Mercury Kumari
+G216,Mahua,Black walnut,conflict,conflict,SW,Earth,Rahu,,Revathi,waning,Saturday,,the need for synthetic fertilizers,Mercury Kumari

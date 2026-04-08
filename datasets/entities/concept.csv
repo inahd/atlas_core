@@ -1,0 +1,3 @@
+id,type,name,aliases,notes,source_file
+concept:schools,concept,schools,,,vedic_concepts.yaml
+concept:concepts,concept,concepts,,,vedic_concepts.yaml

@@ -1,0 +1,19 @@
+graha:
+
+  - name: Sun
+    sanskrit: Surya
+    qualities:
+      - vitality
+      - authority
+
+  - name: Moon
+    sanskrit: Chandra
+    qualities:
+      - mind
+      - emotion
+
+  - name: Mars
+    sanskrit: Mangala
+    qualities:
+      - action
+      - energy

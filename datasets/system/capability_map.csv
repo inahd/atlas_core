@@ -1,0 +1,17 @@
+capability_id,name,status,entity_id,install_time,blocked_by,priority,notes
+coherence_scoring,NPU coherence scoring,active,npu_intel,0,,,OpenVINO inference · 8B param models · running
+webgl_rendering,WebGL yantra/torus rendering,active,igpu_xe,0,,,Iris Xe · shell.html cosmos · running
+panchanga,Vedic panchanga computation,active,cpu_x86,0,,,Swiss Ephemeris + Lahiri ayanamsa · drik_panchanga.py
+graph_engine,Relational graph engine,active,cpu_x86,0,,,7075 nodes · 8466 edges · query/expand/score
+audio_tanpura,Tanpura synthesis (om.py),active,om_py,0,,,TanpuraEngine 4 strings · pw-cat → MOTU
+audio_tabla,Tabla sampler,active,om_py,0,,,7 samples loaded · tala-driven
+audio_sc_synth,SC synthesis engine,active,sc_synthesis,0,,,SynthDefs loaded · OSC working · output broken
+web_interface,Flask + shell web interface,active,kernel_flask,0,,,/shell /field /spine /observe + 30 apps
+calendar_intention,Intention-based calendar,active,kernel_flask,0,,,/intention/* /calendar/* /journal
+whisper_npu,Voice input (Whisper on NPU),ready,npu_intel,4h,,high,whisper-base-int8 · OpenVINO · model needs download
+kokoro_tts,Field voice TTS,ready,cpu_x86,2h,,medium,kokoro-v1.0.onnx exists in models/ · needs wiring
+qwen3_oracle,Local LLM oracle,ready,npu_intel,8h,,high,Qwen3-4B-int4 · NPU inference · bandhu/research
+qwen3_embeddings,Semantic embeddings,ready,npu_intel,4h,,medium,Qwen3-Embedding-0.6B · vector_store upgrade
+pure_data_talachakra,Pd visual tala engine,planned,pw_cat,1d,pd_freeverb,low,Pure Data available · freeverb~ not installed · needs compilation
+granite_gnn,GNN coherence model,planned,npu_intel,2d,,low,research phase · graph neural network on toroid
+sc_direct_audio,SC direct to MOTU,blocked,sc_synthesis,,pw_jack,medium,pw-jack shim broken with PW 1.2.6 · connections appear but silent

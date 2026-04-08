@@ -1,0 +1,72 @@
+{
+  "entity_id": "devi_nityaklinna",
+  "version": 1,
+
+  "identity": {
+    "name": "Nityaklinna",
+    "iast": "Nityaklinnā",
+    "devanagari": "नित्यक्लिन्ना",
+    "common": ["The Ever-Moist One"],
+    "synonyms": [],
+    "attestation": "OBSERVED:TANTRIC_TRADITION"
+  },
+
+  "field_coordinates": {
+    "theta": "S1 (Archetype)",
+    "theta_note": "Nitya Devi is an archetypal governing entity — S1 layer",
+    "phi": 1.57,
+    "phi_note": "center — she governs through compassion, neither witness nor participant only",
+    "psi_primary": "arta",
+    "psi_note": "she responds to distress — dissolves the dryness of separation"
+  },
+
+  "domains": {
+    "tantric": {
+      "source": "datasets/cosmology/nitya_devi_master.csv",
+      "attestation": "OBSERVED:TANTRIC_TRADITION",
+      "tithi_num": 3,
+      "bija": "Klīm",
+      "mantra_short": "Om Klīm Nityaklinne",
+      "element": "water",
+      "guna": "tamas",
+      "rasa": "karuna",
+      "color_hex": "#2050a0",
+      "graha": "Mangala",
+      "shakti": "perpetual moisture",
+      "weapon": "vessel of nectar",
+      "description": "Ever-moist with compassion — she dissolves the dryness of separation"
+    },
+    "gandharva": {
+      "source": "SYNTHESIS",
+      "attestation": "SYNTHESIS",
+      "raga_affinity": "Todi",
+      "rasa": "karuna",
+      "note": "Todi raga family — pathos, yearning, the moisture of devotional separation"
+    }
+  },
+
+  "nakshatra_correspondence": {
+    "primary": "Ardra",
+    "primary_deity": "Rudra",
+    "secondary": "Anuradha",
+    "source": "element correspondence (water)",
+    "attestation": "SYNTHESIS"
+  },
+
+  "field_activation": {
+    "vara": ["mangalavara"],
+    "element": ["water"],
+    "tithi": [3, 18],
+    "nakshatra": [],
+    "note": "Active on Tritiya (tithi 3), water element, Mars vara (her graha)"
+  },
+
+  "use_ratings": {
+    "attestation": "SYNTHESIS",
+    "ratings": {
+      "devotional":    {"phi": 0.3, "score": 1.0, "label": "pure_compassion"},
+      "meditation":    {"phi": 0.8, "score": 0.9, "label": "contemplative"},
+      "healing":       {"phi": 1.2, "score": 0.85, "label": "restorative"}
+    }
+  }
+}

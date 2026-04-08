@@ -1,0 +1,13 @@
+rituals:
+
+  - name: Agnihotra
+    type: fire ritual
+    purpose:
+      - purification
+      - harmony
+
+  - name: Sandhya Vandana
+    type: daily ritual
+    purpose:
+      - meditation
+      - alignment

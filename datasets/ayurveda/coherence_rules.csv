@@ -1,0 +1,6 @@
+rule_id,IF,THEN,label,coherence_weight,source_text,attestation_status
+R001,nakshatra=Shravana AND dosha_current=vata,recommend_herb=Ashwagandha; recommend_practice=Bhramari; diet=warm/oily/grounding,INTERPRETATION,0.85,Shravana primary dosha from Nadi-Koota; mapping to ears/sound practices is inference,INTERPRETATION
+R002,vara=Guruvara AND season=Vasanta,recommend_herb=Brahmi; recommend_practice=meditation; diet=light_warming,INTERPRETATION,0.80,Vara modifiers are jyotisha-style archetypes; seasonal dosha from ritucharya logic,INTERPRETATION
+R003,tithi=Ekadashi,reduced_food=true; herbs=light_digestives; practice=pranayama_over_asana; coherence_penalty_for_heavy_food=-0.7,OBSERVED,0.90,Ekadashi is a fasting tithi with timing conventions documented in panchang practice,OBSERVED:CALENDAR_TRADITION
+R004,nakshatra_nadi=Adi(Vata) AND season=Varsha,add_recommendation=extra_warm_oily; herb=Bala,INTERPRETATION,0.70,Nadi mapping gives vata-type nakshatra; seasonal vata aggravation is traditional framing,INTERPRETATION
+R005,graha=Surya AND user_goal=vitality,if Arka available then recommend_plant=Arka else recommend_practice=sunrise_sadhana,OBSERVED,0.65,Surya->Rui/Arka listed in ICAR Navagraha Vatika; goal mapping inference,MIXED

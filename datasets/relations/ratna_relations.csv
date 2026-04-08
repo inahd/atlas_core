@@ -1,0 +1,46 @@
+from_id,relation,to_id,source_title,source_locator,excerpt,tradition,confidence,notes
+graha:surya,ratna,ratna:ruby,ratna/graha_gems.csv,,,traditional,0.8,Ruby
+ratna:ruby,graha,graha:surya,ratna/graha_gems.csv,,,traditional,0.8,gem of Surya
+graha:surya,substitute_ratna,ratna:red_garnet,ratna/graha_gems.csv,,,traditional,0.8,Red Garnet
+graha:surya,metal,metal:gold,ratna/graha_gems.csv,,,traditional,0.8,Gold
+graha:surya,consecration_mantra,mantra:om_hram_hrim_hraum_sah_suryaya,ratna/graha_gems.csv,,,traditional,0.8,om hram hrim hraum sah suryaya namah
+graha:chandra,ratna,ratna:pearl,ratna/graha_gems.csv,,,traditional,0.8,Pearl
+ratna:pearl,graha,graha:chandra,ratna/graha_gems.csv,,,traditional,0.8,gem of Chandra
+graha:chandra,substitute_ratna,ratna:moonstone,ratna/graha_gems.csv,,,traditional,0.8,Moonstone
+graha:chandra,metal,metal:silver,ratna/graha_gems.csv,,,traditional,0.8,Silver
+graha:chandra,consecration_mantra,mantra:om_shram_shrim_shraum_sah_cand,ratna/graha_gems.csv,,,traditional,0.8,om shram shrim shraum sah candraya namah
+graha:mangala,ratna,ratna:red_coral,ratna/graha_gems.csv,,,traditional,0.8,Red Coral
+ratna:red_coral,graha,graha:mangala,ratna/graha_gems.csv,,,traditional,0.8,gem of Mangala
+graha:mangala,substitute_ratna,ratna:carnelian,ratna/graha_gems.csv,,,traditional,0.8,Carnelian
+graha:mangala,metal,metal:gold,ratna/graha_gems.csv,,,traditional,0.8,Gold
+graha:mangala,consecration_mantra,mantra:om_kram_krim_kraum_sah_bhaumay,ratna/graha_gems.csv,,,traditional,0.8,om kram krim kraum sah bhaumaya namah
+graha:budha,ratna,ratna:emerald,ratna/graha_gems.csv,,,traditional,0.8,Emerald
+ratna:emerald,graha,graha:budha,ratna/graha_gems.csv,,,traditional,0.8,gem of Budha
+graha:budha,substitute_ratna,ratna:peridot,ratna/graha_gems.csv,,,traditional,0.8,Peridot
+graha:budha,metal,metal:gold,ratna/graha_gems.csv,,,traditional,0.8,Gold
+graha:budha,consecration_mantra,mantra:om_bram_brim_braum_sah_budhaya,ratna/graha_gems.csv,,,traditional,0.8,om bram brim braum sah budhaya namah
+graha:guru,ratna,ratna:yellow_sapphire,ratna/graha_gems.csv,,,traditional,0.8,Yellow Sapphire
+ratna:yellow_sapphire,graha,graha:guru,ratna/graha_gems.csv,,,traditional,0.8,gem of Guru
+graha:guru,substitute_ratna,ratna:citrine,ratna/graha_gems.csv,,,traditional,0.8,Citrine
+graha:guru,metal,metal:gold,ratna/graha_gems.csv,,,traditional,0.8,Gold
+graha:guru,consecration_mantra,mantra:om_gram_grim_graum_sah_gurave,ratna/graha_gems.csv,,,traditional,0.8,om gram grim graum sah gurave namah
+graha:shukra,ratna,ratna:diamond,ratna/graha_gems.csv,,,traditional,0.8,Diamond
+ratna:diamond,graha,graha:shukra,ratna/graha_gems.csv,,,traditional,0.8,gem of Shukra
+graha:shukra,substitute_ratna,ratna:white_sapphire,ratna/graha_gems.csv,,,traditional,0.8,White Sapphire
+graha:shukra,metal,metal:silver,ratna/graha_gems.csv,,,traditional,0.8,Silver
+graha:shukra,consecration_mantra,mantra:om_dram_drim_draum_sah_shukray,ratna/graha_gems.csv,,,traditional,0.8,om dram drim draum sah shukraya namah
+graha:shani,ratna,ratna:blue_sapphire,ratna/graha_gems.csv,,,traditional,0.8,Blue Sapphire
+ratna:blue_sapphire,graha,graha:shani,ratna/graha_gems.csv,,,traditional,0.8,gem of Shani
+graha:shani,substitute_ratna,ratna:amethyst,ratna/graha_gems.csv,,,traditional,0.8,Amethyst
+graha:shani,metal,metal:iron,ratna/graha_gems.csv,,,traditional,0.8,Iron
+graha:shani,consecration_mantra,mantra:om_pram_prim_praum_sah_shanais,ratna/graha_gems.csv,,,traditional,0.8,om pram prim praum sah shanaishcharaya namah
+graha:rahu,ratna,ratna:hessonite,ratna/graha_gems.csv,,,traditional,0.8,Hessonite
+ratna:hessonite,graha,graha:rahu,ratna/graha_gems.csv,,,traditional,0.8,gem of Rahu
+graha:rahu,substitute_ratna,ratna:zircon,ratna/graha_gems.csv,,,traditional,0.8,Zircon
+graha:rahu,metal,metal:silver,ratna/graha_gems.csv,,,traditional,0.8,Silver
+graha:rahu,consecration_mantra,mantra:om_bhram_bhrim_bhraum_sah_raha,ratna/graha_gems.csv,,,traditional,0.8,om bhram bhrim bhraum sah rahave namah
+graha:ketu,ratna,ratna:cat's_eye,ratna/graha_gems.csv,,,traditional,0.8,Cat's Eye
+ratna:cat's_eye,graha,graha:ketu,ratna/graha_gems.csv,,,traditional,0.8,gem of Ketu
+graha:ketu,substitute_ratna,ratna:chrysoberyl,ratna/graha_gems.csv,,,traditional,0.8,Chrysoberyl
+graha:ketu,metal,metal:silver,ratna/graha_gems.csv,,,traditional,0.8,Silver
+graha:ketu,consecration_mantra,mantra:om_stram_strim_straum_sah_keta,ratna/graha_gems.csv,,,traditional,0.8,om stram strim straum sah ketave namah

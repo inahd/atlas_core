@@ -1,0 +1,2666 @@
+[
+  {
+    "id": "tyagaraja_jagadananda",
+    "title": "Jagadānanda Kāraka",
+    "title_iast": "Jagadānanda Kāraka",
+    "composer": "Tyāgarāja",
+    "tradition": "carnatic",
+    "language": "telugu",
+    "type": "krti",
+    "deity": "Rāma",
+    "deity_id": "deity_rama",
+    "raga": "Nata",
+    "raga_aliases": [
+      "Naata"
+    ],
+    "tala": "Adi",
+    "rasa": [
+      "bhakti",
+      "vira"
+    ],
+    "time": [
+      "morning",
+      "any"
+    ],
+    "element": "fire",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [
+      "Krittika",
+      "Bharani"
+    ],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Pa",
+      "Ga"
+    ],
+    "text_first_line": "Jagadānanda kāraka jaya jānakī prāṇa nāyaka",
+    "text_meaning": "O bestower of bliss to the world, O lord of Jānakī's life",
+    "duration_min": 8,
+    "level": "major",
+    "tags": [
+      "pancharatna",
+      "morning",
+      "auspicious"
+    ]
+  },
+  {
+    "id": "tyagaraja_dudukugala",
+    "title": "Dudukugala",
+    "title_iast": "Duḍukugala",
+    "composer": "Tyāgarāja",
+    "tradition": "carnatic",
+    "language": "telugu",
+    "type": "krti",
+    "deity": "Rāma",
+    "deity_id": "deity_rama",
+    "raga": "Gaula",
+    "raga_aliases": [
+      "Gowla",
+      "Gauḷa"
+    ],
+    "tala": "Adi",
+    "rasa": [
+      "karuna",
+      "bhakti"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "water",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Ma",
+      "Dha"
+    ],
+    "text_first_line": "Duḍukugala nanne dora kompamurā",
+    "text_meaning": "Is there a refuge for this wretched one?",
+    "duration_min": 7,
+    "level": "major",
+    "tags": [
+      "pancharatna"
+    ]
+  },
+  {
+    "id": "tyagaraja_sadhinchane",
+    "title": "Sādhinchane",
+    "title_iast": "Sādhinchane",
+    "composer": "Tyāgarāja",
+    "tradition": "carnatic",
+    "language": "telugu",
+    "type": "krti",
+    "deity": "Rāma",
+    "deity_id": "deity_rama",
+    "raga": "Arabhi",
+    "raga_aliases": [
+      "Ārabhi"
+    ],
+    "tala": "Adi",
+    "rasa": [
+      "vira",
+      "bhakti"
+    ],
+    "time": [
+      "morning",
+      "any"
+    ],
+    "element": "fire",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Pa"
+    ],
+    "text_first_line": "Sādhinchane ō manasā",
+    "text_meaning": "O mind, have you accomplished it?",
+    "duration_min": 6,
+    "level": "major",
+    "tags": [
+      "pancharatna"
+    ]
+  },
+  {
+    "id": "tyagaraja_kanakanaruchira",
+    "title": "Kanakanaruchirā",
+    "title_iast": "Kanakanaruchirā",
+    "composer": "Tyāgarāja",
+    "tradition": "carnatic",
+    "language": "telugu",
+    "type": "krti",
+    "deity": "Rāma",
+    "deity_id": "deity_rama",
+    "raga": "Varali",
+    "raga_aliases": [
+      "Varāḷi"
+    ],
+    "tala": "Adi",
+    "rasa": [
+      "shanta",
+      "bhakti"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "ether",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Ga",
+      "Ni"
+    ],
+    "text_first_line": "Kanakana ruchirā kanatanaka",
+    "text_meaning": "O one who shines like gold",
+    "duration_min": 7,
+    "level": "major",
+    "tags": [
+      "pancharatna"
+    ]
+  },
+  {
+    "id": "tyagaraja_endaro",
+    "title": "Endaro Mahānubhāvulu",
+    "title_iast": "Endaro Mahānubhāvulu",
+    "composer": "Tyāgarāja",
+    "tradition": "carnatic",
+    "language": "telugu",
+    "type": "krti",
+    "deity": "all-saints",
+    "deity_id": "deity_vishnu",
+    "raga": "Sri",
+    "raga_aliases": [
+      "Śrī"
+    ],
+    "tala": "Adi",
+    "rasa": [
+      "bhakti",
+      "shanta"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "ether",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Re",
+      "Pa"
+    ],
+    "text_first_line": "Endaro mahānubhāvulu andarikī vandanamulu",
+    "text_meaning": "Many are the great souls — I salute them all",
+    "duration_min": 10,
+    "level": "major",
+    "tags": [
+      "pancharatna",
+      "auspicious"
+    ]
+  },
+  {
+    "id": "dikshitar_kamalambike",
+    "title": "Kamalāmbike",
+    "title_iast": "Kamalāmbike",
+    "composer": "Muttuswāmi Dīkṣitar",
+    "tradition": "carnatic",
+    "language": "sanskrit",
+    "type": "krti",
+    "deity": "Devī",
+    "deity_id": "deity_devi",
+    "raga": "Kalyani",
+    "raga_aliases": [
+      "Kalyāṇī"
+    ],
+    "tala": "Adi",
+    "rasa": [
+      "bhakti",
+      "shringara"
+    ],
+    "time": [
+      "evening",
+      "any"
+    ],
+    "element": "water",
+    "vara": [
+      "Shukravara",
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "purnima",
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Ga",
+      "Pa",
+      "Ni"
+    ],
+    "text_first_line": "Kamalāmbike āśrita kalpa latike",
+    "text_meaning": "O Kamalāmbikā, wish-fulfilling vine of those who seek refuge",
+    "duration_min": 8,
+    "level": "major",
+    "tags": [
+      "navagraha",
+      "devi"
+    ]
+  },
+  {
+    "id": "dikshitar_subramanya",
+    "title": "Śrī Subrahmaṇyāya Namaste",
+    "title_iast": "Śrī Subrahmaṇyāya Namaste",
+    "composer": "Muttuswāmi Dīkṣitar",
+    "tradition": "carnatic",
+    "language": "sanskrit",
+    "type": "krti",
+    "deity": "Subrahmaṇya",
+    "deity_id": "deity_skanda",
+    "raga": "Kharaharapriya",
+    "raga_aliases": [
+      "Kharaharapriyā"
+    ],
+    "tala": "Rupaka",
+    "rasa": [
+      "bhakti"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "fire",
+    "vara": [
+      "Mangalavara",
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [
+      "Krittika"
+    ],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Ma",
+      "Pa"
+    ],
+    "text_first_line": "Śrī subrahmaṇyāya namaste namaste",
+    "text_meaning": "Salutations to Śrī Subrahmaṇya",
+    "duration_min": 6,
+    "level": "major",
+    "tags": [
+      "skanda"
+    ]
+  },
+  {
+    "id": "shyama_shastri_devi_brova",
+    "title": "Devi Brova Samayamide",
+    "title_iast": "Devī Brova Samayamide",
+    "composer": "Śyāmā Śāstri",
+    "tradition": "carnatic",
+    "language": "telugu",
+    "type": "krti",
+    "deity": "Pārvatī",
+    "deity_id": "deity_parvati",
+    "raga": "Chintamani",
+    "raga_aliases": [
+      "Cintāmaṇi"
+    ],
+    "tala": "Rupaka",
+    "rasa": [
+      "karuna",
+      "bhakti"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "water",
+    "vara": [
+      "Shukravara",
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Ga",
+      "Dha"
+    ],
+    "text_first_line": "Devī brova samayamide idi",
+    "text_meaning": "O Devī, this is the time to protect me",
+    "duration_min": 7,
+    "level": "major",
+    "tags": [
+      "devi"
+    ]
+  },
+  {
+    "id": "carnatic_bhaja_govindam",
+    "title": "Bhaja Govindam",
+    "title_iast": "Bhaja Govindam",
+    "composer": "Ādi Śaṅkarācārya",
+    "tradition": "carnatic",
+    "language": "sanskrit",
+    "type": "stotra",
+    "deity": "Viṣṇu",
+    "deity_id": "deity_vishnu",
+    "raga": "Yamuna Kalyani",
+    "raga_aliases": [
+      "Yamunā Kalyāṇī"
+    ],
+    "tala": "Adi",
+    "rasa": [
+      "shanta",
+      "bhakti"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "ether",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "ekadashi",
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Pa"
+    ],
+    "text_first_line": "Bhaja govindaṃ bhaja govindaṃ govindaṃ bhaja mūḍhamate",
+    "text_meaning": "Worship Govinda, O fool, for grammar will not save you at death",
+    "duration_min": 5,
+    "level": "major",
+    "tags": [
+      "advaita",
+      "renunciation"
+    ]
+  },
+  {
+    "id": "dikshitar_vatapi",
+    "title": "Vātāpi Gaṇapatiṃ Bhaje",
+    "title_iast": "Vātāpi Gaṇapatiṃ Bhaje",
+    "composer": "Muttuswāmi Dīkṣitar",
+    "tradition": "carnatic",
+    "language": "sanskrit",
+    "type": "krti",
+    "deity": "Gaṇeśa",
+    "deity_id": "deity_ganesha",
+    "raga": "Hamsadhvani",
+    "raga_aliases": [
+      "Haṃsadhvani"
+    ],
+    "tala": "Adi",
+    "rasa": [
+      "bhakti",
+      "hasya"
+    ],
+    "time": [
+      "morning",
+      "any"
+    ],
+    "element": "earth",
+    "vara": [
+      "Budhavara",
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Re",
+      "Ga",
+      "Pa",
+      "Ni"
+    ],
+    "text_first_line": "Vātāpi gaṇapatiṃ bhaje'haṃ",
+    "text_meaning": "I worship Gaṇapati of Vātāpi",
+    "duration_min": 6,
+    "level": "major",
+    "tags": [
+      "ganesha",
+      "auspicious",
+      "opening"
+    ]
+  },
+  {
+    "id": "carnatic_nagumomu",
+    "title": "Nagumomu Ganaleni",
+    "title_iast": "Nagumomu Ganalēni",
+    "composer": "Tyāgarāja",
+    "tradition": "carnatic",
+    "language": "telugu",
+    "type": "krti",
+    "deity": "Rāma",
+    "deity_id": "deity_rama",
+    "raga": "Abheri",
+    "raga_aliases": [
+      "Ābhēri"
+    ],
+    "tala": "Adi",
+    "rasa": [
+      "karuna",
+      "bhakti"
+    ],
+    "time": [
+      "evening",
+      "any"
+    ],
+    "element": "water",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Ga",
+      "Pa"
+    ],
+    "text_first_line": "Nagumomu ganalēni nā jāli telisī",
+    "text_meaning": "Knowing my plight, will you not show your smiling face?",
+    "duration_min": 6,
+    "level": "standard",
+    "tags": []
+  },
+  {
+    "id": "carnatic_brovabharama",
+    "title": "Brōvabhāramā",
+    "title_iast": "Brōvabhāramā",
+    "composer": "Tyāgarāja",
+    "tradition": "carnatic",
+    "language": "telugu",
+    "type": "krti",
+    "deity": "Rāma",
+    "deity_id": "deity_rama",
+    "raga": "Bahudari",
+    "raga_aliases": [
+      "Bahudāri"
+    ],
+    "tala": "Adi",
+    "rasa": [
+      "karuna"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "water",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Re",
+      "Ma"
+    ],
+    "text_first_line": "Brōvabhāramā raghu rāma",
+    "text_meaning": "Is it a burden to protect me, O Rāma?",
+    "duration_min": 5,
+    "level": "standard",
+    "tags": []
+  },
+  {
+    "id": "carnatic_manasa_sancharare",
+    "title": "Mānasa Sañcārarē",
+    "title_iast": "Mānasa Sañcārarē",
+    "composer": "Sadāśiva Brahmendra",
+    "tradition": "carnatic",
+    "language": "sanskrit",
+    "type": "krti",
+    "deity": "Kṛṣṇa",
+    "deity_id": "deity_krishna",
+    "raga": "Sama",
+    "raga_aliases": [
+      "Śāma"
+    ],
+    "tala": "Adi",
+    "rasa": [
+      "shanta",
+      "bhakti"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "ether",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Ga",
+      "Pa"
+    ],
+    "text_first_line": "Mānasa sañcārarē brahmani mānasa sañcārarē",
+    "text_meaning": "O mind, roam in Brahman",
+    "duration_min": 5,
+    "level": "standard",
+    "tags": [
+      "advaita",
+      "meditation"
+    ]
+  },
+  {
+    "id": "carnatic_sri_chakra_raja",
+    "title": "Śrī Cakra Rāja",
+    "title_iast": "Śrī Cakra Rāja Simhāsanēśvarī",
+    "composer": "Muttuswāmi Dīkṣitar",
+    "tradition": "carnatic",
+    "language": "sanskrit",
+    "type": "krti",
+    "deity": "Devī",
+    "deity_id": "deity_devi",
+    "raga": "Shankarabharanam",
+    "raga_aliases": [
+      "Śaṅkarābharaṇam"
+    ],
+    "tala": "Adi",
+    "rasa": [
+      "bhakti",
+      "adbhuta"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "fire",
+    "vara": [
+      "Shukravara",
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "purnima",
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Re",
+      "Ga",
+      "Ma",
+      "Pa",
+      "Dha",
+      "Ni"
+    ],
+    "text_first_line": "Śrī cakra rāja simhāsanēśvarī",
+    "text_meaning": "O queen enthroned on the Śrī Cakra",
+    "duration_min": 8,
+    "level": "major",
+    "tags": [
+      "sri_yantra",
+      "devi"
+    ]
+  },
+  {
+    "id": "carnatic_saroja_dala",
+    "title": "Sarōja Daḷa Nētri",
+    "title_iast": "Sarōja Daḷa Nētri",
+    "composer": "Śyāmā Śāstri",
+    "tradition": "carnatic",
+    "language": "telugu",
+    "type": "krti",
+    "deity": "Pārvatī",
+    "deity_id": "deity_parvati",
+    "raga": "Shankarabharanam",
+    "raga_aliases": [],
+    "tala": "Adi",
+    "rasa": [
+      "bhakti",
+      "shringara"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "water",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Re",
+      "Ga"
+    ],
+    "text_first_line": "Sarōja daḷa nētri hima giri putri",
+    "text_meaning": "O lotus-eyed daughter of the snow mountain",
+    "duration_min": 6,
+    "level": "standard",
+    "tags": [
+      "devi"
+    ]
+  },
+  {
+    "id": "carnatic_raghuvamsha",
+    "title": "Raghuvaṃśa Sudhā",
+    "title_iast": "Raghuvaṃśa Sudhāmbudhī",
+    "composer": "Pattaṇam Subrahmaṇya Iyer",
+    "tradition": "carnatic",
+    "language": "telugu",
+    "type": "krti",
+    "deity": "Rāma",
+    "deity_id": "deity_rama",
+    "raga": "Kambhoji",
+    "raga_aliases": [
+      "Kāmbhōji"
+    ],
+    "tala": "Adi",
+    "rasa": [
+      "vira",
+      "bhakti"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "fire",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Ga",
+      "Pa",
+      "Dha"
+    ],
+    "text_first_line": "Raghuvaṃśa sudhāmbudhī chandramā",
+    "text_meaning": "O moon of the ocean of the Raghu dynasty",
+    "duration_min": 7,
+    "level": "standard",
+    "tags": []
+  },
+  {
+    "id": "carnatic_ethi_janma",
+    "title": "Ethi Janma",
+    "title_iast": "Ethi Janma",
+    "composer": "Tyāgarāja",
+    "tradition": "carnatic",
+    "language": "telugu",
+    "type": "krti",
+    "deity": "Rāma",
+    "deity_id": "deity_rama",
+    "raga": "Kalyani",
+    "raga_aliases": [],
+    "tala": "Adi",
+    "rasa": [
+      "bhakti"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "ether",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Re",
+      "Ga",
+      "Pa",
+      "Ni"
+    ],
+    "text_first_line": "Ethi janmamidhi rā Rāma",
+    "text_meaning": "How many births is this, O Rāma?",
+    "duration_min": 5,
+    "level": "standard",
+    "tags": []
+  },
+  {
+    "id": "carnatic_marivere",
+    "title": "Mariveṛē Gati",
+    "title_iast": "Mariveṛē Gati",
+    "composer": "Tyāgarāja",
+    "tradition": "carnatic",
+    "language": "telugu",
+    "type": "krti",
+    "deity": "Rāma",
+    "deity_id": "deity_rama",
+    "raga": "Latangi",
+    "raga_aliases": [
+      "Lāṭāṅgī"
+    ],
+    "tala": "Adi",
+    "rasa": [
+      "karuna",
+      "bhakti"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "water",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Ma",
+      "Pa"
+    ],
+    "text_first_line": "Mariveṛē gati evvarurā",
+    "text_meaning": "Who else is my refuge?",
+    "duration_min": 5,
+    "level": "standard",
+    "tags": []
+  },
+  {
+    "id": "carnatic_shobillu",
+    "title": "Śōbhillu Saptasvara",
+    "title_iast": "Śōbhillu Saptasvara",
+    "composer": "Tyāgarāja",
+    "tradition": "carnatic",
+    "language": "telugu",
+    "type": "krti",
+    "deity": "Rāma",
+    "deity_id": "deity_rama",
+    "raga": "Jaganmohini",
+    "raga_aliases": [],
+    "tala": "Rupaka",
+    "rasa": [
+      "adbhuta",
+      "bhakti"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "ether",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Re",
+      "Ga",
+      "Ma",
+      "Pa",
+      "Dha",
+      "Ni"
+    ],
+    "text_first_line": "Śōbhillu saptasvara sundarulu",
+    "text_meaning": "The seven beautiful svaras shine forth",
+    "duration_min": 5,
+    "level": "standard",
+    "tags": [
+      "nada",
+      "music"
+    ]
+  },
+  {
+    "id": "hindustani_yaman_eri_aali",
+    "title": "Eri Aali Piya Bin",
+    "title_iast": "Eri Ālī Piyā Bin",
+    "composer": "traditional",
+    "tradition": "hindustani",
+    "language": "hindi",
+    "type": "bandish",
+    "deity": "Kṛṣṇa",
+    "deity_id": "deity_krishna",
+    "raga": "Yaman",
+    "raga_aliases": [
+      "Yaman Kalyan"
+    ],
+    "tala": "Tintal",
+    "rasa": [
+      "shringara"
+    ],
+    "time": [
+      "sunset",
+      "evening"
+    ],
+    "element": "ether",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Ni",
+      "Re",
+      "Ga"
+    ],
+    "text_first_line": "Eri ālī piyā bin",
+    "text_meaning": "O friend, without the beloved",
+    "duration_min": 10,
+    "level": "major",
+    "tags": [
+      "sunset",
+      "raga_yaman"
+    ]
+  },
+  {
+    "id": "hindustani_bhairava_jago",
+    "title": "Jāgo Mohan Pyāre",
+    "title_iast": "Jāgo Mohan Pyāre",
+    "composer": "traditional",
+    "tradition": "hindustani",
+    "language": "hindi",
+    "type": "bandish",
+    "deity": "Kṛṣṇa",
+    "deity_id": "deity_krishna",
+    "raga": "Bhairava",
+    "raga_aliases": [
+      "Bhairav"
+    ],
+    "tala": "Tintal",
+    "rasa": [
+      "bhakti"
+    ],
+    "time": [
+      "dawn",
+      "morning"
+    ],
+    "element": "fire",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "re",
+      "Ga",
+      "dha"
+    ],
+    "text_first_line": "Jāgo mohan pyāre jāgo",
+    "text_meaning": "Awake, O beloved Mohan, awake",
+    "duration_min": 8,
+    "level": "major",
+    "tags": [
+      "dawn",
+      "raga_bhairava"
+    ]
+  },
+  {
+    "id": "hindustani_darbari_bairan",
+    "title": "Bairān Ho Gayi Raina",
+    "title_iast": "Bairān Ho Gaī Rainā",
+    "composer": "traditional",
+    "tradition": "hindustani",
+    "language": "hindi",
+    "type": "bandish",
+    "deity": "general",
+    "deity_id": "",
+    "raga": "Darbari",
+    "raga_aliases": [
+      "Darbari Kanada",
+      "Darbārī"
+    ],
+    "tala": "Tintal",
+    "rasa": [
+      "karuna"
+    ],
+    "time": [
+      "night",
+      "late_night"
+    ],
+    "element": "water",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Re",
+      "ga"
+    ],
+    "text_first_line": "Bairān ho gaī rainā",
+    "text_meaning": "The night has become hostile",
+    "duration_min": 10,
+    "level": "major",
+    "tags": [
+      "night",
+      "raga_darbari"
+    ]
+  },
+  {
+    "id": "hindustani_bhimpalasi_payo",
+    "title": "Payo Ji Maine Rām Ratan Dhan Pāyo",
+    "title_iast": "Pāyo Jī Maine Rām Ratan Dhan Pāyo",
+    "composer": "Mīrābāī",
+    "tradition": "hindustani",
+    "language": "hindi",
+    "type": "bandish",
+    "deity": "Rāma",
+    "deity_id": "deity_rama",
+    "raga": "Bhimpalasi",
+    "raga_aliases": [
+      "Bhīmpalāsī"
+    ],
+    "tala": "Tintal",
+    "rasa": [
+      "bhakti"
+    ],
+    "time": [
+      "afternoon",
+      "any"
+    ],
+    "element": "air",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "ga",
+      "Ma",
+      "Pa"
+    ],
+    "text_first_line": "Pāyo jī maine rām ratan dhan pāyo",
+    "text_meaning": "I have found the jewel-wealth of Rām's name",
+    "duration_min": 6,
+    "level": "major",
+    "tags": [
+      "afternoon"
+    ]
+  },
+  {
+    "id": "hindustani_bageshri_kaun",
+    "title": "Kaun Gat Bhayo Hamare",
+    "title_iast": "Kaun Gat Bhayo Hamārē",
+    "composer": "traditional",
+    "tradition": "hindustani",
+    "language": "hindi",
+    "type": "bandish",
+    "deity": "Kṛṣṇa",
+    "deity_id": "deity_krishna",
+    "raga": "Bageshri",
+    "raga_aliases": [
+      "Bāgeshṛī",
+      "Bageshree"
+    ],
+    "tala": "Tintal",
+    "rasa": [
+      "shringara"
+    ],
+    "time": [
+      "night"
+    ],
+    "element": "water",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "ga",
+      "Ma"
+    ],
+    "text_first_line": "Kaun gat bhayo hamārē",
+    "text_meaning": "What has become of me?",
+    "duration_min": 8,
+    "level": "standard",
+    "tags": [
+      "night"
+    ]
+  },
+  {
+    "id": "hindustani_marva_kahe",
+    "title": "Kāhe Re Ban Khojan Jāi",
+    "title_iast": "Kāhe Re Ban Khōjan Jāī",
+    "composer": "Kabīr",
+    "tradition": "hindustani",
+    "language": "hindi",
+    "type": "bandish",
+    "deity": "Kṛṣṇa",
+    "deity_id": "deity_krishna",
+    "raga": "Marva",
+    "raga_aliases": [
+      "Mārvā"
+    ],
+    "tala": "Jhaptal",
+    "rasa": [
+      "shanta",
+      "vipralambha"
+    ],
+    "time": [
+      "dusk",
+      "evening"
+    ],
+    "element": "air",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "re",
+      "Ga",
+      "Dha"
+    ],
+    "text_first_line": "Kāhe re ban khojan jāī",
+    "text_meaning": "Why go searching in the forest?",
+    "duration_min": 8,
+    "level": "major",
+    "tags": [
+      "dusk",
+      "nirgun"
+    ]
+  },
+  {
+    "id": "hindustani_yaman_kalyan_piya",
+    "title": "Piyā Bin Nahīn Āvat Chain",
+    "title_iast": "Piyā Bin Nahīn Āvat Chain",
+    "composer": "traditional",
+    "tradition": "hindustani",
+    "language": "hindi",
+    "type": "bandish",
+    "deity": "general",
+    "deity_id": "",
+    "raga": "Yaman Kalyan",
+    "raga_aliases": [
+      "Yaman Kalyāṇ"
+    ],
+    "tala": "Tintal",
+    "rasa": [
+      "shringara"
+    ],
+    "time": [
+      "evening"
+    ],
+    "element": "ether",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Ni",
+      "Re",
+      "Ga",
+      "Pa"
+    ],
+    "text_first_line": "Piyā bin nahīn āvat chain",
+    "text_meaning": "Without the beloved, no peace comes",
+    "duration_min": 8,
+    "level": "standard",
+    "tags": [
+      "evening"
+    ]
+  },
+  {
+    "id": "hindustani_todi_ab_to",
+    "title": "Ab To Meri Naiyā Pār Karo",
+    "title_iast": "Ab To Merī Naiyyā Pār Karo",
+    "composer": "traditional",
+    "tradition": "hindustani",
+    "language": "hindi",
+    "type": "bandish",
+    "deity": "Kṛṣṇa",
+    "deity_id": "deity_krishna",
+    "raga": "Todi",
+    "raga_aliases": [
+      "Tōḍī"
+    ],
+    "tala": "Tintal",
+    "rasa": [
+      "karuna",
+      "bhakti"
+    ],
+    "time": [
+      "morning"
+    ],
+    "element": "water",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "re",
+      "ga",
+      "dha"
+    ],
+    "text_first_line": "Ab to merī naiyyā pār karo",
+    "text_meaning": "Now take my boat across",
+    "duration_min": 8,
+    "level": "standard",
+    "tags": [
+      "morning"
+    ]
+  },
+  {
+    "id": "hindustani_kafi_chadariya",
+    "title": "Chādariyā Jhīnī Re Jhīnī",
+    "title_iast": "Chādariyā Jhīnī Re Jhīnī",
+    "composer": "Kabīr",
+    "tradition": "hindustani",
+    "language": "hindi",
+    "type": "bandish",
+    "deity": "nirguṇa",
+    "deity_id": "",
+    "raga": "Kafi",
+    "raga_aliases": [
+      "Kāfī"
+    ],
+    "tala": "Dadra",
+    "rasa": [
+      "shanta",
+      "adbhuta"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "ether",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Re",
+      "ga",
+      "Pa"
+    ],
+    "text_first_line": "Chādariyā jhīnī re jhīnī",
+    "text_meaning": "The cloth of life is delicate, so delicate",
+    "duration_min": 5,
+    "level": "standard",
+    "tags": [
+      "nirgun",
+      "kabir"
+    ]
+  },
+  {
+    "id": "hindustani_bihag_man",
+    "title": "Man Lagā Merā Yār Phakīrī Mein",
+    "title_iast": "Man Lagā Merā Yār Phakīrī Mein",
+    "composer": "traditional",
+    "tradition": "hindustani",
+    "language": "hindi",
+    "type": "bandish",
+    "deity": "nirguṇa",
+    "deity_id": "",
+    "raga": "Bihag",
+    "raga_aliases": [
+      "Bihāg"
+    ],
+    "tala": "Tintal",
+    "rasa": [
+      "shanta"
+    ],
+    "time": [
+      "night"
+    ],
+    "element": "ether",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Ga",
+      "Ma",
+      "Pa"
+    ],
+    "text_first_line": "Man lagā merā yār phakīrī mein",
+    "text_meaning": "My heart is absorbed in divine poverty",
+    "duration_min": 8,
+    "level": "standard",
+    "tags": [
+      "night",
+      "nirgun"
+    ]
+  },
+  {
+    "id": "hindustani_multani_more",
+    "title": "More Bālam Ghara Āyē",
+    "title_iast": "More Bālam Ghara Āyē",
+    "composer": "traditional",
+    "tradition": "hindustani",
+    "language": "hindi",
+    "type": "bandish",
+    "deity": "Kṛṣṇa",
+    "deity_id": "deity_krishna",
+    "raga": "Multani",
+    "raga_aliases": [
+      "Multānī"
+    ],
+    "tala": "Tintal",
+    "rasa": [
+      "shringara",
+      "bhakti"
+    ],
+    "time": [
+      "afternoon"
+    ],
+    "element": "water",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "ga",
+      "Ma",
+      "dha"
+    ],
+    "text_first_line": "More bālam ghara āyē",
+    "text_meaning": "My beloved has come home",
+    "duration_min": 7,
+    "level": "standard",
+    "tags": [
+      "afternoon"
+    ]
+  },
+  {
+    "id": "hindustani_khamaj_babul",
+    "title": "Bābul Morā Naihar Chūṭo Jāi",
+    "title_iast": "Bābul Morā Naihar Chūṭo Jāī",
+    "composer": "Nawab Wajid Ali Shah",
+    "tradition": "hindustani",
+    "language": "hindi",
+    "type": "bandish",
+    "deity": "general",
+    "deity_id": "",
+    "raga": "Khamaj",
+    "raga_aliases": [
+      "Khamāj"
+    ],
+    "tala": "Tintal",
+    "rasa": [
+      "karuna"
+    ],
+    "time": [
+      "evening",
+      "any"
+    ],
+    "element": "water",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Ga",
+      "Pa",
+      "ni"
+    ],
+    "text_first_line": "Bābul morā naihar chūṭo jāī",
+    "text_meaning": "Father, my childhood home slips away",
+    "duration_min": 7,
+    "level": "standard",
+    "tags": [
+      "evening"
+    ]
+  },
+  {
+    "id": "hindustani_bhairavi_jamuna",
+    "title": "Jamunā Kinare Morā Gāon",
+    "title_iast": "Jamunā Kināre Morā Gāon",
+    "composer": "traditional",
+    "tradition": "hindustani",
+    "language": "hindi",
+    "type": "bandish",
+    "deity": "Kṛṣṇa",
+    "deity_id": "deity_krishna",
+    "raga": "Bhairavi",
+    "raga_aliases": [
+      "Bhairavī"
+    ],
+    "tala": "Tintal",
+    "rasa": [
+      "shringara",
+      "bhakti"
+    ],
+    "time": [
+      "any",
+      "morning"
+    ],
+    "element": "water",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "re",
+      "ga",
+      "Ma"
+    ],
+    "text_first_line": "Jamunā kināre morā gāon",
+    "text_meaning": "My village is on the banks of the Yamunā",
+    "duration_min": 7,
+    "level": "standard",
+    "tags": [
+      "morning",
+      "yamuna"
+    ]
+  },
+  {
+    "id": "bhajan_mira_mharo",
+    "title": "Mhāro Praṇām",
+    "title_iast": "Mhāro Praṇām",
+    "composer": "Mīrābāī",
+    "tradition": "bhajan",
+    "language": "hindi",
+    "type": "bhajan",
+    "deity": "Kṛṣṇa",
+    "deity_id": "deity_krishna",
+    "raga": "Kafi",
+    "raga_aliases": [],
+    "tala": "Keherwa",
+    "rasa": [
+      "bhakti"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "water",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Pa"
+    ],
+    "text_first_line": "Mhāro praṇām",
+    "text_meaning": "My salutations",
+    "duration_min": 4,
+    "level": "standard",
+    "tags": [
+      "mira"
+    ]
+  },
+  {
+    "id": "bhajan_mira_payo",
+    "title": "Pāyo Jī Maine",
+    "title_iast": "Pāyo Jī Maine Rām Ratan Dhan Pāyo",
+    "composer": "Mīrābāī",
+    "tradition": "bhajan",
+    "language": "hindi",
+    "type": "bhajan",
+    "deity": "Rāma",
+    "deity_id": "deity_rama",
+    "raga": "Bhimpalasi",
+    "raga_aliases": [],
+    "tala": "Keherwa",
+    "rasa": [
+      "bhakti"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "ether",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Ma",
+      "Pa"
+    ],
+    "text_first_line": "Pāyo jī maine rām ratan dhan pāyo",
+    "text_meaning": "I have found the jewel-wealth of Rām's name",
+    "duration_min": 4,
+    "level": "standard",
+    "tags": [
+      "mira"
+    ]
+  },
+  {
+    "id": "bhajan_tulsi_rama_stuti",
+    "title": "Śrī Rāma Stuti",
+    "title_iast": "Śrī Rāma Stuti",
+    "composer": "Tulsīdāsa",
+    "tradition": "bhajan",
+    "language": "hindi",
+    "type": "bhajan",
+    "deity": "Rāma",
+    "deity_id": "deity_rama",
+    "raga": "Bhairava",
+    "raga_aliases": [],
+    "tala": "Dadra",
+    "rasa": [
+      "bhakti"
+    ],
+    "time": [
+      "dawn",
+      "morning"
+    ],
+    "element": "fire",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "re",
+      "Ga"
+    ],
+    "text_first_line": "Śrī rāma carita mānasa",
+    "text_meaning": "The lake of Rāma's deeds",
+    "duration_min": 5,
+    "level": "standard",
+    "tags": [
+      "dawn"
+    ]
+  },
+  {
+    "id": "bhajan_sur_makhan",
+    "title": "Main Nahīn Mākhana Khāyo",
+    "title_iast": "Main Nahīn Mākhana Khāyo",
+    "composer": "Sūrdāsa",
+    "tradition": "bhajan",
+    "language": "hindi",
+    "type": "bhajan",
+    "deity": "Kṛṣṇa",
+    "deity_id": "deity_krishna",
+    "raga": "Kafi",
+    "raga_aliases": [],
+    "tala": "Keherwa",
+    "rasa": [
+      "hasya",
+      "bhakti"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "water",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "ga",
+      "Pa"
+    ],
+    "text_first_line": "Main nahīn mākhana khāyo",
+    "text_meaning": "I did not eat the butter",
+    "duration_min": 4,
+    "level": "standard",
+    "tags": [
+      "bal_leela",
+      "playful"
+    ]
+  },
+  {
+    "id": "bhajan_kabir_moko",
+    "title": "Moko Kahān Dhūndhe Re Bande",
+    "title_iast": "Moko Kahān Dhūndhe Re Bande",
+    "composer": "Kabīr",
+    "tradition": "bhajan",
+    "language": "hindi",
+    "type": "bhajan",
+    "deity": "nirguṇa",
+    "deity_id": "",
+    "raga": "Bhairavi",
+    "raga_aliases": [],
+    "tala": "Dadra",
+    "rasa": [
+      "shanta"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "ether",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "re",
+      "ga"
+    ],
+    "text_first_line": "Moko kahān dhūndhe re bande",
+    "text_meaning": "Where do you search for me, O seeker?",
+    "duration_min": 4,
+    "level": "standard",
+    "tags": [
+      "nirgun",
+      "kabir",
+      "advaita"
+    ]
+  },
+  {
+    "id": "bhajan_namdev_vitthala",
+    "title": "Viṭhṭhalā Viṭhṭhalā",
+    "title_iast": "Viṭhṭhalā Viṭhṭhalā",
+    "composer": "Nāmdev",
+    "tradition": "bhajan",
+    "language": "marathi",
+    "type": "abhang",
+    "deity": "Viṭhṭhala",
+    "deity_id": "deity_vishnu",
+    "raga": "Bhairavi",
+    "raga_aliases": [],
+    "tala": "Dadra",
+    "rasa": [
+      "bhakti"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "earth",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "ekadashi",
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "ga",
+      "Pa"
+    ],
+    "text_first_line": "Viṭhṭhalā viṭhṭhalā",
+    "text_meaning": "Viṭhṭhala, Viṭhṭhala",
+    "duration_min": 4,
+    "level": "standard",
+    "tags": [
+      "pandharpur",
+      "varkari"
+    ]
+  },
+  {
+    "id": "bhajan_tukaram_abhang",
+    "title": "Āṇi Eka Māgan",
+    "title_iast": "Āṇi Eka Māgan",
+    "composer": "Tukārām",
+    "tradition": "bhajan",
+    "language": "marathi",
+    "type": "abhang",
+    "deity": "Viṭhṭhala",
+    "deity_id": "deity_vishnu",
+    "raga": "Bhairavi",
+    "raga_aliases": [],
+    "tala": "Dadra",
+    "rasa": [
+      "bhakti",
+      "karuna"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "water",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "ekadashi",
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Re",
+      "Pa"
+    ],
+    "text_first_line": "Āṇi eka māgan",
+    "text_meaning": "I have only one request",
+    "duration_min": 4,
+    "level": "standard",
+    "tags": [
+      "varkari"
+    ]
+  },
+  {
+    "id": "bhajan_jnaneshvar_pasaydan",
+    "title": "Pāsāyadāna",
+    "title_iast": "Pāsāyadāna",
+    "composer": "Jñāneśvar",
+    "tradition": "bhajan",
+    "language": "marathi",
+    "type": "abhang",
+    "deity": "Viṭhṭhala",
+    "deity_id": "deity_vishnu",
+    "raga": "Bhairavi",
+    "raga_aliases": [],
+    "tala": "Adi",
+    "rasa": [
+      "shanta",
+      "bhakti"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "ether",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Ma",
+      "Pa"
+    ],
+    "text_first_line": "Ātā viśvarūpī sarva",
+    "text_meaning": "Now the all-pervading form, may the evil-minded become virtuous",
+    "duration_min": 5,
+    "level": "major",
+    "tags": [
+      "jnaneshwari",
+      "benediction"
+    ]
+  },
+  {
+    "id": "bhajan_mira_hari_tum",
+    "title": "Hari Tum Haro Jan Kī Pīr",
+    "title_iast": "Hari Tum Haro Jan Kī Pīr",
+    "composer": "Mīrābāī",
+    "tradition": "bhajan",
+    "language": "hindi",
+    "type": "bhajan",
+    "deity": "Kṛṣṇa",
+    "deity_id": "deity_krishna",
+    "raga": "Yaman",
+    "raga_aliases": [],
+    "tala": "Keherwa",
+    "rasa": [
+      "karuna",
+      "bhakti"
+    ],
+    "time": [
+      "evening",
+      "any"
+    ],
+    "element": "ether",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Ni",
+      "Re",
+      "Ga"
+    ],
+    "text_first_line": "Hari tum haro jan kī pīr",
+    "text_meaning": "O Hari, remove the pain of your devotee",
+    "duration_min": 5,
+    "level": "standard",
+    "tags": [
+      "mira",
+      "evening"
+    ]
+  },
+  {
+    "id": "bhajan_kabir_sadho",
+    "title": "Sādho Dekho Jag Baurānā",
+    "title_iast": "Sādho Dekho Jag Baurānā",
+    "composer": "Kabīr",
+    "tradition": "bhajan",
+    "language": "hindi",
+    "type": "bhajan",
+    "deity": "nirguṇa",
+    "deity_id": "",
+    "raga": "Bhairavi",
+    "raga_aliases": [],
+    "tala": "Dadra",
+    "rasa": [
+      "shanta",
+      "adbhuta"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "ether",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "re",
+      "ga"
+    ],
+    "text_first_line": "Sādho dekho jag baurānā",
+    "text_meaning": "O seeker, see how the world has gone mad",
+    "duration_min": 4,
+    "level": "standard",
+    "tags": [
+      "nirgun",
+      "kabir"
+    ]
+  },
+  {
+    "id": "bhajan_sur_aankh",
+    "title": "Ākh Harī Darśan Kī Pyāsī",
+    "title_iast": "Ākh Harī Darśan Kī Pyāsī",
+    "composer": "Sūrdāsa",
+    "tradition": "bhajan",
+    "language": "hindi",
+    "type": "bhajan",
+    "deity": "Kṛṣṇa",
+    "deity_id": "deity_krishna",
+    "raga": "Bhimpalasi",
+    "raga_aliases": [],
+    "tala": "Keherwa",
+    "rasa": [
+      "karuna",
+      "bhakti"
+    ],
+    "time": [
+      "afternoon",
+      "any"
+    ],
+    "element": "water",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "ga",
+      "Ma"
+    ],
+    "text_first_line": "Ākh harī darśan kī pyāsī",
+    "text_meaning": "My eyes thirst for the sight of Hari",
+    "duration_min": 4,
+    "level": "standard",
+    "tags": [
+      "surdas"
+    ]
+  },
+  {
+    "id": "bhajan_mira_mere_to",
+    "title": "Mere To Giridhar Gopāl",
+    "title_iast": "Mere To Giridhar Gopāl",
+    "composer": "Mīrābāī",
+    "tradition": "bhajan",
+    "language": "hindi",
+    "type": "bhajan",
+    "deity": "Kṛṣṇa",
+    "deity_id": "deity_krishna",
+    "raga": "Bhairavi",
+    "raga_aliases": [],
+    "tala": "Dadra",
+    "rasa": [
+      "bhakti",
+      "shringara"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "water",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Re",
+      "ga"
+    ],
+    "text_first_line": "Mere to giridhar gopāl dūsarā na koī",
+    "text_meaning": "My lord is Giridhar Gopāl, there is no other",
+    "duration_min": 5,
+    "level": "major",
+    "tags": [
+      "mira"
+    ]
+  },
+  {
+    "id": "mantra_mahamrityunjaya",
+    "title": "Mahāmṛtyuñjaya Mantra",
+    "title_iast": "Mahāmṛtyuñjaya Mantra",
+    "composer": "Vedic",
+    "tradition": "mantra",
+    "language": "sanskrit",
+    "type": "mantra",
+    "deity": "Śiva",
+    "deity_id": "deity_shiva",
+    "raga": "any",
+    "raga_aliases": [],
+    "tala": "free",
+    "rasa": [
+      "shanta"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "ether",
+    "vara": [
+      "Somavara",
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [
+      "Ardra",
+      "Mrigashira"
+    ],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa"
+    ],
+    "text_first_line": "Oṃ tryambakaṃ yajāmahe sugandhiṃ puṣṭi-vardhanam",
+    "text_meaning": "We worship the three-eyed one who nourishes and increases fragrance",
+    "duration_min": 3,
+    "level": "major",
+    "tags": [
+      "healing",
+      "shiva",
+      "monday"
+    ]
+  },
+  {
+    "id": "mantra_vishnu_sahasranama",
+    "title": "Viṣṇu Sahasranāma",
+    "title_iast": "Viṣṇu Sahasranāma",
+    "composer": "Vyāsa (Mahābhārata)",
+    "tradition": "mantra",
+    "language": "sanskrit",
+    "type": "stotra",
+    "deity": "Viṣṇu",
+    "deity_id": "deity_vishnu",
+    "raga": "any",
+    "raga_aliases": [],
+    "tala": "free",
+    "rasa": [
+      "bhakti",
+      "shanta"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "water",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "ekadashi",
+      "purnima",
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa"
+    ],
+    "text_first_line": "Viśvaṃ viṣṇur vaṣaṭkāro bhūtabhavyabhavatprabhuḥ",
+    "text_meaning": "The universe, Viṣṇu, the sacrificial fire, lord of past present and future",
+    "duration_min": 20,
+    "level": "major",
+    "tags": [
+      "ekadashi",
+      "purnima",
+      "vishnu"
+    ]
+  },
+  {
+    "id": "mantra_lalita_sahasranama",
+    "title": "Lalitā Sahasranāma",
+    "title_iast": "Lalitā Sahasranāma",
+    "composer": "Brahmāṇḍa Purāṇa",
+    "tradition": "mantra",
+    "language": "sanskrit",
+    "type": "stotra",
+    "deity": "Devī",
+    "deity_id": "deity_devi",
+    "raga": "any",
+    "raga_aliases": [],
+    "tala": "free",
+    "rasa": [
+      "bhakti",
+      "shringara"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "fire",
+    "vara": [
+      "Shukravara",
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "purnima",
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa"
+    ],
+    "text_first_line": "Śrī mātā śrī mahārājñī śrīmat siṃhāsaneśvarī",
+    "text_meaning": "The divine mother, the great queen, seated on the lion throne",
+    "duration_min": 25,
+    "level": "major",
+    "tags": [
+      "devi",
+      "purnima",
+      "friday"
+    ]
+  },
+  {
+    "id": "mantra_ganesha_pancharatnam",
+    "title": "Gaṇeśa Pañcaratnam",
+    "title_iast": "Gaṇeśa Pañcaratnam",
+    "composer": "Ādi Śaṅkarācārya",
+    "tradition": "mantra",
+    "language": "sanskrit",
+    "type": "stotra",
+    "deity": "Gaṇeśa",
+    "deity_id": "deity_ganesha",
+    "raga": "any",
+    "raga_aliases": [],
+    "tala": "free",
+    "rasa": [
+      "bhakti"
+    ],
+    "time": [
+      "morning",
+      "any"
+    ],
+    "element": "earth",
+    "vara": [
+      "Budhavara",
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa"
+    ],
+    "text_first_line": "Mudākarātta modakaṃ sadā vimukti sādhakam",
+    "text_meaning": "He who holds the modaka with delight, ever bestowing liberation",
+    "duration_min": 5,
+    "level": "major",
+    "tags": [
+      "ganesha",
+      "wednesday",
+      "opening"
+    ]
+  },
+  {
+    "id": "mantra_hanuman_chalisa",
+    "title": "Hanumān Cālīsā",
+    "title_iast": "Hanumān Cālīsā",
+    "composer": "Tulsīdāsa",
+    "tradition": "mantra",
+    "language": "hindi",
+    "type": "stotra",
+    "deity": "Hanumān",
+    "deity_id": "deity_hanuman",
+    "raga": "any",
+    "raga_aliases": [],
+    "tala": "free",
+    "rasa": [
+      "vira",
+      "bhakti"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "fire",
+    "vara": [
+      "Mangalavara",
+      "Shanivara",
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa"
+    ],
+    "text_first_line": "Śrī guru carana saroja raja nija manu mukuru sudhāri",
+    "text_meaning": "Cleansing the mirror of my mind with the pollen-dust of the guru's lotus feet",
+    "duration_min": 8,
+    "level": "major",
+    "tags": [
+      "hanuman",
+      "tuesday",
+      "saturday",
+      "protection"
+    ]
+  },
+  {
+    "id": "mantra_gayatri",
+    "title": "Gāyatrī Mantra",
+    "title_iast": "Gāyatrī Mantra",
+    "composer": "Ṛg Veda (Viśvāmitra)",
+    "tradition": "mantra",
+    "language": "sanskrit",
+    "type": "mantra",
+    "deity": "Sūrya",
+    "deity_id": "deity_surya",
+    "raga": "any",
+    "raga_aliases": [],
+    "tala": "free",
+    "rasa": [
+      "shanta"
+    ],
+    "time": [
+      "dawn",
+      "brahma_muhurta"
+    ],
+    "element": "fire",
+    "vara": [
+      "Ravivara",
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa"
+    ],
+    "text_first_line": "Oṃ bhūr bhuvaḥ svaḥ tat saviturvareṇyaṃ bhargo devasya dhīmahi dhiyo yo naḥ pracodayāt",
+    "text_meaning": "We meditate on the divine light of Savitṛ; may it inspire our thoughts",
+    "duration_min": 2,
+    "level": "major",
+    "tags": [
+      "dawn",
+      "brahma_muhurta",
+      "daily"
+    ]
+  },
+  {
+    "id": "mantra_sri_sukta",
+    "title": "Śrī Sūkta",
+    "title_iast": "Śrī Sūkta",
+    "composer": "Ṛg Veda",
+    "tradition": "mantra",
+    "language": "sanskrit",
+    "type": "stotra",
+    "deity": "Lakṣmī",
+    "deity_id": "deity_lakshmi",
+    "raga": "any",
+    "raga_aliases": [],
+    "tala": "free",
+    "rasa": [
+      "bhakti",
+      "shringara"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "water",
+    "vara": [
+      "Shukravara",
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "purnima",
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa"
+    ],
+    "text_first_line": "Hiraṇyavarṇāṃ hariṇīṃ suvarṇa rajatasrajām",
+    "text_meaning": "She of golden hue, adorned with gold and silver garlands",
+    "duration_min": 8,
+    "level": "major",
+    "tags": [
+      "lakshmi",
+      "friday",
+      "purnima",
+      "prosperity"
+    ]
+  },
+  {
+    "id": "mantra_purusha_sukta",
+    "title": "Puruṣa Sūkta",
+    "title_iast": "Puruṣa Sūkta",
+    "composer": "Ṛg Veda",
+    "tradition": "mantra",
+    "language": "sanskrit",
+    "type": "stotra",
+    "deity": "Viṣṇu",
+    "deity_id": "deity_vishnu",
+    "raga": "any",
+    "raga_aliases": [],
+    "tala": "free",
+    "rasa": [
+      "adbhuta",
+      "shanta"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "ether",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa"
+    ],
+    "text_first_line": "Sahasra śīrṣā puruṣaḥ sahasrākṣaḥ sahasrapāt",
+    "text_meaning": "The cosmic person with a thousand heads, eyes, and feet",
+    "duration_min": 10,
+    "level": "major",
+    "tags": [
+      "cosmic",
+      "auspicious"
+    ]
+  },
+  {
+    "id": "mantra_navagraha",
+    "title": "Navagraha Stotra",
+    "title_iast": "Navagraha Stotra",
+    "composer": "Vyāsa",
+    "tradition": "mantra",
+    "language": "sanskrit",
+    "type": "stotra",
+    "deity": "Navagraha",
+    "deity_id": "deity_surya",
+    "raga": "any",
+    "raga_aliases": [],
+    "tala": "free",
+    "rasa": [
+      "shanta"
+    ],
+    "time": [
+      "morning",
+      "any"
+    ],
+    "element": "fire",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa"
+    ],
+    "text_first_line": "Japā kusuma saṅkāśaṃ kāśyapeyaṃ mahā dyutim",
+    "text_meaning": "Like the hibiscus flower, descendant of Kaśyapa, of great brilliance (Sūrya)",
+    "duration_min": 8,
+    "level": "standard",
+    "tags": [
+      "navagraha",
+      "planetary"
+    ]
+  },
+  {
+    "id": "mantra_shiva_panchakshari",
+    "title": "Śiva Pañcākṣarī Stotra",
+    "title_iast": "Śiva Pañcākṣarī Stotra",
+    "composer": "Ādi Śaṅkarācārya",
+    "tradition": "mantra",
+    "language": "sanskrit",
+    "type": "stotra",
+    "deity": "Śiva",
+    "deity_id": "deity_shiva",
+    "raga": "any",
+    "raga_aliases": [],
+    "tala": "free",
+    "rasa": [
+      "bhakti",
+      "shanta"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "ether",
+    "vara": [
+      "Somavara",
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [
+      "Ardra",
+      "Mrigashira"
+    ],
+    "observance": [
+      "shivaratri",
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa"
+    ],
+    "text_first_line": "Nāgendrahārāya trilōcanāya bhasmāṅga rāgāya maheśvarāya",
+    "text_meaning": "To the one garlanded with serpents, three-eyed, ash-smeared, great lord",
+    "duration_min": 5,
+    "level": "major",
+    "tags": [
+      "shiva",
+      "monday",
+      "shivaratri"
+    ]
+  },
+  {
+    "id": "carnatic_pantuvarali_shiva",
+    "title": "Shiva Shiva Shiva",
+    "title_iast": "Śiva Śiva Śiva",
+    "composer": "Tyāgarāja",
+    "tradition": "carnatic",
+    "language": "telugu",
+    "type": "krti",
+    "deity": "Śiva",
+    "deity_id": "deity_shiva",
+    "raga": "Pantuvarali",
+    "raga_aliases": [
+      "Pantuvarāḷi"
+    ],
+    "tala": "Adi",
+    "rasa": [
+      "bhakti",
+      "shanta"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "ether",
+    "vara": [
+      "Somavara",
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [
+      "Ardra"
+    ],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Ma",
+      "Pa"
+    ],
+    "text_first_line": "Śiva śiva śiva ennarādā",
+    "text_meaning": "Will you not say Śiva Śiva Śiva?",
+    "duration_min": 5,
+    "level": "standard",
+    "tags": [
+      "shiva"
+    ]
+  },
+  {
+    "id": "carnatic_annamacharya_brahma",
+    "title": "Brahmam Okate",
+    "title_iast": "Brahmam Okaṭe",
+    "composer": "Annamācārya",
+    "tradition": "carnatic",
+    "language": "telugu",
+    "type": "krti",
+    "deity": "Viṣṇu",
+    "deity_id": "deity_vishnu",
+    "raga": "Bowli",
+    "raga_aliases": [
+      "Bōvḷi"
+    ],
+    "tala": "Adi",
+    "rasa": [
+      "shanta",
+      "bhakti"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "ether",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Ga",
+      "Pa"
+    ],
+    "text_first_line": "Brahmam okaṭe parabrahmamokaṭe",
+    "text_meaning": "Brahman is one, the supreme Brahman is one",
+    "duration_min": 5,
+    "level": "standard",
+    "tags": [
+      "advaita"
+    ]
+  },
+  {
+    "id": "hindustani_malkauns_aayi",
+    "title": "Āī Re Kharī Baiyān Nainā",
+    "title_iast": "Āī Re Kharī Baiyān Nainā",
+    "composer": "traditional",
+    "tradition": "hindustani",
+    "language": "hindi",
+    "type": "bandish",
+    "deity": "general",
+    "deity_id": "",
+    "raga": "Malkauns",
+    "raga_aliases": [
+      "Mālkauns"
+    ],
+    "tala": "Tintal",
+    "rasa": [
+      "shanta",
+      "karuna"
+    ],
+    "time": [
+      "late_night"
+    ],
+    "element": "ether",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "ga",
+      "Ma",
+      "dha"
+    ],
+    "text_first_line": "Āī re kharī baiyān nainā",
+    "text_meaning": "My eyes fill with tears standing at the threshold",
+    "duration_min": 8,
+    "level": "standard",
+    "tags": [
+      "night",
+      "deep"
+    ]
+  },
+  {
+    "id": "hindustani_puriya_dhanashri",
+    "title": "Kahe Sataāve Mohe",
+    "title_iast": "Kāhe Satāve Mohe",
+    "composer": "traditional",
+    "tradition": "hindustani",
+    "language": "hindi",
+    "type": "bandish",
+    "deity": "Kṛṣṇa",
+    "deity_id": "deity_krishna",
+    "raga": "Puriya Dhanashri",
+    "raga_aliases": [
+      "Pūriyā Dhanāśrī"
+    ],
+    "tala": "Tintal",
+    "rasa": [
+      "karuna",
+      "shringara"
+    ],
+    "time": [
+      "evening"
+    ],
+    "element": "air",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "ga",
+      "Ma",
+      "Dha",
+      "Ni"
+    ],
+    "text_first_line": "Kāhe satāve mohe",
+    "text_meaning": "Why do you torment me?",
+    "duration_min": 8,
+    "level": "standard",
+    "tags": [
+      "evening"
+    ]
+  },
+  {
+    "id": "bhajan_kabir_ud_jayega",
+    "title": "Ud Jāyegā Hans Akelā",
+    "title_iast": "Uḍ Jāyegā Haṃs Akelā",
+    "composer": "Kabīr",
+    "tradition": "bhajan",
+    "language": "hindi",
+    "type": "bhajan",
+    "deity": "nirguṇa",
+    "deity_id": "",
+    "raga": "Bhairavi",
+    "raga_aliases": [],
+    "tala": "Dadra",
+    "rasa": [
+      "shanta"
+    ],
+    "time": [
+      "any"
+    ],
+    "element": "air",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "re",
+      "ga"
+    ],
+    "text_first_line": "Uḍ jāyegā haṃs akelā",
+    "text_meaning": "The swan will fly away alone",
+    "duration_min": 4,
+    "level": "standard",
+    "tags": [
+      "nirgun",
+      "kabir",
+      "death"
+    ]
+  },
+  {
+    "id": "bhajan_tulsi_mangal_bhavan",
+    "title": "Maṅgal Bhavan Amaṅgal Hārī",
+    "title_iast": "Maṅgal Bhavan Amaṅgal Hārī",
+    "composer": "Tulsīdāsa",
+    "tradition": "bhajan",
+    "language": "hindi",
+    "type": "bhajan",
+    "deity": "Rāma",
+    "deity_id": "deity_rama",
+    "raga": "Bhairavi",
+    "raga_aliases": [],
+    "tala": "Keherwa",
+    "rasa": [
+      "bhakti"
+    ],
+    "time": [
+      "morning",
+      "any"
+    ],
+    "element": "fire",
+    "vara": [
+      "any"
+    ],
+    "paksha": "both",
+    "nakshatra_deity": [],
+    "observance": [
+      "any"
+    ],
+    "bija_svaras": [
+      "Sa",
+      "Re",
+      "ga"
+    ],
+    "text_first_line": "Maṅgal bhavan amaṅgal hārī",
+    "text_meaning": "The abode of auspiciousness, destroyer of inauspiciousness",
+    "duration_min": 5,
+    "level": "standard",
+    "tags": [
+      "rama",
+      "morning"
+    ]
+  }
+]

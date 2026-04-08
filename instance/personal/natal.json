@@ -1,0 +1,93 @@
+{
+  "birth": {
+    "date": "1983-01-27",
+    "time": "11:57",
+    "place": "Montreal, Quebec, Canada",
+    "lat": 45.5017,
+    "lon": -73.5673,
+    "tz": "America/Montreal"
+  },
+  "lagna": {
+    "sign": "Taurus",
+    "degree": "12:22:04",
+    "nakshatra": "Rohini",
+    "pada": 1,
+    "navamsha": "Aries",
+    "lord": "Venus"
+  },
+  "planets": {
+    "sun": {
+      "sign": "Capricorn", "degree": "13:34:22",
+      "nakshatra": "Shravana", "pada": 2,
+      "navamsha": "Taurus", "lord": "Candra",
+      "retrograde": false, "combust": false
+    },
+    "moon": {
+      "sign": "Gemini", "degree": "26:06:16",
+      "nakshatra": "Punarvasu", "pada": 2,
+      "navamsha": "Taurus", "lord": "Guru",
+      "retrograde": false, "combust": false
+    },
+    "mars": {
+      "sign": "Aquarius", "degree": "14:21:12",
+      "nakshatra": "Shatabhisha", "pada": 3,
+      "navamsha": "Gemini", "lord": "Rahu",
+      "retrograde": false, "combust": false
+    },
+    "mercury": {
+      "sign": "Sagittarius", "degree": "22:51:49",
+      "nakshatra": "Purva Ashadha", "pada": 3,
+      "navamsha": "Aquarius", "lord": "Shukra",
+      "retrograde": false, "combust": false,
+      "dasha_lord": true
+    },
+    "jupiter": {
+      "sign": "Scorpio", "degree": "12:17:35",
+      "nakshatra": "Anuradha", "pada": 3,
+      "navamsha": "Gemini", "lord": "Shani",
+      "retrograde": false, "combust": false
+    },
+    "venus": {
+      "sign": "Aquarius", "degree": "03:51:35",
+      "nakshatra": "Dhanishtha", "pada": 4,
+      "navamsha": "Scorpio", "lord": "Mangala",
+      "retrograde": false, "combust": false
+    },
+    "saturn": {
+      "sign": "Libra", "degree": "10:36:08",
+      "nakshatra": "Swati", "pada": 2,
+      "navamsha": "Taurus", "lord": "Rahu",
+      "retrograde": false, "combust": false,
+      "exalted": true
+    },
+    "rahu": {
+      "sign": "Gemini", "degree": "08:49:34",
+      "nakshatra": "Ardra", "pada": 1,
+      "navamsha": "Aries", "lord": "Rahu",
+      "retrograde": true
+    },
+    "ketu": {
+      "sign": "Sagittarius", "degree": "08:49:34",
+      "nakshatra": "Mula", "pada": 3,
+      "navamsha": "Libra", "lord": "Ketu",
+      "retrograde": true,
+      "conjunct": ["mercury"]
+    }
+  },
+  "special": {
+    "saturn_exalted": true,
+    "mercury_ketu_conjunction": true,
+    "rahu_moon_same_sign": true,
+    "mars_venus_conjunction": true,
+    "dasha_current": "Mercury",
+    "antardasha_approaching": "Ketu",
+    "lagna_nakshatra": "Rohini",
+    "moon_nakshatra": "Punarvasu",
+    "sun_nakshatra": "Shravana"
+  },
+  "notes": {
+    "reading": "Mercury-Ketu conjunction in Mula/Purva Ashadha — system builder whose work points toward liberation. Rohini lagna (Brahma/creator). Punarvasu Moon (eternal return to source). Exalted Saturn in Swati (disciplined independence). Mercury dasha building the communication architecture. Ketu antardasha will shift purpose from intellectual to devotional.",
+    "gaudiya_connections": "Anuradha Jupiter (following Radha), Shravana Sun (Vishnu), Rohini lagna (Moon's favorite, Brahma), Punarvasu Moon (Aditi, boundless)",
+    "astrocartography": "Significant planetary line convergence over South Asia/India"
+  }
+}

@@ -1,0 +1,86 @@
+--- toroidal_field.py PATCH ---
+
+1. After the existing RASA_ANGLE dict, add:
+
+# ── Bhakti-rasa depth signal ─────────────────────────────
+# These are NOT positions on the φ axis (they are not material qualities).
+# They are depth weights toward the source (S0).
+# An entity tagged with bhakti-rasa has a pull toward the bindu
+# that modulates its coherence score upward when the field moment
+# is devotionally resonant.
+#
+# Order: śānta → mādhurya = increasing intimacy with the source.
+# mādhurya = 1.0 = maximum source-proximity weight.
+BHAKTI_RASA_DEPTH = {
+    'shanta':   0.2,   # Brahman realization — nearest to material interface
+    'dasya':    0.4,   # servitorship
+    'sakhya':   0.6,   # friendship
+    'vatsalya': 0.8,   # parental love
+    'madhurya': 1.0,   # conjugal love — deepest source intimacy
+}
+
+# S0 entity prefix — these entities are NOT placed on the toroid surface.
+# They are the source the toroid blooms from.
+S0_PREFIXES = ('tattva_', 'parampara_', 'rasa_s')  # rasa_s covers rasa_shanta/dasya etc.
+
+
+2. In ToroidalField.field_query(), after the score weighting block (_W dict),
+   add S0 source-pull modulation:
+
+        # ── S0 source-pull ─────────────────────────────────────────
+        # Entities with bhakti-rasa depth signal receive a coherence
+        # boost proportional to their intimacy with the source.
+        # This is NOT geometric — it is axiomatic.
+        # The closer an entity is to mādhurya the more it resonates
+        # with the source regardless of toroid position.
+        for r in results:
+            eid = r['entity_id']
+            # Check entity metadata for bhakti_rasa tag
+            meta = self.entity_metadata.get(eid, {})
+            bhakti_rasa = meta.get('bhakti_rasa', '')
+            if bhakti_rasa in BHAKTI_RASA_DEPTH:
+                depth = BHAKTI_RASA_DEPTH[bhakti_rasa]
+                # Boost: up to +0.15 for madhurya, proportional for others.
+                # Bounded — never pushes score above 1.0.
+                r['score'] = round(min(1.0, r['score'] + depth * 0.15), 4)
+                r['source_pull'] = depth  # expose for explain()
+
+
+3. In ToroidalField.__init__(), before _build_arrays(), add:
+
+        # S0 entities — not placed on toroid surface, held separately.
+        # They are the axiomatic ground, not scored participants.
+        self.s0_entities = {
+            eid: meta
+            for eid, meta in self.entity_metadata.items()
+            if any(eid.startswith(p) for p in S0_PREFIXES)
+        }
+
+
+4. Add new method to ToroidalField class:
+
+    def s0_ground(self) -> dict:
+        """Return the S0 axiomatic ground — eternal entities that underlie
+        the material field. These are not coherence-scored. They are the
+        source the field blooms from.
+
+        Returns dict keyed by tattva category:
+            {
+                'siddhanta': [...],  # acintya-bhedabheda etc.
+                'ontology':  [...],  # svayam-bhagavan, jiva, maya etc.
+                'sadhana':   [...],  # bhakti, nama, guru
+                'rasa':      [...],  # rasa-tattva
+            }
+        """
+        by_category = {}
+        for eid, meta in self.s0_entities.items():
+            cat = meta.get('category', 'other')
+            by_category.setdefault(cat, []).append({
+                'entity_id': eid,
+                'name': meta.get('name_iast', eid),
+                'description': meta.get('description', ''),
+                'source': meta.get('source', ''),
+                'layer': 'S0',
+                'on_toroid': False,  # explicit: S0 is not a toroid position
+            })
+        return by_category

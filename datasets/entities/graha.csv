@@ -1,0 +1,10 @@
+id,type,name,aliases,notes,source_file
+graha:sun,graha,Sun,,,graha.yaml
+graha:moon,graha,Moon,,,graha.yaml
+graha:mars,graha,Mars,,,graha.yaml
+graha:mercury,graha,Mercury,,,graha.yaml
+graha:jupiter,graha,Jupiter,,,graha.yaml
+graha:venus,graha,Venus,,,graha.yaml
+graha:saturn,graha,Saturn,,,graha.yaml
+graha:rahu,graha,Rahu,,,graha.yaml
+graha:ketu,graha,Ketu,,,graha.yaml

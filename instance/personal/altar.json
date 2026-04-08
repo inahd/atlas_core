@@ -1,0 +1,33 @@
+{
+  "intention": "Mercury dasha — build the relational system that serves devotion",
+  "deities": [
+    "deity:savitar",
+    "deity:saraswati",
+    "deity:radha"
+  ],
+  "plants": [
+    "plant:tulsi",
+    "plant:soapnut"
+  ],
+  "nakshatra": [
+    "nakshatra:hasta",
+    "nakshatra:rohini",
+    "nakshatra:punarvasu"
+  ],
+  "mantras": [
+    "mantra:gayatri",
+    "mantra:hare_krishna"
+  ],
+  "texts": [
+    "passage:sikshashtakam",
+    "passage:brahma_samhita_5.1"
+  ],
+  "raga": "all rāgas",
+  "dasha": "Mercury",
+  "created": "2026-03-31",
+  "field_at_creation": {
+    "nakshatra": "Hasta",
+    "tithi": "Pūrṇimā",
+    "element": "earth"
+  }
+}
