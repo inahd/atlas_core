@@ -9756,6 +9756,14 @@ def create_app():
     # ── Core index ────────────────────────────────────────
     @app.route("/")
     def _index():
+        return send_from_directory('static', 'home.html')
+
+    @app.route("/home")
+    def _home():
+        return send_from_directory('static', 'home.html')
+
+    @app.route("/api")
+    def _api_index():
         return jsonify({
             'system': 'Atlas Core',
             'status': 'running',
