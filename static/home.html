@@ -37,10 +37,14 @@ body{background:var(--border);font-family:'Courier New',monospace;font-size:11px
 #south>div{background:var(--bg);flex:1;padding:6px;overflow:hidden;min-width:0}
 
 /* ── Center ── */
-#center{background:var(--bg);display:flex;align-items:center;justify-content:center;overflow:hidden;position:relative}
+#center{background:var(--bg);overflow:hidden;position:relative}
+#center-content{width:100%;height:100%;display:flex;align-items:center;justify-content:center;overflow-y:auto}
 #center-back{position:absolute;top:6px;left:8px;font-size:10px;color:var(--dim);cursor:pointer;display:none;z-index:10}
 #center-back:hover{color:var(--gold)}
 #center-label{position:absolute;top:6px;right:8px;font-size:9px;color:var(--dim);display:none}
+#center-crumb{position:absolute;bottom:4px;left:8px;font-size:9px;color:var(--dim);z-index:10}
+#center-crumb span{cursor:pointer}#center-crumb span:hover{color:var(--gold)}
+.ent{cursor:pointer;border-bottom:1px solid transparent;transition:border-color .12s}.ent:hover{border-bottom-color:var(--gold)}
 
 /* ── Tooltip ── */
 #tip{position:fixed;background:rgba(7,13,20,.97);border:1px solid #1a2840;border-radius:3px;padding:5px 8px;font-size:10px;color:#d8e8f0;pointer-events:none;z-index:9000;display:none;max-width:200px;line-height:1.4}
@@ -67,7 +71,7 @@ body{background:var(--border);font-family:'Courier New',monospace;font-size:11px
 <div id="north"></div>
 <div id="ne" class="zone zone-side" style="--zone-color:#8070dd" onclick="activate('NE')"></div>
 <div id="w"  class="zone zone-side" style="--zone-color:#285898" onclick="activate('W')"></div>
-<div id="center"><div id="center-back" onclick="deactivate()">← back</div><div id="center-label"></div><div id="center-content"></div></div>
+<div id="center"><div id="center-back" onclick="goBack()">← back</div><div id="center-label"></div><div id="center-content"></div><div id="center-crumb"></div></div>
 <div id="e"  class="zone zone-side" style="--zone-color:#e8c870" onclick="activate('E')"></div>
 <div id="sw" class="zone zone-side" style="--zone-color:#4b0082" onclick="activate('SW')"></div>
 <div id="south"></div>
@@ -134,6 +138,29 @@ function drawRing(svg,ring,cx,cy,r,opts={}){
 let F={},GU={},K={},TR={},TJ={},INT={},COH={},SND={},RDG={},AUD={},RINGS={},FGLY=[];
 let online=false,activeZone=null;
 const OBS={};
+let history=[];// [{id,type,label}]
+
+function slug(s){return(s||'').toLowerCase().replace(/\s+/g,'_').replace(/[āáà]/g,'a').replace(/[īíì]/g,'i').replace(/[ūúù]/g,'u').replace(/ś/g,'sh').replace(/ṣ/g,'sh').replace(/ṭ/g,'t').replace(/ḍ/g,'d').replace(/ṇ/g,'n').replace(/ḥ/g,'h').replace(/ṃ/g,'m').replace(/[^a-z0-9_]/g,'')}
+async function obs(eid){if(OBS[eid])return OBS[eid];try{const r=await fetch('/observe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({entity:eid})});const d=await r.json();OBS[eid]=d;return d}catch(e){return null}}
+
+async function openEnt(eid,type,label){
+  activeZone='__entity';
+  history.push({id:eid,type,label:label||eid});
+  const cc=document.getElementById('center-content');
+  cc.innerHTML='<div style="padding:20px;color:var(--dim)">◌ loading '+eid+'</div>';
+  document.getElementById('center-back').style.display='block';
+  const d=await obs(eid);
+  renderEntity(cc,eid,type,d);
+  updateCrumb();
+}
+function goBack(){
+  if(history.length>1){history.pop();const prev=history[history.length-1];activeZone='__entity';obs(prev.id).then(d=>{renderEntity(document.getElementById('center-content'),prev.id,prev.type,d);updateCrumb()})}
+  else{history=[];deactivate()}
+}
+function updateCrumb(){
+  const el=document.getElementById('center-crumb');
+  el.innerHTML='<span onclick="history=[];deactivate()">field</span>'+history.map((h,i)=>` → <span onclick="history=history.slice(0,${i+1});obs('${h.id}').then(d=>renderEntity(document.getElementById('center-content'),'${h.id}','${h.type}',d))">${h.label}</span>`).join('');
+}
 
 async function fetchAll(){
   await Promise.all([
@@ -152,8 +179,8 @@ async function fetchAll(){
   ]);render();
 }
 
-function activate(z){if(activeZone===z){deactivate();return}activeZone=z;render()}
-function deactivate(){activeZone=null;render()}
+function activate(z){if(activeZone===z){deactivate();return}activeZone=z;history=[];render()}
+function deactivate(){activeZone=null;history=[];document.getElementById('center-crumb').innerHTML='';render()}
 
 function render(){
   document.getElementById('dot').className='dot'+(online?'':' off');
@@ -209,7 +236,7 @@ function rW(){
   const el=document.getElementById('w');
   const ss=F.sound_state||SND||{};const raga=ss.raga||'';const tala=ss.tala||'';const bpm=ss.bpm||'';const bija=ss.bija||'';
   let h=`<div class="zone-hdr"><span class="zone-glyph">${G.va.W}</span> W · Varuṇa</div><div class="hdr">SOUND</div>`;
-  if(raga)h+=`<div class="g" style="font-size:14px;color:var(--gold)">${raga}</div>`;
+  if(raga)h+=`<div class="g ent" style="font-size:14px;color:var(--gold)" onclick="event.stopPropagation();openEnt('raga_${slug(raga)}','raga','${raga}')">${raga}</div>`;
   if(tala||bpm)h+=`<div style="color:var(--teal);font-size:10px">${tala}${bpm?' · '+bpm+'bpm':''}</div>`;
   h+='<div class="shr">';for(let i=0;i<22;i++)h+='<div class="shr-d"></div>';h+='</div>';
   if(bija)h+=`<div class="g" style="font-size:14px;color:var(--teal)">${bija}</div>`;
@@ -277,6 +304,7 @@ function rNorth(){
   const vara=pa.vara||'—',horaLord=hora.hora_lord||'',rkActive=rk.rahu_kala_active||false;
   const rkRange=(rk.rahu_kala_start||'')+(rk.rahu_kala_start?' – ':'')+(rk.rahu_kala_end||'');
   const daLord=da.lord||da.mahadasha||'Mercury',daEnd=da.closes||da.end_date||'Oct 2027',daSub=da.antardasha||'';
+  const nakId='nakshatra_'+slug(nak),daGId='graha_'+slug(daLord),horaGId='graha_'+slug(horaLord);
   const dsS=new Date('2010-09-01').getTime(),dsE=new Date('2027-10-01').getTime();
   const daPct=Math.min(100,Math.max(0,((Date.now()-dsS)/(dsE-dsS))*100));
   const muhName=typeof muh==='object'?(muh.name||''):(muh||'');
@@ -304,9 +332,9 @@ function rNorth(){
     // Col 1: Moon
     `<div style="display:flex;flex-direction:column;align-items:center">${moonSvg}<div class="g" style="font-size:10px;color:var(--gold)">${phaseNames[phaseIdx]}</div><div style="color:var(--muted);font-size:9px">Tithi ${tithiNum} · ${daysToFull}d→pūrṇimā</div></div>`+
     // Col 2: Panchanga
-    `<div><div class="g" style="font-size:24px;color:var(--gold);text-align:center">${tidx}</div><div style="text-align:center;font-size:10px;color:var(--muted)">${tithi}</div><div style="font-size:10px">${vara}</div>${yoga!=='—'?`<div style="color:var(--muted);font-size:9px">yoga: ${yoga}</div>`:''}<div style="color:var(--muted);font-size:9px">${G.el[(pa.element||'').toLowerCase()]||''} ${pa.element||''} · ${G.gu[(pa.guna||'').toLowerCase()]||''} ${pa.guna||''}</div>${horaLord?`<div style="font-size:10px">${G.gr[horaLord]||''} ${horaLord}</div>`:''}</div>`+
+    `<div><div class="g ent" style="font-size:24px;color:var(--gold);text-align:center" onclick="openEnt('${nakId}','nakshatra','${nak}')">${tidx}</div><div style="text-align:center;font-size:10px;color:var(--muted)">${tithi}</div><div style="font-size:10px">${vara}</div>${yoga!=='—'?`<div style="color:var(--muted);font-size:9px">yoga: ${yoga}</div>`:''}<div style="color:var(--muted);font-size:9px">${G.el[(pa.element||'').toLowerCase()]||''} ${pa.element||''} · ${G.gu[(pa.guna||'').toLowerCase()]||''} ${pa.guna||''}</div>${horaLord?`<div style="font-size:10px"><span class="ent" onclick="openEnt('${horaGId}','graha','${horaLord}')">${G.gr[horaLord]||''} ${horaLord}</span></div>`:''}</div>`+
     // Col 3: Dasha + Muhurta
-    `<div><div class="hdr">DASHA</div><div class="g" style="font-size:12px;color:var(--gold)">${daLord}</div><div style="color:var(--dim);font-size:9px">ends ${daEnd}</div><div class="bar"><div class="bar-f" style="width:${daPct.toFixed(1)}%;background:var(--purple)"></div></div>${daSub?`<div style="color:var(--muted);font-size:9px">sub: ${daSub}</div>`:''}<div class="sep"></div><div class="hdr">MUHURTA</div>${muhName?`<div class="g" style="font-size:11px;color:var(--gold)">${muhName}</div>`:''}<div style="color:var(--dim);font-size:9px">${muhQ||''}</div>${rkRange?`<div style="color:${rkActive?'var(--red)':'var(--dim)'};font-size:9px">rahu: ${rkRange}${rkActive?' ACTIVE':''}</div>`:''}</div>`+
+    `<div><div class="hdr">DASHA</div><div class="g ent" style="font-size:12px;color:var(--gold)" onclick="openEnt('${daGId}','graha','${daLord}')">${daLord}</div><div style="color:var(--dim);font-size:9px">ends ${daEnd}</div><div class="bar"><div class="bar-f" style="width:${daPct.toFixed(1)}%;background:var(--purple)"></div></div>${daSub?`<div style="color:var(--muted);font-size:9px">sub: ${daSub}</div>`:''}<div class="sep"></div><div class="hdr">MUHURTA</div>${muhName?`<div class="g" style="font-size:11px;color:var(--gold)">${muhName}</div>`:''}<div style="color:var(--dim);font-size:9px">${muhQ||''}</div>${rkRange?`<div style="color:${rkActive?'var(--red)':'var(--dim)'};font-size:9px">rahu: ${rkRange}${rkActive?' ACTIVE':''}</div>`:''}</div>`+
     // Col 4: Tithi bars
     `<div><div class="hdr">TITHI QUALITY</div>${bars}<div style="font-size:9px;color:var(--gold)">${tithi} · ${AUSP.has(tithiNum)?'auspicious':INAUSP.has(tithiNum)?'inauspicious':'mixed'}</div></div>`;
 }
@@ -339,7 +367,7 @@ function rSouth(){
     // Col 3: Asana
     `<div><div class="hdr">ASANA</div><div class="g" style="font-size:11px;color:var(--gold)">${pose.sk}</div><div style="color:var(--muted);font-size:9px">${pose.en}</div><div style="color:var(--dim);font-size:9px">${pose.q} · ${pose.d}</div><div style="color:var(--dim);font-size:9px">${pose.b}</div></div>`+
     // Col 4: Plant + Intention
-    `<div><div class="hdr">PLANT</div><div class="g" style="font-size:11px;color:var(--green)">${anch}</div>${gfn?`<div style="color:var(--muted);font-size:9px">${gfn} · ${prep}</div>`:''}<div class="sep"></div><div class="hdr">INTENTION</div>${iid?`<div style="color:var(--text);font-size:10px">${iid.charAt(0).toUpperCase()+iid.slice(1)}</div>`:'<div style="color:var(--dim)">◌</div>'}${iScore?`<div class="bar"><div class="bar-f" style="width:${Math.min(100,iScore*100)}%;background:var(--teal)"></div></div>`:''}</div>`;
+    `<div><div class="hdr">PLANT</div><div class="g ent" style="font-size:11px;color:var(--green)" onclick="openEnt('${GU.anchor_entity_id||('plant_'+slug(anch))}','plant','${anch}')">${anch}</div>${gfn?`<div style="color:var(--muted);font-size:9px">${gfn} · ${prep}</div>`:''}<div class="sep"></div><div class="hdr">INTENTION</div>${iid?`<div style="color:var(--text);font-size:10px">${iid.charAt(0).toUpperCase()+iid.slice(1)}</div>`:'<div style="color:var(--dim)">◌</div>'}${iScore?`<div class="bar"><div class="bar-f" style="width:${Math.min(100,iScore*100)}%;background:var(--teal)"></div></div>`:''}</div>`;
 }
 
 // ══════════════════════════════════════════════════
@@ -349,9 +377,9 @@ function rCenter(){
   const back=document.getElementById('center-back');
   const label=document.getElementById('center-label');
   const cc=document.getElementById('center-content');
+  if(activeZone==='__entity')return;// entity mode handled by openEnt
   if(activeZone){
     back.style.display='block';label.style.display='block';label.textContent=activeZone;
-    cc.style.width='100%';cc.style.height='100%';
     const fn={NW:cNW,NE:cNE,W:cW,E:cE,SW:cSW,SE:cSE,C:cC,S:cS}[activeZone];
     if(fn)fn(cc);else cc.innerHTML='<div style="padding:20px;color:var(--dim)">◌ '+activeZone+'</div>';
   }else{
@@ -528,11 +556,114 @@ function cC(cc){
 }
 
 // ══════════════════════════════════════════════════
+// ENTITY RENDERER
+// ══════════════════════════════════════════════════
+function renderEntity(cc,eid,type,d){
+  document.getElementById('center-back').style.display='block';
+  document.getElementById('center-label').style.display='block';
+  document.getElementById('center-label').textContent=type;
+  if(!d||d.error){cc.innerHTML=`<div style="padding:20px"><div class="hdr">${type}</div><div class="g" style="font-size:16px;color:var(--gold)">${eid}</div><div style="color:var(--dim);margin-top:8px">◌ no observe data</div></div>`;return}
+  const dom=d.domains||{};const astro=dom.astrology?.content||{};const data=astro.data||{};
+  const ayur=dom.ayurveda?.content||{};const ratna=dom.ratna?.content||{};const marma=dom.marma?.content||{};
+  const gandh=dom.gandharva?.content||{};const synth=dom.synthesis?.content||'';
+  const name=data.name||astro.nakshatra||d.devi_sheet?.name||eid;
+
+  let h='<div style="padding:12px;overflow-y:auto;height:100%;max-height:100%">';
+  h+=`<div class="hdr">${type}</div>`;
+  h+=`<div class="g" style="font-size:20px;color:var(--gold);margin-bottom:6px">${name}</div>`;
+  if(data.emoji)h+=`<span style="font-size:18px">${data.emoji} </span>`;
+
+  if(type==='nakshatra'){
+    const nd=F.panchanga?.nak_data||{};
+    h+='<div style="display:flex;gap:16px"><div style="flex:1">';
+    // Identity
+    h+='<div class="hdr" style="margin-top:6px">IDENTITY</div>';
+    if(nd.deity)h+=`<div style="font-size:12px">${nd.deity}</div>`;
+    if(nd.shakti)h+=`<div style="color:var(--muted);font-size:10px">shakti: ${nd.shakti}</div>`;
+    if(data.element||astro.element)h+=`<div style="color:var(--muted)">${G.el[(data.element||astro.element||'').toLowerCase()]||''} ${data.element||astro.element}</div>`;
+    if(data.guna||astro.guna)h+=`<div style="color:var(--muted)">${G.gu[(data.guna||astro.guna||'').toLowerCase()]||''} ${data.guna||astro.guna}</div>`;
+    const nak_lord=astro.nak_lord||nd.graha||'';
+    if(nak_lord)h+=`<div style="color:${G.gc[Object.keys(G.gc).find(k=>nak_lord.toLowerCase().includes(k.toLowerCase()))]||'var(--muted)'}">${G.gr[nak_lord]||''} ${nak_lord}</div>`;
+    if(nd.symbol)h+=`<div style="color:var(--muted);font-size:10px">symbol: ${nd.symbol}</div>`;
+    if(nd.quality)h+=`<div style="color:var(--muted);font-size:10px">quality: ${nd.quality}</div>`;
+    // Body
+    const NAK_BODY={Ashwini:'feet',Bharani:'head',Krittika:'head · neck',Rohini:'forehead','Rohiṇī':'forehead',Mrigashira:'eyes · brows',Ardra:'hair · skull',Punarvasu:'fingers · nose',Pushya:'face · mouth',Ashlesha:'ears · nails',Magha:'nose · lips',Hasta:'fingers',Chitra:'forehead · neck',Swati:'chest · lungs',Vishakha:'arms · breasts',Anuradha:'stomach · womb',Jyeshtha:'tongue',Mula:'feet · left side','Pūrvāṣāḍhā':'thighs · back',Shravana:'ears',Dhanishtha:'back',Shatabhisha:'right thigh',Revati:'feet · ankles'};
+    const br=NAK_BODY[name]||NAK_BODY[F.panchanga?.nakshatra||'']||'';
+    if(br)h+=`<div style="color:var(--muted);font-size:10px">body: ${br}</div>`;
+    h+='</div><div style="flex:1">';
+    // Ayurveda
+    if(ayur.dosha_profile||ayur.herb){
+      h+='<div class="hdr" style="margin-top:6px">ĀYURVEDA</div>';
+      if(ayur.dosha_profile)h+=`<div style="font-size:11px">${ayur.dosha_profile.primary_dosha||''} dosha</div>`;
+      if(ayur.herb){const hb=ayur.herb;h+=`<div style="color:var(--green)"><span class="ent" onclick="openEnt('plant_${slug(hb.common||hb.name)}','plant','${hb.common||hb.name}')">${hb.name||''}</span> (${hb.common||''})</div>`;
+        if(hb.rasa)h+=`<div style="color:var(--muted);font-size:10px">rasa: ${hb.rasa}</div>`}
+    }
+    // Ratna
+    if(ratna.primary_gem){h+='<div class="hdr" style="margin-top:6px">RATNA</div>';h+=`<div style="font-size:11px">${ratna.primary_gem}</div>`;if(ratna.metal)h+=`<div style="color:var(--muted);font-size:10px">${ratna.metal} · ${ratna.finger||''}</div>`}
+    // Marma
+    if(marma.marma_name){h+='<div class="hdr" style="margin-top:6px">MARMA</div>';h+=`<div style="font-size:11px">${marma.marma_name}</div>`;if(marma.marma_location)h+=`<div style="color:var(--muted);font-size:10px">${marma.marma_location}</div>`}
+    // Sound
+    if(gandh.therapeutic_raga){h+='<div class="hdr" style="margin-top:6px">SOUND</div>';h+=`<div style="color:var(--teal)">raga: ${gandh.therapeutic_raga}</div>`}
+    h+='</div></div>';
+
+  }else if(type==='graha'){
+    h+='<div style="display:flex;gap:16px"><div style="flex:1">';
+    if(data.element)h+=`<div>${G.el[data.element]||''} ${data.element}</div>`;
+    if(data.guna)h+=`<div style="color:var(--muted)">${G.gu[data.guna]||''} ${data.guna}</div>`;
+    if(data.dosha)h+=`<div style="color:var(--muted)">${data.dosha}</div>`;
+    if(data.body_part)h+=`<div style="color:var(--muted)">body: ${data.body_part}</div>`;
+    if(data.gem)h+=`<div style="color:var(--muted)">gem: ${data.gem}</div>`;
+    if(data.metal)h+=`<div style="color:var(--muted);font-size:10px">metal: ${data.metal}</div>`;
+    if(data.color)h+=`<div style="color:var(--muted);font-size:10px">color: ${data.color}</div>`;
+    if(data.weekday)h+=`<div style="color:var(--muted);font-size:10px">${data.weekday}</div>`;
+    if(data.vehicle)h+=`<div style="color:var(--muted);font-size:10px">vahana: ${data.vehicle}</div>`;
+    if(data.weapon)h+=`<div style="color:var(--muted);font-size:10px">weapon: ${data.weapon}</div>`;
+    if(data.domain)h+=`<div style="color:var(--muted);font-size:10px">domain: ${data.domain}</div>`;
+    h+='</div><div style="flex:1">';
+    if(data.friends?.length){h+='<div class="hdr" style="margin-top:6px">RELATIONSHIPS</div>';h+=`<div style="color:var(--green);font-size:10px">friends: ${data.friends.join(', ')}</div>`;if(data.enemies?.length)h+=`<div style="color:var(--red);font-size:10px">enemies: ${data.enemies.join(', ')}</div>`}
+    if(data.nakshatra_rulerships?.length){h+='<div class="hdr" style="margin-top:6px">RULERSHIPS</div>';h+=data.nakshatra_rulerships.map(n=>`<span class="ent" style="color:var(--muted);font-size:10px" onclick="openEnt('nakshatra_${slug(n)}','nakshatra','${n}')">${n}</span>`).join(' · ')}
+    // Hora
+    const IMPACT={Sun:'authority · vitality · purpose',Moon:'emotion · intuition · nourishment',Mars:'energy · action · courage',Mercury:'communication · trade · learning',Jupiter:'wisdom · expansion · teaching',Venus:'art · beauty · relationships',Saturn:'discipline · structure · endurance',Rahu:'innovation · foreign · technology',Ketu:'spirituality · release · moksha'};
+    const imp=IMPACT[data.name_key]||IMPACT[name]||'';
+    if(imp){h+='<div class="hdr" style="margin-top:6px">HORA FAVORABLE</div>';h+=`<div style="color:var(--dim);font-size:10px">${imp.split(' · ').map(a=>'· '+a).join('<br>')}</div>`}
+    h+='</div></div>';
+
+  }else if(type==='devi'){
+    const ds=d.devi_sheet||{};
+    if(data.mantra)h+=`<div class="g" style="font-size:13px;color:var(--teal);margin:4px 0">${data.mantra}</div>`;
+    h+='<div style="display:flex;gap:16px"><div style="flex:1">';
+    if(data.tithi_number)h+=`<div>tithi ${data.tithi_number} · ${data.tithi_name||''}</div>`;
+    if(data.element)h+=`<div style="color:var(--muted)">${G.el[data.element]||''} ${data.element}</div>`;
+    if(data.guna)h+=`<div style="color:var(--muted)">${G.gu[data.guna]||''} ${data.guna}</div>`;
+    if(data.governing_graha)h+=`<div style="color:var(--muted)"><span class="ent" onclick="openEnt('graha_${slug(data.governing_graha)}','graha','${data.governing_graha}')">${data.governing_graha}</span></div>`;
+    if(data.body_parts?.length)h+=`<div style="color:var(--muted);font-size:10px">body: ${data.body_parts.join(', ')}</div>`;
+    h+='</div><div style="flex:1">';
+    if(data.raga||ds.raga)h+=`<div style="color:var(--teal)">raga: ${data.raga||ds.raga}</div>`;
+    if(data.yantra_geometry_name)h+=`<div style="color:var(--muted);font-size:10px">yantra: ${data.yantra_geometry_name}</div>`;
+    if(data.practice_for_day)h+=`<div style="color:var(--muted);font-size:10px">${data.practice_for_day}</div>`;
+    if(ds.description||data.process)h+=`<div class="g" style="font-size:10px;color:var(--muted);font-style:italic;margin-top:6px;line-height:1.5">${ds.description||data.process}</div>`;
+    h+='</div></div>';
+
+  }else{
+    // Generic entity
+    for(const[k,v]of Object.entries(data)){
+      if(typeof v==='string'&&v)h+=`<div style="color:var(--muted);font-size:10px"><span style="color:var(--dim);min-width:60px;display:inline-block">${k}</span> ${v}</div>`;
+      else if(Array.isArray(v)&&v.length)h+=`<div style="color:var(--muted);font-size:10px"><span style="color:var(--dim)">${k}</span> ${v.join(', ')}</div>`;
+    }
+  }
+
+  // Synthesis
+  if(typeof synth==='string'&&synth.length>10){h+='<div class="sep"></div><div class="hdr">SYNTHESIS</div>';h+=`<div class="g" style="font-size:10px;color:var(--muted);font-style:italic;line-height:1.5">${synth}</div>`}
+
+  h+='</div>';cc.innerHTML=h;
+}
+
+// ══════════════════════════════════════════════════
 // KEYBOARD
 // ══════════════════════════════════════════════════
 document.addEventListener('keydown',e=>{
   const map={'7':'NW','8':'N','9':'NE','4':'W','5':'C','6':'E','1':'SW','2':'S','3':'SE'};
-  if(e.key==='Escape')deactivate();
+  if(e.key==='Escape'){if(history.length)goBack();else deactivate()}
   else if(map[e.key])activate(map[e.key]);
 });
 
