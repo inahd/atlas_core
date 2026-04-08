@@ -1,0 +1,18 @@
+[Unit]
+Description=Atlas Field Computer — kernel
+After=network.target atlas-om.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/inahd/atlas_330
+ExecStart=/usr/bin/python3 /home/inahd/atlas_330/kernel.py
+Restart=always
+RestartSec=5
+Environment=PYTHONPATH=/home/inahd/atlas_330
+Environment=PYTHONUSERBASE=/home/inahd/.local
+Environment=PATH=/home/inahd/.local/bin:/usr/local/bin:/usr/bin:/bin
+StandardOutput=append:/tmp/atlas_kernel.log
+StandardError=append:/tmp/atlas_kernel.log
+
+[Install]
+WantedBy=default.target

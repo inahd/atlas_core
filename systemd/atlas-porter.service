@@ -1,0 +1,15 @@
+[Unit]
+Description=Atlas Audio Connection Watchdog
+After=atlas-sc.service pipewire.service
+Wants=pipewire.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/inahd/atlas_330
+ExecStart=/usr/bin/python3 /home/inahd/atlas_330/scripts/porter.py
+Restart=always
+RestartSec=5
+Environment=PYTHONPATH=/home/inahd/atlas_330
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,16 @@
+[Unit]
+Description=Atlas Public Tunnel
+After=atlas-kernel.service network.target
+Wants=atlas-kernel.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/inahd/atlas_330
+ExecStart=/usr/local/bin/ngrok http 5000 --log=stdout
+Restart=on-failure
+RestartSec=10
+StandardOutput=append:/tmp/ngrok.log
+StandardError=append:/tmp/ngrok.log
+
+[Install]
+WantedBy=default.target

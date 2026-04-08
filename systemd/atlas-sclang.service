@@ -1,0 +1,15 @@
+[Unit]
+Description=Atlas SuperCollider Language
+After=atlas-sc.service
+Requires=atlas-sc.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/inahd/atlas_330
+ExecStartPre=/bin/sleep 3
+ExecStart=/usr/bin/sclang /home/inahd/atlas_330/sc/atlas_synth.scd
+Restart=on-failure
+RestartSec=10
+
+[Install]
+WantedBy=default.target

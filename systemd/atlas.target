@@ -1,0 +1,7 @@
+[Unit]
+Description=Atlas Field Computer — complete system
+Wants=atlas-sc.service atlas-sclang.service atlas-porter.service atlas-om.service atlas-kernel.service atlas-ngrok.service
+After=atlas-kernel.service
+
+[Install]
+WantedBy=default.target

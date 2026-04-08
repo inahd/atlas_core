@@ -1,0 +1,19 @@
+[Unit]
+Description=Atlas Field Voice — tanpura drone
+After=pipewire.service atlas-porter.service
+Wants=pipewire.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/inahd/atlas_330
+ExecStart=/usr/bin/python3 -u /home/inahd/atlas_330/om.py
+Restart=always
+RestartSec=3
+Environment=PYTHONPATH=/home/inahd/atlas_330
+Environment=PYTHONUSERBASE=/home/inahd/.local
+Environment=PATH=/home/inahd/.local/bin:/usr/local/bin:/usr/bin:/bin
+StandardOutput=append:/home/inahd/atlas_330/om.log
+StandardError=append:/home/inahd/atlas_330/om.log
+
+[Install]
+WantedBy=default.target

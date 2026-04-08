@@ -1,0 +1,15 @@
+[Unit]
+Description=Atlas SuperCollider Server
+After=pipewire.service pipewire-pulse.service
+Wants=pipewire.service
+
+[Service]
+Type=simple
+WorkingDirectory=/home/inahd/atlas_330
+ExecStart=/usr/bin/pw-jack scsynth -u 57110 -o 2 -R 0 -l 1
+Restart=on-failure
+RestartSec=5
+Environment=PIPEWIRE_LATENCY=1024/48000
+
+[Install]
+WantedBy=default.target
