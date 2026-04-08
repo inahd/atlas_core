@@ -428,7 +428,7 @@ function renderMandala(){
   const zones=[
     {id:'C',x:cx,y:cy,label:'Brahmā',color:'#e0b040',link:'/s1',data:()=>p(F,'panchanga.nakshatra','')},
     {id:'N',x:cx,y:cy-r*0.55,label:'Kubera',color:'#2858b8',link:'/s5',data:()=>{const a=G.anchor||G.anchor_plant||G.plant||{};return typeof a==='string'?a:(a.name||a.common_name||'')}},
-    {id:'NE',x:cx+r*0.45,y:cy-r*0.45,label:'Īśāna',color:'#8070dd',link:'/s0',data:()=>p(K,'ashtakala','')||p(K,'period','')},
+    {id:'NE',x:cx+r*0.45,y:cy-r*0.45,label:'Īśāna',color:'#8070dd',link:'/s0',data:()=>(K.ashtakala_period?.name||p(K,'ashtakala','')||p(K,'period',''))},
     {id:'E',x:cx+r*0.55,y:cy,label:'Indra',color:'#e8c86a',link:'/s1',data:()=>{const s=computeResonance();return s+'%'}},
     {id:'SE',x:cx+r*0.45,y:cy+r*0.45,label:'Agni',color:'#c84040',link:'/coherence-score',data:()=>{let s=COH.coherence_score||COH.score||COH.coherence||0;if(typeof s==='number'&&s<=1)s=s*100;return Math.round(s)+'%'}},
     {id:'S',x:cx,y:cy+r*0.55,label:'Yama',color:'#508860',link:'/s6',data:()=>{const l=p(TJ,'dasha_lord','')||p(TJ,'dasha.lord','Mercury');return(typeof l==='object'?l.name||'':l)}},
@@ -528,35 +528,45 @@ function renderLeftPanel(){
 // ════════════════════════════════════════════════
 function renderRightPanel(){
   const el=document.getElementById('right-panel');
-  const ashta=p(K,'ashtakala','')||p(K,'period','');
-  const sakhi=p(K,'sakhi','');
-  const seva=K.seva||K.description||'';
+  // Goloka — actual paths: ashtakala_period.name, active_sakhis[], active_forest.name
+  const ap=K.ashtakala_period||{};
+  const ashta=ap.name||p(K,'ashtakala','')||p(K,'period','');
+  const sakhi=ap.presiding_sakhi||(K.active_sakhis||[])[0]||p(K,'sakhi','');
+  const seva=ap.mood||ap.primary_seva||K.seva||K.description||'';
+  const forest=K.active_forest?.name||K.active_forest?.sanskrit||'';
+  const raga=ap.raga||'';
+  // Guild — actual paths: anchor (string), recommended_activity, timing_quality, moon_phase
   const anchor=G.anchor||G.anchor_plant||G.plant||{};
   const aName=typeof anchor==='string'?anchor:(anchor.name||anchor.common_name||'—');
-  const signal=(G.planting_signal||G.signal||'').toString().toUpperCase();
+  const sanskrit=G.anchor_sanskrit||'';
+  const guildFn=G.guild_function||'';
   const phase=G.moon_phase||G.phase||'';
-  const activity=G.activity||G.recommendation||'';
-  const signalColors={ROOT:'#8b6040',LEAF:'#3a8a4a',FLOWER:'#e8a0c0',FRUIT:'#e0b040',REST:'#3a5060'};
-  const rec=INT.recommendation||INT.current||INT.suggestion||'';
+  const activity=G.recommended_activity||G.activity||G.recommendation||'';
+  const timing=G.timing_quality||'';
+  // Intention — actual paths: intention_id, score (minimal endpoint)
+  const rec=INT.recommendation||INT.current||INT.suggestion||INT.intention_id||'';
   const win=INT.favorable_window||INT.window||INT.time||'';
+  const intScore=INT.score!=null?INT.score:'';
 
   let html='<div class="label">GOLOKA</div>';
   if(ashta)html+='<div style="font-family:Georgia,serif;font-size:12px;color:var(--teal)">'+ashta+'</div>';
   if(sakhi)html+='<div class="sub">'+sakhi+'</div>';
   if(seva)html+='<div class="dim-text" style="line-height:1.4">'+seva+'</div>';
+  if(forest)html+='<div class="dim-text" style="font-style:italic">'+forest+'</div>';
+  if(raga)html+='<div class="dim-text" style="color:var(--teal)">'+raga+'</div>';
   html+='<div class="divider"></div>';
   html+='<div class="label">GUILD</div>';
   html+='<div style="font-family:Georgia,serif;font-size:12px;color:var(--gold)">'+aName+'</div>';
-  if(signal){
-    const sc=signalColors[signal]||'#3a5060';
-    html+='<div style="margin:3px 0"><span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:'+sc+';vertical-align:middle;margin-right:4px"></span><span style="font-size:11px;color:'+sc+'">'+signal+'</span></div>';
-  }
-  if(phase||activity)html+='<div class="dim-text">'+(phase||'')+(phase&&activity?' · ':'')+(activity||'')+'</div>';
+  if(sanskrit)html+='<div class="dim-text" style="font-style:italic">'+sanskrit+'</div>';
+  if(guildFn)html+='<div class="sub">'+guildFn+'</div>';
+  if(phase||activity)html+='<div class="dim-text">'+(phase?phase.replace(/_/g,' '):'')+(phase&&activity?' · ':'')+(activity||'')+'</div>';
+  if(timing)html+='<div class="dim-text">'+timing+'</div>';
   html+='<div class="divider"></div>';
   html+='<div class="label">INTENTION</div>';
   if(rec)html+='<div style="font-size:10px;color:var(--text);line-height:1.4;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden">'+rec+'</div>';
+  else if(intScore)html+='<div class="sub">score: '+intScore+'</div>';
   if(win)html+='<div class="dim-text">'+win+'</div>';
-  if(!rec&&!win)html+='<div class="dim-text">◌</div>';
+  if(!rec&&!win&&!intScore)html+='<div class="dim-text">◌</div>';
   el.innerHTML=html;
 }
 
@@ -740,16 +750,16 @@ function renderPlant(){
   const el=document.getElementById('plant-col');
   const anchor=G.anchor||G.anchor_plant||G.plant||{};
   const name=typeof anchor==='string'?anchor:(anchor.name||anchor.common_name||'—');
-  const latin=anchor.latin||anchor.scientific_name||anchor.species||'';
-  const fn=anchor.guild_function||anchor.function||G.guild_function||'';
+  const sanskrit=G.anchor_sanskrit||anchor.sanskrit||'';
+  const fn=G.guild_function||anchor.guild_function||anchor.function||'';
   const nak=G.nakshatra||p(F,'panchanga.nakshatra','');
-  const graha=anchor.graha||G.graha||'';
-  const grahaColor=grahaColors[graha]||'#3a5060';
-  // Leaf SVG
-  const leaf='<svg width="40" height="40" viewBox="0 0 40 40"><path d="M20 38 Q8 28 8 16 Q8 4 20 2 Q32 4 32 16 Q32 28 20 38Z" fill="'+grahaColor+'" fill-opacity="0.2" stroke="'+grahaColor+'" stroke-width="0.8"/><line x1="20" y1="38" x2="20" y2="8" stroke="'+grahaColor+'" stroke-width="0.5"/></svg>';
+  const element=G.element||'';
+  const elemColors={water:'#285898',fire:'#c84040',earth:'#c87820',air:'#20a88a',ether:'#8070dd'};
+  const leafColor=elemColors[element]||'#3a5060';
+  const leaf='<svg width="40" height="40" viewBox="0 0 40 40"><path d="M20 38 Q8 28 8 16 Q8 4 20 2 Q32 4 32 16 Q32 28 20 38Z" fill="'+leafColor+'" fill-opacity="0.2" stroke="'+leafColor+'" stroke-width="0.8"/><line x1="20" y1="38" x2="20" y2="8" stroke="'+leafColor+'" stroke-width="0.5"/></svg>';
 
   el.innerHTML='<div style="font-family:Georgia,serif;font-size:14px;color:var(--gold)">'+name+'</div>'
-    +(latin?'<div class="dim-text" style="font-style:italic">'+latin+'</div>':'')
+    +(sanskrit?'<div class="dim-text" style="font-style:italic">'+sanskrit+'</div>':'')
     +leaf
     +(fn?'<div class="practice-detail">'+fn+'</div>':'')
     +'<div class="practice-dim">'+nak+'</div>';
@@ -757,13 +767,15 @@ function renderPlant(){
 
 function renderIntention(){
   const el=document.getElementById('intent-col');
-  const rec=INT.recommendation||INT.current||INT.suggestion||'';
+  const rec=INT.recommendation||INT.current||INT.suggestion||INT.intention_id||'';
   const win=INT.favorable_window||INT.window||INT.time||'';
   const act=INT.activity||INT.activity_type||INT.type||'';
+  const intScore=INT.score!=null&&INT.score>0?'score: '+INT.score:'';
   const pada=RDG.pada||RDG.excerpt||RDG.passage||RDG.text||'';
 
   let html='';
   if(rec)html+='<div style="font-family:Georgia,serif;font-size:12px;color:var(--text);line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:4px">'+rec+'</div>';
+  else if(intScore)html+='<div class="sub">'+intScore+'</div>';
   if(win)html+='<div style="font-size:10px;color:var(--teal)">'+win+'</div>';
   if(act)html+='<div style="font-size:10px;color:var(--gold);margin-top:2px">'+act+'</div>';
   if(pada){
