@@ -175,6 +175,7 @@ canvas { display: block; }
         <button class="mtbtn active" id="btn-2d" onclick="setMode('2d')">YANTRA</button>
         <button class="mtbtn" id="btn-3d" onclick="setMode('3d')">TOROID</button>
         <button class="mtbtn" id="btn-bloom" onclick="setMode('bloom')">BLOOM</button>
+        <button class="mtbtn" id="btn-aligned" onclick="setMode('aligned')">ALIGNED</button>
         <button class="mtbtn" id="btn-both" onclick="setMode('both')">FUSED</button>
       </div>
     </div>
@@ -240,6 +241,12 @@ canvas { display: block; }
       <span style="font-size:9px;color:var(--muted)">tithi</span>
       <input type="range" id="tithi-slider" min="1" max="30" value="7" style="flex:1;height:3px;accent-color:var(--gold)">
       <span id="tithi-slider-val" style="font-size:9px;color:var(--gold);min-width:18px">7</span>
+    </div>
+    <div style="display:flex;align-items:center;gap:6px;margin-top:4px">
+      <span style="font-size:9px;color:var(--muted)">k =</span>
+      <input type="range" id="k-slider" min="2" max="12" step="0.1" value="5.5" style="flex:1;height:3px;accent-color:var(--teal)">
+      <span id="k-slider-val" style="font-size:9px;color:var(--teal);min-width:24px">5.5</span>
+      <span id="align-score" style="font-size:9px;color:var(--gold);min-width:60px"></span>
     </div>
   </div>
 
@@ -993,6 +1000,131 @@ function updateBloomSidebar(){
   el.innerHTML=`<span style="color:var(--gold)">${active.length}/15</span> · ${sym} · ${emergence}%`;
 }
 
+// ── ALIGNED MODE — Chladni + Sri Yantra overlay ──────────
+
+// Canonical Sri Yantra 9 triangles (normalized coordinates, centered at 0,0)
+// 5 Shakti (downward ▽) + 4 Shiva (upward ▲)
+const SRI_TRIS=[
+  // Shakti (teal) — downward pointing
+  {up:false,sc:0.95,rot:0,col:'teal'},
+  {up:false,sc:0.72,rot:0.02,col:'teal'},
+  {up:false,sc:0.52,rot:0.04,col:'teal'},
+  {up:false,sc:0.35,rot:0.03,col:'teal'},
+  {up:false,sc:0.18,rot:0,col:'teal'},
+  // Shiva (gold) — upward pointing
+  {up:true,sc:0.85,rot:0,col:'gold'},
+  {up:true,sc:0.62,rot:0.03,col:'gold'},
+  {up:true,sc:0.42,rot:0.02,col:'gold'},
+  {up:true,sc:0.22,rot:0,col:'gold'},
+];
+
+function sriTrianglePoints(tri,R){
+  const pts=[];
+  for(let i=0;i<3;i++){
+    const a=(tri.up?-Math.PI/2:Math.PI/2)+i*TAU/3+tri.rot;
+    pts.push([R*tri.sc*Math.cos(a),R*tri.sc*Math.sin(a)]);
+  }
+  pts.push(pts[0]);// close
+  return pts;
+}
+
+// Sample field value at a point
+function sampleField(x,y,angles,k,t){
+  let f=0;const n=angles.length;
+  for(let i=0;i<n;i++){
+    const a=angles[i];
+    const w1=Math.cos(k*(x*Math.cos(a)+y*Math.sin(a))+t*0.003*i);
+    const w2=Math.cos(k*(x*Math.cos(a+Math.PI/2)+y*Math.sin(a+Math.PI/2))+t*0.003*i);
+    f+=w1*w2;
+  }
+  return f/Math.max(n,1);
+}
+
+function computeAlignment(tithi,k,t){
+  const active=getActiveDevis(tithi);const n=active.length;
+  const angles=active.map((_,i)=>i*TAU/n);
+  const R=1.0;// field radius
+  let totalAbs=0,samples=0;
+  SRI_TRIS.forEach(tri=>{
+    const pts=sriTrianglePoints(tri,R);
+    for(let e=0;e<3;e++){
+      const[x0,y0]=pts[e],[x1,y1]=pts[e+1];
+      for(let s=0;s<22;s++){
+        const frac=s/22;
+        const sx=x0+(x1-x0)*frac,sy=y0+(y1-y0)*frac;
+        totalAbs+=Math.abs(sampleField(sx,sy,angles,k,t));
+        samples++;
+      }
+    }
+  });
+  return Math.max(0,Math.min(100,Math.round((1-totalAbs/samples)*100)));
+}
+
+function drawAligned(opacity){
+  ctx.save();ctx.globalAlpha=opacity;
+  const t=state.t;const tithi=state.tithi||7;
+  ctx.fillStyle='rgba(2,3,10,1)';ctx.fillRect(0,0,W,H);
+
+  // Render Chladni field with tuneK
+  const active=getActiveDevis(tithi);const n=active.length;
+  const angles=active.map((_,i)=>i*TAU/n);
+  const res=Math.min(W,200),resH=Math.round(res*H/W);
+  const img=ctx.createImageData(res,resH);
+  const d=img.data;const fcx=res/2,fcy=resH/2;const scale=Math.min(res,resH)*0.22;
+  const thresh=0.15;
+  for(let py=0;py<resH;py++){
+    for(let px=0;px<res;px++){
+      const x=(px-fcx)/scale,y=(py-fcy)/scale;
+      let field=0;
+      for(let i=0;i<n;i++){
+        const a=angles[i];
+        const w1=Math.cos(tuneK*(x*Math.cos(a)+y*Math.sin(a))+t*0.003*i);
+        const w2=Math.cos(tuneK*(x*Math.cos(a+Math.PI/2)+y*Math.sin(a+Math.PI/2))+t*0.003*i);
+        field+=w1*w2;
+      }
+      field/=n;
+      const idx=(py*res+px)*4;const af=Math.abs(field);
+      if(af<thresh){const b=1-af/thresh;d[idx]=Math.round(224*b);d[idx+1]=Math.round(176*b);d[idx+2]=Math.round(64*b);d[idx+3]=Math.round(220*b)}
+      else if(field>thresh){const v=(field-thresh)/(1-thresh);d[idx]=Math.round(40*v);d[idx+1]=Math.round(30*v);d[idx+2]=Math.round(10*v);d[idx+3]=Math.round(180*v)}
+      else{const v=(-field-thresh)/(1-thresh);d[idx]=Math.round(5*v);d[idx+1]=Math.round(40*v);d[idx+2]=Math.round(35*v);d[idx+3]=Math.round(180*v)}
+    }
+  }
+  const offC=document.createElement('canvas');offC.width=res;offC.height=resH;
+  offC.getContext('2d').putImageData(img,0,0);
+  ctx.imageSmoothingEnabled=true;ctx.drawImage(offC,0,0,W,H);
+
+  // Bindu
+  const bp=0.7+0.3*Math.sin(t*2.5);const bcx=W/2,bcy=H/2;
+  const bg=ctx.createRadialGradient(bcx,bcy,0,bcx,bcy,15);
+  bg.addColorStop(0,clr(GOLD,0.6*bp));bg.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle=bg;ctx.beginPath();ctx.arc(bcx,bcy,15,0,TAU);ctx.fill();
+  ctx.beginPath();ctx.arc(bcx,bcy,3,0,TAU);ctx.fillStyle=clr(GOLD,0.9*bp);ctx.fill();
+
+  // Sri Yantra triangle overlay
+  const R=Math.min(W,H)*0.22;// match field scale
+  SRI_TRIS.forEach(tri=>{
+    const pts=sriTrianglePoints(tri,R);
+    ctx.beginPath();
+    pts.forEach(([px,py],i)=>{
+      const sx=bcx+px,sy=bcy+py;
+      i===0?ctx.moveTo(sx,sy):ctx.lineTo(sx,sy);
+    });
+    ctx.closePath();
+    ctx.strokeStyle=tri.col==='gold'?clr(GOLD,0.35):clr(TEAL,0.35);
+    ctx.lineWidth=0.8;ctx.stroke();
+  });
+
+  // Alignment score
+  const score=computeAlignment(tithi,tuneK,t);
+  document.getElementById('align-score').textContent='alignment: '+score+'%';
+
+  // Status
+  ctx.font=`${W*0.018}px 'Courier New'`;ctx.fillStyle=clr(GOLD,0.6);
+  ctx.textAlign='center';ctx.fillText(`k=${tuneK.toFixed(1)} · ${n} waves · align ${score}%`,bcx,H-W*0.03);
+
+  ctx.restore();
+}
+
 // ── MAIN DRAW ─────────────────────────────────────────────
 function draw(){
   ctx.clearRect(0,0,W,H);
@@ -1006,6 +1138,8 @@ function draw(){
     draw3D(1.0);
   } else if(state.mode==='bloom'){
     drawBloom(1.0);
+  } else if(state.mode==='aligned'){
+    drawAligned(1.0);
   } else { // both
     draw3D(0.55);
     draw2D(0.65);
@@ -1022,7 +1156,7 @@ function loop(){
 // ── MODE TOGGLE ───────────────────────────────────────────
 function setMode(m){
   state.mode=m;
-  ['2d','3d','bloom','both'].forEach(id=>{
+  ['2d','3d','bloom','aligned','both'].forEach(id=>{
     const el=document.getElementById('btn-'+id);
     if(el)el.classList.toggle('active',id===m);
   });
@@ -1134,6 +1268,13 @@ document.getElementById('tithi-slider').addEventListener('input',e=>{
   document.getElementById('tithi-slider-val').textContent=v;
   state.intensity=deriveIntensity(v);
   updateSidebar();
+});
+
+// K slider for frequency tuning
+let tuneK=5.5;
+document.getElementById('k-slider').addEventListener('input',e=>{
+  tuneK=parseFloat(e.target.value);
+  document.getElementById('k-slider-val').textContent=tuneK.toFixed(1);
 });
 </script>
 </body>
