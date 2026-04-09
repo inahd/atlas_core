@@ -176,6 +176,7 @@ canvas { display: block; }
         <button class="mtbtn" id="btn-3d" onclick="setMode('3d')">TOROID</button>
         <button class="mtbtn" id="btn-bloom" onclick="setMode('bloom')">BLOOM</button>
         <button class="mtbtn" id="btn-aligned" onclick="setMode('aligned')">ALIGNED</button>
+        <button class="mtbtn" id="btn-merkaba" onclick="setMode('merkaba')">MERKABA</button>
         <button class="mtbtn" id="btn-both" onclick="setMode('both')">FUSED</button>
       </div>
     </div>
@@ -247,6 +248,11 @@ canvas { display: block; }
       <input type="range" id="k-slider" min="2" max="12" step="0.1" value="5.5" style="flex:1;height:3px;accent-color:var(--teal)">
       <span id="k-slider-val" style="font-size:9px;color:var(--teal);min-width:24px">5.5</span>
       <span id="align-score" style="font-size:9px;color:var(--gold);min-width:60px"></span>
+    </div>
+    <div style="display:flex;align-items:center;gap:6px;margin-top:4px">
+      <span style="font-size:9px;color:var(--muted)">k<sub>S</sub>=</span>
+      <input type="range" id="ks-slider" min="2" max="12" step="0.1" value="3.8" style="flex:1;height:3px;accent-color:var(--gold)">
+      <span id="ks-slider-val" style="font-size:9px;color:var(--gold);min-width:24px">3.8</span>
     </div>
   </div>
 
@@ -1125,6 +1131,110 @@ function drawAligned(opacity){
   ctx.restore();
 }
 
+// ── MERKABA MODE — counter-rotating lunar+solar fields ────
+
+const GRAHAS=[
+  {name:'Sūrya',  ang:0,  col:'#e0b040'},
+  {name:'Candra', ang:40, col:'#d8e8f0'},
+  {name:'Maṅgala',ang:80, col:'#c84040'},
+  {name:'Budha',  ang:120,col:'#40c840'},
+  {name:'Guru',   ang:160,col:'#e0b040'},
+  {name:'Śukra',  ang:200,col:'#e880c0'},
+  {name:'Śani',   ang:240,col:'#8070dd'},
+  {name:'Rāhu',   ang:280,col:'#606060'},
+  {name:'Ketu',   ang:320,col:'#c87820'},
+];
+let tuneKS=3.8;
+
+function drawMerkaba(opacity){
+  ctx.save();ctx.globalAlpha=opacity;
+  const t=state.t;const tithi=state.tithi||7;
+  ctx.fillStyle='rgba(2,3,10,1)';ctx.fillRect(0,0,W,H);
+
+  const active=getActiveDevis(tithi);const nL=active.length;
+  const deviAngles=active.map((_,i)=>i*TAU/nL);
+  const kL=tuneK,kS=tuneKS;
+  const wL=0.003,wS=0.003*(29.53/365.25);
+
+  const res=Math.min(W,180),resH=Math.round(res*H/W);
+  const img=ctx.createImageData(res,resH);
+  const d=img.data;const fcx=res/2,fcy=resH/2;const scale=Math.min(res,resH)*0.22;
+  const thresh=0.12;
+
+  for(let py=0;py<resH;py++){
+    for(let px=0;px<res;px++){
+      const x=(px-fcx)/scale,y=(py-fcy)/scale;
+
+      // Inner: 15 Devī, CCW
+      let fi=0;
+      for(let i=0;i<nL;i++){
+        const a=deviAngles[i];
+        const w1=Math.cos(kL*(x*Math.cos(a)+y*Math.sin(a))+wL*t*i);
+        const w2=Math.cos(kL*(x*Math.cos(a+Math.PI/2)+y*Math.sin(a+Math.PI/2))+wL*t*i);
+        fi+=w1*w2;
+      }
+      fi/=nL;
+
+      // Outer: 9 Grahas, CW (negative rotation)
+      let fo=0;
+      for(let j=0;j<9;j++){
+        const a=GRAHAS[j].ang*Math.PI/180-wS*t*j;
+        const w1=Math.cos(kS*(x*Math.cos(a)+y*Math.sin(a)));
+        const w2=Math.cos(kS*(x*Math.cos(a+Math.PI/2)+y*Math.sin(a+Math.PI/2)));
+        fo+=w1*w2;
+      }
+      fo/=9;
+
+      // Product field
+      const ft=fi*fo;
+      const idx=(py*res+px)*4;const aft=Math.abs(ft);
+      if(aft<thresh){
+        const b=1-aft/thresh;
+        d[idx]=Math.round(255*b);d[idx+1]=Math.round(220*b);d[idx+2]=Math.round(120*b);d[idx+3]=Math.round(230*b);
+      }else{
+        const ri=Math.abs(fi),ro=Math.abs(fo);
+        if(ri>ro){const v=Math.min(1,ri*0.6);d[idx]=Math.round(5*v);d[idx+1]=Math.round(50*v);d[idx+2]=Math.round(45*v);d[idx+3]=Math.round(160*v)}
+        else{const v=Math.min(1,ro*0.6);d[idx]=Math.round(50*v);d[idx+1]=Math.round(35*v);d[idx+2]=Math.round(5*v);d[idx+3]=Math.round(160*v)}
+      }
+    }
+  }
+  const offC=document.createElement('canvas');offC.width=res;offC.height=resH;
+  offC.getContext('2d').putImageData(img,0,0);
+  ctx.imageSmoothingEnabled=true;ctx.drawImage(offC,0,0,W,H);
+
+  // Bindu
+  const bp=0.7+0.3*Math.sin(t*2.5);const bcx=W/2,bcy=H/2;
+  const bg=ctx.createRadialGradient(bcx,bcy,0,bcx,bcy,15);
+  bg.addColorStop(0,clr(GOLD,0.7*bp));bg.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle=bg;ctx.beginPath();ctx.arc(bcx,bcy,15,0,TAU);ctx.fill();
+  ctx.beginPath();ctx.arc(bcx,bcy,3,0,TAU);ctx.fillStyle=clr(GOLD,0.9*bp);ctx.fill();
+
+  // Graha dots on outer ring
+  const outerR=Math.min(W,H)*0.44;
+  GRAHAS.forEach((g,j)=>{
+    const ang=g.ang*Math.PI/180-t*0.001;
+    const gx=bcx+outerR*Math.cos(ang),gy=bcy+outerR*Math.sin(ang);
+    ctx.beginPath();ctx.arc(gx,gy,4,0,TAU);ctx.fillStyle=g.col;ctx.fill();
+    ctx.font=`${W*0.012}px 'Courier New'`;ctx.fillStyle=g.col;ctx.textAlign='center';
+    ctx.fillText(g.name,gx,gy-7);
+  });
+
+  // Devī dots on inner ring
+  const innerR=Math.min(W,H)*0.28;
+  active.forEach((ti,i)=>{
+    const devi=NITYA[ti-1];const ang=i*TAU/nL+t*0.002;
+    const dx=bcx+innerR*Math.cos(ang),dy=bcy+innerR*Math.sin(ang);
+    const[r,g,b]=devi.col;
+    ctx.beginPath();ctx.arc(dx,dy,3,0,TAU);ctx.fillStyle=`rgba(${r},${g},${b},0.7)`;ctx.fill();
+  });
+
+  // Status
+  ctx.font=`${W*0.016}px 'Courier New'`;ctx.fillStyle=clr(GOLD,0.5);ctx.textAlign='center';
+  ctx.fillText(`merkaba · ${nL} devī ↺ · 9 graha ↻ · kL=${kL.toFixed(1)} kS=${kS.toFixed(1)}`,bcx,H-W*0.025);
+
+  ctx.restore();
+}
+
 // ── MAIN DRAW ─────────────────────────────────────────────
 function draw(){
   ctx.clearRect(0,0,W,H);
@@ -1140,6 +1250,8 @@ function draw(){
     drawBloom(1.0);
   } else if(state.mode==='aligned'){
     drawAligned(1.0);
+  } else if(state.mode==='merkaba'){
+    drawMerkaba(1.0);
   } else { // both
     draw3D(0.55);
     draw2D(0.65);
@@ -1156,7 +1268,7 @@ function loop(){
 // ── MODE TOGGLE ───────────────────────────────────────────
 function setMode(m){
   state.mode=m;
-  ['2d','3d','bloom','aligned','both'].forEach(id=>{
+  ['2d','3d','bloom','aligned','merkaba','both'].forEach(id=>{
     const el=document.getElementById('btn-'+id);
     if(el)el.classList.toggle('active',id===m);
   });
@@ -1275,6 +1387,10 @@ let tuneK=5.5;
 document.getElementById('k-slider').addEventListener('input',e=>{
   tuneK=parseFloat(e.target.value);
   document.getElementById('k-slider-val').textContent=tuneK.toFixed(1);
+});
+document.getElementById('ks-slider').addEventListener('input',e=>{
+  tuneKS=parseFloat(e.target.value);
+  document.getElementById('ks-slider-val').textContent=tuneKS.toFixed(1);
 });
 </script>
 </body>
