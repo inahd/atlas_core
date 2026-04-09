@@ -881,7 +881,7 @@ function computeBloomField(tithi,W,H,t){
   // Equal angular spacing — clean N-fold symmetry
   const angles=active.map((_,i)=>i*TAU/n);
   const img=ctx.createImageData(W,H);
-  const d=img.data;const cx=W/2,cy=H/2;const scale=Math.min(W,H)*0.35;
+  const d=img.data;const cx=W/2,cy=H/2;const scale=Math.min(W,H)*0.22;
   const k=5.5;const thresh=0.15;
   for(let py=0;py<H;py++){
     for(let px=0;px<W;px++){
@@ -889,8 +889,8 @@ function computeBloomField(tithi,W,H,t){
       let field=0;
       for(let i=0;i<n;i++){
         const a=angles[i];
-        const w1=Math.cos(k*(x*Math.cos(a)+y*Math.sin(a))+t*0.008*i);
-        const w2=Math.cos(k*(x*Math.cos(a+Math.PI/2)+y*Math.sin(a+Math.PI/2))+t*0.008*i);
+        const w1=Math.cos(k*(x*Math.cos(a)+y*Math.sin(a))+t*0.003*i);
+        const w2=Math.cos(k*(x*Math.cos(a+Math.PI/2)+y*Math.sin(a+Math.PI/2))+t*0.003*i);
         field+=w1*w2;
       }
       field/=active.length;
@@ -931,6 +931,13 @@ function drawBloom(opacity=1.0){
   offC.getContext('2d').putImageData(fieldImg,0,0);
   ctx.imageSmoothingEnabled=true;
   ctx.drawImage(offC,0,0,W,H);
+
+  // Bindu marker at center
+  const bp=0.7+0.3*Math.sin(t*2.5);const bcx=W/2,bcy=H/2;
+  const bg=ctx.createRadialGradient(bcx,bcy,0,bcx,bcy,20);
+  bg.addColorStop(0,clr(GOLD,0.8*bp));bg.addColorStop(1,'rgba(0,0,0,0)');
+  ctx.fillStyle=bg;ctx.beginPath();ctx.arc(bcx,bcy,20,0,TAU);ctx.fill();
+  ctx.beginPath();ctx.arc(bcx,bcy,4,0,TAU);ctx.fillStyle=clr(GOLD,0.95*bp);ctx.fill();
 
   // Thomson sphere projection — Devi positions as dots
   const cx=W/2,cy=H/2,sR=Math.min(W,H)*0.35;
