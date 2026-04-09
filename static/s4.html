@@ -1371,7 +1371,7 @@ state.intensity=deriveIntensity(state.tithi);
 updateSidebar();
 fetchField();
 loop();
-setInterval(fetchField,300000);
+setInterval(fetchField,5000);// poll every 5s for override support
 
 // Tithi slider for bloom testing
 document.getElementById('tithi-slider').addEventListener('input',e=>{

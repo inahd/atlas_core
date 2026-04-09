@@ -3799,9 +3799,38 @@ def create_app():
         except Exception as e:
             return jsonify({"error": str(e)}), 500
 
+    _field_override = {}
+    _field_override_ts = [0]
+
+    @app.route("/field/override", methods=["POST", "DELETE"])
+    def _field_override_route():
+        if request.method == "DELETE":
+            _field_override.clear()
+            return jsonify({"cleared": True})
+        data = request.json or {}
+        _field_override.update(data)
+        _field_override_ts[0] = __import__("time").time()
+        return jsonify({"override": _field_override})
+
+    def _merge_override(fs):
+        """Deep merge override into field state."""
+        if not _field_override:
+            return fs
+        # Auto-expire after 120s
+        if __import__("time").time() - _field_override_ts[0] > 120:
+            _field_override.clear()
+            return fs
+        for k, v in _field_override.items():
+            if isinstance(v, dict) and isinstance(fs.get(k), dict):
+                fs[k].update(v)
+            else:
+                fs[k] = v
+        return fs
+
     @app.route("/field")
     def _field():
         fs = field_state()
+        fs = _merge_override(fs)
         return app.response_class(
             json.dumps(fs, default=_json_serial, ensure_ascii=False),
             mimetype="application/json",
@@ -9836,6 +9865,32 @@ def create_app():
     @app.route('/hexd-portal')
     def _hexd_portal():
         return send_from_directory('static', 'hexd-portal.html')
+
+    # ── Snapshots ────────
+    @app.route('/snapshot', methods=['POST'])
+    def _snapshot():
+        data = request.json or {}
+        url = data.get('url', 'http://localhost:5000/s4')
+        filename = data.get('filename', 'snapshot.png')
+        folder = data.get('folder', 'research/snapshots')
+        wait_ms = data.get('wait_ms', 2000)
+        vp = data.get('viewport', {'width': 1400, 'height': 900})
+        path = os.path.join(folder, filename)
+        os.makedirs(folder, exist_ok=True)
+        try:
+            from playwright.sync_api import sync_playwright
+            with sync_playwright() as pw:
+                browser = pw.chromium.launch()
+                page = browser.new_page(viewport=vp)
+                page.goto(url)
+                page.wait_for_timeout(wait_ms)
+                page.screenshot(path=path)
+                browser.close()
+            return jsonify({'path': path, 'filename': filename})
+        except ImportError:
+            return jsonify({'error': 'playwright not installed — pip install playwright && playwright install chromium'}), 501
+        except Exception as e:
+            return jsonify({'error': str(e)}), 500
 
     # ── Rings ────────
     @app.route('/rings')
