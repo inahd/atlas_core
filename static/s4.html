@@ -875,22 +875,21 @@ function getActiveDevis(tithi){
 }
 
 // Chladni standing wave interference field
-let _bloomCache={tithi:-1,img:null};
-function computeBloomField(tithi,W,H){
-  if(_bloomCache.tithi===tithi&&_bloomCache.img&&_bloomCache.img.width===W)return _bloomCache.img;
+function computeBloomField(tithi,W,H,t){
   const active=getActiveDevis(tithi);
-  // Wave angles from Thomson positions
-  const angles=active.map(ti=>{const pos=THOMSON[ti-1];return Math.atan2(pos[1],pos[0])});
+  const n=active.length;
+  // Equal angular spacing — clean N-fold symmetry
+  const angles=active.map((_,i)=>i*TAU/n);
   const img=ctx.createImageData(W,H);
   const d=img.data;const cx=W/2,cy=H/2;const scale=Math.min(W,H)*0.35;
-  const k=3.2;const thresh=0.15;
+  const k=5.5;const thresh=0.15;
   for(let py=0;py<H;py++){
     for(let px=0;px<W;px++){
       const x=(px-cx)/scale,y=(py-cy)/scale;
       let field=0;
-      for(let i=0;i<angles.length;i++){
+      for(let i=0;i<n;i++){
         const a=angles[i];
-        field+=Math.cos(k*(x*Math.cos(a)+y*Math.sin(a)));
+        field+=Math.cos(k*(x*Math.cos(a)+y*Math.sin(a))+t*0.008*i);
       }
       field/=active.length;
       const idx=(py*W+px)*4;
@@ -910,7 +909,7 @@ function computeBloomField(tithi,W,H){
       }
     }
   }
-  _bloomCache={tithi,img};return img;
+  return img;
 }
 
 // Draw BLOOM mode
@@ -923,8 +922,8 @@ function drawBloom(opacity=1.0){
   ctx.fillStyle='rgba(2,3,10,1)';ctx.fillRect(0,0,W,H);
 
   // Interference field (lower resolution for performance)
-  const res=Math.min(W,300);const resH=Math.round(res*H/W);
-  const fieldImg=computeBloomField(tithi,res,resH);
+  const res=Math.min(W,200);const resH=Math.round(res*H/W);
+  const fieldImg=computeBloomField(tithi,res,resH,t);
   // Draw scaled up
   const offC=document.createElement('canvas');offC.width=res;offC.height=resH;
   offC.getContext('2d').putImageData(fieldImg,0,0);
@@ -1123,7 +1122,6 @@ setInterval(fetchField,300000);
 document.getElementById('tithi-slider').addEventListener('input',e=>{
   const v=parseInt(e.target.value);
   state.tithi=v;
-  _bloomCache.tithi=-1;// invalidate
   document.getElementById('tithi-slider-val').textContent=v;
   state.intensity=deriveIntensity(v);
   updateSidebar();
