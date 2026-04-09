@@ -889,7 +889,9 @@ function computeBloomField(tithi,W,H,t){
       let field=0;
       for(let i=0;i<n;i++){
         const a=angles[i];
-        field+=Math.cos(k*(x*Math.cos(a)+y*Math.sin(a))+t*0.008*i);
+        const w1=Math.cos(k*(x*Math.cos(a)+y*Math.sin(a))+t*0.008*i);
+        const w2=Math.cos(k*(x*Math.cos(a+Math.PI/2)+y*Math.sin(a+Math.PI/2))+t*0.008*i);
+        field+=w1*w2;
       }
       field/=active.length;
       const idx=(py*W+px)*4;
