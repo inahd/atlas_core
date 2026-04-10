@@ -1,0 +1,96 @@
+# Passage Corpus Audit
+
+Date: 2026-04-10
+
+## JSONL Files: 82
+- `ayurveda/bhavaprakasha_chunks.jsonl` — 138 chunks
+- `ayurveda/bhavaprakasha_sa_chunks.jsonl` — 135 chunks
+- `ayurveda/charaka_samhita_chunks.jsonl` — 731 chunks
+- `ayurveda/charaka_samhita_en_chunks.jsonl` — 2753 chunks
+- `ayurveda/charaka_samhita_sa_chunks.jsonl` — 636 chunks
+- `ayurveda/sushruta_samhita_en_chunks.jsonl` — 2749 chunks
+- `ayurveda/yogasataka_chunks.jsonl` — 88 chunks
+- `cosmology/bhagavata_purana_01_chunks.jsonl` — 269 chunks
+- `cosmology/bhagavata_purana_05_chunks.jsonl` — 334 chunks
+- `cosmology/bhagavata_purana_10_chunks.jsonl` — 1158 chunks
+- `cosmology/brahma_vaivarta_purana_en_chunks.jsonl` — 1195 chunks
+- `cosmology/devi_bhagavata_en_chunks.jsonl` — 1518 chunks
+- `cosmology/markandeya_purana_en_chunks.jsonl` — 2540 chunks
+- `cosmology/shiva_purana_en_chunks.jsonl` — 1970 chunks
+- `cosmology/vishnu_purana_en_chunks.jsonl` — 240 chunks
+- `dharma/arthashastra_en_chunks.jsonl` — 1997 chunks
+- `dharma/manusmriti_en_chunks.jsonl` — 980 chunks
+- `dharma/nitisara_en_chunks.jsonl` — 1067 chunks
+- `epics/harivamsa_en_chunks.jsonl` — 834 chunks
+- `epics/mahabharata_en_chunks.jsonl` — 27686 chunks
+- `epics/mahabharata_sa_10_chunks.jsonl` — 234 chunks
+- `epics/mahabharata_sa_11_chunks.jsonl` — 3456 chunks
+- `epics/mahabharata_sa_12_chunks.jsonl` — 2771 chunks
+- `epics/mahabharata_sa_13_chunks.jsonl` — 1068 chunks
+- `epics/mahabharata_sa_14_chunks.jsonl` — 297 chunks
+- `epics/mahabharata_sa_15_chunks.jsonl` — 133 chunks
+- `epics/mahabharata_sa_16_chunks.jsonl` — 89 chunks
+- `epics/mahabharata_sa_17_chunks.jsonl` — 129 chunks
+- `epics/mahabharata_sa_1_chunks.jsonl` — 1135 chunks
+- `epics/mahabharata_sa_2_chunks.jsonl` — 2721 chunks
+- `epics/mahabharata_sa_3_chunks.jsonl` — 1100 chunks
+- `epics/mahabharata_sa_4_chunks.jsonl` — 1530 chunks
+- `epics/mahabharata_sa_5_chunks.jsonl` — 1361 chunks
+- `epics/mahabharata_sa_6_chunks.jsonl` — 2293 chunks
+- `epics/mahabharata_sa_7_chunks.jsonl` — 1400 chunks
+- `epics/mahabharata_sa_8_chunks.jsonl` — 857 chunks
+- `epics/mahabharata_sa_9_chunks.jsonl` — 241 chunks
+- `epics/mahabharata_sa_chunks.jsonl` — 2691 chunks
+- `epics/ramayana_en_chunks.jsonl` — 648 chunks
+- `gaudiya/bg_chunks.jsonl` — 0 chunks
+- `gaudiya/bg_verses_index.jsonl` — 18 chunks
+- `gaudiya/bhagavatam_chunks.jsonl` — 15034 chunks
+- `gaudiya/bhakti_rasamrita_sindhu_en_1_chunks.jsonl` — 154 chunks
+- `gaudiya/bhakti_rasamrita_sindhu_en_chunks.jsonl` — 2053 chunks
+- `gaudiya/brahma_samhita_chunks.jsonl` — 54 chunks
+- `gaudiya/brihad_bhagavatamrita_en_chunks.jsonl` — 3130 chunks
+- `gaudiya/hari_bhakti_vilasa_en_chunks.jsonl` — 2649 chunks
+- `gaudiya/sikshashtakam_chunks.jsonl` — 52 chunks
+- `gaudiya/vedanta_sutra_en_chunks.jsonl` — 3757 chunks
+- `jyotish/brihat_jataka_chunks.jsonl` — 222 chunks
+- `jyotish/brihat_jataka_en_chunks.jsonl` — 1597 chunks
+- `jyotish/brihat_jataka_sa_chunks.jsonl` — 205 chunks
+- `jyotish/brihat_parashara_hora_en_chunks.jsonl` — 1416 chunks
+- `jyotish/brihat_samhita_chunks.jsonl` — 907 chunks
+- `jyotish/jataka_parijata_en_chunks.jsonl` — 1260 chunks
+- `jyotish/surya_siddhanta_chunks.jsonl` — 167 chunks
+- `jyotish/surya_siddhanta_en_chunks.jsonl` — 2299 chunks
+- `jyotish/surya_siddhanta_sa_chunks.jsonl` — 160 chunks
+- `vastu/brihat_samhita_en_chunks.jsonl` — 1984 chunks
+- `vastu/brihat_samhita_sa_chunks.jsonl` — 790 chunks
+- `vastu/manasara_en_chunks.jsonl` — 120 chunks
+- `vedic/aitareya_upanishad_sa_chunks.jsonl` — 75 chunks
+- `vedic/atharvaveda_en_chunks.jsonl` — 83 chunks
+- `vedic/isha_upanishad_sa_chunks.jsonl` — 67 chunks
+- `vedic/rigveda_en_chunks.jsonl` — 2984 chunks
+- `vedic/upanishads_english_en_1_chunks.jsonl` — 2128 chunks
+- `vedic/upanishads_english_en_chunks.jsonl` — 3806 chunks
+- `yoga/gheranda_samhita_chunks.jsonl` — 135 chunks
+- `yoga/gheranda_samhita_en_chunks.jsonl` — 102 chunks
+- `yoga/gheranda_samhita_sa_chunks.jsonl` — 132 chunks
+- `yoga/hatha_yoga_pradipika_chunks.jsonl` — 145 chunks
+- `yoga/hatha_yoga_pradipika_en_chunks.jsonl` — 272 chunks
+- `yoga/hatha_yoga_pradipika_sa_chunks.jsonl` — 140 chunks
+- `yoga/kularnava_tantra_en_chunks.jsonl` — 1547 chunks
+- `yoga/mahanirvana_tantra_en_chunks.jsonl` — 5737 chunks
+- `yoga/shiva_samhita_en_chunks.jsonl` — 5737 chunks
+- `yoga/tantraloka_en_chunks.jsonl` — 932 chunks
+- `yoga/tantraloka_sa_chunks.jsonl` — 1312 chunks
+- `yoga/vijnana_bhairava_en_chunks.jsonl` — 882 chunks
+- `yoga/yoga_sutras_chunks.jsonl` — 82 chunks
+- `yoga/yoga_sutras_en_chunks.jsonl` — 1485 chunks
+- `yoga/yoga_sutras_sa_chunks.jsonl` — 88 chunks
+
+## Summary
+- Total chunks: 139071
+- Traditions: {'?': 81}
+- Languages: {'?': 81}
+
+## Registry: 81 entries
+- Registered but missing: 1
+- Present but unregistered: 2
