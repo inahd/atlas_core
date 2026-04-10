@@ -1,0 +1,39 @@
+npu_engine/engines/body_engine.py:4:    datasets/marma/body_region_marma.csv  — body region → marma names
+npu_engine/engines/body_engine.py:5:    datasets/marma/marma_field.csv        — full marma details (element, dosha, herb, raga)
+npu_engine/engines/guild_engine.py:7:    datasets/plants/nakshatra_plants.csv    — nakshatra → anchor plant
+npu_engine/engines/guild_engine.py:8:    datasets/plants/guild_relations.csv     — anchor → companions + conflicts
+npu_engine/engines/guild_engine.py:9:    datasets/plants/guild_principles.csv    — permaculture/vedic principles
+npu_engine/library_kernel.py:75:        "path": "datasets/sanskrit/matrika_50.csv",
+npu_engine/library_kernel.py:82:        "path": "datasets/geography/sacred_sites_india.csv",
+npu_engine/library_kernel.py:89:        "path": "datasets/geography/vraja_parikrama.csv",
+npu_engine/library_kernel.py:96:        "path": "datasets/sources/passages.csv",
+npu_engine/library_kernel.py:103:        "path": "datasets/karma/dasha_meanings.csv",
+npu_engine/library_kernel.py:110:        "path": "datasets/marma/marma_coordinates.csv",
+npu_engine/library_kernel.py:117:        "path": "datasets/cosmology/gaudiya_festivals.csv",
+npu_engine/passage_resolver.py:5:  1. datasets/sources/entity_index.json → chunk IDs → JSONL chunks
+npu_engine/passage_resolver.py:6:  2. datasets/sources/passages.csv → tagged passages
+npu_engine/passage_resolver.py:7:  3. datasets/relations/text_entity_relations.csv → chunk→entity links
+npu_engine/field/system_engine.py:8:    datasets/system/system_topology.csv  — canonical hardware/software graph
+npu_engine/field/system_engine.py:9:    datasets/system/capability_map.csv   — what kanjira can do now vs planned
+npu_engine/field/symbol_engine.py:5:  datasets/symbols/emoji_vedic_map.csv  — emoji → varna/graha/element/layer
+npu_engine/field/symbol_engine.py:6:  datasets/cosmology/graha_master.csv   — graha symbols
+npu_engine/field/symbol_engine.py:7:  datasets/cosmology/nitya_devi_master.csv — devi bija + devanagari
+npu_engine/field/symbol_engine.py:8:  datasets/astro/nakshatra_master.csv   — nakshatra glyph + emoji
+npu_engine/field/symbol_engine.py:9:  datasets/iching/hexagrams.csv         — hexagram symbols
+npu_engine/field/symbol_engine.py:10:  datasets/iching/trigrams.csv          — trigram symbols
+npu_engine/field/goloka_engine.py:9:    datasets/cosmology/ashtakala.csv        — 8 periods of the day
+npu_engine/field/goloka_engine.py:10:    datasets/cosmology/vraja_forests.csv    — 12 Vraja forests
+npu_engine/field/goloka_engine.py:11:    datasets/cosmology/nitya_devi_master.csv — 15 Nitya Devis
+npu_engine/field/goloka_engine.py:12:    datasets/cosmology/daily_program.csv    — 8 daily rituals
+npu_engine/field/code_engine.py:8:    datasets/system/code_topology.csv  — file dependency graph
+npu_engine/game/orientation_engine.py:4:Reads datasets/game/sura_asura_map.csv.
+npu_engine/game/lineage_engine.py:4:Reads datasets/game/lineages.csv.
+npu_engine/layer_engine.py:13:Reads datasets/layer_mapping.csv for the mapping.
+npu_engine/tanpura_engine.py:8:String definitions loaded from datasets/sound/tanpura_strings.csv.
+npu_engine/tanpura_engine.py:366:    String definitions from datasets/sound/tanpura_strings.csv.
+kernel.py:3426:        "source": "datasets/ayurveda/herb_exemplars.csv + datasets/ayurveda/dosha_nakshatra_matrix.csv",
+kernel.py:3446:        "source": "datasets/marma/body_region_marma.csv",
+kernel.py:3468:        "source": "datasets/ratna/graha_gems.csv",
+kernel.py:3491:        "source": "datasets/gandharva/raga_therapeutic.csv" + (f" ({source_text})" if source_text else ""),
+kernel.py:3512:        "source": "datasets/vastu/perimeter_deities.csv",
+kernel.py:3553:    """Load a canonical plant entity from datasets/plants/<entity_id>.json.
