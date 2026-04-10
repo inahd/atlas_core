@@ -18,10 +18,13 @@ import re as _re
 import shutil
 import sqlite3
 import sys
+import time
 import unicodedata
 from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any, Dict, Optional
+
+START_TIME = time.time()
 
 # ══════════════════════════════════════════════════════════════
 # COHERENCE ENGINE — relational validation
@@ -586,6 +589,168 @@ def _load_csv(relpath):
         return []
     with open(p, encoding="utf-8") as f:
         return list(csv.DictReader(f))
+
+
+# ── Full corpus registry + cross-corpus search ──────────────
+_full_corpus_registry: Optional[list] = None
+
+
+def _load_full_corpus_registry() -> list:
+    """Load the full 82-entry corpus registry from corpus_registry.json."""
+    global _full_corpus_registry
+    if _full_corpus_registry is not None:
+        return _full_corpus_registry
+    reg_path = _HERE / "datasets" / "sources" / "corpus_registry.json"
+    if reg_path.exists():
+        _full_corpus_registry = json.loads(reg_path.read_text(encoding="utf-8"))
+    else:
+        _full_corpus_registry = []
+    return _full_corpus_registry
+
+
+_text_entity_relations: Optional[list] = None
+
+
+def _load_text_entity_relations() -> list:
+    """Load text_entity_relations.csv for entity-linked corpus search."""
+    global _text_entity_relations
+    if _text_entity_relations is not None:
+        return _text_entity_relations
+    p = _DATA / "relations" / "text_entity_relations.csv"
+    if p.exists():
+        with p.open(encoding="utf-8") as f:
+            _text_entity_relations = list(csv.DictReader(f))
+    else:
+        _text_entity_relations = []
+    return _text_entity_relations
+
+
+def _search_full_corpus(query: str, tradition: str = "",
+                        limit: int = 10) -> list:
+    """Search across all corpus JSONL files. Returns ranked results."""
+    q = str(query or "").strip().lower()
+    if not q:
+        return []
+    registry = _load_full_corpus_registry()
+    results = []
+    terms = q.split()
+    for entry in registry:
+        if tradition and entry.get("tradition", "") != tradition:
+            continue
+        cp = entry.get("chunks_path", "")
+        chunk_path = _HERE / cp if cp else None
+        if not chunk_path or not chunk_path.exists():
+            continue
+        for record in _iter_jsonl_records(chunk_path):
+            hay = " ".join(
+                str(record.get(k, "")).strip()
+                for k in ("verse_ref", "text", "translation", "purport",
+                           "sanskrit", "iast", "synonyms")
+                if str(record.get(k, "")).strip()
+            ).lower()
+            if not all(t in hay for t in terms):
+                continue
+            pos = hay.find(terms[0])
+            start = max(0, pos - 80)
+            end = min(len(hay), pos + 200)
+            snippet = hay[start:end].strip()
+            results.append({
+                "corpus_id": entry.get("id", ""),
+                "title": entry.get("title", entry.get("name", "")),
+                "tradition": entry.get("tradition", ""),
+                "reference": record.get("verse_ref", "") or str(record.get("id", "")),
+                "text": snippet or hay[:280],
+                "domain": record.get("domain", entry.get("domain", "")),
+                "authority": entry.get("authority", 0.5),
+            })
+            if len(results) >= limit:
+                break
+        if len(results) >= limit:
+            break
+    results.sort(key=lambda r: -r.get("authority", 0))
+    return results[:limit]
+
+
+def _entity_corpus_search(entity_id: str, limit: int = 10) -> list:
+    """Find corpus chunks linked to a specific entity via text_entity_relations."""
+    rels = _load_text_entity_relations()
+    registry = _load_full_corpus_registry()
+    reg_by_id = {e["id"]: e for e in registry}
+
+    # Normalize entity_id: accept both nakshatra:rohini and nakshatra_rohini
+    entity_norm = entity_id.replace(":", "_").lower()
+    entity_colon = entity_id.replace("_", ":", 1).lower() if "_" in entity_id else entity_id.lower()
+
+    # Find matching relations
+    matched_chunks = []
+    for row in rels:
+        to_id = str(row.get("to_id", "")).lower()
+        if to_id != entity_norm and to_id != entity_colon:
+            continue
+        from_id = row.get("from_id", "")
+        # from_id format: chunk:source_name:chunk_num
+        parts = from_id.split(":")
+        if len(parts) < 3 or parts[0] != "chunk":
+            continue
+        source_name = parts[1]
+        chunk_num = parts[2]
+        matched_chunks.append({
+            "source": source_name,
+            "chunk_num": chunk_num,
+            "confidence": float(row.get("confidence", 0.5)),
+            "excerpt": row.get("excerpt", "")[:300],
+            "tradition": row.get("tradition", ""),
+        })
+        if len(matched_chunks) >= limit * 3:
+            break
+
+    # Resolve chunks to full text
+    results = []
+    for mc in sorted(matched_chunks, key=lambda r: -r["confidence"]):
+        source = mc["source"]
+        reg_entry = reg_by_id.get(source, {})
+        cp = reg_entry.get("chunks_path", "")
+        chunk_path = _HERE / cp if cp else None
+        if not chunk_path or not chunk_path.exists():
+            # Try finding the JSONL by glob
+            candidates = list((_HERE / "datasets" / "sources").rglob(
+                f"{source}_chunks.jsonl"))
+            if candidates:
+                chunk_path = candidates[0]
+            else:
+                results.append({
+                    "corpus_id": source,
+                    "title": reg_entry.get("title", source),
+                    "tradition": mc["tradition"],
+                    "reference": f"chunk {mc['chunk_num']}",
+                    "text": mc["excerpt"],
+                    "entity_id": entity_id,
+                    "confidence": mc["confidence"],
+                })
+                if len(results) >= limit:
+                    break
+                continue
+        target_id = mc["chunk_num"]
+        for record in _iter_jsonl_records(chunk_path):
+            if str(record.get("id", "")) == target_id:
+                text = " ".join(
+                    str(record.get(k, "")).strip()
+                    for k in ("text", "translation", "purport")
+                    if str(record.get(k, "")).strip()
+                )[:400]
+                results.append({
+                    "corpus_id": source,
+                    "title": reg_entry.get("title", source),
+                    "tradition": mc["tradition"] or reg_entry.get("tradition", ""),
+                    "reference": record.get("verse_ref", "") or target_id,
+                    "text": text or mc["excerpt"],
+                    "entity_id": entity_id,
+                    "confidence": mc["confidence"],
+                })
+                break
+        if len(results) >= limit:
+            break
+    return results[:limit]
 
 
 def _load_json(relpath):
@@ -3782,7 +3947,15 @@ def create_app():
 
     @app.route("/health")
     def _health():
-        return jsonify({"status": "alive", "timestamp": datetime.now().isoformat()})
+        health = {"status": "ok", "timestamp": time.time(), "uptime": time.time() - START_TIME}
+        try:
+            p = calc_panchanga()
+            health["field"] = "ok"
+            health["nakshatra"] = p.get("nakshatra")
+        except Exception as e:
+            health["field"] = f"error: {e}"
+            health["status"] = "degraded"
+        return jsonify(health)
 
     @app.route("/osc", methods=["POST", "OPTIONS"])
     def _osc_proxy():
@@ -4867,6 +5040,12 @@ def create_app():
             g = GraphEngine()
             fs = field_state()
             spec = g.get_soundspec(fs)
+            # Attach chandas (metre) context to sound spec
+            try:
+                from npu_engine.field.chandas_engine import derive_chandas
+                spec['chandas'] = derive_chandas(fs)
+            except Exception:
+                pass
             return app.response_class(
                 json.dumps(spec, default=_json_serial, ensure_ascii=False),
                 mimetype="application/json",
@@ -4956,9 +5135,28 @@ def create_app():
 
     @app.route("/sound/state")
     def _sound_state():
-        """Current sound engine state. Derived from field if engine not active."""
+        """Current sound engine state via derive_sound_spec."""
         fs = field_state()
-        payload = fs.get("sound_state", _derive_sound_state(fs))
+        try:
+            from npu_engine.sound.sound_engine import derive_sound_spec
+            spec = derive_sound_spec(fs, _sound_mode)
+            # Merge inline sound_state for backward compat
+            inline = _derive_sound_state(fs)
+            spec["raga_detail"] = {
+                "notes": inline.get("raga_notes", []),
+                "aroha": inline.get("raga_aroha", []),
+                "avaroha": inline.get("raga_avaroha", []),
+                "vadi": inline.get("raga_vadi", ""),
+                "samvadi": inline.get("raga_samvadi", ""),
+            }
+            spec["tala_detail"] = {
+                "name": inline.get("tala", ""),
+                "beats": inline.get("tala_beats", 8),
+                "bols": inline.get("tala_bols", []),
+            }
+            payload = spec
+        except Exception:
+            payload = fs.get("sound_state", _derive_sound_state(fs))
         return app.response_class(
             json.dumps(payload, default=_json_serial, ensure_ascii=False),
             mimetype="application/json",
@@ -5231,14 +5429,34 @@ def create_app():
 
     @app.route("/sound/raga", methods=["POST"])
     def _sound_raga():
-        data = request.get_json(force=True)
+        """Set active raga — compute full sound spec and send via OSC bridge."""
+        data = request.get_json(force=True) if request.data else {}
         raga = data.get("raga", "Yaman")
-        semis = data.get("semis", [0, 2, 4, 6, 7, 9, 11])
-        _send_osc("/atlas/raga", [raga] + [int(s) for s in semis])
-        return app.response_class(
-            json.dumps({"sent": True, "raga": raga}, ensure_ascii=False),
-            mimetype="application/json",
-        )
+        duration = float(data.get("duration", 0))
+        try:
+            from npu_engine.sound.sound_engine import derive_sound_spec
+            from npu_engine.sound.osc_bridge import send_sound_spec
+            fs = field_state()
+            spec = derive_sound_spec(fs, _sound_mode)
+            spec["raga"] = raga
+            osc_ok = send_sound_spec(spec)
+            return app.response_class(
+                json.dumps({
+                    "sent": osc_ok, "raga": raga,
+                    "sa_hz": spec.get("sa_hz"),
+                    "mode": spec.get("mode"),
+                    "layers": spec.get("layers"),
+                    "master": spec.get("master"),
+                }, default=_json_serial, ensure_ascii=False),
+                mimetype="application/json",
+            )
+        except Exception:
+            semis = data.get("semis", [0, 2, 4, 6, 7, 9, 11])
+            _send_osc("/atlas/raga", [raga] + [int(s) for s in semis])
+            return app.response_class(
+                json.dumps({"sent": True, "raga": raga, "fallback": True}, ensure_ascii=False),
+                mimetype="application/json",
+            )
 
     @app.route("/sound/play_note", methods=["POST"])
     def _sound_play_note():
@@ -5274,30 +5492,86 @@ def create_app():
 
     @app.route("/sound/mantra", methods=["POST"])
     def _sound_mantra():
-        data = request.get_json(force=True)
+        """Bija mantra synthesis — returns formant decomposition and sends OSC."""
+        data = request.get_json(force=True) if request.data else {}
         action = data.get("action", "start")
-        amp = float(data.get("amp", 0.1))
-        if action == "start":
-            _send_osc("/atlas/field", [261.63, 72, 0, 0, 1.125, 1])
-        elif action == "stop":
+        if action == "stop":
             _send_osc("/atlas/stop", [])
-        return app.response_class(
-            json.dumps({"sent": True}, ensure_ascii=False),
-            mimetype="application/json",
-        )
+            return app.response_class(
+                json.dumps({"action": "stop", "sent": True}, ensure_ascii=False),
+                mimetype="application/json",
+            )
+        try:
+            from npu_engine.bija_synth import BIJA_PATH, VARNA
+            from npu_engine.field_to_sound import field_to_sound
+            fs = field_state()
+            fts = field_to_sound(fs)
+            bija = data.get("bija", fts.get("bija", "om"))
+            sa_hz = fts.get("sa_hz", 261.63)
+            path = BIJA_PATH.get(bija.lower(), [(ch.upper(), 1.0) for ch in bija.lower()])
+            varnas = []
+            for varna_key, weight in path:
+                v = VARNA.get(varna_key, VARNA.get("A", {}))
+                varnas.append({
+                    "varna": varna_key, "weight": weight,
+                    "f1_hz": v.get("f1", 700), "f2_hz": v.get("f2", 1100),
+                    "f3_hz": v.get("f3", 2800), "source_type": v.get("src", "vowel"),
+                })
+            _send_osc("/atlas/field", [sa_hz, 72, 0, 0, 1.125, 1])
+            return app.response_class(
+                json.dumps({
+                    "bija": bija, "sa_hz": sa_hz,
+                    "element": fts.get("element", "ether"),
+                    "guna": fts.get("guna", "sattva"),
+                    "varnas": varnas, "osc_sent": True,
+                }, default=_json_serial, ensure_ascii=False),
+                mimetype="application/json",
+            )
+        except Exception:
+            _send_osc("/atlas/field", [261.63, 72, 0, 0, 1.125, 1])
+            return app.response_class(
+                json.dumps({"sent": True, "fallback": True}, ensure_ascii=False),
+                mimetype="application/json",
+            )
 
     @app.route("/sound/bols", methods=["POST"])
     def _sound_bols():
-        data = request.get_json(force=True)
-        bols = data.get("bols", [])
-        bpm_val = float(data.get("bpm", 72))
-        beat_dur = 60.0 / bpm_val
-        for i, bol in enumerate(bols):
-            _send_osc("/atlas/rhythm/bol", [bol, i * beat_dur, 0.7])
-        return app.response_class(
-            json.dumps({"sent": len(bols)}, ensure_ascii=False),
-            mimetype="application/json",
-        )
+        """Tabla bols for current tala — wired to tabla_sampler."""
+        data = request.get_json(force=True) if request.data else {}
+        try:
+            from npu_engine.tabla_sampler import _BOL_SAMPLE, _ensure_synth_samples
+            fs = field_state()
+            ss = fs.get("sound_state", _derive_sound_state(fs))
+            bpm = int(data.get("bpm", ss.get("bpm", 72)))
+            tala_bols = data.get("bols") or ss.get("tala_bols", [])
+            beat_index = int(data.get("beat", 0))
+            samples = _ensure_synth_samples()
+            bol_str = tala_bols[beat_index % len(tala_bols)] if tala_bols else "—"
+            sample_key = _BOL_SAMPLE.get(bol_str.lower())
+            # Also send OSC for live playback
+            beat_dur = 60.0 / max(bpm, 30)
+            for i, bol in enumerate(tala_bols):
+                _send_osc("/atlas/rhythm/bol", [bol, i * beat_dur, 0.7])
+            return app.response_class(
+                json.dumps({
+                    "tala_bols": tala_bols, "beat_index": beat_index,
+                    "current_bol": bol_str, "sample_key": sample_key,
+                    "bpm": bpm, "beat_duration": round(beat_dur, 3),
+                    "samples_available": sorted(samples.keys()),
+                    "osc_sent": len(tala_bols),
+                }, ensure_ascii=False),
+                mimetype="application/json",
+            )
+        except Exception:
+            bols = data.get("bols", [])
+            bpm_val = float(data.get("bpm", 72))
+            beat_dur = 60.0 / bpm_val
+            for i, bol in enumerate(bols):
+                _send_osc("/atlas/rhythm/bol", [bol, i * beat_dur, 0.7])
+            return app.response_class(
+                json.dumps({"sent": len(bols), "fallback": True}, ensure_ascii=False),
+                mimetype="application/json",
+            )
 
     _perform_mode = False
     _sound_mode = "field"
@@ -5453,13 +5727,24 @@ def create_app():
         def _clean(eid):
             return (eid or "").replace("raga_", "").replace("_", " ").title() if eid else None
 
+        # Treatment vector from field_to_sound
+        element = nd.get("element", "ether")
+        guna = nd.get("guna", "sattva")
+        try:
+            from npu_engine.field_to_sound import get_treatment_vector
+            treatment = get_treatment_vector(element, guna)
+        except Exception:
+            treatment = "maintain"
+
         payload = {
             "recommended_raga": _clean(recommended) or ss.get("raga", fs.get("devi_raga")),
             "therapeutic_raga": _clean(therapeutic),
             "current_raga": fs.get("devi_raga"),
             "time_of_day": samaya,
-            "element": nd.get("element", "ether"),
+            "element": element,
             "dosha": nd.get("dosha", "vata"),
+            "guna": guna,
+            "treatment_vector": treatment,
             "vara_graha": vara_iast,
             "chandas": [e.get("to_id", e.get("from_id", "")) for e in chandas_match[:3]],
             "rationale": f"{vara_iast} day \u00b7 {nd.get('element', 'ether')} element \u00b7 {samaya} \u00b7 {nd.get('dosha', 'vata')} dosha",
@@ -8700,6 +8985,30 @@ def create_app():
         ok = restore_audio_connections()
         return jsonify({"restored": ok})
 
+    @app.route("/svarodaya")
+    def _svarodaya():
+        from npu_engine.field.svarodaya_engine import derive_svarodaya
+        fs = field_state()
+        return jsonify(derive_svarodaya(fs))
+
+    @app.route("/dinacharya")
+    def _dinacharya():
+        from npu_engine.field.dinacharya_engine import derive_dinacharya
+        fs = field_state()
+        return jsonify(derive_dinacharya(fs))
+
+    @app.route("/chandas")
+    def _chandas():
+        from npu_engine.field.chandas_engine import derive_chandas
+        fs = field_state()
+        return jsonify(derive_chandas(fs))
+
+    @app.route("/astrobotany")
+    def _astrobotany():
+        from npu_engine.field.astrobotany_engine import derive_astrobotany
+        fs = field_state()
+        return jsonify(derive_astrobotany(fs))
+
     @app.route("/trajectory")
     def _trajectory():
         from npu_engine.field.trajectory_engine import derive_trajectory
@@ -8804,41 +9113,9 @@ def create_app():
                       "element": p5.get("element", "")},
         })
 
-    # ── Symbol engine routes ─────────────────────────────
-
-    @app.route("/symbol/<path:symbol>")
-    def _symbol_lookup(symbol):
-        from npu_engine.field.symbol_engine import lookup_symbol
-        result = lookup_symbol(symbol)
-        if result:
-            return jsonify(result)
-        return jsonify({"error": "not found", "symbol": symbol}), 404
-
-    @app.route("/symbols/field")
-    def _symbols_field():
-        from npu_engine.field.symbol_engine import field_symbols
-        return jsonify(field_symbols(field_state()))
-
-    @app.route("/symbols/stats")
-    def _symbols_stats():
-        from npu_engine.field.symbol_engine import stats
-        return jsonify(stats())
-
-    # ── Canonical Glyphs ─────────────────────────────
-    @app.route("/glyphs/field")
-    def _glyphs_field():
-        from npu_engine.field.symbol_engine import field_glyphs
-        return jsonify(field_glyphs(field_state()))
-
-    @app.route("/glyphs/all")
-    def _glyphs_all():
-        from npu_engine.field.symbol_engine import get_all_glyphs
-        return jsonify(get_all_glyphs())
-
-    @app.route("/glyphs/<path:entity_id>")
-    def _glyph_lookup(entity_id):
-        from npu_engine.field.symbol_engine import get_glyph
-        return jsonify(get_glyph(entity_id))
+    # ── Symbol/glyph/ring routes → symbols_bp ─────────────────────────────
+    from npu_engine.routes.symbols_bp import symbols_bp
+    app.register_blueprint(symbols_bp)
 
     # ── Game character routes ─────────────────────────────
 
@@ -9551,40 +9828,117 @@ def create_app():
 
     @app.route("/corpus/registry")
     def _corpus_registry():
-        return jsonify({"corpora": _available_local_corpora()})
+        registry = _load_full_corpus_registry()
+        tradition_breakdown = {}
+        total_chunks = 0
+        for entry in registry:
+            t = entry.get("tradition", "unknown")
+            tradition_breakdown[t] = tradition_breakdown.get(t, 0) + 1
+            total_chunks += entry.get("chunks", 0)
+        return jsonify({
+            "count": len(registry),
+            "total_chunks": total_chunks,
+            "traditions": tradition_breakdown,
+            "corpora": registry,
+        })
 
     @app.route("/corpus/read")
     def _corpus_read():
         corpus_id = request.args.get("corpus", "").strip()
         ref = request.args.get("ref", "").strip()
-        if not corpus_id or not ref:
-            return jsonify({"error": "missing corpus or ref"}), 400
-        try:
-            return jsonify(_read_local_corpus_passage(corpus_id, ref))
-        except FileNotFoundError as exc:
-            return jsonify({"error": str(exc)}), 404
-        except Exception as exc:
-            return jsonify({"error": str(exc)}), 500
+        chunk_id = request.args.get("chunk_id", "").strip()
+
+        # Support chunk_id format: corpus_name:chunk_num
+        if chunk_id and not corpus_id:
+            parts = chunk_id.split(":", 1)
+            if len(parts) == 2:
+                corpus_id, ref = parts[0], parts[1]
+
+        if not corpus_id:
+            return jsonify({"error": "missing corpus or chunk_id"}), 400
+
+        # Try LOCAL_TEXT_CORPORA first (bg/bhagavatam/sikshashtakam with special handling)
+        if corpus_id in LOCAL_TEXT_CORPORA and ref:
+            try:
+                return jsonify(_read_local_corpus_passage(corpus_id, ref))
+            except FileNotFoundError:
+                pass
+            except Exception as exc:
+                return jsonify({"error": str(exc)}), 500
+
+        # Fall back to full registry
+        registry = _load_full_corpus_registry()
+        reg_entry = next((e for e in registry if e.get("id") == corpus_id), None)
+        if not reg_entry:
+            return jsonify({"error": f"unknown corpus: {corpus_id}"}), 404
+        cp = reg_entry.get("chunks_path", "")
+        chunk_path = _HERE / cp if cp else None
+        if not chunk_path or not chunk_path.exists():
+            return jsonify({"error": "corpus file not found"}), 404
+
+        target = str(ref or "").strip()
+        for record in _iter_jsonl_records(chunk_path):
+            rid = str(record.get("id", ""))
+            vref = str(record.get("verse_ref", ""))
+            if (target and rid == target) or (target and vref and vref.upper() == target.upper()):
+                text = " ".join(
+                    str(record.get(k, "")).strip()
+                    for k in ("text", "translation", "purport", "sanskrit", "iast", "synonyms")
+                    if str(record.get(k, "")).strip()
+                )
+                return jsonify({
+                    "corpus_id": corpus_id,
+                    "title": reg_entry.get("title", ""),
+                    "reference": vref or rid,
+                    "text": text,
+                    "domain": record.get("domain", reg_entry.get("domain", "")),
+                    "tradition": reg_entry.get("tradition", ""),
+                })
+        return jsonify({"error": "chunk not found"}), 404
 
     @app.route("/corpus/search")
     def _corpus_search():
-        corpus_id = request.args.get("corpus", "").strip()
         query = request.args.get("q", "").strip()
-        limit_raw = request.args.get("limit", "8").strip()
-        if not corpus_id:
-            return jsonify({"error": "missing corpus"}), 400
+        corpus_id = request.args.get("corpus", "").strip()
+        tradition = request.args.get("tradition", "").strip()
+        entity = request.args.get("entity", "").strip()
+        limit_raw = request.args.get("limit", "10").strip()
         try:
-            limit = max(1, min(int(limit_raw or "8"), 20))
+            limit = max(1, min(int(limit_raw or "10"), 50))
         except Exception:
-            limit = 8
-        try:
+            limit = 10
+
+        # Entity-linked search
+        if entity:
+            results = _entity_corpus_search(entity, limit=limit)
+            return jsonify({
+                "query": entity,
+                "mode": "entity",
+                "count": len(results),
+                "results": results,
+            })
+
+        if not query:
+            return jsonify({"error": "missing q parameter"}), 400
+
+        # Single-corpus search (backward compat)
+        if corpus_id and corpus_id in LOCAL_TEXT_CORPORA:
+            results = _search_local_corpus(corpus_id, query, limit=limit)
             return jsonify({
                 "corpus_id": corpus_id,
                 "query": query,
-                "results": _search_local_corpus(corpus_id, query, limit=limit),
+                "count": len(results),
+                "results": results,
             })
-        except Exception as exc:
-            return jsonify({"error": str(exc)}), 500
+
+        # Full cross-corpus search
+        results = _search_full_corpus(query, tradition=tradition, limit=limit)
+        return jsonify({
+            "query": query,
+            "tradition": tradition or None,
+            "count": len(results),
+            "results": results,
+        })
 
     # ── Site terrain intelligence ──────────────────────────
 
@@ -9892,28 +10246,125 @@ def create_app():
         except Exception as e:
             return jsonify({'error': str(e)}), 500
 
-    # ── Rings ────────
-    @app.route('/rings')
-    def rings():
-        try:
-            from npu_engine.field.ring_engine import derive_all_rings
-            fs = field_state()
-            return jsonify(derive_all_rings(fs))
-        except Exception as e:
-            return jsonify({'error': str(e)})
-
-    @app.route('/ring/<ring_id>')
-    def ring(ring_id):
-        try:
-            from npu_engine.field.ring_engine import derive_ring_spec
-            fs = field_state()
-            return jsonify(derive_ring_spec(ring_id, fs))
-        except Exception as e:
-            return jsonify({'error': str(e)})
+    # ── Rings → symbols_bp (registered above) ────────
 
     # ── Dashboard + widgets ────────
     @app.route('/dashboard')
     def dashboard(): return send_from_directory('static', 'dashboard.html')
+
+    @app.route('/dashboard/health')
+    def _dashboard_health():
+        """Single-call system health and state summary for home.html."""
+        out = {"timestamp": time.time(), "routes": {}, "corpus": {}, "graph": {}, "field": {}}
+
+        # Field state (most important)
+        try:
+            p = calc_panchanga()
+            out["field"] = {
+                "tithi": p.get("tithi"),
+                "nakshatra": p.get("nakshatra"),
+                "devi": p.get("devi", {}).get("name") if isinstance(p.get("devi"), dict) else (p.get("devi")[0] if isinstance(p.get("devi"), (list, tuple)) else p.get("devi")),
+                "vara": p.get("vara"),
+            }
+            out["routes"]["field"] = "ok"
+        except Exception as e:
+            out["routes"]["field"] = f"error: {e}"
+
+        # Corpus stats
+        try:
+            registry = _load_full_corpus_registry()
+            total_chunks = sum(e.get("chunks", 0) for e in registry)
+            out["corpus"] = {"files": len(registry), "chunks": total_chunks}
+            out["routes"]["corpus"] = "ok"
+        except Exception as e:
+            out["routes"]["corpus"] = f"error: {e}"
+
+        # Graph stats
+        try:
+            from npu_engine.graph_engine import GraphEngine
+            g = GraphEngine()
+            out["graph"] = {"entities": g.node_count, "edges": g.edge_count}
+            out["routes"]["graph"] = "ok"
+        except Exception as e:
+            out["routes"]["graph"] = f"error: {e}"
+
+        # Quick probe of key routes
+        probe_routes = ["/goloka", "/helix", "/trajectory", "/rings", "/yantra",
+                        "/guild/state", "/sound/spec", "/layers"]
+        for route in probe_routes:
+            try:
+                app.url_map.bind("").match(route, method="GET")
+                out["routes"][route] = "registered"
+            except Exception:
+                out["routes"][route] = "not_found"
+
+        out["health"] = "ok" if out["routes"].get("field") == "ok" else "degraded"
+        return jsonify(out)
+
+    @app.route('/dashboard/status')
+    def _dashboard_status():
+        """JSON system status for home.html status panel."""
+        out = {"health": "ok", "uptime": round(time.time() - START_TIME)}
+
+        # Corpus stats
+        try:
+            registry = _load_full_corpus_registry()
+            total_chunks = sum(e.get("chunks", 0) for e in registry)
+            out["corpus"] = {"texts": len(registry), "chunks": total_chunks}
+        except Exception:
+            out["corpus"] = {"texts": 0, "chunks": 0}
+
+        # Graph stats
+        try:
+            from npu_engine.datasets import load_all_entities, load_relations
+            ents = load_all_entities()
+            rels = load_relations()
+            rel_count = sum(len(v) for v in rels.values()) if isinstance(rels, dict) else len(rels)
+            out["graph"] = {"entities": len(ents), "relations": rel_count}
+        except Exception:
+            out["graph"] = {"entities": 0, "relations": 0}
+
+        # Field probe
+        try:
+            calc_panchanga()
+            out["field"] = "ok"
+        except Exception:
+            out["field"] = "error"
+
+        # Engine probes
+        probe = {}
+        fs = None
+        try:
+            fs = field_state()
+        except Exception:
+            pass
+
+        engine_checks = [
+            ("goloka", "npu_engine.field.goloka_engine", "derive_goloka"),
+            ("trajectory", "npu_engine.time.trajectory_engine", "derive_trajectory"),
+            ("svarodaya", "npu_engine.field.svarodaya_engine", "derive_svarodaya"),
+            ("dinacharya", "npu_engine.field.dinacharya_engine", "derive_dinacharya"),
+            ("astrobotany", "npu_engine.field.astrobotany_engine", "derive_astrobotany"),
+        ]
+        for name, mod_path, fn_name in engine_checks:
+            try:
+                mod = __import__(mod_path, fromlist=[fn_name])
+                fn = getattr(mod, fn_name)
+                fn(fs)
+                probe[name] = "ok"
+            except Exception:
+                probe[name] = "error"
+
+        # Sound probe
+        try:
+            from npu_engine.field.system_engine import derive_audio_route
+            route = derive_audio_route()
+            probe["sound"] = "ok" if route.get("available") else "no_device"
+        except Exception:
+            probe["sound"] = "error"
+
+        out["probe"] = probe
+        return jsonify(out)
 
     @app.route('/widgets/<path:name>')
     def widgets(name): return send_from_directory('static/widgets', name)
