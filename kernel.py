@@ -5884,37 +5884,9 @@ def create_app():
         except Exception as exc:
             return jsonify({"error": str(exc)})
 
-    @app.route("/card/draw", methods=["POST"])
-    def _card_draw():
-        from npu_engine.card_engine import CardEngine
-        data = request.get_json(silent=True) or {}
-        engine = CardEngine()
-        cards = engine.draw_spread(
-            n=int(data.get("n", 3)),
-            deck=data.get("deck", "mixed"),
-            field_state=field_state(),
-            natal=data.get("natal"),
-        )
-        return jsonify({"cards": [c.to_dict() for c in cards]})
-
-    @app.route("/card/spread", methods=["POST"])
-    def _card_spread_post():
-        from npu_engine.card_engine import CardEngine
-        data = request.get_json(silent=True) or {}
-        engine = CardEngine()
-        spread = engine.resonance_spread(
-            field_state=field_state(),
-            natal=data.get("natal"),
-            intention=data.get("intention", ""),
-        )
-        result = engine.apply_approach(spread, data.get("approach", "jijnasu"))
-        return jsonify(result)
-
-    @app.route("/card/deck/<deck>")
-    def _card_deck(deck):
-        from npu_engine.card_engine import CardEngine
-        engine = CardEngine()
-        return jsonify({"deck": deck, "cards": engine.get_deck(deck)})
+    # ── Card/reading routes → reading_bp ─────────────────────────────
+    from npu_engine.routes.reading_bp import reading_bp
+    app.register_blueprint(reading_bp)
 
     # /codex app route removed — codex functionality handled by
     # reading_engine, composition_engine, and observe panel.
@@ -8993,37 +8965,7 @@ def create_app():
 
     # ── Reading engine routes ─────────────────────────────
 
-    @app.route("/reading", methods=["POST"])
-    def _reading():
-        from npu_engine.field.reading_engine import derive_reading
-        data = request.get_json(force=True, silent=True) or {}
-        lens = data.get("lens", "bandhu")
-        intention = data.get("intention", "")
-        fs = field_state()
-        return jsonify(derive_reading(lens, fs, intention=intention))
-
-    @app.route("/reading/tarot")
-    def _reading_tarot():
-        from npu_engine.field.reading_engine import derive_reading
-        return jsonify(derive_reading("tarot", field_state()))
-
-    @app.route("/reading/iching")
-    def _reading_iching():
-        from npu_engine.field.reading_engine import derive_reading
-        return jsonify(derive_reading("iching", field_state()))
-
-    @app.route("/reading/bandhu")
-    def _reading_bandhu():
-        from npu_engine.field.reading_engine import derive_reading
-        intention = request.args.get("intention", "")
-        return jsonify(derive_reading("bandhu", field_state(), intention=intention))
-
-    @app.route("/reading/context")
-    def _reading_context():
-        from npu_engine.field.reading_engine import build_reading_context
-        ctx = build_reading_context(field_state())
-        ctx.pop("field_state", None)  # too large for debug response
-        return jsonify(ctx)
+    # ── reading/* → reading_bp (registered above) ─────────────────────────────
 
     # ── Goloka engine route ───────────────────────────────
 
