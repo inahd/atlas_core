@@ -87,20 +87,49 @@ def _prahar_for_hour(hour):
         return "night"
 
 
+def _arati_name_for_time(hour):
+    """Name the arati by time of day."""
+    if hour < 5:
+        return "Maṅgala Ārati"
+    elif hour < 8:
+        return "Prātaḥ Ārati"
+    elif hour < 12:
+        return "Rāja Bhoga"
+    elif hour < 15:
+        return "Madhyāhna Ārati"
+    elif hour < 17:
+        return "Uttara Ārati"
+    elif hour < 20:
+        return "Sandhyā Ārati"
+    elif hour < 22:
+        return "Śayana Ārati"
+    else:
+        return "Rātri Ārati"
+
+
 def _near_arati(arati_times_str, current_hour, current_min, window=30):
-    """Check if current IST time is within window minutes of any arati."""
+    """Check if current IST time is within window minutes of any arati.
+    Returns (is_near, arati_name) where arati_name describes the arati."""
     if not arati_times_str:
         return False, ""
     times = [t.strip() for t in arati_times_str.split(",")]
     current_total = current_hour * 60 + current_min
+    closest_diff = 9999
+    closest_hour = 0
     for t in times:
         try:
             parts = t.split(":")
-            arati_total = int(parts[0]) * 60 + int(parts[1])
-            if abs(current_total - arati_total) <= window:
-                return True, t
+            ah = int(parts[0])
+            am = int(parts[1])
+            arati_total = ah * 60 + am
+            diff = abs(current_total - arati_total)
+            if diff <= window and diff < closest_diff:
+                closest_diff = diff
+                closest_hour = ah
         except (ValueError, IndexError):
             continue
+    if closest_diff <= window:
+        return True, _arati_name_for_time(closest_hour)
     return False, ""
 
 
@@ -112,10 +141,29 @@ def _normalize(s):
 
 
 def _match_field(value, target):
-    """Check if field value matches target (fuzzy)."""
+    """Check if field value matches target (fuzzy). Handles semicolon-separated multi-values."""
     if not value or not target:
         return False
-    return _normalize(target) in _normalize(value) or _normalize(value) in _normalize(target)
+    # Split target on semicolons for multi-value fields (e.g. "Monday;Saturday")
+    targets = [t.strip() for t in target.split(";")] if ";" in target else [target]
+    nv = _normalize(value)
+    return any(_normalize(t) in nv or nv in _normalize(t) for t in targets)
+
+
+_VARA_MAP = {
+    "ravivara": "Sunday", "somavara": "Monday", "mangalavara": "Tuesday",
+    "budhavara": "Wednesday", "guruvara": "Thursday", "brihaspativara": "Thursday",
+    "shukravara": "Friday", "shanivara": "Saturday",
+}
+
+
+def _vara_english(vara_str):
+    """Convert Sanskrit vara to English day name for matching."""
+    nv = _normalize(vara_str).split()[0]  # strip planet symbol
+    for k, v in _VARA_MAP.items():
+        if k in nv or nv in k:
+            return v
+    return vara_str
 
 
 def derive_resonance(field_state: dict) -> dict:
@@ -123,7 +171,8 @@ def derive_resonance(field_state: dict) -> dict:
     pa = field_state.get("panchanga", {})
     nak = pa.get("nakshatra", "")
     tithi = pa.get("tithi", "")
-    vara = pa.get("vara", "")
+    vara_raw = pa.get("vara", "")
+    vara = _vara_english(vara_raw)
     devi = pa.get("devi", {})
     devi_name = devi.get("name", "") if isinstance(devi, dict) else str(devi)
     ss = field_state.get("sound_state", {})
@@ -139,16 +188,16 @@ def derive_resonance(field_state: dict) -> dict:
         score = 0
         reasons = []
         if _match_field(nak, t.get("nakshatra_primary", "")):
-            score += 1
+            score += 2
             reasons.append(f"nakshatra {nak}")
-        if _match_field(vara, t.get("vara_primary", "")) or t.get("vara_primary") == "all":
-            score += 1
-            if t.get("vara_primary") != "all":
-                reasons.append(f"vara {vara}")
-        if _match_field(tithi, t.get("tithi_primary", "")) or t.get("tithi_primary") == "all":
-            score += 1
-            if t.get("tithi_primary") != "all":
-                reasons.append(f"tithi {tithi}")
+        vp = t.get("vara_primary", "")
+        if vp != "all" and _match_field(vara, vp):
+            score += 2
+            reasons.append(f"vara {vara}")
+        tp = t.get("tithi_primary", "")
+        if tp != "all" and _match_field(tithi, tp):
+            score += 2
+            reasons.append(f"tithi {tithi}")
 
         is_live, arati_time = _near_arati(t.get("arati_times_ist", ""), hour, minute)
         schedule = t.get("stream_schedule", "")
