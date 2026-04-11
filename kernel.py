@@ -593,16 +593,19 @@ def _load_csv(relpath):
 
 # ── Full corpus registry + cross-corpus search ──────────────
 _full_corpus_registry: Optional[list] = None
+_full_corpus_registry_mtime: float = 0.0
 
 
 def _load_full_corpus_registry() -> list:
-    """Load the full 82-entry corpus registry from corpus_registry.json."""
-    global _full_corpus_registry
-    if _full_corpus_registry is not None:
-        return _full_corpus_registry
+    """Load the corpus registry from corpus_registry.json (auto-reloads on file change)."""
+    global _full_corpus_registry, _full_corpus_registry_mtime
     reg_path = _HERE / "datasets" / "sources" / "corpus_registry.json"
     if reg_path.exists():
+        mtime = reg_path.stat().st_mtime
+        if _full_corpus_registry is not None and mtime == _full_corpus_registry_mtime:
+            return _full_corpus_registry
         _full_corpus_registry = json.loads(reg_path.read_text(encoding="utf-8"))
+        _full_corpus_registry_mtime = mtime
     else:
         _full_corpus_registry = []
     return _full_corpus_registry
@@ -7972,7 +7975,7 @@ def create_app():
     # ── Core index ────────────────────────────────────────
     @app.route("/")
     def _index():
-        return send_from_directory('static', 'home.html')
+        return send_from_directory('static', 'index.html')
 
     @app.route("/home")
     def _home():
