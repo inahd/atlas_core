@@ -1,0 +1,23 @@
+activity_id,activity_name,activity_name_iast,ontological_level,navavidha_bhakti_category,subject_to_svarodaya,subject_to_tithi_rules,always_auspicious,always_auspicious_source,gaudiya_priority,shaiva_classification,cross_traditional_note,attestation
+harinama,Chanting the Holy Name,Harināma,transcendental,kirtanam+smaranam,no,no,yes,"CC Antya 20.18: nāma cintāmaṇiḥ kṛṣṇaś caitanya-rasa-vigrahaḥ; BRS 1.2.234",1,meditation/yoga_sadhana,Shaiva treats as yoga — Gaudiya treats as independent transcendental process,SHASTRA:PRIMARY
+japa,Quiet Repetition of Mantra,Japa,transcendental,kirtanam+smaranam,no,no,yes,"CC Adi 17.21-22; BRS 1.2.149-150",2,meditation,Both traditions affirm but Gaudiya holds it as nitya-mukta,SHASTRA:PRIMARY
+smarana,Remembrance of Krishna,Smaraṇa,transcendental,smaranam,no,no,yes,"BRS 1.2.121-122; SB 7.5.23-24: śravaṇaṁ kīrtanaṁ viṣṇoḥ smaraṇaṁ",3,remembrance_of_supreme,Shiva Svarodaya restricts to sushumna — BRS says always auspicious,SHASTRA:PRIMARY
+kirtan,Congregational Singing,Kīrtana,transcendental,kirtanam,no,no,yes,"CC Adi 17.22: kīrtanīyaḥ sadā hariḥ; SB 11.5.32",4,not_classified,Unique to Gaudiya as primary practice for Kali Yuga,SHASTRA:PRIMARY
+shastra_shravan,Hearing Sacred Texts,Śāstra-śravaṇa,transcendental,shravanam,no,no,yes,"SB 1.2.17: śṛṇvatāṁ sva-kathāḥ kṛṣṇaḥ; BRS 1.2.101",5,study,Shaiva classifies as study — Gaudiya as transcendental hearing,SHASTRA:PRIMARY
+deity_seva,Service to Deity Form,Arcana,transcendental,archanam+pada_sevanam,no,no,yes,"SB 7.5.23: arcanaṁ vandanaṁ dāsyam; BRS 1.2.181",6,worship,Both traditions affirm — different theological basis,SHASTRA:PRIMARY
+vandana,Prayer and Obeisances,Vandana,transcendental,vandanam,no,no,yes,"SB 7.5.23; BRS 1.2.196",7,prayer,Universal across traditions,SHASTRA:PRIMARY
+prasad_seva,Honoring Prasadam,Prasāda-sevā,transcendental,archanam,no,no,yes,"BG 3.13: yajña-śiṣṭāśinaḥ santo mucyante sarva-kilbiṣaiḥ",8,eating,Simultaneously material and transcendental — non-different from Krishna,SHASTRA:PRIMARY
+atma_nivedana,Self-Surrender,Ātma-nivedana,transcendental,atma_nivedanam,no,no,yes,"BG 18.66: sarva-dharmān parityajya; BRS 1.2.236",9,yoga,Both traditions affirm surrender as highest,SHASTRA:PRIMARY
+meditation_generic,Generic Meditation,Dhyāna,subtle,not_applicable,partial,partial,no,,0,meditation,"Quality affected by nadi state but not contraindicated. Shaiva 'avoid' = difficulty, not prohibition",INTERPRETATION
+study,Intellectual Study,Adhyayana,subtle,not_applicable,partial,partial,no,,0,study,Both traditions agree study is enhanced by sattvic conditions,INTERPRETATION
+creative_work,Creative Activity,Sṛjana-karma,subtle,not_applicable,partial,no,no,,0,amiable_work,Nadi state affects creative quality,INTERPRETATION
+yoga_sadhana,Yoga Practice,Yoga-sādhana,subtle,not_applicable,partial,partial,no,,0,yoga_sadhana,"Hatha yoga genuinely affected by nadi; bhakti yoga not",INTERPRETATION
+travel,Travel,Yātrā,material,not_applicable,yes,yes,no,,0,travel,All traditions agree timing matters for travel,OBSERVED
+eating,Eating,Āhāra,material,not_applicable,yes,yes,no,,0,eating,Digestive fire (agni) genuinely affected by nadi state,OBSERVED
+surgery,Surgery,Śastra-karma,material,not_applicable,yes,yes,no,,0,hunting,Critical — timing rules fully apply,OBSERVED
+construction,Construction,Nirmāṇa,material,not_applicable,yes,yes,no,,0,fixed_construction,Vastu/muhurta rules apply,OBSERVED
+agriculture,Agriculture,Kṛṣi,material,not_applicable,yes,yes,no,,0,amiable_work,Moon phase rules apply (astrobotany),OBSERVED
+business,Business Transactions,Vyāpāra,material,not_applicable,yes,partial,no,,0,trade,Hora and nadi rules apply,OBSERVED
+sleep,Sleep,Nidrā,material,not_applicable,yes,no,no,,0,sleep,Genuinely affected by nadi state,OBSERVED
+warfare,Warfare,Yuddha,material,not_applicable,yes,yes,no,,0,warfare,"Historically real concern; adharmic from Vaishnava perspective except dharma-yuddha",OBSERVED
+healing,Healing Practice,Cikitsā,material,not_applicable,yes,partial,no,,0,healing,Genuinely affected by prana state,OBSERVED
