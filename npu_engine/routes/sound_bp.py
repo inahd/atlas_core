@@ -378,6 +378,41 @@ def _sound_bols():
         )
 
 
+@sound_bp.route("/sound/tabla", methods=["POST"])
+def _sound_tabla():
+    """Start/stop synthetic tabla theka via SC OSC.
+
+    POST body:
+      action: 'start' (default) or 'stop'
+      bpm: 84 (default, from field state)
+      theka: 0=rupak 1=teental 2=dadra 3=jhaptal
+      amp: 0.4 (default)
+    """
+    from kernel import field_state
+    data = request.get_json(force=True) if request.data else {}
+    action = data.get("action", "start")
+
+    if action == "stop":
+        send_osc("/atlas/tabla/stop", [])
+        return jsonify({"status": "stopped"})
+
+    fs = field_state()
+    ss = fs.get("sound_state", {})
+    bpm = float(data.get("bpm", ss.get("bpm", 84)))
+    theka = int(data.get("theka", 0))
+    amp = float(data.get("amp", 0.4))
+
+    send_osc("/atlas/tabla/start", [bpm, theka, amp])
+
+    theka_names = ["rupak (7)", "teental (16)", "dadra (6)", "jhaptal (10)"]
+    return jsonify({
+        "status": "started",
+        "theka": theka_names[min(theka, 3)],
+        "bpm": bpm,
+        "amp": amp,
+    })
+
+
 # ── Perform mode ─────────────────────────────
 
 @sound_bp.route("/sound/perform_mode", methods=["POST"])

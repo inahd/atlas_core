@@ -202,47 +202,125 @@ SynthDef(\raga_note, {
 }).store;
 
 // ======================================================
-// SYNTHDEF 4 — TABLA BOL
-// Single tabla stroke.
+// SYNTHDEF 4 — TABLA BAYAN (bass drum, left hand)
+// Pitch-envelope membrane synthesis
+// ======================================================
+
+SynthDef(\tabla_bayan, {
+    |out=0, freq=110, endFreq=55, decay=0.25,
+     amp=0.5, resonance=0.3|
+
+    var membrane, overtone, strike, env, sig;
+
+    // Membrane — fast pitch drop
+    membrane = SinOsc.ar(
+        XLine.ar(freq, endFreq, decay * 0.6),
+        0, 0.8
+    );
+
+    // Overtone — adds body
+    overtone = SinOsc.ar(
+        XLine.ar(freq * 1.5, endFreq * 1.3, decay * 0.4),
+        0, 0.2
+    );
+
+    // Strike transient
+    strike = WhiteNoise.ar(0.4) *
+        EnvGen.ar(Env.perc(0.001, 0.04));
+
+    env = EnvGen.ar(Env.perc(0.001, decay), doneAction: 2);
+
+    sig = (membrane + overtone + strike) * env;
+    sig = LPF.ar(sig, 400);
+    sig = sig + (FreeVerb.ar(sig, resonance, 0.2, 0.3) * 0.15);
+
+    Out.ar(out, sig * amp ! 2);
+}).store;
+
+// ======================================================
+// SYNTHDEF 4b — TABLA DAYAN (treble drum, right hand)
+// Resonant membrane with overtone series
+// ======================================================
+
+SynthDef(\tabla_dayan, {
+    |out=0, freq=440, decay=0.12, amp=0.4,
+     brightness=0.5, mute=0|
+
+    var membrane, overtones, strike, env, sig;
+
+    // Fundamental membrane
+    membrane = SinOsc.ar(freq, 0, 0.6);
+
+    // Overtone series — characteristic tabla ring
+    overtones = SinOsc.ar(freq * 2.14, 0, 0.2)  // syahi overtone
+              + SinOsc.ar(freq * 3.01, 0, 0.1)
+              + SinOsc.ar(freq * 4.16, 0, 0.05 * brightness);
+
+    // Strike
+    strike = HPF.ar(
+        WhiteNoise.ar(0.3) *
+        EnvGen.ar(Env.perc(0.001, 0.03)),
+        800
+    );
+
+    // Muting: shorter decay + less overtones
+    env = EnvGen.ar(
+        Env.perc(0.001, decay * (1 - (mute * 0.6))),
+        doneAction: 2
+    );
+
+    sig = (membrane + overtones + strike) * env;
+    sig = HPF.ar(sig, 200); // remove bass bleed
+
+    Out.ar(out, sig * amp ! 2);
+}).store;
+
+// ======================================================
+// SYNTHDEF 4c — TABLA BOL (composite — selects bol by index)
+// 0=Dha 1=Dhin 2=Na 3=Ka 4=Ti 5=Ge 6=Ta
 // ======================================================
 
 SynthDef(\tabla_bol, {
     |out=0, bol=0, amp=0.5|
 
-    var sig, env;
+    var bayan, dayan, strike, sig, env;
+    var bayAmp, dayAmp, bayFreq, dayFreq, dayDecay, dayMute;
 
-    // bol: 0=dha 1=dhin 2=tin 3=na 4=ge
-    sig = Select.ar(bol, [
-        // dha — bass + snap
-        LPF.ar(
-            Impulse.ar(0) + (PinkNoise.ar(0.5) *
-            EnvGen.ar(Env.perc(0.001, 0.15))), 200
-        ) + HPF.ar(
-            PinkNoise.ar(0.3) *
-            EnvGen.ar(Env.perc(0.001, 0.05)), 800
-        ),
-        // dhin — resonant bass
-        SinOsc.ar(
-            XLine.ar(120, 60, 0.15), 0,
-            EnvGen.ar(Env.perc(0.001, 0.2))) * 0.8,
-        // tin — high resonant
-        SinOsc.ar(
-            XLine.ar(800, 400, 0.08), 0,
-            EnvGen.ar(Env.perc(0.001, 0.1))) * 0.6,
-        // na — dry high
-        HPF.ar(
-            PinkNoise.ar(1.0) *
-            EnvGen.ar(Env.perc(0.001, 0.04)), 600) * 0.5,
-        // ge — low thump
-        SinOsc.ar(
-            XLine.ar(80, 40, 0.1), 0,
-            EnvGen.ar(Env.perc(0.001, 0.15))) * 0.7,
-    ]);
+    // Bol parameters: [bayAmp, dayAmp, bayFreq, dayFreq, dayDecay, dayMute]
+    // Dha:  full bayan + open dayan
+    // Dhin: no bayan + resonant long dayan
+    // Na:   no bayan + muted short dayan
+    // Ka:   bayan only (pitch drop)
+    // Ti:   no bayan + high short dayan
+    // Ge:   open bayan (longer, resonant)
+    // Ta:   muted dayan + noise
 
-    EnvGen.ar(Env.perc(0.001, 0.3), doneAction: 2);
+    bayAmp   = Select.kr(bol, [0.7,  0.0,  0.0,  0.8,  0.0,  0.6,  0.0]);
+    dayAmp   = Select.kr(bol, [0.5,  0.7,  0.5,  0.0,  0.6,  0.0,  0.5]);
+    bayFreq  = Select.kr(bol, [110,  110,  110,  100,  110,  90,   110]);
+    dayFreq  = Select.kr(bol, [440,  380,  520,  440,  550,  440,  500]);
+    dayDecay = Select.kr(bol, [0.12, 0.20, 0.08, 0.12, 0.06, 0.12, 0.06]);
+    dayMute  = Select.kr(bol, [0,    0,    0.7,  0,    0,    0,    0.8]);
 
-    Out.ar(out, sig * amp ! 2);
+    // Bayan
+    bayan = SinOsc.ar(
+        XLine.ar(bayFreq, bayFreq * 0.5, 0.15), 0, 0.8
+    ) * EnvGen.ar(Env.perc(0.001, 0.25));
 
+    // Dayan
+    dayan = SinOsc.ar(dayFreq, 0, 0.6)
+          + SinOsc.ar(dayFreq * 2.14, 0, 0.15)
+          + SinOsc.ar(dayFreq * 3.01, 0, 0.05);
+    dayan = dayan * EnvGen.ar(Env.perc(0.001, dayDecay * (1 - (dayMute * 0.5))));
+    dayan = HPF.ar(dayan, 200);
+
+    // Strike noise
+    strike = WhiteNoise.ar(0.3) * EnvGen.ar(Env.perc(0.001, 0.04));
+
+    sig = (bayan * bayAmp) + (dayan * dayAmp) + (strike * 0.3);
+    env = EnvGen.ar(Env.perc(0.001, 0.35), doneAction: 2);
+
+    Out.ar(out, sig * amp * env ! 2);
 }).store;
 
 // ======================================================
@@ -436,6 +514,69 @@ OSCFunc({ |msg|
 }, '/atlas/mix/global');
 
 // ======================================================
+// TABLA THEKA ROUTINES
+// ======================================================
+
+// Bol indices: 0=Dha 1=Dhin 2=Na 3=Ka 4=Ti 5=Ge 6=Ta
+~tablaRunning = false;
+~tablaBPM = 84;
+
+// Thekas (bol sequences with beat fractions)
+~thekas = (
+    rupak: #[0, 1, 2, 0, 4, 2, 2],  // Dha Dhin Na | Dha Ti Na | Na  (7 beats)
+    teental: #[0, 0, 1, 0, 0, 0, 1, 0, 0, 6, 1, 0, 0, 0, 1, 0],  // 16 beats
+    dadra: #[0, 0, 2, 6, 0, 2],  // Dha Dha Na | Ge Dha Na  (6 beats)
+    jhaptal: #[0, 1, 0, 1, 2, 6, 4, 1, 0, 2],  // 10 beats
+);
+
+~tablaRoutine = nil;
+
+~playTheka = { |thekaName=\rupak, bpm=84, amp=0.4|
+    var theka = ~thekas[thekaName] ?? ~thekas[\rupak];
+    var beatDur = 60.0 / bpm;
+
+    ~tablaRunning = true;
+    ~tablaBPM = bpm;
+    ~tablaRoutine.stop;
+    ~tablaRoutine = Routine({
+        "Tabla: % at %bpm".format(thekaName, bpm).postln;
+        loop {
+            theka.do { |bol|
+                if(~tablaRunning) {
+                    Synth(\tabla_bol, [\out, 0, \bol, bol, \amp, amp]);
+                    beatDur.wait;
+                } {
+                    nil.yield; // stop
+                };
+            };
+        };
+    }).play(TempoClock.default);
+};
+
+~stopTheka = {
+    ~tablaRunning = false;
+    ~tablaRoutine.stop;
+    "Tabla stopped.".postln;
+};
+
+// /atlas/tabla/start [bpm, theka_idx, amp]
+// theka_idx: 0=rupak 1=teental 2=dadra 3=jhaptal
+OSCFunc({ |msg|
+    var bpm = msg[1] ? 84;
+    var thekaIdx = msg[2] ? 0;
+    var amp = msg[3] ? 0.4;
+    var thekaNames = #[\rupak, \teental, \dadra, \jhaptal];
+    var thekaName = thekaNames[thekaIdx.asInteger.clip(0, 3)];
+    ~playTheka.(thekaName, bpm, amp);
+    "tabla/start: % at %bpm amp=%".format(thekaName, bpm, amp).postln;
+}, '/atlas/tabla/start');
+
+// /atlas/tabla/stop
+OSCFunc({ |msg|
+    ~stopTheka.();
+}, '/atlas/tabla/stop');
+
+// ======================================================
 // JACK CONNECTIONS — connect SC outputs to MOTU M2
 // Done here (after synths run) so PipeWire/WirePlumber
 // doesn't drop early connections from start_sc.sh
@@ -452,7 +593,9 @@ OSCFunc({ |msg|
 "  /atlas/tanpura/sa     set Sa frequency".postln;
 "  /atlas/tanpura/jivari set buzz".postln;
 "  /atlas/note           play melodic note".postln;
-"  /atlas/tabla          play tabla bol".postln;
+"  /atlas/tabla          play single bol (0-6)".postln;
+"  /atlas/tabla/start    start theka [bpm, theka, amp]".postln;
+"  /atlas/tabla/stop     stop theka".postln;
 "  /atlas/bija           update bija drone".postln;
 "  /atlas/master         global mix".postln;
 "  /atlas/field          full field update".postln;
