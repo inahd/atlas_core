@@ -5,3 +5,26 @@ instance/cache/
 .env
 *.sqlite
 *.db
+
+# Large corpus and data files
+datasets/sources/**/*.jsonl
+atlas/registry/corpus_registry.jsonl
+**/*.jsonl
+
+# Runtime and logs
+logs/
+*.log
+/tmp/
+
+# Audio and media
+*.wav
+*.aiff
+*.flac
+*.mp3
+*.scsyndef
+
+# Large exports
+*.pkl
+*.h5
+*.npy
+*.npz
