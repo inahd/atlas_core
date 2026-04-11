@@ -82,3 +82,24 @@ Status codes: DONE | FAILED | SKIPPED | HUMAN_REQUIRED | PARTIAL
 2026-04-10 19:12 — [RTE-004] DONE — Added /dashboard/health endpoint (field state, corpus stats, graph stats, route probes in single call); home.html pre-populates from it
 2026-04-10 19:15 — [RTE-004] runner: claude exited 0
 2026-04-10 19:15 — [RTE-005] DONE — Split kernel.py into 7 Flask blueprints (symbols, system, reading, corpus, sound, plants, render); 77 routes extracted, kernel reduced 10472→8104 lines, all 23 health-check routes pass
+2026-04-10 19:46 — [RTE-005] runner: claude exited 0
+2026-04-10 19:46 — [SND-002] DONE — SC startup/stop scripts with Flask readiness signaling; /sound/sc_ready GET/POST route; /sound/state includes SC state
+2026-04-10 19:48 — [SND-002] runner: claude exited 0
+2026-04-10 19:48 — [SND-005] DONE — Wired /sound/tanpura route end-to-end (field→tanpura_field→OSC); added tanpura params to /sound/spec; Bāgeshṛī Dha-sa-sa-Sa tuning live
+2026-04-10 19:51 — [SND-005] runner: claude exited 0
+2026-04-10 19:51 — [SND-006] DONE — OSC bridge resilient, SynthDef/OSC names matched, /sound/tanpura + /sound/state live; awaits human SC start + audio verification
+2026-04-10 19:52 — [SND-006] runner: claude exited 0
+2026-04-10 19:52 — Cycle complete — 8 tasks
+2026-04-10 20:18 — Cycle complete — 0 tasks
+2026-04-10 21:14 — [COR-010] DONE — Ingested 61-row Medicine Cards x Vedic crossmap CSV + JSONL passages (52 animals + 9 blank-card); registered in both corpus registries; search returns eagle results (new entries appear after kernel restart)
+2026-04-10 21:22 — [COR-010] runner: claude exited 0
+2026-04-10 21:22 — [COR-011] DONE — Created loka_dimensions.csv (14 lokas: 7 upper bhuvanas + 7 lower patalas) with Puranic source verses, JSONL passages, and corpus registry entry
+2026-04-10 21:23 — [COR-011] runner: claude exited 0
+2026-04-10 21:23 — [COR-012] DONE — Ingested 63-row VPK Global Inference dataset (60 animals + 3 collective forms) from docx; CSV + JSONL passages + both registries; corpus search returns wolverine; added mtime-based registry cache reload
+2026-04-10 21:27 — [COR-012] runner: claude exited 0
+2026-04-10 21:27 — [COR-013] DONE — Created 18 SB 5.24-25 Patala passage chunks (7 lokas + Ananta Sesha); registered in both corpus registries; search returns Ananta/Patala results
+2026-04-10 21:31 — [COR-013] runner: claude exited 0
+2026-04-10 21:31 — [COR-014] DONE — Created 15 Brhat Samhita Shakuna Shastra chunks (BS ch.86-95: crow, lizard, cat, dog, bird flight, owl, snake, travel, agriculture omens); registered in both corpus registries; search returns crow/omen results
+2026-04-10 21:36 — [COR-014] runner: claude exited 0
+2026-04-10 21:36 — Cycle complete — 5 tasks
+2026-04-11 09:27 — [FE-REBUILD] DONE — Rebuilt index.html + s0/s1/s3/s5/s6 with live field data (NPU element/guna, svarodaya nadi, dinacharya period, astrobotany herbs, goloka forest, sound layers)

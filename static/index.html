@@ -1,173 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Atlas · Field Computer</title>
 <link rel="stylesheet" href="/static/atlas-theme.css">
 <script src="/static/atlas.js"></script>
 <style>
 body{background:var(--bg);color:var(--text);font-family:var(--font-mono);font-size:11px;height:100vh;display:grid;grid-template-columns:280px 1fr 260px;grid-template-rows:1fr 28px;overflow:hidden}
-.col{padding:16px;overflow-y:auto}
-.col-l{border-right:1px solid var(--border)}
-.col-r{border-left:1px solid var(--border)}
-.col-c{display:flex;align-items:center;justify-content:center;overflow:hidden}
-.hdr{font-family:var(--font-mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em;margin-bottom:6px}
-.val{font-family:var(--font-body);font-size:16px;color:var(--gold)}
-.sub{font-size:11px;color:var(--muted);margin-bottom:3px}
-.dim{font-size:10px;color:var(--dim);margin-bottom:2px}
-.sep{height:1px;background:var(--border);margin:10px 0}
-.bar{width:100%;height:3px;background:var(--border);border-radius:1px;margin:3px 0}
-.bar-f{height:100%;border-radius:1px}
+.col{padding:16px;overflow-y:auto}.col-l{border-right:1px solid var(--border)}.col-r{border-left:1px solid var(--border)}
+.col-c{display:flex;align-items:center;justify-content:center}
+.hdr{font-family:var(--font-mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em;margin-bottom:6px;margin-top:12px}
+.hdr:first-child{margin-top:0}
+.val{font-family:var(--font-body);font-size:16px;color:var(--gold)}.sub{font-size:11px;color:var(--muted);margin-bottom:2px}
+.dim{font-size:10px;color:var(--dim);margin-bottom:2px}.sep{height:1px;background:var(--border);margin:10px 0}
 .probe{display:flex;align-items:center;gap:6px;font-size:10px;margin-bottom:3px}
-.probe-dot{width:6px;height:6px;border-radius:50%}
-.link{color:var(--teal);text-decoration:none;font-size:10px;display:block;margin-bottom:2px}
-.link:hover{color:var(--gold)}
+.pdot{width:6px;height:6px;border-radius:50%}.link{color:var(--teal);text-decoration:none;font-size:10px;display:block;margin-bottom:2px}.link:hover{color:var(--gold)}
 .footer{grid-column:1/-1;background:var(--panel);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:12px;font-size:10px;color:var(--dim)}
 .footer .nak{font-family:var(--font-body);color:var(--gold);font-size:12px}
-.dot{width:6px;height:6px;border-radius:50%;background:var(--teal)}
-.dot.off{background:var(--dim)}
-/* Mandala */
-.mandala-wrap{position:relative}
-.mandala-svg{animation:spin 300s linear infinite}
-@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
-.s-link{cursor:pointer;transition:opacity .2s}.s-link:hover{opacity:1!important}
+.ft-dot{width:6px;height:6px;border-radius:50%;background:var(--teal)}
+.mandala{animation:spin 120s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
 </style>
 </head>
 <body>
-<div class="col col-l" id="field-col">
-  <div style="font-family:var(--font-body);font-size:11px;color:var(--gold);letter-spacing:.3em;margin-bottom:16px">✦ ATLAS</div>
-  <div class="hdr">FIELD STATE</div>
-  <div id="field-data">◌ loading</div>
-</div>
-<div class="col col-c" id="center-col"></div>
-<div class="col col-r" id="health-col">
-  <div class="hdr">SYSTEM HEALTH</div>
-  <div id="health-data">◌ loading</div>
-</div>
-<div class="footer">
-  <span id="ft-nak" class="nak">—</span>
-  <span id="ft-tithi">—</span>
-  <span id="ft-vara">—</span>
-  <span id="ft-devi">—</span>
-  <span class="dot" id="ft-dot"></span>
-</div>
-
+<div class="col col-l" id="left"><div style="font-family:var(--font-body);font-size:11px;color:var(--gold);letter-spacing:.3em;margin-bottom:16px">✦ ATLAS</div><div id="field-data">◌</div></div>
+<div class="col col-c" id="center"></div>
+<div class="col col-r" id="right"><div class="hdr">SYSTEM</div><div id="health-data">◌</div></div>
+<div class="footer"><span id="ft-nak" class="nak">—</span><span id="ft-t">—</span><span id="ft-v">—</span><span id="ft-d">—</span><span class="ft-dot"></span></div>
 <script>
-const LAYERS=[
-  {id:'S0',name:'Bindu',color:'#7060cc',path:'/s0'},
-  {id:'S1',name:'Archetype',color:'#e0b040',path:'/s1'},
-  {id:'S2',name:'Sound',color:'#20a88a',path:'/s2'},
-  {id:'S3',name:'Rhythm',color:'#c8d8e8',path:'/s3'},
-  {id:'S4',name:'Geometry',color:'#e0b040',path:'/s4'},
-  {id:'S5',name:'Nature',color:'#3a7a4a',path:'/s5'},
-  {id:'S6',name:'Lila',color:'#7060cc',path:'/s6'},
-];
+const SL=[{id:'S0',n:'Bindu',c:'#7060cc'},{id:'S1',n:'Archetype',c:'#e0b040'},{id:'S2',n:'Sound',c:'#20a88a'},{id:'S3',n:'Rhythm',c:'#c8d8e8'},{id:'S4',n:'Geometry',c:'#e0b040'},{id:'S5',n:'Nature',c:'#3a7a4a'},{id:'S6',n:'Lila',c:'#7060cc'}];
+function dv(o){return typeof o==='object'&&o?(o.name||'—'):(o||'—')}
 
 async function loadField(){
-  const d=await atlasGet('/field',{});
-  if(!d||!d.panchanga)return;
-  const pa=d.panchanga||{};const ss=d.sound_state||{};
-  const nak=pa.nakshatra||'—';const tithi=pa.tithi||'—';const vara=pa.vara||'—';
-  const devi=typeof pa.devi==='object'?(pa.devi?.name||'—'):(pa.devi||'—');
-  const deviCol=typeof pa.devi==='object'?(pa.devi?.color||'#7060cc'):'#7060cc';
-
-  // Footer
-  document.getElementById('ft-nak').textContent=nak;
-  document.getElementById('ft-tithi').textContent=tithi;
-  document.getElementById('ft-vara').textContent=vara;
-  document.getElementById('ft-devi').textContent=devi;
-
-  // Left column
+  const[f,sv,gol]=await Promise.all([atlasGet('/field',{}),atlasGet('/svarodaya',{}),atlasGet('/goloka',{})]);
+  const pa=f?.panchanga||{},ss=f?.sound_state||{},nd=pa.nak_data||{};
+  const nak=pa.nakshatra||'—',tithi=pa.tithi||'—',vara=pa.vara||'—',devi=dv(pa.devi);
+  document.getElementById('ft-nak').textContent=nak;document.getElementById('ft-t').textContent=tithi;
+  document.getElementById('ft-v').textContent=vara;document.getElementById('ft-d').textContent=devi;
   let h=`<div class="val">${nak}</div>`;
-  if(pa.nak_data?.deity)h+=`<div class="sub">${pa.nak_data.deity}</div>`;
-  h+=`<div class="sub">${tithi} · ${pa.paksha||''}</div>`;
-  h+=`<div class="sub">${vara}</div>`;
-  h+=`<div class="sep"></div>`;
-  h+=`<div class="hdr">DEVI</div><div style="font-family:var(--font-body);font-size:14px;color:${deviCol}">${devi}</div>`;
-
-  // Goloka
-  const gol=await atlasGet('/goloka',{});
-  const ap=gol?.ashtakala_period||{};
-  if(ap.name){h+=`<div class="sep"></div><div class="hdr">ASHTAKALA</div><div class="sub" style="color:var(--teal)">${ap.name}</div><div class="dim">${ap.mood||''}</div>`}
-
-  // Svarodaya
-  const sv=await atlasGet('/svarodaya',{});
-  if(sv?.optimal_nadi){h+=`<div class="sep"></div><div class="hdr">SVARODAYA</div><div class="sub">${sv.optimal_nadi} nāḍī · ${sv.element_of_breath||''}</div><div class="dim">${sv.nadi_quality||''}</div>`;
+  if(nd.deity)h+=`<div class="sub">${nd.deity} · ${nd.shakti||''}</div>`;
+  h+=`<div class="sub">${tithi} · ${pa.paksha||''}</div><div class="sub">${vara}</div>`;
+  h+=`<div class="sep"></div><div class="hdr">NPU FIELD</div>`;
+  h+=`<div class="sub">${pa.element||'—'} · ${pa.guna||'—'}</div>`;
+  const hora=f?.hora||{};if(hora.hora_lord)h+=`<div class="dim">hora: ${hora.hora_lord} (${hora.hora_quality||''})</div>`;
+  const rk=f?.rahu_kala||{};if(rk.rahu_kala_start)h+=`<div class="dim" style="color:${rk.rahu_kala_active?'var(--red)':'var(--dim)'}">rahu: ${rk.rahu_kala_start}–${rk.rahu_kala_end}${rk.rahu_kala_active?' ACTIVE':''}</div>`;
+  if(sv?.optimal_nadi){h+=`<div class="sep"></div><div class="hdr">SVARODAYA</div>`;
+    h+=`<div class="sub">${sv.optimal_nadi} · ${sv.element_of_breath||''}</div>`;
+    h+=`<div class="dim">${sv.nadi_quality||''}</div>`;
     if(sv.recommended_activities?.length)h+=`<div class="dim">${sv.recommended_activities.slice(0,4).join(' · ')}</div>`}
-
-  // Sound
-  if(ss.raga){h+=`<div class="sep"></div><div class="hdr">TANPURA</div><div style="font-family:var(--font-body);font-size:13px;color:var(--gold)">${ss.raga}</div><div class="dim">Sa ${ss.sa_hz||'?'}Hz · ${ss.bpm||'?'}bpm</div>`}
-
+  if(ss.raga){h+=`<div class="sep"></div><div class="hdr">TANPURA</div>`;
+    h+=`<div style="font-family:var(--font-body);font-size:14px;color:var(--gold)">${ss.raga}</div>`;
+    h+=`<div class="dim">Sa ${ss.sa_hz||'?'}Hz · ${ss.bpm||'?'}bpm</div>`}
+  const ap=gol?.ashtakala_period||{};
+  if(ap.name){h+=`<div class="sep"></div><div class="hdr">GOLOKA</div>`;
+    h+=`<div class="sub" style="color:var(--teal)">${ap.name} · ${ap.raga||''}</div>`;
+    h+=`<div class="dim">${ap.mood||''}</div>`;
+    if(gol?.active_forest?.name)h+=`<div class="dim" style="font-style:italic">${gol.active_forest.name}</div>`}
   document.getElementById('field-data').innerHTML=h;
-
-  // Mandala with devi color
-  renderMandala(deviCol);
+  renderMandala(typeof pa.devi==='object'?(pa.devi?.color||'#7060cc'):'#7060cc');
 }
-
-function renderMandala(deviCol){
-  const el=document.getElementById('center-col');
-  const sz=Math.min(el.clientWidth,el.clientHeight)-40;if(sz<100)return;
-  const svg=document.createElementNS('http://www.w3.org/2000/svg','svg');
-  svg.setAttribute('width',sz);svg.setAttribute('height',sz);
-  svg.setAttribute('viewBox',`0 0 ${sz} ${sz}`);
-  svg.classList.add('mandala-svg');
+function renderMandala(dc){
+  const el=document.getElementById('center');const sz=Math.min(el.clientWidth,el.clientHeight)-40;if(sz<100)return;
+  const NS='http://www.w3.org/2000/svg';const svg=document.createElementNS(NS,'svg');
+  svg.setAttribute('width',sz);svg.setAttribute('height',sz);svg.setAttribute('viewBox',`0 0 ${sz} ${sz}`);svg.classList.add('mandala');
   const cx=sz/2,cy=sz/2;
-  LAYERS.forEach((ly,i)=>{
-    const r=sz*0.12+i*sz*0.055;
-    const circle=document.createElementNS('http://www.w3.org/2000/svg','circle');
-    circle.setAttribute('cx',cx);circle.setAttribute('cy',cy);circle.setAttribute('r',r);
-    circle.setAttribute('fill','none');circle.setAttribute('stroke',ly.color);
-    circle.setAttribute('stroke-width','1');circle.setAttribute('stroke-opacity','0.4');
-    circle.classList.add('s-link');
-    circle.style.cursor='pointer';
-    circle.addEventListener('click',()=>location.href=ly.path);
-    circle.addEventListener('mouseenter',()=>circle.setAttribute('stroke-opacity','0.9'));
-    circle.addEventListener('mouseleave',()=>circle.setAttribute('stroke-opacity','0.4'));
-    svg.appendChild(circle);
-    // Label
-    const t=document.createElementNS('http://www.w3.org/2000/svg','text');
-    t.setAttribute('x',cx);t.setAttribute('y',cy-r-4);t.setAttribute('text-anchor','middle');
-    t.setAttribute('font-size','8');t.setAttribute('fill',ly.color);t.setAttribute('fill-opacity','0.5');
-    t.setAttribute('font-family',"'Space Mono',monospace");
-    t.textContent=ly.id;svg.appendChild(t);
+  SL.forEach((ly,i)=>{const r=sz*0.1+i*sz*0.058;const c=document.createElementNS(NS,'circle');
+    c.setAttribute('cx',cx);c.setAttribute('cy',cy);c.setAttribute('r',r);c.setAttribute('fill','none');
+    c.setAttribute('stroke',ly.c);c.setAttribute('stroke-width','1.2');c.setAttribute('stroke-opacity','0.35');
+    c.style.cursor='pointer';c.addEventListener('click',()=>location.href='/s'+i);
+    c.addEventListener('mouseenter',()=>c.setAttribute('stroke-opacity','0.9'));
+    c.addEventListener('mouseleave',()=>c.setAttribute('stroke-opacity','0.35'));
+    svg.appendChild(c);
+    const t=document.createElementNS(NS,'text');t.setAttribute('x',cx);t.setAttribute('y',cy-r-4);
+    t.setAttribute('text-anchor','middle');t.setAttribute('font-size','8');t.setAttribute('fill',ly.c);
+    t.setAttribute('fill-opacity','0.5');t.setAttribute('font-family',"'Space Mono',monospace");
+    t.textContent=ly.id+' '+ly.n;svg.appendChild(t);
   });
-  // Center bindu
-  const b=document.createElementNS('http://www.w3.org/2000/svg','circle');
-  b.setAttribute('cx',cx);b.setAttribute('cy',cy);b.setAttribute('r',sz*0.06);
-  b.setAttribute('fill',deviCol);b.setAttribute('fill-opacity','0.3');
-  svg.appendChild(b);
-  const b2=document.createElementNS('http://www.w3.org/2000/svg','circle');
-  b2.setAttribute('cx',cx);b2.setAttribute('cy',cy);b2.setAttribute('r',sz*0.02);
-  b2.setAttribute('fill',deviCol);b2.setAttribute('fill-opacity','0.8');
-  svg.appendChild(b2);
+  const b=document.createElementNS(NS,'circle');b.setAttribute('cx',cx);b.setAttribute('cy',cy);
+  b.setAttribute('r',sz*0.06);b.setAttribute('fill',dc);b.setAttribute('fill-opacity','0.25');svg.appendChild(b);
+  const b2=document.createElementNS(NS,'circle');b2.setAttribute('cx',cx);b2.setAttribute('cy',cy);
+  b2.setAttribute('r',sz*0.02);b2.setAttribute('fill',dc);b2.setAttribute('fill-opacity','0.8');svg.appendChild(b2);
   el.innerHTML='';el.appendChild(svg);
 }
-
 async function loadHealth(){
-  const d=await atlasGet('/dashboard/health',{});
-  if(!d)return;
-  let h='';
-  if(d.graph)h+=`<div class="probe"><span class="probe-dot" style="background:var(--teal)"></span>${d.graph.entities} entities · ${d.graph.edges} edges</div>`;
-  if(d.corpus)h+=`<div class="probe"><span class="probe-dot" style="background:var(--teal)"></span>${d.corpus.chunks} chunks · ${d.corpus.files} texts</div>`;
-  h+=`<div class="sep"></div><div class="hdr">ENGINE PROBES</div>`;
-  const probes=['goloka','trajectory','svarodaya','dinacharya','astrobotany','chandas','sound/spec'];
-  for(const p of probes){
-    const name=p.split('/').pop();
-    const status=d.routes?.['/'+p]||d.routes?.[name]||'?';
-    const ok=status==='ok'||status==='registered';
-    h+=`<div class="probe"><span class="probe-dot" style="background:${ok?'var(--teal)':'var(--amber)'}"></span>${name}</div>`;
-  }
-  h+=`<div class="sep"></div><div class="hdr">QUICK LINKS</div>`;
-  LAYERS.forEach(ly=>h+=`<a class="link" href="${ly.path}">${ly.id} · ${ly.name}</a>`);
-  h+=`<a class="link" href="/corpus/search?q=">corpus search</a>`;
-  h+=`<a class="link" href="/glyphs">glyphs</a>`;
-  h+=`<a class="link" href="/dashboard">dashboard</a>`;
-  document.getElementById('health-data').innerHTML=h;
+  const[h,gol]=await Promise.all([atlasGet('/dashboard/health',{}),atlasGet('/goloka',{})]);
+  if(!h)return;let o='';
+  if(h.graph)o+=`<div class="probe"><span class="pdot" style="background:var(--teal)"></span>${h.graph.entities} entities · ${h.graph.edges} edges</div>`;
+  if(h.corpus)o+=`<div class="probe"><span class="pdot" style="background:var(--teal)"></span>${h.corpus.chunks} chunks · ${h.corpus.files} texts</div>`;
+  o+=`<div class="sep"></div><div class="hdr">ENGINES</div>`;
+  ['goloka','trajectory','svarodaya','dinacharya','astrobotany','chandas'].forEach(p=>{
+    const st=h.routes?.['/'+p]||h.routes?.[p]||'?';const ok=st==='ok'||st==='registered';
+    o+=`<div class="probe"><span class="pdot" style="background:${ok?'var(--teal)':'var(--amber)'}"></span>${p}</div>`;
+  });
+  o+=`<div class="sep"></div><div class="hdr">LINKS</div>`;
+  SL.forEach((ly,i)=>o+=`<a class="link" href="/s${i}">${ly.id} · ${ly.n}</a>`);
+  o+=`<a class="link" href="/corpus/search?q=">corpus</a><a class="link" href="/glyphs">glyphs</a>`;
+  document.getElementById('health-data').innerHTML=o;
 }
-
-loadField();loadHealth();
-setInterval(loadField,60000);setInterval(loadHealth,30000);
+loadField();loadHealth();setInterval(loadField,60000);setInterval(loadHealth,30000);
 </script>
 </body>
 </html>

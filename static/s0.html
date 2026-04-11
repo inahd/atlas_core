@@ -1,65 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>S0 · Goloka</title>
 <link rel="stylesheet" href="/static/atlas-theme.css">
 <script src="/static/atlas.js"></script>
 <style>
 body{background:#020408;color:var(--text);font-family:var(--font-body);font-size:13px;min-height:100vh;display:flex;flex-direction:column}
 .main{flex:1;display:flex;align-items:center;justify-content:center;padding:40px 20px}
-.card{max-width:600px;width:100%;text-align:center}
-.forest{font-size:28px;color:var(--gold);font-style:italic;margin-bottom:8px}
-.lila{font-size:14px;color:var(--muted);margin-bottom:24px;line-height:1.6;max-width:500px;margin-left:auto;margin-right:auto}
-.period{font-family:var(--font-mono);font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.2em;margin-bottom:6px}
-.sakhi{font-size:18px;color:#9370db;margin-bottom:4px}
-.mood{font-size:12px;color:var(--muted);margin-bottom:16px}
-.raga{font-size:13px;color:var(--teal);margin-bottom:4px}
-.devi-block{margin-top:20px;padding:16px;border:1px solid var(--border);border-radius:4px}
-.devi-name{font-size:20px;margin-bottom:4px}
-.bija{font-size:24px;color:var(--teal);margin-bottom:4px}
-.coh-bar{width:200px;height:4px;background:var(--border);border-radius:2px;margin:6px auto}
+.card{max-width:560px;width:100%;text-align:center}
+.forest{font-size:28px;color:var(--gold);font-style:italic;margin-bottom:4px}
+.lila{font-size:13px;color:var(--muted);margin-bottom:20px;line-height:1.6}
+.period{font-family:var(--font-mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.2em;margin-bottom:4px}
+.sakhi{font-size:18px;color:#9370db;margin-bottom:3px}
+.mood{font-size:12px;color:var(--muted);margin-bottom:14px}
+.devi-block{margin-top:20px;padding:14px;border:1px solid var(--border);border-radius:4px}
+.bija{font-size:22px;color:var(--teal);margin-bottom:3px}
+.devi-name{font-size:20px;margin-bottom:3px}
+.coh-bar{width:180px;height:4px;background:var(--border);border-radius:2px;margin:6px auto}
 .coh-fill{height:100%;border-radius:2px;background:var(--teal)}
 .footer{background:var(--panel);border-top:1px solid var(--border);height:28px;display:flex;align-items:center;justify-content:center;gap:12px;font-family:var(--font-mono);font-size:10px;color:var(--dim)}
 .footer .nak{font-family:var(--font-body);color:var(--gold);font-size:12px}
 .nav{position:fixed;right:12px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px}
-.nav a{width:8px;height:8px;border-radius:50%;border:1px solid var(--border);display:block}
-.nav a.active{background:var(--purple);border-color:var(--purple)}
-.nav a:hover{border-color:var(--gold)}
+.nav a{width:8px;height:8px;border-radius:50%;border:1px solid var(--border);display:block;text-decoration:none}
+.nav a.on{background:var(--purple);border-color:var(--purple)}.nav a:hover{border-color:var(--gold)}
 </style>
 </head>
 <body>
-<div class="main"><div class="card" id="content">◌</div></div>
-<div class="footer"><span id="ft-nak" class="nak">—</span><span id="ft-tithi">—</span><span id="ft-vara">—</span><span id="ft-devi">—</span><span style="width:6px;height:6px;border-radius:50%;background:var(--teal)"></span></div>
-<nav class="nav"><a href="/s0" class="active"></a><a href="/s1"></a><a href="/s2"></a><a href="/s3"></a><a href="/s4"></a><a href="/s5"></a><a href="/s6"></a></nav>
+<div class="main"><div class="card" id="c">◌</div></div>
+<div class="footer"><span id="fn" class="nak">—</span><span id="ft">—</span><span id="fv">—</span><span id="fd">—</span><span style="width:6px;height:6px;border-radius:50%;background:var(--teal)"></span></div>
+<nav class="nav"><a href="/s0" class="on"></a><a href="/s1"></a><a href="/s2"></a><a href="/s3"></a><a href="/s4"></a><a href="/s5"></a><a href="/s6"></a></nav>
 <script>
+function dv(o){return typeof o==='object'&&o?(o.name||'—'):(o||'—')}
 async function load(){
-  const[gol,field]=await Promise.all([atlasGet('/goloka',{}),atlasGet('/field',{})]);
-  const pa=field?.panchanga||{};
-  document.getElementById('ft-nak').textContent=pa.nakshatra||'—';
-  document.getElementById('ft-tithi').textContent=pa.tithi||'—';
-  document.getElementById('ft-vara').textContent=pa.vara||'—';
-  const devi=typeof pa.devi==='object'?(pa.devi?.name||'—'):(pa.devi||'—');
-  document.getElementById('ft-devi').textContent=devi;
-  const ap=gol?.ashtakala_period||{};const nd=gol?.nitya_devi||{};const forest=gol?.active_forest||{};const bridge=gol?.bridge_to_material||{};
+  const[g,f]=await Promise.all([atlasGet('/goloka',{}),atlasGet('/field',{})]);
+  const pa=f?.panchanga||{};document.getElementById('fn').textContent=pa.nakshatra||'—';
+  document.getElementById('ft').textContent=pa.tithi||'—';document.getElementById('fv').textContent=pa.vara||'—';
+  document.getElementById('fd').textContent=dv(pa.devi);
+  const ap=g?.ashtakala_period||{},nd=g?.nitya_devi||{},fo=g?.active_forest||{},br=g?.bridge_to_material||{};
   const dc=nd.color||'#9370db';
-  document.body.style.background=`radial-gradient(ellipse at center,${dc}08 0%,#020408 70%)`;
-  let h=`<div class="forest">${forest.name||'Vṛndāvana'}</div>`;
-  if(forest.lila)h+=`<div class="lila">${forest.lila}</div>`;
+  document.body.style.background=`radial-gradient(ellipse at center,${dc}06 0%,#020408 70%)`;
+  let h=`<div class="forest">${fo.name||'Vṛndāvana'}</div>`;
+  if(fo.lila)h+=`<div class="lila">${fo.lila}</div>`;
   h+=`<div class="period">${ap.name||'—'} · ${ap.time_approximate||''}</div>`;
-  const sakhi=ap.presiding_sakhi||(gol?.active_sakhis||[])[0]||'';
-  if(sakhi)h+=`<div class="sakhi">${sakhi}</div>`;
+  const sk=ap.presiding_sakhi||(g?.active_sakhis||[])[0]||'';
+  if(sk)h+=`<div class="sakhi">${sk}</div>`;
   h+=`<div class="mood">${ap.mood||''}</div>`;
-  if(ap.raga)h+=`<div class="raga">rāga ${ap.raga}</div>`;
+  if(ap.raga)h+=`<div style="font-size:12px;color:var(--teal)">rāga ${ap.raga}</div>`;
+  if(ap.rasa)h+=`<div style="font-size:10px;color:var(--dim);margin-bottom:8px">${ap.rasa}</div>`;
   h+=`<div class="devi-block" style="border-color:${dc}40">`;
   if(nd.bija)h+=`<div class="bija">${nd.bija}</div>`;
-  h+=`<div class="devi-name" style="color:${dc}">${nd.name||devi}</div>`;
-  if(nd.description)h+=`<div style="font-size:11px;color:var(--muted);margin-top:4px">${nd.description}</div>`;
+  h+=`<div class="devi-name" style="color:${dc}">${nd.name||dv(pa.devi)}</div>`;
+  if(nd.description)h+=`<div style="font-size:10px;color:var(--muted);margin-top:4px">${nd.description}</div>`;
   h+=`</div>`;
-  if(bridge.coherence!=null){const pct=Math.round(bridge.coherence*100);h+=`<div style="margin-top:16px"><div style="font-family:var(--font-mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em">bridge coherence</div><div class="coh-bar"><div class="coh-fill" style="width:${pct}%"></div></div><div style="font-family:var(--font-mono);font-size:11px;color:var(--teal)">${pct}%</div></div>`}
-  if(bridge.tithi_resonance)h+=`<div style="font-size:10px;color:var(--dim);margin-top:6px">${bridge.tithi_resonance}</div>`;
-  document.getElementById('content').innerHTML=h;
+  if(br.coherence!=null){const pct=Math.round(br.coherence*100);
+    h+=`<div style="margin-top:14px"><div style="font-family:var(--font-mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em">pratibimba coherence</div>`;
+    h+=`<div class="coh-bar"><div class="coh-fill" style="width:${pct}%"></div></div>`;
+    h+=`<div style="font-family:var(--font-mono);font-size:11px;color:var(--teal)">${pct}%</div></div>`}
+  if(br.tithi_resonance)h+=`<div style="font-size:10px;color:var(--dim);margin-top:4px">${br.tithi_resonance}</div>`;
+  if(br.raga_match!=null)h+=`<div style="font-size:10px;color:${br.raga_match?'var(--teal)':'var(--amber)'};margin-top:2px">raga: ${br.raga_match?'✓ aligned':'≠ divergent'}</div>`;
+  document.getElementById('c').innerHTML=h;
 }
 load();setInterval(load,60000);
 </script>

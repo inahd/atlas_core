@@ -1,97 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>S1 · Archetype · Sound</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>S1 · Sound</title>
 <link rel="stylesheet" href="/static/atlas-theme.css">
 <script src="/static/atlas.js"></script>
 <style>
 body{background:var(--bg);color:var(--text);font-family:var(--font-mono);font-size:11px;height:100vh;display:grid;grid-template-columns:200px 1fr 200px;grid-template-rows:1fr 28px;overflow:hidden}
-.col{padding:12px;overflow-y:auto}
-.col-l{border-right:1px solid var(--border)}
-.col-r{border-left:1px solid var(--border)}
-.hdr{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em;margin-bottom:6px}
-.val{font-family:var(--font-body);font-size:14px;color:var(--gold);margin-bottom:2px}
-.sub{font-size:10px;color:var(--muted);margin-bottom:2px}
-.dim{font-size:10px;color:var(--dim);margin-bottom:2px}
+.col{padding:12px;overflow-y:auto}.col-l{border-right:1px solid var(--border)}.col-r{border-left:1px solid var(--border)}
+.hdr{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em;margin-bottom:5px;margin-top:10px}.hdr:first-child{margin-top:0}
+.val{font-family:var(--font-body);font-size:14px;color:var(--gold);margin-bottom:2px}.sub{font-size:10px;color:var(--muted);margin-bottom:2px}.dim{font-size:10px;color:var(--dim);margin-bottom:2px}
 .sep{height:1px;background:var(--border);margin:8px 0}
-.raga-name{font-family:var(--font-body);font-size:28px;color:var(--gold);text-align:center;margin-bottom:8px}
-.sa{font-family:var(--font-mono);font-size:13px;color:var(--teal);text-align:center;margin-bottom:12px}
-.mix-row{display:flex;align-items:center;gap:6px;margin-bottom:4px}
-.mix-label{font-size:9px;color:var(--dim);min-width:50px}
-.mix-bar{flex:1;height:3px;background:var(--border);border-radius:1px}
-.mix-fill{height:100%;border-radius:1px}
+.raga{font-family:var(--font-body);font-size:32px;color:var(--gold);text-align:center;margin-bottom:4px}
+.sa{font-family:var(--font-mono);font-size:12px;color:var(--teal);text-align:center;margin-bottom:10px}
+.mix-row{display:flex;align-items:center;gap:6px;margin-bottom:3px}.mix-l{font-size:9px;color:var(--dim);min-width:55px;text-align:right}
+.mix-bar{flex:1;height:4px;background:var(--border);border-radius:2px;max-width:160px}.mix-f{height:100%;border-radius:2px;background:var(--gold)}
+.mix-v{font-size:9px;color:var(--dim);min-width:28px}
 .footer{grid-column:1/-1;background:var(--panel);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:12px;font-size:10px;color:var(--dim)}
 .footer .nak{font-family:var(--font-body);color:var(--gold);font-size:12px}
 .nav{position:fixed;right:12px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px}
-.nav a{width:8px;height:8px;border-radius:50%;border:1px solid var(--border);display:block}
-.nav a.active{background:var(--gold);border-color:var(--gold)}
-.nav a:hover{border-color:var(--gold)}
-.sc-dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:4px}
+.nav a{width:8px;height:8px;border-radius:50%;border:1px solid var(--border);display:block;text-decoration:none}.nav a.on{background:var(--gold);border-color:var(--gold)}.nav a:hover{border-color:var(--gold)}
+.sc-dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:3px}
 </style>
 </head>
 <body>
 <div class="col col-l" id="left">◌</div>
-<div class="col" id="center" style="display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px">◌</div>
+<div class="col" id="center" style="display:flex;flex-direction:column;align-items:center;justify-content:center">◌</div>
 <div class="col col-r" id="right">◌</div>
-<div class="footer"><span id="ft-nak" class="nak">—</span><span id="ft-tithi">—</span><span id="ft-vara">—</span><span id="ft-devi">—</span><span style="width:6px;height:6px;border-radius:50%;background:var(--teal)"></span></div>
-<nav class="nav"><a href="/s0"></a><a href="/s1" class="active"></a><a href="/s2"></a><a href="/s3"></a><a href="/s4"></a><a href="/s5"></a><a href="/s6"></a></nav>
+<div class="footer"><span id="fn" class="nak">—</span><span id="ft">—</span><span id="fv">—</span><span id="fd">—</span><span style="width:6px;height:6px;border-radius:50%;background:var(--teal)"></span></div>
+<nav class="nav"><a href="/s0"></a><a href="/s1" class="on"></a><a href="/s2"></a><a href="/s3"></a><a href="/s4"></a><a href="/s5"></a><a href="/s6"></a></nav>
 <script>
+function dv(o){return typeof o==='object'&&o?(o.name||'—'):(o||'—')}
 async function load(){
-  const[field,snd,chandas,gol]=await Promise.all([atlasGet('/field',{}),atlasGet('/sound/state',{}),atlasGet('/chandas',{}),atlasGet('/goloka',{})]);
-  const pa=field?.panchanga||{};const ss=field?.sound_state||snd||{};
-  const nak=pa.nakshatra||'—';const tithi=pa.tithi||'—';const vara=pa.vara||'—';
-  const devi=typeof pa.devi==='object'?(pa.devi?.name||'—'):(pa.devi||'—');
-  document.getElementById('ft-nak').textContent=nak;document.getElementById('ft-tithi').textContent=tithi;
-  document.getElementById('ft-vara').textContent=vara;document.getElementById('ft-devi').textContent=devi;
-
-  // Left — Panchanga
-  let left=`<div class="hdr">PANCHANGA</div><div class="val">${nak}</div>`;
-  if(pa.nak_data?.deity)left+=`<div class="sub">${pa.nak_data.deity}</div>`;
-  left+=`<div class="sub">${tithi} · ${pa.paksha||''}</div><div class="sub">${vara}</div>`;
-  if(pa.element)left+=`<div class="dim">${pa.element} · ${pa.guna||''}</div>`;
-  const hora=field?.hora||{};if(hora.hora_lord)left+=`<div class="dim">hora: ${hora.hora_lord}</div>`;
-  const rk=field?.rahu_kala||{};if(rk.rahu_kala_start)left+=`<div class="dim" style="color:${rk.rahu_kala_active?'var(--red)':'var(--dim)'}">rahu: ${rk.rahu_kala_start}–${rk.rahu_kala_end}${rk.rahu_kala_active?' ACTIVE':''}</div>`;
-  document.getElementById('left').innerHTML=left;
-
-  // Center — Sound
+  const[f,snd,ch,gol]=await Promise.all([atlasGet('/field',{}),atlasGet('/sound/state',{}),atlasGet('/chandas',{}),atlasGet('/goloka',{})]);
+  const pa=f?.panchanga||{},ss=f?.sound_state||{};
+  document.getElementById('fn').textContent=pa.nakshatra||'—';document.getElementById('ft').textContent=pa.tithi||'—';
+  document.getElementById('fv').textContent=pa.vara||'—';document.getElementById('fd').textContent=dv(pa.devi);
+  // Left
+  let L=`<div class="hdr">PANCHANGA</div><div class="val">${pa.nakshatra||'—'}</div>`;
+  if(pa.nak_data?.deity)L+=`<div class="sub">${pa.nak_data.deity}</div>`;
+  L+=`<div class="sub">${pa.tithi||'—'} · ${pa.paksha||''}</div><div class="sub">${pa.vara||'—'}</div>`;
+  if(pa.element)L+=`<div class="dim">${pa.element} · ${pa.guna||''}</div>`;
+  const h=f?.hora||{};if(h.hora_lord)L+=`<div class="dim">hora: ${h.hora_lord}</div>`;
+  const rk=f?.rahu_kala||{};if(rk.rahu_kala_start)L+=`<div class="dim" style="color:${rk.rahu_kala_active?'var(--red)':'var(--dim)'}">rahu: ${rk.rahu_kala_start}–${rk.rahu_kala_end}</div>`;
+  document.getElementById('left').innerHTML=L;
+  // Center
   const raga=ss.raga||snd?.raga||'—';const saHz=ss.sa_hz||snd?.sa_hz||'?';
-  const tala=ss.tala||snd?.tala||'—';const bpm=ss.bpm||snd?.bpm||'?';
   const vadi=ss.raga_vadi||snd?.raga_detail?.vadi||'';const samvadi=ss.raga_samvadi||snd?.raga_detail?.samvadi||'';
-  let center=`<div class="raga-name">${raga}</div>`;
-  center+=`<div class="sa">Sa ${saHz}Hz</div>`;
-  if(vadi||samvadi)center+=`<div class="sub" style="text-align:center">vādī: ${vadi||'—'} · samvādī: ${samvadi||'—'}</div>`;
-  center+=`<div class="sub" style="text-align:center">${tala} · ${bpm}bpm</div>`;
-  // Layer mix
-  const layers=snd?.layers||{};const mixNames=['tanpura','melody','tabla','bija','drone'];
-  center+=`<div style="width:200px;margin-top:16px">`;
-  mixNames.forEach(name=>{
-    const val=layers[name]??0.5;
-    center+=`<div class="mix-row"><span class="mix-label">${name}</span><div class="mix-bar"><div class="mix-fill" style="width:${val*100}%;background:var(--gold)"></div></div></div>`;
-  });
-  center+=`</div>`;
-  // SC status
+  const tala=ss.tala||snd?.tala||'—';const bpm=ss.bpm||snd?.bpm||'?';
+  let C=`<div class="raga">${raga}</div><div class="sa">Sa ${saHz}Hz · ${pa.nakshatra||''}</div>`;
+  if(vadi||samvadi)C+=`<div class="sub" style="text-align:center">vādī ${vadi||'—'} · samvādī ${samvadi||'—'}</div>`;
+  C+=`<div class="sub" style="text-align:center">${tala} · ${bpm}bpm</div>`;
+  const layers=snd?.layers||{};
+  C+=`<div style="margin-top:14px">`;
+  ['tanpura','melody','tabla','bija','drone'].forEach(n=>{const v=layers[n]??0;
+    C+=`<div class="mix-row"><span class="mix-l">${n}</span><div class="mix-bar"><div class="mix-f" style="width:${v*100}%"></div></div><span class="mix-v">${v.toFixed(1)}</span></div>`;
+  });C+=`</div>`;
   const sc=snd?.sc||{};const scOk=sc.status==='booted'||sc.status==='ready';
-  center+=`<div style="margin-top:12px;font-size:10px"><span class="sc-dot" style="background:${scOk?'var(--teal)':'var(--dim)'}"></span>SC ${scOk?'running':'offline'}</div>`;
-  document.getElementById('center').innerHTML=center;
-
-  // Right — Field
-  const deviCol=typeof pa.devi==='object'?(pa.devi?.color||'#7060cc'):'#7060cc';
-  let right=`<div class="hdr">DEVI</div><div style="font-family:var(--font-body);font-size:14px;color:${deviCol}">${devi}</div>`;
-  if(chandas?.primary_metre)right+=`<div class="sep"></div><div class="hdr">CHANDAS</div><div class="sub">${chandas.primary_metre}</div><div class="dim">${chandas.cadence_pattern||''}</div>`;
-  const golRaga=gol?.ashtakala_period?.raga||'';
-  if(golRaga){
-    const match=golRaga.toLowerCase()===raga.toLowerCase();
-    right+=`<div class="sep"></div><div class="hdr">GOLOKA RAGA</div><div class="sub" style="color:${match?'var(--teal)':'var(--amber)'}">${golRaga} ${match?'✓ aligned':'≠ divergent'}</div>`;
-  }
-  // S-layer dots
-  right+=`<div class="sep"></div><div class="hdr">LAYERS</div><div style="display:flex;gap:4px;margin-top:4px">`;
+  C+=`<div style="margin-top:10px;font-size:10px"><span class="sc-dot" style="background:${scOk?'var(--teal)':'var(--dim)'}"></span>SC ${scOk?'running':'stopped'}</div>`;
+  document.getElementById('center').innerHTML=C;
+  // Right
+  const dc=typeof pa.devi==='object'?(pa.devi?.color||'#7060cc'):'#7060cc';
+  let R=`<div class="hdr">DEVI</div><div style="font-family:var(--font-body);font-size:14px;color:${dc}">${dv(pa.devi)}</div>`;
+  R+=`<div class="hdr">NPU FIELD</div><div class="sub">${pa.element||'—'} · ${pa.guna||'—'}</div>`;
+  if(ch?.primary_metre){R+=`<div class="hdr">CHANDAS</div><div class="sub">${ch.primary_metre}</div>`;if(ch.cadence_pattern)R+=`<div class="dim">${ch.cadence_pattern}</div>`}
+  const gr=gol?.ashtakala_period?.raga||'';
+  if(gr){const match=gr.toLowerCase()===raga.toLowerCase();R+=`<div class="hdr">GOLOKA RAGA</div><div class="sub" style="color:${match?'var(--teal)':'var(--amber)'}">${gr} ${match?'✓':'≠ '+raga}</div>`}
+  R+=`<div class="sep"></div><div class="hdr">LAYERS</div><div style="display:flex;gap:4px">`;
   ['#7060cc','#e0b040','#20a88a','#c8d8e8','#e0b040','#3a7a4a','#7060cc'].forEach((c,i)=>{
-    const active=i===1;right+=`<div style="width:8px;height:8px;border-radius:50%;background:${c};opacity:${active?1:0.3}"></div>`;
-  });
-  right+=`</div>`;
-  document.getElementById('right').innerHTML=right;
+    R+=`<a href="/s${i}" style="width:8px;height:8px;border-radius:50%;background:${c};opacity:${i===1?1:0.3};display:block"></a>`;
+  });R+=`</div>`;
+  document.getElementById('right').innerHTML=R;
 }
 load();setInterval(load,60000);
 </script>

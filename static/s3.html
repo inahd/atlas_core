@@ -1,118 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>S3 · Kāla · Time</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>S3 · Kāla</title>
 <link rel="stylesheet" href="/static/atlas-theme.css">
 <script src="/static/atlas.js"></script>
 <style>
 body{background:var(--bg);color:var(--text);font-family:var(--font-mono);font-size:11px;height:100vh;display:grid;grid-template-rows:auto 1fr 28px;overflow:hidden}
-.header-band{background:var(--panel);border-bottom:1px solid var(--border);padding:12px 16px;display:flex;gap:20px;align-items:baseline;flex-wrap:wrap}
-.hv{font-family:var(--font-body);font-size:18px;color:var(--gold)}
-.hs{font-size:11px;color:var(--muted)}
-.hd{font-size:10px;color:var(--dim)}
+.top{background:var(--panel);border-bottom:1px solid var(--border);padding:10px 16px;display:flex;gap:16px;align-items:baseline;flex-wrap:wrap}
+.top .nak{font-family:var(--font-body);font-size:18px;color:var(--gold)}.top span{color:var(--muted)}
 .main{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);overflow:hidden}
-.panel{background:var(--bg);padding:14px;overflow-y:auto}
-.hdr{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em;margin-bottom:6px;margin-top:10px}
-.hdr:first-child{margin-top:0}
-.val{font-family:var(--font-body);font-size:14px;color:var(--gold);margin-bottom:2px}
-.sub{font-size:11px;color:var(--text);margin-bottom:2px}
-.dim{font-size:10px;color:var(--dim);margin-bottom:2px}
-.act{font-size:10px;color:var(--muted);padding-left:8px;margin-bottom:1px}
-.act::before{content:'· ';color:var(--dim)}
-.avoid{font-size:10px;color:var(--red);opacity:.7;padding-left:8px;margin-bottom:1px}
-.avoid::before{content:'✗ ';color:var(--red)}
+.pan{background:var(--bg);padding:14px;overflow-y:auto}
+.hdr{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em;margin-bottom:5px;margin-top:10px}.hdr:first-child{margin-top:0}
+.val{font-family:var(--font-body);font-size:16px;color:var(--gold);margin-bottom:2px}.sub{font-size:11px;color:var(--text);margin-bottom:2px}.dim{font-size:10px;color:var(--dim);margin-bottom:2px}
+.act{font-size:10px;color:var(--muted);padding-left:6px;margin-bottom:1px}.act::before{content:'· '}
+.avoid{font-size:10px;color:var(--red);opacity:.7;padding-left:6px;margin-bottom:1px}.avoid::before{content:'✗ '}
 .sep{height:1px;background:var(--border);margin:8px 0}
-.coh-bar{width:100%;height:3px;background:var(--border);border-radius:1px;margin:3px 0}
-.coh-fill{height:100%;border-radius:1px;background:var(--teal)}
+.cbar{width:100%;height:3px;background:var(--border);border-radius:1px;margin:3px 0}.cfill{height:100%;border-radius:1px;background:var(--teal)}
 .footer{grid-column:1/-1;background:var(--panel);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:12px;font-size:10px;color:var(--dim)}
 .footer .nak{font-family:var(--font-body);color:var(--gold);font-size:12px}
 .nav{position:fixed;right:12px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px}
-.nav a{width:8px;height:8px;border-radius:50%;border:1px solid var(--border);display:block}
-.nav a.active{background:var(--text);border-color:var(--text)}
-.nav a:hover{border-color:var(--gold)}
+.nav a{width:8px;height:8px;border-radius:50%;border:1px solid var(--border);display:block;text-decoration:none}.nav a.on{background:var(--text);border-color:var(--text)}.nav a:hover{border-color:var(--gold)}
 </style>
 </head>
 <body>
-<div class="header-band" id="panchanga-bar">◌</div>
-<div class="main">
-  <div class="panel" id="svarodaya-panel">◌</div>
-  <div class="panel" id="dinacharya-panel">◌</div>
-</div>
-<div class="footer"><span id="ft-nak" class="nak">—</span><span id="ft-tithi">—</span><span id="ft-vara">—</span><span id="ft-devi">—</span><span style="width:6px;height:6px;border-radius:50%;background:var(--teal)"></span></div>
-<nav class="nav"><a href="/s0"></a><a href="/s1"></a><a href="/s2"></a><a href="/s3" class="active"></a><a href="/s4"></a><a href="/s5"></a><a href="/s6"></a></nav>
+<div class="top" id="top">◌</div>
+<div class="main"><div class="pan" id="sv">◌</div><div class="pan" id="din">◌</div></div>
+<div class="footer"><span id="fn" class="nak">—</span><span id="ft">—</span><span id="fv">—</span><span id="fd">—</span><span style="width:6px;height:6px;border-radius:50%;background:var(--teal)"></span></div>
+<nav class="nav"><a href="/s0"></a><a href="/s1"></a><a href="/s2"></a><a href="/s3" class="on"></a><a href="/s4"></a><a href="/s5"></a><a href="/s6"></a></nav>
 <script>
+function dv(o){return typeof o==='object'&&o?(o.name||'—'):(o||'—')}
 async function load(){
-  const[field,sv,din,traj]=await Promise.all([atlasGet('/field',{}),atlasGet('/svarodaya',{}),atlasGet('/dinacharya',{}),atlasGet('/trajectory',{})]);
-  const pa=field?.panchanga||{};
-  const nak=pa.nakshatra||'—';const tithi=pa.tithi||'—';const vara=pa.vara||'—';
-  const devi=typeof pa.devi==='object'?(pa.devi?.name||'—'):(pa.devi||'—');
-  document.getElementById('ft-nak').textContent=nak;document.getElementById('ft-tithi').textContent=tithi;
-  document.getElementById('ft-vara').textContent=vara;document.getElementById('ft-devi').textContent=devi;
-
-  // Header band — Panchanga
-  let hb=`<span class="hv">${nak}</span><span class="hs">${tithi} · ${pa.paksha||''}</span><span class="hs">${vara}</span>`;
-  if(pa.element)hb+=`<span class="hd">${pa.element} · ${pa.guna||''}</span>`;
-  if(pa.masa_name)hb+=`<span class="hd">${pa.masa_name}</span>`;
-  document.getElementById('panchanga-bar').innerHTML=hb;
-
-  // Left — Svarodaya
-  let left='<div class="hdr">SVARODAYA</div>';
+  const[f,sv,din,tr]=await Promise.all([atlasGet('/field',{}),atlasGet('/svarodaya',{}),atlasGet('/dinacharya',{}),atlasGet('/trajectory',{})]);
+  const pa=f?.panchanga||{};
+  document.getElementById('fn').textContent=pa.nakshatra||'—';document.getElementById('ft').textContent=pa.tithi||'—';
+  document.getElementById('fv').textContent=pa.vara||'—';document.getElementById('fd').textContent=dv(pa.devi);
+  document.getElementById('top').innerHTML=`<span class="nak">${pa.nakshatra||'—'}</span><span>${pa.tithi||'—'} · ${pa.paksha||''}</span><span>${pa.vara||'—'}</span><span style="color:var(--dim)">${pa.element||''} · ${pa.guna||''}</span><span style="color:var(--dim)">${pa.masa_name||''}</span>`;
+  // Svarodaya
+  let L='<div class="hdr">SVARODAYA</div>';
   if(sv?.optimal_nadi){
-    left+=`<div class="val">${sv.optimal_nadi} nāḍī</div>`;
-    left+=`<div class="sub">${sv.nadi_side||''} · ${sv.nadi_graha||''}</div>`;
-    left+=`<div class="dim">${sv.nadi_quality||''}</div>`;
-    left+=`<div class="sep"></div><div class="hdr">ELEMENT</div>`;
-    left+=`<div class="sub">${sv.element_of_breath||'—'}</div>`;
-    left+=`<div class="dim">${sv.element_sensation||''}</div>`;
-    left+=`<div class="dim">${sv.element_duration_minutes||''}min cycle</div>`;
-    if(sv.coherence_score!=null){
-      left+=`<div class="sep"></div><div class="hdr">COHERENCE</div>`;
-      left+=`<div class="coh-bar"><div class="coh-fill" style="width:${sv.coherence_score*100}%"></div></div>`;
-      left+=`<div class="dim">${(sv.coherence_score*100).toFixed(0)}%</div>`;
-    }
-    left+=`<div class="sep"></div><div class="hdr">RECOMMENDED</div>`;
-    (sv.recommended_activities||[]).forEach(a=>left+=`<div class="act">${a.replace(/_/g,' ')}</div>`);
-    if(sv.avoid_activities?.length){
-      left+=`<div class="hdr">AVOID</div>`;
-      sv.avoid_activities.forEach(a=>left+=`<div class="avoid">${a.replace(/_/g,' ')}</div>`);
-    }
-  }else left+='<div class="dim">engine offline</div>';
-  document.getElementById('svarodaya-panel').innerHTML=left;
-
-  // Right — Dinacharya
-  let right='<div class="hdr">DINACHARYA</div>';
+    L+=`<div class="val">${sv.optimal_nadi}</div><div class="sub">${sv.nadi_side||''} · ${sv.nadi_graha||''}</div><div class="dim">${sv.nadi_quality||''}</div>`;
+    L+=`<div class="sep"></div><div class="hdr">ELEMENT</div><div class="sub">${sv.element_of_breath||'—'}</div><div class="dim">${sv.element_sensation||''}</div><div class="dim">${sv.element_duration_minutes||''}min cycle</div>`;
+    if(sv.coherence_score!=null){L+=`<div class="sep"></div><div class="hdr">COHERENCE</div><div class="cbar"><div class="cfill" style="width:${sv.coherence_score*100}%"></div></div><div class="dim">${(sv.coherence_score*100).toFixed(0)}%</div>`}
+    L+=`<div class="sep"></div><div class="hdr">RECOMMENDED</div>`;(sv.recommended_activities||[]).forEach(a=>L+=`<div class="act">${a.replace(/_/g,' ')}</div>`);
+    if(sv.avoid_activities?.length){L+=`<div class="hdr">AVOID</div>`;sv.avoid_activities.forEach(a=>L+=`<div class="avoid">${a.replace(/_/g,' ')}</div>`)}
+  }else L+='<div class="dim">engine offline</div>';
+  document.getElementById('sv').innerHTML=L;
+  // Dinacharya
+  let R='<div class="hdr">DINACHARYA</div>';
   if(din?.ashtakala_period){
-    right+=`<div class="val">${din.ashtakala_period}</div>`;
-    right+=`<div class="sub">${din.primary_activity?.replace(/_/g,' ')||''}</div>`;
-    if(din.mantra)right+=`<div class="dim">mantra: ${din.mantra}</div>`;
-    if(din.offering)right+=`<div class="dim">offering: ${din.offering}</div>`;
-    right+=`<div class="sep"></div><div class="hdr">DOSHA</div>`;
-    right+=`<div class="sub">${din.dosha_active||'—'} active</div>`;
-    right+=`<div class="sep"></div><div class="hdr">DIETARY</div>`;
-    right+=`<div class="sub">${din.dietary_guidance||'—'}</div>`;
-    if(din.recommended_herbs?.length){
-      right+=`<div class="sep"></div><div class="hdr">HERBS</div>`;
-      din.recommended_herbs.forEach(h=>right+=`<div class="act">${h}</div>`);
-    }
-    if(din.recommended_practices?.length){
-      right+=`<div class="sep"></div><div class="hdr">PRACTICE</div>`;
-      din.recommended_practices.slice(0,5).forEach(p=>right+=`<div class="act">${p}</div>`);
-    }
-    if(din.avoid?.length){
-      right+=`<div class="hdr">AVOID</div>`;
-      din.avoid.slice(0,4).forEach(a=>right+=`<div class="avoid">${a.replace(/_/g,' ')}</div>`);
-    }
-    if(din.raga)right+=`<div class="sep"></div><div class="dim">rāga: ${din.raga}</div>`;
-    if(din.forest)right+=`<div class="dim">forest: ${din.forest}</div>`;
-  }else right+='<div class="dim">engine offline</div>';
-
-  // Trajectory
-  if(traj?.now){right+=`<div class="sep"></div><div class="hdr">TRAJECTORY</div><div class="sub">${traj.now}</div>`;
-    if(traj.moving_toward)right+=`<div class="dim">→ ${traj.moving_toward}</div>`;
-    if(traj.dasha_context)right+=`<div class="dim">${traj.dasha_context}</div>`}
-  document.getElementById('dinacharya-panel').innerHTML=right;
+    R+=`<div class="val">${din.ashtakala_period}</div><div class="sub">${din.primary_activity?.replace(/_/g,' ')||''}</div>`;
+    if(din.mantra)R+=`<div class="dim">mantra: ${din.mantra}</div>`;
+    if(din.offering)R+=`<div class="dim">offering: ${din.offering}</div>`;
+    R+=`<div class="sep"></div><div class="hdr">DOSHA</div><div class="sub">${din.dosha_active||'—'} active</div>`;
+    R+=`<div class="sep"></div><div class="hdr">DIETARY</div><div class="sub">${din.dietary_guidance||'—'}</div>`;
+    if(din.recommended_herbs?.length){R+=`<div class="hdr">HERBS</div>`;din.recommended_herbs.forEach(h=>R+=`<div class="act">${h}</div>`)}
+    if(din.recommended_practices?.length){R+=`<div class="hdr">PRACTICE</div>`;din.recommended_practices.slice(0,5).forEach(p=>R+=`<div class="act">${p}</div>`)}
+    if(din.avoid?.length){R+=`<div class="hdr">AVOID</div>`;din.avoid.slice(0,4).forEach(a=>R+=`<div class="avoid">${a.replace(/_/g,' ')}</div>`)}
+    if(din.raga)R+=`<div class="sep"></div><div class="dim">rāga: ${din.raga}</div>`;
+    if(din.forest)R+=`<div class="dim" style="font-style:italic">${din.forest}</div>`;
+  }else R+='<div class="dim">engine offline</div>';
+  if(tr?.now){R+=`<div class="sep"></div><div class="hdr">TRAJECTORY</div><div class="sub">${tr.now}</div>`;if(tr.moving_toward)R+=`<div class="dim">→ ${tr.moving_toward}</div>`}
+  document.getElementById('din').innerHTML=R;
 }
 load();setInterval(load,60000);
 </script>

@@ -1,79 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>S5 · Bhūmi · Nature</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>S5 · Bhūmi</title>
 <link rel="stylesheet" href="/static/atlas-theme.css">
 <script src="/static/atlas.js"></script>
 <style>
 body{background:var(--bg);color:var(--text);font-family:var(--font-mono);font-size:11px;min-height:100vh;display:flex;flex-direction:column}
-.main{flex:1;padding:20px;max-width:700px;margin:0 auto;overflow-y:auto}
-.day-type{font-family:var(--font-body);font-size:32px;color:#2a6a3a;text-align:center;margin-bottom:4px;text-transform:uppercase;letter-spacing:.1em}
-.day-class{font-family:var(--font-mono);font-size:10px;color:var(--dim);text-align:center;margin-bottom:16px}
-.hdr{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em;margin-bottom:6px;margin-top:14px}
-.hdr:first-child{margin-top:0}
-.val{font-family:var(--font-body);font-size:14px;color:var(--gold);margin-bottom:2px}
-.sub{font-size:11px;color:var(--text);margin-bottom:2px}
-.dim{font-size:10px;color:var(--dim);margin-bottom:2px}
+.main{flex:1;padding:20px;max-width:640px;margin:0 auto;overflow-y:auto}
+.day{font-family:var(--font-body);font-size:36px;color:#1a5a2e;text-align:center;margin-bottom:2px;text-transform:uppercase;letter-spacing:.08em}
+.class{font-family:var(--font-mono);font-size:10px;color:var(--dim);text-align:center;margin-bottom:14px}
+.qbar{width:180px;height:5px;background:var(--border);border-radius:2px;margin:4px auto}.qfill{height:100%;border-radius:2px;background:#1a5a2e}
+.hdr{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em;margin-bottom:5px;margin-top:12px}.hdr:first-child{margin-top:0}
+.sub{font-size:11px;color:var(--text);margin-bottom:2px}.dim{font-size:10px;color:var(--dim);margin-bottom:2px}
 .sep{height:1px;background:var(--border);margin:10px 0}
-.quality-bar{width:200px;height:6px;background:var(--border);border-radius:3px;margin:6px auto}
-.quality-fill{height:100%;border-radius:3px;background:#2a6a3a}
-.herb{font-size:11px;color:var(--text);padding:3px 0;border-bottom:1px solid var(--border)}
-.herb:last-child{border-bottom:none}
-.lunar-note{font-family:var(--font-body);font-size:12px;color:var(--muted);line-height:1.6;font-style:italic;margin-top:8px;padding:12px;border-left:2px solid #2a6a3a40}
+.herb{font-size:11px;color:var(--text);padding:3px 0;border-bottom:1px solid var(--border)}.herb:last-child{border-bottom:none}
+.lunar{font-family:var(--font-body);font-size:12px;color:var(--muted);line-height:1.6;font-style:italic;padding:10px;border-left:2px solid #1a5a2e40;margin-top:6px}
 .footer{background:var(--panel);border-top:1px solid var(--border);height:28px;display:flex;align-items:center;justify-content:center;gap:12px;font-size:10px;color:var(--dim)}
 .footer .nak{font-family:var(--font-body);color:var(--gold);font-size:12px}
 .nav{position:fixed;right:12px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px}
-.nav a{width:8px;height:8px;border-radius:50%;border:1px solid var(--border);display:block}
-.nav a.active{background:var(--green);border-color:var(--green)}
-.nav a:hover{border-color:var(--gold)}
+.nav a{width:8px;height:8px;border-radius:50%;border:1px solid var(--border);display:block;text-decoration:none}.nav a.on{background:var(--green);border-color:var(--green)}.nav a:hover{border-color:var(--gold)}
 </style>
 </head>
 <body>
-<div class="main" id="content">◌</div>
-<div class="footer"><span id="ft-nak" class="nak">—</span><span id="ft-tithi">—</span><span id="ft-vara">—</span><span id="ft-devi">—</span><span style="width:6px;height:6px;border-radius:50%;background:var(--teal)"></span></div>
-<nav class="nav"><a href="/s0"></a><a href="/s1"></a><a href="/s2"></a><a href="/s3"></a><a href="/s4"></a><a href="/s5" class="active"></a><a href="/s6"></a></nav>
+<div class="main" id="c">◌</div>
+<div class="footer"><span id="fn" class="nak">—</span><span id="ft">—</span><span id="fv">—</span><span id="fd">—</span><span style="width:6px;height:6px;border-radius:50%;background:var(--teal)"></span></div>
+<nav class="nav"><a href="/s0"></a><a href="/s1"></a><a href="/s2"></a><a href="/s3"></a><a href="/s4"></a><a href="/s5" class="on"></a><a href="/s6"></a></nav>
 <script>
+function dv(o){return typeof o==='object'&&o?(o.name||'—'):(o||'—')}
 async function load(){
-  const[ab,field]=await Promise.all([atlasGet('/astrobotany',{}),atlasGet('/field',{})]);
-  const pa=field?.panchanga||{};
-  const nak=pa.nakshatra||'—';const tithi=pa.tithi||'—';const vara=pa.vara||'—';
-  const devi=typeof pa.devi==='object'?(pa.devi?.name||'—'):(pa.devi||'—');
-  document.getElementById('ft-nak').textContent=nak;document.getElementById('ft-tithi').textContent=tithi;
-  document.getElementById('ft-vara').textContent=vara;document.getElementById('ft-devi').textContent=devi;
-
-  if(!ab||ab.error){document.getElementById('content').innerHTML='<div class="dim">astrobotany engine offline</div>';return}
-
-  const dayType=ab.day_type||'—';const pq=ab.planting_quality||0;
-  let h=`<div class="day-type">${dayType}</div>`;
-  h+=`<div class="day-class">${ab.class_name||ab.day_class||''}</div>`;
-  h+=`<div class="quality-bar"><div class="quality-fill" style="width:${pq*100}%"></div></div>`;
-  h+=`<div style="text-align:center;font-size:10px;color:var(--dim)">planting quality: ${(pq*100).toFixed(0)}%</div>`;
-
-  h+=`<div class="sep"></div><div class="hdr">BEST ACTIVITIES</div>`;
-  h+=`<div class="sub">${ab.best_activities||'—'}</div>`;
-
+  const[ab,f]=await Promise.all([atlasGet('/astrobotany',{}),atlasGet('/field',{})]);
+  const pa=f?.panchanga||{};
+  document.getElementById('fn').textContent=pa.nakshatra||'—';document.getElementById('ft').textContent=pa.tithi||'—';
+  document.getElementById('fv').textContent=pa.vara||'—';document.getElementById('fd').textContent=dv(pa.devi);
+  if(!ab||ab.error){document.getElementById('c').innerHTML='<div class="dim">astrobotany engine offline</div>';return}
+  const pq=ab.planting_quality||0;
+  let h=`<div class="day">${ab.day_type||'—'}</div><div class="class">${ab.class_name||ab.day_class||''}</div>`;
+  h+=`<div class="qbar"><div class="qfill" style="width:${pq*100}%"></div></div>`;
+  h+=`<div style="text-align:center;font-size:10px;color:var(--dim);margin-bottom:12px">planting quality ${(pq*100).toFixed(0)}%</div>`;
+  h+=`<div class="hdr">BEST ACTIVITIES</div><div class="sub">${ab.best_activities||'—'}</div>`;
   h+=`<div class="hdr">DOSHA</div><div class="sub">${ab.dosha_heuristic||'—'}</div>`;
   h+=`<div class="hdr">HARVEST</div><div class="dim">${ab.harvest_timing||'—'}</div>`;
-
-  // Herbs
   const herbs=ab.recommended_herbs||[];
-  if(herbs.length){
-    h+=`<div class="sep"></div><div class="hdr">RECOMMENDED HERBS (${herbs.length})</div>`;
-    herbs.forEach(hb=>h+=`<div class="herb">${hb}</div>`);
-  }
-
-  // Lunar note
-  if(ab.lunar_note){h+=`<div class="sep"></div><div class="hdr">LUNAR BIOLOGY</div><div class="lunar-note">${ab.lunar_note}</div>`}
-
-  // Field context
-  h+=`<div class="sep"></div><div class="hdr">FIELD CONTEXT</div>`;
-  h+=`<div class="sub">${ab.nakshatra||nak}</div>`;
-  h+=`<div class="dim">${ab.element||pa.element||''} · ${ab.paksha||pa.paksha||''}</div>`;
-  if(ab.nakshatra_plant)h+=`<div class="dim">nakshatra plant: ${ab.nakshatra_plant}</div>`;
-
-  document.getElementById('content').innerHTML=h;
+  if(herbs.length){h+=`<div class="sep"></div><div class="hdr">HERBS (${herbs.length})</div>`;herbs.forEach(hb=>h+=`<div class="herb">${hb}</div>`)}
+  if(ab.lunar_note){h+=`<div class="sep"></div><div class="hdr">LUNAR BIOLOGY</div><div class="lunar">${ab.lunar_note}</div>`}
+  h+=`<div class="sep"></div><div class="hdr">FIELD</div><div class="sub">${ab.nakshatra||pa.nakshatra||''} · ${ab.element||pa.element||''} · ${ab.paksha||pa.paksha||''}</div>`;
+  document.getElementById('c').innerHTML=h;
 }
 load();setInterval(load,60000);
 </script>
