@@ -1,0 +1,13 @@
+recording_id,raga_name,raga_name_iast,prahar,time_range_ist,nakshatra_resonance,tithi_resonance,vara_resonance,artist,artist_tradition,instrument,archive_url,duration_minutes,year_recorded,quality,tradition,notes
+yaman_vilayat_01,Yaman,Yamana,evening,18:00-21:00,,,Friday,Vilayat Khan,Etawah,sitar,https://archive.org/details/vilayat-khan-raga-yaman,55,1970,concert,hindustani,Pre-eminent evening raga — Shukra vara resonance
+yaman_amir_01,Yaman,Yamana,evening,18:00-21:00,,,,Amir Khan,Indore,vocal,https://archive.org/details/amir-khan-yaman-kalyan,60,1965,concert,hindustani,Vilambit khayal in Yaman
+bihag_ravi_01,Bihag,Bihāga,night,21:00-00:00,Dhanishtha,,Saturday,Ravi Shankar,Maihar,sitar,https://archive.org/details/ravi-shankar-raga-bihag,45,1968,concert,hindustani,Late night raga — current field raga
+bhairav_bismillah_01,Bhairav,Bhairava,morning,06:00-09:00,,,Saturday,Bismillah Khan,Varanasi,shehnai,https://archive.org/details/bismillah-khan-bhairav,40,1972,concert,hindustani,Morning raga — Shanivara resonance
+todi_kishori_01,Todi,Toḍī,morning,09:00-12:00,Rohini,,Monday,Kishori Amonkar,Jaipur,vocal,https://archive.org/details/kishori-amonkar-todi,52,1980,concert,hindustani,Late morning raga — sombre devotional mood
+bhimpalasi_hariprasad_01,Bhimpalasi,Bhīmpalāsī,afternoon,15:00-18:00,Purvashadha,,Wednesday,Hariprasad Chaurasia,Varanasi,bansuri,https://archive.org/details/hariprasad-bhimpalasi,48,1975,concert,hindustani,Afternoon raga — karuna rasa
+marwa_nikhil_01,Marwa,Mārvā,evening,17:00-19:00,,,,Nikhil Banerjee,Maihar,sitar,https://archive.org/details/nikhil-banerjee-marwa,58,1978,concert,hindustani,Sunset raga — intense yearning
+puriya_dhanashree_01,Puriya Dhanashree,Pūriyā Dhanaśrī,evening,18:00-21:00,,,,Bhimsen Joshi,Kirana,vocal,https://archive.org/details/bhimsen-joshi-puriya-dhanashree,55,1975,concert,hindustani,Evening raga — devotional gravity
+bageshri_kumar_01,Bageshri,Bāgeshṛī,night,21:00-01:00,Shravana,,Friday,Kumar Gandharva,Dewas,vocal,https://archive.org/details/kumar-gandharva-bageshri,42,1970,concert,hindustani,Night raga — Shravana nakshatra resonance
+malkauns_ali_01,Malkauns,Mālkauṃsa,night,00:00-03:00,,Amavasya,,Ali Akbar Khan,Maihar,sarod,https://archive.org/details/ali-akbar-khan-malkauns,65,1967,concert,hindustani,Deep night raga — Amavasya resonance
+lalit_pandit_01,Lalit,Lalita,dawn,04:00-07:00,,,Sunday,Pandit Jasraj,Mewati,vocal,https://archive.org/details/pandit-jasraj-lalit,50,1985,concert,hindustani,Pre-dawn raga — spiritual intensity
+kalyani_ms_01,Kalyani,Kalyāṇī,evening,18:00-21:00,,,Friday,M.S. Subbulakshmi,Madurai,vocal,https://archive.org/details/ms-subbulakshmi-kalyani,35,1970,concert,carnatic,Kalyani = Yaman equivalent in Carnatic

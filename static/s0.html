@@ -33,7 +33,7 @@ body{background:#020408;color:var(--text);font-family:var(--font-body);font-size
 <script>
 function dv(o){return typeof o==='object'&&o?(o.name||'—'):(o||'—')}
 async function load(){
-  const[g,f]=await Promise.all([atlasGet('/goloka',{}),atlasGet('/field',{})]);
+  const[g,f,res]=await Promise.all([atlasGet('/goloka',{}),atlasGet('/field',{}),atlasGet('/resonance',{})]);
   const pa=f?.panchanga||{};document.getElementById('fn').textContent=pa.nakshatra||'—';
   document.getElementById('ft').textContent=pa.tithi||'—';document.getElementById('fv').textContent=pa.vara||'—';
   document.getElementById('fd').textContent=dv(pa.devi);
@@ -59,6 +59,11 @@ async function load(){
     h+=`<div style="font-family:var(--font-mono);font-size:11px;color:var(--teal)">${pct}%</div></div>`}
   if(br.tithi_resonance)h+=`<div style="font-size:10px;color:var(--dim);margin-top:4px">${br.tithi_resonance}</div>`;
   if(br.raga_match!=null)h+=`<div style="font-size:10px;color:${br.raga_match?'var(--teal)':'var(--amber)'};margin-top:2px">raga: ${br.raga_match?'✓ aligned':'≠ divergent'}</div>`;
+  // Resonance — deity image + temple stream
+  if(res?.deity_images?.length){const di=res.deity_images[0];
+    if(di.image_url)h+=`<div style="margin-top:14px"><img src="${di.image_url}" alt="${di.deity_name}" style="max-width:200px;max-height:160px;border-radius:4px;opacity:0.85"><div style="font-size:9px;color:var(--dim);margin-top:2px">${di.deity_name} · ${di.match_reason} · ${di.attribution||'CC'}</div></div>`}
+  if(res?.live_now&&res.live_summary)h+=`<div style="margin-top:8px;font-family:var(--font-mono);font-size:10px;color:var(--teal)">● ${res.live_summary}</div>`;
+  if(res?.temples?.length){const t=res.temples[0];if(t.stream_url)h+=`<div style="margin-top:4px"><a href="${t.stream_url}" target="_blank" style="color:var(--teal);text-decoration:none;font-size:10px">${t.name} · ${t.deity} →</a></div>`}
   document.getElementById('c').innerHTML=h;
 }
 load();setInterval(load,60000);

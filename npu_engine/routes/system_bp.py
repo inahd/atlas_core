@@ -214,3 +214,14 @@ def _dashboard_status():
 
     out["probe"] = probe
     return jsonify(out)
+
+
+@system_bp.route("/resonance")
+def _resonance():
+    """Cosmological resonance — what in the living world matches the current field."""
+    from kernel import field_state
+    try:
+        from npu_engine.field.resonance_engine import derive_resonance
+        return jsonify(derive_resonance(field_state()))
+    except Exception as e:
+        return jsonify({"error": str(e), "temples": [], "deity_images": [], "raga_recordings": []})
