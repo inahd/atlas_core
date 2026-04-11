@@ -104,3 +104,4 @@ Status codes: DONE | FAILED | SKIPPED | HUMAN_REQUIRED | PARTIAL
 2026-04-10 21:36 — Cycle complete — 5 tasks
 2026-04-11 09:27 — [FE-REBUILD] DONE — Rebuilt index.html + s0/s1/s3/s5/s6 with live field data (NPU element/guna, svarodaya nadi, dinacharya period, astrobotany herbs, goloka forest, sound layers)
 2026-04-11 12:35 — [ENG-010] DONE — Built resonance_engine.py + 3 datasets (10 temples, 15 deity images, 12 raga recordings); /resonance route wired; s0.html shows deity image + temple stream
+2026-04-11 16:43 — [ENG-011/FE-030] DONE — Navagraha yantra engine + S4 page: 3×3 vastu grid, eigenvalue display, compass, graha_mangal→mangala fix

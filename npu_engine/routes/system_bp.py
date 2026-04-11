@@ -225,3 +225,14 @@ def _resonance():
         return jsonify(derive_resonance(field_state()))
     except Exception as e:
         return jsonify({"error": str(e), "temples": [], "deity_images": [], "raga_recordings": []})
+
+
+@system_bp.route("/yantra/navagraha")
+def _yantra_navagraha():
+    """Navagraha yantra matrix for current field state."""
+    from kernel import field_state
+    try:
+        from npu_engine.field.yantra_navagraha_engine import get_current_yantra
+        return jsonify(get_current_yantra(field_state()))
+    except Exception as e:
+        return jsonify({"error": str(e)})

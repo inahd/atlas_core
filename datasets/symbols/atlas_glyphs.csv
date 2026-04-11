@@ -1,99 +1,99 @@
-entity_id,entity_type,name,glyph,glyph_type,unicode,color,size_default,tradition,attestation,svg_path,notes
-graha_surya,graha,Sūrya,☉,unicode_astronomical,U+2609,#e8c86a,16,jyotisha,OBSERVED,,solar symbol
-graha_chandra,graha,Candra,☽,unicode_astronomical,U+263D,#c8d8e8,16,jyotisha,OBSERVED,,crescent moon
-graha_mangal,graha,Maṅgala,♂,unicode_astronomical,U+2642,#c84040,16,jyotisha,OBSERVED,,Mars symbol
-graha_budha,graha,Budha,☿,unicode_astronomical,U+263F,#20a88a,16,jyotisha,OBSERVED,,Mercury symbol
-graha_guru,graha,Guru,♃,unicode_astronomical,U+2643,#c8a050,16,jyotisha,OBSERVED,,Jupiter symbol
-graha_shukra,graha,Śukra,♀,unicode_astronomical,U+2640,#e8a0c0,16,jyotisha,OBSERVED,,Venus symbol
-graha_shani,graha,Śani,♄,unicode_astronomical,U+2644,#8090a8,16,jyotisha,OBSERVED,,Saturn symbol
-graha_rahu,graha,Rāhu,☊,unicode_astronomical,U+260A,#8070dd,16,jyotisha,OBSERVED,,ascending node
-graha_ketu,graha,Ketu,☋,unicode_astronomical,U+260B,#806040,16,jyotisha,OBSERVED,,descending node
-rashi_mesha,rashi,Meṣa,♈,unicode_astronomical,U+2648,#c84040,14,jyotisha,OBSERVED,,Aries
-rashi_vrishabha,rashi,Vṛṣabha,♉,unicode_astronomical,U+2649,#3a8a4a,14,jyotisha,OBSERVED,,Taurus
-rashi_mithuna,rashi,Mithuna,♊,unicode_astronomical,U+264A,#20a88a,14,jyotisha,OBSERVED,,Gemini
-rashi_karka,rashi,Karka,♋,unicode_astronomical,U+264B,#c8d8e8,14,jyotisha,OBSERVED,,Cancer
-rashi_simha,rashi,Siṃha,♌,unicode_astronomical,U+264C,#e8c86a,14,jyotisha,OBSERVED,,Leo
-rashi_kanya,rashi,Kanyā,♍,unicode_astronomical,U+264D,#c8a050,14,jyotisha,OBSERVED,,Virgo
-rashi_tula,rashi,Tulā,♎,unicode_astronomical,U+264E,#e8a0c0,14,jyotisha,OBSERVED,,Libra
-rashi_vrischika,rashi,Vṛścika,♏,unicode_astronomical,U+264F,#c84040,14,jyotisha,OBSERVED,,Scorpio
-rashi_dhanu,rashi,Dhanu,♐,unicode_astronomical,U+2650,#c8a050,14,jyotisha,OBSERVED,,Sagittarius
-rashi_makara,rashi,Makara,♑,unicode_astronomical,U+2651,#8090a8,14,jyotisha,OBSERVED,,Capricorn
-rashi_kumbha,rashi,Kumbha,♒,unicode_astronomical,U+2652,#8070dd,14,jyotisha,OBSERVED,,Aquarius
-rashi_meena,rashi,Mīna,♓,unicode_astronomical,U+2653,#2858b8,14,jyotisha,OBSERVED,,Pisces
-element_agni,element,Agni,▲,unicode_geometric,U+25B2,#c84040,14,yantra,OBSERVED,,upward triangle · fire
-element_apas,element,Āpas,▽,unicode_geometric,U+25BD,#2858b8,14,yantra,OBSERVED,,downward triangle · water
-element_prithvi,element,Pṛthvī,◼,unicode_geometric,U+25FC,#c87820,14,yantra,OBSERVED,,square · earth
-element_vayu,element,Vāyu,⬡,unicode_geometric,U+2B21,#8070dd,14,yantra,OBSERVED,,hexagon · air
-element_akasha,element,Ākāśa,●,unicode_geometric,U+25CF,#e0b040,14,yantra,OBSERVED,,bindu · ether
-dosha_vata,dosha,Vāta,⬡,unicode_geometric,U+2B21,#8070dd,14,ayurveda,OBSERVED:TRADITIONAL,,air+ether · movement
-dosha_pitta,dosha,Pitta,▲,unicode_geometric,U+25B2,#c84040,14,ayurveda,OBSERVED:TRADITIONAL,,fire · transformation
-dosha_kapha,dosha,Kapha,▽,unicode_geometric,U+25BD,#2858b8,14,ayurveda,OBSERVED:TRADITIONAL,,water · structure
-guna_sattva,guna,Sattva,✦,unicode_geometric,U+2726,#e0b040,14,samkhya,OBSERVED:TRADITIONAL,,clarity · light
-guna_rajas,guna,Rajas,✶,unicode_geometric,U+2736,#c87820,14,samkhya,OBSERVED:TRADITIONAL,,activity · passion
-guna_tamas,guna,Tamas,▪,unicode_geometric,U+25AA,#3a5060,14,samkhya,OBSERVED:TRADITIONAL,,inertia · darkness
-vastu_c,vastu,Brahmā,✦,unicode_geometric,U+2726,#e0b040,18,vastu,OBSERVED,,center · bindu
-vastu_n,vastu,Kubera,↑,unicode_geometric,U+2191,#2858b8,14,vastu,OBSERVED,,north · wealth
-vastu_ne,vastu,Īśāna,↗,unicode_geometric,U+2197,#8070dd,14,vastu,OBSERVED,,northeast · sacred
-vastu_e,vastu,Indra,→,unicode_geometric,U+2192,#e8c86a,14,vastu,OBSERVED,,east · sunrise
-vastu_se,vastu,Agni,↘,unicode_geometric,U+2198,#c84040,14,vastu,OBSERVED,,southeast · fire
-vastu_s,vastu,Yama,↓,unicode_geometric,U+2193,#508860,14,vastu,OBSERVED,,south · boundary
-vastu_sw,vastu,Nirṛti,↙,unicode_geometric,U+2199,#4b0082,14,vastu,OBSERVED,,southwest · decay
-vastu_w,vastu,Varuṇa,←,unicode_geometric,U+2190,#285898,14,vastu,OBSERVED,,west · water
-vastu_nw,vastu,Vāyu,↖,unicode_geometric,U+2196,#2878a8,14,vastu,OBSERVED,,northwest · wind
-slayer_s0,slayer,S0 Bindu,●,unicode_geometric,U+25CF,#8070dd,12,atlas,OBSERVED,,source
-slayer_s1,slayer,S1 Archetype,◎,unicode_geometric,U+25CE,#e0b040,12,atlas,OBSERVED,,field
-slayer_s2,slayer,S2 Sound,≋,unicode_geometric,U+224B,#20a88a,12,atlas,OBSERVED,,sound
-slayer_s3,slayer,S3 Rhythm,◑,unicode_geometric,U+25D1,#c8d8e8,12,atlas,OBSERVED,,time
-slayer_s4,slayer,S4 Geometry,◈,unicode_geometric,U+25C8,#e0b040,12,atlas,OBSERVED,,form
-slayer_s5,slayer,S5 Nature,✿,unicode_geometric,U+273F,#3a8a4a,12,atlas,OBSERVED,,nature
-slayer_s6,slayer,S6 Lila,∞,unicode_geometric,U+221E,#8070dd,12,atlas,OBSERVED,,continuity
-nakshatra_ashwini,nakshatra,Aśvinī,⚡,svg_custom,,#8d784f,16,jyotisha,OBSERVED,M4 14 Q10 2 16 14,horse head · twin curves
-nakshatra_bharani,nakshatra,Bharaṇī,▿,svg_custom,,#ffa9dc,16,jyotisha,OBSERVED,M10 4 L4 16 L16 16 Z M10 11 L10 12,yoni triangle · dot
-nakshatra_krittika,nakshatra,Kṛttikā,🔥,svg_custom,,#ff6040,16,jyotisha,OBSERVED,M10 2 L7 10 L4 18 M10 2 L13 10 L16 18,flame · razor
-nakshatra_rohini,nakshatra,Rohiṇī,◎,svg_custom,,#e0b040,16,jyotisha,OBSERVED,M10 4 A6 6 0 1 1 10 16 A6 6 0 1 1 10 4 M10 8 L14 10 L10 12 L6 10 Z,cart wheel
-nakshatra_mrigashira,nakshatra,Mṛgaśīrṣā,🦌,svg_custom,,#8ac060,16,jyotisha,OBSERVED,M10 16 L10 8 M10 8 L6 2 M10 8 L14 2,deer antlers
-nakshatra_ardra,nakshatra,Ārdrā,💧,svg_custom,,#4878c8,16,jyotisha,OBSERVED,M10 4 Q6 10 10 18 Q14 10 10 4,teardrop · storm
-nakshatra_punarvasu,nakshatra,Punarvasu,🏹,svg_custom,,#60a870,16,jyotisha,OBSERVED,M4 16 Q10 4 16 16 M10 6 L10 16,bow · quiver
-nakshatra_pushya,nakshatra,Puṣya,❀,svg_custom,,#4090c0,16,jyotisha,OBSERVED,M10 4 L12 8 L16 10 L12 12 L10 16 L8 12 L4 10 L8 8 Z,flower · arrow
-nakshatra_ashlesha,nakshatra,Āśleṣā,🐍,svg_custom,,#607850,16,jyotisha,OBSERVED,M6 14 Q4 10 6 8 Q10 4 14 8 Q16 12 14 14,serpent coil
-nakshatra_magha,nakshatra,Maghā,👑,svg_custom,,#c8a050,16,jyotisha,OBSERVED,M4 16 L4 10 L10 6 L16 10 L16 16,throne · palanquin
-nakshatra_purvaphalguni,nakshatra,Pūrvā Phālgunī,🛏,svg_custom,,#e8a0c0,16,jyotisha,OBSERVED,M4 10 Q7 6 10 10 Q13 14 16 10,hammock · swing
-nakshatra_uttaraphalguni,nakshatra,Uttarā Phālgunī,🛋,svg_custom,,#d8a878,16,jyotisha,OBSERVED,M4 12 L16 12 M4 12 L4 16 M16 12 L16 16,bed · couch
-nakshatra_hasta,nakshatra,Hastā,✋,svg_custom,,#e0b040,16,jyotisha,OBSERVED,M10 10 L6 4 M10 10 L14 4 M10 10 L4 8 M10 10 L16 8 M10 10 L10 16,open hand · five rays
-nakshatra_chitra,nakshatra,Citrā,💎,svg_custom,,#c8a050,16,jyotisha,OBSERVED,M10 4 A4 4 0 1 1 10 12 A4 4 0 1 1 10 4 M10 2 L10 0 M10 14 L10 16 M4 8 L2 8 M16 8 L18 8,bright jewel · rays
-nakshatra_swati,nakshatra,Svātī,🌿,svg_custom,,#60a0b0,16,jyotisha,OBSERVED,M10 18 L10 6 M10 6 L6 2 M10 6 L14 2 M10 6 L10 2,coral · shoot
-nakshatra_vishakha,nakshatra,Viśākhā,🌿,svg_custom,,#c8a030,16,jyotisha,OBSERVED,M10 18 L10 8 M10 8 L4 2 M10 8 L16 2,forked branch · Y
-nakshatra_anuradha,nakshatra,Anurādhā,🪷,svg_custom,,#c85090,16,jyotisha,OBSERVED,M10 16 L10 6 M10 6 A3 3 0 1 1 10 0 A3 3 0 1 1 10 6,lotus on staff
-nakshatra_jyeshtha,nakshatra,Jyeṣṭhā,☂,svg_custom,,#4858a8,16,jyotisha,OBSERVED,M4 8 Q10 0 16 8 M10 8 L10 16,umbrella · earring
-nakshatra_mula,nakshatra,Mūla,⚗,svg_custom,,#806040,16,jyotisha,OBSERVED,M6 4 L10 16 M14 4 L10 16 M8 4 L12 4,tied roots · bundle
-nakshatra_purvashadha,nakshatra,Pūrvāṣāḍhā,🏵,svg_custom,,#d8a040,16,jyotisha,OBSERVED,M4 16 Q10 4 16 16,fan · tusk arc
-nakshatra_uttarashadha,nakshatra,Uttarāṣāḍhā,🐘,svg_custom,,#a09060,16,jyotisha,OBSERVED,M6 4 L14 16 M6 4 L6 8,elephant tusk · plank
-nakshatra_shravana,nakshatra,Śravaṇa,👂,svg_custom,,#4878c8,16,jyotisha,OBSERVED,M6 14 L10 6 L14 14,ear · three footprints
-nakshatra_dhanishtha,nakshatra,Dhaniṣṭhā,🥁,svg_custom,,#c87840,16,jyotisha,OBSERVED,M6 4 L14 4 M6 4 L4 10 M14 4 L16 10 M4 10 L6 16 M16 10 L14 16 M6 16 L14 16,drum · mridanga
-nakshatra_shatabhisha,nakshatra,Śatabhiṣā,○,svg_custom,,#4090a0,16,jyotisha,OBSERVED,M10 4 A6 6 0 1 1 10 16 A6 6 0 1 1 10 4,empty circle · 100 physicians
-nakshatra_purvabhadrapada,nakshatra,Pūrva Bhādrapadā,⚔,svg_custom,,#6858a0,16,jyotisha,OBSERVED,M8 4 L8 16 M12 4 L12 16,two-faced · sword pair
-nakshatra_uttarabhadrapada,nakshatra,Uttara Bhādrapadā,🐍,svg_custom,,#3870a0,16,jyotisha,OBSERVED,M6 4 Q6 10 10 10 Q14 10 14 16,twins · snake curves
-nakshatra_revati,nakshatra,Revatī,🐟,svg_custom,,#50a0c0,16,jyotisha,OBSERVED,M4 10 Q10 4 16 10 Q10 16 4 10 M16 10 L18 8 M16 10 L18 12,fish · drum
-devi_kamesvari,devi,Kāmeśvarī,ऐं,unicode_devanagari,,#ff6b35,16,srividya,OBSERVED,,tithi 1 · Aim
-devi_bhagamalini,devi,Bhagamālinī,ह्रीं,unicode_devanagari,,#4878c8,16,srividya,OBSERVED,,tithi 2 · Hrim
-devi_nityaklinna,devi,Nityaklinnā,क्लीं,unicode_devanagari,,#2050a0,16,srividya,OBSERVED,,tithi 3 · Klim
-devi_bherunda,devi,Bheruṇḍā,ह्सौं,unicode_devanagari,,#c83060,16,srividya,OBSERVED,,tithi 4 · Hsauh
-devi_vahnivasini,devi,Vahnivāsinī,सौं,unicode_devanagari,,#c84040,16,srividya,OBSERVED,,tithi 5 · Sauh
-devi_mahavajresvari,devi,Mahāvajreśvarī,ह्रीं,unicode_devanagari,,#e8c86a,16,srividya,OBSERVED,,tithi 6 · Hrim
-devi_sivaduti,devi,Śivadūtī,ह्रीं,unicode_devanagari,,#4b0082,16,srividya,OBSERVED,,tithi 7 · Hrim
-devi_tvarita,devi,Tvaritā,ऐं,unicode_devanagari,,#20a88a,16,srividya,OBSERVED,,tithi 8 · Aim
-devi_kulasundari,devi,Kulasundarī,क्लीं,unicode_devanagari,,#e8a0c0,16,srividya,OBSERVED,,tithi 9 · Klim
-devi_nitya,devi,Nityā,श्रीं,unicode_devanagari,,#c8a050,16,srividya,OBSERVED,,tithi 10 · Srim
-devi_nilapataka,devi,Nīlapatākā,ह्रीं,unicode_devanagari,,#2858b8,16,srividya,OBSERVED,,tithi 11 · Hrim
-devi_vijaya,devi,Vijayā,ऐं,unicode_devanagari,,#3a8a4a,16,srividya,OBSERVED,,tithi 12 · Aim
-devi_sarvamangala,devi,Sarvamaṅgalā,श्रीं,unicode_devanagari,,#e0b040,16,srividya,OBSERVED,,tithi 13 · Srim
-devi_jvalamalini,devi,Jvālāmālinī,रं,unicode_devanagari,,#c84040,16,srividya,OBSERVED,,tithi 14 · Ram · fire bija
-devi_chidagni,devi,Cidagni,ह्रीं,unicode_devanagari,,#8070dd,16,srividya,OBSERVED,,tithi 15 · Hrim
-ashtakala_pratah,ashtakala,Prātaḥ,◌,unicode_geometric,U+25CC,#e8c86a,12,goloka,OBSERVED,,dawn · empty rising
-ashtakala_sangava,ashtakala,Saṅgava,◑,unicode_geometric,U+25D1,#e0b040,12,goloka,OBSERVED,,morning · half lit
-ashtakala_madhyahna,ashtakala,Madhyāhna,●,unicode_geometric,U+25CF,#e0b040,12,goloka,OBSERVED,,midday · full
-ashtakala_aparahna,ashtakala,Aparāhṇa,◕,unicode_geometric,U+25D5,#c8a050,12,goloka,OBSERVED,,afternoon · three quarter
-ashtakala_sayahna,ashtakala,Sāyāhna,◐,unicode_geometric,U+25D0,#8090a8,12,goloka,OBSERVED,,dusk · half dark
-ashtakala_pradosha,ashtakala,Pradoṣa,◔,unicode_geometric,U+25D4,#4b0082,12,goloka,OBSERVED,,evening · quarter dark
-ashtakala_nisha,ashtakala,Niśā,○,unicode_geometric,U+25CB,#2858b8,12,goloka,OBSERVED,,night · dark circle
-ashtakala_ardharatri,ashtakala,Ardharātri,◯,unicode_geometric,U+25EF,#1a2840,12,goloka,OBSERVED,,midnight · ring
+entity_id,entity_type,name,glyph,glyph_type,unicode,color,size_default,tradition,attestation,svg_path,notes,attestation_status
+graha_surya,graha,Sūrya,☉,unicode_astronomical,U+2609,#e8c86a,16,jyotisha,OBSERVED,,solar symbol,inferred_coherent
+graha_chandra,graha,Candra,☽,unicode_astronomical,U+263D,#c8d8e8,16,jyotisha,OBSERVED,,crescent moon,inferred_coherent
+graha_mangala,graha,Maṅgala,♂,unicode_astronomical,U+2642,#c84040,16,jyotisha,OBSERVED,,Mars symbol,inferred_coherent
+graha_budha,graha,Budha,☿,unicode_astronomical,U+263F,#20a88a,16,jyotisha,OBSERVED,,Mercury symbol,inferred_coherent
+graha_guru,graha,Guru,♃,unicode_astronomical,U+2643,#c8a050,16,jyotisha,OBSERVED,,Jupiter symbol,inferred_coherent
+graha_shukra,graha,Śukra,♀,unicode_astronomical,U+2640,#e8a0c0,16,jyotisha,OBSERVED,,Venus symbol,inferred_coherent
+graha_shani,graha,Śani,♄,unicode_astronomical,U+2644,#8090a8,16,jyotisha,OBSERVED,,Saturn symbol,inferred_coherent
+graha_rahu,graha,Rāhu,☊,unicode_astronomical,U+260A,#8070dd,16,jyotisha,OBSERVED,,ascending node,inferred_coherent
+graha_ketu,graha,Ketu,☋,unicode_astronomical,U+260B,#806040,16,jyotisha,OBSERVED,,descending node,inferred_coherent
+rashi_mesha,rashi,Meṣa,♈,unicode_astronomical,U+2648,#c84040,14,jyotisha,OBSERVED,,Aries,inferred_coherent
+rashi_vrishabha,rashi,Vṛṣabha,♉,unicode_astronomical,U+2649,#3a8a4a,14,jyotisha,OBSERVED,,Taurus,inferred_coherent
+rashi_mithuna,rashi,Mithuna,♊,unicode_astronomical,U+264A,#20a88a,14,jyotisha,OBSERVED,,Gemini,inferred_coherent
+rashi_karka,rashi,Karka,♋,unicode_astronomical,U+264B,#c8d8e8,14,jyotisha,OBSERVED,,Cancer,inferred_coherent
+rashi_simha,rashi,Siṃha,♌,unicode_astronomical,U+264C,#e8c86a,14,jyotisha,OBSERVED,,Leo,inferred_coherent
+rashi_kanya,rashi,Kanyā,♍,unicode_astronomical,U+264D,#c8a050,14,jyotisha,OBSERVED,,Virgo,inferred_coherent
+rashi_tula,rashi,Tulā,♎,unicode_astronomical,U+264E,#e8a0c0,14,jyotisha,OBSERVED,,Libra,inferred_coherent
+rashi_vrischika,rashi,Vṛścika,♏,unicode_astronomical,U+264F,#c84040,14,jyotisha,OBSERVED,,Scorpio,inferred_coherent
+rashi_dhanu,rashi,Dhanu,♐,unicode_astronomical,U+2650,#c8a050,14,jyotisha,OBSERVED,,Sagittarius,inferred_coherent
+rashi_makara,rashi,Makara,♑,unicode_astronomical,U+2651,#8090a8,14,jyotisha,OBSERVED,,Capricorn,inferred_coherent
+rashi_kumbha,rashi,Kumbha,♒,unicode_astronomical,U+2652,#8070dd,14,jyotisha,OBSERVED,,Aquarius,inferred_coherent
+rashi_meena,rashi,Mīna,♓,unicode_astronomical,U+2653,#2858b8,14,jyotisha,OBSERVED,,Pisces,inferred_coherent
+element_agni,element,Agni,▲,unicode_geometric,U+25B2,#c84040,14,yantra,OBSERVED,,upward triangle · fire,inferred_coherent
+element_apas,element,Āpas,▽,unicode_geometric,U+25BD,#2858b8,14,yantra,OBSERVED,,downward triangle · water,inferred_coherent
+element_prithvi,element,Pṛthvī,◼,unicode_geometric,U+25FC,#c87820,14,yantra,OBSERVED,,square · earth,inferred_coherent
+element_vayu,element,Vāyu,⬡,unicode_geometric,U+2B21,#8070dd,14,yantra,OBSERVED,,hexagon · air,inferred_coherent
+element_akasha,element,Ākāśa,●,unicode_geometric,U+25CF,#e0b040,14,yantra,OBSERVED,,bindu · ether,inferred_coherent
+dosha_vata,dosha,Vāta,⬡,unicode_geometric,U+2B21,#8070dd,14,ayurveda,OBSERVED:TRADITIONAL,,air+ether · movement,inferred_coherent
+dosha_pitta,dosha,Pitta,▲,unicode_geometric,U+25B2,#c84040,14,ayurveda,OBSERVED:TRADITIONAL,,fire · transformation,inferred_coherent
+dosha_kapha,dosha,Kapha,▽,unicode_geometric,U+25BD,#2858b8,14,ayurveda,OBSERVED:TRADITIONAL,,water · structure,inferred_coherent
+guna_sattva,guna,Sattva,✦,unicode_geometric,U+2726,#e0b040,14,samkhya,OBSERVED:TRADITIONAL,,clarity · light,inferred_coherent
+guna_rajas,guna,Rajas,✶,unicode_geometric,U+2736,#c87820,14,samkhya,OBSERVED:TRADITIONAL,,activity · passion,inferred_coherent
+guna_tamas,guna,Tamas,▪,unicode_geometric,U+25AA,#3a5060,14,samkhya,OBSERVED:TRADITIONAL,,inertia · darkness,inferred_coherent
+vastu_c,vastu,Brahmā,✦,unicode_geometric,U+2726,#e0b040,18,vastu,OBSERVED,,center · bindu,inferred_coherent
+vastu_n,vastu,Kubera,↑,unicode_geometric,U+2191,#2858b8,14,vastu,OBSERVED,,north · wealth,inferred_coherent
+vastu_ne,vastu,Īśāna,↗,unicode_geometric,U+2197,#8070dd,14,vastu,OBSERVED,,northeast · sacred,inferred_coherent
+vastu_e,vastu,Indra,→,unicode_geometric,U+2192,#e8c86a,14,vastu,OBSERVED,,east · sunrise,inferred_coherent
+vastu_se,vastu,Agni,↘,unicode_geometric,U+2198,#c84040,14,vastu,OBSERVED,,southeast · fire,inferred_coherent
+vastu_s,vastu,Yama,↓,unicode_geometric,U+2193,#508860,14,vastu,OBSERVED,,south · boundary,inferred_coherent
+vastu_sw,vastu,Nirṛti,↙,unicode_geometric,U+2199,#4b0082,14,vastu,OBSERVED,,southwest · decay,inferred_coherent
+vastu_w,vastu,Varuṇa,←,unicode_geometric,U+2190,#285898,14,vastu,OBSERVED,,west · water,inferred_coherent
+vastu_nw,vastu,Vāyu,↖,unicode_geometric,U+2196,#2878a8,14,vastu,OBSERVED,,northwest · wind,inferred_coherent
+slayer_s0,slayer,S0 Bindu,●,unicode_geometric,U+25CF,#8070dd,12,atlas,OBSERVED,,source,inferred_coherent
+slayer_s1,slayer,S1 Archetype,◎,unicode_geometric,U+25CE,#e0b040,12,atlas,OBSERVED,,field,inferred_coherent
+slayer_s2,slayer,S2 Sound,≋,unicode_geometric,U+224B,#20a88a,12,atlas,OBSERVED,,sound,inferred_coherent
+slayer_s3,slayer,S3 Rhythm,◑,unicode_geometric,U+25D1,#c8d8e8,12,atlas,OBSERVED,,time,inferred_coherent
+slayer_s4,slayer,S4 Geometry,◈,unicode_geometric,U+25C8,#e0b040,12,atlas,OBSERVED,,form,inferred_coherent
+slayer_s5,slayer,S5 Nature,✿,unicode_geometric,U+273F,#3a8a4a,12,atlas,OBSERVED,,nature,inferred_coherent
+slayer_s6,slayer,S6 Lila,∞,unicode_geometric,U+221E,#8070dd,12,atlas,OBSERVED,,continuity,inferred_coherent
+nakshatra_ashwini,nakshatra,Aśvinī,⚡,svg_custom,,#8d784f,16,jyotisha,OBSERVED,M4 14 Q10 2 16 14,horse head · twin curves,inferred_coherent
+nakshatra_bharani,nakshatra,Bharaṇī,▿,svg_custom,,#ffa9dc,16,jyotisha,OBSERVED,M10 4 L4 16 L16 16 Z M10 11 L10 12,yoni triangle · dot,inferred_coherent
+nakshatra_krittika,nakshatra,Kṛttikā,🔥,svg_custom,,#ff6040,16,jyotisha,OBSERVED,M10 2 L7 10 L4 18 M10 2 L13 10 L16 18,flame · razor,inferred_coherent
+nakshatra_rohini,nakshatra,Rohiṇī,◎,svg_custom,,#e0b040,16,jyotisha,OBSERVED,M10 4 A6 6 0 1 1 10 16 A6 6 0 1 1 10 4 M10 8 L14 10 L10 12 L6 10 Z,cart wheel,inferred_coherent
+nakshatra_mrigashira,nakshatra,Mṛgaśīrṣā,🦌,svg_custom,,#8ac060,16,jyotisha,OBSERVED,M10 16 L10 8 M10 8 L6 2 M10 8 L14 2,deer antlers,inferred_coherent
+nakshatra_ardra,nakshatra,Ārdrā,💧,svg_custom,,#4878c8,16,jyotisha,OBSERVED,M10 4 Q6 10 10 18 Q14 10 10 4,teardrop · storm,inferred_coherent
+nakshatra_punarvasu,nakshatra,Punarvasu,🏹,svg_custom,,#60a870,16,jyotisha,OBSERVED,M4 16 Q10 4 16 16 M10 6 L10 16,bow · quiver,inferred_coherent
+nakshatra_pushya,nakshatra,Puṣya,❀,svg_custom,,#4090c0,16,jyotisha,OBSERVED,M10 4 L12 8 L16 10 L12 12 L10 16 L8 12 L4 10 L8 8 Z,flower · arrow,inferred_coherent
+nakshatra_ashlesha,nakshatra,Āśleṣā,🐍,svg_custom,,#607850,16,jyotisha,OBSERVED,M6 14 Q4 10 6 8 Q10 4 14 8 Q16 12 14 14,serpent coil,inferred_coherent
+nakshatra_magha,nakshatra,Maghā,👑,svg_custom,,#c8a050,16,jyotisha,OBSERVED,M4 16 L4 10 L10 6 L16 10 L16 16,throne · palanquin,inferred_coherent
+nakshatra_purvaphalguni,nakshatra,Pūrvā Phālgunī,🛏,svg_custom,,#e8a0c0,16,jyotisha,OBSERVED,M4 10 Q7 6 10 10 Q13 14 16 10,hammock · swing,inferred_coherent
+nakshatra_uttaraphalguni,nakshatra,Uttarā Phālgunī,🛋,svg_custom,,#d8a878,16,jyotisha,OBSERVED,M4 12 L16 12 M4 12 L4 16 M16 12 L16 16,bed · couch,inferred_coherent
+nakshatra_hasta,nakshatra,Hastā,✋,svg_custom,,#e0b040,16,jyotisha,OBSERVED,M10 10 L6 4 M10 10 L14 4 M10 10 L4 8 M10 10 L16 8 M10 10 L10 16,open hand · five rays,inferred_coherent
+nakshatra_chitra,nakshatra,Citrā,💎,svg_custom,,#c8a050,16,jyotisha,OBSERVED,M10 4 A4 4 0 1 1 10 12 A4 4 0 1 1 10 4 M10 2 L10 0 M10 14 L10 16 M4 8 L2 8 M16 8 L18 8,bright jewel · rays,inferred_coherent
+nakshatra_swati,nakshatra,Svātī,🌿,svg_custom,,#60a0b0,16,jyotisha,OBSERVED,M10 18 L10 6 M10 6 L6 2 M10 6 L14 2 M10 6 L10 2,coral · shoot,inferred_coherent
+nakshatra_vishakha,nakshatra,Viśākhā,🌿,svg_custom,,#c8a030,16,jyotisha,OBSERVED,M10 18 L10 8 M10 8 L4 2 M10 8 L16 2,forked branch · Y,inferred_coherent
+nakshatra_anuradha,nakshatra,Anurādhā,🪷,svg_custom,,#c85090,16,jyotisha,OBSERVED,M10 16 L10 6 M10 6 A3 3 0 1 1 10 0 A3 3 0 1 1 10 6,lotus on staff,inferred_coherent
+nakshatra_jyeshtha,nakshatra,Jyeṣṭhā,☂,svg_custom,,#4858a8,16,jyotisha,OBSERVED,M4 8 Q10 0 16 8 M10 8 L10 16,umbrella · earring,inferred_coherent
+nakshatra_mula,nakshatra,Mūla,⚗,svg_custom,,#806040,16,jyotisha,OBSERVED,M6 4 L10 16 M14 4 L10 16 M8 4 L12 4,tied roots · bundle,inferred_coherent
+nakshatra_purvashadha,nakshatra,Pūrvāṣāḍhā,🏵,svg_custom,,#d8a040,16,jyotisha,OBSERVED,M4 16 Q10 4 16 16,fan · tusk arc,inferred_coherent
+nakshatra_uttarashadha,nakshatra,Uttarāṣāḍhā,🐘,svg_custom,,#a09060,16,jyotisha,OBSERVED,M6 4 L14 16 M6 4 L6 8,elephant tusk · plank,inferred_coherent
+nakshatra_shravana,nakshatra,Śravaṇa,👂,svg_custom,,#4878c8,16,jyotisha,OBSERVED,M6 14 L10 6 L14 14,ear · three footprints,inferred_coherent
+nakshatra_dhanishtha,nakshatra,Dhaniṣṭhā,🥁,svg_custom,,#c87840,16,jyotisha,OBSERVED,M6 4 L14 4 M6 4 L4 10 M14 4 L16 10 M4 10 L6 16 M16 10 L14 16 M6 16 L14 16,drum · mridanga,inferred_coherent
+nakshatra_shatabhisha,nakshatra,Śatabhiṣā,○,svg_custom,,#4090a0,16,jyotisha,OBSERVED,M10 4 A6 6 0 1 1 10 16 A6 6 0 1 1 10 4,empty circle · 100 physicians,inferred_coherent
+nakshatra_purvabhadrapada,nakshatra,Pūrva Bhādrapadā,⚔,svg_custom,,#6858a0,16,jyotisha,OBSERVED,M8 4 L8 16 M12 4 L12 16,two-faced · sword pair,inferred_coherent
+nakshatra_uttarabhadrapada,nakshatra,Uttara Bhādrapadā,🐍,svg_custom,,#3870a0,16,jyotisha,OBSERVED,M6 4 Q6 10 10 10 Q14 10 14 16,twins · snake curves,inferred_coherent
+nakshatra_revati,nakshatra,Revatī,🐟,svg_custom,,#50a0c0,16,jyotisha,OBSERVED,M4 10 Q10 4 16 10 Q10 16 4 10 M16 10 L18 8 M16 10 L18 12,fish · drum,inferred_coherent
+devi_kamesvari,devi,Kāmeśvarī,ऐं,unicode_devanagari,,#ff6b35,16,srividya,OBSERVED,,tithi 1 · Aim,inferred_coherent
+devi_bhagamalini,devi,Bhagamālinī,ह्रीं,unicode_devanagari,,#4878c8,16,srividya,OBSERVED,,tithi 2 · Hrim,inferred_coherent
+devi_nityaklinna,devi,Nityaklinnā,क्लीं,unicode_devanagari,,#2050a0,16,srividya,OBSERVED,,tithi 3 · Klim,inferred_coherent
+devi_bherunda,devi,Bheruṇḍā,ह्सौं,unicode_devanagari,,#c83060,16,srividya,OBSERVED,,tithi 4 · Hsauh,inferred_coherent
+devi_vahnivasini,devi,Vahnivāsinī,सौं,unicode_devanagari,,#c84040,16,srividya,OBSERVED,,tithi 5 · Sauh,inferred_coherent
+devi_mahavajresvari,devi,Mahāvajreśvarī,ह्रीं,unicode_devanagari,,#e8c86a,16,srividya,OBSERVED,,tithi 6 · Hrim,inferred_coherent
+devi_sivaduti,devi,Śivadūtī,ह्रीं,unicode_devanagari,,#4b0082,16,srividya,OBSERVED,,tithi 7 · Hrim,inferred_coherent
+devi_tvarita,devi,Tvaritā,ऐं,unicode_devanagari,,#20a88a,16,srividya,OBSERVED,,tithi 8 · Aim,inferred_coherent
+devi_kulasundari,devi,Kulasundarī,क्लीं,unicode_devanagari,,#e8a0c0,16,srividya,OBSERVED,,tithi 9 · Klim,inferred_coherent
+devi_nitya,devi,Nityā,श्रीं,unicode_devanagari,,#c8a050,16,srividya,OBSERVED,,tithi 10 · Srim,inferred_coherent
+devi_nilapataka,devi,Nīlapatākā,ह्रीं,unicode_devanagari,,#2858b8,16,srividya,OBSERVED,,tithi 11 · Hrim,inferred_coherent
+devi_vijaya,devi,Vijayā,ऐं,unicode_devanagari,,#3a8a4a,16,srividya,OBSERVED,,tithi 12 · Aim,inferred_coherent
+devi_sarvamangala,devi,Sarvamaṅgalā,श्रीं,unicode_devanagari,,#e0b040,16,srividya,OBSERVED,,tithi 13 · Srim,inferred_coherent
+devi_jvalamalini,devi,Jvālāmālinī,रं,unicode_devanagari,,#c84040,16,srividya,OBSERVED,,tithi 14 · Ram · fire bija,inferred_coherent
+devi_chidagni,devi,Cidagni,ह्रीं,unicode_devanagari,,#8070dd,16,srividya,OBSERVED,,tithi 15 · Hrim,inferred_coherent
+ashtakala_pratah,ashtakala,Prātaḥ,◌,unicode_geometric,U+25CC,#e8c86a,12,goloka,OBSERVED,,dawn · empty rising,inferred_coherent
+ashtakala_sangava,ashtakala,Saṅgava,◑,unicode_geometric,U+25D1,#e0b040,12,goloka,OBSERVED,,morning · half lit,inferred_coherent
+ashtakala_madhyahna,ashtakala,Madhyāhna,●,unicode_geometric,U+25CF,#e0b040,12,goloka,OBSERVED,,midday · full,inferred_coherent
+ashtakala_aparahna,ashtakala,Aparāhṇa,◕,unicode_geometric,U+25D5,#c8a050,12,goloka,OBSERVED,,afternoon · three quarter,inferred_coherent
+ashtakala_sayahna,ashtakala,Sāyāhna,◐,unicode_geometric,U+25D0,#8090a8,12,goloka,OBSERVED,,dusk · half dark,inferred_coherent
+ashtakala_pradosha,ashtakala,Pradoṣa,◔,unicode_geometric,U+25D4,#4b0082,12,goloka,OBSERVED,,evening · quarter dark,inferred_coherent
+ashtakala_nisha,ashtakala,Niśā,○,unicode_geometric,U+25CB,#2858b8,12,goloka,OBSERVED,,night · dark circle,inferred_coherent
+ashtakala_ardharatri,ashtakala,Ardharātri,◯,unicode_geometric,U+25EF,#1a2840,12,goloka,OBSERVED,,midnight · ring,inferred_coherent
