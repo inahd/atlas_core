@@ -106,3 +106,4 @@ Status codes: DONE | FAILED | SKIPPED | HUMAN_REQUIRED | PARTIAL
 2026-04-11 12:35 — [ENG-010] DONE — Built resonance_engine.py + 3 datasets (10 temples, 15 deity images, 12 raga recordings); /resonance route wired; s0.html shows deity image + temple stream
 2026-04-11 16:43 — [ENG-011/FE-030] DONE — Navagraha yantra engine + S4 page: 3×3 vastu grid, eigenvalue display, compass, graha_mangal→mangala fix
 2026-04-11 18:06 — [DS-020] DONE — Acintya bhedābheda activity matrix: 10 flagged rows resolved via ontological filter, activity_ontology.csv (22 activities classified), svarodaya+dinacharya engines apply Gauḍīya tradition filter, s3.html shows bhedabheda note
+2026-04-11 18:40 — [FE-ROOT] DONE — Root dashboard with live NPU yantra grid (3×3 vastu zones), field state, goloka, resonance temple links, corpus stats, dinacharya with bhedabheda filter, engine probes

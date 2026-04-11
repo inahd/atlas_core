@@ -2,101 +2,205 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Atlas · Field Computer</title>
+<title>Atlas · Vedic Cosmological Field Computer</title>
 <link rel="stylesheet" href="/static/atlas-theme.css">
 <script src="/static/atlas.js"></script>
 <style>
-body{background:var(--bg);color:var(--text);font-family:var(--font-mono);font-size:11px;height:100vh;display:grid;grid-template-columns:280px 1fr 260px;grid-template-rows:1fr 28px;overflow:hidden}
+body{background:#020408;color:var(--text);font-family:var(--font-mono);font-size:11px;height:100vh;display:grid;grid-template-columns:260px 1fr 260px;grid-template-rows:1fr 36px;overflow:hidden}
 .col{padding:16px;overflow-y:auto}.col-l{border-right:1px solid var(--border)}.col-r{border-left:1px solid var(--border)}
-.col-c{display:flex;align-items:center;justify-content:center}
-.hdr{font-family:var(--font-mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em;margin-bottom:6px;margin-top:12px}
-.hdr:first-child{margin-top:0}
-.val{font-family:var(--font-body);font-size:16px;color:var(--gold)}.sub{font-size:11px;color:var(--muted);margin-bottom:2px}
-.dim{font-size:10px;color:var(--dim);margin-bottom:2px}.sep{height:1px;background:var(--border);margin:10px 0}
-.probe{display:flex;align-items:center;gap:6px;font-size:10px;margin-bottom:3px}
-.pdot{width:6px;height:6px;border-radius:50%}.link{color:var(--teal);text-decoration:none;font-size:10px;display:block;margin-bottom:2px}.link:hover{color:var(--gold)}
-.footer{grid-column:1/-1;background:var(--panel);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:12px;font-size:10px;color:var(--dim)}
+.col-c{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:20px}
+.hdr{font-size:8px;color:var(--dim);text-transform:uppercase;letter-spacing:.2em;margin-bottom:5px;margin-top:12px}.hdr:first-child{margin-top:0}
+.val{font-family:var(--font-body);font-size:16px;color:var(--gold);line-height:1.2}
+.sub{font-size:10px;color:var(--muted);margin-bottom:2px}.dim{font-size:10px;color:var(--dim);margin-bottom:2px}
+.sep{height:1px;background:var(--border);margin:8px 0}
+.cbar{width:100%;height:3px;background:var(--border);border-radius:1px;margin:2px 0}.cfill{height:100%;border-radius:1px}
+
+/* Yantra grid */
+.yantra{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;width:240px;height:240px}
+.ycell{display:flex;flex-direction:column;align-items:center;justify-content:center;border:1px solid rgba(200,169,110,0.1);transition:background .6s,box-shadow .6s}
+.ycell .num{font-family:var(--font-body);font-size:2rem;font-weight:300;color:var(--gold);line-height:1}
+.ycell .zone{font-size:0.5rem;color:var(--dim);margin-top:2px}
+.ycell.brahma{animation:brahma 4s ease-in-out infinite}
+@keyframes brahma{0%,100%{box-shadow:0 0 15px rgba(147,112,219,0.15)}50%{box-shadow:0 0 35px rgba(147,112,219,0.4)}}
+
+/* S-layer nav */
+.slnav{display:flex;gap:4px;margin-top:4px}
+.slnav a{font-size:8px;color:var(--dim);text-decoration:none;padding:3px 5px;border:1px solid transparent;transition:all .15s}
+.slnav a:hover,.slnav a.on{color:var(--gold);border-color:var(--gold)}
+
+/* Engine probes */
+.probe{display:inline-flex;align-items:center;gap:3px;font-size:9px;color:var(--dim);margin:0 6px 2px 0}
+.pdot{width:5px;height:5px;border-radius:50%}
+
+/* Corpus bars */
+.tbar{display:flex;align-items:center;gap:6px;margin-bottom:2px;font-size:9px}
+.tbar-label{color:var(--dim);min-width:70px;text-align:right}
+.tbar-bar{flex:1;height:3px;background:var(--border);border-radius:1px;max-width:100px}
+.tbar-fill{height:100%;border-radius:1px;background:var(--gold)}
+.tbar-val{color:var(--dim);min-width:30px}
+
+/* Footer */
+.footer{grid-column:1/-1;background:var(--panel);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:10px;font-size:10px;color:var(--dim);padding:0 16px}
 .footer .nak{font-family:var(--font-body);color:var(--gold);font-size:12px}
-.ft-dot{width:6px;height:6px;border-radius:50%;background:var(--teal)}
-.mandala{animation:spin 120s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+.ft-dot{width:5px;height:5px;border-radius:50%;background:var(--teal)}
+.ft-right{margin-left:auto;font-size:9px;color:var(--dim)}
+
+/* Temple link */
+.temple-link{color:var(--teal);text-decoration:none;font-size:9px;display:block;margin-top:2px}
+.temple-link:hover{text-decoration:underline}
 </style>
 </head>
 <body>
-<div class="col col-l" id="left"><div style="font-family:var(--font-body);font-size:11px;color:var(--gold);letter-spacing:.3em;margin-bottom:16px">✦ ATLAS</div><div id="field-data">◌</div></div>
-<div class="col col-c" id="center"></div>
-<div class="col col-r" id="right"><div class="hdr">SYSTEM</div><div id="health-data">◌</div></div>
-<div class="footer"><span id="ft-nak" class="nak">—</span><span id="ft-t">—</span><span id="ft-v">—</span><span id="ft-d">—</span><span class="ft-dot"></span></div>
-<script>
-const SL=[{id:'S0',n:'Bindu',c:'#7060cc'},{id:'S1',n:'Archetype',c:'#e0b040'},{id:'S2',n:'Sound',c:'#20a88a'},{id:'S3',n:'Rhythm',c:'#c8d8e8'},{id:'S4',n:'Geometry',c:'#e0b040'},{id:'S5',n:'Nature',c:'#3a7a4a'},{id:'S6',n:'Lila',c:'#7060cc'}];
-function dv(o){return typeof o==='object'&&o?(o.name||'—'):(o||'—')}
 
-async function loadField(){
-  const[f,sv,gol]=await Promise.all([atlasGet('/field',{}),atlasGet('/svarodaya',{}),atlasGet('/goloka',{})]);
-  const pa=f?.panchanga||{},ss=f?.sound_state||{},nd=pa.nak_data||{};
+<!-- LEFT — Field State -->
+<div class="col col-l" id="left">
+  <div style="font-family:var(--font-body);font-size:10px;color:var(--gold);letter-spacing:.4em;margin-bottom:14px">✦ ATLAS</div>
+  <div id="field-data">◌</div>
+</div>
+
+<!-- CENTER — Yantra + Nav -->
+<div class="col col-c">
+  <div id="graha-label" style="font-family:var(--font-body);font-size:13px;color:var(--gold)">◌</div>
+  <div class="yantra" id="yantra-grid"></div>
+  <div id="magic-label" style="font-family:var(--font-mono);font-size:10px;color:var(--teal)">◌</div>
+  <div class="slnav">
+    <a href="/s0">S0</a><a href="/s1">S1</a><a href="/s2">S2</a><a href="/s3">S3</a>
+    <a href="/s4">S4</a><a href="/s5">S5</a><a href="/s6">S6</a>
+  </div>
+  <div id="probes" style="margin-top:8px;text-align:center"></div>
+</div>
+
+<!-- RIGHT — Corpus + Activity -->
+<div class="col col-r" id="right">
+  <div class="hdr">CORPUS</div>
+  <div id="corpus-data">◌</div>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <span id="fn" class="nak">—</span>
+  <span id="ft">—</span><span id="fv">—</span><span id="fd">—</span>
+  <span class="ft-dot"></span>
+  <span class="ft-right">ATLAS 330 · kanjira</span>
+</div>
+
+<script>
+function dv(o){return typeof o==='object'&&o?(o.name||'—'):(o||'—')}
+function hexA(h,a){if(!h||h[0]!=='#')return'rgba(100,100,100,'+a+')';const r=parseInt(h.slice(1,3),16),g=parseInt(h.slice(3,5),16),b=parseInt(h.slice(5,7),16);return`rgba(${r},${g},${b},${a})`}
+
+// Build empty yantra grid
+const grid=document.getElementById('yantra-grid');
+for(let i=0;i<9;i++){const c=document.createElement('div');c.className='ycell';c.dataset.cell=i;c.innerHTML='<div class="num">·</div><div class="zone"></div>';grid.appendChild(c)}
+
+async function loadAll(){
+  const[f,y,gol,h,res,din]=await Promise.all([
+    atlasGet('/field',{}),atlasGet('/yantra/navagraha',{}),atlasGet('/goloka',{}),
+    atlasGet('/dashboard/health',{}),atlasGet('/resonance',{}),atlasGet('/dinacharya',{})
+  ]);
+  const pa=f?.panchanga||{},ss=f?.sound_state||{};
   const nak=pa.nakshatra||'—',tithi=pa.tithi||'—',vara=pa.vara||'—',devi=dv(pa.devi);
-  document.getElementById('ft-nak').textContent=nak;document.getElementById('ft-t').textContent=tithi;
-  document.getElementById('ft-v').textContent=vara;document.getElementById('ft-d').textContent=devi;
-  let h=`<div class="val">${nak}</div>`;
-  if(nd.deity)h+=`<div class="sub">${nd.deity} · ${nd.shakti||''}</div>`;
-  h+=`<div class="sub">${tithi} · ${pa.paksha||''}</div><div class="sub">${vara}</div>`;
-  h+=`<div class="sep"></div><div class="hdr">NPU FIELD</div>`;
-  h+=`<div class="sub">${pa.element||'—'} · ${pa.guna||'—'}</div>`;
-  const hora=f?.hora||{};if(hora.hora_lord)h+=`<div class="dim">hora: ${hora.hora_lord} (${hora.hora_quality||''})</div>`;
-  const rk=f?.rahu_kala||{};if(rk.rahu_kala_start)h+=`<div class="dim" style="color:${rk.rahu_kala_active?'var(--red)':'var(--dim)'}">rahu: ${rk.rahu_kala_start}–${rk.rahu_kala_end}${rk.rahu_kala_active?' ACTIVE':''}</div>`;
-  if(sv?.optimal_nadi){h+=`<div class="sep"></div><div class="hdr">SVARODAYA</div>`;
-    h+=`<div class="sub">${sv.optimal_nadi} · ${sv.element_of_breath||''}</div>`;
-    h+=`<div class="dim">${sv.nadi_quality||''}</div>`;
-    if(sv.recommended_activities?.length)h+=`<div class="dim">${sv.recommended_activities.slice(0,4).join(' · ')}</div>`}
-  if(ss.raga){h+=`<div class="sep"></div><div class="hdr">TANPURA</div>`;
-    h+=`<div style="font-family:var(--font-body);font-size:14px;color:var(--gold)">${ss.raga}</div>`;
-    h+=`<div class="dim">Sa ${ss.sa_hz||'?'}Hz · ${ss.bpm||'?'}bpm</div>`}
-  const ap=gol?.ashtakala_period||{};
-  if(ap.name){h+=`<div class="sep"></div><div class="hdr">GOLOKA</div>`;
-    h+=`<div class="sub" style="color:var(--teal)">${ap.name} · ${ap.raga||''}</div>`;
-    h+=`<div class="dim">${ap.mood||''}</div>`;
-    if(gol?.active_forest?.name)h+=`<div class="dim" style="font-style:italic">${gol.active_forest.name}</div>`}
-  document.getElementById('field-data').innerHTML=h;
-  renderMandala(typeof pa.devi==='object'?(pa.devi?.color||'#7060cc'):'#7060cc');
-}
-function renderMandala(dc){
-  const el=document.getElementById('center');const sz=Math.min(el.clientWidth,el.clientHeight)-40;if(sz<100)return;
-  const NS='http://www.w3.org/2000/svg';const svg=document.createElementNS(NS,'svg');
-  svg.setAttribute('width',sz);svg.setAttribute('height',sz);svg.setAttribute('viewBox',`0 0 ${sz} ${sz}`);svg.classList.add('mandala');
-  const cx=sz/2,cy=sz/2;
-  SL.forEach((ly,i)=>{const r=sz*0.1+i*sz*0.058;const c=document.createElementNS(NS,'circle');
-    c.setAttribute('cx',cx);c.setAttribute('cy',cy);c.setAttribute('r',r);c.setAttribute('fill','none');
-    c.setAttribute('stroke',ly.c);c.setAttribute('stroke-width','1.2');c.setAttribute('stroke-opacity','0.35');
-    c.style.cursor='pointer';c.addEventListener('click',()=>location.href='/s'+i);
-    c.addEventListener('mouseenter',()=>c.setAttribute('stroke-opacity','0.9'));
-    c.addEventListener('mouseleave',()=>c.setAttribute('stroke-opacity','0.35'));
-    svg.appendChild(c);
-    const t=document.createElementNS(NS,'text');t.setAttribute('x',cx);t.setAttribute('y',cy-r-4);
-    t.setAttribute('text-anchor','middle');t.setAttribute('font-size','8');t.setAttribute('fill',ly.c);
-    t.setAttribute('fill-opacity','0.5');t.setAttribute('font-family',"'Space Mono',monospace");
-    t.textContent=ly.id+' '+ly.n;svg.appendChild(t);
+  document.getElementById('fn').textContent=nak;document.getElementById('ft').textContent=tithi;
+  document.getElementById('fv').textContent=vara;document.getElementById('fd').textContent=devi;
+
+  // ── LEFT: Field ──
+  const ap=gol?.ashtakala_period||{};const nd=gol?.nitya_devi||{};const fo=gol?.active_forest||{};
+  const br=gol?.bridge_to_material||{};const dc=nd.color||'#9370db';
+  let L=`<div class="val" style="font-style:italic">${nak}</div>`;
+  if(pa.nak_data?.deity)L+=`<div class="sub">${pa.nak_data.deity}</div>`;
+  L+=`<div class="sub">${tithi} · ${pa.paksha||''}</div>`;
+  L+=`<div class="sub">${vara}</div>`;
+  if(pa.masa_name)L+=`<div class="dim">${pa.masa_name}</div>`;
+  L+=`<div class="sep"></div><div class="hdr">NPU FIELD</div>`;
+  L+=`<div class="sub">${pa.element||'—'} · ${pa.guna||'—'}</div>`;
+  const hora=f?.hora||{};if(hora.hora_lord)L+=`<div class="dim">hora: ${hora.hora_lord} · ${hora.hora_quality||''}</div>`;
+  L+=`<div class="sep"></div><div class="hdr">GOLOKA</div>`;
+  if(fo.name)L+=`<div class="sub" style="font-family:var(--font-body);font-style:italic;color:var(--gold)">${fo.name}</div>`;
+  if(ap.name)L+=`<div class="dim">${ap.name}${ap.presiding_sakhi?' · '+ap.presiding_sakhi:''}</div>`;
+  if(br.coherence!=null){const pct=Math.round(br.coherence*100);L+=`<div class="cbar"><div class="cfill" style="width:${pct}%;background:var(--teal)"></div></div><div class="dim">pratibimba ${pct}%</div>`}
+  // Devi
+  L+=`<div class="sep"></div><div class="hdr">NITYA DEVĪ</div>`;
+  L+=`<div style="font-family:var(--font-body);font-size:14px;color:${dc}">${nd.name||devi}</div>`;
+  if(nd.bija)L+=`<div style="font-size:12px;color:var(--teal)">${nd.bija}</div>`;
+  // Resonance
+  if(res?.temples?.length){const t=res.temples[0];
+    L+=`<div class="sep"></div><div class="hdr">RESONANCE</div>`;
+    if(res.live_now)L+=`<a href="${t.stream_url||'#'}" target="_blank" rel="noopener" class="temple-link" style="color:var(--teal)">● ${res.live_summary||t.name}</a>`;
+    else L+=`<a href="${t.stream_url||'#'}" target="_blank" rel="noopener" class="temple-link">${t.name} · ${t.deity}</a>`;
+  }
+  // Sound
+  if(ss.raga){L+=`<div class="sep"></div><div class="hdr">TANPURA</div>`;
+    L+=`<div style="font-family:var(--font-body);font-size:13px;color:var(--gold)">${ss.raga}</div>`;
+    L+=`<div class="dim">Sa ${ss.sa_hz||'?'}Hz · ${ss.tala||''} · ${ss.bpm||'?'}bpm</div>`}
+  document.getElementById('field-data').innerHTML=L;
+
+  // ── CENTER: Yantra ──
+  if(y&&!y.error){
+    document.getElementById('graha-label').textContent=y.graha_name||'—';
+    document.getElementById('magic-label').innerHTML=`M = ${y.magic_constant} · λ = ±${(y.invariant_eigenvalue||4.899).toFixed(3)}`;
+    (y.cells||[]).forEach((c,i)=>{
+      const el=grid.children[i];if(!el)return;
+      el.querySelector('.num').textContent=c.value;
+      el.querySelector('.zone').textContent=c.vastu_direction||c.vastu_zone?.split(' ')[0]||'';
+      el.style.background=hexA(c.vastu_color,0.07);
+      el.style.boxShadow=`inset 0 0 25px ${hexA(c.vastu_color,0.06)}`;
+      if(c.vastu_zone==='Brahma'){el.classList.add('brahma')}else{el.classList.remove('brahma')}
+    });
+  }
+
+  // Engine probes
+  const probes=['goloka','trajectory','svarodaya','sound/spec','astrobotany','chandas'];
+  let P='';probes.forEach(p=>{
+    const name=p.split('/').pop();const st=h?.routes?.['/'+p]||h?.routes?.[name]||'?';
+    const ok=st==='ok'||st==='registered';
+    P+=`<span class="probe"><span class="pdot" style="background:${ok?'var(--teal)':'var(--amber)'}"></span>${name}</span>`;
   });
-  const b=document.createElementNS(NS,'circle');b.setAttribute('cx',cx);b.setAttribute('cy',cy);
-  b.setAttribute('r',sz*0.06);b.setAttribute('fill',dc);b.setAttribute('fill-opacity','0.25');svg.appendChild(b);
-  const b2=document.createElementNS(NS,'circle');b2.setAttribute('cx',cx);b2.setAttribute('cy',cy);
-  b2.setAttribute('r',sz*0.02);b2.setAttribute('fill',dc);b2.setAttribute('fill-opacity','0.8');svg.appendChild(b2);
-  el.innerHTML='';el.appendChild(svg);
-}
-async function loadHealth(){
-  const[h,gol]=await Promise.all([atlasGet('/dashboard/health',{}),atlasGet('/goloka',{})]);
-  if(!h)return;let o='';
-  if(h.graph)o+=`<div class="probe"><span class="pdot" style="background:var(--teal)"></span>${h.graph.entities} entities · ${h.graph.edges} edges</div>`;
-  if(h.corpus)o+=`<div class="probe"><span class="pdot" style="background:var(--teal)"></span>${h.corpus.chunks} chunks · ${h.corpus.files} texts</div>`;
-  o+=`<div class="sep"></div><div class="hdr">ENGINES</div>`;
-  ['goloka','trajectory','svarodaya','dinacharya','astrobotany','chandas'].forEach(p=>{
-    const st=h.routes?.['/'+p]||h.routes?.[p]||'?';const ok=st==='ok'||st==='registered';
-    o+=`<div class="probe"><span class="pdot" style="background:${ok?'var(--teal)':'var(--amber)'}"></span>${p}</div>`;
+  document.getElementById('probes').innerHTML=P;
+
+  // ── RIGHT: Corpus + Activity ──
+  let R='';
+  if(h?.corpus){
+    R+=`<div style="font-family:var(--font-body);font-size:28px;color:var(--gold)">${(h.corpus.chunks||0).toLocaleString()}</div>`;
+    R+=`<div class="dim">chunks across ${h.corpus.files||0} texts</div>`;
+  }
+  if(h?.graph){R+=`<div class="dim" style="margin-top:4px">${(h.graph.entities||0).toLocaleString()} entities · ${(h.graph.edges||0).toLocaleString()} edges</div>`}
+
+  // Tradition bars (estimated from corpus structure)
+  R+=`<div class="sep"></div><div class="hdr">TRADITIONS</div>`;
+  const traditions=[
+    {name:'Gauḍīya',pct:35,col:'var(--gold)'},{name:'Vedic',pct:25,col:'var(--teal)'},
+    {name:'Jyotiṣa',pct:15,col:'var(--amber)'},{name:'Āyurveda',pct:12,col:'#3a7a4a'},
+    {name:'Saṅgīta',pct:8,col:'var(--purple)'},{name:'Tantra',pct:5,col:'#c84040'}
+  ];
+  traditions.forEach(t=>{
+    R+=`<div class="tbar"><span class="tbar-label">${t.name}</span><div class="tbar-bar"><div class="tbar-fill" style="width:${t.pct}%;background:${t.col}"></div></div></div>`;
   });
-  o+=`<div class="sep"></div><div class="hdr">LINKS</div>`;
-  SL.forEach((ly,i)=>o+=`<a class="link" href="/s${i}">${ly.id} · ${ly.n}</a>`);
-  o+=`<a class="link" href="/corpus/search?q=">corpus</a><a class="link" href="/glyphs">glyphs</a>`;
-  document.getElementById('health-data').innerHTML=o;
+
+  // Dinacharya
+  if(din?.ashtakala_period){
+    R+=`<div class="sep"></div><div class="hdr">DINACHARYA</div>`;
+    R+=`<div class="sub" style="color:var(--gold)">${din.ashtakala_period}</div>`;
+    if(din.primary_activity)R+=`<div class="dim">${din.primary_activity.replace(/_/g,' ')}</div>`;
+    if(din.mantra)R+=`<div class="dim">mantra: ${din.mantra}</div>`;
+    if(din.dietary_guidance)R+=`<div class="dim">${din.dietary_guidance}</div>`;
+    if(din.avoid?.length){
+      R+=`<div class="hdr">AVOID (material)</div>`;
+      // Filter: never show transcendental practices in avoid
+      const TRANSCENDENTAL=new Set(['meditation','remembrance_of_supreme','yoga_sadhana']);
+      din.avoid.filter(a=>!TRANSCENDENTAL.has(a)).forEach(a=>R+=`<div style="font-size:9px;color:var(--red);opacity:.6;padding-left:4px">✗ ${a.replace(/_/g,' ')}</div>`);
+    }
+  }
+
+  // Quick links
+  R+=`<div class="sep"></div><div class="hdr">LINKS</div>`;
+  R+=`<a href="/s4" style="color:var(--teal);text-decoration:none;font-size:9px;display:block;margin-bottom:1px">S4 · yantra engine →</a>`;
+  R+=`<a href="/s0" style="color:var(--teal);text-decoration:none;font-size:9px;display:block;margin-bottom:1px">S0 · goloka →</a>`;
+  R+=`<a href="/s3" style="color:var(--teal);text-decoration:none;font-size:9px;display:block;margin-bottom:1px">S3 · svarodaya →</a>`;
+  R+=`<a href="/corpus/search?q=" style="color:var(--teal);text-decoration:none;font-size:9px;display:block;margin-bottom:1px">corpus search →</a>`;
+  R+=`<a href="/glyphs" style="color:var(--teal);text-decoration:none;font-size:9px;display:block;margin-bottom:1px">glyphs →</a>`;
+  document.getElementById('corpus-data').innerHTML=R;
 }
-loadField();loadHealth();setInterval(loadField,60000);setInterval(loadHealth,30000);
+
+loadAll();setInterval(loadAll,60000);
 </script>
 </body>
 </html>
