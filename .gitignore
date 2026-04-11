@@ -28,3 +28,12 @@ logs/
 *.h5
 *.npy
 *.npz
+
+# Large corpus files — regenerable from scripts
+datasets/sources/**/*.jsonl
+datasets/sources/**/*.txt
+atlas/registry/corpus_registry.jsonl
+*.log
+logs/
+*.wav
+*.scsyndef
