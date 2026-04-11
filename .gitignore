@@ -1,20 +1,35 @@
 __pycache__/
 *.pyc
 *.pyo
-instance/cache/
-.env
-*.sqlite
-*.db
 
-# Large corpus and data files
+# Personal data — never push
+instance/personal/
+.env
+
+# Large binary assets
+static/assets/wesnoth/
+research/snapshots/
+
+# Corpus source files (large, regenerable)
 datasets/sources/**/*.jsonl
+datasets/sources/**/*.txt
+datasets/sources/**/*.rtf
+datasets/sources/**/*.doc
+datasets/sources/**/*.rar
+datasets/sources/**/*.RTF
+docs/sources/**/*.pdf
+
+# Atlas corpus pipeline outputs
 atlas/registry/corpus_registry.jsonl
-**/*.jsonl
+atlas/normalized/
+atlas/chunks/
 
 # Runtime and logs
 logs/
 *.log
 /tmp/
+om.log
+data/coherence_cache/
 
 # Audio and media
 *.wav
@@ -24,16 +39,9 @@ logs/
 *.scsyndef
 
 # Large exports
+*.sqlite
+*.db
 *.pkl
 *.h5
 *.npy
 *.npz
-
-# Large corpus files — regenerable from scripts
-datasets/sources/**/*.jsonl
-datasets/sources/**/*.txt
-atlas/registry/corpus_registry.jsonl
-*.log
-logs/
-*.wav
-*.scsyndef
