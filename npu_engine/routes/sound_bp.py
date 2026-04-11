@@ -32,6 +32,11 @@ def _sound_spec():
             spec['chandas'] = derive_chandas(fs)
         except Exception:
             pass
+        try:
+            from npu_engine.tanpura_field import derive_tanpura_params
+            spec['tanpura'] = derive_tanpura_params(fs)
+        except Exception:
+            pass
         return Response(
             json.dumps(spec, default=_json_serial, ensure_ascii=False),
             mimetype="application/json",
@@ -130,6 +135,47 @@ def _sound_volume():
 
 # ── Sound state ─────────────────────────────
 
+@sound_bp.route("/sound/sc_ready", methods=["POST", "GET"])
+def _sound_sc_ready():
+    """SuperCollider readiness endpoint. POST from start_atlas.sh, GET to query."""
+    if request.method == "POST":
+        _ss.sc_state.update(request.get_json(force=True) or {})
+        return jsonify({"ok": True, "state": _ss.sc_state})
+    return jsonify(_ss.sc_state)
+
+
+@sound_bp.route("/sound/sc_boot", methods=["POST"])
+def _sound_sc_boot():
+    """Send initial field tanpura params to running SC engine via OSC.
+
+    Instantiates/updates the tanpura Synth with current field Sa frequency.
+    Call after start_sc.sh has booted scsynth + sclang.
+    """
+    from kernel import field_state
+    try:
+        fs = field_state()
+        ss = fs.get("sound_state", {})
+        sa_hz = ss.get("sa_hz", 130.81)
+        if isinstance(sa_hz, str):
+            try:
+                sa_hz = float(sa_hz)
+            except ValueError:
+                sa_hz = 130.81
+
+        # Send field params to SC via OSC
+        send_osc("/atlas/tanpura/sa", [sa_hz])
+        send_osc("/atlas/tanpura/jivari", [0.40])
+        send_osc("/atlas/tanpura/amp", [1.0])
+
+        # Update SC state
+        _ss.sc_state["status"] = "booted"
+        _ss.sc_state["sa_hz"] = sa_hz
+
+        return jsonify({"booted": True, "sa_hz": sa_hz, "osc_port": 57120})
+    except Exception as e:
+        return jsonify({"booted": False, "error": str(e)}), 500
+
+
 @sound_bp.route("/sound/state")
 def _sound_state():
     """Current sound engine state via derive_sound_spec."""
@@ -154,6 +200,7 @@ def _sound_state():
         payload = spec
     except Exception:
         payload = fs.get("sound_state", _derive_sound_state(fs))
+    payload["sc"] = _ss.sc_state
     return Response(
         json.dumps(payload, default=_json_serial, ensure_ascii=False),
         mimetype="application/json",
@@ -511,6 +558,39 @@ def _sound_recommend():
     }
     return Response(
         json.dumps(payload, default=_json_serial, ensure_ascii=False),
+        mimetype="application/json",
+    )
+
+
+@sound_bp.route("/sound/tanpura")
+def _sound_tanpura():
+    """Compute tanpura parameters from current field state and send to SC."""
+    from kernel import _json_serial, field_state
+    from npu_engine.tanpura_field import derive_tanpura_params
+    fs = field_state()
+    params = derive_tanpura_params(fs)
+
+    # Build OSC messages for SuperCollider
+    osc_spec = {
+        "osc_messages": [
+            ["/atlas/tanpura/sa", [params["sa_hz"]]],
+            ["/atlas/tanpura/strings", params["string_ratios"]],
+            ["/atlas/tanpura/weights", params["string_weights"]],
+            ["/atlas/tanpura/cycle", [params["cycle_gap_ms"]]],
+            ["/atlas/tanpura/bright", [params["bright_partial"]]],
+        ]
+    }
+
+    try:
+        from npu_engine.sound.osc_bridge import send_sound_spec
+        osc_ok = send_sound_spec(osc_spec)
+        params["osc_sent"] = osc_ok
+    except Exception as e:
+        params["osc_sent"] = False
+        params["osc_error"] = str(e)
+
+    return Response(
+        json.dumps(params, default=_json_serial, ensure_ascii=False),
         mimetype="application/json",
     )
 

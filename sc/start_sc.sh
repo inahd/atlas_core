@@ -47,6 +47,28 @@ echo "Audio connected (pw-link)."
 echo "WARNING: SC→MOTU audio may be silent due to PW 1.2.6 JACK shim bug."
 echo "om.py (pw-cat) is the working audio output path."
 
-# Start sclang with atlas_synth.scd
+# Start sclang with atlas_synth.scd (background)
 echo "Loading atlas_synth.scd..."
-exec sclang "$SCRIPT_DIR/atlas_synth.scd"
+sclang "$SCRIPT_DIR/atlas_synth.scd" &
+SCLANG_PID=$!
+
+# Wait for sclang to load SynthDefs + create Synths
+sleep 8
+
+# Notify kernel that SC is ready
+echo "Notifying kernel..."
+curl -s -X POST http://localhost:5000/sound/sc_ready \
+  -H 'Content-Type: application/json' \
+  -d '{"status":"booted","port":57110,"sclang_port":57120}' \
+  2>/dev/null || echo "  (kernel not running — SC standalone)"
+
+# Send initial field tanpura params from kernel
+curl -s -X POST http://localhost:5000/sound/sc_boot \
+  2>/dev/null || echo "  (sc_boot skipped — kernel not running)"
+
+echo ""
+echo "SC engine running. PIDs: scsynth=$SCSYNTH_PID sclang=$SCLANG_PID"
+echo "To stop: kill $SCSYNTH_PID $SCLANG_PID"
+
+# Wait for sclang
+wait $SCLANG_PID
