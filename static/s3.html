@@ -3,128 +3,117 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>S3 · time</title>
+<title>S3 · Kāla · Time</title>
+<link rel="stylesheet" href="/static/atlas-theme.css">
+<script src="/static/atlas.js"></script>
 <style>
-:root{--bg:#060d14;--panel:#0c1520;--border:#1a2840;--gold:#e0b040;--teal:#20a88a;--purple:#7060cc;--text:#c8d8e8;--dim:#4a6a7a;--bright:#c8d8e8}
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;display:flex;flex-direction:column;height:100vh;overflow:hidden}
-.layer-strip{height:24px;background:var(--panel);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 12px;flex-shrink:0}
-.layer-left{display:flex;align-items:center;gap:8px}
-.layer-id{font-size:12px;color:var(--dim)}
-.layer-name{font-size:13px;color:var(--bright);font-family:Georgia,serif}
-.layer-clock{font-size:11px;color:var(--dim)}
-.main{flex:1;overflow-y:auto;padding:16px}
-.field-strip{height:20px;background:var(--panel);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:12px;font-size:11px;color:var(--dim);flex-shrink:0}
-.block-header{font-size:10px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px;margin-top:20px}
-.block-header:first-child{margin-top:0}
-.tithi-num{font-family:Georgia,serif;font-size:48px;color:var(--gold);text-align:center;line-height:1}
-.tithi-name{font-family:Georgia,serif;font-size:14px;color:var(--dim);text-align:center;margin-top:4px}
-.tithi-sub{font-size:10px;color:var(--dim);text-align:center;margin-top:2px}
-.moon-svg{display:block;margin:12px auto}
-.muhurta-name{font-size:11px;color:var(--gold);margin-bottom:2px}
-.quality{margin-bottom:2px}
-.quality-dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:4px}
-.dim{font-size:11px;color:var(--dim);margin-bottom:2px}
-.detail{font-size:11px;color:var(--text);margin-bottom:2px;line-height:1.5}
-.rahu-range{font-size:10px;color:#c84040;margin-bottom:2px}
-.home-link{position:fixed;bottom:8px;right:8px;font-family:'Courier New',monospace;font-size:10px;color:var(--dim);text-decoration:none;letter-spacing:0.15em}
+body{background:var(--bg);color:var(--text);font-family:var(--font-mono);font-size:11px;height:100vh;display:grid;grid-template-rows:auto 1fr 28px;overflow:hidden}
+.header-band{background:var(--panel);border-bottom:1px solid var(--border);padding:12px 16px;display:flex;gap:20px;align-items:baseline;flex-wrap:wrap}
+.hv{font-family:var(--font-body);font-size:18px;color:var(--gold)}
+.hs{font-size:11px;color:var(--muted)}
+.hd{font-size:10px;color:var(--dim)}
+.main{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);overflow:hidden}
+.panel{background:var(--bg);padding:14px;overflow-y:auto}
+.hdr{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em;margin-bottom:6px;margin-top:10px}
+.hdr:first-child{margin-top:0}
+.val{font-family:var(--font-body);font-size:14px;color:var(--gold);margin-bottom:2px}
+.sub{font-size:11px;color:var(--text);margin-bottom:2px}
+.dim{font-size:10px;color:var(--dim);margin-bottom:2px}
+.act{font-size:10px;color:var(--muted);padding-left:8px;margin-bottom:1px}
+.act::before{content:'· ';color:var(--dim)}
+.avoid{font-size:10px;color:var(--red);opacity:.7;padding-left:8px;margin-bottom:1px}
+.avoid::before{content:'✗ ';color:var(--red)}
+.sep{height:1px;background:var(--border);margin:8px 0}
+.coh-bar{width:100%;height:3px;background:var(--border);border-radius:1px;margin:3px 0}
+.coh-fill{height:100%;border-radius:1px;background:var(--teal)}
+.footer{grid-column:1/-1;background:var(--panel);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:12px;font-size:10px;color:var(--dim)}
+.footer .nak{font-family:var(--font-body);color:var(--gold);font-size:12px}
+.nav{position:fixed;right:12px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px}
+.nav a{width:8px;height:8px;border-radius:50%;border:1px solid var(--border);display:block}
+.nav a.active{background:var(--text);border-color:var(--text)}
+.nav a:hover{border-color:var(--gold)}
 </style>
 </head>
 <body>
-<div class="layer-strip">
-  <div class="layer-left"><span class="layer-id">S3</span><span class="layer-name">time</span></div>
-  <span class="layer-clock" id="clock"></span>
-</div>
+<div class="header-band" id="panchanga-bar">◌</div>
 <div class="main">
-  <div class="block-header">NOW</div>
-  <div id="now">◌ loading</div>
-  <div class="block-header">MUHURTA</div>
-  <div id="muhurta">◌</div>
-  <div class="block-header">TRAJECTORY</div>
-  <div id="trajectory">◌</div>
-  <div class="block-header">RAHU KALA</div>
-  <div id="rahu">◌</div>
+  <div class="panel" id="svarodaya-panel">◌</div>
+  <div class="panel" id="dinacharya-panel">◌</div>
 </div>
-<div class="field-strip" id="field-strip">◌</div>
-<a href="/" class="home-link">✦ ATLAS</a>
+<div class="footer"><span id="ft-nak" class="nak">—</span><span id="ft-tithi">—</span><span id="ft-vara">—</span><span id="ft-devi">—</span><span style="width:6px;height:6px;border-radius:50%;background:var(--teal)"></span></div>
+<nav class="nav"><a href="/s0"></a><a href="/s1"></a><a href="/s2"></a><a href="/s3" class="active"></a><a href="/s4"></a><a href="/s5"></a><a href="/s6"></a></nav>
 <script>
-function tick(){document.getElementById('clock').textContent=new Date().toLocaleTimeString('en-GB',{hour12:false})}
-tick();setInterval(tick,1000);
-
-function p(d,path,fb){let v=d;for(const k of path.split('.')){if(!v)return fb;v=v[k]}return(typeof v==='object'&&v!==null)?(v.name||fb):v||fb}
-
-function moonSVG(phase){
-  const r=25,cx=30,cy=30;
-  const f=typeof phase==='number'?phase:0.5;
-  const lit=f*2;
-  const dark=2-lit;
-  const sweep=f<=0.5?0:1;
-  const dx=r*Math.abs(1-lit*2);
-  return '<svg class="moon-svg" width="60" height="60" viewBox="0 0 60 60">'
-    +'<circle cx="'+cx+'" cy="'+cy+'" r="'+r+'" fill="none" stroke="#1a2030" stroke-width="0.5"/>'
-    +'<path d="M'+cx+' '+(cy-r)+' A'+r+' '+r+' 0 0 1 '+cx+' '+(cy+r)+' A'+dx+' '+r+' 0 0 '+sweep+' '+cx+' '+(cy-r)+'" fill="#e0b040" opacity="0.8"/>'
-    +'</svg>';
-}
-
 async function load(){
-  try{
-    const[fr,tr,cr]=await Promise.all([fetch('/field'),fetch('/trajectory'),fetch('/calendar/day')]);
-    const d=await fr.json();
-    let tj={};try{tj=await tr.json()}catch(e){}
-    let cal={};try{cal=await cr.json()}catch(e){}
+  const[field,sv,din,traj]=await Promise.all([atlasGet('/field',{}),atlasGet('/svarodaya',{}),atlasGet('/dinacharya',{}),atlasGet('/trajectory',{})]);
+  const pa=field?.panchanga||{};
+  const nak=pa.nakshatra||'—';const tithi=pa.tithi||'—';const vara=pa.vara||'—';
+  const devi=typeof pa.devi==='object'?(pa.devi?.name||'—'):(pa.devi||'—');
+  document.getElementById('ft-nak').textContent=nak;document.getElementById('ft-tithi').textContent=tithi;
+  document.getElementById('ft-vara').textContent=vara;document.getElementById('ft-devi').textContent=devi;
 
-    const nak=p(d,'panchanga.nakshatra','—');
-    const tithi=p(d,'panchanga.tithi','—');
-    const vara=p(d,'panchanga.vara','—');
-    const devi=p(d,'panchanga.devi','—');
-    document.getElementById('field-strip').textContent=[nak,tithi,vara,devi].join(' · ');
+  // Header band — Panchanga
+  let hb=`<span class="hv">${nak}</span><span class="hs">${tithi} · ${pa.paksha||''}</span><span class="hs">${vara}</span>`;
+  if(pa.element)hb+=`<span class="hd">${pa.element} · ${pa.guna||''}</span>`;
+  if(pa.masa_name)hb+=`<span class="hd">${pa.masa_name}</span>`;
+  document.getElementById('panchanga-bar').innerHTML=hb;
 
-    const pa=d.panchanga||{};
-    const tithiNum=pa.tithi?.number||pa.tithi_number||'';
-    const tithiName=p(d,'panchanga.tithi','—');
-    const paksha=pa.paksha||pa.tithi?.paksha||'';
-    const lunarDay=pa.lunar_day||tithiNum||'';
-    const moonPhase=pa.moon_phase||pa.lunar_phase||tj.lunar_phase||0.5;
-
-    let nhtml='<div class="tithi-num">'+(tithiNum||'◌')+'</div>';
-    nhtml+='<div class="tithi-name">'+tithiName+'</div>';
-    nhtml+='<div class="tithi-sub">'+(paksha?paksha+' · ':'')+(lunarDay?'day '+lunarDay:'')+'</div>';
-    nhtml+=moonSVG(typeof moonPhase==='number'?moonPhase:parseFloat(moonPhase)||0.5);
-    document.getElementById('now').innerHTML=nhtml;
-
-    // Muhurta
-    const muh=cal.current_muhurta||cal.muhurta||{};
-    const muhName=muh.name||muh.window||p(cal,'muhurta','—');
-    const muhQuality=muh.quality||muh.nature||'';
-    const muhRemaining=muh.remaining||muh.time_remaining||'';
-    let mhtml='<div class="muhurta-name">'+(typeof muhName==='object'?muhName.name||'—':muhName)+'</div>';
-    if(muhQuality){
-      const color=muhQuality.toLowerCase().includes('good')?'#3a7a4a':muhQuality.toLowerCase().includes('avoid')?'#c84040':'#e0b040';
-      mhtml+='<div class="quality"><span class="quality-dot" style="background:'+color+'"></span>'+muhQuality+'</div>';
+  // Left — Svarodaya
+  let left='<div class="hdr">SVARODAYA</div>';
+  if(sv?.optimal_nadi){
+    left+=`<div class="val">${sv.optimal_nadi} nāḍī</div>`;
+    left+=`<div class="sub">${sv.nadi_side||''} · ${sv.nadi_graha||''}</div>`;
+    left+=`<div class="dim">${sv.nadi_quality||''}</div>`;
+    left+=`<div class="sep"></div><div class="hdr">ELEMENT</div>`;
+    left+=`<div class="sub">${sv.element_of_breath||'—'}</div>`;
+    left+=`<div class="dim">${sv.element_sensation||''}</div>`;
+    left+=`<div class="dim">${sv.element_duration_minutes||''}min cycle</div>`;
+    if(sv.coherence_score!=null){
+      left+=`<div class="sep"></div><div class="hdr">COHERENCE</div>`;
+      left+=`<div class="coh-bar"><div class="coh-fill" style="width:${sv.coherence_score*100}%"></div></div>`;
+      left+=`<div class="dim">${(sv.coherence_score*100).toFixed(0)}%</div>`;
     }
-    if(muhRemaining)mhtml+='<div class="dim">'+muhRemaining+' remaining</div>';
-    document.getElementById('muhurta').innerHTML=mhtml||'◌';
-
-    // Trajectory
-    const lunarArc=tj.lunar_arc||tj.lunar||tj.description||'';
-    const dashaLord=tj.dasha_lord||tj.dasha?.lord||p(tj,'dasha','');
-    const dashaEnd=tj.dasha_end||tj.dasha?.end_date||'';
-    const sessionArc=tj.session_arc||tj.session||'';
-    let thtml='';
-    if(lunarArc)thtml+='<div class="detail">'+lunarArc+'</div>';
-    if(dashaLord)thtml+='<div class="dim">dasha: '+(typeof dashaLord==='object'?dashaLord.name||'—':dashaLord)+(dashaEnd?' · ends '+dashaEnd:'')+'</div>';
-    if(sessionArc)thtml+='<div class="dim">'+sessionArc+'</div>';
-    document.getElementById('trajectory').innerHTML=thtml||'◌';
-
-    // Rahu Kala
-    const rahu=pa.rahu_kala||pa.rahu_kalam||'';
-    if(rahu){
-      let rhtml='<div class="rahu-range">'+rahu+'</div>';
-      document.getElementById('rahu').innerHTML=rhtml;
+    left+=`<div class="sep"></div><div class="hdr">RECOMMENDED</div>`;
+    (sv.recommended_activities||[]).forEach(a=>left+=`<div class="act">${a.replace(/_/g,' ')}</div>`);
+    if(sv.avoid_activities?.length){
+      left+=`<div class="hdr">AVOID</div>`;
+      sv.avoid_activities.forEach(a=>left+=`<div class="avoid">${a.replace(/_/g,' ')}</div>`);
     }
-  }catch(e){document.getElementById('field-strip').textContent='◌'}
+  }else left+='<div class="dim">engine offline</div>';
+  document.getElementById('svarodaya-panel').innerHTML=left;
+
+  // Right — Dinacharya
+  let right='<div class="hdr">DINACHARYA</div>';
+  if(din?.ashtakala_period){
+    right+=`<div class="val">${din.ashtakala_period}</div>`;
+    right+=`<div class="sub">${din.primary_activity?.replace(/_/g,' ')||''}</div>`;
+    if(din.mantra)right+=`<div class="dim">mantra: ${din.mantra}</div>`;
+    if(din.offering)right+=`<div class="dim">offering: ${din.offering}</div>`;
+    right+=`<div class="sep"></div><div class="hdr">DOSHA</div>`;
+    right+=`<div class="sub">${din.dosha_active||'—'} active</div>`;
+    right+=`<div class="sep"></div><div class="hdr">DIETARY</div>`;
+    right+=`<div class="sub">${din.dietary_guidance||'—'}</div>`;
+    if(din.recommended_herbs?.length){
+      right+=`<div class="sep"></div><div class="hdr">HERBS</div>`;
+      din.recommended_herbs.forEach(h=>right+=`<div class="act">${h}</div>`);
+    }
+    if(din.recommended_practices?.length){
+      right+=`<div class="sep"></div><div class="hdr">PRACTICE</div>`;
+      din.recommended_practices.slice(0,5).forEach(p=>right+=`<div class="act">${p}</div>`);
+    }
+    if(din.avoid?.length){
+      right+=`<div class="hdr">AVOID</div>`;
+      din.avoid.slice(0,4).forEach(a=>right+=`<div class="avoid">${a.replace(/_/g,' ')}</div>`);
+    }
+    if(din.raga)right+=`<div class="sep"></div><div class="dim">rāga: ${din.raga}</div>`;
+    if(din.forest)right+=`<div class="dim">forest: ${din.forest}</div>`;
+  }else right+='<div class="dim">engine offline</div>';
+
+  // Trajectory
+  if(traj?.now){right+=`<div class="sep"></div><div class="hdr">TRAJECTORY</div><div class="sub">${traj.now}</div>`;
+    if(traj.moving_toward)right+=`<div class="dim">→ ${traj.moving_toward}</div>`;
+    if(traj.dasha_context)right+=`<div class="dim">${traj.dasha_context}</div>`}
+  document.getElementById('dinacharya-panel').innerHTML=right;
 }
-
 load();setInterval(load,60000);
 </script>
 </body>
