@@ -109,3 +109,4 @@ Status codes: DONE | FAILED | SKIPPED | HUMAN_REQUIRED | PARTIAL
 2026-04-11 18:40 — [FE-ROOT] DONE — Root dashboard with live NPU yantra grid (3×3 vastu zones), field state, goloka, resonance temple links, corpus stats, dinacharya with bhedabheda filter, engine probes
 2026-04-11 19:06 — [FE-ROOT-V2] DONE — Vastu mandala layout: 8 directional zones (NW=sound, N=yantra, NE=dasha, W=system, E=jyotish, SW=field, S=dinacharya 4-col, SE=goloka+temple), center toroid with S0-S6 rings, full panchanga bar
 2026-04-11 19:35 — [FE-040] DONE — Center view switcher: 5 views (F=orbital field, Y=yantra grid, G=goloka, T=toroid, S=sound), keyboard shortcuts, 8 directional zones unchanged
+2026-04-11 19:55 — [SND-010] DONE — Tabla intelligence engine: bol grammar CSV (11 bols), tala layakari CSV (8 tihai formulas), tabla_intelligence.py (grammar-based cycle generation, sam/khali rules, tihai insertion, layakari by guna), /tabla/cycle endpoint

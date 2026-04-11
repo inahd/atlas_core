@@ -413,6 +413,27 @@ def _sound_tabla():
     })
 
 
+@sound_bp.route("/tabla/cycle")
+def _tabla_cycle():
+    """Generate one tala cycle driven by current field state."""
+    from kernel import field_state
+    try:
+        from npu_engine.rhythm.tabla_intelligence import generate_cycle
+        fs = field_state()
+        ss = fs.get("sound_state", {})
+        tala = request.args.get("tala", ss.get("tala", "Rupak"))
+        bpm = float(request.args.get("bpm", ss.get("bpm", 84)))
+        cycle = generate_cycle(fs, tala, bpm)
+        return jsonify({
+            "tala": tala,
+            "bpm": bpm,
+            "beats": len(cycle),
+            "bols": cycle,
+        })
+    except Exception as e:
+        return jsonify({"error": str(e), "bols": []})
+
+
 # ── Perform mode ─────────────────────────────
 
 @sound_bp.route("/sound/perform_mode", methods=["POST"])

@@ -1,0 +1,12 @@
+bol,can_follow,cannot_follow,weight,hand,resonance,position_rule,attestation
+Dha,"Dhin;Ge;Na;Ti;Dha;Ta","",1.0,both,open,sam_preferred,OBSERVED
+Dhin,"Dha;Dhin;Na;Ta;Ge","Ka",0.8,both,resonant,any,OBSERVED
+Na,"Dha;Dhin;Ti;Ka;Na","",0.5,dayan,muted,any,OBSERVED
+Ka,"Dha;Ti;Na;Ge","Dhin",0.4,bayan,closed,any,OBSERVED
+Ti,"Na;Dha;Ti;Ka;Ta","Ge",0.3,dayan,high,any,OBSERVED
+Ge,"Dha;Na;Ti;Ge;Ka","",0.6,bayan,open,any,OBSERVED
+Ta,"Dha;Dhin;Na;Ti","Ge;Ka",0.4,dayan,muted,any,OBSERVED
+Tin,"Tin;Na;Dhin","Dha;Ge",0.5,dayan,open,khali_preferred,OBSERVED
+Tit,"Dha;Na;Ti","",0.3,dayan,high,sam_alternate,OBSERVED
+Trkte,"Dhin;Na;Dha","",0.6,both,ornamental,fill_only,OBSERVED
+Dhage,"Trkte;Dhin;Na","",0.7,both,ornamental,fill_only,OBSERVED

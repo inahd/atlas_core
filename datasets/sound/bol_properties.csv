@@ -1,0 +1,12 @@
+bol_id,bol_name,bol_index,hand,resonance_type,fundamental_hz,decay_ms,mute_factor,bayan_amp,dayan_amp,noise_amp,rasa_weight,description,attestation
+dha,Dha,0,both,open,110,250,0.0,0.7,0.5,0.3,1.0,Full bayan + open dayan — the sam bol,OBSERVED
+dhin,Dhin,1,both,resonant,110,200,0.0,0.3,0.7,0.1,0.8,Resonant dayan with light bayan,OBSERVED
+na,Na,2,dayan,muted,520,80,0.7,0.0,0.5,0.2,0.5,Muted short dayan snap,OBSERVED
+ka,Ka,3,bayan,closed,100,150,0.0,0.8,0.0,0.1,0.4,Bayan only pitch drop,OBSERVED
+ti,Ti,4,dayan,high,550,60,0.0,0.0,0.6,0.1,0.3,High short dayan tap,OBSERVED
+ge,Ge,5,bayan,open,90,200,0.0,0.6,0.0,0.1,0.6,Open resonant bayan,OBSERVED
+ta,Ta,6,dayan,muted,500,60,0.8,0.0,0.5,0.2,0.4,Muted dayan with noise,OBSERVED
+tin,Tin,7,dayan,open,440,120,0.0,0.0,0.5,0.1,0.5,Open dayan — used at khali,OBSERVED
+tit,Tit,8,dayan,high,600,50,0.0,0.0,0.4,0.1,0.3,Very high short dayan,OBSERVED
+trkte,Trkte,9,both,ornamental,440,40,0.0,0.3,0.4,0.2,0.6,Ornamental rapid pair,OBSERVED
+dhage,Dhage,10,both,ornamental,380,50,0.0,0.5,0.5,0.2,0.7,Ornamental transition,OBSERVED
