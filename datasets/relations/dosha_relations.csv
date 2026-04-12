@@ -53,23 +53,23 @@ nakshatra:uttara_bhadrapada,dosha,dosha:pitta,ayurveda/dosha_nakshatra_matrix.cs
 nakshatra:uttara_bhadrapada,secondary_dosha,dosha:kapha,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Kapha
 nakshatra:revati,dosha,dosha:kapha,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.8,primary: Kapha
 nakshatra:revati,secondary_dosha,dosha:vata,ayurveda/dosha_nakshatra_matrix.csv,,,traditional,0.6,secondary: Vata
-rasa:sweet,taste_quality,quality:sweet,ayurveda/rasa.csv,,,traditional,0.8,sweet
-rasa:sour,taste_quality,quality:sour,ayurveda/rasa.csv,,,traditional,0.8,sour
-rasa:salty,taste_quality,quality:salty,ayurveda/rasa.csv,,,traditional,0.8,salty
-rasa:pungent,taste_quality,quality:pungent,ayurveda/rasa.csv,,,traditional,0.8,pungent
-rasa:bitter,taste_quality,quality:bitter,ayurveda/rasa.csv,,,traditional,0.8,bitter
-rasa:astringent,taste_quality,quality:astringent,ayurveda/rasa.csv,,,traditional,0.8,astringent
+rasa:madhura,taste_quality,quality:sweet,ayurveda/rasa.csv,,,traditional,0.8,sweet
+rasa:amla,taste_quality,quality:sour,ayurveda/rasa.csv,,,traditional,0.8,sour
+rasa:lavana,taste_quality,quality:salty,ayurveda/rasa.csv,,,traditional,0.8,salty
+rasa:katu,taste_quality,quality:pungent,ayurveda/rasa.csv,,,traditional,0.8,pungent
+rasa:tikta,taste_quality,quality:bitter,ayurveda/rasa.csv,,,traditional,0.8,bitter
+rasa:kashaya,taste_quality,quality:astringent,ayurveda/rasa.csv,,,traditional,0.8,astringent
 dhatu:rasa,element,element:water,ayurveda/sapta_dhatu.csv,,,traditional,0.7,water
-dhatu:rasa,governing_graha,graha:(to_be_sourced_from_bphs_edition),ayurveda/sapta_dhatu.csv,,,traditional,0.7,(to be sourced from BPHS edition)
+dhatu:rasa,governing_graha,graha:to_be_sourced_from_bphs_edition,ayurveda/sapta_dhatu.csv,,,traditional,0.7,(to be sourced from BPHS edition)
 dhatu:rakta,element,element:fire,ayurveda/sapta_dhatu.csv,,,traditional,0.7,fire
-dhatu:rakta,governing_graha,graha:(to_be_sourced_from_bphs_edition),ayurveda/sapta_dhatu.csv,,,traditional,0.7,(to be sourced from BPHS edition)
+dhatu:rakta,governing_graha,graha:to_be_sourced_from_bphs_edition,ayurveda/sapta_dhatu.csv,,,traditional,0.7,(to be sourced from BPHS edition)
 dhatu:mamsa,element,element:earth,ayurveda/sapta_dhatu.csv,,,traditional,0.6,earth
-dhatu:mamsa,governing_graha,graha:(to_be_sourced_from_bphs_edition),ayurveda/sapta_dhatu.csv,,,traditional,0.6,(to be sourced from BPHS edition)
+dhatu:mamsa,governing_graha,graha:to_be_sourced_from_bphs_edition,ayurveda/sapta_dhatu.csv,,,traditional,0.6,(to be sourced from BPHS edition)
 dhatu:meda,element,element:water_earth,ayurveda/sapta_dhatu.csv,,,traditional,0.6,water/earth
-dhatu:meda,governing_graha,graha:(to_be_sourced),ayurveda/sapta_dhatu.csv,,,traditional,0.6,(to be sourced)
+dhatu:meda,governing_graha,graha:to_be_sourced,ayurveda/sapta_dhatu.csv,,,traditional,0.6,(to be sourced)
 dhatu:asthi,element,element:earth_air,ayurveda/sapta_dhatu.csv,,,traditional,0.6,earth/air
-dhatu:asthi,governing_graha,graha:(to_be_sourced),ayurveda/sapta_dhatu.csv,,,traditional,0.6,(to be sourced)
+dhatu:asthi,governing_graha,graha:to_be_sourced,ayurveda/sapta_dhatu.csv,,,traditional,0.6,(to be sourced)
 dhatu:majja,element,element:ether_air,ayurveda/sapta_dhatu.csv,,,traditional,0.6,ether/air
-dhatu:majja,governing_graha,graha:(to_be_sourced),ayurveda/sapta_dhatu.csv,,,traditional,0.6,(to be sourced)
+dhatu:majja,governing_graha,graha:to_be_sourced,ayurveda/sapta_dhatu.csv,,,traditional,0.6,(to be sourced)
 dhatu:shukra_artava,element,element:water,ayurveda/sapta_dhatu.csv,,,traditional,0.6,water
-dhatu:shukra_artava,governing_graha,graha:(to_be_sourced),ayurveda/sapta_dhatu.csv,,,traditional,0.6,(to be sourced)
+dhatu:shukra_artava,governing_graha,graha:to_be_sourced,ayurveda/sapta_dhatu.csv,,,traditional,0.6,(to be sourced)

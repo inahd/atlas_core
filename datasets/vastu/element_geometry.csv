@@ -1,6 +1,6 @@
-element,sides,color_hex,yantra_name,meaning,rasa
-fire,3,#FF6B35,trikona,upward triangle Shiva,vira
-water,0,#4A90E2,bindu_circle,the eternal circle Soma,shanta
-earth,4,#8B7355,bhupura,square foundation,tamas
-air,6,#9B59B6,shatkona,hexagon air mind,adbhuta
-ether,12,#F1C40F,dvadashadala,12-petal lotus,shringara
+element,sides,color_hex,yantra_name,meaning,rasa,attestation_status
+fire,3,#FF6B35,trikona,upward triangle Shiva,vira,attested_secondary
+water,0,#4A90E2,bindu_circle,the eternal circle Soma,shanta,attested_secondary
+earth,4,#8B7355,bhupura,square foundation,tamas,attested_secondary
+air,6,#9B59B6,shatkona,hexagon air mind,adbhuta,attested_secondary
+ether,12,#F1C40F,dvadashadala,12-petal lotus,shringara,attested_secondary

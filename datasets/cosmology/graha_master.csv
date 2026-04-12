@@ -1,10 +1,10 @@
-graha,category,element,guna,dosha,vehicle,weapon,domain,path,color_primary,color_luminosity,color_meaning,symbol,emoji
-Sun,luminary,fire,sattva,pitta,chariot,lotus,illumination,0.7,#FFB300,bright,gold of sovereignty and self-illumination,☉,🌅
-Moon,luminary,water,sattva,kapha,antelope,lotus,mind,0.25,#E8E8FF,bright,silver-white of reflected consciousness,☽,🌊
-Mars,planet,fire,rajas,pitta,ram,spear,energy,0.8,#CC2200,bright,deep crimson of transformative heat,♂,🔥
-Mercury,planet,earth,rajas,vata,lion,sword,intellect,0.5,#00AA44,earth,forest green of budding intelligence,☿,🌿
-Jupiter,planet,ether,sattva,kapha,elephant,staff,wisdom,0.6,#FFDD44,bright,warm yellow of expansive wisdom,♃,⚡
-Venus,planet,water,rajas,kapha,horse,staff,desire,0.3,#FFAADD,bright,rose-pink of beauty and attraction,♀,🌸
-Saturn,planet,air,tamas,vata,crow,danda,discipline,0.35,#445566,dim,slate blue-grey of endurance and time,♄,⏳
-Rahu,shadow,air,tamas,vata,serpent,spear,eclipse,0.15,#6600AA,dim,deep violet of obsession and illusion,☊,🌀
-Ketu,shadow,fire,sattva,pitta,serpent,flag,liberation,0.05,#887755,dim,smoky ochre of renunciation and moksha,☋,💨
+graha,category,element,guna,dosha,vehicle,weapon,domain,path,color_primary,color_luminosity,color_meaning,symbol,emoji,attestation_status
+Sun,luminary,fire,sattva,pitta,chariot,lotus,illumination,0.7,#FFB300,bright,gold of sovereignty and self-illumination,☉,🌅,attested_classical
+Moon,luminary,water,sattva,kapha,antelope,lotus,mind,0.25,#E8E8FF,bright,silver-white of reflected consciousness,☽,🌊,attested_classical
+Mars,planet,fire,rajas,pitta,ram,spear,energy,0.8,#CC2200,bright,deep crimson of transformative heat,♂,🔥,attested_classical
+Mercury,planet,earth,rajas,vata,lion,sword,intellect,0.5,#00AA44,earth,forest green of budding intelligence,☿,🌿,attested_classical
+Jupiter,planet,ether,sattva,kapha,elephant,staff,wisdom,0.6,#FFDD44,bright,warm yellow of expansive wisdom,♃,⚡,attested_classical
+Venus,planet,water,rajas,kapha,horse,staff,desire,0.3,#FFAADD,bright,rose-pink of beauty and attraction,♀,🌸,attested_classical
+Saturn,planet,air,tamas,vata,crow,danda,discipline,0.35,#445566,dim,slate blue-grey of endurance and time,♄,⏳,attested_classical
+Rahu,shadow,air,tamas,vata,serpent,spear,eclipse,0.15,#6600AA,dim,deep violet of obsession and illusion,☊,🌀,attested_classical
+Ketu,shadow,fire,sattva,pitta,serpent,flag,liberation,0.05,#887755,dim,smoky ochre of renunciation and moksha,☋,💨,attested_classical

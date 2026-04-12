@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>SE · Coherence</title>
+<link rel="stylesheet" href="/static/atlas-theme.css">
+<script src="/static/atlas.js"></script>
 <style>
-:root{--bg:#0c1520;--border:#1a2840;--gold:#e0b040;--teal:#20a88a;--text:#c8d8e8;--dim:#4a6a7a;--accent:#c85028}
-*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0c1520;--accent:#c85028}
 body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;padding:10px;overflow-y:auto;overflow-x:hidden}
 .hdr{font-size:13px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px}
 .gauge{text-align:center;margin-bottom:4px}
@@ -45,9 +46,7 @@ function donut(pct){
 async function load(){
   const el=document.getElementById('content');
   try{
-    const[cr,ir]=await Promise.all([fetch('/coherence-score'),fetch('/intention/now').catch(()=>null)]);
-    const cd=await cr.json();
-    let intent={};try{if(ir)intent=await ir.json()}catch(e){}
+    const[cd,intent]=await Promise.all([atlasGet('/coherence-score',{score:0}),atlasGet('/intention/now',{})]);
 
     let score=cd.coherence_score||cd.score||cd.coherence||0;
     if(typeof score==='number'&&score<=1)score=score*100;

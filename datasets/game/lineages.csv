@@ -1,12 +1,12 @@
-lineage_id,name_sanskrit,name_iast,name_english,lineage_type,natal_requirements,graha_primary,nakshatra_trigger,element_dominant,quality,district_affinity,attestation,source
-surya_vamsha,सूर्यवंश,Sūryavaṃśa,Solar Dynasty,human,sun_strong+fire_dominant,surya,Magha;Uttara_Phalguni;Uttara_Ashadha,fire,kshatriya_dharma,E,TRADITIONAL,Ramayana · Ikshvaku lineage
-chandra_vamsha,चन्द्रवंश,Candravaṃśa,Lunar Dynasty,human,moon_strong+water_dominant,chandra,Rohini;Hasta;Shravana,water,creative_abundance,NW,TRADITIONAL,Mahabharata · Yadu/Puru lineage
-agni_vamsha,अग्निवंश,Agnivaṃśa,Fire Dynasty,human,mars_strong+fire_element,mangala,Krittika;Vishakha;Dhanishta,fire,warrior_purification,SE,TRADITIONAL,Agnikula · Rajput tradition
-rishi_vamsha,ऋषिवंश,Ṛṣivaṃśa,Sage Lineage,human,jupiter_strong+guru_nakshatra,guru,Pushya;Anuradha;Revati,ether,wisdom_teaching,NE,TRADITIONAL,Gotra system · seven rishis
-naga,नाग,Nāga,Serpent Being,chimeric,rahu_strong+water_element+ardra,rahu,Ardra;Ashlesha;Shatabhisha,water,hidden_knowledge,SW,TRADITIONAL,Bhagavata · Patala serpent kingdoms
-gandharva,गन्धर्व,Gandharva,Celestial Musician,chimeric,venus_strong+mercury_musical,shukra,Mrigashira;Purva_Ashadha;Dhanishta,air,aesthetic_mastery,NW,TRADITIONAL,Gandharva Veda · celestial musicians
-yaksha,यक्ष,Yakṣa,Nature Guardian,chimeric,mercury_strong+earth_element,budha,Rohini;Uttara_Phalguni;Pushya,earth,material_stewardship,N,TRADITIONAL,Kubera · treasury guardians
-vidyadhara,विद्याधर,Vidyādhara,Knowledge Bearer,chimeric,ketu_strong+jupiter_wisdom,ketu,Mula;Jyeshtha;Anuradha,ether,liberation_knowledge,NE,TRADITIONAL,Vidyadhara realm · flying sages
-kinnara,किन्नर,Kinnara,Half-Horse Being,chimeric,sun_moon_balance+mixed_element,surya,Ashwini;Punarvasu;Uttara_Bhadrapada,air,devotional_music,W,TRADITIONAL,Himavat · music offering beings
-aditi_vamsha,अदितिवंश,Aditivaṃśa,Aditi Lineage,human,moon_punarvasu+jupiter_aspect,guru,Punarvasu;Pushya;Shravana,water,boundless_return,C,SYNTHESIS,Punarvasu deity Aditi · return to source
-siddha_path,सिद्धमार्ग,Siddhamārga,Perfected Path,chimeric,ketu_mula+saturn_exalted,shani,Mula;Swati;Uttara_Bhadrapada,ether,renunciation_mastery,S,SYNTHESIS,Ketu liberation + Saturn discipline
+lineage_id,name_sanskrit,name_iast,name_english,lineage_type,natal_requirements,graha_primary,nakshatra_trigger,element_dominant,quality,district_affinity,attestation,source,attestation_status
+surya_vamsha,सूर्यवंश,Sūryavaṃśa,Solar Dynasty,human,sun_strong+fire_dominant,surya,Magha;Uttara_Phalguni;Uttara_Ashadha,fire,kshatriya_dharma,E,TRADITIONAL,Ramayana · Ikshvaku lineage,inferred_coherent
+chandra_vamsha,चन्द्रवंश,Candravaṃśa,Lunar Dynasty,human,moon_strong+water_dominant,chandra,Rohini;Hasta;Shravana,water,creative_abundance,NW,TRADITIONAL,Mahabharata · Yadu/Puru lineage,inferred_coherent
+agni_vamsha,अग्निवंश,Agnivaṃśa,Fire Dynasty,human,mars_strong+fire_element,mangala,Krittika;Vishakha;Dhanishta,fire,warrior_purification,SE,TRADITIONAL,Agnikula · Rajput tradition,inferred_coherent
+rishi_vamsha,ऋषिवंश,Ṛṣivaṃśa,Sage Lineage,human,jupiter_strong+guru_nakshatra,guru,Pushya;Anuradha;Revati,ether,wisdom_teaching,NE,TRADITIONAL,Gotra system · seven rishis,inferred_coherent
+naga,नाग,Nāga,Serpent Being,chimeric,rahu_strong+water_element+ardra,rahu,Ardra;Ashlesha;Shatabhisha,water,hidden_knowledge,SW,TRADITIONAL,Bhagavata · Patala serpent kingdoms,inferred_coherent
+gandharva,गन्धर्व,Gandharva,Celestial Musician,chimeric,venus_strong+mercury_musical,shukra,Mrigashira;Purva_Ashadha;Dhanishta,air,aesthetic_mastery,NW,TRADITIONAL,Gandharva Veda · celestial musicians,inferred_coherent
+yaksha,यक्ष,Yakṣa,Nature Guardian,chimeric,mercury_strong+earth_element,budha,Rohini;Uttara_Phalguni;Pushya,earth,material_stewardship,N,TRADITIONAL,Kubera · treasury guardians,inferred_coherent
+vidyadhara,विद्याधर,Vidyādhara,Knowledge Bearer,chimeric,ketu_strong+jupiter_wisdom,ketu,Mula;Jyeshtha;Anuradha,ether,liberation_knowledge,NE,TRADITIONAL,Vidyadhara realm · flying sages,inferred_coherent
+kinnara,किन्नर,Kinnara,Half-Horse Being,chimeric,sun_moon_balance+mixed_element,surya,Ashwini;Punarvasu;Uttara_Bhadrapada,air,devotional_music,W,TRADITIONAL,Himavat · music offering beings,inferred_coherent
+aditi_vamsha,अदितिवंश,Aditivaṃśa,Aditi Lineage,human,moon_punarvasu+jupiter_aspect,guru,Punarvasu;Pushya;Shravana,water,boundless_return,C,SYNTHESIS,Punarvasu deity Aditi · return to source,inferred_coherent
+siddha_path,सिद्धमार्ग,Siddhamārga,Perfected Path,chimeric,ketu_mula+saturn_exalted,shani,Mula;Swati;Uttara_Bhadrapada,ether,renunciation_mastery,S,SYNTHESIS,Ketu liberation + Saturn discipline,inferred_coherent

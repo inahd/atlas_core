@@ -1,92 +1,89 @@
 from_id,relation,to_id,source_title,source_locator,excerpt,tradition,confidence,notes
-raga:Bhimpalasi,therapeutic_target,dosha:pitta,gandharva/raga_therapeutic.csv,,,traditional,0.95,treats pitta
-raga:Bhimpalasi,optimal_time,time:afternoon,gandharva/raga_therapeutic.csv,,,traditional,0.95,best at afternoon
-raga:Bhimpalasi,treats_condition,condition:bp_hrv,gandharva/raga_therapeutic.csv,,,traditional,0.95,BP_HRV
-raga:Bhimpalasi,duration_minutes,duration:10,gandharva/raga_therapeutic.csv,,,traditional,0.95,10 min session
-raga:Bhairavi,therapeutic_target,dosha:vata,gandharva/raga_therapeutic.csv,,,traditional,0.8,treats vata
-raga:Bhairavi,optimal_time,time:morning,gandharva/raga_therapeutic.csv,,,traditional,0.8,best at morning
-raga:Bhairavi,treats_condition,condition:anxiety,gandharva/raga_therapeutic.csv,,,traditional,0.8,anxiety
-raga:Bhairavi,treats_condition,condition:sleep,gandharva/raga_therapeutic.csv,,,traditional,0.8,sleep
-raga:Bhairavi,treats_condition,condition:grief,gandharva/raga_therapeutic.csv,,,traditional,0.8,grief
-raga:Bhairavi,duration_minutes,duration:20,gandharva/raga_therapeutic.csv,,,traditional,0.8,20 min session
-raga:Bhairava,therapeutic_target,dosha:pitta,gandharva/raga_therapeutic.csv,,,traditional,0.95,treats pitta
-raga:Bhairava,optimal_time,time:dawn,gandharva/raga_therapeutic.csv,,,traditional,0.95,best at dawn
-raga:Bhairava,treats_condition,condition:pitta_module,gandharva/raga_therapeutic.csv,,,traditional,0.95,pitta_module
-raga:Bhairava,treats_condition,condition:anger,gandharva/raga_therapeutic.csv,,,traditional,0.95,anger
-raga:Bhairava,duration_minutes,duration:15,gandharva/raga_therapeutic.csv,,,traditional,0.95,15 min session
-raga:Darbari,therapeutic_target,dosha:vata,gandharva/raga_therapeutic.csv,,,traditional,0.8,treats vata
-raga:Darbari,optimal_time,time:night,gandharva/raga_therapeutic.csv,,,traditional,0.8,best at night
-raga:Darbari,treats_condition,condition:bp,gandharva/raga_therapeutic.csv,,,traditional,0.8,BP
-raga:Darbari,treats_condition,condition:sleep,gandharva/raga_therapeutic.csv,,,traditional,0.8,sleep
-raga:Darbari,duration_minutes,duration:22,gandharva/raga_therapeutic.csv,,,traditional,0.8,22 min session
-raga:Yaman,therapeutic_target,dosha:kapha,gandharva/raga_therapeutic.csv,,,traditional,0.8,treats kapha
-raga:Yaman,optimal_time,time:evening,gandharva/raga_therapeutic.csv,,,traditional,0.8,best at evening
-raga:Yaman,treats_condition,condition:creative,gandharva/raga_therapeutic.csv,,,traditional,0.8,creative
-raga:Yaman,treats_condition,condition:uplift,gandharva/raga_therapeutic.csv,,,traditional,0.8,uplift
-raga:Yaman,duration_minutes,duration:15,gandharva/raga_therapeutic.csv,,,traditional,0.8,15 min session
-raga:Bageshri,therapeutic_target,dosha:vata,gandharva/raga_therapeutic.csv,,,traditional,0.8,treats vata
-raga:Bageshri,optimal_time,time:night,gandharva/raga_therapeutic.csv,,,traditional,0.8,best at night
-raga:Bageshri,treats_condition,condition:devotion,gandharva/raga_therapeutic.csv,,,traditional,0.8,devotion
-raga:Bageshri,treats_condition,condition:grief,gandharva/raga_therapeutic.csv,,,traditional,0.8,grief
-raga:Bageshri,duration_minutes,duration:20,gandharva/raga_therapeutic.csv,,,traditional,0.8,20 min session
-raga:Marwa,therapeutic_target,dosha:pitta,gandharva/raga_therapeutic.csv,,,traditional,0.8,treats pitta
-raga:Marwa,optimal_time,time:dusk,gandharva/raga_therapeutic.csv,,,traditional,0.8,best at dusk
-raga:Marwa,treats_condition,condition:pitta_tension,gandharva/raga_therapeutic.csv,,,traditional,0.8,pitta_tension
-raga:Marwa,duration_minutes,duration:15,gandharva/raga_therapeutic.csv,,,traditional,0.8,15 min session
-raga:Shree,therapeutic_target,dosha:pitta,gandharva/raga_therapeutic.csv,,,traditional,0.95,treats pitta
-raga:Shree,optimal_time,time:evening,gandharva/raga_therapeutic.csv,,,traditional,0.95,best at evening
-raga:Shree,treats_condition,condition:anger,gandharva/raga_therapeutic.csv,,,traditional,0.95,anger
-raga:Shree,treats_condition,condition:pitta,gandharva/raga_therapeutic.csv,,,traditional,0.95,pitta
-raga:Shree,duration_minutes,duration:15,gandharva/raga_therapeutic.csv,,,traditional,0.95,15 min session
-raga:Lalit,therapeutic_target,dosha:pitta,gandharva/raga_therapeutic.csv,,,traditional,0.95,treats pitta
-raga:Lalit,optimal_time,time:dawn,gandharva/raga_therapeutic.csv,,,traditional,0.95,best at dawn
-raga:Lalit,treats_condition,condition:pitta_calm,gandharva/raga_therapeutic.csv,,,traditional,0.95,pitta_calm
-raga:Lalit,duration_minutes,duration:15,gandharva/raga_therapeutic.csv,,,traditional,0.95,15 min session
-graha:sun,primary_raga,raga:Bhupali,gandharva/graha_raga_chords.csv,,,traditional,0.8,Sun → Bhupali
-raga:Bhupali,graha_ruler,graha:sun,gandharva/graha_raga_chords.csv,,,traditional,0.8,Bhupali ruled by Sun
-raga:Bhupali,optimal_time,time:morning,gandharva/graha_raga_chords.csv,,,traditional,0.8,morning
-raga:Bhupali,mood,rasa:solar_expansive,gandharva/graha_raga_chords.csv,,,traditional,0.8,solar expansive
-graha:sun,secondary_raga,raga:Durga,gandharva/graha_raga_chords.csv,,,traditional,0.8,Sun secondary
-graha:moon,primary_raga,raga:Yaman,gandharva/graha_raga_chords.csv,,,traditional,0.8,Moon → Yaman
-raga:Yaman,graha_ruler,graha:moon,gandharva/graha_raga_chords.csv,,,traditional,0.8,Yaman ruled by Moon
-raga:Yaman,optimal_time,time:evening,gandharva/graha_raga_chords.csv,,,traditional,0.8,evening
-raga:Yaman,mood,rasa:reflective_lunar,gandharva/graha_raga_chords.csv,,,traditional,0.8,reflective lunar
-graha:moon,secondary_raga,raga:Bhimpalasi,gandharva/graha_raga_chords.csv,,,traditional,0.8,Moon secondary
-graha:mars,primary_raga,raga:Bhairava,gandharva/graha_raga_chords.csv,,,traditional,0.8,Mars → Bhairava
-raga:Bhairava,graha_ruler,graha:mars,gandharva/graha_raga_chords.csv,,,traditional,0.8,Bhairava ruled by Mars
-raga:Bhairava,optimal_time,time:dawn,gandharva/graha_raga_chords.csv,,,traditional,0.8,dawn
-raga:Bhairava,mood,rasa:vigorous_fierce,gandharva/graha_raga_chords.csv,,,traditional,0.8,vigorous fierce
-graha:mars,secondary_raga,raga:Bhairavi,gandharva/graha_raga_chords.csv,,,traditional,0.8,Mars secondary
-graha:mercury,primary_raga,raga:Kafi,gandharva/graha_raga_chords.csv,,,traditional,0.8,Mercury → Kafi
-raga:Kafi,graha_ruler,graha:mercury,gandharva/graha_raga_chords.csv,,,traditional,0.8,Kafi ruled by Mercury
-raga:Kafi,optimal_time,time:night,gandharva/graha_raga_chords.csv,,,traditional,0.8,night
-raga:Kafi,mood,rasa:agile_playful,gandharva/graha_raga_chords.csv,,,traditional,0.8,agile playful
-graha:mercury,secondary_raga,raga:Khamaj,gandharva/graha_raga_chords.csv,,,traditional,0.8,Mercury secondary
-graha:jupiter,primary_raga,raga:Bageshri,gandharva/graha_raga_chords.csv,,,traditional,0.8,Jupiter → Bageshri
-raga:Bageshri,graha_ruler,graha:jupiter,gandharva/graha_raga_chords.csv,,,traditional,0.8,Bageshri ruled by Jupiter
-raga:Bageshri,optimal_time,time:midnight,gandharva/graha_raga_chords.csv,,,traditional,0.8,midnight
-raga:Bageshri,mood,rasa:expansive_devotional,gandharva/graha_raga_chords.csv,,,traditional,0.8,expansive devotional
-graha:jupiter,secondary_raga,raga:Bihag,gandharva/graha_raga_chords.csv,,,traditional,0.8,Jupiter secondary
-graha:venus,primary_raga,raga:Khamaj,gandharva/graha_raga_chords.csv,,,traditional,0.8,Venus → Khamaj
-raga:Khamaj,graha_ruler,graha:venus,gandharva/graha_raga_chords.csv,,,traditional,0.8,Khamaj ruled by Venus
-raga:Khamaj,optimal_time,time:evening,gandharva/graha_raga_chords.csv,,,traditional,0.8,evening
-raga:Khamaj,mood,rasa:romantic_beautiful,gandharva/graha_raga_chords.csv,,,traditional,0.8,romantic beautiful
-graha:venus,secondary_raga,raga:Yaman,gandharva/graha_raga_chords.csv,,,traditional,0.8,Venus secondary
-graha:saturn,primary_raga,raga:Darbari,gandharva/graha_raga_chords.csv,,,traditional,0.8,Saturn → Darbari
-raga:Darbari,graha_ruler,graha:saturn,gandharva/graha_raga_chords.csv,,,traditional,0.8,Darbari ruled by Saturn
-raga:Darbari,optimal_time,time:midnight,gandharva/graha_raga_chords.csv,,,traditional,0.8,midnight
-raga:Darbari,mood,rasa:grave_meditative,gandharva/graha_raga_chords.csv,,,traditional,0.8,grave meditative
-graha:saturn,secondary_raga,raga:Todi,gandharva/graha_raga_chords.csv,,,traditional,0.8,Saturn secondary
-graha:rahu,primary_raga,raga:Marwa,gandharva/graha_raga_chords.csv,,,traditional,0.8,Rahu → Marwa
-raga:Marwa,graha_ruler,graha:rahu,gandharva/graha_raga_chords.csv,,,traditional,0.8,Marwa ruled by Rahu
-raga:Marwa,optimal_time,time:dusk,gandharva/graha_raga_chords.csv,,,traditional,0.8,dusk
-raga:Marwa,mood,rasa:dissonant_seeking,gandharva/graha_raga_chords.csv,,,traditional,0.8,dissonant seeking
-graha:rahu,secondary_raga,raga:Puriya,gandharva/graha_raga_chords.csv,,,traditional,0.8,Rahu secondary
-graha:ketu,primary_raga,raga:Bhairavi,gandharva/graha_raga_chords.csv,,,traditional,0.8,Ketu → Bhairavi
-raga:Bhairavi,graha_ruler,graha:ketu,gandharva/graha_raga_chords.csv,,,traditional,0.8,Bhairavi ruled by Ketu
-raga:Bhairavi,optimal_time,time:dawn,gandharva/graha_raga_chords.csv,,,traditional,0.8,dawn
-raga:Bhairavi,mood,rasa:dissolving_surrender,gandharva/graha_raga_chords.csv,,,traditional,0.8,dissolving surrender
-graha:ketu,secondary_raga,raga:Multani,gandharva/graha_raga_chords.csv,,,traditional,0.8,Ketu secondary
+raga:bhimpalasi,therapeutic_target,dosha:pitta,gandharva/raga_therapeutic.csv,,,traditional,0.95,treats pitta
+raga:bhimpalasi,optimal_time,time:afternoon,gandharva/raga_therapeutic.csv,,,traditional,0.95,best at afternoon
+raga:bhimpalasi,treats_condition,condition:bp_hrv,gandharva/raga_therapeutic.csv,,,traditional,0.95,BP_HRV
+raga:bhimpalasi,duration_minutes,duration:10,gandharva/raga_therapeutic.csv,,,traditional,0.95,10 min session
+raga:bhairavi,therapeutic_target,dosha:vata,gandharva/raga_therapeutic.csv,,,traditional,0.8,treats vata
+raga:bhairavi,optimal_time,time:morning,gandharva/raga_therapeutic.csv,,,traditional,0.8,best at morning
+raga:bhairavi,treats_condition,condition:anxiety,gandharva/raga_therapeutic.csv,,,traditional,0.8,anxiety
+raga:bhairavi,treats_condition,condition:sleep,gandharva/raga_therapeutic.csv,,,traditional,0.8,sleep
+raga:bhairavi,treats_condition,condition:grief,gandharva/raga_therapeutic.csv,,,traditional,0.8,grief
+raga:bhairavi,duration_minutes,duration:20,gandharva/raga_therapeutic.csv,,,traditional,0.8,20 min session
+raga:bhairava,therapeutic_target,dosha:pitta,gandharva/raga_therapeutic.csv,,,traditional,0.95,treats pitta
+raga:bhairava,optimal_time,time:dawn,gandharva/raga_therapeutic.csv,,,traditional,0.95,best at dawn
+raga:bhairava,treats_condition,condition:pitta_module,gandharva/raga_therapeutic.csv,,,traditional,0.95,pitta_module
+raga:bhairava,treats_condition,condition:anger,gandharva/raga_therapeutic.csv,,,traditional,0.95,anger
+raga:bhairava,duration_minutes,duration:15,gandharva/raga_therapeutic.csv,,,traditional,0.95,15 min session
+raga:darbari,therapeutic_target,dosha:vata,gandharva/raga_therapeutic.csv,,,traditional,0.8,treats vata
+raga:darbari,optimal_time,time:night,gandharva/raga_therapeutic.csv,,,traditional,0.8,best at night
+raga:darbari,treats_condition,condition:bp,gandharva/raga_therapeutic.csv,,,traditional,0.8,BP
+raga:darbari,treats_condition,condition:sleep,gandharva/raga_therapeutic.csv,,,traditional,0.8,sleep
+raga:darbari,duration_minutes,duration:22,gandharva/raga_therapeutic.csv,,,traditional,0.8,22 min session
+raga:yaman,therapeutic_target,dosha:kapha,gandharva/raga_therapeutic.csv,,,traditional,0.8,treats kapha
+raga:yaman,optimal_time,time:evening,gandharva/raga_therapeutic.csv,,,traditional,0.8,best at evening
+raga:yaman,treats_condition,condition:creative,gandharva/raga_therapeutic.csv,,,traditional,0.8,creative
+raga:yaman,treats_condition,condition:uplift,gandharva/raga_therapeutic.csv,,,traditional,0.8,uplift
+raga:yaman,duration_minutes,duration:15,gandharva/raga_therapeutic.csv,,,traditional,0.8,15 min session
+raga:bageshri,therapeutic_target,dosha:vata,gandharva/raga_therapeutic.csv,,,traditional,0.8,treats vata
+raga:bageshri,optimal_time,time:night,gandharva/raga_therapeutic.csv,,,traditional,0.8,best at night
+raga:bageshri,treats_condition,condition:devotion,gandharva/raga_therapeutic.csv,,,traditional,0.8,devotion
+raga:bageshri,treats_condition,condition:grief,gandharva/raga_therapeutic.csv,,,traditional,0.8,grief
+raga:bageshri,duration_minutes,duration:20,gandharva/raga_therapeutic.csv,,,traditional,0.8,20 min session
+raga:marwa,therapeutic_target,dosha:pitta,gandharva/raga_therapeutic.csv,,,traditional,0.8,treats pitta
+raga:marwa,optimal_time,time:dusk,gandharva/raga_therapeutic.csv,,,traditional,0.8,best at dusk
+raga:marwa,treats_condition,condition:pitta_tension,gandharva/raga_therapeutic.csv,,,traditional,0.8,pitta_tension
+raga:marwa,duration_minutes,duration:15,gandharva/raga_therapeutic.csv,,,traditional,0.8,15 min session
+raga:shree,therapeutic_target,dosha:pitta,gandharva/raga_therapeutic.csv,,,traditional,0.95,treats pitta
+raga:shree,optimal_time,time:evening,gandharva/raga_therapeutic.csv,,,traditional,0.95,best at evening
+raga:shree,treats_condition,condition:anger,gandharva/raga_therapeutic.csv,,,traditional,0.95,anger
+raga:shree,treats_condition,condition:pitta,gandharva/raga_therapeutic.csv,,,traditional,0.95,pitta
+raga:shree,duration_minutes,duration:15,gandharva/raga_therapeutic.csv,,,traditional,0.95,15 min session
+raga:lalit,therapeutic_target,dosha:pitta,gandharva/raga_therapeutic.csv,,,traditional,0.95,treats pitta
+raga:lalit,optimal_time,time:dawn,gandharva/raga_therapeutic.csv,,,traditional,0.95,best at dawn
+raga:lalit,treats_condition,condition:pitta_calm,gandharva/raga_therapeutic.csv,,,traditional,0.95,pitta_calm
+raga:lalit,duration_minutes,duration:15,gandharva/raga_therapeutic.csv,,,traditional,0.95,15 min session
+graha:sun,primary_raga,raga:bhupali,gandharva/graha_raga_chords.csv,,,traditional,0.8,Sun → Bhupali
+raga:bhupali,graha_ruler,graha:sun,gandharva/graha_raga_chords.csv,,,traditional,0.8,Bhupali ruled by Sun
+raga:bhupali,optimal_time,time:morning,gandharva/graha_raga_chords.csv,,,traditional,0.8,morning
+raga:bhupali,mood,rasa:solar_expansive,gandharva/graha_raga_chords.csv,,,traditional,0.8,solar expansive
+graha:sun,secondary_raga,raga:durga,gandharva/graha_raga_chords.csv,,,traditional,0.8,Sun secondary
+graha:moon,primary_raga,raga:yaman,gandharva/graha_raga_chords.csv,,,traditional,0.8,Moon → Yaman
+raga:yaman,graha_ruler,graha:moon,gandharva/graha_raga_chords.csv,,,traditional,0.8,Yaman ruled by Moon
+raga:yaman,mood,rasa:reflective_lunar,gandharva/graha_raga_chords.csv,,,traditional,0.8,reflective lunar
+graha:moon,secondary_raga,raga:bhimpalasi,gandharva/graha_raga_chords.csv,,,traditional,0.8,Moon secondary
+graha:mars,primary_raga,raga:bhairava,gandharva/graha_raga_chords.csv,,,traditional,0.8,Mars → Bhairava
+raga:bhairava,graha_ruler,graha:mars,gandharva/graha_raga_chords.csv,,,traditional,0.8,Bhairava ruled by Mars
+raga:bhairava,mood,rasa:vigorous_fierce,gandharva/graha_raga_chords.csv,,,traditional,0.8,vigorous fierce
+graha:mars,secondary_raga,raga:bhairavi,gandharva/graha_raga_chords.csv,,,traditional,0.8,Mars secondary
+graha:mercury,primary_raga,raga:kafi,gandharva/graha_raga_chords.csv,,,traditional,0.8,Mercury → Kafi
+raga:kafi,graha_ruler,graha:mercury,gandharva/graha_raga_chords.csv,,,traditional,0.8,Kafi ruled by Mercury
+raga:kafi,optimal_time,time:night,gandharva/graha_raga_chords.csv,,,traditional,0.8,night
+raga:kafi,mood,rasa:agile_playful,gandharva/graha_raga_chords.csv,,,traditional,0.8,agile playful
+graha:mercury,secondary_raga,raga:khamaj,gandharva/graha_raga_chords.csv,,,traditional,0.8,Mercury secondary
+graha:jupiter,primary_raga,raga:bageshri,gandharva/graha_raga_chords.csv,,,traditional,0.8,Jupiter → Bageshri
+raga:bageshri,graha_ruler,graha:jupiter,gandharva/graha_raga_chords.csv,,,traditional,0.8,Bageshri ruled by Jupiter
+raga:bageshri,optimal_time,time:midnight,gandharva/graha_raga_chords.csv,,,traditional,0.8,midnight
+raga:bageshri,mood,rasa:expansive_devotional,gandharva/graha_raga_chords.csv,,,traditional,0.8,expansive devotional
+graha:jupiter,secondary_raga,raga:bihag,gandharva/graha_raga_chords.csv,,,traditional,0.8,Jupiter secondary
+graha:venus,primary_raga,raga:khamaj,gandharva/graha_raga_chords.csv,,,traditional,0.8,Venus → Khamaj
+raga:khamaj,graha_ruler,graha:venus,gandharva/graha_raga_chords.csv,,,traditional,0.8,Khamaj ruled by Venus
+raga:khamaj,optimal_time,time:evening,gandharva/graha_raga_chords.csv,,,traditional,0.8,evening
+raga:khamaj,mood,rasa:romantic_beautiful,gandharva/graha_raga_chords.csv,,,traditional,0.8,romantic beautiful
+graha:venus,secondary_raga,raga:yaman,gandharva/graha_raga_chords.csv,,,traditional,0.8,Venus secondary
+graha:saturn,primary_raga,raga:darbari,gandharva/graha_raga_chords.csv,,,traditional,0.8,Saturn → Darbari
+raga:darbari,graha_ruler,graha:saturn,gandharva/graha_raga_chords.csv,,,traditional,0.8,Darbari ruled by Saturn
+raga:darbari,optimal_time,time:midnight,gandharva/graha_raga_chords.csv,,,traditional,0.8,midnight
+raga:darbari,mood,rasa:grave_meditative,gandharva/graha_raga_chords.csv,,,traditional,0.8,grave meditative
+graha:saturn,secondary_raga,raga:todi,gandharva/graha_raga_chords.csv,,,traditional,0.8,Saturn secondary
+graha:rahu,primary_raga,raga:marwa,gandharva/graha_raga_chords.csv,,,traditional,0.8,Rahu → Marwa
+raga:marwa,graha_ruler,graha:rahu,gandharva/graha_raga_chords.csv,,,traditional,0.8,Marwa ruled by Rahu
+raga:marwa,mood,rasa:dissonant_seeking,gandharva/graha_raga_chords.csv,,,traditional,0.8,dissonant seeking
+graha:rahu,secondary_raga,raga:puriya,gandharva/graha_raga_chords.csv,,,traditional,0.8,Rahu secondary
+graha:ketu,primary_raga,raga:bhairavi,gandharva/graha_raga_chords.csv,,,traditional,0.8,Ketu → Bhairavi
+raga:bhairavi,graha_ruler,graha:ketu,gandharva/graha_raga_chords.csv,,,traditional,0.8,Bhairavi ruled by Ketu
+raga:bhairavi,optimal_time,time:dawn,gandharva/graha_raga_chords.csv,,,traditional,0.8,dawn
+raga:bhairavi,mood,rasa:dissolving_surrender,gandharva/graha_raga_chords.csv,,,traditional,0.8,dissolving surrender
+graha:ketu,secondary_raga,raga:multani,gandharva/graha_raga_chords.csv,,,traditional,0.8,Ketu secondary
 element:earth,svara_duration,duration:20,svara/elements.csv,,,traditional,0.9,Earth lasts 20 min
 element:earth,favored_direction,direction:downward_stable,svara/elements.csv,,,traditional,0.9,downward stable
 element:earth,body_sensation,sensation:weight,svara/elements.csv,,,traditional,0.9,"weight, support, steadiness"
@@ -119,13 +116,6 @@ element:ether,body_sensation,sensation:spaciousness,svara/elements.csv,,,traditi
 element:ether,best_activity,activity:yoga,svara/elements.csv,,,traditional,0.9,yoga
 element:ether,best_activity,activity:meditation,svara/elements.csv,,,traditional,0.9,meditation
 element:ether,best_activity,activity:inward_absorption,svara/elements.csv,,,traditional,0.9,inward absorption
-vara:ravivara,optimal_nadi,nadi:pingala,svara/vara_rules.csv,,,traditional,0.6,Sunday is grouped with the right-nadi days for active and roving work.
-vara:somavara,optimal_nadi,nadi:ida,svara/vara_rules.csv,,,traditional,0.6,Monday is grouped with the left-nadi days for auspicious and gentle work.
-vara:mangalavara,optimal_nadi,nadi:pingala,svara/vara_rules.csv,,,traditional,0.6,Tuesday is grouped with the right-nadi days for forceful and mobile work.
-vara:budhavara,optimal_nadi,nadi:ida,svara/vara_rules.csv,,,traditional,0.6,Wednesday is grouped with the left-nadi days.
-vara:guruvara,optimal_nadi,nadi:ida,svara/vara_rules.csv,,,traditional,0.6,Thursday is grouped with the left-nadi days.
-vara:shukravara,optimal_nadi,nadi:ida,svara/vara_rules.csv,,,traditional,0.6,Friday is grouped with the left-nadi days.
-vara:shanivara,optimal_nadi,nadi:pingala,svara/vara_rules.csv,,,traditional,0.6,Saturday is grouped with the right-nadi days.
 tithi:1_shukla,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.9,tithi 1 shukla
 tithi:2_shukla,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.9,tithi 2 shukla
 tithi:3_shukla,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.9,tithi 3 shukla
@@ -156,96 +146,46 @@ tithi:12_krishna,optimal_nadi,nadi:pingala,svara/tithi_rules.csv,,,traditional,0
 tithi:13_krishna,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.9,tithi 13 krishna
 tithi:14_krishna,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.9,tithi 14 krishna
 tithi:15_krishna,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.9,tithi 15 krishna
-tithi:1_shukla,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.9,tithi 1 shukla
 tithi:1_krishna,optimal_nadi,nadi:pingala,svara/tithi_rules.csv,,,traditional,0.6,tithi 1 krishna
-tithi:2_shukla,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.9,tithi 2 shukla
 tithi:2_krishna,optimal_nadi,nadi:pingala,svara/tithi_rules.csv,,,traditional,0.6,tithi 2 krishna
-tithi:3_shukla,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.9,tithi 3 shukla
 tithi:3_krishna,optimal_nadi,nadi:pingala,svara/tithi_rules.csv,,,traditional,0.6,tithi 3 krishna
-tithi:4_shukla,optimal_nadi,nadi:pingala,svara/tithi_rules.csv,,,traditional,0.9,tithi 4 shukla
 tithi:4_krishna,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.6,tithi 4 krishna
-tithi:5_shukla,optimal_nadi,nadi:pingala,svara/tithi_rules.csv,,,traditional,0.9,tithi 5 shukla
 tithi:5_krishna,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.6,tithi 5 krishna
-tithi:6_shukla,optimal_nadi,nadi:pingala,svara/tithi_rules.csv,,,traditional,0.9,tithi 6 shukla
 tithi:6_krishna,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.6,tithi 6 krishna
-tithi:7_shukla,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.9,tithi 7 shukla
 tithi:7_krishna,optimal_nadi,nadi:pingala,svara/tithi_rules.csv,,,traditional,0.6,tithi 7 krishna
-tithi:8_shukla,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.9,tithi 8 shukla
 tithi:8_krishna,optimal_nadi,nadi:pingala,svara/tithi_rules.csv,,,traditional,0.6,tithi 8 krishna
-tithi:9_shukla,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.9,tithi 9 shukla
 tithi:9_krishna,optimal_nadi,nadi:pingala,svara/tithi_rules.csv,,,traditional,0.6,tithi 9 krishna
-tithi:10_shukla,optimal_nadi,nadi:pingala,svara/tithi_rules.csv,,,traditional,0.9,tithi 10 shukla
 tithi:10_krishna,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.6,tithi 10 krishna
-tithi:11_shukla,optimal_nadi,nadi:pingala,svara/tithi_rules.csv,,,traditional,0.9,tithi 11 shukla
 tithi:11_krishna,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.6,tithi 11 krishna
-tithi:12_shukla,optimal_nadi,nadi:pingala,svara/tithi_rules.csv,,,traditional,0.9,tithi 12 shukla
 tithi:12_krishna,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.6,tithi 12 krishna
-tithi:13_shukla,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.9,tithi 13 shukla
 tithi:13_krishna,optimal_nadi,nadi:pingala,svara/tithi_rules.csv,,,traditional,0.6,tithi 13 krishna
-tithi:14_shukla,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.9,tithi 14 shukla
 tithi:14_krishna,optimal_nadi,nadi:pingala,svara/tithi_rules.csv,,,traditional,0.6,tithi 14 krishna
-tithi:15_shukla,optimal_nadi,nadi:ida,svara/tithi_rules.csv,,,traditional,0.9,tithi 15 shukla
 tithi:15_krishna,optimal_nadi,nadi:pingala,svara/tithi_rules.csv,,,traditional,0.6,tithi 15 krishna
-chandas:ved_gayatri,deity,deity:savitr___surya,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,Savitṛ / Sūrya
+chandas:ved_gayatri,deity,deity:savitr_surya,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,Savitṛ / Sūrya
 chandas:ved_gayatri,vastu_element,element:fire,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,vastu: fire
 chandas:ved_gayatri,nakshatra_family,nakshatra_family:hasta_family,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,Hasta family
 chandas:ved_gayatri,direction,direction:east,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,East
 chandas:ved_gayatri,time,time:dawn,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,dawn
-chandas:ved_gayatri,vastu_element,element:fire,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,vastu: fire
-chandas:ved_gayatri,nakshatra_family,nakshatra_family:hasta_family,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,Hasta family
-chandas:ved_gayatri,direction,direction:east,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,East
-chandas:ved_gayatri,direction,direction:east,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,east
-chandas:ved_gayatri,vastu_element,element:fire,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,vastu: fire
-chandas:ved_gayatri,nakshatra_family,nakshatra_family:hasta_family,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,Hasta family
-chandas:ved_gayatri,direction,direction:east,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,East
 chandas:ved_tristubh,deity,deity:indra,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,Indra
 chandas:ved_tristubh,vastu_element,element:fire,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,vastu: fire
 chandas:ved_tristubh,nakshatra_family,nakshatra_family:fire_nakshatras,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,fire nakshatras
 chandas:ved_tristubh,direction,direction:south,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,South
 chandas:ved_tristubh,rasa,rasa:vira,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,vīra
-chandas:ved_tristubh,vastu_element,element:fire,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,vastu: fire
-chandas:ved_tristubh,nakshatra_family,nakshatra_family:fire_nakshatras,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,fire nakshatras
-chandas:ved_tristubh,direction,direction:south,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,South
 chandas:ved_tristubh,purpose,purpose:heroic_proclamation,chandas/metre_correspondence_matrix.csv,,,traditional,0.7,heroic proclamation
-chandas:ved_tristubh,vastu_element,element:fire,chandas/metre_correspondence_matrix.csv,,,traditional,0.7,vastu: fire
-chandas:ved_tristubh,nakshatra_family,nakshatra_family:fire_nakshatras,chandas/metre_correspondence_matrix.csv,,,traditional,0.7,fire nakshatras
-chandas:ved_tristubh,direction,direction:south,chandas/metre_correspondence_matrix.csv,,,traditional,0.7,South
-chandas:ved_tristubh,direction,direction:south,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,south
-chandas:ved_tristubh,vastu_element,element:fire,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,vastu: fire
-chandas:ved_tristubh,nakshatra_family,nakshatra_family:fire_nakshatras,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,fire nakshatras
-chandas:ved_tristubh,direction,direction:south,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,South
-chandas:ved_jagati,deity,deity:adityas___visvedevas,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,Ādityas / Viśvedevas
+chandas:ved_jagati,deity,deity:adityas_visvedevas,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,Ādityas / Viśvedevas
 chandas:ved_jagati,vastu_element,element:water,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,vastu: water
 chandas:ved_jagati,nakshatra_family,nakshatra_family:water_nakshatras,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,water nakshatras
 chandas:ved_jagati,direction,direction:west,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,West
 chandas:ved_jagati,purpose,purpose:cosmology,chandas/metre_correspondence_matrix.csv,,,traditional,0.6,cosmology
-chandas:ved_jagati,vastu_element,element:water,chandas/metre_correspondence_matrix.csv,,,traditional,0.6,vastu: water
-chandas:ved_jagati,nakshatra_family,nakshatra_family:water_nakshatras,chandas/metre_correspondence_matrix.csv,,,traditional,0.6,water nakshatras
-chandas:ved_jagati,direction,direction:west,chandas/metre_correspondence_matrix.csv,,,traditional,0.6,West
 chandas:ved_jagati,time,time:evening,chandas/metre_correspondence_matrix.csv,,,traditional,0.7,evening
-chandas:ved_jagati,vastu_element,element:water,chandas/metre_correspondence_matrix.csv,,,traditional,0.7,vastu: water
-chandas:ved_jagati,nakshatra_family,nakshatra_family:water_nakshatras,chandas/metre_correspondence_matrix.csv,,,traditional,0.7,water nakshatras
-chandas:ved_jagati,direction,direction:west,chandas/metre_correspondence_matrix.csv,,,traditional,0.7,West
-chandas:ved_jagati,direction,direction:west,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,west
-chandas:ved_jagati,vastu_element,element:water,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,vastu: water
-chandas:ved_jagati,nakshatra_family,nakshatra_family:water_nakshatras,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,water nakshatras
-chandas:ved_jagati,direction,direction:west,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,West
 chandas:ved_anustubh,direction,direction:north,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,north
 chandas:ved_anustubh,vastu_element,element:earth,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,vastu: earth
 chandas:ved_anustubh,nakshatra_family,nakshatra_family:earth_nakshatras,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,earth nakshatras
-chandas:ved_anustubh,direction,direction:north,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,North
 chandas:ved_anustubh,purpose,purpose:teaching,chandas/metre_correspondence_matrix.csv,,,traditional,0.6,teaching
-chandas:ved_anustubh,vastu_element,element:earth,chandas/metre_correspondence_matrix.csv,,,traditional,0.6,vastu: earth
-chandas:ved_anustubh,nakshatra_family,nakshatra_family:earth_nakshatras,chandas/metre_correspondence_matrix.csv,,,traditional,0.6,earth nakshatras
-chandas:ved_anustubh,direction,direction:north,chandas/metre_correspondence_matrix.csv,,,traditional,0.6,North
 chandas:ved_pankti,direction,direction:upper,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,upper
 chandas:ved_pankti,vastu_element,element:ether,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,vastu: ether
-chandas:ved_pankti,nakshatra_family,nakshatra_family:center___ether,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,center / ether
-chandas:ved_pankti,direction,direction:upper,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,Upper
+chandas:ved_pankti,nakshatra_family,nakshatra_family:center_ether,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,center / ether
 chandas:ved_pankti,purpose,purpose:completion,chandas/metre_correspondence_matrix.csv,,,traditional,0.6,completion
-chandas:ved_pankti,vastu_element,element:ether,chandas/metre_correspondence_matrix.csv,,,traditional,0.6,vastu: ether
-chandas:ved_pankti,nakshatra_family,nakshatra_family:center___ether,chandas/metre_correspondence_matrix.csv,,,traditional,0.6,center / ether
-chandas:ved_pankti,direction,direction:upper,chandas/metre_correspondence_matrix.csv,,,traditional,0.6,Upper
 chandas:ved_usnih,ritual_set,ritual_set:seven_primary_metres,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,seven_primary_metres
 chandas:ved_usnih,vastu_element,element:unspecified,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,vastu: Unspecified
 chandas:ved_usnih,nakshatra_family,nakshatra_family:unspecified,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,Unspecified
@@ -254,14 +194,11 @@ chandas:ved_brhati,ritual_set,ritual_set:seven_primary_metres,chandas/metre_corr
 chandas:ved_brhati,vastu_element,element:unspecified,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,vastu: Unspecified
 chandas:ved_brhati,nakshatra_family,nakshatra_family:unspecified,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,Unspecified
 chandas:ved_brhati,direction,direction:unspecified,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,Unspecified
-chandas:cls_mandakranta,rasa,rasa:srngara_(vipralambha),chandas/metre_correspondence_matrix.csv,,,traditional,0.9,śṛṅgāra (vipralambha)
+chandas:cls_mandakranta,rasa,rasa:srngara_vipralambha,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,śṛṅgāra (vipralambha)
 chandas:cls_mandakranta,vastu_element,element:water,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,vastu: water
 chandas:cls_mandakranta,nakshatra_family,nakshatra_family:water_nakshatras,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,water nakshatras
 chandas:cls_mandakranta,direction,direction:west,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,West
 chandas:cls_mandakranta,time,time:evening,chandas/metre_correspondence_matrix.csv,,,traditional,0.6,evening
-chandas:cls_mandakranta,vastu_element,element:water,chandas/metre_correspondence_matrix.csv,,,traditional,0.6,vastu: water
-chandas:cls_mandakranta,nakshatra_family,nakshatra_family:water_nakshatras,chandas/metre_correspondence_matrix.csv,,,traditional,0.6,water nakshatras
-chandas:cls_mandakranta,direction,direction:west,chandas/metre_correspondence_matrix.csv,,,traditional,0.6,West
 chandas:cls_shardulavikridita,purpose,purpose:grand_praise,chandas/metre_correspondence_matrix.csv,,,traditional,0.6,grand praise
 chandas:cls_shardulavikridita,vastu_element,element:fire,chandas/metre_correspondence_matrix.csv,,,traditional,0.6,vastu: fire
 chandas:cls_shardulavikridita,nakshatra_family,nakshatra_family:fire_nakshatras,chandas/metre_correspondence_matrix.csv,,,traditional,0.6,fire nakshatras
@@ -284,7 +221,7 @@ chandas:jat_vaitaliya,nakshatra_family,nakshatra_family:unspecified,chandas/metr
 chandas:jat_vaitaliya,direction,direction:unspecified,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,Unspecified
 chandas:form_campu,purpose,purpose:mixed_narrative,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,mixed narrative
 chandas:form_campu,vastu_element,element:ether,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,vastu: ether
-chandas:form_campu,nakshatra_family,nakshatra_family:center___ether,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,center / ether
+chandas:form_campu,nakshatra_family,nakshatra_family:center_ether,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,center / ether
 chandas:form_campu,direction,direction:center,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,Center
 chandas:prose_sutra,purpose,purpose:teaching,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,teaching
 chandas:prose_sutra,vastu_element,element:earth,chandas/metre_correspondence_matrix.csv,,,traditional,0.9,vastu: earth

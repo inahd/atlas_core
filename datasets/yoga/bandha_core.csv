@@ -1,5 +1,5 @@
-bandha,element,effect,location,graha_affinity,chakra
-Mula Bandha,earth,kundalini,root,Saturn,muladhara
-Jalandhara Bandha,ether,prana,throat,Jupiter,vishuddha
-Uddiyana Bandha,fire,prana,abdomen,Mars,manipura
-Maha Bandha,all,integration,full_body,Sun,all
+bandha,element,effect,location,graha_affinity,chakra,attestation_status
+Mula Bandha,earth,kundalini,root,Saturn,muladhara,attested_secondary
+Jalandhara Bandha,ether,prana,throat,Jupiter,vishuddha,attested_secondary
+Uddiyana Bandha,fire,prana,abdomen,Mars,manipura,attested_secondary
+Maha Bandha,all,integration,full_body,Sun,all,attested_secondary

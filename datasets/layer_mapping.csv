@@ -1,0 +1,99 @@
+layer,dataset_path,domain,description,attestation_status
+S0,ontology/vaishnava_tattva.csv,philosophy,Acintya-bhedābheda tattva and Gauḍīya siddhānta,inferred_coherent
+S0,ontology/rasa_siddhanta.csv,philosophy,12 rasas from Bhakti-rasāmṛta-sindhu,inferred_coherent
+S0,ontology/parampara.csv,philosophy,Brahma-Madhva-Gauḍīya paramparā,inferred_coherent
+S0,ontology/bhava_types.csv,philosophy,Bhāva relationship types,inferred_coherent
+S0,ontology/bhava_relations.csv,philosophy,Bhāva relational ontology,inferred_coherent
+S0,ontology/knowledge_layers.csv,philosophy,Knowledge layer taxonomy,inferred_coherent
+S0,sources/sources.csv,textual,Source texts and references,inferred_coherent
+S0,sources/passages.csv,textual,Cited passages from source texts,inferred_coherent
+S1,cosmology/deity_master.csv,deity,27 deities with vahana weapon element domain,inferred_coherent
+S1,cosmology/deity_domains.csv,deity,Deity domain assignments,inferred_coherent
+S1,cosmology/deity_vahana_extended.csv,deity,Extended vahana symbolism,inferred_coherent
+S1,cosmology/nitya_devi_mapping.csv,deity,15 Nitya Devī tithi mapping,inferred_coherent
+S1,cosmology/nitya_devi_master.csv,deity,Nitya Devī master attributes,inferred_coherent
+S1,cosmology/graha_master.csv,deity,9 grahas with element guna dosha,inferred_coherent
+S1,astro/grahas.csv,deity,Graha supplementary data,inferred_coherent
+S1,gandharva/graha_bija.csv,deity,Graha bīja mantras,inferred_coherent
+S1,gandharva/bija_master.csv,deity,Bīja syllable master,inferred_coherent
+S2,gandharva/raga_therapeutic.csv,sound,Therapeutic raga prescriptions,inferred_coherent
+S2,sound/raga_master.csv,sound,Raga master dataset,inferred_coherent
+S2,sound/tanpura_strings.csv,sound,Tanpura string tunings,inferred_coherent
+S2,svarodaya/elements.csv,sound,Svara element correspondences,inferred_coherent
+S2,svarodaya/nadis.csv,sound,Svara nāḍī flows,inferred_coherent
+S2,svarodaya/activity_matrix.csv,sound,Svara activity timing matrix,inferred_coherent
+S2,svarodaya/tithi_rules.csv,sound,Svara tithi rules,inferred_coherent
+S2,svarodaya/vara_rules.csv,sound,Svara vara rules,inferred_coherent
+S2,svarodaya/coherence_rules.csv,sound,Svara coherence rules,inferred_coherent
+S2,carnatic/35_talas.csv,sound,35 tāla system,inferred_coherent
+S2,carnatic/tala_families.csv,sound,Tāla family classification,inferred_coherent
+S2,carnatic/tala_master.csv,sound,Tāla master dataset,inferred_coherent
+S2,carnatic/gati_definitions.csv,sound,Gati subdivision definitions,inferred_coherent
+S2,carnatic/korvai_rules.csv,sound,Korvai compositional rules,inferred_coherent
+S2,carnatic/sollukattu.csv,sound,Sollukaṭṭu syllable patterns,inferred_coherent
+S2,carnatic/navagraha_kritis.csv,sound,Navagraha kṛti raga assignments,inferred_coherent
+S2,chandas/metres_forms.csv,sound,Vedic metre forms,inferred_coherent
+S2,chandas/metre_correspondence_matrix.csv,sound,Metre correspondence matrix,inferred_coherent
+S3,astro/nakshatra_full.csv,rhythm,Full nakshatra data with shakti themes,inferred_coherent
+S3,astro/nakshatra_core.csv,rhythm,Core nakshatra attributes,inferred_coherent
+S3,astro/nakshatra_padas.csv,rhythm,108 nakshatra padas,inferred_coherent
+S3,astro/nakshatra_master.csv,rhythm,Nakshatra master with gana dosha yoni,inferred_coherent
+S3,astro/nakshatra_deities.csv,rhythm,Nakshatra deity assignments,inferred_coherent
+S3,astro/nakshatra_extended.csv,rhythm,Extended nakshatra symbolism,inferred_coherent
+S3,astro/nakshatra_syllables.csv,rhythm,Nakshatra initial syllables,inferred_coherent
+S3,astro/tithi_core.csv,rhythm,30 tithis with deity and quality,inferred_coherent
+S3,astro/tithi_master.csv,rhythm,Tithi master with deity element guna,inferred_coherent
+S3,astro/tithi_deities.csv,rhythm,Tithi deity assignments,inferred_coherent
+S3,astro/tithi_list.csv,rhythm,Tithi list,inferred_coherent
+S3,astro/tithi_properties.csv,rhythm,Tithi properties,inferred_coherent
+S3,jyotish/nakshatra.yaml,rhythm,Jyotish nakshatra traditions,inferred_coherent
+S3,jyotish/graha.yaml,rhythm,Jyotish graha data,inferred_coherent
+S3,jyotish/rashi.yaml,rhythm,Jyotish rashi data,inferred_coherent
+S4,vastu/geometry_archetypes.csv,geometry,Sacred geometry archetypes,inferred_coherent
+S4,silpa/bandhu_geometry.csv,geometry,Bandhu geometric correspondences,inferred_coherent
+S4,vastu/ayadi_formulas.csv,geometry,Āyādi vāstu formulas,inferred_coherent
+S4,vastu/inner_deities.csv,geometry,Vāstu maṇḍala inner deities,inferred_coherent
+S4,vastu/perimeter_deities.csv,geometry,Vāstu maṇḍala perimeter deities,inferred_coherent
+S4,vastu/marma_sthana.csv,geometry,Vāstu marma points,inferred_coherent
+S4,vastu/pada_topology.csv,geometry,108 pada topology grid,inferred_coherent
+S4,vastu/vastu_directions.csv,geometry,Vāstu directional assignments,inferred_coherent
+S4,vastu/vastu_zones.csv,geometry,Vāstu zone definitions,inferred_coherent
+S4,vastu/vastu_pada_grid.csv,geometry,Vāstu pada grid,inferred_coherent
+S4,vastu/vastu_land_zones.csv,geometry,Vāstu land zone classification,inferred_coherent
+S4,vastu/element_geometry.csv,geometry,Element geometry correspondences,inferred_coherent
+S4,tantra/chakra_master.csv,geometry,Chakra master with bīja deity element,inferred_coherent
+S5,ayurveda/dosha.csv,nature,Three doshas,inferred_coherent
+S5,ayurveda/doshas.csv,nature,Dosha extended attributes,inferred_coherent
+S5,ayurveda/guna.csv,nature,Guṇa qualities,inferred_coherent
+S5,ayurveda/gunas.csv,nature,Guṇa extended attributes,inferred_coherent
+S5,ayurveda/mahabhutas.csv,nature,Mahābhūta elements,inferred_coherent
+S5,ayurveda/rasa.csv,nature,Six rasas (taste),inferred_coherent
+S5,ayurveda/virya.csv,nature,Vīrya (potency),inferred_coherent
+S5,ayurveda/vipaka.csv,nature,Vipāka (post-digestive),inferred_coherent
+S5,ayurveda/sapta_dhatu.csv,nature,Seven dhātus (tissues),inferred_coherent
+S5,ayurveda/herb_spine_108.csv,nature,108 key herbs,inferred_coherent
+S5,ayurveda/herb_exemplars.csv,nature,Herb exemplars,inferred_coherent
+S5,ayurveda/amidha_herbs.csv,nature,Amidha herb formulations,inferred_coherent
+S5,ayurveda/dinacharya_panchanga.csv,nature,Dinacharya daily routine rules,inferred_coherent
+S5,ayurveda/dosha_nakshatra_matrix.csv,nature,Dosha-nakshatra matrix,inferred_coherent
+S5,ayurveda/coherence_rules.csv,nature,Āyurveda coherence rules,inferred_coherent
+S5,plants/nakshatra_plants.csv,nature,Nakshatra plant correspondences,inferred_coherent
+S5,plants/nakshatra_agriculture.csv,nature,Nakshatra agriculture timing,inferred_coherent
+S5,plants/sacred_plants.csv,nature,Sacred plant correspondences,inferred_coherent
+S5,yoga/marma_master.csv,nature,Marma master points,inferred_coherent
+S5,yoga/nakshatra_body_map.csv,nature,Nakshatra body map,inferred_coherent
+S5,yoga/asana_core.csv,nature,Asana core dataset,inferred_coherent
+S5,yoga/pranayama_core.csv,nature,Pranayama core dataset,inferred_coherent
+S5,ratna/graha_gems.csv,nature,Graha gemstone prescriptions,inferred_coherent
+S6,semantics/vedic_arts_semantic_layer.csv,lila,64 Vedic arts semantic layer,inferred_coherent
+S6,cosmology/vedic_arts_64.csv,lila,64 Vedic arts,inferred_coherent
+S6,ritual/plant_ritual.csv,lila,Plant ritual correspondences,inferred_coherent
+S6,ritual/vaishnava_calendar.csv,lila,Vaishnava festival calendar,inferred_coherent
+S6,compositions/gaudiya_compositions.csv,lila,Gauḍīya compositions,inferred_coherent
+S6,compositions/nakshatra_kritis.csv,lila,Nakshatra kṛti assignments,inferred_coherent
+S6,compositions/narottama_padas.csv,lila,Narottama Dāsa padas,inferred_coherent
+S6,cosmology/goloka_topology.csv,lila,Goloka topology,inferred_coherent
+S6,cosmology/ashtakala.csv,lila,Aṣṭakāla daily program,inferred_coherent
+S6,cosmology/vraja_forests.csv,lila,12 Vraja forests,inferred_coherent
+S6,cosmology/gaudiya_festivals.csv,lila,Gauḍīya festival calendar,inferred_coherent
+S6,cosmology/daily_program.csv,lila,Daily program schedule,inferred_coherent

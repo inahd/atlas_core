@@ -1,30 +1,30 @@
-entity_id,entity_type,name,status,stability,depends_on,provides,protocol,port,notes
-npu_intel,compute,Intel NPU (Meteor Lake),active,stable,,openvino_inference,OpenVINO,,8B param ceiling · coherence scoring · whisper-ready
-igpu_xe,compute,Intel Iris Xe Graphics,active,stable,,webgl;yantra;toroid_render,WebGL,,integrated GPU · yantra topology · toroidal field vis
-cpu_x86,compute,Intel Core Ultra (x86),active,stable,,python;flask;panchanga;graph,native,,main compute · all Python workloads
-ram_16gb,compute,16GB DDR5,active,stable,,memory,native,,limits concurrent model loads · one large model at a time
-sc_synthesis,audio,SuperCollider 3.13.0,active,unstable,pipewire,synth_defs;osc_receive,OSC,57110,SynthDefs loaded · starts with JACK_NO_AUDIO_RESERVATION=1 JACK_START_SERVER=0 · ports appear but audio silent (PW 1.2.6 JACK shim bug) · kept for future Talachakra OSC
-om_py,audio,om.py tanpura engine,active,stable,cpu_x86;kernel_flask,tanpura;tabla;pw_cat_stream,python,,TanpuraEngine 4 strings + tabla sampler · field-driven
-pw_cat,tool,pw-cat native playback,active,stable,pipewire;motu_m2,audio_output,PipeWire,,f32 format · --target MOTU · preferred output path
-pw_jack,tool,pw-jack JACK shim,active,broken,pipewire,jack_compat,JACK,,SC starts with JACK_NO_AUDIO_RESERVATION=1 JACK_START_SERVER=0 but audio bridge doesn't pass samples · tested April 2026 · zero audio reaches MOTU despite visible pw-link connections
-pw_link,tool,pw-link native linker,active,stable,pipewire,port_linking,PipeWire,,preferred over pw-jack for connections
-motu_m2,audio,MOTU M2 USB interface,active,stable,,analog_stereo_out;digital_in,USB Audio,,card 1 · alsa_output.usb-MOTU_M2_M20000063536-00.analog-stereo
-motu_digital,audio,MOTU M2 S/PDIF,active,avoid,motu_m2,spdif_capture,IEC958,,iec958-stereo · locked by ALSA · do not target for playback
-pipewire,service,PipeWire 1.2.6,active,stable,,audio_server;jack_bridge;pulse_compat,native,,owns all hardware · session manager wireplumber
-wireplumber,service,WirePlumber,active,stable,pipewire,session_mgmt;auto_connect,native,,manages JACK client connections · may auto-disconnect
-kernel_flask,service,kernel.py Flask API,active,stable,cpu_x86;datasets_csv,http_api;field_state;spine,HTTP,5000,all routes · panchanga · graph · shell
-ngrok_tunnel,network,ngrok HTTP tunnel,active,stable,kernel_flask,public_url,HTTPS,,van internet · dynamic URL
-osc_sc,network,SC OSC receiver,active,stable,sc_synthesis,osc_commands,UDP,57120,/atlas/* namespace · field/tanpura/note/tabla/bija/master
-osc_pd_planned,network,Pure Data OSC (planned),planned,unknown,,talachakra_control,UDP,57121,Talachakra visual tala · not yet running
-datasets_csv,storage,136 CSV datasets,active,stable,,entity_data;relations;cosmology,file,,canonical · read-only · kosha/
-instance_personal,storage,Personal instance data,active,stable,,altar;natal;journal,file,,vyakti/ · natal.json · altar.json
-vector_store,storage,Vector embedding store,active,stable,cpu_x86,semantic_search,file,,text passage similarity
-journal,storage,Daily journal entries,active,stable,instance_personal,field_snapshots,JSON,,instance/journal/ · YYYY-MM-DD.json
-kernel_service,service,kernel systemd unit,available,stable,kernel_flask,auto_restart,systemd,,systemd/kernel.service
-om_service,service,om.py systemd unit,available,stable,om_py;pipewire,auto_restart,systemd,,systemd/om.service · pw-cat output
-sc_engine,service,SC managed by start.sh,active,unstable,sc_synthesis;pipewire,sc_audio,bash,,sc/start_sc.sh · kept for Talachakra
-pipewire_service,service,PipeWire system service,active,stable,,audio_server,systemd,,system-level · always running
-sclang,tool,SC language runtime,active,stable,sc_synthesis,synthdef_load;osc_dispatch,native,,loads atlas_synth.scd
-pw_jack_tool,tool,pw-jack CLI,active,broken,pipewire,jack_connect;jack_lsp,JACK,,connections appear but audio doesn't flow · avoid
-pw_link_tool,tool,pw-link CLI,active,stable,pipewire,native_link;native_lsp,PipeWire,,preferred for all connections
-pw_cat_tool,tool,pw-cat CLI,active,stable,pipewire,playback;record,PipeWire,,native PipeWire playback · f32 format
+entity_id,entity_type,name,status,stability,depends_on,provides,protocol,port,notes,attestation_status
+npu_intel,compute,Intel NPU (Meteor Lake),active,stable,,openvino_inference,OpenVINO,,8B param ceiling · coherence scoring · whisper-ready,inferred_coherent
+igpu_xe,compute,Intel Iris Xe Graphics,active,stable,,webgl;yantra;toroid_render,WebGL,,integrated GPU · yantra topology · toroidal field vis,inferred_coherent
+cpu_x86,compute,Intel Core Ultra (x86),active,stable,,python;flask;panchanga;graph,native,,main compute · all Python workloads,inferred_coherent
+ram_16gb,compute,16GB DDR5,active,stable,,memory,native,,limits concurrent model loads · one large model at a time,inferred_coherent
+sc_synthesis,audio,SuperCollider 3.13.0,active,unstable,pipewire,synth_defs;osc_receive,OSC,57110,SynthDefs loaded · starts with JACK_NO_AUDIO_RESERVATION=1 JACK_START_SERVER=0 · ports appear but audio silent (PW 1.2.6 JACK shim bug) · kept for future Talachakra OSC,inferred_coherent
+om_py,audio,om.py tanpura engine,active,stable,cpu_x86;kernel_flask,tanpura;tabla;pw_cat_stream,python,,TanpuraEngine 4 strings + tabla sampler · field-driven,inferred_coherent
+pw_cat,tool,pw-cat native playback,active,stable,pipewire;motu_m2,audio_output,PipeWire,,f32 format · --target MOTU · preferred output path,inferred_coherent
+pw_jack,tool,pw-jack JACK shim,active,broken,pipewire,jack_compat,JACK,,SC starts with JACK_NO_AUDIO_RESERVATION=1 JACK_START_SERVER=0 but audio bridge doesn't pass samples · tested April 2026 · zero audio reaches MOTU despite visible pw-link connections,inferred_coherent
+pw_link,tool,pw-link native linker,active,stable,pipewire,port_linking,PipeWire,,preferred over pw-jack for connections,inferred_coherent
+motu_m2,audio,MOTU M2 USB interface,active,stable,,analog_stereo_out;digital_in,USB Audio,,card 1 · alsa_output.usb-MOTU_M2_M20000063536-00.analog-stereo,inferred_coherent
+motu_digital,audio,MOTU M2 S/PDIF,active,avoid,motu_m2,spdif_capture,IEC958,,iec958-stereo · locked by ALSA · do not target for playback,inferred_coherent
+pipewire,service,PipeWire 1.2.6,active,stable,,audio_server;jack_bridge;pulse_compat,native,,owns all hardware · session manager wireplumber,inferred_coherent
+wireplumber,service,WirePlumber,active,stable,pipewire,session_mgmt;auto_connect,native,,manages JACK client connections · may auto-disconnect,inferred_coherent
+kernel_flask,service,kernel.py Flask API,active,stable,cpu_x86;datasets_csv,http_api;field_state;spine,HTTP,5000,all routes · panchanga · graph · shell,inferred_coherent
+ngrok_tunnel,network,ngrok HTTP tunnel,active,stable,kernel_flask,public_url,HTTPS,,van internet · dynamic URL,inferred_coherent
+osc_sc,network,SC OSC receiver,active,stable,sc_synthesis,osc_commands,UDP,57120,/atlas/* namespace · field/tanpura/note/tabla/bija/master,inferred_coherent
+osc_pd_planned,network,Pure Data OSC (planned),planned,unknown,,talachakra_control,UDP,57121,Talachakra visual tala · not yet running,inferred_coherent
+datasets_csv,storage,136 CSV datasets,active,stable,,entity_data;relations;cosmology,file,,canonical · read-only · kosha/,inferred_coherent
+instance_personal,storage,Personal instance data,active,stable,,altar;natal;journal,file,,vyakti/ · natal.json · altar.json,inferred_coherent
+vector_store,storage,Vector embedding store,active,stable,cpu_x86,semantic_search,file,,text passage similarity,inferred_coherent
+journal,storage,Daily journal entries,active,stable,instance_personal,field_snapshots,JSON,,instance/journal/ · YYYY-MM-DD.json,inferred_coherent
+kernel_service,service,kernel systemd unit,available,stable,kernel_flask,auto_restart,systemd,,systemd/kernel.service,inferred_coherent
+om_service,service,om.py systemd unit,available,stable,om_py;pipewire,auto_restart,systemd,,systemd/om.service · pw-cat output,inferred_coherent
+sc_engine,service,SC managed by start.sh,active,unstable,sc_synthesis;pipewire,sc_audio,bash,,sc/start_sc.sh · kept for Talachakra,inferred_coherent
+pipewire_service,service,PipeWire system service,active,stable,,audio_server,systemd,,system-level · always running,inferred_coherent
+sclang,tool,SC language runtime,active,stable,sc_synthesis,synthdef_load;osc_dispatch,native,,loads atlas_synth.scd,inferred_coherent
+pw_jack_tool,tool,pw-jack CLI,active,broken,pipewire,jack_connect;jack_lsp,JACK,,connections appear but audio doesn't flow · avoid,inferred_coherent
+pw_link_tool,tool,pw-link CLI,active,stable,pipewire,native_link;native_lsp,PipeWire,,preferred for all connections,inferred_coherent
+pw_cat_tool,tool,pw-cat CLI,active,stable,pipewire,playback;record,PipeWire,,native PipeWire playback · f32 format,inferred_coherent

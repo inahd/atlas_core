@@ -1,16 +1,16 @@
-pack_name,source_url,license,icon_count,category,priority,notes
-Noun Project Hindu Pack,https://thenounproject.com/search/?q=hindu,CC BY 3.0 (with attribution),1026,hindu_iconography,medium,Requires attribution or Pro subscription
-Flaticon Hindu Pack,https://www.flaticon.com/search?word=hindu,Flaticon License (requires attribution),8908,hindu_iconography,low,Large set but requires license for commercial use
-SVG Repo Hindu,https://www.svgrepo.com/collection/hindu-icons/,CC0 Public Domain,50+,hindu_iconography,high,Free CC0 — no attribution required
-UXWing Hindu,https://uxwing.com/tag/hindu/,Free for commercial use,30+,hindu_iconography,high,Free commercial license
-Unicode Misc Symbols,U+2600-U+26FF,Unicode Standard,256,unicode_block,high,Weather · chess · zodiac · musical · religious symbols
-Unicode Supplemental Symbols,U+1F300-U+1F9FF,Unicode Standard,1791,unicode_block,high,Emoji · transport · map · food · animal · activity
-Unicode Alchemical Symbols,U+1F700-U+1F77F,Unicode Standard,128,unicode_block,medium,Alchemical signs — element correspondences possible
-Unicode Runic,U+16A0-U+16FF,Unicode Standard,96,unicode_block,low,Norse runes — comparative mythology interest
-Unicode Vedic Extensions,U+1CD0-U+1CFF,Unicode Standard,48,unicode_block,high,Vedic tone marks · svarita · anudatta · udatta
-Unicode Devanagari Extended,U+A8E0-U+A8FF,Unicode Standard,32,unicode_block,high,Devanagari combining marks · cantillation
-Unicode Ancient Symbols,U+10190-U+101CF,Unicode Standard,64,unicode_block,medium,Roman weights · measures · ancient number forms
-Unicode Byzantine Musical,U+1D000-U+1D0FF,Unicode Standard,256,unicode_block,low,Byzantine musical notation — comparative with gandharva
-Unicode Dingbats,U+2700-U+27BF,Unicode Standard,192,unicode_block,medium,Ornamental symbols · arrows · stars · crosses
-Unicode Arrows,U+2190-U+21FF,Unicode Standard,112,unicode_block,medium,Directional arrows — vastu directional mapping
-Unicode Geometric Shapes,U+25A0-U+25FF,Unicode Standard,96,unicode_block,medium,Squares · circles · triangles — yantra primitives
+pack_name,source_url,license,icon_count,category,priority,notes,attestation_status
+Noun Project Hindu Pack,https://thenounproject.com/search/?q=hindu,CC BY 3.0 (with attribution),1026,hindu_iconography,medium,Requires attribution or Pro subscription,inferred_coherent
+Flaticon Hindu Pack,https://www.flaticon.com/search?word=hindu,Flaticon License (requires attribution),8908,hindu_iconography,low,Large set but requires license for commercial use,inferred_coherent
+SVG Repo Hindu,https://www.svgrepo.com/collection/hindu-icons/,CC0 Public Domain,50+,hindu_iconography,high,Free CC0 — no attribution required,inferred_coherent
+UXWing Hindu,https://uxwing.com/tag/hindu/,Free for commercial use,30+,hindu_iconography,high,Free commercial license,inferred_coherent
+Unicode Misc Symbols,U+2600-U+26FF,Unicode Standard,256,unicode_block,high,Weather · chess · zodiac · musical · religious symbols,inferred_coherent
+Unicode Supplemental Symbols,U+1F300-U+1F9FF,Unicode Standard,1791,unicode_block,high,Emoji · transport · map · food · animal · activity,inferred_coherent
+Unicode Alchemical Symbols,U+1F700-U+1F77F,Unicode Standard,128,unicode_block,medium,Alchemical signs — element correspondences possible,inferred_coherent
+Unicode Runic,U+16A0-U+16FF,Unicode Standard,96,unicode_block,low,Norse runes — comparative mythology interest,inferred_coherent
+Unicode Vedic Extensions,U+1CD0-U+1CFF,Unicode Standard,48,unicode_block,high,Vedic tone marks · svarita · anudatta · udatta,inferred_coherent
+Unicode Devanagari Extended,U+A8E0-U+A8FF,Unicode Standard,32,unicode_block,high,Devanagari combining marks · cantillation,inferred_coherent
+Unicode Ancient Symbols,U+10190-U+101CF,Unicode Standard,64,unicode_block,medium,Roman weights · measures · ancient number forms,inferred_coherent
+Unicode Byzantine Musical,U+1D000-U+1D0FF,Unicode Standard,256,unicode_block,low,Byzantine musical notation — comparative with gandharva,inferred_coherent
+Unicode Dingbats,U+2700-U+27BF,Unicode Standard,192,unicode_block,medium,Ornamental symbols · arrows · stars · crosses,inferred_coherent
+Unicode Arrows,U+2190-U+21FF,Unicode Standard,112,unicode_block,medium,Directional arrows — vastu directional mapping,inferred_coherent
+Unicode Geometric Shapes,U+25A0-U+25FF,Unicode Standard,96,unicode_block,medium,Squares · circles · triangles — yantra primitives,inferred_coherent

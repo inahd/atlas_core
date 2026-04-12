@@ -1,31 +1,31 @@
-tithi_num,id,name_iast,paksha,deity,element,guna,quality,good_for,avoid,nitya_devi,color_hex
-1,tithi_1,Pratipadā,shukla,Agni,fire,sattva,auspicious,"starting projects, travel, celebration, wealth","violence, arguments, negativity",Kameshvari,#FF4500
-2,tithi_2,Dvitīyā,shukla,Brahma,water,rajas,mixed,"buying property or vehicles, agriculture, community work","marriage, sacred ceremonies",Bhagamalini,#1E90FF
-3,tithi_3,Tṛtīyā,shukla,Gauri,earth,rajas,mixed,"competitions, legal matters, confronting challenges","marriage, travel, peaceful activities",Nityaklinna,#8B4513
-4,tithi_4,Caturthī,shukla,Ganesha,air,rajas,inauspicious,"destructive acts, obstacle removal, tantra sadhana","new ventures, marriage, travel",Bherunda,#B0E0E6
-5,tithi_5,Pañcamī,shukla,Nagas,fire,rajas,auspicious,"marriage, religious ceremonies, completion of projects","negative actions, quarrels",Vahnivasini,#FF4500
-6,tithi_6,Ṣaṣṭhī,shukla,Kartikeya,earth,sattva,auspicious,"starting projects, travel, celebration, wealth","violence, arguments, negativity",Mahavajreshvari,#8B4513
-7,tithi_7,Saptamī,shukla,Surya,air,sattva,mixed,"buying property or vehicles, agriculture, community work","marriage, sacred ceremonies",Shivaduti,#B0E0E6
-8,tithi_8,Aṣṭamī,shukla,Durga,fire,tamas,mixed,"competitions, legal matters, confronting challenges","marriage, travel, peaceful activities",Tvarita,#FF4500
-9,tithi_9,Navamī,shukla,Durga,water,rajas,inauspicious,"destructive acts, obstacle removal, tantra sadhana","new ventures, marriage, travel",Kulasundari,#1E90FF
-10,tithi_10,Daśamī,shukla,Dharma,ether,sattva,auspicious,"marriage, religious ceremonies, completion of projects","negative actions, quarrels",Nitya,#800080
-11,tithi_11,Ekādaśī,shukla,Vishnu,air,sattva,auspicious,"starting projects, travel, celebration, wealth","violence, arguments, negativity",Nilapataka,#B0E0E6
-12,tithi_12,Dvādaśī,shukla,Vishnu,earth,rajas,mixed,"buying property or vehicles, agriculture, community work","marriage, sacred ceremonies",Vijaya,#8B4513
-13,tithi_13,Trayodaśī,shukla,Kamadeva,water,sattva,mixed,"competitions, legal matters, confronting challenges","marriage, travel, peaceful activities",Sarvamangala,#1E90FF
-14,tithi_14,Caturdaśī,shukla,Shiva,fire,tamas,inauspicious,"destructive acts, obstacle removal, tantra sadhana","new ventures, marriage, travel",Jvalamalini,#FF4500
-15,tithi_15,Paurṇimā,shukla,Chandra,ether,sattva,auspicious,"marriage, religious ceremonies, completion of projects","negative actions, quarrels",Chitra,#800080
-1,tithi_krishna_1,Pratipadā,krishna,Agni,fire,sattva,auspicious,"starting projects, travel, celebration, wealth","violence, arguments, negativity",Kameshvari,#FF4500
-2,tithi_krishna_2,Dvitīyā,krishna,Brahma,water,rajas,mixed,"buying property or vehicles, agriculture, community work","marriage, sacred ceremonies",Bhagamalini,#1E90FF
-3,tithi_krishna_3,Tṛtīyā,krishna,Gauri,earth,rajas,mixed,"competitions, legal matters, confronting challenges","marriage, travel, peaceful activities",Nityaklinna,#8B4513
-4,tithi_krishna_4,Caturthī,krishna,Ganesha,air,rajas,inauspicious,"destructive acts, obstacle removal, tantra sadhana","new ventures, marriage, travel",Bherunda,#B0E0E6
-5,tithi_krishna_5,Pañcamī,krishna,Nagas,fire,rajas,auspicious,"marriage, religious ceremonies, completion of projects","negative actions, quarrels",Vahnivasini,#FF4500
-6,tithi_krishna_6,Ṣaṣṭhī,krishna,Kartikeya,earth,sattva,auspicious,"starting projects, travel, celebration, wealth","violence, arguments, negativity",Mahavajreshvari,#8B4513
-7,tithi_krishna_7,Saptamī,krishna,Surya,air,sattva,mixed,"buying property or vehicles, agriculture, community work","marriage, sacred ceremonies",Shivaduti,#B0E0E6
-8,tithi_krishna_8,Aṣṭamī,krishna,Durga,fire,tamas,mixed,"competitions, legal matters, confronting challenges","marriage, travel, peaceful activities",Tvarita,#FF4500
-9,tithi_krishna_9,Navamī,krishna,Durga,water,rajas,inauspicious,"destructive acts, obstacle removal, tantra sadhana","new ventures, marriage, travel",Kulasundari,#1E90FF
-10,tithi_krishna_10,Daśamī,krishna,Dharma,ether,sattva,auspicious,"marriage, religious ceremonies, completion of projects","negative actions, quarrels",Nitya,#800080
-11,tithi_krishna_11,Ekādaśī,krishna,Vishnu,air,sattva,auspicious,"starting projects, travel, celebration, wealth","violence, arguments, negativity",Nilapataka,#B0E0E6
-12,tithi_krishna_12,Dvādaśī,krishna,Vishnu,earth,rajas,mixed,"buying property or vehicles, agriculture, community work","marriage, sacred ceremonies",Vijaya,#8B4513
-13,tithi_krishna_13,Trayodaśī,krishna,Kamadeva,water,sattva,mixed,"competitions, legal matters, confronting challenges","marriage, travel, peaceful activities",Sarvamangala,#1E90FF
-14,tithi_krishna_14,Caturdaśī,krishna,Shiva,fire,tamas,inauspicious,"destructive acts, obstacle removal, tantra sadhana","new ventures, marriage, travel",Jvalamalini,#FF4500
-15,tithi_krishna_15,Amāvāsyā,krishna,Pitris,ether,tamas,mixed,"ancestor rituals, spiritual reflection","new ventures, celebrations",Chitra,#4B0082
+tithi_num,id,name_iast,paksha,deity,element,guna,quality,good_for,avoid,nitya_devi,color_hex,attestation_status
+1,tithi_1,Pratipadā,shukla,Agni,fire,sattva,auspicious,"starting projects, travel, celebration, wealth","violence, arguments, negativity",Kameshvari,#FF4500,attested_classical
+2,tithi_2,Dvitīyā,shukla,Brahma,water,rajas,mixed,"buying property or vehicles, agriculture, community work","marriage, sacred ceremonies",Bhagamalini,#1E90FF,attested_classical
+3,tithi_3,Tṛtīyā,shukla,Gauri,earth,rajas,mixed,"competitions, legal matters, confronting challenges","marriage, travel, peaceful activities",Nityaklinna,#8B4513,attested_classical
+4,tithi_4,Caturthī,shukla,Ganesha,air,rajas,inauspicious,"destructive acts, obstacle removal, tantra sadhana","new ventures, marriage, travel",Bherunda,#B0E0E6,attested_classical
+5,tithi_5,Pañcamī,shukla,Nagas,fire,rajas,auspicious,"marriage, religious ceremonies, completion of projects","negative actions, quarrels",Vahnivasini,#FF4500,attested_classical
+6,tithi_6,Ṣaṣṭhī,shukla,Kartikeya,earth,sattva,auspicious,"starting projects, travel, celebration, wealth","violence, arguments, negativity",Mahavajreshvari,#8B4513,attested_classical
+7,tithi_7,Saptamī,shukla,Surya,air,sattva,mixed,"buying property or vehicles, agriculture, community work","marriage, sacred ceremonies",Shivaduti,#B0E0E6,attested_classical
+8,tithi_8,Aṣṭamī,shukla,Durga,fire,tamas,mixed,"competitions, legal matters, confronting challenges","marriage, travel, peaceful activities",Tvarita,#FF4500,attested_classical
+9,tithi_9,Navamī,shukla,Durga,water,rajas,inauspicious,"destructive acts, obstacle removal, tantra sadhana","new ventures, marriage, travel",Kulasundari,#1E90FF,attested_classical
+10,tithi_10,Daśamī,shukla,Dharma,ether,sattva,auspicious,"marriage, religious ceremonies, completion of projects","negative actions, quarrels",Nitya,#800080,attested_classical
+11,tithi_11,Ekādaśī,shukla,Vishnu,air,sattva,auspicious,"starting projects, travel, celebration, wealth","violence, arguments, negativity",Nilapataka,#B0E0E6,attested_classical
+12,tithi_12,Dvādaśī,shukla,Vishnu,earth,rajas,mixed,"buying property or vehicles, agriculture, community work","marriage, sacred ceremonies",Vijaya,#8B4513,attested_classical
+13,tithi_13,Trayodaśī,shukla,Kamadeva,water,sattva,mixed,"competitions, legal matters, confronting challenges","marriage, travel, peaceful activities",Sarvamangala,#1E90FF,attested_classical
+14,tithi_14,Caturdaśī,shukla,Shiva,fire,tamas,inauspicious,"destructive acts, obstacle removal, tantra sadhana","new ventures, marriage, travel",Jvalamalini,#FF4500,attested_classical
+15,tithi_15,Paurṇimā,shukla,Chandra,ether,sattva,auspicious,"marriage, religious ceremonies, completion of projects","negative actions, quarrels",Chitra,#800080,attested_classical
+1,tithi_krishna_1,Pratipadā,krishna,Agni,fire,sattva,auspicious,"starting projects, travel, celebration, wealth","violence, arguments, negativity",Kameshvari,#FF4500,attested_classical
+2,tithi_krishna_2,Dvitīyā,krishna,Brahma,water,rajas,mixed,"buying property or vehicles, agriculture, community work","marriage, sacred ceremonies",Bhagamalini,#1E90FF,attested_classical
+3,tithi_krishna_3,Tṛtīyā,krishna,Gauri,earth,rajas,mixed,"competitions, legal matters, confronting challenges","marriage, travel, peaceful activities",Nityaklinna,#8B4513,attested_classical
+4,tithi_krishna_4,Caturthī,krishna,Ganesha,air,rajas,inauspicious,"destructive acts, obstacle removal, tantra sadhana","new ventures, marriage, travel",Bherunda,#B0E0E6,attested_classical
+5,tithi_krishna_5,Pañcamī,krishna,Nagas,fire,rajas,auspicious,"marriage, religious ceremonies, completion of projects","negative actions, quarrels",Vahnivasini,#FF4500,attested_classical
+6,tithi_krishna_6,Ṣaṣṭhī,krishna,Kartikeya,earth,sattva,auspicious,"starting projects, travel, celebration, wealth","violence, arguments, negativity",Mahavajreshvari,#8B4513,attested_classical
+7,tithi_krishna_7,Saptamī,krishna,Surya,air,sattva,mixed,"buying property or vehicles, agriculture, community work","marriage, sacred ceremonies",Shivaduti,#B0E0E6,attested_classical
+8,tithi_krishna_8,Aṣṭamī,krishna,Durga,fire,tamas,mixed,"competitions, legal matters, confronting challenges","marriage, travel, peaceful activities",Tvarita,#FF4500,attested_classical
+9,tithi_krishna_9,Navamī,krishna,Durga,water,rajas,inauspicious,"destructive acts, obstacle removal, tantra sadhana","new ventures, marriage, travel",Kulasundari,#1E90FF,attested_classical
+10,tithi_krishna_10,Daśamī,krishna,Dharma,ether,sattva,auspicious,"marriage, religious ceremonies, completion of projects","negative actions, quarrels",Nitya,#800080,attested_classical
+11,tithi_krishna_11,Ekādaśī,krishna,Vishnu,air,sattva,auspicious,"starting projects, travel, celebration, wealth","violence, arguments, negativity",Nilapataka,#B0E0E6,attested_classical
+12,tithi_krishna_12,Dvādaśī,krishna,Vishnu,earth,rajas,mixed,"buying property or vehicles, agriculture, community work","marriage, sacred ceremonies",Vijaya,#8B4513,attested_classical
+13,tithi_krishna_13,Trayodaśī,krishna,Kamadeva,water,sattva,mixed,"competitions, legal matters, confronting challenges","marriage, travel, peaceful activities",Sarvamangala,#1E90FF,attested_classical
+14,tithi_krishna_14,Caturdaśī,krishna,Shiva,fire,tamas,inauspicious,"destructive acts, obstacle removal, tantra sadhana","new ventures, marriage, travel",Jvalamalini,#FF4500,attested_classical
+15,tithi_krishna_15,Amāvāsyā,krishna,Pitris,ether,tamas,mixed,"ancestor rituals, spiritual reflection","new ventures, celebrations",Chitra,#4B0082,attested_classical

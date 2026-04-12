@@ -39,8 +39,8 @@ ratna:hessonite,graha,graha:rahu,ratna/graha_gems.csv,,,traditional,0.8,gem of R
 graha:rahu,substitute_ratna,ratna:zircon,ratna/graha_gems.csv,,,traditional,0.8,Zircon
 graha:rahu,metal,metal:silver,ratna/graha_gems.csv,,,traditional,0.8,Silver
 graha:rahu,consecration_mantra,mantra:om_bhram_bhrim_bhraum_sah_raha,ratna/graha_gems.csv,,,traditional,0.8,om bhram bhrim bhraum sah rahave namah
-graha:ketu,ratna,ratna:cat's_eye,ratna/graha_gems.csv,,,traditional,0.8,Cat's Eye
-ratna:cat's_eye,graha,graha:ketu,ratna/graha_gems.csv,,,traditional,0.8,gem of Ketu
+graha:ketu,ratna,ratna:cat_s_eye,ratna/graha_gems.csv,,,traditional,0.8,Cat's Eye
+ratna:cat_s_eye,graha,graha:ketu,ratna/graha_gems.csv,,,traditional,0.8,gem of Ketu
 graha:ketu,substitute_ratna,ratna:chrysoberyl,ratna/graha_gems.csv,,,traditional,0.8,Chrysoberyl
 graha:ketu,metal,metal:silver,ratna/graha_gems.csv,,,traditional,0.8,Silver
 graha:ketu,consecration_mantra,mantra:om_stram_strim_straum_sah_keta,ratna/graha_gems.csv,,,traditional,0.8,om stram strim straum sah ketave namah

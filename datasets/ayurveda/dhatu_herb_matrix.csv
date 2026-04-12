@@ -1,28 +1,28 @@
-dhatu_id,herb_id,herb_name,action_type,attestation,source
-D006,H001,Ashwagandha,tonify,OBSERVED:AYURVEDA,herb_exemplars.csv
-D007,H001,Ashwagandha,tonify,OBSERVED:AYURVEDA,herb_exemplars.csv
-D001,H009,Tulsi,tonify,OBSERVED:AYURVEDA,herb_exemplars.csv
-D002,H010,Neem (leaf),cleanse,OBSERVED:AYURVEDA,herb_exemplars.csv
-D001,H021,Amla,tonify,OBSERVED:AYURVEDA,herb_exemplars.csv
-D002,H021,Amla,tonify,OBSERVED:AYURVEDA,herb_exemplars.csv
-D004,H066,Guggulu,cleanse,OBSERVED:AYURVEDA,herb_exemplars.csv
-D005,H066,Guggulu,cleanse,OBSERVED:AYURVEDA,herb_exemplars.csv
-D001,,Ashwagandha,tonify,SYNTHESIS,nakshatra_plants
-D003,,Ashwagandha,build,SYNTHESIS,nakshatra_plants
-D006,,Jasmine,tonify,SYNTHESIS,nakshatra_plants
-D002,,Khadira,cleanse,SYNTHESIS,nakshatra_plants
-D006,,Agarwood,tonify,SYNTHESIS,nakshatra_plants
-D007,,Bamboo,tonify,SYNTHESIS,nakshatra_plants
-D006,,Peepal,tonify,SYNTHESIS,nakshatra_plants
-D003,,Banyan,build,SYNTHESIS,nakshatra_plants
-D006,,Rudraksha,tonify,SYNTHESIS,nakshatra_plants
-D002,,Soapnut,cleanse,SYNTHESIS,nakshatra_plants
-D004,,Bael,cleanse,SYNTHESIS,nakshatra_plants
-D002,,Arjuna,tonify,SYNTHESIS,nakshatra_plants
-D004,,Wood Apple,cleanse,SYNTHESIS,nakshatra_plants
-D003,,Sal,build,SYNTHESIS,nakshatra_plants
-D007,,Jackfruit,tonify,SYNTHESIS,nakshatra_plants
-D003,,Shami,build,SYNTHESIS,nakshatra_plants
-D002,,Kadamba,cleanse,SYNTHESIS,nakshatra_plants
-D002,,Neem,cleanse,SYNTHESIS,nakshatra_plants
-D007,,Mahua,tonify,SYNTHESIS,nakshatra_plants
+dhatu_id,herb_id,herb_name,action_type,attestation,source,attestation_status
+D006,H001,Ashwagandha,tonify,OBSERVED:AYURVEDA,herb_exemplars.csv,attested_secondary
+D007,H001,Ashwagandha,tonify,OBSERVED:AYURVEDA,herb_exemplars.csv,attested_secondary
+D001,H009,Tulsi,tonify,OBSERVED:AYURVEDA,herb_exemplars.csv,attested_secondary
+D002,H010,Neem (leaf),cleanse,OBSERVED:AYURVEDA,herb_exemplars.csv,attested_secondary
+D001,H021,Amla,tonify,OBSERVED:AYURVEDA,herb_exemplars.csv,attested_secondary
+D002,H021,Amla,tonify,OBSERVED:AYURVEDA,herb_exemplars.csv,attested_secondary
+D004,H066,Guggulu,cleanse,OBSERVED:AYURVEDA,herb_exemplars.csv,attested_secondary
+D005,H066,Guggulu,cleanse,OBSERVED:AYURVEDA,herb_exemplars.csv,attested_secondary
+D001,,Ashwagandha,tonify,SYNTHESIS,nakshatra_plants,attested_secondary
+D003,,Ashwagandha,build,SYNTHESIS,nakshatra_plants,attested_secondary
+D006,,Jasmine,tonify,SYNTHESIS,nakshatra_plants,attested_secondary
+D002,,Khadira,cleanse,SYNTHESIS,nakshatra_plants,attested_secondary
+D006,,Agarwood,tonify,SYNTHESIS,nakshatra_plants,attested_secondary
+D007,,Bamboo,tonify,SYNTHESIS,nakshatra_plants,attested_secondary
+D006,,Peepal,tonify,SYNTHESIS,nakshatra_plants,attested_secondary
+D003,,Banyan,build,SYNTHESIS,nakshatra_plants,attested_secondary
+D006,,Rudraksha,tonify,SYNTHESIS,nakshatra_plants,attested_secondary
+D002,,Soapnut,cleanse,SYNTHESIS,nakshatra_plants,attested_secondary
+D004,,Bael,cleanse,SYNTHESIS,nakshatra_plants,attested_secondary
+D002,,Arjuna,tonify,SYNTHESIS,nakshatra_plants,attested_secondary
+D004,,Wood Apple,cleanse,SYNTHESIS,nakshatra_plants,attested_secondary
+D003,,Sal,build,SYNTHESIS,nakshatra_plants,attested_secondary
+D007,,Jackfruit,tonify,SYNTHESIS,nakshatra_plants,attested_secondary
+D003,,Shami,build,SYNTHESIS,nakshatra_plants,attested_secondary
+D002,,Kadamba,cleanse,SYNTHESIS,nakshatra_plants,attested_secondary
+D002,,Neem,cleanse,SYNTHESIS,nakshatra_plants,attested_secondary
+D007,,Mahua,tonify,SYNTHESIS,nakshatra_plants,attested_secondary

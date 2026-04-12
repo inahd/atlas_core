@@ -1,10 +1,10 @@
-entity_id,orientation,direction,quality,notes
-surya,sura,E,radiant,Illumination · sovereignty · dharma
-chandra,sura,NW,reflective,Mind · nurture · flow
-mangala,asura,SE,fierce,Force · heat · transformation · can serve either
-budha,neutral,E,adaptive,Takes orientation from association · commerce · speech
-guru,sura,NE,expansive,Wisdom · law · teaching · always benevolent
-shukra,asura,W,alluring,Beauty · desire · material mastery · asura guru
-shani,neutral,S,karmic,Discipline · endurance · justice · neither inherently
-rahu,asura,SW,obscuring,Eclipse · illusion · obsession · hunger
-ketu,sura,S,liberating,Renunciation · moksha · dissolution of ego
+entity_id,orientation,direction,quality,notes,attestation_status
+surya,sura,E,radiant,Illumination · sovereignty · dharma,inferred_coherent
+chandra,sura,NW,reflective,Mind · nurture · flow,inferred_coherent
+mangala,asura,SE,fierce,Force · heat · transformation · can serve either,inferred_coherent
+budha,neutral,E,adaptive,Takes orientation from association · commerce · speech,inferred_coherent
+guru,sura,NE,expansive,Wisdom · law · teaching · always benevolent,inferred_coherent
+shukra,asura,W,alluring,Beauty · desire · material mastery · asura guru,inferred_coherent
+shani,neutral,S,karmic,Discipline · endurance · justice · neither inherently,inferred_coherent
+rahu,asura,SW,obscuring,Eclipse · illusion · obsession · hunger,inferred_coherent
+ketu,sura,S,liberating,Renunciation · moksha · dissolution of ego,inferred_coherent

@@ -1,85 +1,85 @@
 from_id,relation,to_id,attestation,notes
-nakshatra_ashwini,s0_root,tattva_bhakti,SYNTHESIS,Ashwini Kumaras — healing as service; quick restoration of the jiva's constitution
-nakshatra_bharani,s0_root,tattva_kala,SYNTHESIS,Yama — lord of death and time; the jiva's passage between bodies
-nakshatra_krittika,s0_root,tattva_shakti_parinam,SYNTHESIS,Agni — fire as transforming energy of the Lord
-nakshatra_rohini,s0_root,tattva_lila,TRADITIONAL,"Brahma/Moon — creativity; Krsna's birth nakshatra; seat of rasa-lila"
-nakshatra_mrigashira,s0_root,tattva_prayojana,SYNTHESIS,Soma — search for beauty; the jiva seeking prema
-nakshatra_ardra,s0_root,tattva_maya,SYNTHESIS,Rudra — storm and dissolution; maya's destructive aspect
-nakshatra_punarvasu,s0_root,tattva_abhidheya,SYNTHESIS,Aditi — return and renewal; the process of coming home
-nakshatra_pushya,s0_root,tattva_guru,TRADITIONAL,Brhaspati — the guru principle; nourishment through spiritual teaching
-nakshatra_ashlesha,s0_root,tattva_maya,SYNTHESIS,Sarpa — serpent; the binding of the jiva by material energy
-nakshatra_magha,s0_root,tattva_sambandha,SYNTHESIS,Pitrs — ancestors; the jiva's chain of sambandha through generations
-nakshatra_purva_phalguni,s0_root,rasa_madhurya,SYNTHESIS,Bhaga — enjoyment; creative union; the root of conjugal rasa
-nakshatra_uttara_phalguni,s0_root,tattva_sambandha,SYNTHESIS,Aryaman — contracts and vows; the formalization of relationship
-nakshatra_hasta,s0_root,tattva_abhidheya,SYNTHESIS,Savitr — skilled hands; practical devotional service
-nakshatra_chitra,s0_root,tattva_lila,SYNTHESIS,Tvashtr — divine artisan; lila manifested as form and beauty
-nakshatra_swati,s0_root,tattva_jiva,SYNTHESIS,Vayu — the independent moving jiva; marginal energy in motion
-nakshatra_vishakha,s0_root,tattva_prayojana,SYNTHESIS,Indra-Agni — two-fold fire; determination toward the goal
-nakshatra_anuradha,s0_root,rasa_sakhya,TRADITIONAL,Mitra — friendship; devotion expressed through loyalty
-nakshatra_jyeshtha,s0_root,tattva_shakti_parinam,SYNTHESIS,Indra — lordship over material energy; senior among devas
-nakshatra_mula,s0_root,tattva_acintya,SYNTHESIS,Nirriti — uprooting; dissolution that reveals the inconceivable root
-nakshatra_purva_ashadha,s0_root,tattva_bhakti,SYNTHESIS,Apas — invincible waters; purification through devotional service
-nakshatra_uttara_ashadha,s0_root,tattva_svayam_bhagavan,SYNTHESIS,Vishvedevas — universal victory; the Lord as source of all victory
-nakshatra_shravana,s0_root,tattva_nama,TRADITIONAL,Vishnu — listening; the ear as gateway to the Holy Name
-nakshatra_dhanishta,s0_root,rasa_dasya,SYNTHESIS,Vasus — wealth in service; abundance through seva
-nakshatra_shatabhisha,s0_root,tattva_maya,SYNTHESIS,Varuna — hundred healers; piercing the veil of maya through knowledge
-nakshatra_revati,s0_root,tattva_dhama,SYNTHESIS,Pushan — the nourisher who leads to the divine abode
-graha_surya,s0_root,tattva_svayam_bhagavan,TRADITIONAL,"Surya — eye of Vishnu; the Lord's radiance entering material world"
-graha_chandra,s0_root,rasa_madhurya,TRADITIONAL,Chandra — mind; receptacle of rasa; reflects the Lord's beauty
-graha_mangala,s0_root,rasa_vira,TRADITIONAL,Mars — valor; heroic rasa in service of dharma
-graha_budha,s0_root,tattva_nama,SYNTHESIS,Mercury — speech; the faculty that carries the Holy Name
-graha_guru,s0_root,tattva_guru,TRADITIONAL,Jupiter — the guru principle incarnate in the planetary sphere
-graha_shukra,s0_root,rasa_madhurya,TRADITIONAL,Venus — beauty and pleasure; material reflection of madhurya-rasa
-graha_shani,s0_root,tattva_kala,TRADITIONAL,Saturn — time's weight; kala-tattva as limitation and teacher
-graha_rahu,s0_root,tattva_maya,TRADITIONAL,Rahu — shadow; the obscuring potency of maya
-graha_ketu,s0_root,tattva_jiva,SYNTHESIS,Ketu — moksha; the jiva's liberation from material entanglement
-deity_brahma,s0_root,parampara_brahma,TRADITIONAL,Brahma as adi-guru in the Brahma-Madhva-Gaudiya sampradaya
-deity_vishnu,s0_root,tattva_svayam_bhagavan,TRADITIONAL,Vishnu as expansion of Svayam Bhagavan
-deity_shiva,s0_root,tattva_shakti_parinam,TRADITIONAL,Shiva as greatest Vaishnava; transformer of energy
-deity_indra,s0_root,tattva_maya,SYNTHESIS,Indra — ruler of devas within material energy
-deity_agni,s0_root,tattva_abhidheya,TRADITIONAL,Agni — the carrier of offerings; yajna as devotional process
-deity_sarasvati,s0_root,tattva_nama,TRADITIONAL,Sarasvati — goddess of speech and learning; vehicle of the Name
-deity_lakshmi,s0_root,rasa_dasya,TRADITIONAL,Lakshmi — eternal consort in aishvarya-madhurya; reverential service
-deity_durga,s0_root,tattva_maya,TRADITIONAL,Durga — personification of maya-shakti; the Lord's external energy
-raga_yaman,s0_root,rasa_madhurya,SYNTHESIS,Evening longing; devotional yearning; madhurya in separation
-raga_bhairavi,s0_root,rasa_karuna,SYNTHESIS,Morning compassion; karunarasa; surrender and letting go
-raga_bhairava,s0_root,rasa_shanta,SYNTHESIS,Dawn stillness; shanta-rasa; Shiva's hour before creation
-raga_todi,s0_root,rasa_karuna,SYNTHESIS,Deep pathos; viraha; the pain of separation that purifies
-raga_darbari,s0_root,rasa_vira,SYNTHESIS,Midnight gravity; dignified heroism; regal devotion
-raga_bageshri,s0_root,rasa_madhurya,SYNTHESIS,Tender night; intimate conjugal longing
-raga_marwa,s0_root,rasa_adbhuta,SYNTHESIS,Sunset edge; wonder at the boundary between day and night
-raga_kafi,s0_root,rasa_hasya,SYNTHESIS,Playful night; light humor and devotional play
-raga_khamaj,s0_root,rasa_madhurya,SYNTHESIS,Light evening; gentle romance; accessible madhurya
-raga_multani,s0_root,rasa_karuna,SYNTHESIS,Afternoon stillness; deep compassion in solitude
-raga_bihag,s0_root,rasa_madhurya,SYNTHESIS,Late night luminosity; romantic joy
-raga_shree,s0_root,rasa_vira,SYNTHESIS,Afternoon brilliance; heroic splendor
-art_singing,s0_root,tattva_nama,TRADITIONAL,Vocal music — primary vehicle for the Holy Name; sankirtana
-art_instrument_playing,s0_root,tattva_nama,SYNTHESIS,Instrumental music serves and amplifies the Name
-art_dancing,s0_root,tattva_lila,TRADITIONAL,Dance — bodily expression of divine lila; Nataraja principle
-art_drama,s0_root,tattva_lila,SYNTHESIS,Drama — reenactment of the Lord's pastimes
-art_painting,s0_root,tattva_lila,SYNTHESIS,Visual art — depicting the forms and pastimes of the Lord
-art_flower_arrangement,s0_root,tattva_bhakti,SYNTHESIS,Flower offering — arcana; one of nine processes of bhakti
-art_garland_making,s0_root,tattva_bhakti,TRADITIONAL,Garland making for the deity — direct devotional service
-art_cooking,s0_root,tattva_bhakti,TRADITIONAL,Cooking for the Lord — bhoga preparation; prasadam
-art_architecture,s0_root,tattva_dhama,SYNTHESIS,Architecture — creating a dwelling place for the Lord; temple
-art_temple_design,s0_root,tattva_dhama,TRADITIONAL,Temple design — manifesting the dhama in material space
-art_poetry,s0_root,tattva_nama,SYNTHESIS,Poetry — glorification through language; kavya as seva
-art_storytelling,s0_root,tattva_lila,TRADITIONAL,Storytelling — lila-smaranam; hearing and narrating pastimes
-art_perfume_mixing,s0_root,tattva_bhakti,SYNTHESIS,Perfume — fragrant offerings in arcana
-art_astrology,s0_root,tattva_kala,TRADITIONAL,Astrology — reading the Lord's time-energy; jyotish as kala-tattva
-art_yoga,s0_root,tattva_abhidheya,TRADITIONAL,Yoga — the process; connecting the jiva to the Lord
-art_meditation,s0_root,tattva_abhidheya,TRADITIONAL,Meditation — dhyana as component of abhidheya
-art_mantra_recitation,s0_root,tattva_nama,TRADITIONAL,Mantra — the Name in structured form; japa
-art_ritual_fire,s0_root,tattva_abhidheya,TRADITIONAL,Yajna — fire sacrifice as devotional process
-art_medicine,s0_root,tattva_jiva,SYNTHESIS,Medicine — care for the jiva's bodily vehicle
-art_herbalism,s0_root,tattva_jiva,SYNTHESIS,Herbalism — nature's pharmacy serving the jiva
-art_mathematics,s0_root,tattva_acintya,SYNTHESIS,Mathematics — reflecting the Lord's inconceivable precision
-art_geometry,s0_root,tattva_dhama,SYNTHESIS,Geometry — sacred measurement; yantra as dhama-form
-art_logic,s0_root,tattva_acintya,SYNTHESIS,Logic — the intellect reaching toward the inconceivable
-art_ethics,s0_root,tattva_sambandha,SYNTHESIS,Ethics — right relationship; dharma as expression of sambandha
-art_agriculture,s0_root,tattva_shakti_parinam,SYNTHESIS,Agriculture — working with the Lord's transformed energy
-plant_tulasi,s0_root,tattva_bhakti,TRADITIONAL,Tulasi — most dear to Vishnu; essential in all worship; embodiment of bhakti
-plant_amalaki,s0_root,tattva_bhakti,SYNTHESIS,Amalaki — sacred tree associated with Ekadashi vratas
-plant_ashvagandha,s0_root,tattva_jiva,SYNTHESIS,Ashvagandha — strengthening the jiva's bodily vehicle
-plant_neem,s0_root,tattva_shakti_parinam,SYNTHESIS,Neem — purifying energy transformation
-plant_sandalwood,s0_root,tattva_dhama,SYNTHESIS,Chandana — cooling paste offered to the deity; fragrance of the dhama
+nakshatra:ashwini,s0_root,tattva:bhakti,SYNTHESIS,Ashwini Kumaras — healing as service; quick restoration of the jiva's constitution
+nakshatra:bharani,s0_root,tattva:kala,SYNTHESIS,Yama — lord of death and time; the jiva's passage between bodies
+nakshatra:krittika,s0_root,tattva:shakti_parinam,SYNTHESIS,Agni — fire as transforming energy of the Lord
+nakshatra:rohini,s0_root,tattva:lila,TRADITIONAL,Brahma/Moon — creativity; Krsna's birth nakshatra; seat of rasa-lila
+nakshatra:mrigashira,s0_root,tattva:prayojana,SYNTHESIS,Soma — search for beauty; the jiva seeking prema
+nakshatra:ardra,s0_root,tattva:maya,SYNTHESIS,Rudra — storm and dissolution; maya's destructive aspect
+nakshatra:punarvasu,s0_root,tattva:abhidheya,SYNTHESIS,Aditi — return and renewal; the process of coming home
+nakshatra:pushya,s0_root,tattva:guru,TRADITIONAL,Brhaspati — the guru principle; nourishment through spiritual teaching
+nakshatra:ashlesha,s0_root,tattva:maya,SYNTHESIS,Sarpa — serpent; the binding of the jiva by material energy
+nakshatra:magha,s0_root,tattva:sambandha,SYNTHESIS,Pitrs — ancestors; the jiva's chain of sambandha through generations
+nakshatra:purva_phalguni,s0_root,rasa:madhurya,SYNTHESIS,Bhaga — enjoyment; creative union; the root of conjugal rasa
+nakshatra:uttara_phalguni,s0_root,tattva:sambandha,SYNTHESIS,Aryaman — contracts and vows; the formalization of relationship
+nakshatra:hasta,s0_root,tattva:abhidheya,SYNTHESIS,Savitr — skilled hands; practical devotional service
+nakshatra:chitra,s0_root,tattva:lila,SYNTHESIS,Tvashtr — divine artisan; lila manifested as form and beauty
+nakshatra:swati,s0_root,tattva:jiva,SYNTHESIS,Vayu — the independent moving jiva; marginal energy in motion
+nakshatra:vishakha,s0_root,tattva:prayojana,SYNTHESIS,Indra-Agni — two-fold fire; determination toward the goal
+nakshatra:anuradha,s0_root,rasa:sakhya,TRADITIONAL,Mitra — friendship; devotion expressed through loyalty
+nakshatra:jyeshtha,s0_root,tattva:shakti_parinam,SYNTHESIS,Indra — lordship over material energy; senior among devas
+nakshatra:mula,s0_root,tattva:acintya,SYNTHESIS,Nirriti — uprooting; dissolution that reveals the inconceivable root
+nakshatra:purva_ashadha,s0_root,tattva:bhakti,SYNTHESIS,Apas — invincible waters; purification through devotional service
+nakshatra:uttara_ashadha,s0_root,tattva:svayam_bhagavan,SYNTHESIS,Vishvedevas — universal victory; the Lord as source of all victory
+nakshatra:shravana,s0_root,tattva:nama,TRADITIONAL,Vishnu — listening; the ear as gateway to the Holy Name
+nakshatra:dhanishta,s0_root,rasa:dasya,SYNTHESIS,Vasus — wealth in service; abundance through seva
+nakshatra:shatabhisha,s0_root,tattva:maya,SYNTHESIS,Varuna — hundred healers; piercing the veil of maya through knowledge
+nakshatra:revati,s0_root,tattva:dhama,SYNTHESIS,Pushan — the nourisher who leads to the divine abode
+graha:surya,s0_root,tattva:svayam_bhagavan,TRADITIONAL,Surya — eye of Vishnu; the Lord's radiance entering material world
+graha:chandra,s0_root,rasa:madhurya,TRADITIONAL,Chandra — mind; receptacle of rasa; reflects the Lord's beauty
+graha:mangala,s0_root,rasa:vira,TRADITIONAL,Mars — valor; heroic rasa in service of dharma
+graha:budha,s0_root,tattva:nama,SYNTHESIS,Mercury — speech; the faculty that carries the Holy Name
+graha:guru,s0_root,tattva:guru,TRADITIONAL,Jupiter — the guru principle incarnate in the planetary sphere
+graha:shukra,s0_root,rasa:madhurya,TRADITIONAL,Venus — beauty and pleasure; material reflection of madhurya-rasa
+graha:shani,s0_root,tattva:kala,TRADITIONAL,Saturn — time's weight; kala-tattva as limitation and teacher
+graha:rahu,s0_root,tattva:maya,TRADITIONAL,Rahu — shadow; the obscuring potency of maya
+graha:ketu,s0_root,tattva:jiva,SYNTHESIS,Ketu — moksha; the jiva's liberation from material entanglement
+deity:brahma,s0_root,parampara:brahma,TRADITIONAL,Brahma as adi-guru in the Brahma-Madhva-Gaudiya sampradaya
+deity:vishnu,s0_root,tattva:svayam_bhagavan,TRADITIONAL,Vishnu as expansion of Svayam Bhagavan
+deity:shiva,s0_root,tattva:shakti_parinam,TRADITIONAL,Shiva as greatest Vaishnava; transformer of energy
+deity:indra,s0_root,tattva:maya,SYNTHESIS,Indra — ruler of devas within material energy
+deity:agni,s0_root,tattva:abhidheya,TRADITIONAL,Agni — the carrier of offerings; yajna as devotional process
+deity:sarasvati,s0_root,tattva:nama,TRADITIONAL,Sarasvati — goddess of speech and learning; vehicle of the Name
+deity:lakshmi,s0_root,rasa:dasya,TRADITIONAL,Lakshmi — eternal consort in aishvarya-madhurya; reverential service
+deity:durga,s0_root,tattva:maya,TRADITIONAL,Durga — personification of maya-shakti; the Lord's external energy
+raga:yaman,s0_root,rasa:madhurya,SYNTHESIS,Evening longing; devotional yearning; madhurya in separation
+raga:bhairavi,s0_root,rasa:karuna,SYNTHESIS,Morning compassion; karunarasa; surrender and letting go
+raga:bhairava,s0_root,rasa:shanta,SYNTHESIS,Dawn stillness; shanta-rasa; Shiva's hour before creation
+raga:todi,s0_root,rasa:karuna,SYNTHESIS,Deep pathos; viraha; the pain of separation that purifies
+raga:darbari,s0_root,rasa:vira,SYNTHESIS,Midnight gravity; dignified heroism; regal devotion
+raga:bageshri,s0_root,rasa:madhurya,SYNTHESIS,Tender night; intimate conjugal longing
+raga:marwa,s0_root,rasa:adbhuta,SYNTHESIS,Sunset edge; wonder at the boundary between day and night
+raga:kafi,s0_root,rasa:hasya,SYNTHESIS,Playful night; light humor and devotional play
+raga:khamaj,s0_root,rasa:madhurya,SYNTHESIS,Light evening; gentle romance; accessible madhurya
+raga:multani,s0_root,rasa:karuna,SYNTHESIS,Afternoon stillness; deep compassion in solitude
+raga:bihag,s0_root,rasa:madhurya,SYNTHESIS,Late night luminosity; romantic joy
+raga:shree,s0_root,rasa:vira,SYNTHESIS,Afternoon brilliance; heroic splendor
+art:singing,s0_root,tattva:nama,TRADITIONAL,Vocal music — primary vehicle for the Holy Name; sankirtana
+art:instrument_playing,s0_root,tattva:nama,SYNTHESIS,Instrumental music serves and amplifies the Name
+art:dancing,s0_root,tattva:lila,TRADITIONAL,Dance — bodily expression of divine lila; Nataraja principle
+art:drama,s0_root,tattva:lila,SYNTHESIS,Drama — reenactment of the Lord's pastimes
+art:painting,s0_root,tattva:lila,SYNTHESIS,Visual art — depicting the forms and pastimes of the Lord
+art:flower_arrangement,s0_root,tattva:bhakti,SYNTHESIS,Flower offering — arcana; one of nine processes of bhakti
+art:garland_making,s0_root,tattva:bhakti,TRADITIONAL,Garland making for the deity — direct devotional service
+art:cooking,s0_root,tattva:bhakti,TRADITIONAL,Cooking for the Lord — bhoga preparation; prasadam
+art:architecture,s0_root,tattva:dhama,SYNTHESIS,Architecture — creating a dwelling place for the Lord; temple
+art:temple_design,s0_root,tattva:dhama,TRADITIONAL,Temple design — manifesting the dhama in material space
+art:poetry,s0_root,tattva:nama,SYNTHESIS,Poetry — glorification through language; kavya as seva
+art:storytelling,s0_root,tattva:lila,TRADITIONAL,Storytelling — lila-smaranam; hearing and narrating pastimes
+art:perfume_mixing,s0_root,tattva:bhakti,SYNTHESIS,Perfume — fragrant offerings in arcana
+art:astrology,s0_root,tattva:kala,TRADITIONAL,Astrology — reading the Lord's time-energy; jyotish as kala-tattva
+art:yoga,s0_root,tattva:abhidheya,TRADITIONAL,Yoga — the process; connecting the jiva to the Lord
+art:meditation,s0_root,tattva:abhidheya,TRADITIONAL,Meditation — dhyana as component of abhidheya
+art:mantra_recitation,s0_root,tattva:nama,TRADITIONAL,Mantra — the Name in structured form; japa
+art:ritual_fire,s0_root,tattva:abhidheya,TRADITIONAL,Yajna — fire sacrifice as devotional process
+art:medicine,s0_root,tattva:jiva,SYNTHESIS,Medicine — care for the jiva's bodily vehicle
+art:herbalism,s0_root,tattva:jiva,SYNTHESIS,Herbalism — nature's pharmacy serving the jiva
+art:mathematics,s0_root,tattva:acintya,SYNTHESIS,Mathematics — reflecting the Lord's inconceivable precision
+art:geometry,s0_root,tattva:dhama,SYNTHESIS,Geometry — sacred measurement; yantra as dhama-form
+art:logic,s0_root,tattva:acintya,SYNTHESIS,Logic — the intellect reaching toward the inconceivable
+art:ethics,s0_root,tattva:sambandha,SYNTHESIS,Ethics — right relationship; dharma as expression of sambandha
+art:agriculture,s0_root,tattva:shakti_parinam,SYNTHESIS,Agriculture — working with the Lord's transformed energy
+plant:tulasi,s0_root,tattva:bhakti,TRADITIONAL,Tulasi — most dear to Vishnu; essential in all worship; embodiment of bhakti
+plant:amalaki,s0_root,tattva:bhakti,SYNTHESIS,Amalaki — sacred tree associated with Ekadashi vratas
+plant:ashvagandha,s0_root,tattva:jiva,SYNTHESIS,Ashvagandha — strengthening the jiva's bodily vehicle
+plant:neem,s0_root,tattva:shakti_parinam,SYNTHESIS,Neem — purifying energy transformation
+plant:sandalwood,s0_root,tattva:dhama,SYNTHESIS,Chandana — cooling paste offered to the deity; fragrance of the dhama

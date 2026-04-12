@@ -1,1 +1,55 @@
 from_id,relation,to_id,source_title,source_locator,excerpt,tradition,confidence,notes
+raga:bhairava,raga_prescribed_for,ashtakala:nisanta,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga for Nisanta period (3:36am–6:00am)
+ashtakala:nisanta,ashtakala_raga,raga:bhairava,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga for Nisanta period
+raga:lalit,raga_prescribed_for,ashtakala:nisanta,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga_alt for Nisanta period (3:36am–6:00am)
+ashtakala:nisanta,ashtakala_raga,raga:lalit,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga_alt for Nisanta period
+raga:todi,raga_prescribed_for,ashtakala:pratah,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga for Pratah period (6:00am–8:24am)
+ashtakala:pratah,ashtakala_raga,raga:todi,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga for Pratah period
+raga:gurjari_todi,raga_prescribed_for,ashtakala:pratah,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga_alt for Pratah period (6:00am–8:24am)
+ashtakala:pratah,ashtakala_raga,raga:gurjari_todi,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga_alt for Pratah period
+raga:bilaval,raga_prescribed_for,ashtakala:purvahna,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga for Purvahna period (8:24am–10:48am)
+ashtakala:purvahna,ashtakala_raga,raga:bilaval,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga for Purvahna period
+raga:deshkar,raga_prescribed_for,ashtakala:purvahna,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga_alt for Purvahna period (8:24am–10:48am)
+ashtakala:purvahna,ashtakala_raga,raga:deshkar,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga_alt for Purvahna period
+raga:bhimpalasi,raga_prescribed_for,ashtakala:madhyahna,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga for Madhyahna period (10:48am–3:36pm)
+ashtakala:madhyahna,ashtakala_raga,raga:bhimpalasi,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga for Madhyahna period
+raga:multani,raga_prescribed_for,ashtakala:madhyahna,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga_alt for Madhyahna period (10:48am–3:36pm)
+ashtakala:madhyahna,ashtakala_raga,raga:multani,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga_alt for Madhyahna period
+raga:puriya_dhanashri,raga_prescribed_for,ashtakala:aparahna,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga for Aparahna period (3:36pm–6:00pm)
+ashtakala:aparahna,ashtakala_raga,raga:puriya_dhanashri,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga for Aparahna period
+raga:marwa,raga_prescribed_for,ashtakala:aparahna,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga_alt for Aparahna period (3:36pm–6:00pm)
+ashtakala:aparahna,ashtakala_raga,raga:marwa,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga_alt for Aparahna period
+raga:yaman,raga_prescribed_for,ashtakala:sayahna,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga for Sayahna period (6:00pm–8:24pm)
+ashtakala:sayahna,ashtakala_raga,raga:yaman,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga for Sayahna period
+raga:kedar,raga_prescribed_for,ashtakala:sayahna,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga_alt for Sayahna period (6:00pm–8:24pm)
+ashtakala:sayahna,ashtakala_raga,raga:kedar,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga_alt for Sayahna period
+raga:bageshri,raga_prescribed_for,ashtakala:pradosha,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga for Pradosha period (8:24pm–10:48pm)
+ashtakala:pradosha,ashtakala_raga,raga:bageshri,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga for Pradosha period
+raga:bhairavi,raga_prescribed_for,ashtakala:pradosha,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga_alt for Pradosha period (8:24pm–10:48pm)
+ashtakala:pradosha,ashtakala_raga,raga:bhairavi,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga_alt for Pradosha period
+raga:darbari,raga_prescribed_for,ashtakala:ratri,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga for Ratri period (10:48pm–3:36am)
+ashtakala:ratri,ashtakala_raga,raga:darbari,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga for Ratri period
+raga:jaunpuri,raga_prescribed_for,ashtakala:ratri,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga_alt for Ratri period (10:48pm–3:36am)
+ashtakala:ratri,ashtakala_raga,raga:jaunpuri,Ashtakala CSV,cosmology/ashtakala.csv,,gaudiya_vaishnava,0.95,raga_alt for Ratri period
+raga:bhairava,raga_prescribed_for,program:mangala_arati,Daily Program CSV,cosmology/daily_program.csv,,gaudiya_vaishnava,0.90,raga for Mangala_Arati (4:30am)
+raga:lalit,raga_prescribed_for,program:tulasi_puja,Daily Program CSV,cosmology/daily_program.csv,,gaudiya_vaishnava,0.90,raga for Tulasi_Puja (5:00am)
+raga:todi,raga_prescribed_for,program:guru_puja,Daily Program CSV,cosmology/daily_program.csv,,gaudiya_vaishnava,0.90,raga for Guru_Puja (7:15am)
+raga:bilaval,raga_prescribed_for,program:bhagavata_class,Daily Program CSV,cosmology/daily_program.csv,,gaudiya_vaishnava,0.90,raga for Bhagavata_Class (7:30am)
+raga:bhimpalasi,raga_prescribed_for,program:raja_bhoga_arati,Daily Program CSV,cosmology/daily_program.csv,,gaudiya_vaishnava,0.90,raga for Raja_Bhoga_Arati (12:00pm)
+raga:puriya_dhanashri,raga_prescribed_for,program:dhupa_arati,Daily Program CSV,cosmology/daily_program.csv,,gaudiya_vaishnava,0.90,raga for Dhupa_Arati (4:15pm)
+raga:yaman,raga_prescribed_for,program:sandhya_arati,Daily Program CSV,cosmology/daily_program.csv,,gaudiya_vaishnava,0.90,raga for Sandhya_Arati (6:30pm)
+raga:bageshri,raga_prescribed_for,program:sayana_arati,Daily Program CSV,cosmology/daily_program.csv,,gaudiya_vaishnava,0.90,raga for Sayana_Arati (8:30pm)
+raga:bhairavi,raga_prescribed_for,festival:gaura_purnima,Gaudiya Festivals CSV,cosmology/gaudiya_festivals.csv,,gaudiya_vaishnava,0.90,raga for Gaura_Purnima (15 Phalguna)
+raga:sarang,raga_prescribed_for,festival:rama_navami,Gaudiya Festivals CSV,cosmology/gaudiya_festivals.csv,,gaudiya_vaishnava,0.90,raga for Rama_Navami (9 Chaitra)
+raga:darbari,raga_prescribed_for,festival:nrsimha_chaturdashi,Gaudiya Festivals CSV,cosmology/gaudiya_festivals.csv,,gaudiya_vaishnava,0.90,raga for Nrsimha_Chaturdashi (14 Vaishakha)
+raga:malhar,raga_prescribed_for,festival:snana_yatra,Gaudiya Festivals CSV,cosmology/gaudiya_festivals.csv,,gaudiya_vaishnava,0.90,raga for Snana_Yatra (15 Jyeshtha)
+raga:malhara,raga_prescribed_for,festival:ratha_yatra,Gaudiya Festivals CSV,cosmology/gaudiya_festivals.csv,,gaudiya_vaishnava,0.90,raga for Ratha_Yatra (2 Ashadha)
+raga:malhar,raga_prescribed_for,festival:jhulan_yatra,Gaudiya Festivals CSV,cosmology/gaudiya_festivals.csv,,gaudiya_vaishnava,0.90,raga for Jhulan_Yatra (11 Shravana)
+raga:bhairava,raga_prescribed_for,festival:balarama_jayanti,Gaudiya Festivals CSV,cosmology/gaudiya_festivals.csv,,gaudiya_vaishnava,0.90,raga for Balarama_Jayanti (15 Shravana)
+raga:darbari_kedar,raga_prescribed_for,festival:janmashtami,Gaudiya Festivals CSV,cosmology/gaudiya_festivals.csv,,gaudiya_vaishnava,0.90,raga for Janmashtami (8 Bhadra)
+raga:bhairavi,raga_prescribed_for,festival:radhashtami,Gaudiya Festivals CSV,cosmology/gaudiya_festivals.csv,,gaudiya_vaishnava,0.90,raga for Radhashtami (8 Bhadra)
+raga:bilaval,raga_prescribed_for,festival:govardhan_puja,Gaudiya Festivals CSV,cosmology/gaudiya_festivals.csv,,gaudiya_vaishnava,0.90,raga for Govardhan_Puja (1 Kartika)
+raga:desh,raga_prescribed_for,festival:gopastami,Gaudiya Festivals CSV,cosmology/gaudiya_festivals.csv,,gaudiya_vaishnava,0.90,raga for Gopastami (8 Kartika)
+raga:bhimpalasi,raga_prescribed_for,festival:gita_jayanti,Gaudiya Festivals CSV,cosmology/gaudiya_festivals.csv,,gaudiya_vaishnava,0.90,raga for Gita_Jayanti (11 Margashirsha)
+raga:yaman,raga_prescribed_for,festival:vaikuntha_ekadashi,Gaudiya Festivals CSV,cosmology/gaudiya_festivals.csv,,gaudiya_vaishnava,0.90,raga for Vaikuntha_Ekadashi (11 Margashirsha)
+raga:bhairavi,raga_prescribed_for,festival:nityananda_trayodashi,Gaudiya Festivals CSV,cosmology/gaudiya_festivals.csv,,gaudiya_vaishnava,0.90,raga for Nityananda_Trayodashi (13 Magha)

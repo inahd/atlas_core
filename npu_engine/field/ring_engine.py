@@ -19,7 +19,11 @@ _HERE = os.path.dirname(os.path.abspath(__file__))
 _ROOT = os.path.abspath(os.path.join(_HERE, "..", ".."))
 
 _PATHS = {
-    "nakshatra": os.path.join(_ROOT, "datasets", "astro", "nakshatra_master.csv"),
+    "nakshatra": (
+        os.path.join(_ROOT, "datasets", "astro", "nakshatra_canonical.csv")
+        if os.path.exists(os.path.join(_ROOT, "datasets", "astro", "nakshatra_canonical.csv"))
+        else os.path.join(_ROOT, "datasets", "astro", "nakshatra_master.csv")
+    ),
     "graha": os.path.join(_ROOT, "datasets", "cosmology", "graha_master.csv"),
     "ashtakala": os.path.join(_ROOT, "datasets", "cosmology", "ashtakala.csv"),
     "nitya_devi": os.path.join(_ROOT, "datasets", "cosmology", "nitya_devi_master.csv"),

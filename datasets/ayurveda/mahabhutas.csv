@@ -1,6 +1,6 @@
-element_id,name,qualities,sense,organ
-1,ether,space expansion,hearing,ear
-2,air,movement dryness,touch,skin
-3,fire,heat transformation,sight,eyes
-4,water,fluidity cohesion,taste,tongue
-5,earth,stability solidity,smell,nose
+element_id,name,qualities,sense,organ,attestation_status
+1,ether,space expansion,hearing,ear,attested_secondary
+2,air,movement dryness,touch,skin,attested_secondary
+3,fire,heat transformation,sight,eyes,attested_secondary
+4,water,fluidity cohesion,taste,tongue,attested_secondary
+5,earth,stability solidity,smell,nose,attested_secondary

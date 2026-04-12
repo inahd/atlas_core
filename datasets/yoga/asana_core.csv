@@ -1,23 +1,23 @@
-asana,element,effect,type,graha_affinity,dosha_balance,body_region
-Padmasana,ether,kundalini,seated,Jupiter,vata,pelvis
-Simhasana,fire,energy,seated,Mars,pitta,throat
-Warrior I,fire,strength,standing,Mars,pitta,legs
-Warrior II,fire,power,standing,Sun,pitta,legs
-Child Pose,water,calm,forward_fold,Moon,kapha,spine
-Mountain,earth,grounding,standing,Saturn,vata,feet
-Dancer,air,grace,balance,Venus,vata,hips
-Shoulder Stand,ether,inversion,inversion,Moon,kapha,neck
-Lotus,ether,meditation,seated,Jupiter,vata,pelvis
-Twist,air,cleansing,seated,Mercury,vata,spine
-Plank,fire,strength,prone,Mars,kapha,core
-Cat-Cow,water,flexibility,kneeling,Moon,vata,spine
-Chest Opener,air,expansion,standing,Sun,kapha,chest
-Fold,water,release,forward_fold,Moon,pitta,hamstrings
-Hip Openers,air,release,seated,Venus,vata,hips
-Heart,ether,opening,backbend,Jupiter,kapha,chest
-Grounding,earth,stability,standing,Saturn,vata,feet
-Root,earth,foundation,standing,Saturn,vata,legs
-Holds,earth,endurance,standing,Saturn,kapha,full_body
-Balance,air,focus,standing,Mercury,vata,core
-Flow,water,movement,sequence,Venus,pitta,full_body
-Standing,earth,presence,standing,Mercury,vata,legs
+asana,element,effect,type,graha_affinity,dosha_balance,body_region,attestation_status
+Padmasana,ether,kundalini,seated,Jupiter,vata,pelvis,attested_secondary
+Simhasana,fire,energy,seated,Mars,pitta,throat,attested_secondary
+Warrior I,fire,strength,standing,Mars,pitta,legs,attested_secondary
+Warrior II,fire,power,standing,Sun,pitta,legs,attested_secondary
+Child Pose,water,calm,forward_fold,Moon,kapha,spine,attested_secondary
+Mountain,earth,grounding,standing,Saturn,vata,feet,attested_secondary
+Dancer,air,grace,balance,Venus,vata,hips,attested_secondary
+Shoulder Stand,ether,inversion,inversion,Moon,kapha,neck,attested_secondary
+Lotus,ether,meditation,seated,Jupiter,vata,pelvis,attested_secondary
+Twist,air,cleansing,seated,Mercury,vata,spine,attested_secondary
+Plank,fire,strength,prone,Mars,kapha,core,attested_secondary
+Cat-Cow,water,flexibility,kneeling,Moon,vata,spine,attested_secondary
+Chest Opener,air,expansion,standing,Sun,kapha,chest,attested_secondary
+Fold,water,release,forward_fold,Moon,pitta,hamstrings,attested_secondary
+Hip Openers,air,release,seated,Venus,vata,hips,attested_secondary
+Heart,ether,opening,backbend,Jupiter,kapha,chest,attested_secondary
+Grounding,earth,stability,standing,Saturn,vata,feet,attested_secondary
+Root,earth,foundation,standing,Saturn,vata,legs,attested_secondary
+Holds,earth,endurance,standing,Saturn,kapha,full_body,attested_secondary
+Balance,air,focus,standing,Mercury,vata,core,attested_secondary
+Flow,water,movement,sequence,Venus,pitta,full_body,attested_secondary
+Standing,earth,presence,standing,Mercury,vata,legs,attested_secondary

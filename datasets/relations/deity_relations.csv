@@ -1,5 +1,5 @@
 from_id,relation,to_id,source_title,source_locator,excerpt,tradition,confidence,notes
-deity:shiva,vahana,vahana:nandi_(bull),cosmology/deity_master.csv,,,traditional,0.8,Nandi (bull)
+deity:shiva,vahana,vahana:nandi_bull,cosmology/deity_master.csv,,,traditional,0.8,Nandi (bull)
 deity:shiva,weapon,weapon:trishula,cosmology/deity_master.csv,,,traditional,0.8,Trishula
 deity:shiva,element,element:ether,cosmology/deity_master.csv,,,traditional,0.8,ether
 deity:shiva,domain,domain:transformation,cosmology/deity_master.csv,,,traditional,0.8,transformation
@@ -7,7 +7,7 @@ deity:vishnu,vahana,vahana:garuda,cosmology/deity_master.csv,,,traditional,0.8,G
 deity:vishnu,weapon,weapon:chakra,cosmology/deity_master.csv,,,traditional,0.8,Chakra
 deity:vishnu,element,element:water,cosmology/deity_master.csv,,,traditional,0.8,water
 deity:vishnu,domain,domain:preservation,cosmology/deity_master.csv,,,traditional,0.8,preservation
-deity:brahma,vahana,vahana:hamsa_(swan),cosmology/deity_master.csv,,,traditional,0.8,Hamsa (swan)
+deity:brahma,vahana,vahana:hamsa_swan,cosmology/deity_master.csv,,,traditional,0.8,Hamsa (swan)
 deity:brahma,weapon,weapon:vedas,cosmology/deity_master.csv,,,traditional,0.8,Vedas
 deity:brahma,element,element:air,cosmology/deity_master.csv,,,traditional,0.8,air
 deity:brahma,domain,domain:creation,cosmology/deity_master.csv,,,traditional,0.8,creation
@@ -23,7 +23,7 @@ deity:lakshmi,vahana,vahana:owl,cosmology/deity_master.csv,,,traditional,0.8,Owl
 deity:lakshmi,weapon,weapon:lotus,cosmology/deity_master.csv,,,traditional,0.8,Lotus
 deity:lakshmi,element,element:water,cosmology/deity_master.csv,,,traditional,0.8,water
 deity:lakshmi,domain,domain:prosperity,cosmology/deity_master.csv,,,traditional,0.8,prosperity
-deity:saraswati,vahana,vahana:hamsa_(swan),cosmology/deity_master.csv,,,traditional,0.8,Hamsa (swan)
+deity:saraswati,vahana,vahana:hamsa_swan,cosmology/deity_master.csv,,,traditional,0.8,Hamsa (swan)
 deity:saraswati,weapon,weapon:veena,cosmology/deity_master.csv,,,traditional,0.8,Veena
 deity:saraswati,element,element:air,cosmology/deity_master.csv,,,traditional,0.8,air
 deity:saraswati,domain,domain:knowledge,cosmology/deity_master.csv,,,traditional,0.8,knowledge
@@ -79,7 +79,7 @@ deity:ketu,vahana,vahana:none,cosmology/deity_master.csv,,,traditional,0.8,None
 deity:ketu,weapon,weapon:flag,cosmology/deity_master.csv,,,traditional,0.8,Flag
 deity:ketu,element,element:fire,cosmology/deity_master.csv,,,traditional,0.8,fire
 deity:ketu,domain,domain:liberation,cosmology/deity_master.csv,,,traditional,0.8,liberation
-deity:indra,vahana,vahana:airavata_(elephant),cosmology/deity_master.csv,,,traditional,0.8,Airavata (elephant)
+deity:indra,vahana,vahana:airavata_elephant,cosmology/deity_master.csv,,,traditional,0.8,Airavata (elephant)
 deity:indra,weapon,weapon:vajra,cosmology/deity_master.csv,,,traditional,0.8,Vajra
 deity:indra,element,element:air,cosmology/deity_master.csv,,,traditional,0.8,air
 deity:indra,domain,domain:storms,cosmology/deity_master.csv,,,traditional,0.8,storms
@@ -115,46 +115,8 @@ deity:skanda,weapon,weapon:spear,cosmology/deity_master.csv,,,traditional,0.8,Sp
 deity:skanda,element,element:fire,cosmology/deity_master.csv,,,traditional,0.8,fire
 deity:skanda,domain,domain:war_commander,cosmology/deity_master.csv,,,traditional,0.8,war commander
 deity:skanda,associated_graha,graha:mars,cosmology/deity_master.csv,,,traditional,0.8,Mars
-deity:shiva,vahana,vahana:nandi_bull,cosmology/deity_vahana.csv,,,traditional,0.8,strength_dharma
-deity:vishnu,vahana,vahana:garuda,cosmology/deity_vahana.csv,,,traditional,0.8,solar_power
 deity:brahma,vahana,vahana:hamsa,cosmology/deity_vahana.csv,,,traditional,0.8,supreme_discernment
-deity:durga,vahana,vahana:lion,cosmology/deity_vahana.csv,,,traditional,0.8,divine_power
-deity:kali,vahana,vahana:none,cosmology/deity_vahana.csv,,,traditional,0.8,transcendent_force
-deity:lakshmi,vahana,vahana:owl,cosmology/deity_vahana.csv,,,traditional,0.8,prosperity_wisdom
 deity:saraswati,vahana,vahana:hamsa,cosmology/deity_vahana.csv,,,traditional,0.8,knowledge_purity
-deity:ganesha,vahana,vahana:mouse,cosmology/deity_vahana.csv,,,traditional,0.8,humility_and_penetration
-deity:karttikeya,vahana,vahana:peacock,cosmology/deity_vahana.csv,,,traditional,0.8,warrior_beauty
-deity:surya,vahana,vahana:seven_horses,cosmology/deity_vahana.csv,,,traditional,0.8,cosmic_motion
-deity:chandra,vahana,vahana:antelope,cosmology/deity_vahana.csv,,,traditional,0.8,mind_and_growth
-deity:indra,vahana,vahana:airavata_elephant,cosmology/deity_vahana.csv,,,traditional,0.8,royal_authority
-deity:agni,vahana,vahana:ram,cosmology/deity_vahana.csv,,,traditional,0.8,sacrificial_energy
-deity:varuna,vahana,vahana:sea_creature,cosmology/deity_vahana.csv,,,traditional,0.8,cosmic_order
-deity:vayu,vahana,vahana:deer,cosmology/deity_vahana.csv,,,traditional,0.8,swift_movement
-deity:kubera,vahana,vahana:man,cosmology/deity_vahana.csv,,,traditional,0.8,material_wealth
-deity:yama,vahana,vahana:buffalo,cosmology/deity_vahana.csv,,,traditional,0.8,judgment_and_death
-deity:indra,domain,domain:storms,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:indra,element,element:air,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:agni,domain,domain:sacred_fire,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:agni,element,element:fire,cosmology/deity_domains.csv,,,traditional,0.8,
 deity:varuna,domain,domain:cosmic_waters,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:varuna,element,element:water,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:vayu,domain,domain:wind,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:vayu,element,element:air,cosmology/deity_domains.csv,,,traditional,0.8,
 deity:surya,domain,domain:solar_light,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:surya,element,element:fire,cosmology/deity_domains.csv,,,traditional,0.8,
 deity:chandra,domain,domain:lunar_cycles,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:chandra,element,element:water,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:kubera,domain,domain:wealth,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:kubera,element,element:earth,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:yama,domain,domain:death,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:yama,element,element:earth,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:durga,domain,domain:protection,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:durga,element,element:fire,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:lakshmi,domain,domain:prosperity,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:lakshmi,element,element:water,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:saraswati,domain,domain:knowledge,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:saraswati,element,element:air,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:ganesha,domain,domain:obstacle_removal,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:ganesha,element,element:earth,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:karttikeya,domain,domain:warfare,cosmology/deity_domains.csv,,,traditional,0.8,
-deity:karttikeya,element,element:fire,cosmology/deity_domains.csv,,,traditional,0.8,

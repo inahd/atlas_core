@@ -5330,8 +5330,8 @@ def create_app():
             mimetype="application/json",
         )
 
-    @app.route("/s5")
-    def _s5():
+    @app.route("/s5/data")
+    def _s5_data():
         """S5 plant wheel — 3 rings from field state."""
         p = Path("/tmp/s5_state.json")
         if p.exists():

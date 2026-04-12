@@ -1,106 +1,106 @@
-emoji,name,unicode_codepoint,varna,graha,element,layer,nakshatra,ashtakala,vastu_zone,rasa,dosha,notes,attestation
-👨‍⚕️,doctor,U+1F468_200D_2695,brahmana,budha,ether,S5,Ashwini,,NE,,,Ashwini Kumaras are the divine physicians,SYNTHESIS
-👩‍⚕️,woman_doctor,U+1F469_200D_2695,brahmana,budha,ether,S5,Ashwini,,NE,,,healing profession · Ashwini physicians,SYNTHESIS
-👨‍🏫,teacher,U+1F468_200D_1F3EB,brahmana,guru,ether,S1,Pushya,,NE,,,Brihaspati is guru of devas · teaching is brahmanical,SYNTHESIS
-👩‍🏫,woman_teacher,U+1F469_200D_1F3EB,brahmana,guru,ether,S1,Pushya,,NE,,,Jupiter rules teaching and wisdom,SYNTHESIS
-👨‍🔬,scientist,U+1F468_200D_1F52C,brahmana,budha,air,S4,Hasta,,E,,,Mercury rules investigation · Hasta = skilled hands,SYNTHESIS
-👩‍🔬,woman_scientist,U+1F469_200D_1F52C,brahmana,budha,air,S4,Hasta,,E,,,empirical investigation · Mercury domain,SYNTHESIS
-👨‍💻,technologist,U+1F468_200D_1F4BB,brahmana,budha,air,S4,Hasta,,E,,,Mercury rules technology · Vishvakarma craft,SYNTHESIS
-👩‍💻,woman_technologist,U+1F469_200D_1F4BB,brahmana,budha,air,S4,Hasta,,E,,,code is yantra · Mercury domain,SYNTHESIS
-👨‍🎨,artist,U+1F468_200D_1F3A8,brahmana,shukra,water,S2,Chitra,,W,shringara,,Venus rules beauty and art · Vishvakarma,SYNTHESIS
-👩‍🎨,woman_artist,U+1F469_200D_1F3A8,brahmana,shukra,water,S2,Chitra,,W,shringara,,Chitra = brilliant/variegated · Venus domain,SYNTHESIS
-👨‍🍳,cook,U+1F468_200D_1F373,vaishya,mangala,fire,S5,Krittika,Madhyahna,SE,,,Agni rules cooking · SE is kitchen in vastu,SYNTHESIS
-👩‍🍳,woman_cook,U+1F469_200D_1F373,vaishya,mangala,fire,S5,Krittika,Madhyahna,SE,,,fire transformation · Krittika = razor/flame,SYNTHESIS
-👨‍🌾,farmer,U+1F468_200D_1F33E,vaishya,chandra,earth,S5,Rohini,,SW,,,Moon rules agriculture · Rohini most fertile,SYNTHESIS
-👩‍🌾,woman_farmer,U+1F469_200D_1F33E,vaishya,chandra,earth,S5,Rohini,,SW,,,Rohini = growth · Prajapati · earth element,SYNTHESIS
-👨‍🔧,mechanic,U+1F468_200D_1F527,shudra,mangala,fire,S4,Vishakha,,SE,,,Mars rules tools and force · Vishvakarma craft,SYNTHESIS
-👩‍🔧,woman_mechanic,U+1F469_200D_1F527,shudra,mangala,fire,S4,Vishakha,,SE,,,manual skill · fire element transformation,SYNTHESIS
-👨‍🏭,factory_worker,U+1F468_200D_1F3ED,shudra,shani,earth,S6,Uttara_Ashadha,,S,,,Saturn rules labor · industry · endurance,SYNTHESIS
-👩‍🏭,woman_factory_worker,U+1F469_200D_1F3ED,shudra,shani,earth,S6,Uttara_Ashadha,,S,,,Saturn domain · repetitive work · discipline,SYNTHESIS
-👨‍💼,office_worker,U+1F468_200D_1F4BC,vaishya,budha,air,S6,Hasta,,E,,,Mercury rules commerce · administration,SYNTHESIS
-👩‍💼,woman_office_worker,U+1F469_200D_1F4BC,vaishya,budha,air,S6,Hasta,,E,,,Mercury domain · trade · organization,SYNTHESIS
-👨‍✈️,pilot,U+1F468_200D_2708,kshatriya,surya,air,S4,Swati,,NW,,,Sun rules authority · Vayu (air) domain,SYNTHESIS
-👩‍✈️,woman_pilot,U+1F469_200D_2708,kshatriya,surya,air,S4,Swati,,NW,,,sky travel · Vayu direction NW,SYNTHESIS
-👨‍🚀,astronaut,U+1F468_200D_1F680,sannyasa,ketu,ether,S0,Mula,,NE,adbhuta,,Ketu rules transcendence · beyond material,SYNTHESIS
-👩‍🚀,woman_astronaut,U+1F469_200D_1F680,sannyasa,ketu,ether,S0,Mula,,NE,adbhuta,,leaving Earth = renunciation of material,SYNTHESIS
-👮,police_officer,U+1F46E,kshatriya,mangala,fire,S6,Magha,,S,,,Mars rules protection and authority · Yama (justice),SYNTHESIS
-👷,construction_worker,U+1F477,shudra,mangala,earth,S4,Vishakha,,SE,,,Mars rules building · Vishvakarma,SYNTHESIS
-⚖️,scales,U+2696,brahmana,guru,ether,S3,Tula,,N,,,Jupiter rules justice · Tula (Libra) = balance,OBSERVED
-🧙,mage,U+1F9D9,brahmana,rahu,ether,S1,Ardra,,NE,adbhuta,,Rahu rules illusion and occult · Rudra nakshatra,SYNTHESIS
-🧝,elf,U+1F9DD,universal,chandra,air,S1,Mrigashira,,NW,shringara,,otherworldly being · Moon's gentle light,SYNTHESIS
-🌞,sun_with_face,U+1F31E,universal,surya,fire,S1,,Pratah,E,,pitta,Surya directly · fire · east · morning,OBSERVED
-🌙,crescent_moon,U+1F319,universal,chandra,water,S1,,Ratri,NW,,kapha,Chandra directly · water · night,OBSERVED
-🌍,earth_globe_europe,U+1F30D,universal,budha,earth,S4,,,,,,Prithvi tattva · Mercury as earth element,SYNTHESIS
-⭐,star,U+2B50,universal,surya,fire,S0,,,,,,stellar light · Surya domain,SYNTHESIS
-🔥,fire,U+1F525,universal,mangala,fire,S2,Krittika,,SE,,pitta,Agni directly · Mars · Krittika razor-fire,OBSERVED
-💧,droplet,U+1F4A7,universal,chandra,water,S5,Pushya,,W,,kapha,Apas tattva · Moon · water element,OBSERVED
-🌊,ocean_wave,U+1F30A,universal,chandra,water,S5,Purva_Ashadha,,W,,kapha,Varuna domain · great waters,OBSERVED
-🌪️,tornado,U+1F32A,universal,rahu,air,S3,Ardra,,NW,,vata,Rudra storms · Rahu disruption · Ardra = teardrop,SYNTHESIS
-⛈️,thunderstorm,U+26C8,universal,mangala,fire,S3,Ardra,,SE,,pitta,Indra's vajra · electric fire · Mars force,SYNTHESIS
-🌈,rainbow,U+1F308,universal,shukra,water,S2,,Sayahna,W,adbhuta,,Venus beauty · post-rain · evening phenomenon,SYNTHESIS
-❄️,snowflake,U+2744,universal,shani,water,S5,Shatabhisha,,N,,kapha,Saturn cold · crystalline discipline · Varuna,SYNTHESIS
-🌸,cherry_blossom,U+1F338,universal,shukra,water,S5,Shravana,,W,shringara,,Venus beauty · Vishnu's grace · flower offering,SYNTHESIS
-🌻,sunflower,U+1F33B,universal,surya,fire,S5,Uttara_Phalguni,,E,,pitta,Sun-following · Surya devotion · Aryaman,SYNTHESIS
-🌿,herb,U+1F33F,universal,budha,earth,S5,Mrigashira,,NE,,vata,Mercury green · Soma · medicinal herbs,OBSERVED
-🌳,deciduous_tree,U+1F333,universal,guru,earth,S5,Pushya,,SW,,kapha,Jupiter expansion · Brihaspati · nourishment,SYNTHESIS
-🌴,palm_tree,U+1F334,universal,surya,fire,S5,Magha,,S,,pitta,tropical · Sun · Pitrs ancestor trees,SYNTHESIS
-🍎,red_apple,U+1F34E,universal,shukra,earth,S5,,Madhyahna,,madhura,kapha,Venus rules sweet fruit · midday offering,SYNTHESIS
-🍋,lemon,U+1F34B,universal,surya,fire,S5,,,SE,amla,pitta,sour rasa · Sun · Agni digestive fire,SYNTHESIS
-🌶️,hot_pepper,U+1F336,universal,mangala,fire,S5,Krittika,,SE,katu,pitta,pungent rasa · Mars fire · Agni zone,SYNTHESIS
-🍯,honey,U+1F36F,universal,guru,earth,S5,Rohini,,NE,madhura,kapha,Jupiter sweetness · Brahma's nectar,SYNTHESIS
-🫚,ginger,U+1FAD2,universal,surya,fire,S5,Krittika,,SE,katu,pitta,heating virya · digestive fire · Agni,SYNTHESIS
-🐘,elephant,U+1F418,universal,guru,earth,S1,Bharani,,SW,shanta,,Ganesha vahana · Jupiter · Airavata,OBSERVED
-🐎,horse,U+1F40E,universal,ketu,fire,S1,Ashwini,,E,vira,,Ashwini Kumaras · Ketu · swift healing,OBSERVED
-🐍,snake,U+1F40D,universal,rahu,water,S1,Ashlesha,,SW,bhayanaka,,Naga · Rahu · serpent power · kundalini,OBSERVED
-🐄,cow,U+1F404,universal,chandra,earth,S0,Rohini,,SW,shanta,,Kamadhenu · Moon · Rohini chariot,OBSERVED
-🦚,peacock,U+1F99A,universal,mangala,fire,S1,Krittika,,SE,adbhuta,,Kartikeya vahana · Mars · Skanda,OBSERVED
-🦅,eagle,U+1F985,universal,surya,fire,S1,Shravana,,E,vira,,Garuda · Sun · Vishnu vahana,OBSERVED
-🦁,lion,U+1F981,universal,surya,fire,S1,Magha,,E,vira,,Simha · Sun · royal authority · Durga vahana,OBSERVED
-🐒,monkey,U+1F412,universal,mangala,air,S6,Mula,,SW,hasya,,Hanuman · Mars · vanara · service,OBSERVED
-🦢,swan,U+1F9A2,universal,shukra,water,S1,Punarvasu,,N,shanta,,Hamsa · Brahma/Saraswati vahana · discrimination,OBSERVED
-🐟,fish,U+1F41F,universal,chandra,water,S1,Revati,,W,shanta,,Matsya avatara · Moon · Pushan journey,OBSERVED
-🐢,turtle,U+1F422,universal,shani,earth,S1,Uttara_Bhadrapada,,N,shanta,,Kurma avatara · Saturn endurance,OBSERVED
-🐃,water_buffalo,U+1F403,universal,shani,earth,S1,Hasta,,S,,,Yama vahana · Saturn · Hasta skilled,SYNTHESIS
-🐀,rat,U+1F400,universal,budha,earth,S1,Magha,,N,,,Ganesha vahana · Mercury · Magha throne,OBSERVED
-🕉️,om,U+1F549,universal,guru,ether,S0,,Nisanta,C,shanta,,Pranava · Jupiter · bindu · all-pervading,OBSERVED
-☸️,wheel_of_dharma,U+2638,universal,surya,ether,S0,,,C,,,Sudarshana chakra · Vishnu · dharma wheel,OBSERVED
-🔱,trident,U+1F531,kshatriya,mangala,fire,S1,Ardra,,NE,raudra,,Shiva's trishula · Mars · Rudra,OBSERVED
-📿,prayer_beads,U+1F4FF,sannyasa,guru,earth,S6,Anuradha,Nisanta,NE,shanta,,japa mala · Jupiter devotion · pre-dawn,OBSERVED
-🛕,hindu_temple,U+1F6D5,brahmana,guru,ether,S4,,Pratah,NE,shanta,,Jupiter worship · NE sacred zone · morning,OBSERVED
-🪷,lotus,U+1FAB7,universal,shukra,water,S1,Pushya,,NE,shanta,,padma · Venus beauty · Lakshmi · devotion,OBSERVED
-🪔,diya,U+1FA94,brahmana,mangala,fire,S6,Krittika,Sayahna,SE,,,Agni offering · evening arati · Mars fire,OBSERVED
-🧘,person_in_lotus,U+1F9D8,sannyasa,guru,ether,S6,Pushya,Nisanta,NE,shanta,,meditation · Jupiter · pre-dawn · sattva,SYNTHESIS
-🎵,musical_note,U+1F3B5,brahmana,shukra,air,S2,Mrigashira,,NW,,,Venus rules music · Vayu sound zone,SYNTHESIS
-🎶,musical_notes,U+1F3B6,brahmana,shukra,air,S2,Mrigashira,,NW,,,Gandharva · Venus domain · sound layer,SYNTHESIS
-🥁,drum,U+1F941,kshatriya,mangala,fire,S2,Dhanishta,,N,vira,,Dhanishta = drum · Mars rhythm · Vasu,OBSERVED
-🪈,flute,U+1FA88,brahmana,chandra,air,S2,Punarvasu,,NW,madhurya,,Krishna's venu · Moon · Aditi · melody,OBSERVED
-🏠,house,U+1F3E0,vaishya,chandra,earth,S4,Rohini,,SW,,,family dwelling · Moon home · earth element,SYNTHESIS
-🏛️,classical_building,U+1F3DB,brahmana,guru,earth,S4,Uttara_Phalguni,,NE,,,Jupiter temple · dharma architecture,SYNTHESIS
-🏰,castle,U+1F3F0,kshatriya,surya,earth,S4,Magha,,E,,,Sun sovereignty · royal fort · Magha throne,SYNTHESIS
-⚔️,crossed_swords,U+2694,kshatriya,mangala,fire,S6,Jyeshtha,,S,vira,,Mars weapons · Indra · kshatriya duty,OBSERVED
-🛡️,shield,U+1F6E1,kshatriya,shani,earth,S6,Uttara_Ashadha,,S,,,Saturn protection · endurance · defense,SYNTHESIS
-🏹,bow_and_arrow,U+1F3F9,kshatriya,mangala,fire,S6,Purva_Ashadha,,SE,vira,,Rama's dhanus · Mars · Purva_Ashadha = fan,OBSERVED
-💎,gem,U+1F48E,vaishya,shukra,water,S4,Chitra,,W,adbhuta,,Venus gem · ratna · Vishvakarma pearl,SYNTHESIS
-🔔,bell,U+1F514,brahmana,guru,ether,S2,,Sayahna,NE,shanta,,temple bell · Jupiter · evening arati,OBSERVED
-🪘,long_drum,U+1FA98,brahmana,mangala,fire,S2,Dhanishta,,N,vira,,mridanga · Mars · tala · Dhanishta,SYNTHESIS
-📜,scroll,U+1F4DC,brahmana,guru,ether,S6,Pushya,,NE,shanta,,shastra · Jupiter · sacred text,SYNTHESIS
-⏰,alarm_clock,U+23F0,universal,shani,air,S3,,,N,,,Saturn rules time · kala · discipline,SYNTHESIS
-🕐,one_oclock,U+1F550,universal,shani,air,S3,,Nisanta,N,,,hora · Saturn time · specific hour,SYNTHESIS
-🧭,compass,U+1F9ED,universal,budha,air,S4,Swati,,E,,,Mercury navigation · Vayu wind · direction,SYNTHESIS
-🌑,new_moon,U+1F311,universal,chandra,water,S3,,Ratri,NW,,kapha,Amavasya · Moon · deepest dark · rest,OBSERVED
-🌕,full_moon,U+1F315,universal,chandra,water,S3,,Ratri,NW,,kapha,Purnima · Moon · peak luminosity · harvest,OBSERVED
-🌓,first_quarter_moon,U+1F313,universal,chandra,water,S3,,,NW,,kapha,Shukla paksha · waxing · growth,OBSERVED
-☀️,sun,U+2600,universal,surya,fire,S1,,Madhyahna,E,,pitta,Surya directly · fire · noon peak,OBSERVED
-🧿,nazar_amulet,U+1F9FF,universal,rahu,water,S6,Shatabhisha,,S,bhayanaka,,Rahu evil eye protection · 100 physicians,SYNTHESIS
-🪬,hamsa,U+1FAAC,brahmana,shukra,air,S1,Punarvasu,,N,shanta,,Hamsa discrimination · swan · Brahma,SYNTHESIS
-☮️,peace_symbol,U+262E,sannyasa,guru,ether,S0,,,C,shanta,,ahimsa · Jupiter peace · brahmasthana,SYNTHESIS
-♻️,recycling,U+267B,universal,shani,earth,S5,,,SW,,,Saturn cycles · punarjanma · transformation,SYNTHESIS
-🙏,folded_hands,U+1F64F,universal,guru,ether,S6,,Nisanta,NE,shanta,,namaskara · Jupiter · devotion · prayer,OBSERVED
-❤️,red_heart,U+2764,universal,shukra,water,S6,,,C,shringara,,Venus love · prema · heart center,SYNTHESIS
-💀,skull,U+1F480,sannyasa,shani,earth,S1,Mula,,S,bhayanaka,,Saturn death · Kali · Mula dissolution,SYNTHESIS
-👁️,eye,U+1F441,brahmana,surya,fire,S1,Hasta,,E,,,Sun perception · dristi · Savitar insight,SYNTHESIS
-🧠,brain,U+1F9E0,brahmana,chandra,water,S1,Punarvasu,,N,,,Moon mind · manas · Aditi intellect,SYNTHESIS
-🫀,anatomical_heart,U+1FAC0,universal,surya,fire,S5,,,C,,,Sun heart center · hridaya · prana seat,SYNTHESIS
-🦴,bone,U+1F9B4,universal,shani,earth,S5,Ashwini,,S,,vata,Saturn structure · Ashwini healers,SYNTHESIS
-🌱,seedling,U+1F331,universal,chandra,earth,S5,Rohini,,SW,,,Moon growth · Rohini fertility · new life,SYNTHESIS
-🍃,leaf_fluttering,U+1F343,universal,chandra,air,S5,Swati,,NW,,vata,Vayu wind · leaf · Swati independence,SYNTHESIS
+emoji,name,unicode_codepoint,varna,graha,element,layer,nakshatra,ashtakala,vastu_zone,rasa,dosha,notes,attestation,attestation_status
+👨‍⚕️,doctor,U+1F468_200D_2695,brahmana,budha,ether,S5,Ashwini,,NE,,,Ashwini Kumaras are the divine physicians,SYNTHESIS,inferred_coherent
+👩‍⚕️,woman_doctor,U+1F469_200D_2695,brahmana,budha,ether,S5,Ashwini,,NE,,,healing profession · Ashwini physicians,SYNTHESIS,inferred_coherent
+👨‍🏫,teacher,U+1F468_200D_1F3EB,brahmana,guru,ether,S1,Pushya,,NE,,,Brihaspati is guru of devas · teaching is brahmanical,SYNTHESIS,inferred_coherent
+👩‍🏫,woman_teacher,U+1F469_200D_1F3EB,brahmana,guru,ether,S1,Pushya,,NE,,,Jupiter rules teaching and wisdom,SYNTHESIS,inferred_coherent
+👨‍🔬,scientist,U+1F468_200D_1F52C,brahmana,budha,air,S4,Hasta,,E,,,Mercury rules investigation · Hasta = skilled hands,SYNTHESIS,inferred_coherent
+👩‍🔬,woman_scientist,U+1F469_200D_1F52C,brahmana,budha,air,S4,Hasta,,E,,,empirical investigation · Mercury domain,SYNTHESIS,inferred_coherent
+👨‍💻,technologist,U+1F468_200D_1F4BB,brahmana,budha,air,S4,Hasta,,E,,,Mercury rules technology · Vishvakarma craft,SYNTHESIS,inferred_coherent
+👩‍💻,woman_technologist,U+1F469_200D_1F4BB,brahmana,budha,air,S4,Hasta,,E,,,code is yantra · Mercury domain,SYNTHESIS,inferred_coherent
+👨‍🎨,artist,U+1F468_200D_1F3A8,brahmana,shukra,water,S2,Chitra,,W,shringara,,Venus rules beauty and art · Vishvakarma,SYNTHESIS,inferred_coherent
+👩‍🎨,woman_artist,U+1F469_200D_1F3A8,brahmana,shukra,water,S2,Chitra,,W,shringara,,Chitra = brilliant/variegated · Venus domain,SYNTHESIS,inferred_coherent
+👨‍🍳,cook,U+1F468_200D_1F373,vaishya,mangala,fire,S5,Krittika,Madhyahna,SE,,,Agni rules cooking · SE is kitchen in vastu,SYNTHESIS,inferred_coherent
+👩‍🍳,woman_cook,U+1F469_200D_1F373,vaishya,mangala,fire,S5,Krittika,Madhyahna,SE,,,fire transformation · Krittika = razor/flame,SYNTHESIS,inferred_coherent
+👨‍🌾,farmer,U+1F468_200D_1F33E,vaishya,chandra,earth,S5,Rohini,,SW,,,Moon rules agriculture · Rohini most fertile,SYNTHESIS,inferred_coherent
+👩‍🌾,woman_farmer,U+1F469_200D_1F33E,vaishya,chandra,earth,S5,Rohini,,SW,,,Rohini = growth · Prajapati · earth element,SYNTHESIS,inferred_coherent
+👨‍🔧,mechanic,U+1F468_200D_1F527,shudra,mangala,fire,S4,Vishakha,,SE,,,Mars rules tools and force · Vishvakarma craft,SYNTHESIS,inferred_coherent
+👩‍🔧,woman_mechanic,U+1F469_200D_1F527,shudra,mangala,fire,S4,Vishakha,,SE,,,manual skill · fire element transformation,SYNTHESIS,inferred_coherent
+👨‍🏭,factory_worker,U+1F468_200D_1F3ED,shudra,shani,earth,S6,Uttara_Ashadha,,S,,,Saturn rules labor · industry · endurance,SYNTHESIS,inferred_coherent
+👩‍🏭,woman_factory_worker,U+1F469_200D_1F3ED,shudra,shani,earth,S6,Uttara_Ashadha,,S,,,Saturn domain · repetitive work · discipline,SYNTHESIS,inferred_coherent
+👨‍💼,office_worker,U+1F468_200D_1F4BC,vaishya,budha,air,S6,Hasta,,E,,,Mercury rules commerce · administration,SYNTHESIS,inferred_coherent
+👩‍💼,woman_office_worker,U+1F469_200D_1F4BC,vaishya,budha,air,S6,Hasta,,E,,,Mercury domain · trade · organization,SYNTHESIS,inferred_coherent
+👨‍✈️,pilot,U+1F468_200D_2708,kshatriya,surya,air,S4,Swati,,NW,,,Sun rules authority · Vayu (air) domain,SYNTHESIS,inferred_coherent
+👩‍✈️,woman_pilot,U+1F469_200D_2708,kshatriya,surya,air,S4,Swati,,NW,,,sky travel · Vayu direction NW,SYNTHESIS,inferred_coherent
+👨‍🚀,astronaut,U+1F468_200D_1F680,sannyasa,ketu,ether,S0,Mula,,NE,adbhuta,,Ketu rules transcendence · beyond material,SYNTHESIS,inferred_coherent
+👩‍🚀,woman_astronaut,U+1F469_200D_1F680,sannyasa,ketu,ether,S0,Mula,,NE,adbhuta,,leaving Earth = renunciation of material,SYNTHESIS,inferred_coherent
+👮,police_officer,U+1F46E,kshatriya,mangala,fire,S6,Magha,,S,,,Mars rules protection and authority · Yama (justice),SYNTHESIS,inferred_coherent
+👷,construction_worker,U+1F477,shudra,mangala,earth,S4,Vishakha,,SE,,,Mars rules building · Vishvakarma,SYNTHESIS,inferred_coherent
+⚖️,scales,U+2696,brahmana,guru,ether,S3,Tula,,N,,,Jupiter rules justice · Tula (Libra) = balance,OBSERVED,inferred_coherent
+🧙,mage,U+1F9D9,brahmana,rahu,ether,S1,Ardra,,NE,adbhuta,,Rahu rules illusion and occult · Rudra nakshatra,SYNTHESIS,inferred_coherent
+🧝,elf,U+1F9DD,universal,chandra,air,S1,Mrigashira,,NW,shringara,,otherworldly being · Moon's gentle light,SYNTHESIS,inferred_coherent
+🌞,sun_with_face,U+1F31E,universal,surya,fire,S1,,Pratah,E,,pitta,Surya directly · fire · east · morning,OBSERVED,inferred_coherent
+🌙,crescent_moon,U+1F319,universal,chandra,water,S1,,Ratri,NW,,kapha,Chandra directly · water · night,OBSERVED,inferred_coherent
+🌍,earth_globe_europe,U+1F30D,universal,budha,earth,S4,,,,,,Prithvi tattva · Mercury as earth element,SYNTHESIS,inferred_coherent
+⭐,star,U+2B50,universal,surya,fire,S0,,,,,,stellar light · Surya domain,SYNTHESIS,inferred_coherent
+🔥,fire,U+1F525,universal,mangala,fire,S2,Krittika,,SE,,pitta,Agni directly · Mars · Krittika razor-fire,OBSERVED,inferred_coherent
+💧,droplet,U+1F4A7,universal,chandra,water,S5,Pushya,,W,,kapha,Apas tattva · Moon · water element,OBSERVED,inferred_coherent
+🌊,ocean_wave,U+1F30A,universal,chandra,water,S5,Purva_Ashadha,,W,,kapha,Varuna domain · great waters,OBSERVED,inferred_coherent
+🌪️,tornado,U+1F32A,universal,rahu,air,S3,Ardra,,NW,,vata,Rudra storms · Rahu disruption · Ardra = teardrop,SYNTHESIS,inferred_coherent
+⛈️,thunderstorm,U+26C8,universal,mangala,fire,S3,Ardra,,SE,,pitta,Indra's vajra · electric fire · Mars force,SYNTHESIS,inferred_coherent
+🌈,rainbow,U+1F308,universal,shukra,water,S2,,Sayahna,W,adbhuta,,Venus beauty · post-rain · evening phenomenon,SYNTHESIS,inferred_coherent
+❄️,snowflake,U+2744,universal,shani,water,S5,Shatabhisha,,N,,kapha,Saturn cold · crystalline discipline · Varuna,SYNTHESIS,inferred_coherent
+🌸,cherry_blossom,U+1F338,universal,shukra,water,S5,Shravana,,W,shringara,,Venus beauty · Vishnu's grace · flower offering,SYNTHESIS,inferred_coherent
+🌻,sunflower,U+1F33B,universal,surya,fire,S5,Uttara_Phalguni,,E,,pitta,Sun-following · Surya devotion · Aryaman,SYNTHESIS,inferred_coherent
+🌿,herb,U+1F33F,universal,budha,earth,S5,Mrigashira,,NE,,vata,Mercury green · Soma · medicinal herbs,OBSERVED,inferred_coherent
+🌳,deciduous_tree,U+1F333,universal,guru,earth,S5,Pushya,,SW,,kapha,Jupiter expansion · Brihaspati · nourishment,SYNTHESIS,inferred_coherent
+🌴,palm_tree,U+1F334,universal,surya,fire,S5,Magha,,S,,pitta,tropical · Sun · Pitrs ancestor trees,SYNTHESIS,inferred_coherent
+🍎,red_apple,U+1F34E,universal,shukra,earth,S5,,Madhyahna,,madhura,kapha,Venus rules sweet fruit · midday offering,SYNTHESIS,inferred_coherent
+🍋,lemon,U+1F34B,universal,surya,fire,S5,,,SE,amla,pitta,sour rasa · Sun · Agni digestive fire,SYNTHESIS,inferred_coherent
+🌶️,hot_pepper,U+1F336,universal,mangala,fire,S5,Krittika,,SE,katu,pitta,pungent rasa · Mars fire · Agni zone,SYNTHESIS,inferred_coherent
+🍯,honey,U+1F36F,universal,guru,earth,S5,Rohini,,NE,madhura,kapha,Jupiter sweetness · Brahma's nectar,SYNTHESIS,inferred_coherent
+🫚,ginger,U+1FAD2,universal,surya,fire,S5,Krittika,,SE,katu,pitta,heating virya · digestive fire · Agni,SYNTHESIS,inferred_coherent
+🐘,elephant,U+1F418,universal,guru,earth,S1,Bharani,,SW,shanta,,Ganesha vahana · Jupiter · Airavata,OBSERVED,inferred_coherent
+🐎,horse,U+1F40E,universal,ketu,fire,S1,Ashwini,,E,vira,,Ashwini Kumaras · Ketu · swift healing,OBSERVED,inferred_coherent
+🐍,snake,U+1F40D,universal,rahu,water,S1,Ashlesha,,SW,bhayanaka,,Naga · Rahu · serpent power · kundalini,OBSERVED,inferred_coherent
+🐄,cow,U+1F404,universal,chandra,earth,S0,Rohini,,SW,shanta,,Kamadhenu · Moon · Rohini chariot,OBSERVED,inferred_coherent
+🦚,peacock,U+1F99A,universal,mangala,fire,S1,Krittika,,SE,adbhuta,,Kartikeya vahana · Mars · Skanda,OBSERVED,inferred_coherent
+🦅,eagle,U+1F985,universal,surya,fire,S1,Shravana,,E,vira,,Garuda · Sun · Vishnu vahana,OBSERVED,inferred_coherent
+🦁,lion,U+1F981,universal,surya,fire,S1,Magha,,E,vira,,Simha · Sun · royal authority · Durga vahana,OBSERVED,inferred_coherent
+🐒,monkey,U+1F412,universal,mangala,air,S6,Mula,,SW,hasya,,Hanuman · Mars · vanara · service,OBSERVED,inferred_coherent
+🦢,swan,U+1F9A2,universal,shukra,water,S1,Punarvasu,,N,shanta,,Hamsa · Brahma/Saraswati vahana · discrimination,OBSERVED,inferred_coherent
+🐟,fish,U+1F41F,universal,chandra,water,S1,Revati,,W,shanta,,Matsya avatara · Moon · Pushan journey,OBSERVED,inferred_coherent
+🐢,turtle,U+1F422,universal,shani,earth,S1,Uttara_Bhadrapada,,N,shanta,,Kurma avatara · Saturn endurance,OBSERVED,inferred_coherent
+🐃,water_buffalo,U+1F403,universal,shani,earth,S1,Hasta,,S,,,Yama vahana · Saturn · Hasta skilled,SYNTHESIS,inferred_coherent
+🐀,rat,U+1F400,universal,budha,earth,S1,Magha,,N,,,Ganesha vahana · Mercury · Magha throne,OBSERVED,inferred_coherent
+🕉️,om,U+1F549,universal,guru,ether,S0,,Nisanta,C,shanta,,Pranava · Jupiter · bindu · all-pervading,OBSERVED,inferred_coherent
+☸️,wheel_of_dharma,U+2638,universal,surya,ether,S0,,,C,,,Sudarshana chakra · Vishnu · dharma wheel,OBSERVED,inferred_coherent
+🔱,trident,U+1F531,kshatriya,mangala,fire,S1,Ardra,,NE,raudra,,Shiva's trishula · Mars · Rudra,OBSERVED,inferred_coherent
+📿,prayer_beads,U+1F4FF,sannyasa,guru,earth,S6,Anuradha,Nisanta,NE,shanta,,japa mala · Jupiter devotion · pre-dawn,OBSERVED,inferred_coherent
+🛕,hindu_temple,U+1F6D5,brahmana,guru,ether,S4,,Pratah,NE,shanta,,Jupiter worship · NE sacred zone · morning,OBSERVED,inferred_coherent
+🪷,lotus,U+1FAB7,universal,shukra,water,S1,Pushya,,NE,shanta,,padma · Venus beauty · Lakshmi · devotion,OBSERVED,inferred_coherent
+🪔,diya,U+1FA94,brahmana,mangala,fire,S6,Krittika,Sayahna,SE,,,Agni offering · evening arati · Mars fire,OBSERVED,inferred_coherent
+🧘,person_in_lotus,U+1F9D8,sannyasa,guru,ether,S6,Pushya,Nisanta,NE,shanta,,meditation · Jupiter · pre-dawn · sattva,SYNTHESIS,inferred_coherent
+🎵,musical_note,U+1F3B5,brahmana,shukra,air,S2,Mrigashira,,NW,,,Venus rules music · Vayu sound zone,SYNTHESIS,inferred_coherent
+🎶,musical_notes,U+1F3B6,brahmana,shukra,air,S2,Mrigashira,,NW,,,Gandharva · Venus domain · sound layer,SYNTHESIS,inferred_coherent
+🥁,drum,U+1F941,kshatriya,mangala,fire,S2,Dhanishta,,N,vira,,Dhanishta = drum · Mars rhythm · Vasu,OBSERVED,inferred_coherent
+🪈,flute,U+1FA88,brahmana,chandra,air,S2,Punarvasu,,NW,madhurya,,Krishna's venu · Moon · Aditi · melody,OBSERVED,inferred_coherent
+🏠,house,U+1F3E0,vaishya,chandra,earth,S4,Rohini,,SW,,,family dwelling · Moon home · earth element,SYNTHESIS,inferred_coherent
+🏛️,classical_building,U+1F3DB,brahmana,guru,earth,S4,Uttara_Phalguni,,NE,,,Jupiter temple · dharma architecture,SYNTHESIS,inferred_coherent
+🏰,castle,U+1F3F0,kshatriya,surya,earth,S4,Magha,,E,,,Sun sovereignty · royal fort · Magha throne,SYNTHESIS,inferred_coherent
+⚔️,crossed_swords,U+2694,kshatriya,mangala,fire,S6,Jyeshtha,,S,vira,,Mars weapons · Indra · kshatriya duty,OBSERVED,inferred_coherent
+🛡️,shield,U+1F6E1,kshatriya,shani,earth,S6,Uttara_Ashadha,,S,,,Saturn protection · endurance · defense,SYNTHESIS,inferred_coherent
+🏹,bow_and_arrow,U+1F3F9,kshatriya,mangala,fire,S6,Purva_Ashadha,,SE,vira,,Rama's dhanus · Mars · Purva_Ashadha = fan,OBSERVED,inferred_coherent
+💎,gem,U+1F48E,vaishya,shukra,water,S4,Chitra,,W,adbhuta,,Venus gem · ratna · Vishvakarma pearl,SYNTHESIS,inferred_coherent
+🔔,bell,U+1F514,brahmana,guru,ether,S2,,Sayahna,NE,shanta,,temple bell · Jupiter · evening arati,OBSERVED,inferred_coherent
+🪘,long_drum,U+1FA98,brahmana,mangala,fire,S2,Dhanishta,,N,vira,,mridanga · Mars · tala · Dhanishta,SYNTHESIS,inferred_coherent
+📜,scroll,U+1F4DC,brahmana,guru,ether,S6,Pushya,,NE,shanta,,shastra · Jupiter · sacred text,SYNTHESIS,inferred_coherent
+⏰,alarm_clock,U+23F0,universal,shani,air,S3,,,N,,,Saturn rules time · kala · discipline,SYNTHESIS,inferred_coherent
+🕐,one_oclock,U+1F550,universal,shani,air,S3,,Nisanta,N,,,hora · Saturn time · specific hour,SYNTHESIS,inferred_coherent
+🧭,compass,U+1F9ED,universal,budha,air,S4,Swati,,E,,,Mercury navigation · Vayu wind · direction,SYNTHESIS,inferred_coherent
+🌑,new_moon,U+1F311,universal,chandra,water,S3,,Ratri,NW,,kapha,Amavasya · Moon · deepest dark · rest,OBSERVED,inferred_coherent
+🌕,full_moon,U+1F315,universal,chandra,water,S3,,Ratri,NW,,kapha,Purnima · Moon · peak luminosity · harvest,OBSERVED,inferred_coherent
+🌓,first_quarter_moon,U+1F313,universal,chandra,water,S3,,,NW,,kapha,Shukla paksha · waxing · growth,OBSERVED,inferred_coherent
+☀️,sun,U+2600,universal,surya,fire,S1,,Madhyahna,E,,pitta,Surya directly · fire · noon peak,OBSERVED,inferred_coherent
+🧿,nazar_amulet,U+1F9FF,universal,rahu,water,S6,Shatabhisha,,S,bhayanaka,,Rahu evil eye protection · 100 physicians,SYNTHESIS,inferred_coherent
+🪬,hamsa,U+1FAAC,brahmana,shukra,air,S1,Punarvasu,,N,shanta,,Hamsa discrimination · swan · Brahma,SYNTHESIS,inferred_coherent
+☮️,peace_symbol,U+262E,sannyasa,guru,ether,S0,,,C,shanta,,ahimsa · Jupiter peace · brahmasthana,SYNTHESIS,inferred_coherent
+♻️,recycling,U+267B,universal,shani,earth,S5,,,SW,,,Saturn cycles · punarjanma · transformation,SYNTHESIS,inferred_coherent
+🙏,folded_hands,U+1F64F,universal,guru,ether,S6,,Nisanta,NE,shanta,,namaskara · Jupiter · devotion · prayer,OBSERVED,inferred_coherent
+❤️,red_heart,U+2764,universal,shukra,water,S6,,,C,shringara,,Venus love · prema · heart center,SYNTHESIS,inferred_coherent
+💀,skull,U+1F480,sannyasa,shani,earth,S1,Mula,,S,bhayanaka,,Saturn death · Kali · Mula dissolution,SYNTHESIS,inferred_coherent
+👁️,eye,U+1F441,brahmana,surya,fire,S1,Hasta,,E,,,Sun perception · dristi · Savitar insight,SYNTHESIS,inferred_coherent
+🧠,brain,U+1F9E0,brahmana,chandra,water,S1,Punarvasu,,N,,,Moon mind · manas · Aditi intellect,SYNTHESIS,inferred_coherent
+🫀,anatomical_heart,U+1FAC0,universal,surya,fire,S5,,,C,,,Sun heart center · hridaya · prana seat,SYNTHESIS,inferred_coherent
+🦴,bone,U+1F9B4,universal,shani,earth,S5,Ashwini,,S,,vata,Saturn structure · Ashwini healers,SYNTHESIS,inferred_coherent
+🌱,seedling,U+1F331,universal,chandra,earth,S5,Rohini,,SW,,,Moon growth · Rohini fertility · new life,SYNTHESIS,inferred_coherent
+🍃,leaf_fluttering,U+1F343,universal,chandra,air,S5,Swati,,NW,,vata,Vayu wind · leaf · Swati independence,SYNTHESIS,inferred_coherent

@@ -736,8 +736,10 @@ def _derive_relations_from_mappings(graph: Dict, metadata: Dict) -> None:
             if graha:
                 _add_edge(did, _entity_id("graha", graha), "deity_graha", "cosmology/deity_master.csv")
 
-    # 5c. nakshatra → gemstone, shakti, direction (from cosmology/nakshatra_extended.csv)
-    nak_ext_path = DATASETS_ROOT / "cosmology" / "nakshatra_extended.csv"
+    # 5c. nakshatra → gemstone, shakti, direction (prefer canonical, fall back to extended)
+    nak_ext_path = DATASETS_ROOT / "astro" / "nakshatra_canonical.csv"
+    if not nak_ext_path.exists():
+        nak_ext_path = DATASETS_ROOT / "cosmology" / "nakshatra_extended.csv"
     if nak_ext_path.exists():
         for row in _load_csv(nak_ext_path):
             nak = _clean(row.get("nakshatra", ""))
@@ -1291,9 +1293,9 @@ def load_all_entities() -> Dict[str, Tuple[float, float]]:
 def load_nakshatra_metadata() -> Dict[str, Dict[str, Any]]:
     merged: Dict[str, Dict[str, Any]] = {name: {"name": name, "position": idx + 1, "sources": []} for idx, name in enumerate(_NAK_ORDER)}
     relevant = [
+        "astro/nakshatra_canonical.csv",
         "astro/nakshatra_core.csv",
         "astro/nakshatra_full.csv",
-        "astro/nakshatra_core.csv",
         "astro/nakshatra_master.csv",
         "astro/nakshatra_extended.csv",
         "astro/nakshatra_deities.csv",

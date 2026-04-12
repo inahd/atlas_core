@@ -24,7 +24,9 @@ _EMOJI_CSV = os.path.join(_ROOT, "datasets", "symbols", "emoji_vedic_map.csv")
 _AUTO_CSV = os.path.join(_ROOT, "datasets", "symbols", "emoji_auto_mapped.csv")
 _GRAHA_CSV = os.path.join(_ROOT, "datasets", "cosmology", "graha_master.csv")
 _DEVI_CSV = os.path.join(_ROOT, "datasets", "cosmology", "nitya_devi_master.csv")
-_NAK_CSV = os.path.join(_ROOT, "datasets", "astro", "nakshatra_master.csv")
+_NAK_CSV_CANONICAL = os.path.join(_ROOT, "datasets", "astro", "nakshatra_canonical.csv")
+_NAK_CSV_LEGACY = os.path.join(_ROOT, "datasets", "astro", "nakshatra_master.csv")
+_NAK_CSV = _NAK_CSV_CANONICAL if os.path.exists(_NAK_CSV_CANONICAL) else _NAK_CSV_LEGACY
 _HEX_CSV = os.path.join(_ROOT, "datasets", "iching", "hexagrams.csv")
 _TRI_CSV = os.path.join(_ROOT, "datasets", "iching", "trigrams.csv")
 

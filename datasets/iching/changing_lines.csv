@@ -1,385 +1,385 @@
-from_hexagram,from_line,to_hexagram,transition_quality,field_movement,rasa_shift,lifecycle_shift,notes
-hexagram_01,1,hexagram_10,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 1 changes in the creative
-hexagram_01,2,hexagram_13,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 2 changes in the creative
-hexagram_01,3,hexagram_44,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 3 changes in the creative
-hexagram_01,4,hexagram_43,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 4 changes in the creative
-hexagram_01,5,hexagram_14,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 5 changes in the creative
-hexagram_01,6,hexagram_09,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 6 changes in the creative
-hexagram_02,1,hexagram_15,firming,expanding,shanta_shifting,harvest_transitioning,Line 1 changes in the receptive
-hexagram_02,2,hexagram_08,firming,expanding,shanta_shifting,harvest_transitioning,Line 2 changes in the receptive
-hexagram_02,3,hexagram_24,firming,expanding,shanta_shifting,harvest_transitioning,Line 3 changes in the receptive
-hexagram_02,4,hexagram_23,firming,expanding,shanta_shifting,harvest_transitioning,Line 4 changes in the receptive
-hexagram_02,5,hexagram_07,firming,expanding,shanta_shifting,harvest_transitioning,Line 5 changes in the receptive
-hexagram_02,6,hexagram_16,firming,expanding,shanta_shifting,harvest_transitioning,Line 6 changes in the receptive
-hexagram_03,1,hexagram_63,firming,expanding,karuna_shifting,sprout_transitioning,Line 1 changes in difficulty at the beginning
-hexagram_03,2,hexagram_60,firming,expanding,karuna_shifting,sprout_transitioning,Line 2 changes in difficulty at the beginning
-hexagram_03,3,hexagram_07,yielding,contracting,karuna_shifting,sprout_transitioning,Line 3 changes in difficulty at the beginning
-hexagram_03,4,hexagram_42,firming,expanding,karuna_shifting,sprout_transitioning,Line 4 changes in difficulty at the beginning
-hexagram_03,5,hexagram_24,yielding,contracting,karuna_shifting,sprout_transitioning,Line 5 changes in difficulty at the beginning
-hexagram_03,6,hexagram_17,firming,expanding,karuna_shifting,sprout_transitioning,Line 6 changes in difficulty at the beginning
-hexagram_04,1,hexagram_18,firming,expanding,hasya_shifting,sprout_transitioning,Line 1 changes in youthful folly
-hexagram_04,2,hexagram_23,yielding,contracting,hasya_shifting,sprout_transitioning,Line 2 changes in youthful folly
-hexagram_04,3,hexagram_41,firming,expanding,hasya_shifting,sprout_transitioning,Line 3 changes in youthful folly
-hexagram_04,4,hexagram_08,yielding,contracting,hasya_shifting,sprout_transitioning,Line 4 changes in youthful folly
-hexagram_04,5,hexagram_59,firming,expanding,hasya_shifting,sprout_transitioning,Line 5 changes in youthful folly
-hexagram_04,6,hexagram_64,firming,expanding,hasya_shifting,sprout_transitioning,Line 6 changes in youthful folly
-hexagram_05,1,hexagram_60,yielding,contracting,shanta_shifting,growth_transitioning,Line 1 changes in waiting
-hexagram_05,2,hexagram_63,yielding,contracting,shanta_shifting,growth_transitioning,Line 2 changes in waiting
-hexagram_05,3,hexagram_48,yielding,contracting,shanta_shifting,growth_transitioning,Line 3 changes in waiting
-hexagram_05,4,hexagram_09,firming,expanding,shanta_shifting,growth_transitioning,Line 4 changes in waiting
-hexagram_05,5,hexagram_11,yielding,contracting,shanta_shifting,growth_transitioning,Line 5 changes in waiting
-hexagram_05,6,hexagram_43,firming,expanding,shanta_shifting,growth_transitioning,Line 6 changes in waiting
-hexagram_06,1,hexagram_44,firming,expanding,raudra_shifting,growth_transitioning,Line 1 changes in conflict
-hexagram_06,2,hexagram_12,yielding,contracting,raudra_shifting,growth_transitioning,Line 2 changes in conflict
-hexagram_06,3,hexagram_10,firming,expanding,raudra_shifting,growth_transitioning,Line 3 changes in conflict
-hexagram_06,4,hexagram_47,yielding,contracting,raudra_shifting,growth_transitioning,Line 4 changes in conflict
-hexagram_06,5,hexagram_64,yielding,contracting,raudra_shifting,growth_transitioning,Line 5 changes in conflict
-hexagram_06,6,hexagram_59,yielding,contracting,raudra_shifting,growth_transitioning,Line 6 changes in conflict
-hexagram_07,1,hexagram_39,firming,expanding,vira_shifting,growth_transitioning,Line 1 changes in the army
-hexagram_07,2,hexagram_29,firming,expanding,vira_shifting,growth_transitioning,Line 2 changes in the army
-hexagram_07,3,hexagram_03,firming,expanding,vira_shifting,growth_transitioning,Line 3 changes in the army
-hexagram_07,4,hexagram_20,firming,expanding,vira_shifting,growth_transitioning,Line 4 changes in the army
-hexagram_07,5,hexagram_02,yielding,contracting,vira_shifting,growth_transitioning,Line 5 changes in the army
-hexagram_07,6,hexagram_45,firming,expanding,vira_shifting,growth_transitioning,Line 6 changes in the army
-hexagram_08,1,hexagram_46,firming,expanding,shringara_shifting,growth_transitioning,Line 1 changes in holding together
-hexagram_08,2,hexagram_02,yielding,contracting,shringara_shifting,growth_transitioning,Line 2 changes in holding together
-hexagram_08,3,hexagram_19,firming,expanding,shringara_shifting,growth_transitioning,Line 3 changes in holding together
-hexagram_08,4,hexagram_04,firming,expanding,shringara_shifting,growth_transitioning,Line 4 changes in holding together
-hexagram_08,5,hexagram_29,firming,expanding,shringara_shifting,growth_transitioning,Line 5 changes in holding together
-hexagram_08,6,hexagram_40,firming,expanding,shringara_shifting,growth_transitioning,Line 6 changes in holding together
-hexagram_09,1,hexagram_61,yielding,contracting,shringara_shifting,growth_transitioning,Line 1 changes in taming power of the small
-hexagram_09,2,hexagram_37,yielding,contracting,shringara_shifting,growth_transitioning,Line 2 changes in taming power of the small
-hexagram_09,3,hexagram_57,yielding,contracting,shringara_shifting,growth_transitioning,Line 3 changes in taming power of the small
-hexagram_09,4,hexagram_05,yielding,contracting,shringara_shifting,growth_transitioning,Line 4 changes in taming power of the small
-hexagram_09,5,hexagram_26,yielding,contracting,shringara_shifting,growth_transitioning,Line 5 changes in taming power of the small
-hexagram_09,6,hexagram_01,firming,expanding,shringara_shifting,growth_transitioning,Line 6 changes in taming power of the small
-hexagram_10,1,hexagram_01,firming,expanding,bhayanaka_shifting,growth_transitioning,Line 1 changes in treading
-hexagram_10,2,hexagram_25,yielding,contracting,bhayanaka_shifting,growth_transitioning,Line 2 changes in treading
-hexagram_10,3,hexagram_06,yielding,contracting,bhayanaka_shifting,growth_transitioning,Line 3 changes in treading
-hexagram_10,4,hexagram_58,yielding,contracting,bhayanaka_shifting,growth_transitioning,Line 4 changes in treading
-hexagram_10,5,hexagram_38,yielding,contracting,bhayanaka_shifting,growth_transitioning,Line 5 changes in treading
-hexagram_10,6,hexagram_61,yielding,contracting,bhayanaka_shifting,growth_transitioning,Line 6 changes in treading
-hexagram_11,1,hexagram_19,yielding,contracting,shanta_shifting,bloom_transitioning,Line 1 changes in peace
-hexagram_11,2,hexagram_36,yielding,contracting,shanta_shifting,bloom_transitioning,Line 2 changes in peace
-hexagram_11,3,hexagram_46,yielding,contracting,shanta_shifting,bloom_transitioning,Line 3 changes in peace
-hexagram_11,4,hexagram_26,firming,expanding,shanta_shifting,bloom_transitioning,Line 4 changes in peace
-hexagram_11,5,hexagram_05,firming,expanding,shanta_shifting,bloom_transitioning,Line 5 changes in peace
-hexagram_11,6,hexagram_34,firming,expanding,shanta_shifting,bloom_transitioning,Line 6 changes in peace
-hexagram_12,1,hexagram_33,firming,expanding,bibhatsa_shifting,dormancy_transitioning,Line 1 changes in standstill
-hexagram_12,2,hexagram_06,firming,expanding,bibhatsa_shifting,dormancy_transitioning,Line 2 changes in standstill
-hexagram_12,3,hexagram_25,firming,expanding,bibhatsa_shifting,dormancy_transitioning,Line 3 changes in standstill
-hexagram_12,4,hexagram_45,yielding,contracting,bibhatsa_shifting,dormancy_transitioning,Line 4 changes in standstill
-hexagram_12,5,hexagram_35,yielding,contracting,bibhatsa_shifting,dormancy_transitioning,Line 5 changes in standstill
-hexagram_12,6,hexagram_20,yielding,contracting,bibhatsa_shifting,dormancy_transitioning,Line 6 changes in standstill
-hexagram_13,1,hexagram_25,yielding,contracting,shringara_shifting,bloom_transitioning,Line 1 changes in fellowship
-hexagram_13,2,hexagram_01,firming,expanding,shringara_shifting,bloom_transitioning,Line 2 changes in fellowship
-hexagram_13,3,hexagram_33,yielding,contracting,shringara_shifting,bloom_transitioning,Line 3 changes in fellowship
-hexagram_13,4,hexagram_49,yielding,contracting,shringara_shifting,bloom_transitioning,Line 4 changes in fellowship
-hexagram_13,5,hexagram_30,yielding,contracting,shringara_shifting,bloom_transitioning,Line 5 changes in fellowship
-hexagram_13,6,hexagram_37,yielding,contracting,shringara_shifting,bloom_transitioning,Line 6 changes in fellowship
-hexagram_14,1,hexagram_38,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 1 changes in great possession
-hexagram_14,2,hexagram_30,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 2 changes in great possession
-hexagram_14,3,hexagram_50,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 3 changes in great possession
-hexagram_14,4,hexagram_34,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 4 changes in great possession
-hexagram_14,5,hexagram_01,firming,expanding,adbhuta_shifting,bloom_transitioning,Line 5 changes in great possession
-hexagram_14,6,hexagram_26,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 6 changes in great possession
-hexagram_15,1,hexagram_02,yielding,contracting,shanta_shifting,fruit_transitioning,Line 1 changes in modesty
-hexagram_15,2,hexagram_46,firming,expanding,shanta_shifting,fruit_transitioning,Line 2 changes in modesty
-hexagram_15,3,hexagram_36,firming,expanding,shanta_shifting,fruit_transitioning,Line 3 changes in modesty
-hexagram_15,4,hexagram_52,firming,expanding,shanta_shifting,fruit_transitioning,Line 4 changes in modesty
-hexagram_15,5,hexagram_39,firming,expanding,shanta_shifting,fruit_transitioning,Line 5 changes in modesty
-hexagram_15,6,hexagram_62,firming,expanding,shanta_shifting,fruit_transitioning,Line 6 changes in modesty
-hexagram_16,1,hexagram_62,firming,expanding,hasya_shifting,bloom_transitioning,Line 1 changes in enthusiasm
-hexagram_16,2,hexagram_40,firming,expanding,hasya_shifting,bloom_transitioning,Line 2 changes in enthusiasm
-hexagram_16,3,hexagram_51,firming,expanding,hasya_shifting,bloom_transitioning,Line 3 changes in enthusiasm
-hexagram_16,4,hexagram_35,firming,expanding,hasya_shifting,bloom_transitioning,Line 4 changes in enthusiasm
-hexagram_16,5,hexagram_45,firming,expanding,hasya_shifting,bloom_transitioning,Line 5 changes in enthusiasm
-hexagram_16,6,hexagram_02,yielding,contracting,hasya_shifting,bloom_transitioning,Line 6 changes in enthusiasm
-hexagram_17,1,hexagram_49,firming,expanding,shringara_shifting,growth_transitioning,Line 1 changes in following
-hexagram_17,2,hexagram_58,firming,expanding,shringara_shifting,growth_transitioning,Line 2 changes in following
-hexagram_17,3,hexagram_45,yielding,contracting,shringara_shifting,growth_transitioning,Line 3 changes in following
-hexagram_17,4,hexagram_25,firming,expanding,shringara_shifting,growth_transitioning,Line 4 changes in following
-hexagram_17,5,hexagram_51,yielding,contracting,shringara_shifting,growth_transitioning,Line 5 changes in following
-hexagram_17,6,hexagram_03,yielding,contracting,shringara_shifting,growth_transitioning,Line 6 changes in following
-hexagram_18,1,hexagram_04,yielding,contracting,karuna_shifting,fruit_transitioning,Line 1 changes in work on the decayed
-hexagram_18,2,hexagram_52,yielding,contracting,karuna_shifting,fruit_transitioning,Line 2 changes in work on the decayed
-hexagram_18,3,hexagram_26,firming,expanding,karuna_shifting,fruit_transitioning,Line 3 changes in work on the decayed
-hexagram_18,4,hexagram_46,yielding,contracting,karuna_shifting,fruit_transitioning,Line 4 changes in work on the decayed
-hexagram_18,5,hexagram_57,firming,expanding,karuna_shifting,fruit_transitioning,Line 5 changes in work on the decayed
-hexagram_18,6,hexagram_50,firming,expanding,karuna_shifting,fruit_transitioning,Line 6 changes in work on the decayed
-hexagram_19,1,hexagram_11,firming,expanding,shringara_shifting,growth_transitioning,Line 1 changes in approach
-hexagram_19,2,hexagram_24,yielding,contracting,shringara_shifting,growth_transitioning,Line 2 changes in approach
-hexagram_19,3,hexagram_08,yielding,contracting,shringara_shifting,growth_transitioning,Line 3 changes in approach
-hexagram_19,4,hexagram_41,firming,expanding,shringara_shifting,growth_transitioning,Line 4 changes in approach
-hexagram_19,5,hexagram_60,firming,expanding,shringara_shifting,growth_transitioning,Line 5 changes in approach
-hexagram_19,6,hexagram_54,firming,expanding,shringara_shifting,growth_transitioning,Line 6 changes in approach
-hexagram_20,1,hexagram_53,firming,expanding,shanta_shifting,rest_transitioning,Line 1 changes in contemplation
-hexagram_20,2,hexagram_59,firming,expanding,shanta_shifting,rest_transitioning,Line 2 changes in contemplation
-hexagram_20,3,hexagram_42,firming,expanding,shanta_shifting,rest_transitioning,Line 3 changes in contemplation
-hexagram_20,4,hexagram_07,yielding,contracting,shanta_shifting,rest_transitioning,Line 4 changes in contemplation
-hexagram_20,5,hexagram_23,yielding,contracting,shanta_shifting,rest_transitioning,Line 5 changes in contemplation
-hexagram_20,6,hexagram_12,firming,expanding,shanta_shifting,rest_transitioning,Line 6 changes in contemplation
-hexagram_21,1,hexagram_30,firming,expanding,raudra_shifting,bloom_transitioning,Line 1 changes in biting through
-hexagram_21,2,hexagram_38,firming,expanding,raudra_shifting,bloom_transitioning,Line 2 changes in biting through
-hexagram_21,3,hexagram_35,yielding,contracting,raudra_shifting,bloom_transitioning,Line 3 changes in biting through
-hexagram_21,4,hexagram_51,yielding,contracting,raudra_shifting,bloom_transitioning,Line 4 changes in biting through
-hexagram_21,5,hexagram_25,firming,expanding,raudra_shifting,bloom_transitioning,Line 5 changes in biting through
-hexagram_21,6,hexagram_27,yielding,contracting,raudra_shifting,bloom_transitioning,Line 6 changes in biting through
-hexagram_22,1,hexagram_27,yielding,contracting,shringara_shifting,bloom_transitioning,Line 1 changes in grace
-hexagram_22,2,hexagram_26,firming,expanding,shringara_shifting,bloom_transitioning,Line 2 changes in grace
-hexagram_22,3,hexagram_52,yielding,contracting,shringara_shifting,bloom_transitioning,Line 3 changes in grace
-hexagram_22,4,hexagram_36,yielding,contracting,shringara_shifting,bloom_transitioning,Line 4 changes in grace
-hexagram_22,5,hexagram_37,firming,expanding,shringara_shifting,bloom_transitioning,Line 5 changes in grace
-hexagram_22,6,hexagram_30,firming,expanding,shringara_shifting,bloom_transitioning,Line 6 changes in grace
-hexagram_23,1,hexagram_52,firming,expanding,bhayanaka_shifting,dormancy_transitioning,Line 1 changes in splitting apart
-hexagram_23,2,hexagram_04,firming,expanding,bhayanaka_shifting,dormancy_transitioning,Line 2 changes in splitting apart
-hexagram_23,3,hexagram_27,firming,expanding,bhayanaka_shifting,dormancy_transitioning,Line 3 changes in splitting apart
-hexagram_23,4,hexagram_02,yielding,contracting,bhayanaka_shifting,dormancy_transitioning,Line 4 changes in splitting apart
-hexagram_23,5,hexagram_20,firming,expanding,bhayanaka_shifting,dormancy_transitioning,Line 5 changes in splitting apart
-hexagram_23,6,hexagram_35,firming,expanding,bhayanaka_shifting,dormancy_transitioning,Line 6 changes in splitting apart
-hexagram_24,1,hexagram_36,firming,expanding,adbhuta_shifting,seed_transitioning,Line 1 changes in return
-hexagram_24,2,hexagram_19,firming,expanding,adbhuta_shifting,seed_transitioning,Line 2 changes in return
-hexagram_24,3,hexagram_02,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 3 changes in return
-hexagram_24,4,hexagram_27,firming,expanding,adbhuta_shifting,seed_transitioning,Line 4 changes in return
-hexagram_24,5,hexagram_03,firming,expanding,adbhuta_shifting,seed_transitioning,Line 5 changes in return
-hexagram_24,6,hexagram_51,firming,expanding,adbhuta_shifting,seed_transitioning,Line 6 changes in return
-hexagram_25,1,hexagram_13,firming,expanding,adbhuta_shifting,seed_transitioning,Line 1 changes in innocence
-hexagram_25,2,hexagram_10,firming,expanding,adbhuta_shifting,seed_transitioning,Line 2 changes in innocence
-hexagram_25,3,hexagram_12,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 3 changes in innocence
-hexagram_25,4,hexagram_17,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 4 changes in innocence
-hexagram_25,5,hexagram_21,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 5 changes in innocence
-hexagram_25,6,hexagram_42,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 6 changes in innocence
-hexagram_26,1,hexagram_41,yielding,contracting,vira_shifting,rest_transitioning,Line 1 changes in taming power of the great
-hexagram_26,2,hexagram_22,yielding,contracting,vira_shifting,rest_transitioning,Line 2 changes in taming power of the great
-hexagram_26,3,hexagram_18,yielding,contracting,vira_shifting,rest_transitioning,Line 3 changes in taming power of the great
-hexagram_26,4,hexagram_11,yielding,contracting,vira_shifting,rest_transitioning,Line 4 changes in taming power of the great
-hexagram_26,5,hexagram_09,firming,expanding,vira_shifting,rest_transitioning,Line 5 changes in taming power of the great
-hexagram_26,6,hexagram_14,firming,expanding,vira_shifting,rest_transitioning,Line 6 changes in taming power of the great
-hexagram_27,1,hexagram_22,firming,expanding,shringara_shifting,growth_transitioning,Line 1 changes in nourishment
-hexagram_27,2,hexagram_41,firming,expanding,shringara_shifting,growth_transitioning,Line 2 changes in nourishment
-hexagram_27,3,hexagram_23,yielding,contracting,shringara_shifting,growth_transitioning,Line 3 changes in nourishment
-hexagram_27,4,hexagram_24,yielding,contracting,shringara_shifting,growth_transitioning,Line 4 changes in nourishment
-hexagram_27,5,hexagram_42,firming,expanding,shringara_shifting,growth_transitioning,Line 5 changes in nourishment
-hexagram_27,6,hexagram_21,firming,expanding,shringara_shifting,growth_transitioning,Line 6 changes in nourishment
-hexagram_28,1,hexagram_47,yielding,contracting,bhayanaka_shifting,bloom_transitioning,Line 1 changes in great preponderance
-hexagram_28,2,hexagram_31,yielding,contracting,bhayanaka_shifting,bloom_transitioning,Line 2 changes in great preponderance
-hexagram_28,3,hexagram_43,firming,expanding,bhayanaka_shifting,bloom_transitioning,Line 3 changes in great preponderance
-hexagram_28,4,hexagram_44,firming,expanding,bhayanaka_shifting,bloom_transitioning,Line 4 changes in great preponderance
-hexagram_28,5,hexagram_32,yielding,contracting,bhayanaka_shifting,bloom_transitioning,Line 5 changes in great preponderance
-hexagram_28,6,hexagram_48,yielding,contracting,bhayanaka_shifting,bloom_transitioning,Line 6 changes in great preponderance
-hexagram_29,1,hexagram_48,firming,expanding,bhayanaka_shifting,dormancy_transitioning,Line 1 changes in the abysmal
-hexagram_29,2,hexagram_07,yielding,contracting,bhayanaka_shifting,dormancy_transitioning,Line 2 changes in the abysmal
-hexagram_29,3,hexagram_60,firming,expanding,bhayanaka_shifting,dormancy_transitioning,Line 3 changes in the abysmal
-hexagram_29,4,hexagram_59,firming,expanding,bhayanaka_shifting,dormancy_transitioning,Line 4 changes in the abysmal
-hexagram_29,5,hexagram_08,yielding,contracting,bhayanaka_shifting,dormancy_transitioning,Line 5 changes in the abysmal
-hexagram_29,6,hexagram_47,firming,expanding,bhayanaka_shifting,dormancy_transitioning,Line 6 changes in the abysmal
-hexagram_30,1,hexagram_21,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 1 changes in the clinging
-hexagram_30,2,hexagram_14,firming,expanding,adbhuta_shifting,bloom_transitioning,Line 2 changes in the clinging
-hexagram_30,3,hexagram_56,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 3 changes in the clinging
-hexagram_30,4,hexagram_55,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 4 changes in the clinging
-hexagram_30,5,hexagram_13,firming,expanding,adbhuta_shifting,bloom_transitioning,Line 5 changes in the clinging
-hexagram_30,6,hexagram_22,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 6 changes in the clinging
-hexagram_31,1,hexagram_45,yielding,contracting,shringara_shifting,bloom_transitioning,Line 1 changes in influence
-hexagram_31,2,hexagram_28,firming,expanding,shringara_shifting,bloom_transitioning,Line 2 changes in influence
-hexagram_31,3,hexagram_49,firming,expanding,shringara_shifting,bloom_transitioning,Line 3 changes in influence
-hexagram_31,4,hexagram_33,firming,expanding,shringara_shifting,bloom_transitioning,Line 4 changes in influence
-hexagram_31,5,hexagram_62,yielding,contracting,shringara_shifting,bloom_transitioning,Line 5 changes in influence
-hexagram_31,6,hexagram_39,yielding,contracting,shringara_shifting,bloom_transitioning,Line 6 changes in influence
-hexagram_32,1,hexagram_40,yielding,contracting,shanta_shifting,growth_transitioning,Line 1 changes in duration
-hexagram_32,2,hexagram_62,yielding,contracting,shanta_shifting,growth_transitioning,Line 2 changes in duration
-hexagram_32,3,hexagram_34,firming,expanding,shanta_shifting,growth_transitioning,Line 3 changes in duration
-hexagram_32,4,hexagram_50,firming,expanding,shanta_shifting,growth_transitioning,Line 4 changes in duration
-hexagram_32,5,hexagram_28,firming,expanding,shanta_shifting,growth_transitioning,Line 5 changes in duration
-hexagram_32,6,hexagram_46,yielding,contracting,shanta_shifting,growth_transitioning,Line 6 changes in duration
-hexagram_33,1,hexagram_12,yielding,contracting,shanta_shifting,dormancy_transitioning,Line 1 changes in retreat
-hexagram_33,2,hexagram_44,firming,expanding,shanta_shifting,dormancy_transitioning,Line 2 changes in retreat
-hexagram_33,3,hexagram_13,firming,expanding,shanta_shifting,dormancy_transitioning,Line 3 changes in retreat
-hexagram_33,4,hexagram_31,yielding,contracting,shanta_shifting,dormancy_transitioning,Line 4 changes in retreat
-hexagram_33,5,hexagram_56,yielding,contracting,shanta_shifting,dormancy_transitioning,Line 5 changes in retreat
-hexagram_33,6,hexagram_53,yielding,contracting,shanta_shifting,dormancy_transitioning,Line 6 changes in retreat
-hexagram_34,1,hexagram_54,yielding,contracting,vira_shifting,bloom_transitioning,Line 1 changes in great power
-hexagram_34,2,hexagram_55,yielding,contracting,vira_shifting,bloom_transitioning,Line 2 changes in great power
-hexagram_34,3,hexagram_32,yielding,contracting,vira_shifting,bloom_transitioning,Line 3 changes in great power
-hexagram_34,4,hexagram_14,firming,expanding,vira_shifting,bloom_transitioning,Line 4 changes in great power
-hexagram_34,5,hexagram_43,firming,expanding,vira_shifting,bloom_transitioning,Line 5 changes in great power
-hexagram_34,6,hexagram_11,yielding,contracting,vira_shifting,bloom_transitioning,Line 6 changes in great power
-hexagram_35,1,hexagram_56,firming,expanding,adbhuta_shifting,growth_transitioning,Line 1 changes in progress
-hexagram_35,2,hexagram_64,firming,expanding,adbhuta_shifting,growth_transitioning,Line 2 changes in progress
-hexagram_35,3,hexagram_21,firming,expanding,adbhuta_shifting,growth_transitioning,Line 3 changes in progress
-hexagram_35,4,hexagram_16,yielding,contracting,adbhuta_shifting,growth_transitioning,Line 4 changes in progress
-hexagram_35,5,hexagram_12,firming,expanding,adbhuta_shifting,growth_transitioning,Line 5 changes in progress
-hexagram_35,6,hexagram_23,yielding,contracting,adbhuta_shifting,growth_transitioning,Line 6 changes in progress
-hexagram_36,1,hexagram_24,yielding,contracting,karuna_shifting,dormancy_transitioning,Line 1 changes in darkening of the light
-hexagram_36,2,hexagram_11,firming,expanding,karuna_shifting,dormancy_transitioning,Line 2 changes in darkening of the light
-hexagram_36,3,hexagram_15,yielding,contracting,karuna_shifting,dormancy_transitioning,Line 3 changes in darkening of the light
-hexagram_36,4,hexagram_22,firming,expanding,karuna_shifting,dormancy_transitioning,Line 4 changes in darkening of the light
-hexagram_36,5,hexagram_63,firming,expanding,karuna_shifting,dormancy_transitioning,Line 5 changes in darkening of the light
-hexagram_36,6,hexagram_55,firming,expanding,karuna_shifting,dormancy_transitioning,Line 6 changes in darkening of the light
-hexagram_37,1,hexagram_42,yielding,contracting,shringara_shifting,growth_transitioning,Line 1 changes in the family
-hexagram_37,2,hexagram_09,firming,expanding,shringara_shifting,growth_transitioning,Line 2 changes in the family
-hexagram_37,3,hexagram_53,yielding,contracting,shringara_shifting,growth_transitioning,Line 3 changes in the family
-hexagram_37,4,hexagram_63,yielding,contracting,shringara_shifting,growth_transitioning,Line 4 changes in the family
-hexagram_37,5,hexagram_22,yielding,contracting,shringara_shifting,growth_transitioning,Line 5 changes in the family
-hexagram_37,6,hexagram_13,firming,expanding,shringara_shifting,growth_transitioning,Line 6 changes in the family
-hexagram_38,1,hexagram_14,firming,expanding,raudra_shifting,bloom_transitioning,Line 1 changes in opposition
-hexagram_38,2,hexagram_21,yielding,contracting,raudra_shifting,bloom_transitioning,Line 2 changes in opposition
-hexagram_38,3,hexagram_64,yielding,contracting,raudra_shifting,bloom_transitioning,Line 3 changes in opposition
-hexagram_38,4,hexagram_54,yielding,contracting,raudra_shifting,bloom_transitioning,Line 4 changes in opposition
-hexagram_38,5,hexagram_10,firming,expanding,raudra_shifting,bloom_transitioning,Line 5 changes in opposition
-hexagram_38,6,hexagram_41,yielding,contracting,raudra_shifting,bloom_transitioning,Line 6 changes in opposition
-hexagram_39,1,hexagram_07,yielding,contracting,karuna_shifting,dormancy_transitioning,Line 1 changes in obstruction
-hexagram_39,2,hexagram_48,firming,expanding,karuna_shifting,dormancy_transitioning,Line 2 changes in obstruction
-hexagram_39,3,hexagram_63,firming,expanding,karuna_shifting,dormancy_transitioning,Line 3 changes in obstruction
-hexagram_39,4,hexagram_53,firming,expanding,karuna_shifting,dormancy_transitioning,Line 4 changes in obstruction
-hexagram_39,5,hexagram_15,yielding,contracting,karuna_shifting,dormancy_transitioning,Line 5 changes in obstruction
-hexagram_39,6,hexagram_31,firming,expanding,karuna_shifting,dormancy_transitioning,Line 6 changes in obstruction
-hexagram_40,1,hexagram_32,firming,expanding,hasya_shifting,seed_transitioning,Line 1 changes in deliverance
-hexagram_40,2,hexagram_16,yielding,contracting,hasya_shifting,seed_transitioning,Line 2 changes in deliverance
-hexagram_40,3,hexagram_54,firming,expanding,hasya_shifting,seed_transitioning,Line 3 changes in deliverance
-hexagram_40,4,hexagram_64,firming,expanding,hasya_shifting,seed_transitioning,Line 4 changes in deliverance
-hexagram_40,5,hexagram_47,firming,expanding,hasya_shifting,seed_transitioning,Line 5 changes in deliverance
-hexagram_40,6,hexagram_08,yielding,contracting,hasya_shifting,seed_transitioning,Line 6 changes in deliverance
-hexagram_41,1,hexagram_26,firming,expanding,karuna_shifting,fruit_transitioning,Line 1 changes in decrease
-hexagram_41,2,hexagram_27,yielding,contracting,karuna_shifting,fruit_transitioning,Line 2 changes in decrease
-hexagram_41,3,hexagram_04,yielding,contracting,karuna_shifting,fruit_transitioning,Line 3 changes in decrease
-hexagram_41,4,hexagram_19,yielding,contracting,karuna_shifting,fruit_transitioning,Line 4 changes in decrease
-hexagram_41,5,hexagram_61,firming,expanding,karuna_shifting,fruit_transitioning,Line 5 changes in decrease
-hexagram_41,6,hexagram_38,firming,expanding,karuna_shifting,fruit_transitioning,Line 6 changes in decrease
-hexagram_42,1,hexagram_37,firming,expanding,adbhuta_shifting,growth_transitioning,Line 1 changes in increase
-hexagram_42,2,hexagram_61,firming,expanding,adbhuta_shifting,growth_transitioning,Line 2 changes in increase
-hexagram_42,3,hexagram_20,yielding,contracting,adbhuta_shifting,growth_transitioning,Line 3 changes in increase
-hexagram_42,4,hexagram_03,yielding,contracting,adbhuta_shifting,growth_transitioning,Line 4 changes in increase
-hexagram_42,5,hexagram_27,yielding,contracting,adbhuta_shifting,growth_transitioning,Line 5 changes in increase
-hexagram_42,6,hexagram_25,firming,expanding,adbhuta_shifting,growth_transitioning,Line 6 changes in increase
-hexagram_43,1,hexagram_58,yielding,contracting,vira_shifting,bloom_transitioning,Line 1 changes in breakthrough
-hexagram_43,2,hexagram_49,yielding,contracting,vira_shifting,bloom_transitioning,Line 2 changes in breakthrough
-hexagram_43,3,hexagram_28,yielding,contracting,vira_shifting,bloom_transitioning,Line 3 changes in breakthrough
-hexagram_43,4,hexagram_01,firming,expanding,vira_shifting,bloom_transitioning,Line 4 changes in breakthrough
-hexagram_43,5,hexagram_34,yielding,contracting,vira_shifting,bloom_transitioning,Line 5 changes in breakthrough
-hexagram_43,6,hexagram_05,yielding,contracting,vira_shifting,bloom_transitioning,Line 6 changes in breakthrough
-hexagram_44,1,hexagram_06,yielding,contracting,shringara_shifting,bloom_transitioning,Line 1 changes in coming to meet
-hexagram_44,2,hexagram_33,yielding,contracting,shringara_shifting,bloom_transitioning,Line 2 changes in coming to meet
-hexagram_44,3,hexagram_01,firming,expanding,shringara_shifting,bloom_transitioning,Line 3 changes in coming to meet
-hexagram_44,4,hexagram_28,yielding,contracting,shringara_shifting,bloom_transitioning,Line 4 changes in coming to meet
-hexagram_44,5,hexagram_50,yielding,contracting,shringara_shifting,bloom_transitioning,Line 5 changes in coming to meet
-hexagram_44,6,hexagram_57,yielding,contracting,shringara_shifting,bloom_transitioning,Line 6 changes in coming to meet
-hexagram_45,1,hexagram_31,firming,expanding,shringara_shifting,growth_transitioning,Line 1 changes in gathering together
-hexagram_45,2,hexagram_47,firming,expanding,shringara_shifting,growth_transitioning,Line 2 changes in gathering together
-hexagram_45,3,hexagram_17,firming,expanding,shringara_shifting,growth_transitioning,Line 3 changes in gathering together
-hexagram_45,4,hexagram_12,firming,expanding,shringara_shifting,growth_transitioning,Line 4 changes in gathering together
-hexagram_45,5,hexagram_16,yielding,contracting,shringara_shifting,growth_transitioning,Line 5 changes in gathering together
-hexagram_45,6,hexagram_07,yielding,contracting,shringara_shifting,growth_transitioning,Line 6 changes in gathering together
-hexagram_46,1,hexagram_08,yielding,contracting,vira_shifting,growth_transitioning,Line 1 changes in pushing upward
-hexagram_46,2,hexagram_15,yielding,contracting,vira_shifting,growth_transitioning,Line 2 changes in pushing upward
-hexagram_46,3,hexagram_11,firming,expanding,vira_shifting,growth_transitioning,Line 3 changes in pushing upward
-hexagram_46,4,hexagram_18,firming,expanding,vira_shifting,growth_transitioning,Line 4 changes in pushing upward
-hexagram_46,5,hexagram_48,firming,expanding,vira_shifting,growth_transitioning,Line 5 changes in pushing upward
-hexagram_46,6,hexagram_32,firming,expanding,vira_shifting,growth_transitioning,Line 6 changes in pushing upward
-hexagram_47,1,hexagram_28,firming,expanding,karuna_shifting,dormancy_transitioning,Line 1 changes in oppression
-hexagram_47,2,hexagram_45,yielding,contracting,karuna_shifting,dormancy_transitioning,Line 2 changes in oppression
-hexagram_47,3,hexagram_58,firming,expanding,karuna_shifting,dormancy_transitioning,Line 3 changes in oppression
-hexagram_47,4,hexagram_06,firming,expanding,karuna_shifting,dormancy_transitioning,Line 4 changes in oppression
-hexagram_47,5,hexagram_40,yielding,contracting,karuna_shifting,dormancy_transitioning,Line 5 changes in oppression
-hexagram_47,6,hexagram_29,yielding,contracting,karuna_shifting,dormancy_transitioning,Line 6 changes in oppression
-hexagram_48,1,hexagram_29,yielding,contracting,shanta_shifting,rest_transitioning,Line 1 changes in the well
-hexagram_48,2,hexagram_39,yielding,contracting,shanta_shifting,rest_transitioning,Line 2 changes in the well
-hexagram_48,3,hexagram_05,firming,expanding,shanta_shifting,rest_transitioning,Line 3 changes in the well
-hexagram_48,4,hexagram_57,firming,expanding,shanta_shifting,rest_transitioning,Line 4 changes in the well
-hexagram_48,5,hexagram_46,yielding,contracting,shanta_shifting,rest_transitioning,Line 5 changes in the well
-hexagram_48,6,hexagram_28,firming,expanding,shanta_shifting,rest_transitioning,Line 6 changes in the well
-hexagram_49,1,hexagram_17,yielding,contracting,raudra_shifting,seed_transitioning,Line 1 changes in revolution
-hexagram_49,2,hexagram_43,firming,expanding,raudra_shifting,seed_transitioning,Line 2 changes in revolution
-hexagram_49,3,hexagram_31,yielding,contracting,raudra_shifting,seed_transitioning,Line 3 changes in revolution
-hexagram_49,4,hexagram_13,firming,expanding,raudra_shifting,seed_transitioning,Line 4 changes in revolution
-hexagram_49,5,hexagram_55,yielding,contracting,raudra_shifting,seed_transitioning,Line 5 changes in revolution
-hexagram_49,6,hexagram_63,yielding,contracting,raudra_shifting,seed_transitioning,Line 6 changes in revolution
-hexagram_50,1,hexagram_64,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 1 changes in the caldron
-hexagram_50,2,hexagram_56,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 2 changes in the caldron
-hexagram_50,3,hexagram_14,firming,expanding,adbhuta_shifting,bloom_transitioning,Line 3 changes in the caldron
-hexagram_50,4,hexagram_32,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 4 changes in the caldron
-hexagram_50,5,hexagram_44,firming,expanding,adbhuta_shifting,bloom_transitioning,Line 5 changes in the caldron
-hexagram_50,6,hexagram_18,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 6 changes in the caldron
-hexagram_51,1,hexagram_55,firming,expanding,bhayanaka_shifting,seed_transitioning,Line 1 changes in the arousing
-hexagram_51,2,hexagram_54,firming,expanding,bhayanaka_shifting,seed_transitioning,Line 2 changes in the arousing
-hexagram_51,3,hexagram_16,yielding,contracting,bhayanaka_shifting,seed_transitioning,Line 3 changes in the arousing
-hexagram_51,4,hexagram_21,firming,expanding,bhayanaka_shifting,seed_transitioning,Line 4 changes in the arousing
-hexagram_51,5,hexagram_17,firming,expanding,bhayanaka_shifting,seed_transitioning,Line 5 changes in the arousing
-hexagram_51,6,hexagram_24,yielding,contracting,bhayanaka_shifting,seed_transitioning,Line 6 changes in the arousing
-hexagram_52,1,hexagram_23,yielding,contracting,shanta_shifting,rest_transitioning,Line 1 changes in keeping still
-hexagram_52,2,hexagram_18,firming,expanding,shanta_shifting,rest_transitioning,Line 2 changes in keeping still
-hexagram_52,3,hexagram_22,firming,expanding,shanta_shifting,rest_transitioning,Line 3 changes in keeping still
-hexagram_52,4,hexagram_15,yielding,contracting,shanta_shifting,rest_transitioning,Line 4 changes in keeping still
-hexagram_52,5,hexagram_53,firming,expanding,shanta_shifting,rest_transitioning,Line 5 changes in keeping still
-hexagram_52,6,hexagram_56,firming,expanding,shanta_shifting,rest_transitioning,Line 6 changes in keeping still
-hexagram_53,1,hexagram_20,yielding,contracting,shringara_shifting,growth_transitioning,Line 1 changes in development
-hexagram_53,2,hexagram_57,firming,expanding,shringara_shifting,growth_transitioning,Line 2 changes in development
-hexagram_53,3,hexagram_37,firming,expanding,shringara_shifting,growth_transitioning,Line 3 changes in development
-hexagram_53,4,hexagram_39,yielding,contracting,shringara_shifting,growth_transitioning,Line 4 changes in development
-hexagram_53,5,hexagram_52,yielding,contracting,shringara_shifting,growth_transitioning,Line 5 changes in development
-hexagram_53,6,hexagram_33,firming,expanding,shringara_shifting,growth_transitioning,Line 6 changes in development
-hexagram_54,1,hexagram_34,firming,expanding,karuna_shifting,growth_transitioning,Line 1 changes in the marrying maiden
-hexagram_54,2,hexagram_51,yielding,contracting,karuna_shifting,growth_transitioning,Line 2 changes in the marrying maiden
-hexagram_54,3,hexagram_40,yielding,contracting,karuna_shifting,growth_transitioning,Line 3 changes in the marrying maiden
-hexagram_54,4,hexagram_38,firming,expanding,karuna_shifting,growth_transitioning,Line 4 changes in the marrying maiden
-hexagram_54,5,hexagram_58,firming,expanding,karuna_shifting,growth_transitioning,Line 5 changes in the marrying maiden
-hexagram_54,6,hexagram_19,yielding,contracting,karuna_shifting,growth_transitioning,Line 6 changes in the marrying maiden
-hexagram_55,1,hexagram_51,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 1 changes in abundance
-hexagram_55,2,hexagram_34,firming,expanding,adbhuta_shifting,bloom_transitioning,Line 2 changes in abundance
-hexagram_55,3,hexagram_62,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 3 changes in abundance
-hexagram_55,4,hexagram_30,firming,expanding,adbhuta_shifting,bloom_transitioning,Line 4 changes in abundance
-hexagram_55,5,hexagram_49,firming,expanding,adbhuta_shifting,bloom_transitioning,Line 5 changes in abundance
-hexagram_55,6,hexagram_36,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 6 changes in abundance
-hexagram_56,1,hexagram_35,yielding,contracting,karuna_shifting,growth_transitioning,Line 1 changes in the wanderer
-hexagram_56,2,hexagram_50,firming,expanding,karuna_shifting,growth_transitioning,Line 2 changes in the wanderer
-hexagram_56,3,hexagram_30,firming,expanding,karuna_shifting,growth_transitioning,Line 3 changes in the wanderer
-hexagram_56,4,hexagram_62,yielding,contracting,karuna_shifting,growth_transitioning,Line 4 changes in the wanderer
-hexagram_56,5,hexagram_33,firming,expanding,karuna_shifting,growth_transitioning,Line 5 changes in the wanderer
-hexagram_56,6,hexagram_52,yielding,contracting,karuna_shifting,growth_transitioning,Line 6 changes in the wanderer
-hexagram_57,1,hexagram_59,yielding,contracting,shringara_shifting,growth_transitioning,Line 1 changes in the gentle
-hexagram_57,2,hexagram_53,yielding,contracting,shringara_shifting,growth_transitioning,Line 2 changes in the gentle
-hexagram_57,3,hexagram_09,firming,expanding,shringara_shifting,growth_transitioning,Line 3 changes in the gentle
-hexagram_57,4,hexagram_48,yielding,contracting,shringara_shifting,growth_transitioning,Line 4 changes in the gentle
-hexagram_57,5,hexagram_18,yielding,contracting,shringara_shifting,growth_transitioning,Line 5 changes in the gentle
-hexagram_57,6,hexagram_44,firming,expanding,shringara_shifting,growth_transitioning,Line 6 changes in the gentle
-hexagram_58,1,hexagram_43,firming,expanding,hasya_shifting,bloom_transitioning,Line 1 changes in the joyous
-hexagram_58,2,hexagram_17,yielding,contracting,hasya_shifting,bloom_transitioning,Line 2 changes in the joyous
-hexagram_58,3,hexagram_47,yielding,contracting,hasya_shifting,bloom_transitioning,Line 3 changes in the joyous
-hexagram_58,4,hexagram_10,firming,expanding,hasya_shifting,bloom_transitioning,Line 4 changes in the joyous
-hexagram_58,5,hexagram_54,yielding,contracting,hasya_shifting,bloom_transitioning,Line 5 changes in the joyous
-hexagram_58,6,hexagram_60,yielding,contracting,hasya_shifting,bloom_transitioning,Line 6 changes in the joyous
-hexagram_59,1,hexagram_57,firming,expanding,shanta_shifting,seed_transitioning,Line 1 changes in dispersion
-hexagram_59,2,hexagram_20,yielding,contracting,shanta_shifting,seed_transitioning,Line 2 changes in dispersion
-hexagram_59,3,hexagram_61,firming,expanding,shanta_shifting,seed_transitioning,Line 3 changes in dispersion
-hexagram_59,4,hexagram_29,yielding,contracting,shanta_shifting,seed_transitioning,Line 4 changes in dispersion
-hexagram_59,5,hexagram_04,yielding,contracting,shanta_shifting,seed_transitioning,Line 5 changes in dispersion
-hexagram_59,6,hexagram_06,firming,expanding,shanta_shifting,seed_transitioning,Line 6 changes in dispersion
-hexagram_60,1,hexagram_05,firming,expanding,shanta_shifting,rest_transitioning,Line 1 changes in limitation
-hexagram_60,2,hexagram_03,yielding,contracting,shanta_shifting,rest_transitioning,Line 2 changes in limitation
-hexagram_60,3,hexagram_29,yielding,contracting,shanta_shifting,rest_transitioning,Line 3 changes in limitation
-hexagram_60,4,hexagram_61,firming,expanding,shanta_shifting,rest_transitioning,Line 4 changes in limitation
-hexagram_60,5,hexagram_19,yielding,contracting,shanta_shifting,rest_transitioning,Line 5 changes in limitation
-hexagram_60,6,hexagram_58,firming,expanding,shanta_shifting,rest_transitioning,Line 6 changes in limitation
-hexagram_61,1,hexagram_09,firming,expanding,shanta_shifting,rest_transitioning,Line 1 changes in inner truth
-hexagram_61,2,hexagram_42,yielding,contracting,shanta_shifting,rest_transitioning,Line 2 changes in inner truth
-hexagram_61,3,hexagram_59,yielding,contracting,shanta_shifting,rest_transitioning,Line 3 changes in inner truth
-hexagram_61,4,hexagram_60,yielding,contracting,shanta_shifting,rest_transitioning,Line 4 changes in inner truth
-hexagram_61,5,hexagram_41,yielding,contracting,shanta_shifting,rest_transitioning,Line 5 changes in inner truth
-hexagram_61,6,hexagram_10,firming,expanding,shanta_shifting,rest_transitioning,Line 6 changes in inner truth
-hexagram_62,1,hexagram_16,yielding,contracting,karuna_shifting,growth_transitioning,Line 1 changes in small preponderance
-hexagram_62,2,hexagram_32,firming,expanding,karuna_shifting,growth_transitioning,Line 2 changes in small preponderance
-hexagram_62,3,hexagram_55,firming,expanding,karuna_shifting,growth_transitioning,Line 3 changes in small preponderance
-hexagram_62,4,hexagram_56,firming,expanding,karuna_shifting,growth_transitioning,Line 4 changes in small preponderance
-hexagram_62,5,hexagram_31,firming,expanding,karuna_shifting,growth_transitioning,Line 5 changes in small preponderance
-hexagram_62,6,hexagram_15,yielding,contracting,karuna_shifting,growth_transitioning,Line 6 changes in small preponderance
-hexagram_63,1,hexagram_03,yielding,contracting,shanta_shifting,fruit_transitioning,Line 1 changes in after completion
-hexagram_63,2,hexagram_05,firming,expanding,shanta_shifting,fruit_transitioning,Line 2 changes in after completion
-hexagram_63,3,hexagram_39,yielding,contracting,shanta_shifting,fruit_transitioning,Line 3 changes in after completion
-hexagram_63,4,hexagram_37,firming,expanding,shanta_shifting,fruit_transitioning,Line 4 changes in after completion
-hexagram_63,5,hexagram_36,yielding,contracting,shanta_shifting,fruit_transitioning,Line 5 changes in after completion
-hexagram_63,6,hexagram_49,firming,expanding,shanta_shifting,fruit_transitioning,Line 6 changes in after completion
-hexagram_64,1,hexagram_50,firming,expanding,adbhuta_shifting,seed_transitioning,Line 1 changes in before completion
-hexagram_64,2,hexagram_35,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 2 changes in before completion
-hexagram_64,3,hexagram_38,firming,expanding,adbhuta_shifting,seed_transitioning,Line 3 changes in before completion
-hexagram_64,4,hexagram_40,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 4 changes in before completion
-hexagram_64,5,hexagram_06,firming,expanding,adbhuta_shifting,seed_transitioning,Line 5 changes in before completion
-hexagram_64,6,hexagram_04,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 6 changes in before completion
+from_hexagram,from_line,to_hexagram,transition_quality,field_movement,rasa_shift,lifecycle_shift,notes,attestation_status
+hexagram_01,1,hexagram_10,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 1 changes in the creative,inferred_coherent
+hexagram_01,2,hexagram_13,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 2 changes in the creative,inferred_coherent
+hexagram_01,3,hexagram_44,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 3 changes in the creative,inferred_coherent
+hexagram_01,4,hexagram_43,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 4 changes in the creative,inferred_coherent
+hexagram_01,5,hexagram_14,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 5 changes in the creative,inferred_coherent
+hexagram_01,6,hexagram_09,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 6 changes in the creative,inferred_coherent
+hexagram_02,1,hexagram_15,firming,expanding,shanta_shifting,harvest_transitioning,Line 1 changes in the receptive,inferred_coherent
+hexagram_02,2,hexagram_08,firming,expanding,shanta_shifting,harvest_transitioning,Line 2 changes in the receptive,inferred_coherent
+hexagram_02,3,hexagram_24,firming,expanding,shanta_shifting,harvest_transitioning,Line 3 changes in the receptive,inferred_coherent
+hexagram_02,4,hexagram_23,firming,expanding,shanta_shifting,harvest_transitioning,Line 4 changes in the receptive,inferred_coherent
+hexagram_02,5,hexagram_07,firming,expanding,shanta_shifting,harvest_transitioning,Line 5 changes in the receptive,inferred_coherent
+hexagram_02,6,hexagram_16,firming,expanding,shanta_shifting,harvest_transitioning,Line 6 changes in the receptive,inferred_coherent
+hexagram_03,1,hexagram_63,firming,expanding,karuna_shifting,sprout_transitioning,Line 1 changes in difficulty at the beginning,inferred_coherent
+hexagram_03,2,hexagram_60,firming,expanding,karuna_shifting,sprout_transitioning,Line 2 changes in difficulty at the beginning,inferred_coherent
+hexagram_03,3,hexagram_07,yielding,contracting,karuna_shifting,sprout_transitioning,Line 3 changes in difficulty at the beginning,inferred_coherent
+hexagram_03,4,hexagram_42,firming,expanding,karuna_shifting,sprout_transitioning,Line 4 changes in difficulty at the beginning,inferred_coherent
+hexagram_03,5,hexagram_24,yielding,contracting,karuna_shifting,sprout_transitioning,Line 5 changes in difficulty at the beginning,inferred_coherent
+hexagram_03,6,hexagram_17,firming,expanding,karuna_shifting,sprout_transitioning,Line 6 changes in difficulty at the beginning,inferred_coherent
+hexagram_04,1,hexagram_18,firming,expanding,hasya_shifting,sprout_transitioning,Line 1 changes in youthful folly,inferred_coherent
+hexagram_04,2,hexagram_23,yielding,contracting,hasya_shifting,sprout_transitioning,Line 2 changes in youthful folly,inferred_coherent
+hexagram_04,3,hexagram_41,firming,expanding,hasya_shifting,sprout_transitioning,Line 3 changes in youthful folly,inferred_coherent
+hexagram_04,4,hexagram_08,yielding,contracting,hasya_shifting,sprout_transitioning,Line 4 changes in youthful folly,inferred_coherent
+hexagram_04,5,hexagram_59,firming,expanding,hasya_shifting,sprout_transitioning,Line 5 changes in youthful folly,inferred_coherent
+hexagram_04,6,hexagram_64,firming,expanding,hasya_shifting,sprout_transitioning,Line 6 changes in youthful folly,inferred_coherent
+hexagram_05,1,hexagram_60,yielding,contracting,shanta_shifting,growth_transitioning,Line 1 changes in waiting,inferred_coherent
+hexagram_05,2,hexagram_63,yielding,contracting,shanta_shifting,growth_transitioning,Line 2 changes in waiting,inferred_coherent
+hexagram_05,3,hexagram_48,yielding,contracting,shanta_shifting,growth_transitioning,Line 3 changes in waiting,inferred_coherent
+hexagram_05,4,hexagram_09,firming,expanding,shanta_shifting,growth_transitioning,Line 4 changes in waiting,inferred_coherent
+hexagram_05,5,hexagram_11,yielding,contracting,shanta_shifting,growth_transitioning,Line 5 changes in waiting,inferred_coherent
+hexagram_05,6,hexagram_43,firming,expanding,shanta_shifting,growth_transitioning,Line 6 changes in waiting,inferred_coherent
+hexagram_06,1,hexagram_44,firming,expanding,raudra_shifting,growth_transitioning,Line 1 changes in conflict,inferred_coherent
+hexagram_06,2,hexagram_12,yielding,contracting,raudra_shifting,growth_transitioning,Line 2 changes in conflict,inferred_coherent
+hexagram_06,3,hexagram_10,firming,expanding,raudra_shifting,growth_transitioning,Line 3 changes in conflict,inferred_coherent
+hexagram_06,4,hexagram_47,yielding,contracting,raudra_shifting,growth_transitioning,Line 4 changes in conflict,inferred_coherent
+hexagram_06,5,hexagram_64,yielding,contracting,raudra_shifting,growth_transitioning,Line 5 changes in conflict,inferred_coherent
+hexagram_06,6,hexagram_59,yielding,contracting,raudra_shifting,growth_transitioning,Line 6 changes in conflict,inferred_coherent
+hexagram_07,1,hexagram_39,firming,expanding,vira_shifting,growth_transitioning,Line 1 changes in the army,inferred_coherent
+hexagram_07,2,hexagram_29,firming,expanding,vira_shifting,growth_transitioning,Line 2 changes in the army,inferred_coherent
+hexagram_07,3,hexagram_03,firming,expanding,vira_shifting,growth_transitioning,Line 3 changes in the army,inferred_coherent
+hexagram_07,4,hexagram_20,firming,expanding,vira_shifting,growth_transitioning,Line 4 changes in the army,inferred_coherent
+hexagram_07,5,hexagram_02,yielding,contracting,vira_shifting,growth_transitioning,Line 5 changes in the army,inferred_coherent
+hexagram_07,6,hexagram_45,firming,expanding,vira_shifting,growth_transitioning,Line 6 changes in the army,inferred_coherent
+hexagram_08,1,hexagram_46,firming,expanding,shringara_shifting,growth_transitioning,Line 1 changes in holding together,inferred_coherent
+hexagram_08,2,hexagram_02,yielding,contracting,shringara_shifting,growth_transitioning,Line 2 changes in holding together,inferred_coherent
+hexagram_08,3,hexagram_19,firming,expanding,shringara_shifting,growth_transitioning,Line 3 changes in holding together,inferred_coherent
+hexagram_08,4,hexagram_04,firming,expanding,shringara_shifting,growth_transitioning,Line 4 changes in holding together,inferred_coherent
+hexagram_08,5,hexagram_29,firming,expanding,shringara_shifting,growth_transitioning,Line 5 changes in holding together,inferred_coherent
+hexagram_08,6,hexagram_40,firming,expanding,shringara_shifting,growth_transitioning,Line 6 changes in holding together,inferred_coherent
+hexagram_09,1,hexagram_61,yielding,contracting,shringara_shifting,growth_transitioning,Line 1 changes in taming power of the small,inferred_coherent
+hexagram_09,2,hexagram_37,yielding,contracting,shringara_shifting,growth_transitioning,Line 2 changes in taming power of the small,inferred_coherent
+hexagram_09,3,hexagram_57,yielding,contracting,shringara_shifting,growth_transitioning,Line 3 changes in taming power of the small,inferred_coherent
+hexagram_09,4,hexagram_05,yielding,contracting,shringara_shifting,growth_transitioning,Line 4 changes in taming power of the small,inferred_coherent
+hexagram_09,5,hexagram_26,yielding,contracting,shringara_shifting,growth_transitioning,Line 5 changes in taming power of the small,inferred_coherent
+hexagram_09,6,hexagram_01,firming,expanding,shringara_shifting,growth_transitioning,Line 6 changes in taming power of the small,inferred_coherent
+hexagram_10,1,hexagram_01,firming,expanding,bhayanaka_shifting,growth_transitioning,Line 1 changes in treading,inferred_coherent
+hexagram_10,2,hexagram_25,yielding,contracting,bhayanaka_shifting,growth_transitioning,Line 2 changes in treading,inferred_coherent
+hexagram_10,3,hexagram_06,yielding,contracting,bhayanaka_shifting,growth_transitioning,Line 3 changes in treading,inferred_coherent
+hexagram_10,4,hexagram_58,yielding,contracting,bhayanaka_shifting,growth_transitioning,Line 4 changes in treading,inferred_coherent
+hexagram_10,5,hexagram_38,yielding,contracting,bhayanaka_shifting,growth_transitioning,Line 5 changes in treading,inferred_coherent
+hexagram_10,6,hexagram_61,yielding,contracting,bhayanaka_shifting,growth_transitioning,Line 6 changes in treading,inferred_coherent
+hexagram_11,1,hexagram_19,yielding,contracting,shanta_shifting,bloom_transitioning,Line 1 changes in peace,inferred_coherent
+hexagram_11,2,hexagram_36,yielding,contracting,shanta_shifting,bloom_transitioning,Line 2 changes in peace,inferred_coherent
+hexagram_11,3,hexagram_46,yielding,contracting,shanta_shifting,bloom_transitioning,Line 3 changes in peace,inferred_coherent
+hexagram_11,4,hexagram_26,firming,expanding,shanta_shifting,bloom_transitioning,Line 4 changes in peace,inferred_coherent
+hexagram_11,5,hexagram_05,firming,expanding,shanta_shifting,bloom_transitioning,Line 5 changes in peace,inferred_coherent
+hexagram_11,6,hexagram_34,firming,expanding,shanta_shifting,bloom_transitioning,Line 6 changes in peace,inferred_coherent
+hexagram_12,1,hexagram_33,firming,expanding,bibhatsa_shifting,dormancy_transitioning,Line 1 changes in standstill,inferred_coherent
+hexagram_12,2,hexagram_06,firming,expanding,bibhatsa_shifting,dormancy_transitioning,Line 2 changes in standstill,inferred_coherent
+hexagram_12,3,hexagram_25,firming,expanding,bibhatsa_shifting,dormancy_transitioning,Line 3 changes in standstill,inferred_coherent
+hexagram_12,4,hexagram_45,yielding,contracting,bibhatsa_shifting,dormancy_transitioning,Line 4 changes in standstill,inferred_coherent
+hexagram_12,5,hexagram_35,yielding,contracting,bibhatsa_shifting,dormancy_transitioning,Line 5 changes in standstill,inferred_coherent
+hexagram_12,6,hexagram_20,yielding,contracting,bibhatsa_shifting,dormancy_transitioning,Line 6 changes in standstill,inferred_coherent
+hexagram_13,1,hexagram_25,yielding,contracting,shringara_shifting,bloom_transitioning,Line 1 changes in fellowship,inferred_coherent
+hexagram_13,2,hexagram_01,firming,expanding,shringara_shifting,bloom_transitioning,Line 2 changes in fellowship,inferred_coherent
+hexagram_13,3,hexagram_33,yielding,contracting,shringara_shifting,bloom_transitioning,Line 3 changes in fellowship,inferred_coherent
+hexagram_13,4,hexagram_49,yielding,contracting,shringara_shifting,bloom_transitioning,Line 4 changes in fellowship,inferred_coherent
+hexagram_13,5,hexagram_30,yielding,contracting,shringara_shifting,bloom_transitioning,Line 5 changes in fellowship,inferred_coherent
+hexagram_13,6,hexagram_37,yielding,contracting,shringara_shifting,bloom_transitioning,Line 6 changes in fellowship,inferred_coherent
+hexagram_14,1,hexagram_38,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 1 changes in great possession,inferred_coherent
+hexagram_14,2,hexagram_30,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 2 changes in great possession,inferred_coherent
+hexagram_14,3,hexagram_50,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 3 changes in great possession,inferred_coherent
+hexagram_14,4,hexagram_34,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 4 changes in great possession,inferred_coherent
+hexagram_14,5,hexagram_01,firming,expanding,adbhuta_shifting,bloom_transitioning,Line 5 changes in great possession,inferred_coherent
+hexagram_14,6,hexagram_26,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 6 changes in great possession,inferred_coherent
+hexagram_15,1,hexagram_02,yielding,contracting,shanta_shifting,fruit_transitioning,Line 1 changes in modesty,inferred_coherent
+hexagram_15,2,hexagram_46,firming,expanding,shanta_shifting,fruit_transitioning,Line 2 changes in modesty,inferred_coherent
+hexagram_15,3,hexagram_36,firming,expanding,shanta_shifting,fruit_transitioning,Line 3 changes in modesty,inferred_coherent
+hexagram_15,4,hexagram_52,firming,expanding,shanta_shifting,fruit_transitioning,Line 4 changes in modesty,inferred_coherent
+hexagram_15,5,hexagram_39,firming,expanding,shanta_shifting,fruit_transitioning,Line 5 changes in modesty,inferred_coherent
+hexagram_15,6,hexagram_62,firming,expanding,shanta_shifting,fruit_transitioning,Line 6 changes in modesty,inferred_coherent
+hexagram_16,1,hexagram_62,firming,expanding,hasya_shifting,bloom_transitioning,Line 1 changes in enthusiasm,inferred_coherent
+hexagram_16,2,hexagram_40,firming,expanding,hasya_shifting,bloom_transitioning,Line 2 changes in enthusiasm,inferred_coherent
+hexagram_16,3,hexagram_51,firming,expanding,hasya_shifting,bloom_transitioning,Line 3 changes in enthusiasm,inferred_coherent
+hexagram_16,4,hexagram_35,firming,expanding,hasya_shifting,bloom_transitioning,Line 4 changes in enthusiasm,inferred_coherent
+hexagram_16,5,hexagram_45,firming,expanding,hasya_shifting,bloom_transitioning,Line 5 changes in enthusiasm,inferred_coherent
+hexagram_16,6,hexagram_02,yielding,contracting,hasya_shifting,bloom_transitioning,Line 6 changes in enthusiasm,inferred_coherent
+hexagram_17,1,hexagram_49,firming,expanding,shringara_shifting,growth_transitioning,Line 1 changes in following,inferred_coherent
+hexagram_17,2,hexagram_58,firming,expanding,shringara_shifting,growth_transitioning,Line 2 changes in following,inferred_coherent
+hexagram_17,3,hexagram_45,yielding,contracting,shringara_shifting,growth_transitioning,Line 3 changes in following,inferred_coherent
+hexagram_17,4,hexagram_25,firming,expanding,shringara_shifting,growth_transitioning,Line 4 changes in following,inferred_coherent
+hexagram_17,5,hexagram_51,yielding,contracting,shringara_shifting,growth_transitioning,Line 5 changes in following,inferred_coherent
+hexagram_17,6,hexagram_03,yielding,contracting,shringara_shifting,growth_transitioning,Line 6 changes in following,inferred_coherent
+hexagram_18,1,hexagram_04,yielding,contracting,karuna_shifting,fruit_transitioning,Line 1 changes in work on the decayed,inferred_coherent
+hexagram_18,2,hexagram_52,yielding,contracting,karuna_shifting,fruit_transitioning,Line 2 changes in work on the decayed,inferred_coherent
+hexagram_18,3,hexagram_26,firming,expanding,karuna_shifting,fruit_transitioning,Line 3 changes in work on the decayed,inferred_coherent
+hexagram_18,4,hexagram_46,yielding,contracting,karuna_shifting,fruit_transitioning,Line 4 changes in work on the decayed,inferred_coherent
+hexagram_18,5,hexagram_57,firming,expanding,karuna_shifting,fruit_transitioning,Line 5 changes in work on the decayed,inferred_coherent
+hexagram_18,6,hexagram_50,firming,expanding,karuna_shifting,fruit_transitioning,Line 6 changes in work on the decayed,inferred_coherent
+hexagram_19,1,hexagram_11,firming,expanding,shringara_shifting,growth_transitioning,Line 1 changes in approach,inferred_coherent
+hexagram_19,2,hexagram_24,yielding,contracting,shringara_shifting,growth_transitioning,Line 2 changes in approach,inferred_coherent
+hexagram_19,3,hexagram_08,yielding,contracting,shringara_shifting,growth_transitioning,Line 3 changes in approach,inferred_coherent
+hexagram_19,4,hexagram_41,firming,expanding,shringara_shifting,growth_transitioning,Line 4 changes in approach,inferred_coherent
+hexagram_19,5,hexagram_60,firming,expanding,shringara_shifting,growth_transitioning,Line 5 changes in approach,inferred_coherent
+hexagram_19,6,hexagram_54,firming,expanding,shringara_shifting,growth_transitioning,Line 6 changes in approach,inferred_coherent
+hexagram_20,1,hexagram_53,firming,expanding,shanta_shifting,rest_transitioning,Line 1 changes in contemplation,inferred_coherent
+hexagram_20,2,hexagram_59,firming,expanding,shanta_shifting,rest_transitioning,Line 2 changes in contemplation,inferred_coherent
+hexagram_20,3,hexagram_42,firming,expanding,shanta_shifting,rest_transitioning,Line 3 changes in contemplation,inferred_coherent
+hexagram_20,4,hexagram_07,yielding,contracting,shanta_shifting,rest_transitioning,Line 4 changes in contemplation,inferred_coherent
+hexagram_20,5,hexagram_23,yielding,contracting,shanta_shifting,rest_transitioning,Line 5 changes in contemplation,inferred_coherent
+hexagram_20,6,hexagram_12,firming,expanding,shanta_shifting,rest_transitioning,Line 6 changes in contemplation,inferred_coherent
+hexagram_21,1,hexagram_30,firming,expanding,raudra_shifting,bloom_transitioning,Line 1 changes in biting through,inferred_coherent
+hexagram_21,2,hexagram_38,firming,expanding,raudra_shifting,bloom_transitioning,Line 2 changes in biting through,inferred_coherent
+hexagram_21,3,hexagram_35,yielding,contracting,raudra_shifting,bloom_transitioning,Line 3 changes in biting through,inferred_coherent
+hexagram_21,4,hexagram_51,yielding,contracting,raudra_shifting,bloom_transitioning,Line 4 changes in biting through,inferred_coherent
+hexagram_21,5,hexagram_25,firming,expanding,raudra_shifting,bloom_transitioning,Line 5 changes in biting through,inferred_coherent
+hexagram_21,6,hexagram_27,yielding,contracting,raudra_shifting,bloom_transitioning,Line 6 changes in biting through,inferred_coherent
+hexagram_22,1,hexagram_27,yielding,contracting,shringara_shifting,bloom_transitioning,Line 1 changes in grace,inferred_coherent
+hexagram_22,2,hexagram_26,firming,expanding,shringara_shifting,bloom_transitioning,Line 2 changes in grace,inferred_coherent
+hexagram_22,3,hexagram_52,yielding,contracting,shringara_shifting,bloom_transitioning,Line 3 changes in grace,inferred_coherent
+hexagram_22,4,hexagram_36,yielding,contracting,shringara_shifting,bloom_transitioning,Line 4 changes in grace,inferred_coherent
+hexagram_22,5,hexagram_37,firming,expanding,shringara_shifting,bloom_transitioning,Line 5 changes in grace,inferred_coherent
+hexagram_22,6,hexagram_30,firming,expanding,shringara_shifting,bloom_transitioning,Line 6 changes in grace,inferred_coherent
+hexagram_23,1,hexagram_52,firming,expanding,bhayanaka_shifting,dormancy_transitioning,Line 1 changes in splitting apart,inferred_coherent
+hexagram_23,2,hexagram_04,firming,expanding,bhayanaka_shifting,dormancy_transitioning,Line 2 changes in splitting apart,inferred_coherent
+hexagram_23,3,hexagram_27,firming,expanding,bhayanaka_shifting,dormancy_transitioning,Line 3 changes in splitting apart,inferred_coherent
+hexagram_23,4,hexagram_02,yielding,contracting,bhayanaka_shifting,dormancy_transitioning,Line 4 changes in splitting apart,inferred_coherent
+hexagram_23,5,hexagram_20,firming,expanding,bhayanaka_shifting,dormancy_transitioning,Line 5 changes in splitting apart,inferred_coherent
+hexagram_23,6,hexagram_35,firming,expanding,bhayanaka_shifting,dormancy_transitioning,Line 6 changes in splitting apart,inferred_coherent
+hexagram_24,1,hexagram_36,firming,expanding,adbhuta_shifting,seed_transitioning,Line 1 changes in return,inferred_coherent
+hexagram_24,2,hexagram_19,firming,expanding,adbhuta_shifting,seed_transitioning,Line 2 changes in return,inferred_coherent
+hexagram_24,3,hexagram_02,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 3 changes in return,inferred_coherent
+hexagram_24,4,hexagram_27,firming,expanding,adbhuta_shifting,seed_transitioning,Line 4 changes in return,inferred_coherent
+hexagram_24,5,hexagram_03,firming,expanding,adbhuta_shifting,seed_transitioning,Line 5 changes in return,inferred_coherent
+hexagram_24,6,hexagram_51,firming,expanding,adbhuta_shifting,seed_transitioning,Line 6 changes in return,inferred_coherent
+hexagram_25,1,hexagram_13,firming,expanding,adbhuta_shifting,seed_transitioning,Line 1 changes in innocence,inferred_coherent
+hexagram_25,2,hexagram_10,firming,expanding,adbhuta_shifting,seed_transitioning,Line 2 changes in innocence,inferred_coherent
+hexagram_25,3,hexagram_12,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 3 changes in innocence,inferred_coherent
+hexagram_25,4,hexagram_17,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 4 changes in innocence,inferred_coherent
+hexagram_25,5,hexagram_21,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 5 changes in innocence,inferred_coherent
+hexagram_25,6,hexagram_42,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 6 changes in innocence,inferred_coherent
+hexagram_26,1,hexagram_41,yielding,contracting,vira_shifting,rest_transitioning,Line 1 changes in taming power of the great,inferred_coherent
+hexagram_26,2,hexagram_22,yielding,contracting,vira_shifting,rest_transitioning,Line 2 changes in taming power of the great,inferred_coherent
+hexagram_26,3,hexagram_18,yielding,contracting,vira_shifting,rest_transitioning,Line 3 changes in taming power of the great,inferred_coherent
+hexagram_26,4,hexagram_11,yielding,contracting,vira_shifting,rest_transitioning,Line 4 changes in taming power of the great,inferred_coherent
+hexagram_26,5,hexagram_09,firming,expanding,vira_shifting,rest_transitioning,Line 5 changes in taming power of the great,inferred_coherent
+hexagram_26,6,hexagram_14,firming,expanding,vira_shifting,rest_transitioning,Line 6 changes in taming power of the great,inferred_coherent
+hexagram_27,1,hexagram_22,firming,expanding,shringara_shifting,growth_transitioning,Line 1 changes in nourishment,inferred_coherent
+hexagram_27,2,hexagram_41,firming,expanding,shringara_shifting,growth_transitioning,Line 2 changes in nourishment,inferred_coherent
+hexagram_27,3,hexagram_23,yielding,contracting,shringara_shifting,growth_transitioning,Line 3 changes in nourishment,inferred_coherent
+hexagram_27,4,hexagram_24,yielding,contracting,shringara_shifting,growth_transitioning,Line 4 changes in nourishment,inferred_coherent
+hexagram_27,5,hexagram_42,firming,expanding,shringara_shifting,growth_transitioning,Line 5 changes in nourishment,inferred_coherent
+hexagram_27,6,hexagram_21,firming,expanding,shringara_shifting,growth_transitioning,Line 6 changes in nourishment,inferred_coherent
+hexagram_28,1,hexagram_47,yielding,contracting,bhayanaka_shifting,bloom_transitioning,Line 1 changes in great preponderance,inferred_coherent
+hexagram_28,2,hexagram_31,yielding,contracting,bhayanaka_shifting,bloom_transitioning,Line 2 changes in great preponderance,inferred_coherent
+hexagram_28,3,hexagram_43,firming,expanding,bhayanaka_shifting,bloom_transitioning,Line 3 changes in great preponderance,inferred_coherent
+hexagram_28,4,hexagram_44,firming,expanding,bhayanaka_shifting,bloom_transitioning,Line 4 changes in great preponderance,inferred_coherent
+hexagram_28,5,hexagram_32,yielding,contracting,bhayanaka_shifting,bloom_transitioning,Line 5 changes in great preponderance,inferred_coherent
+hexagram_28,6,hexagram_48,yielding,contracting,bhayanaka_shifting,bloom_transitioning,Line 6 changes in great preponderance,inferred_coherent
+hexagram_29,1,hexagram_48,firming,expanding,bhayanaka_shifting,dormancy_transitioning,Line 1 changes in the abysmal,inferred_coherent
+hexagram_29,2,hexagram_07,yielding,contracting,bhayanaka_shifting,dormancy_transitioning,Line 2 changes in the abysmal,inferred_coherent
+hexagram_29,3,hexagram_60,firming,expanding,bhayanaka_shifting,dormancy_transitioning,Line 3 changes in the abysmal,inferred_coherent
+hexagram_29,4,hexagram_59,firming,expanding,bhayanaka_shifting,dormancy_transitioning,Line 4 changes in the abysmal,inferred_coherent
+hexagram_29,5,hexagram_08,yielding,contracting,bhayanaka_shifting,dormancy_transitioning,Line 5 changes in the abysmal,inferred_coherent
+hexagram_29,6,hexagram_47,firming,expanding,bhayanaka_shifting,dormancy_transitioning,Line 6 changes in the abysmal,inferred_coherent
+hexagram_30,1,hexagram_21,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 1 changes in the clinging,inferred_coherent
+hexagram_30,2,hexagram_14,firming,expanding,adbhuta_shifting,bloom_transitioning,Line 2 changes in the clinging,inferred_coherent
+hexagram_30,3,hexagram_56,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 3 changes in the clinging,inferred_coherent
+hexagram_30,4,hexagram_55,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 4 changes in the clinging,inferred_coherent
+hexagram_30,5,hexagram_13,firming,expanding,adbhuta_shifting,bloom_transitioning,Line 5 changes in the clinging,inferred_coherent
+hexagram_30,6,hexagram_22,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 6 changes in the clinging,inferred_coherent
+hexagram_31,1,hexagram_45,yielding,contracting,shringara_shifting,bloom_transitioning,Line 1 changes in influence,inferred_coherent
+hexagram_31,2,hexagram_28,firming,expanding,shringara_shifting,bloom_transitioning,Line 2 changes in influence,inferred_coherent
+hexagram_31,3,hexagram_49,firming,expanding,shringara_shifting,bloom_transitioning,Line 3 changes in influence,inferred_coherent
+hexagram_31,4,hexagram_33,firming,expanding,shringara_shifting,bloom_transitioning,Line 4 changes in influence,inferred_coherent
+hexagram_31,5,hexagram_62,yielding,contracting,shringara_shifting,bloom_transitioning,Line 5 changes in influence,inferred_coherent
+hexagram_31,6,hexagram_39,yielding,contracting,shringara_shifting,bloom_transitioning,Line 6 changes in influence,inferred_coherent
+hexagram_32,1,hexagram_40,yielding,contracting,shanta_shifting,growth_transitioning,Line 1 changes in duration,inferred_coherent
+hexagram_32,2,hexagram_62,yielding,contracting,shanta_shifting,growth_transitioning,Line 2 changes in duration,inferred_coherent
+hexagram_32,3,hexagram_34,firming,expanding,shanta_shifting,growth_transitioning,Line 3 changes in duration,inferred_coherent
+hexagram_32,4,hexagram_50,firming,expanding,shanta_shifting,growth_transitioning,Line 4 changes in duration,inferred_coherent
+hexagram_32,5,hexagram_28,firming,expanding,shanta_shifting,growth_transitioning,Line 5 changes in duration,inferred_coherent
+hexagram_32,6,hexagram_46,yielding,contracting,shanta_shifting,growth_transitioning,Line 6 changes in duration,inferred_coherent
+hexagram_33,1,hexagram_12,yielding,contracting,shanta_shifting,dormancy_transitioning,Line 1 changes in retreat,inferred_coherent
+hexagram_33,2,hexagram_44,firming,expanding,shanta_shifting,dormancy_transitioning,Line 2 changes in retreat,inferred_coherent
+hexagram_33,3,hexagram_13,firming,expanding,shanta_shifting,dormancy_transitioning,Line 3 changes in retreat,inferred_coherent
+hexagram_33,4,hexagram_31,yielding,contracting,shanta_shifting,dormancy_transitioning,Line 4 changes in retreat,inferred_coherent
+hexagram_33,5,hexagram_56,yielding,contracting,shanta_shifting,dormancy_transitioning,Line 5 changes in retreat,inferred_coherent
+hexagram_33,6,hexagram_53,yielding,contracting,shanta_shifting,dormancy_transitioning,Line 6 changes in retreat,inferred_coherent
+hexagram_34,1,hexagram_54,yielding,contracting,vira_shifting,bloom_transitioning,Line 1 changes in great power,inferred_coherent
+hexagram_34,2,hexagram_55,yielding,contracting,vira_shifting,bloom_transitioning,Line 2 changes in great power,inferred_coherent
+hexagram_34,3,hexagram_32,yielding,contracting,vira_shifting,bloom_transitioning,Line 3 changes in great power,inferred_coherent
+hexagram_34,4,hexagram_14,firming,expanding,vira_shifting,bloom_transitioning,Line 4 changes in great power,inferred_coherent
+hexagram_34,5,hexagram_43,firming,expanding,vira_shifting,bloom_transitioning,Line 5 changes in great power,inferred_coherent
+hexagram_34,6,hexagram_11,yielding,contracting,vira_shifting,bloom_transitioning,Line 6 changes in great power,inferred_coherent
+hexagram_35,1,hexagram_56,firming,expanding,adbhuta_shifting,growth_transitioning,Line 1 changes in progress,inferred_coherent
+hexagram_35,2,hexagram_64,firming,expanding,adbhuta_shifting,growth_transitioning,Line 2 changes in progress,inferred_coherent
+hexagram_35,3,hexagram_21,firming,expanding,adbhuta_shifting,growth_transitioning,Line 3 changes in progress,inferred_coherent
+hexagram_35,4,hexagram_16,yielding,contracting,adbhuta_shifting,growth_transitioning,Line 4 changes in progress,inferred_coherent
+hexagram_35,5,hexagram_12,firming,expanding,adbhuta_shifting,growth_transitioning,Line 5 changes in progress,inferred_coherent
+hexagram_35,6,hexagram_23,yielding,contracting,adbhuta_shifting,growth_transitioning,Line 6 changes in progress,inferred_coherent
+hexagram_36,1,hexagram_24,yielding,contracting,karuna_shifting,dormancy_transitioning,Line 1 changes in darkening of the light,inferred_coherent
+hexagram_36,2,hexagram_11,firming,expanding,karuna_shifting,dormancy_transitioning,Line 2 changes in darkening of the light,inferred_coherent
+hexagram_36,3,hexagram_15,yielding,contracting,karuna_shifting,dormancy_transitioning,Line 3 changes in darkening of the light,inferred_coherent
+hexagram_36,4,hexagram_22,firming,expanding,karuna_shifting,dormancy_transitioning,Line 4 changes in darkening of the light,inferred_coherent
+hexagram_36,5,hexagram_63,firming,expanding,karuna_shifting,dormancy_transitioning,Line 5 changes in darkening of the light,inferred_coherent
+hexagram_36,6,hexagram_55,firming,expanding,karuna_shifting,dormancy_transitioning,Line 6 changes in darkening of the light,inferred_coherent
+hexagram_37,1,hexagram_42,yielding,contracting,shringara_shifting,growth_transitioning,Line 1 changes in the family,inferred_coherent
+hexagram_37,2,hexagram_09,firming,expanding,shringara_shifting,growth_transitioning,Line 2 changes in the family,inferred_coherent
+hexagram_37,3,hexagram_53,yielding,contracting,shringara_shifting,growth_transitioning,Line 3 changes in the family,inferred_coherent
+hexagram_37,4,hexagram_63,yielding,contracting,shringara_shifting,growth_transitioning,Line 4 changes in the family,inferred_coherent
+hexagram_37,5,hexagram_22,yielding,contracting,shringara_shifting,growth_transitioning,Line 5 changes in the family,inferred_coherent
+hexagram_37,6,hexagram_13,firming,expanding,shringara_shifting,growth_transitioning,Line 6 changes in the family,inferred_coherent
+hexagram_38,1,hexagram_14,firming,expanding,raudra_shifting,bloom_transitioning,Line 1 changes in opposition,inferred_coherent
+hexagram_38,2,hexagram_21,yielding,contracting,raudra_shifting,bloom_transitioning,Line 2 changes in opposition,inferred_coherent
+hexagram_38,3,hexagram_64,yielding,contracting,raudra_shifting,bloom_transitioning,Line 3 changes in opposition,inferred_coherent
+hexagram_38,4,hexagram_54,yielding,contracting,raudra_shifting,bloom_transitioning,Line 4 changes in opposition,inferred_coherent
+hexagram_38,5,hexagram_10,firming,expanding,raudra_shifting,bloom_transitioning,Line 5 changes in opposition,inferred_coherent
+hexagram_38,6,hexagram_41,yielding,contracting,raudra_shifting,bloom_transitioning,Line 6 changes in opposition,inferred_coherent
+hexagram_39,1,hexagram_07,yielding,contracting,karuna_shifting,dormancy_transitioning,Line 1 changes in obstruction,inferred_coherent
+hexagram_39,2,hexagram_48,firming,expanding,karuna_shifting,dormancy_transitioning,Line 2 changes in obstruction,inferred_coherent
+hexagram_39,3,hexagram_63,firming,expanding,karuna_shifting,dormancy_transitioning,Line 3 changes in obstruction,inferred_coherent
+hexagram_39,4,hexagram_53,firming,expanding,karuna_shifting,dormancy_transitioning,Line 4 changes in obstruction,inferred_coherent
+hexagram_39,5,hexagram_15,yielding,contracting,karuna_shifting,dormancy_transitioning,Line 5 changes in obstruction,inferred_coherent
+hexagram_39,6,hexagram_31,firming,expanding,karuna_shifting,dormancy_transitioning,Line 6 changes in obstruction,inferred_coherent
+hexagram_40,1,hexagram_32,firming,expanding,hasya_shifting,seed_transitioning,Line 1 changes in deliverance,inferred_coherent
+hexagram_40,2,hexagram_16,yielding,contracting,hasya_shifting,seed_transitioning,Line 2 changes in deliverance,inferred_coherent
+hexagram_40,3,hexagram_54,firming,expanding,hasya_shifting,seed_transitioning,Line 3 changes in deliverance,inferred_coherent
+hexagram_40,4,hexagram_64,firming,expanding,hasya_shifting,seed_transitioning,Line 4 changes in deliverance,inferred_coherent
+hexagram_40,5,hexagram_47,firming,expanding,hasya_shifting,seed_transitioning,Line 5 changes in deliverance,inferred_coherent
+hexagram_40,6,hexagram_08,yielding,contracting,hasya_shifting,seed_transitioning,Line 6 changes in deliverance,inferred_coherent
+hexagram_41,1,hexagram_26,firming,expanding,karuna_shifting,fruit_transitioning,Line 1 changes in decrease,inferred_coherent
+hexagram_41,2,hexagram_27,yielding,contracting,karuna_shifting,fruit_transitioning,Line 2 changes in decrease,inferred_coherent
+hexagram_41,3,hexagram_04,yielding,contracting,karuna_shifting,fruit_transitioning,Line 3 changes in decrease,inferred_coherent
+hexagram_41,4,hexagram_19,yielding,contracting,karuna_shifting,fruit_transitioning,Line 4 changes in decrease,inferred_coherent
+hexagram_41,5,hexagram_61,firming,expanding,karuna_shifting,fruit_transitioning,Line 5 changes in decrease,inferred_coherent
+hexagram_41,6,hexagram_38,firming,expanding,karuna_shifting,fruit_transitioning,Line 6 changes in decrease,inferred_coherent
+hexagram_42,1,hexagram_37,firming,expanding,adbhuta_shifting,growth_transitioning,Line 1 changes in increase,inferred_coherent
+hexagram_42,2,hexagram_61,firming,expanding,adbhuta_shifting,growth_transitioning,Line 2 changes in increase,inferred_coherent
+hexagram_42,3,hexagram_20,yielding,contracting,adbhuta_shifting,growth_transitioning,Line 3 changes in increase,inferred_coherent
+hexagram_42,4,hexagram_03,yielding,contracting,adbhuta_shifting,growth_transitioning,Line 4 changes in increase,inferred_coherent
+hexagram_42,5,hexagram_27,yielding,contracting,adbhuta_shifting,growth_transitioning,Line 5 changes in increase,inferred_coherent
+hexagram_42,6,hexagram_25,firming,expanding,adbhuta_shifting,growth_transitioning,Line 6 changes in increase,inferred_coherent
+hexagram_43,1,hexagram_58,yielding,contracting,vira_shifting,bloom_transitioning,Line 1 changes in breakthrough,inferred_coherent
+hexagram_43,2,hexagram_49,yielding,contracting,vira_shifting,bloom_transitioning,Line 2 changes in breakthrough,inferred_coherent
+hexagram_43,3,hexagram_28,yielding,contracting,vira_shifting,bloom_transitioning,Line 3 changes in breakthrough,inferred_coherent
+hexagram_43,4,hexagram_01,firming,expanding,vira_shifting,bloom_transitioning,Line 4 changes in breakthrough,inferred_coherent
+hexagram_43,5,hexagram_34,yielding,contracting,vira_shifting,bloom_transitioning,Line 5 changes in breakthrough,inferred_coherent
+hexagram_43,6,hexagram_05,yielding,contracting,vira_shifting,bloom_transitioning,Line 6 changes in breakthrough,inferred_coherent
+hexagram_44,1,hexagram_06,yielding,contracting,shringara_shifting,bloom_transitioning,Line 1 changes in coming to meet,inferred_coherent
+hexagram_44,2,hexagram_33,yielding,contracting,shringara_shifting,bloom_transitioning,Line 2 changes in coming to meet,inferred_coherent
+hexagram_44,3,hexagram_01,firming,expanding,shringara_shifting,bloom_transitioning,Line 3 changes in coming to meet,inferred_coherent
+hexagram_44,4,hexagram_28,yielding,contracting,shringara_shifting,bloom_transitioning,Line 4 changes in coming to meet,inferred_coherent
+hexagram_44,5,hexagram_50,yielding,contracting,shringara_shifting,bloom_transitioning,Line 5 changes in coming to meet,inferred_coherent
+hexagram_44,6,hexagram_57,yielding,contracting,shringara_shifting,bloom_transitioning,Line 6 changes in coming to meet,inferred_coherent
+hexagram_45,1,hexagram_31,firming,expanding,shringara_shifting,growth_transitioning,Line 1 changes in gathering together,inferred_coherent
+hexagram_45,2,hexagram_47,firming,expanding,shringara_shifting,growth_transitioning,Line 2 changes in gathering together,inferred_coherent
+hexagram_45,3,hexagram_17,firming,expanding,shringara_shifting,growth_transitioning,Line 3 changes in gathering together,inferred_coherent
+hexagram_45,4,hexagram_12,firming,expanding,shringara_shifting,growth_transitioning,Line 4 changes in gathering together,inferred_coherent
+hexagram_45,5,hexagram_16,yielding,contracting,shringara_shifting,growth_transitioning,Line 5 changes in gathering together,inferred_coherent
+hexagram_45,6,hexagram_07,yielding,contracting,shringara_shifting,growth_transitioning,Line 6 changes in gathering together,inferred_coherent
+hexagram_46,1,hexagram_08,yielding,contracting,vira_shifting,growth_transitioning,Line 1 changes in pushing upward,inferred_coherent
+hexagram_46,2,hexagram_15,yielding,contracting,vira_shifting,growth_transitioning,Line 2 changes in pushing upward,inferred_coherent
+hexagram_46,3,hexagram_11,firming,expanding,vira_shifting,growth_transitioning,Line 3 changes in pushing upward,inferred_coherent
+hexagram_46,4,hexagram_18,firming,expanding,vira_shifting,growth_transitioning,Line 4 changes in pushing upward,inferred_coherent
+hexagram_46,5,hexagram_48,firming,expanding,vira_shifting,growth_transitioning,Line 5 changes in pushing upward,inferred_coherent
+hexagram_46,6,hexagram_32,firming,expanding,vira_shifting,growth_transitioning,Line 6 changes in pushing upward,inferred_coherent
+hexagram_47,1,hexagram_28,firming,expanding,karuna_shifting,dormancy_transitioning,Line 1 changes in oppression,inferred_coherent
+hexagram_47,2,hexagram_45,yielding,contracting,karuna_shifting,dormancy_transitioning,Line 2 changes in oppression,inferred_coherent
+hexagram_47,3,hexagram_58,firming,expanding,karuna_shifting,dormancy_transitioning,Line 3 changes in oppression,inferred_coherent
+hexagram_47,4,hexagram_06,firming,expanding,karuna_shifting,dormancy_transitioning,Line 4 changes in oppression,inferred_coherent
+hexagram_47,5,hexagram_40,yielding,contracting,karuna_shifting,dormancy_transitioning,Line 5 changes in oppression,inferred_coherent
+hexagram_47,6,hexagram_29,yielding,contracting,karuna_shifting,dormancy_transitioning,Line 6 changes in oppression,inferred_coherent
+hexagram_48,1,hexagram_29,yielding,contracting,shanta_shifting,rest_transitioning,Line 1 changes in the well,inferred_coherent
+hexagram_48,2,hexagram_39,yielding,contracting,shanta_shifting,rest_transitioning,Line 2 changes in the well,inferred_coherent
+hexagram_48,3,hexagram_05,firming,expanding,shanta_shifting,rest_transitioning,Line 3 changes in the well,inferred_coherent
+hexagram_48,4,hexagram_57,firming,expanding,shanta_shifting,rest_transitioning,Line 4 changes in the well,inferred_coherent
+hexagram_48,5,hexagram_46,yielding,contracting,shanta_shifting,rest_transitioning,Line 5 changes in the well,inferred_coherent
+hexagram_48,6,hexagram_28,firming,expanding,shanta_shifting,rest_transitioning,Line 6 changes in the well,inferred_coherent
+hexagram_49,1,hexagram_17,yielding,contracting,raudra_shifting,seed_transitioning,Line 1 changes in revolution,inferred_coherent
+hexagram_49,2,hexagram_43,firming,expanding,raudra_shifting,seed_transitioning,Line 2 changes in revolution,inferred_coherent
+hexagram_49,3,hexagram_31,yielding,contracting,raudra_shifting,seed_transitioning,Line 3 changes in revolution,inferred_coherent
+hexagram_49,4,hexagram_13,firming,expanding,raudra_shifting,seed_transitioning,Line 4 changes in revolution,inferred_coherent
+hexagram_49,5,hexagram_55,yielding,contracting,raudra_shifting,seed_transitioning,Line 5 changes in revolution,inferred_coherent
+hexagram_49,6,hexagram_63,yielding,contracting,raudra_shifting,seed_transitioning,Line 6 changes in revolution,inferred_coherent
+hexagram_50,1,hexagram_64,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 1 changes in the caldron,inferred_coherent
+hexagram_50,2,hexagram_56,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 2 changes in the caldron,inferred_coherent
+hexagram_50,3,hexagram_14,firming,expanding,adbhuta_shifting,bloom_transitioning,Line 3 changes in the caldron,inferred_coherent
+hexagram_50,4,hexagram_32,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 4 changes in the caldron,inferred_coherent
+hexagram_50,5,hexagram_44,firming,expanding,adbhuta_shifting,bloom_transitioning,Line 5 changes in the caldron,inferred_coherent
+hexagram_50,6,hexagram_18,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 6 changes in the caldron,inferred_coherent
+hexagram_51,1,hexagram_55,firming,expanding,bhayanaka_shifting,seed_transitioning,Line 1 changes in the arousing,inferred_coherent
+hexagram_51,2,hexagram_54,firming,expanding,bhayanaka_shifting,seed_transitioning,Line 2 changes in the arousing,inferred_coherent
+hexagram_51,3,hexagram_16,yielding,contracting,bhayanaka_shifting,seed_transitioning,Line 3 changes in the arousing,inferred_coherent
+hexagram_51,4,hexagram_21,firming,expanding,bhayanaka_shifting,seed_transitioning,Line 4 changes in the arousing,inferred_coherent
+hexagram_51,5,hexagram_17,firming,expanding,bhayanaka_shifting,seed_transitioning,Line 5 changes in the arousing,inferred_coherent
+hexagram_51,6,hexagram_24,yielding,contracting,bhayanaka_shifting,seed_transitioning,Line 6 changes in the arousing,inferred_coherent
+hexagram_52,1,hexagram_23,yielding,contracting,shanta_shifting,rest_transitioning,Line 1 changes in keeping still,inferred_coherent
+hexagram_52,2,hexagram_18,firming,expanding,shanta_shifting,rest_transitioning,Line 2 changes in keeping still,inferred_coherent
+hexagram_52,3,hexagram_22,firming,expanding,shanta_shifting,rest_transitioning,Line 3 changes in keeping still,inferred_coherent
+hexagram_52,4,hexagram_15,yielding,contracting,shanta_shifting,rest_transitioning,Line 4 changes in keeping still,inferred_coherent
+hexagram_52,5,hexagram_53,firming,expanding,shanta_shifting,rest_transitioning,Line 5 changes in keeping still,inferred_coherent
+hexagram_52,6,hexagram_56,firming,expanding,shanta_shifting,rest_transitioning,Line 6 changes in keeping still,inferred_coherent
+hexagram_53,1,hexagram_20,yielding,contracting,shringara_shifting,growth_transitioning,Line 1 changes in development,inferred_coherent
+hexagram_53,2,hexagram_57,firming,expanding,shringara_shifting,growth_transitioning,Line 2 changes in development,inferred_coherent
+hexagram_53,3,hexagram_37,firming,expanding,shringara_shifting,growth_transitioning,Line 3 changes in development,inferred_coherent
+hexagram_53,4,hexagram_39,yielding,contracting,shringara_shifting,growth_transitioning,Line 4 changes in development,inferred_coherent
+hexagram_53,5,hexagram_52,yielding,contracting,shringara_shifting,growth_transitioning,Line 5 changes in development,inferred_coherent
+hexagram_53,6,hexagram_33,firming,expanding,shringara_shifting,growth_transitioning,Line 6 changes in development,inferred_coherent
+hexagram_54,1,hexagram_34,firming,expanding,karuna_shifting,growth_transitioning,Line 1 changes in the marrying maiden,inferred_coherent
+hexagram_54,2,hexagram_51,yielding,contracting,karuna_shifting,growth_transitioning,Line 2 changes in the marrying maiden,inferred_coherent
+hexagram_54,3,hexagram_40,yielding,contracting,karuna_shifting,growth_transitioning,Line 3 changes in the marrying maiden,inferred_coherent
+hexagram_54,4,hexagram_38,firming,expanding,karuna_shifting,growth_transitioning,Line 4 changes in the marrying maiden,inferred_coherent
+hexagram_54,5,hexagram_58,firming,expanding,karuna_shifting,growth_transitioning,Line 5 changes in the marrying maiden,inferred_coherent
+hexagram_54,6,hexagram_19,yielding,contracting,karuna_shifting,growth_transitioning,Line 6 changes in the marrying maiden,inferred_coherent
+hexagram_55,1,hexagram_51,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 1 changes in abundance,inferred_coherent
+hexagram_55,2,hexagram_34,firming,expanding,adbhuta_shifting,bloom_transitioning,Line 2 changes in abundance,inferred_coherent
+hexagram_55,3,hexagram_62,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 3 changes in abundance,inferred_coherent
+hexagram_55,4,hexagram_30,firming,expanding,adbhuta_shifting,bloom_transitioning,Line 4 changes in abundance,inferred_coherent
+hexagram_55,5,hexagram_49,firming,expanding,adbhuta_shifting,bloom_transitioning,Line 5 changes in abundance,inferred_coherent
+hexagram_55,6,hexagram_36,yielding,contracting,adbhuta_shifting,bloom_transitioning,Line 6 changes in abundance,inferred_coherent
+hexagram_56,1,hexagram_35,yielding,contracting,karuna_shifting,growth_transitioning,Line 1 changes in the wanderer,inferred_coherent
+hexagram_56,2,hexagram_50,firming,expanding,karuna_shifting,growth_transitioning,Line 2 changes in the wanderer,inferred_coherent
+hexagram_56,3,hexagram_30,firming,expanding,karuna_shifting,growth_transitioning,Line 3 changes in the wanderer,inferred_coherent
+hexagram_56,4,hexagram_62,yielding,contracting,karuna_shifting,growth_transitioning,Line 4 changes in the wanderer,inferred_coherent
+hexagram_56,5,hexagram_33,firming,expanding,karuna_shifting,growth_transitioning,Line 5 changes in the wanderer,inferred_coherent
+hexagram_56,6,hexagram_52,yielding,contracting,karuna_shifting,growth_transitioning,Line 6 changes in the wanderer,inferred_coherent
+hexagram_57,1,hexagram_59,yielding,contracting,shringara_shifting,growth_transitioning,Line 1 changes in the gentle,inferred_coherent
+hexagram_57,2,hexagram_53,yielding,contracting,shringara_shifting,growth_transitioning,Line 2 changes in the gentle,inferred_coherent
+hexagram_57,3,hexagram_09,firming,expanding,shringara_shifting,growth_transitioning,Line 3 changes in the gentle,inferred_coherent
+hexagram_57,4,hexagram_48,yielding,contracting,shringara_shifting,growth_transitioning,Line 4 changes in the gentle,inferred_coherent
+hexagram_57,5,hexagram_18,yielding,contracting,shringara_shifting,growth_transitioning,Line 5 changes in the gentle,inferred_coherent
+hexagram_57,6,hexagram_44,firming,expanding,shringara_shifting,growth_transitioning,Line 6 changes in the gentle,inferred_coherent
+hexagram_58,1,hexagram_43,firming,expanding,hasya_shifting,bloom_transitioning,Line 1 changes in the joyous,inferred_coherent
+hexagram_58,2,hexagram_17,yielding,contracting,hasya_shifting,bloom_transitioning,Line 2 changes in the joyous,inferred_coherent
+hexagram_58,3,hexagram_47,yielding,contracting,hasya_shifting,bloom_transitioning,Line 3 changes in the joyous,inferred_coherent
+hexagram_58,4,hexagram_10,firming,expanding,hasya_shifting,bloom_transitioning,Line 4 changes in the joyous,inferred_coherent
+hexagram_58,5,hexagram_54,yielding,contracting,hasya_shifting,bloom_transitioning,Line 5 changes in the joyous,inferred_coherent
+hexagram_58,6,hexagram_60,yielding,contracting,hasya_shifting,bloom_transitioning,Line 6 changes in the joyous,inferred_coherent
+hexagram_59,1,hexagram_57,firming,expanding,shanta_shifting,seed_transitioning,Line 1 changes in dispersion,inferred_coherent
+hexagram_59,2,hexagram_20,yielding,contracting,shanta_shifting,seed_transitioning,Line 2 changes in dispersion,inferred_coherent
+hexagram_59,3,hexagram_61,firming,expanding,shanta_shifting,seed_transitioning,Line 3 changes in dispersion,inferred_coherent
+hexagram_59,4,hexagram_29,yielding,contracting,shanta_shifting,seed_transitioning,Line 4 changes in dispersion,inferred_coherent
+hexagram_59,5,hexagram_04,yielding,contracting,shanta_shifting,seed_transitioning,Line 5 changes in dispersion,inferred_coherent
+hexagram_59,6,hexagram_06,firming,expanding,shanta_shifting,seed_transitioning,Line 6 changes in dispersion,inferred_coherent
+hexagram_60,1,hexagram_05,firming,expanding,shanta_shifting,rest_transitioning,Line 1 changes in limitation,inferred_coherent
+hexagram_60,2,hexagram_03,yielding,contracting,shanta_shifting,rest_transitioning,Line 2 changes in limitation,inferred_coherent
+hexagram_60,3,hexagram_29,yielding,contracting,shanta_shifting,rest_transitioning,Line 3 changes in limitation,inferred_coherent
+hexagram_60,4,hexagram_61,firming,expanding,shanta_shifting,rest_transitioning,Line 4 changes in limitation,inferred_coherent
+hexagram_60,5,hexagram_19,yielding,contracting,shanta_shifting,rest_transitioning,Line 5 changes in limitation,inferred_coherent
+hexagram_60,6,hexagram_58,firming,expanding,shanta_shifting,rest_transitioning,Line 6 changes in limitation,inferred_coherent
+hexagram_61,1,hexagram_09,firming,expanding,shanta_shifting,rest_transitioning,Line 1 changes in inner truth,inferred_coherent
+hexagram_61,2,hexagram_42,yielding,contracting,shanta_shifting,rest_transitioning,Line 2 changes in inner truth,inferred_coherent
+hexagram_61,3,hexagram_59,yielding,contracting,shanta_shifting,rest_transitioning,Line 3 changes in inner truth,inferred_coherent
+hexagram_61,4,hexagram_60,yielding,contracting,shanta_shifting,rest_transitioning,Line 4 changes in inner truth,inferred_coherent
+hexagram_61,5,hexagram_41,yielding,contracting,shanta_shifting,rest_transitioning,Line 5 changes in inner truth,inferred_coherent
+hexagram_61,6,hexagram_10,firming,expanding,shanta_shifting,rest_transitioning,Line 6 changes in inner truth,inferred_coherent
+hexagram_62,1,hexagram_16,yielding,contracting,karuna_shifting,growth_transitioning,Line 1 changes in small preponderance,inferred_coherent
+hexagram_62,2,hexagram_32,firming,expanding,karuna_shifting,growth_transitioning,Line 2 changes in small preponderance,inferred_coherent
+hexagram_62,3,hexagram_55,firming,expanding,karuna_shifting,growth_transitioning,Line 3 changes in small preponderance,inferred_coherent
+hexagram_62,4,hexagram_56,firming,expanding,karuna_shifting,growth_transitioning,Line 4 changes in small preponderance,inferred_coherent
+hexagram_62,5,hexagram_31,firming,expanding,karuna_shifting,growth_transitioning,Line 5 changes in small preponderance,inferred_coherent
+hexagram_62,6,hexagram_15,yielding,contracting,karuna_shifting,growth_transitioning,Line 6 changes in small preponderance,inferred_coherent
+hexagram_63,1,hexagram_03,yielding,contracting,shanta_shifting,fruit_transitioning,Line 1 changes in after completion,inferred_coherent
+hexagram_63,2,hexagram_05,firming,expanding,shanta_shifting,fruit_transitioning,Line 2 changes in after completion,inferred_coherent
+hexagram_63,3,hexagram_39,yielding,contracting,shanta_shifting,fruit_transitioning,Line 3 changes in after completion,inferred_coherent
+hexagram_63,4,hexagram_37,firming,expanding,shanta_shifting,fruit_transitioning,Line 4 changes in after completion,inferred_coherent
+hexagram_63,5,hexagram_36,yielding,contracting,shanta_shifting,fruit_transitioning,Line 5 changes in after completion,inferred_coherent
+hexagram_63,6,hexagram_49,firming,expanding,shanta_shifting,fruit_transitioning,Line 6 changes in after completion,inferred_coherent
+hexagram_64,1,hexagram_50,firming,expanding,adbhuta_shifting,seed_transitioning,Line 1 changes in before completion,inferred_coherent
+hexagram_64,2,hexagram_35,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 2 changes in before completion,inferred_coherent
+hexagram_64,3,hexagram_38,firming,expanding,adbhuta_shifting,seed_transitioning,Line 3 changes in before completion,inferred_coherent
+hexagram_64,4,hexagram_40,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 4 changes in before completion,inferred_coherent
+hexagram_64,5,hexagram_06,firming,expanding,adbhuta_shifting,seed_transitioning,Line 5 changes in before completion,inferred_coherent
+hexagram_64,6,hexagram_04,yielding,contracting,adbhuta_shifting,seed_transitioning,Line 6 changes in before completion,inferred_coherent

@@ -5,14 +5,18 @@ Reads field state → scores each composition → returns ranked playlist.
 No synthesis. No audio. Pure relational scoring.
 """
 
+import csv
 import json
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 _HERE = Path(__file__).resolve().parent
 _DEFAULT_PATH = _HERE.parent / "datasets" / "compositions.json"
+_RELATIONS_PATH = _HERE.parent / "datasets" / "relations" / "composition_relations.csv"
 
 _CACHE: List[Dict] = []
+_REL_CACHE: List[Dict] = []
+_REL_INDEX: Dict[str, List[Dict]] = {}  # to_id → [relation rows]
 
 
 def load_compositions(path: Optional[str] = None) -> List[Dict]:
@@ -25,6 +29,46 @@ def load_compositions(path: Optional[str] = None) -> List[Dict]:
         return []
     _CACHE = json.loads(p.read_text(encoding="utf-8"))
     return _CACHE
+
+
+def _load_relations() -> List[Dict]:
+    """Load composition_relations.csv. Cached after first call."""
+    global _REL_CACHE, _REL_INDEX
+    if _REL_CACHE:
+        return _REL_CACHE
+    if not _RELATIONS_PATH.exists():
+        return []
+    with open(_RELATIONS_PATH, encoding="utf-8") as f:
+        _REL_CACHE = list(csv.DictReader(f))
+    # Build reverse index: to_id → [rows]
+    for row in _REL_CACHE:
+        to_id = row.get("to_id", "")
+        _REL_INDEX.setdefault(to_id, []).append(row)
+    return _REL_CACHE
+
+
+def get_compositions_for_entity(entity_id: str) -> list:
+    """Find compositions related to an entity via composition_relations.csv.
+
+    Accepts entity IDs like 'raga:darbari', 'ashtakala:sayahna',
+    'deity:krishna', 'composer:narottama_dasa_thakura', etc.
+    Returns list of dicts with composition_id, relation, and confidence.
+    """
+    _load_relations()
+    results = []
+    seen = set()
+    matches = _REL_INDEX.get(entity_id, [])
+    for row in matches:
+        comp_id = row["from_id"]
+        if comp_id not in seen:
+            seen.add(comp_id)
+            results.append({
+                "composition_id": comp_id,
+                "relation": row["relation"],
+                "confidence": float(row.get("confidence", 0.9)),
+            })
+    results.sort(key=lambda r: r["confidence"], reverse=True)
+    return results
 
 
 def _normalize(s: str) -> str:
@@ -146,6 +190,18 @@ def score_composition(comp: Dict, field_state: Dict,
             if comp_deity_raw not in ("nirguṇa", "viṣṇu", "viththala", "rāma", "all-saints") and "any" not in comp_obs:
                 score -= 0.50
                 reasons.append("penalty: wrong deity for ekādaśī")
+
+    # ── Metre/chandas match: +0.20 ──
+    try:
+        from npu_engine.field.chandas_engine import derive_chandas
+        chandas = derive_chandas(field_state)
+        comp_metre = _normalize(comp.get("metre", ""))
+        chandas_metre = _normalize(chandas.get("primary_metre", ""))
+        if comp_metre and chandas_metre and comp_metre == chandas_metre:
+            score += 0.20
+            reasons.append(f"metre: {chandas.get('primary_metre')}")
+    except Exception:
+        pass
 
     # ── Element match: +0.05 ──
     if comp.get("element", "").lower() == field_element:

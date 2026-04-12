@@ -1,6 +1,6 @@
-id,element,guna,dosha,rasa,tanmatra,jnanendriya,karmendriya,color_hex,time_of_day,season,direction,deity_type,practice,quality
-ether,ether,sattva,vata,sweet,shabda,ear,speech,#c8a96e,dawn,all,center,archetype,mantra,expansive
-air,air,rajas,vata,bitter,sparsha,skin,excretion,#6098b0,dusk,autumn,northwest,movement,pranayama,mobile
-fire,fire,rajas,pitta,pungent,rupa,eye,hands,#c86420,midday,summer,south,transformation,tapas,sharp
-water,water,tamas,kapha,salty,rasa,tongue,genitals,#2868a8,evening,spring,west,reception,devotion,fluid
-earth,earth,tamas,kapha,astringent,gandha,nose,feet,#5a7040,midnight,winter,southwest,stability,practice,dense
+id,element,guna,dosha,rasa,tanmatra,jnanendriya,karmendriya,color_hex,time_of_day,season,direction,deity_type,practice,quality,attestation_status
+ether,ether,sattva,vata,sweet,shabda,ear,speech,#c8a96e,dawn,all,center,archetype,mantra,expansive,attested_classical
+air,air,rajas,vata,bitter,sparsha,skin,excretion,#6098b0,dusk,autumn,northwest,movement,pranayama,mobile,attested_classical
+fire,fire,rajas,pitta,pungent,rupa,eye,hands,#c86420,midday,summer,south,transformation,tapas,sharp,attested_classical
+water,water,tamas,kapha,salty,rasa,tongue,genitals,#2868a8,evening,spring,west,reception,devotion,fluid,attested_classical
+earth,earth,tamas,kapha,astringent,gandha,nose,feet,#5a7040,midnight,winter,southwest,stability,practice,dense,attested_classical

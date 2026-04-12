@@ -340,7 +340,9 @@ class VectorStore:
         return out
 
     def _index_nakshatra_csv(self) -> List[Chunk]:
-        path = ROOT / "datasets" / "astro" / "nakshatra_full.csv"
+        path = ROOT / "datasets" / "astro" / "nakshatra_canonical.csv"
+        if not path.exists():
+            path = ROOT / "datasets" / "astro" / "nakshatra_full.csv"
         if not path.exists():
             return []
         out: List[Chunk] = []

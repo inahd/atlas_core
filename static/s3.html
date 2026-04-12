@@ -36,6 +36,8 @@ async function load(){
   document.getElementById('fn').textContent=pa.nakshatra||'—';document.getElementById('ft').textContent=pa.tithi||'—';
   document.getElementById('fv').textContent=pa.vara||'—';document.getElementById('fd').textContent=dv(pa.devi);
   document.getElementById('top').innerHTML=`<span class="nak">${pa.nakshatra||'—'}</span><span>${pa.tithi||'—'} · ${pa.paksha||''}</span><span>${pa.vara||'—'}</span><span style="color:var(--dim)">${pa.element||''} · ${pa.guna||''}</span><span style="color:var(--dim)">${pa.masa_name||''}</span>`;
+  // Bhedabheda filter: bhakti is never in avoid (BRS 1.2)
+  const _bhakti=/harinama|japa|smarana|kirtan|remembrance.*supreme|chanting|nama_sankirtana/i;
   // Svarodaya
   let L='<div class="hdr">SVARODAYA</div>';
   if(sv?.optimal_nadi){
@@ -43,7 +45,7 @@ async function load(){
     L+=`<div class="sep"></div><div class="hdr">ELEMENT</div><div class="sub">${sv.element_of_breath||'—'}</div><div class="dim">${sv.element_sensation||''}</div><div class="dim">${sv.element_duration_minutes||''}min cycle</div>`;
     if(sv.coherence_score!=null){L+=`<div class="sep"></div><div class="hdr">COHERENCE</div><div class="cbar"><div class="cfill" style="width:${sv.coherence_score*100}%"></div></div><div class="dim">${(sv.coherence_score*100).toFixed(0)}%</div>`}
     L+=`<div class="sep"></div><div class="hdr">RECOMMENDED</div>`;(sv.recommended_activities||[]).forEach(a=>L+=`<div class="act">${a.replace(/_/g,' ')}</div>`);
-    if(sv.avoid_activities?.length){L+=`<div class="hdr">AVOID (material)</div>`;sv.avoid_activities.forEach(a=>L+=`<div class="avoid">${a.replace(/_/g,' ')}</div>`)}
+    if(sv.avoid_activities?.length){const avd=sv.avoid_activities.filter(a=>!_bhakti.test(a));if(avd.length){L+=`<div class="hdr">AVOID (material)</div>`;avd.forEach(a=>L+=`<div class="avoid">${a.replace(/_/g,' ')}</div>`)}}
     L+=`<div style="margin-top:8px;font-size:9px;color:var(--dim);font-style:italic;line-height:1.4">Bhakti practices (harināma, smaraṇa, kīrtana) are always auspicious regardless of nāḍī state.</div>`;
   }else L+='<div class="dim">engine offline</div>';
   document.getElementById('sv').innerHTML=L;
@@ -57,7 +59,7 @@ async function load(){
     R+=`<div class="sep"></div><div class="hdr">DIETARY</div><div class="sub">${din.dietary_guidance||'—'}</div>`;
     if(din.recommended_herbs?.length){R+=`<div class="hdr">HERBS</div>`;din.recommended_herbs.forEach(h=>R+=`<div class="act">${h}</div>`)}
     if(din.recommended_practices?.length){R+=`<div class="hdr">PRACTICE</div>`;din.recommended_practices.slice(0,5).forEach(p=>R+=`<div class="act">${p}</div>`)}
-    if(din.avoid?.length){R+=`<div class="hdr">AVOID</div>`;din.avoid.slice(0,4).forEach(a=>R+=`<div class="avoid">${a.replace(/_/g,' ')}</div>`)}
+    if(din.avoid?.length){const davd=din.avoid.filter(a=>!_bhakti.test(a));if(davd.length){R+=`<div class="hdr">AVOID</div>`;davd.slice(0,4).forEach(a=>R+=`<div class="avoid">${a.replace(/_/g,' ')}</div>`)}}
     if(din.raga)R+=`<div class="sep"></div><div class="dim">rāga: ${din.raga}</div>`;
     if(din.forest)R+=`<div class="dim" style="font-style:italic">${din.forest}</div>`;
   }else R+='<div class="dim">engine offline</div>';

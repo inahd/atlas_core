@@ -1,16 +1,16 @@
-tithi_id,nitya_devi,color_hex,color_meaning
-1,Kameshvari,#ff6b35,vermilion of creative desire
-2,Bhagamalini,#4878c8,indigo of auspicious depth
-3,Nityaklinna,#2050a0,deep blue of perpetual moisture
-4,Bherunda,#8b0000,blood red of fierce protection
-5,Vahnivasini,#ff4500,flame orange of sacred fire
-6,Mahavajreshvari,#7b68ee,electric violet of thunderbolt
-7,Shivaduti,#4b0082,night purple of the messenger
-8,Tvarita,#dc143c,crimson of swift action
-9,Kulasundari,#9370db,lavender of lineage beauty
-10,Nitya,#20b2aa,turquoise of eternal being
-11,Nilapataka,#191970,midnight blue of the banner
-12,Vijaya,#b8860b,dark gold of victory
-13,Sarvamangala,#daa520,golden of all-limb beauty
-14,Jvalamalini,#ff8c00,fire orange of flame garlands
-15,Chitra,#e8e8ff,moonlight white of full spectrum
+tithi_id,nitya_devi,color_hex,color_meaning,attestation_status
+1,Kameshvari,#ff6b35,vermilion of creative desire,attested_classical
+2,Bhagamalini,#4878c8,indigo of auspicious depth,attested_classical
+3,Nityaklinna,#2050a0,deep blue of perpetual moisture,attested_classical
+4,Bherunda,#8b0000,blood red of fierce protection,attested_classical
+5,Vahnivasini,#ff4500,flame orange of sacred fire,attested_classical
+6,Mahavajreshvari,#7b68ee,electric violet of thunderbolt,attested_classical
+7,Shivaduti,#4b0082,night purple of the messenger,attested_classical
+8,Tvarita,#dc143c,crimson of swift action,attested_classical
+9,Kulasundari,#9370db,lavender of lineage beauty,attested_classical
+10,Nitya,#20b2aa,turquoise of eternal being,attested_classical
+11,Nilapataka,#191970,midnight blue of the banner,attested_classical
+12,Vijaya,#b8860b,dark gold of victory,attested_classical
+13,Sarvamangala,#daa520,golden of all-limb beauty,attested_classical
+14,Jvalamalini,#ff8c00,fire orange of flame garlands,attested_classical
+15,Chitra,#e8e8ff,moonlight white of full spectrum,attested_classical

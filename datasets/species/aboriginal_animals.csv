@@ -1,0 +1,62 @@
+animal_name,medicine_card_archetype,vpk_inference,graha,nakshatra,deity_myth,element,color,season,body_system,confidence,sources
+Eagle,Spirit,Vata-Pitta,Surya,unspecified,Garuda (vahana of Vishnu); solar bird imagery,Fire,Gold,Summer,Eyes; Heart,medium,Britannica vahana; Garuda entry
+Hawk,Messenger,Vata-Pitta,Budha,unspecified,Shyena (Vedic bird motif); Garuda-like sky-bird,Air,Yellow,Autumn,Nervous system,medium,Vedic Shyena; synthesis
+Elk,Stamina,Kapha,Mangala,unspecified,unspecified,Earth,Red,Winter,Musculoskeletal,low,Dosha/graha inference
+Deer,Gentleness,Kapha,Chandra,Anuradha; Jyeshtha (Deer yoni),unspecified,Water,White,Spring,Lymphatic,medium,BPHS nakshatra yoni
+Bear,Introspection,Kapha-Vata,Shani,unspecified,Jambavan (bear king in Ramayana),Earth,Blue,Winter,Digestive; Immune,medium,Ramayana tradition; Shani inference
+Snake,Transmutation,Pitta-Vata,Rahu; Ketu,Rohini; Mrigashira (Serpent yoni),Naga traditions; Ananta (cosmic serpent),Fire,Smoky,Monsoon,Reproductive; Kundalini,high,Britannica Ananta; naga entry; BPHS yoni
+Skunk,Reputation,Vata-Kapha,Budha,unspecified,unspecified,Earth,Black-White,Spring,Skin; Immune,low,Dosha/graha inference
+Otter,Woman Medicine,Vata-Kapha,Shukra,unspecified,unspecified,Water,Iridescent,Spring,Reproductive,low,Shukra inference
+Butterfly,Transformation,Vata,Ketu,unspecified,unspecified,Air,Multi,Spring,Nervous system,low,Ketu transformation analogy
+Turtle,Mother Earth,Kapha,Chandra,unspecified,Kurma (tortoise avatar of Vishnu),Water-Earth,Green,All,Skeletal; Skin,medium,Britannica Kurma entry
+Moose,Self-Esteem,Kapha,Guru,unspecified,unspecified,Earth,Yellow,Autumn,Skeletal,low,Guru wisdom inference
+Porcupine,Innocence,Kapha-Vata,Chandra,unspecified,unspecified,Earth,White,Spring,Skin,low,Chandra innocence inference
+Coyote,Trickster,Vata-Pitta,Budha,unspecified,unspecified,Fire-Air,Orange,Autumn,Nervous system,low,Budha trickster inference
+Dog,Loyalty,Kapha-Pitta,Mangala,Ardra; Mula (Dog yoni),Bhairava's dog; Yudhishthira's dog,Fire,Red,All,Heart; Circulatory,medium,BPHS dog yoni; Bhairava tradition
+Wolf,Teacher,Vata-Pitta,Guru,unspecified,unspecified,Air,Blue,Winter,Throat; Respiratory,low,Guru teacher inference
+Raven,Magic,Vata,Shani,unspecified,Shani associated with dark birds,Ether,Black,Winter,Nervous system,low,Shani darkness inference
+Mountain Lion,Leadership,Pitta,Surya,unspecified,Simha (lion); Narasimha association,Fire,Gold,Summer,Heart; Spine,medium,Narasimha lion-form tradition
+Lynx,Secrets,Vata,Ketu,unspecified,unspecified,Ether,Smoky,Winter,Third eye; Intuition,low,Ketu secrets inference
+Buffalo,Prayer; Abundance,Kapha,Guru,Hasta; Swati (Buffalo yoni),Yama's vahana (buffalo mount),Earth,Brown,Autumn,Digestive; Bones,high,Britannica vahana; BPHS yoni; NPS bison cultural doc
+Mouse,Scrutiny,Vata,Budha,unspecified,Mushika (Ganesha's vahana),Earth,Grey,All,Nervous system; Intestines,high,Britannica vahana (Ganesha's rat)
+Owl,Deception,Vata-Kapha,Ketu,unspecified,Lakshmi's vahana (owl),Ether,White-Silver,Winter,Eyes; Pineal,high,Britannica vahana (Lakshmi's owl)
+Crow,Law,Vata-Pitta,Shani,unspecified,Shani's vahana (crow),Air,Black,Autumn,Bones; Joints,medium,Shani-crow traditional association
+Fox,Camouflage,Vata-Pitta,Budha,unspecified,unspecified,Fire-Air,Orange,Autumn,Skin; Nervous system,low,Budha camouflage inference
+Squirrel,Gathering,Vata,Budha,unspecified,Squirrel in Ramayana (bridge building),Earth-Air,Brown,Autumn,Hands; Nervous system,medium,Ramayana squirrel tradition
+Dragonfly,Illusion,Vata,Rahu,unspecified,unspecified,Air-Water,Iridescent,Summer,Eyes; Mind,low,Rahu illusion inference
+Armadillo,Boundaries,Kapha,Shani,unspecified,unspecified,Earth,Grey,Winter,Skin; Skeletal,low,Shani boundaries inference
+Badger,Aggressiveness,Pitta,Mangala,unspecified,unspecified,Fire,Red,Summer,Adrenals; Blood,low,Mangala aggression inference
+Rabbit,Fear,Vata,Chandra,unspecified,Moon-rabbit (Shashi/Chandra tradition),Water,White,Spring,Adrenals; Nervous system,medium,Moon-rabbit cross-cultural tradition
+Turkey,Give-Away,Kapha,Guru,unspecified,unspecified,Earth,Brown-Red,Autumn,Digestive,low,Guru generosity inference
+Ant,Patience,Kapha-Pitta,Shani,unspecified,unspecified,Earth,Brown,Summer,Musculoskeletal,low,Shani patience inference
+Weasel,Stealth,Vata-Pitta,Ketu,unspecified,unspecified,Air,Brown,Winter,Nervous system,low,Ketu stealth inference
+Grouse,Sacred Spiral,Vata,Ketu,unspecified,unspecified,Ether,Brown,Spring,Energy body,low,Ketu spiral inference
+Horse,Power,Pitta-Vata,Surya; Mangala,Ashwini; Shatabhisha (Horse yoni),Ashwini Kumaras; Hayagriva (horse-headed Vishnu),Fire,White-Red,Summer,Musculoskeletal; Heart,high,BPHS horse yoni; Ashwini Kumara tradition; Britannica
+Lizard,Dreaming,Pitta-Vata,Ketu,unspecified,Lizard omens in Jyotish (Gowli Shastra),Fire,Green,Summer,Skin; Subconscious,medium,Gowli Shastra tradition
+Antelope,Action,Vata-Pitta,Mangala,unspecified,Vayu's deer/antelope associations,Air,Gold,Spring,Lungs; Legs,low,Vayu-antelope inference
+Frog,Cleansing,Kapha,Chandra,unspecified,Manduka (frog hymn in Rig Veda),Water,Green,Monsoon,Kidneys; Lymphatic,medium,Rig Veda Manduka Sukta
+Swan,Grace,Kapha-Vata,Shukra,unspecified,Hamsa (vahana of Brahma/Saraswati),Water-Air,White,Spring,Respiratory; Throat,high,Britannica Saraswati; vahana entry
+Dolphin,Manna; Breath,Vata-Kapha,Chandra,unspecified,Makara (aquatic mount); Ganga's vahana,Water,Blue,Summer,Respiratory; Pranayama,medium,Makara tradition; Ganga's mount
+Whale,Record Keeper,Kapha,Guru,unspecified,Matsya associations (great fish),Water,Blue-Black,Winter,Brain; Akashic,medium,Matsya tradition extension
+Bat,Rebirth,Vata,Rahu,unspecified,unspecified,Ether,Black,Autumn,Ears; Nervous system,low,Rahu rebirth inference
+Spider,Weaving,Vata,Rahu,unspecified,Maya (cosmic weaving/illusion),Ether,Black,Autumn,Nervous system,medium,Maya-weaving tradition
+Hummingbird,Joy,Vata-Pitta,Shukra,unspecified,unspecified,Air,Iridescent,Spring,Heart,low,Shukra joy inference
+Blue Heron,Self-Reflection,Vata-Kapha,Shani,unspecified,Baka (crane/heron in Mahabharata),Water-Air,Blue,Autumn,Legs; Meditation,medium,Mahabharata Baka tradition
+Beaver,Builder,Kapha-Pitta,Mangala,unspecified,Vishwakarma (divine builder analogy),Earth-Water,Brown,Autumn,Teeth; Jaw,low,Vishwakarma builder analogy
+Opossum,Strategy,Vata,Budha,unspecified,unspecified,Earth,Grey,Winter,Nervous system; Immune,low,Budha strategy inference
+Jaguar,Integrity; Impeccability,Pitta,Mangala,unspecified,unspecified,Fire,Gold-Black,Summer,Blood; Liver,low,Mangala warrior inference
+Salmon,Wisdom; Inner Knowing,Kapha-Pitta,Guru,unspecified,Matsya (fish avatar of Vishnu),Water,Silver-Red,Autumn,Blood; Brain,medium,Britannica Matsya; fish-wisdom tradition
+Alligator,Integration,Kapha-Pitta,Mangala,unspecified,Makara (crocodilian mount),Water-Earth,Green,Summer,Digestive; Jaw,medium,Makara tradition
+Raccoon,Generous Protector,Vata-Kapha,Budha,unspecified,unspecified,Earth-Water,Grey-Black,Autumn,Hands; Skin,low,Budha dexterity inference
+Prairie Dog,Community,Kapha,Chandra,unspecified,unspecified,Earth,Brown,Spring,Social; Heart,low,Chandra community inference
+Wild Boar,Confrontation,Pitta-Kapha,Mangala,unspecified,Varaha (boar avatar of Vishnu),Earth-Fire,Red-Brown,Autumn,Adrenals; Musculoskeletal,high,Britannica Varaha entry
+Mongoose,Resourcefulness,Pitta-Vata,Mangala,unspecified,Nakula (mongoose); Kubera association,Fire,Gold-Brown,Summer,Adrenals; Immune,medium,Kubera mongoose tradition; Nakula etymology
+Thunderbird,Divine Power,Pitta,Surya,unspecified,Garuda; Indra's thunderbolt,Fire-Ether,Gold-Blue,Monsoon,Crown; Heart,medium,Blank-card; Garuda-Indra synthesis
+Coypu,Adaptability,Kapha-Vata,Budha,unspecified,unspecified,Water-Earth,Brown,Spring,Teeth; Digestive,low,Blank-card addition; inference
+Pronghorn,Swiftness,Vata-Pitta,Mangala,unspecified,Vayu speed associations,Air,Brown-White,Summer,Lungs; Legs,low,Blank-card addition; Vayu inference
+Bald Eagle,Sacred Vision,Vata-Pitta,Surya,unspecified,Garuda (vahana of Vishnu),Fire-Air,White-Gold,Summer,Eyes; Crown,medium,Blank-card; Garuda inference
+Wolverine,Tenacity,Pitta,Mangala,unspecified,unspecified,Fire-Earth,Brown-Black,Winter,Adrenals; Musculoskeletal,low,Blank-card addition; inference
+Javelina,Kinship,Kapha-Pitta,Chandra,unspecified,Varaha (boar-family association),Earth,Grey,Autumn,Digestive; Social,low,Blank-card; Varaha family inference
+Roadrunner,Quickness of Mind,Vata-Pitta,Budha,unspecified,unspecified,Air-Fire,Brown-Green,Summer,Nervous system; Legs,low,Blank-card addition; inference
+Condor,Purification,Vata,Shani,unspecified,Jatayu (great bird in Ramayana),Air-Ether,Black,Winter,Lungs; Elimination,medium,Blank-card; Jatayu tradition
+Gila Monster,Preservation,Pitta-Kapha,Shani,unspecified,Lizard omens in Jyotish (Gowli Shastra),Fire-Earth,Orange-Black,Summer,Skin; Metabolism,low,Blank-card; Gowli Shastra inference

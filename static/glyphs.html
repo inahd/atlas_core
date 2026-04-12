@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Atlas · Glyphs</title>
+<link rel="stylesheet" href="/static/atlas-theme.css">
+<script src="/static/atlas.js"></script>
 <style>
-:root{--bg:#02030a;--panel:#070d14;--border:#1a2840;--gold:#f0c040;--teal:#28c8aa;--text:#d8e8f0;--muted:#8aabbb;--dim:#567080}
-*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#02030a;--panel:#070d14;--gold:#f0c040;--teal:#28c8aa;--text:#d8e8f0;--dim:#567080}
 body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:11px;padding:20px}
 h1{font-size:13px;color:var(--gold);letter-spacing:.3em;margin-bottom:16px;font-weight:normal}
 .search{width:100%;max-width:400px;padding:6px 10px;background:var(--panel);border:1px solid var(--border);color:var(--text);font-family:inherit;font-size:11px;border-radius:3px;margin-bottom:20px;outline:none}
@@ -37,7 +38,7 @@ h1{font-size:13px;color:var(--gold);letter-spacing:.3em;margin-bottom:16px;font-
 <script>
 let ALL={};
 async function load(){
-  try{const r=await fetch('/glyphs/all');ALL=await r.json()}catch(e){ALL={}}
+  ALL=await atlasGet('/glyphs/all',{});
   render();
 }
 

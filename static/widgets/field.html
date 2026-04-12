@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>C · Field</title>
+<link rel="stylesheet" href="/static/atlas-theme.css">
+<script src="/static/atlas.js"></script>
 <style>
-:root{--bg:#0c1520;--border:#1a2840;--gold:#e0b040;--teal:#20a88a;--purple:#7060cc;--green:#3a7a4a;--text:#c8d8e8;--dim:#4a6a7a;--bright:#c8d8e8;--red:#c84040}
-*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0c1520}
 body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;padding:10px;overflow-y:auto;overflow-x:hidden}
 .hdr{font-size:13px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px}
 .cols{display:flex;gap:12px}
@@ -32,7 +33,7 @@ const sColors=['#7060cc','#e0b040','#20a88a','#c8d8e8','#e0b040','#3a7a4a','#706
 async function load(){
   const el=document.getElementById('content');
   try{
-    const r=await fetch('/field');const d=await r.json();
+    const d=await atlasGet('/field',DEFAULT_FIELD);if(!d){el.innerHTML='◌ field offline';return}
     const pa=d.panchanga||{};
     const nak=p(d,'panchanga.nakshatra','—');
     const nakDeity=pa.nakshatra?.deity||pa.nakshatra_deity||'';

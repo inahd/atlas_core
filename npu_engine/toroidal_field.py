@@ -30,7 +30,7 @@ from typing import Dict, List, Tuple, Optional
 
 # ── OpenVINO NPU acceleration ────────────────────────────────
 _ov_core = None
-_OV_DEVICE = "NPU"
+_OV_DEVICE = "AUTO"
 
 def _init_npu():
     global _ov_core

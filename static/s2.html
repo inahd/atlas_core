@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>S2 · sound</title>
+<link rel="stylesheet" href="/static/atlas-theme.css">
+<script src="/static/atlas.js"></script>
 <style>
-:root{--bg:#060d14;--panel:#0c1520;--border:#1a2840;--gold:#e0b040;--teal:#20a88a;--purple:#7060cc;--text:#c8d8e8;--dim:#4a6a7a;--bright:#c8d8e8}
-*{margin:0;padding:0;box-sizing:border-box}
 body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;display:flex;flex-direction:column;height:100vh;overflow:hidden}
 .layer-strip{height:24px;background:var(--panel);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 12px;flex-shrink:0}
 .layer-left{display:flex;align-items:center;gap:8px}
@@ -32,6 +32,8 @@ body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;
 .shruti-labels{display:flex;font-size:10px;color:var(--dim);margin-top:2px}
 .bija-text{font-family:Georgia,serif;font-size:24px;color:var(--teal)}
 .home-link{position:fixed;bottom:8px;right:8px;font-family:'Courier New',monospace;font-size:10px;color:var(--dim);text-decoration:none;letter-spacing:0.15em}
+.nav{position:fixed;right:12px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px}
+.nav a{width:8px;height:8px;border-radius:50%;border:1px solid var(--border);display:block;text-decoration:none}.nav a.on{background:var(--teal);border-color:var(--teal)}.nav a:hover{border-color:var(--gold)}
 </style>
 </head>
 <body>
@@ -51,6 +53,7 @@ body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;
 </div>
 <div class="field-strip" id="field-strip">◌</div>
 <a href="/" class="home-link">✦ ATLAS</a>
+<nav class="nav"><a href="/s0"></a><a href="/s1"></a><a href="/s2" class="on"></a><a href="/s3"></a><a href="/s4"></a><a href="/s5"></a><a href="/s6"></a></nav>
 <script>
 function tick(){document.getElementById('clock').textContent=new Date().toLocaleTimeString('en-GB',{hour12:false})}
 tick();setInterval(tick,1000);
@@ -59,9 +62,7 @@ function p(d,path,fb){let v=d;for(const k of path.split('.')){if(!v)return fb;v=
 
 async function load(){
   try{
-    const[fr,sr]=await Promise.all([fetch('/field'),fetch('/sound/spec')]);
-    const d=await fr.json();
-    let s={};try{s=await sr.json()}catch(e){}
+    const[d,s]=await Promise.all([atlasGet('/field',DEFAULT_FIELD),atlasGet('/sound/spec',{})]);
 
     const nak=p(d,'panchanga.nakshatra','—');
     const tithi=p(d,'panchanga.tithi','—');

@@ -1,51 +1,51 @@
-site_id,site_name,lat,lon,tradition,body_correspondence,element,graha,s_layer,attestation,notes,location,site_type,indigenous_nation,water_type,cosmological_significance,source,astronomical_alignment,culture,geometry,period
-stonehenge,Stonehenge,51.18,-1.83,megalithic,skull/solar temple,fire,surya,S3,OBSERVED:TRADITIONAL,solar alignment calendar — skull of Britain,,,,,,,,,,
-avebury,Avebury,51.43,-1.85,megalithic,pelvis/earth womb,earth,shani,S5,OBSERVED:TRADITIONAL,largest stone circle — earth body container,,,,,,,,,,
-gobekli_tepe,Göbekli Tepe,37.22,38.92,prehistoric,spine/axis mundi,ether,ketu,S1,OBSERVED:PRIMARY_TEXT,oldest known temple — the first vertebra,,,,,,,,,,
-carnac,Carnac stones,47.60,-3.06,megalithic,nerve/spine alignment,air,budha,S3,OBSERVED:TRADITIONAL,3000 aligned stones — nerve pathway geometry,,,,,,,,,,
-newgrange,Newgrange,53.69,-6.47,megalithic,skull/solar womb,fire,surya,S0,OBSERVED:TRADITIONAL,winter solstice light enters the womb/skull,,,,,,,,,,
-ur_ziggurat,Ziggurat of Ur,30.96,46.10,sumerian,spine/meru,earth,shani,S4,OBSERVED:PRIMARY_TEXT,stepped mountain — Meru in Mesopotamia,,,,,,,,,,
-babylon,Babylon/Etemenanki,32.54,44.42,babylonian,throat/tower,ether,budha,S2,OBSERVED:TRADITIONAL,Tower of Babel — the speech/throat structure,,,,,,,,,,
-persepolis,Persepolis,29.93,52.89,persian,shoulders/power,fire,mangal,S4,OBSERVED:TRADITIONAL,the power throne — shoulder of Persia,,,,,,,,,,
-giza,Great Pyramid Giza,29.98,31.13,egyptian,skull/bindu,ether,surya,S0,OBSERVED:PRIMARY_TEXT,the capstone — crown/bindu of Egypt,,,,,,,,,,
-karnak,Karnak Temple,25.72,32.66,egyptian,spine/djed,earth,surya,S1,OBSERVED:PRIMARY_TEXT,Djed pillar complex — the Egyptian sushumna,,,,,,,,,,
-dendera,Dendera Temple,26.14,32.67,egyptian,skull/zodiac ceiling,ether,chandra,S3,OBSERVED:PRIMARY_TEXT,zodiac ceiling — the cosmic skull map,,,,,,,,,,
-abu_simbel,Abu Simbel,22.34,31.63,egyptian,eyes/solar gaze,fire,surya,S1,OBSERVED:PRIMARY_TEXT,solar alignment through the eyes twice yearly,,,,,,,,,,
-delphi,Delphi/Omphalos,38.48,22.50,greek,navel/omphalos,ether,guru,S0,OBSERVED:PRIMARY_TEXT,the navel of the world — Brahmanadi center,,,,,,,,,,
-olympia,Olympia,37.64,21.63,greek,body/athletic perfection,fire,mangal,S5,OBSERVED:TRADITIONAL,the perfected body — Mamsa/Shani temple,,,,,,,,,,
-athens_acropolis,Athens Acropolis,37.97,23.73,greek,head/wisdom,air,budha,S4,OBSERVED:TRADITIONAL,the high city — the intellectual crown,,,,,,,,,,
-teotihuacan,Teotihuacan,19.69,-98.84,aztec,spine/avenue of dead,earth,ketu,S1,OBSERVED:PRIMARY_TEXT,avenue of the dead = the spine/sushumna,,,,,,,,,,
-chichen_itza,Chichen Itza,20.68,-88.57,mayan,skull/solar calendar,fire,surya,S3,OBSERVED:PRIMARY_TEXT,serpent descends the spine at equinox,,,,,,,,,,
-palenque,Palenque,17.48,-92.05,mayan,heart/tomb,water,chandra,S2,OBSERVED:PRIMARY_TEXT,Pakal's sarcophagus — the cosmic heart,,,,,,,,,,
-machu_picchu,Machu Picchu,-13.16,-72.54,incan,crown/solar,fire,surya,S0,OBSERVED:TRADITIONAL,the lost city at the crown of the Andes,,,,,,,,,,
-tiwanaku,Tiwanaku,-16.55,-68.67,tiwanaku,navel/gateway,ether,guru,S4,OBSERVED:TRADITIONAL,Gateway of the Sun — the navel portal,,,,,,,,,,
-nazca,Nazca Lines,-14.74,-75.13,nazca,nerve/geoglyph,air,budha,S3,SYNTHESIS,visible only from above — nerve geometry,,,,,,,,,,
-angkor_wat,Angkor Wat,13.41,103.87,khmer,heart/meru,water,guru,S4,OBSERVED:PRIMARY_TEXT,Vishnu's cosmic mountain — the fingertip heart,,,,,,,,,,
-borobudur,Borobudur,-7.61,110.20,buddhist,spine/mandala,ether,ketu,S0,OBSERVED:PRIMARY_TEXT,9 platforms = 9 S-layers ascending,,,,,,,,,,
-bagan,Bagan Temples,21.17,94.86,buddhist,lungs/breath,air,budha,S2,OBSERVED:TRADITIONAL,2000 temples — the breathing field,,,,,,,,,,
-mount_fuji,Mount Fuji,35.36,138.73,shinto,crown/volcano,fire,mangal,S1,OBSERVED:TRADITIONAL,the sacred mountain crown of Japan,,,,,,,,,,
-chartres,Chartres Cathedral,48.45,1.49,christian,heart/labyrinth,water,chandra,S4,OBSERVED:TRADITIONAL,the labyrinth = the heart's chambers,,,,,,,,,,
-rosslyn,Rosslyn Chapel,55.86,-3.16,templar,spine/pillar,earth,shani,S4,OBSERVED:TRADITIONAL,the apprentice pillar = the spine,,,,,,,,,,
-glastonbury,Glastonbury Tor,51.14,-2.70,celtic,heart/avalon,water,chandra,S5,OBSERVED:TRADITIONAL,Avalon — the heart of Britain,,,,,,,,,,
-great_zimbabwe,Great Zimbabwe,-20.27,30.93,bantu,navel/enclosure,earth,shani,S4,OBSERVED:TRADITIONAL,the great enclosure — the body container,,,,,,,,,,
-lalibela,Lalibela,12.03,39.04,ethiopian,heart/rock church,earth,guru,S4,OBSERVED:PRIMARY_TEXT,Jerusalem in Africa — the cardiac center,,,,,,,,,,
-uluru,Uluru,-25.34,131.03,aboriginal,navel/dreaming,earth,ketu,S0,OBSERVED:TRADITIONAL,the navel of the continent — the dreaming center,,,,,,,,,,
-kata_tjuta,Kata Tjuta,-25.30,130.74,aboriginal,skull/many heads,ether,guru,S1,OBSERVED:TRADITIONAL,the many-headed — the distributed crown,,,,,,,,,,
-rapa_nui,Easter Island moai,-27.11,-109.35,polynesian,skull/ancestor,earth,ketu,S1,OBSERVED:TRADITIONAL,the ancestor heads — the watching skull line,,,,,,,,,,
-pohnpei,Nan Madol,6.84,158.33,micronesian,spine/waterways,water,chandra,S3,OBSERVED:TRADITIONAL,the Venice of the Pacific — water spine,,,,,,,,,,
-,Lake Superior,,,,,,,,OBSERVED:ETHNOGRAPHIC,,Great Lakes,water_body,Ojibwe/Anishinaabe,lake,Sacred manoomin (wild rice) water,Project Documentation Help(3) + traditional sources,,,,
-,Mississippi River,,,,,,,,OBSERVED:ETHNOGRAPHIC,,Central North America,water_body,Chickasaw/Choctaw/Quapaw,river,Father of Waters — cosmological spine of Turtle Island,Project Documentation Help(3) + traditional sources,,,,
-,Rio Grande,,,,,,,,OBSERVED:ETHNOGRAPHIC,,Southwest US/Mexico,water_body,Pueblo/Tigua,river,Sacred boundary water between worlds,Project Documentation Help(3) + traditional sources,,,,
-,Niagara Falls,,,,,,,,OBSERVED:ETHNOGRAPHIC,,New York/Ontario,water_body,Haudenosaunee/Iroquois,waterfall,Thunder beings — cosmological portal between upper and lower worlds,Project Documentation Help(3) + traditional sources,,,,
-,Columbia River,,,,,,,,OBSERVED:ETHNOGRAPHIC,,Pacific Northwest,water_body,Chinook/Yakama/Umatilla,river,Salmon ceremonial river — first salmon ceremony,Project Documentation Help(3) + traditional sources,,,,
-,Lake Titicaca,,,,,,,,OBSERVED:ETHNOGRAPHIC,,Peru/Bolivia,water_body,Aymara/Quechua,lake,Origin place — Viracocha emerged from waters,Project Documentation Help(3) + traditional sources,,,,
-,Ganges (Gaṅgā),,,,,,,,OBSERVED:ETHNOGRAPHIC,,India,water_body,Hindu,river,Descends from heaven through Shiva's hair — purification,Project Documentation Help(3) + traditional sources,,,,
-,Sarasvatī,,,,,,,,OBSERVED:ETHNOGRAPHIC,,India (ancient),water_body,Vedic,river,Lost sacred river — goddess of knowledge and flow,Project Documentation Help(3) + traditional sources,,,,
-,Yamunā,,,,,,,,OBSERVED:ETHNOGRAPHIC,,India,water_body,Hindu,river,Dark river — beloved of Krishna — twin of death (Yama),Project Documentation Help(3) + traditional sources,,,,
-,Poverty Point,32.6372,-91.4068,,,,,,OBSERVED:ARCHAEOLOGICAL,,Louisiana,earthwork,,,layered cosmology — sky/earth/underworld,,spring/fall equinox sunset alignment,Archaic,concentric C-shaped ridges + mound,1650-1100 BCE
-,Cahokia,38.6551,-90.0625,,,,,,OBSERVED:ARCHAEOLOGICAL,,Illinois,platform_mound_city,,,largest pre-Columbian city north of Mexico — cosmogram city,,Woodhenge solar observatory — solstice/equinox posts,Mississippian,"120+ mounds, Monks Mound 30m",1050-1350 CE
-,Serpent Mound,39.0253,-83.4304,,,,,,OBSERVED:ARCHAEOLOGICAL,,Ohio,effigy_mound,,,great serpent swallowing egg — cosmic renewal,,head aligns with summer solstice sunset,Fort Ancient/Adena,411m serpent effigy,300 BCE - 1100 CE
-,Newark Earthworks,40.0503,-82.4216,,,,,,OBSERVED:ARCHAEOLOGICAL,,Ohio,geometric_earthwork,,,precise lunar observatory — ceremony + pilgrimage,,lunar standstill cycle (18.6 year),Hopewell,octagon + circle + square enclosures,100 BCE - 500 CE
-,Etowah Mounds,34.1251,-84.8060,,,,,,OBSERVED:ARCHAEOLOGICAL,,Georgia,platform_mound,,,elite mortuary center — falcon warrior cosmology,,cardinal orientation,Mississippian,3 platform mounds + plaza,1000-1550 CE
-,Ocmulgee,32.8385,-83.6066,,,,,,OBSERVED:ARCHAEOLOGICAL,,Georgia,platform_mound,,,creation narrative — people emerged from earth,,earth lodge entrance faces east (equinox sunrise),Mississippian,7 mounds + earth lodge,900-1100 CE
-,Effigy Mounds,43.0869,-91.1891,,,,,,OBSERVED:ARCHAEOLOGICAL,,Iowa,effigy_mound,,,clan animal identity — bear/bird/water spirit moieties,,ridge-top orientation following landform,Effigy Mound tradition,bear + bird effigy forms,700-1200 CE
+site_id,site_name,lat,lon,tradition,body_correspondence,element,graha,s_layer,attestation,notes,location,site_type,indigenous_nation,water_type,cosmological_significance,source,astronomical_alignment,culture,geometry,period,attestation_status
+stonehenge,Stonehenge,51.18,-1.83,megalithic,skull/solar temple,fire,surya,S3,OBSERVED:TRADITIONAL,solar alignment calendar — skull of Britain,,,,,,,,,,,attested_secondary
+avebury,Avebury,51.43,-1.85,megalithic,pelvis/earth womb,earth,shani,S5,OBSERVED:TRADITIONAL,largest stone circle — earth body container,,,,,,,,,,,attested_secondary
+gobekli_tepe,Göbekli Tepe,37.22,38.92,prehistoric,spine/axis mundi,ether,ketu,S1,OBSERVED:PRIMARY_TEXT,oldest known temple — the first vertebra,,,,,,,,,,,attested_secondary
+carnac,Carnac stones,47.60,-3.06,megalithic,nerve/spine alignment,air,budha,S3,OBSERVED:TRADITIONAL,3000 aligned stones — nerve pathway geometry,,,,,,,,,,,attested_secondary
+newgrange,Newgrange,53.69,-6.47,megalithic,skull/solar womb,fire,surya,S0,OBSERVED:TRADITIONAL,winter solstice light enters the womb/skull,,,,,,,,,,,attested_secondary
+ur_ziggurat,Ziggurat of Ur,30.96,46.10,sumerian,spine/meru,earth,shani,S4,OBSERVED:PRIMARY_TEXT,stepped mountain — Meru in Mesopotamia,,,,,,,,,,,attested_secondary
+babylon,Babylon/Etemenanki,32.54,44.42,babylonian,throat/tower,ether,budha,S2,OBSERVED:TRADITIONAL,Tower of Babel — the speech/throat structure,,,,,,,,,,,attested_secondary
+persepolis,Persepolis,29.93,52.89,persian,shoulders/power,fire,mangal,S4,OBSERVED:TRADITIONAL,the power throne — shoulder of Persia,,,,,,,,,,,attested_secondary
+giza,Great Pyramid Giza,29.98,31.13,egyptian,skull/bindu,ether,surya,S0,OBSERVED:PRIMARY_TEXT,the capstone — crown/bindu of Egypt,,,,,,,,,,,attested_secondary
+karnak,Karnak Temple,25.72,32.66,egyptian,spine/djed,earth,surya,S1,OBSERVED:PRIMARY_TEXT,Djed pillar complex — the Egyptian sushumna,,,,,,,,,,,attested_secondary
+dendera,Dendera Temple,26.14,32.67,egyptian,skull/zodiac ceiling,ether,chandra,S3,OBSERVED:PRIMARY_TEXT,zodiac ceiling — the cosmic skull map,,,,,,,,,,,attested_secondary
+abu_simbel,Abu Simbel,22.34,31.63,egyptian,eyes/solar gaze,fire,surya,S1,OBSERVED:PRIMARY_TEXT,solar alignment through the eyes twice yearly,,,,,,,,,,,attested_secondary
+delphi,Delphi/Omphalos,38.48,22.50,greek,navel/omphalos,ether,guru,S0,OBSERVED:PRIMARY_TEXT,the navel of the world — Brahmanadi center,,,,,,,,,,,attested_secondary
+olympia,Olympia,37.64,21.63,greek,body/athletic perfection,fire,mangal,S5,OBSERVED:TRADITIONAL,the perfected body — Mamsa/Shani temple,,,,,,,,,,,attested_secondary
+athens_acropolis,Athens Acropolis,37.97,23.73,greek,head/wisdom,air,budha,S4,OBSERVED:TRADITIONAL,the high city — the intellectual crown,,,,,,,,,,,attested_secondary
+teotihuacan,Teotihuacan,19.69,-98.84,aztec,spine/avenue of dead,earth,ketu,S1,OBSERVED:PRIMARY_TEXT,avenue of the dead = the spine/sushumna,,,,,,,,,,,attested_secondary
+chichen_itza,Chichen Itza,20.68,-88.57,mayan,skull/solar calendar,fire,surya,S3,OBSERVED:PRIMARY_TEXT,serpent descends the spine at equinox,,,,,,,,,,,attested_secondary
+palenque,Palenque,17.48,-92.05,mayan,heart/tomb,water,chandra,S2,OBSERVED:PRIMARY_TEXT,Pakal's sarcophagus — the cosmic heart,,,,,,,,,,,attested_secondary
+machu_picchu,Machu Picchu,-13.16,-72.54,incan,crown/solar,fire,surya,S0,OBSERVED:TRADITIONAL,the lost city at the crown of the Andes,,,,,,,,,,,attested_secondary
+tiwanaku,Tiwanaku,-16.55,-68.67,tiwanaku,navel/gateway,ether,guru,S4,OBSERVED:TRADITIONAL,Gateway of the Sun — the navel portal,,,,,,,,,,,attested_secondary
+nazca,Nazca Lines,-14.74,-75.13,nazca,nerve/geoglyph,air,budha,S3,SYNTHESIS,visible only from above — nerve geometry,,,,,,,,,,,attested_secondary
+angkor_wat,Angkor Wat,13.41,103.87,khmer,heart/meru,water,guru,S4,OBSERVED:PRIMARY_TEXT,Vishnu's cosmic mountain — the fingertip heart,,,,,,,,,,,attested_secondary
+borobudur,Borobudur,-7.61,110.20,buddhist,spine/mandala,ether,ketu,S0,OBSERVED:PRIMARY_TEXT,9 platforms = 9 S-layers ascending,,,,,,,,,,,attested_secondary
+bagan,Bagan Temples,21.17,94.86,buddhist,lungs/breath,air,budha,S2,OBSERVED:TRADITIONAL,2000 temples — the breathing field,,,,,,,,,,,attested_secondary
+mount_fuji,Mount Fuji,35.36,138.73,shinto,crown/volcano,fire,mangal,S1,OBSERVED:TRADITIONAL,the sacred mountain crown of Japan,,,,,,,,,,,attested_secondary
+chartres,Chartres Cathedral,48.45,1.49,christian,heart/labyrinth,water,chandra,S4,OBSERVED:TRADITIONAL,the labyrinth = the heart's chambers,,,,,,,,,,,attested_secondary
+rosslyn,Rosslyn Chapel,55.86,-3.16,templar,spine/pillar,earth,shani,S4,OBSERVED:TRADITIONAL,the apprentice pillar = the spine,,,,,,,,,,,attested_secondary
+glastonbury,Glastonbury Tor,51.14,-2.70,celtic,heart/avalon,water,chandra,S5,OBSERVED:TRADITIONAL,Avalon — the heart of Britain,,,,,,,,,,,attested_secondary
+great_zimbabwe,Great Zimbabwe,-20.27,30.93,bantu,navel/enclosure,earth,shani,S4,OBSERVED:TRADITIONAL,the great enclosure — the body container,,,,,,,,,,,attested_secondary
+lalibela,Lalibela,12.03,39.04,ethiopian,heart/rock church,earth,guru,S4,OBSERVED:PRIMARY_TEXT,Jerusalem in Africa — the cardiac center,,,,,,,,,,,attested_secondary
+uluru,Uluru,-25.34,131.03,aboriginal,navel/dreaming,earth,ketu,S0,OBSERVED:TRADITIONAL,the navel of the continent — the dreaming center,,,,,,,,,,,attested_secondary
+kata_tjuta,Kata Tjuta,-25.30,130.74,aboriginal,skull/many heads,ether,guru,S1,OBSERVED:TRADITIONAL,the many-headed — the distributed crown,,,,,,,,,,,attested_secondary
+rapa_nui,Easter Island moai,-27.11,-109.35,polynesian,skull/ancestor,earth,ketu,S1,OBSERVED:TRADITIONAL,the ancestor heads — the watching skull line,,,,,,,,,,,attested_secondary
+pohnpei,Nan Madol,6.84,158.33,micronesian,spine/waterways,water,chandra,S3,OBSERVED:TRADITIONAL,the Venice of the Pacific — water spine,,,,,,,,,,,attested_secondary
+,Lake Superior,,,,,,,,OBSERVED:ETHNOGRAPHIC,,Great Lakes,water_body,Ojibwe/Anishinaabe,lake,Sacred manoomin (wild rice) water,Project Documentation Help(3) + traditional sources,,,,,attested_secondary
+,Mississippi River,,,,,,,,OBSERVED:ETHNOGRAPHIC,,Central North America,water_body,Chickasaw/Choctaw/Quapaw,river,Father of Waters — cosmological spine of Turtle Island,Project Documentation Help(3) + traditional sources,,,,,attested_secondary
+,Rio Grande,,,,,,,,OBSERVED:ETHNOGRAPHIC,,Southwest US/Mexico,water_body,Pueblo/Tigua,river,Sacred boundary water between worlds,Project Documentation Help(3) + traditional sources,,,,,attested_secondary
+,Niagara Falls,,,,,,,,OBSERVED:ETHNOGRAPHIC,,New York/Ontario,water_body,Haudenosaunee/Iroquois,waterfall,Thunder beings — cosmological portal between upper and lower worlds,Project Documentation Help(3) + traditional sources,,,,,attested_secondary
+,Columbia River,,,,,,,,OBSERVED:ETHNOGRAPHIC,,Pacific Northwest,water_body,Chinook/Yakama/Umatilla,river,Salmon ceremonial river — first salmon ceremony,Project Documentation Help(3) + traditional sources,,,,,attested_secondary
+,Lake Titicaca,,,,,,,,OBSERVED:ETHNOGRAPHIC,,Peru/Bolivia,water_body,Aymara/Quechua,lake,Origin place — Viracocha emerged from waters,Project Documentation Help(3) + traditional sources,,,,,attested_secondary
+,Ganges (Gaṅgā),,,,,,,,OBSERVED:ETHNOGRAPHIC,,India,water_body,Hindu,river,Descends from heaven through Shiva's hair — purification,Project Documentation Help(3) + traditional sources,,,,,attested_secondary
+,Sarasvatī,,,,,,,,OBSERVED:ETHNOGRAPHIC,,India (ancient),water_body,Vedic,river,Lost sacred river — goddess of knowledge and flow,Project Documentation Help(3) + traditional sources,,,,,attested_secondary
+,Yamunā,,,,,,,,OBSERVED:ETHNOGRAPHIC,,India,water_body,Hindu,river,Dark river — beloved of Krishna — twin of death (Yama),Project Documentation Help(3) + traditional sources,,,,,attested_secondary
+,Poverty Point,32.6372,-91.4068,,,,,,OBSERVED:ARCHAEOLOGICAL,,Louisiana,earthwork,,,layered cosmology — sky/earth/underworld,,spring/fall equinox sunset alignment,Archaic,concentric C-shaped ridges + mound,1650-1100 BCE,attested_secondary
+,Cahokia,38.6551,-90.0625,,,,,,OBSERVED:ARCHAEOLOGICAL,,Illinois,platform_mound_city,,,largest pre-Columbian city north of Mexico — cosmogram city,,Woodhenge solar observatory — solstice/equinox posts,Mississippian,"120+ mounds, Monks Mound 30m",1050-1350 CE,attested_secondary
+,Serpent Mound,39.0253,-83.4304,,,,,,OBSERVED:ARCHAEOLOGICAL,,Ohio,effigy_mound,,,great serpent swallowing egg — cosmic renewal,,head aligns with summer solstice sunset,Fort Ancient/Adena,411m serpent effigy,300 BCE - 1100 CE,attested_secondary
+,Newark Earthworks,40.0503,-82.4216,,,,,,OBSERVED:ARCHAEOLOGICAL,,Ohio,geometric_earthwork,,,precise lunar observatory — ceremony + pilgrimage,,lunar standstill cycle (18.6 year),Hopewell,octagon + circle + square enclosures,100 BCE - 500 CE,attested_secondary
+,Etowah Mounds,34.1251,-84.8060,,,,,,OBSERVED:ARCHAEOLOGICAL,,Georgia,platform_mound,,,elite mortuary center — falcon warrior cosmology,,cardinal orientation,Mississippian,3 platform mounds + plaza,1000-1550 CE,attested_secondary
+,Ocmulgee,32.8385,-83.6066,,,,,,OBSERVED:ARCHAEOLOGICAL,,Georgia,platform_mound,,,creation narrative — people emerged from earth,,earth lodge entrance faces east (equinox sunrise),Mississippian,7 mounds + earth lodge,900-1100 CE,attested_secondary
+,Effigy Mounds,43.0869,-91.1891,,,,,,OBSERVED:ARCHAEOLOGICAL,,Iowa,effigy_mound,,,clan animal identity — bear/bird/water spirit moieties,,ridge-top orientation following landform,Effigy Mound tradition,bear + bird effigy forms,700-1200 CE,attested_secondary

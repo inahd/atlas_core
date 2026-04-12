@@ -1,7 +1,7 @@
-layer_id,name,description
-cosmology_core,cosmology_core,nakshatra graha dosha etc
-ritual_practice,ritual_practice,mantra yoga ritual calendar
-mythic_narrative,mythic_narrative,lila bhava deity relations
-genealogy_layer,genealogy_layer,epic lineage structures
-historical_layer,historical_layer,historical reconstruction
-speculative_layer,speculative_layer,fictional or exploratory models
+layer_id,name,description,attestation_status
+cosmology_core,cosmology_core,nakshatra graha dosha etc,attested_classical
+ritual_practice,ritual_practice,mantra yoga ritual calendar,attested_classical
+mythic_narrative,mythic_narrative,lila bhava deity relations,attested_classical
+genealogy_layer,genealogy_layer,epic lineage structures,attested_classical
+historical_layer,historical_layer,historical reconstruction,attested_classical
+speculative_layer,speculative_layer,fictional or exploratory models,attested_classical

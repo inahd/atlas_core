@@ -1,28 +1,28 @@
-nakshatra,graha,deity
-Ashwini,Ketu,Ashwini Kumaras
-Bharani,Venus,Yama
-Krittika,Sun,Agni
-Rohini,Moon,Brahma
-Mrigashira,Mars,Soma
-Ardra,Rahu,Rudra
-Punarvasu,Jupiter,Aditi
-Pushya,Saturn,Brihaspati
-Ashlesha,Mercury,Nagas
-Magha,Ketu,Pitris
-Purva Phalguni,Venus,Bhaga
-Uttara Phalguni,Sun,Aryaman
-Hasta,Moon,Savitar
-Chitra,Mars,Tvashtar
-Swati,Rahu,Vayu
-Vishakha,Jupiter,Indra-Agni
-Anuradha,Saturn,Mitra
-Jyeshtha,Mercury,Indra
-Mula,Ketu,Nirriti
-Purva Ashadha,Venus,Apas
-Uttara Ashadha,Sun,Vishvadevas
-Shravana,Moon,Vishnu
-Dhanishta,Mars,Vasus
-Shatabhisha,Rahu,Varuna
-Purva Bhadrapada,Jupiter,Aja Ekapada
-Uttara Bhadrapada,Saturn,Ahirbudhnya
-Revati,Mercury,Pushan
+nakshatra,graha,deity,attestation_status
+Ashwini,Ketu,Ashwini Kumaras,attested_classical
+Bharani,Venus,Yama,attested_classical
+Krittika,Sun,Agni,attested_classical
+Rohini,Moon,Brahma,attested_classical
+Mrigashira,Mars,Soma,attested_classical
+Ardra,Rahu,Rudra,attested_classical
+Punarvasu,Jupiter,Aditi,attested_classical
+Pushya,Saturn,Brihaspati,attested_classical
+Ashlesha,Mercury,Nagas,attested_classical
+Magha,Ketu,Pitris,attested_classical
+Purva Phalguni,Venus,Bhaga,attested_classical
+Uttara Phalguni,Sun,Aryaman,attested_classical
+Hasta,Moon,Savitar,attested_classical
+Chitra,Mars,Tvashtar,attested_classical
+Swati,Rahu,Vayu,attested_classical
+Vishakha,Jupiter,Indra-Agni,attested_classical
+Anuradha,Saturn,Mitra,attested_classical
+Jyeshtha,Mercury,Indra,attested_classical
+Mula,Ketu,Nirriti,attested_classical
+Purva Ashadha,Venus,Apas,attested_classical
+Uttara Ashadha,Sun,Vishvadevas,attested_classical
+Shravana,Moon,Vishnu,attested_classical
+Dhanishta,Mars,Vasus,attested_classical
+Shatabhisha,Rahu,Varuna,attested_classical
+Purva Bhadrapada,Jupiter,Aja Ekapada,attested_classical
+Uttara Bhadrapada,Saturn,Ahirbudhnya,attested_classical
+Revati,Mercury,Pushan,attested_classical

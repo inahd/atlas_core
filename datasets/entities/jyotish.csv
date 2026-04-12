@@ -1,5 +1,5 @@
-id,type,name,aliases,notes,source_file
-jyotish:graha,jyotish,graha,,,jyotish_core.yaml
-jyotish:rashi,jyotish,rashi,,,jyotish_core.yaml
-jyotish:nakshatra,jyotish,nakshatra,,,jyotish_core.yaml
-jyotish:vedanta_schools,jyotish,vedanta_schools,,,jyotish_core.yaml
+id,type,name,aliases,notes,source_file,attestation_status
+jyotish:graha,jyotish,graha,,,jyotish_core.yaml,seed_unverified
+jyotish:rashi,jyotish,rashi,,,jyotish_core.yaml,seed_unverified
+jyotish:nakshatra,jyotish,nakshatra,,,jyotish_core.yaml,seed_unverified
+jyotish:vedanta_schools,jyotish,vedanta_schools,,,jyotish_core.yaml,seed_unverified

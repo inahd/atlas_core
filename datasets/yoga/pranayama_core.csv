@@ -1,7 +1,7 @@
-pranayama,element,effect,dosha_balance,graha_affinity,duration_minutes
-Ujjayi,water,calming,pitta,Moon,10
-Bhastrika,fire,heating,kapha,Mars,5
-Sitali,water,cooling,pitta,Moon,8
-Bhramari,ether,focusing,vata,Mercury,10
-Nadi Shodhana,air,balancing,all,Mercury,15
-Kapalbhati,fire,purifying,kapha,Sun,10
+pranayama,element,effect,dosha_balance,graha_affinity,duration_minutes,attestation_status
+Ujjayi,water,calming,pitta,Moon,10,attested_secondary
+Bhastrika,fire,heating,kapha,Mars,5,attested_secondary
+Sitali,water,cooling,pitta,Moon,8,attested_secondary
+Bhramari,ether,focusing,vata,Mercury,10,attested_secondary
+Nadi Shodhana,air,balancing,all,Mercury,15,attested_secondary
+Kapalbhati,fire,purifying,kapha,Sun,10,attested_secondary

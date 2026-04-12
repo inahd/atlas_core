@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Atlas · Dashboard</title>
+<link rel="stylesheet" href="/static/atlas-theme.css">
+<script src="/static/atlas.js"></script>
 <style>
-:root{--bg:#060d14;--panel:#0c1520;--border:#1a2840;--gold:#e0b040;--teal:#20a88a;--text:#c8d8e8;--dim:#4a6a7a;--bright:#c8d8e8}
-*{margin:0;padding:0;box-sizing:border-box}
 html,body{height:100%;overflow:hidden}
 body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;display:flex;flex-direction:column}
 
@@ -56,19 +56,15 @@ updateClock();setInterval(updateClock,1000);
 
 async function loadStrip(){
   try{
-    const[fr,ir]=await Promise.all([fetch('/field'),fetch('/intention/now').catch(()=>null)]);
-    const d=await fr.json();
+    const[d,ir]=await Promise.all([atlasGet('/field',DEFAULT_FIELD),atlasGet('/intention/now',null)]);
     const nak=p(d,'panchanga.nakshatra','—');
     const tithi=p(d,'panchanga.tithi','—');
     const el=document.getElementById('field-clock');
     el.dataset.field=nak+' · '+tithi;
 
     if(ir){
-      try{
-        const intent=await ir.json();
-        const rec=intent.recommendation||intent.current||intent.suggestion||'';
-        document.getElementById('intention').textContent=rec||'◌';
-      }catch(e){}
+      const rec=ir.recommendation||ir.current||ir.suggestion||'';
+      document.getElementById('intention').textContent=rec||'◌';
     }
   }catch(e){}
 }

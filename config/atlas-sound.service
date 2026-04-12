@@ -1,0 +1,17 @@
+[Unit]
+Description=Atlas 330 SuperCollider Sound Engine
+After=atlas-kernel.service sound.target pipewire.service
+Requires=atlas-kernel.service
+
+[Service]
+Type=simple
+User=inahd
+WorkingDirectory=/home/inahd/atlas_core
+ExecStart=/bin/bash /home/inahd/atlas_core/sc/start_atlas.sh
+Restart=on-failure
+RestartSec=10
+StandardOutput=append:/home/inahd/atlas_core/logs/sound.log
+StandardError=append:/home/inahd/atlas_core/logs/sound.log
+
+[Install]
+WantedBy=multi-user.target

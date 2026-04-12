@@ -1,16 +1,16 @@
-id,name_iast,name_sk,category,description,source,attestation
-tattva_acintya,Acintya-bhedābheda,अचिन्त्यभेदाभेद,siddhanta,"Inconceivable simultaneous oneness and difference. The jīva is simultaneously one with and different from Bhagavān. Neither monism nor dualism.",Caitanya-caritāmṛta Ādi 7.121,TRADITIONAL
-tattva_sambandha,Sambandha,सम्बन्ध,prayojana,"Relationship — the jīva's eternal constitutional position as servant of Kṛṣṇa. First of the three categories of Gauḍīya theology.",Bhagavad-gītā 15.7,TRADITIONAL
-tattva_abhidheya,Abhidheya,अभिधेय,prayojana,"Process — bhakti-yoga as the means of reawakening the dormant relationship. Second category.",Bhakti-rasāmṛta-sindhu 1.1.11,TRADITIONAL
-tattva_prayojana,Prayojana,प्रयोजन,prayojana,"Goal — prema (pure love of Godhead). The ultimate aim of all spiritual practice. Third category.",Caitanya-caritāmṛta Madhya 20.124,TRADITIONAL
-tattva_svayam_bhagavan,Svayam Bhagavān,स्वयं भगवान्,ontology,"Kṛṣṇa as the original Supreme Person from whom all avatāras emanate. The source of all sources.",Brahma-saṃhitā 5.1,TRADITIONAL
-tattva_shakti_parinam,Śakti-parināma,शक्तिपरिणाम,ontology,"Transformation of energy — the world is real transformation of the Lord's energy not illusion. Distinguishes Gauḍīya from Advaita.",Vedānta-sūtra 2.1.14 commentary,TRADITIONAL
-tattva_jiva,Jīva-tattva,जीवतत्त्व,ontology,"The individual soul — eternal marginal energy (taṭasthā-śakti) of the Lord. Qualitatively one quantitatively different.",Bhagavad-gītā 15.7,TRADITIONAL
-tattva_maya,Māyā-tattva,मायातत्त्व,ontology,"External energy — the covering and throwing potency that obscures the jīva's constitutional position.",Bhagavad-gītā 7.14,TRADITIONAL
-tattva_bhakti,Bhakti-tattva,भक्तितत्त्व,sadhana,"Devotional service — the intrinsic function (svarūpa-śakti) of the jīva. Nine processes beginning with śravaṇam.",Bhakti-rasāmṛta-sindhu 1.1.11,TRADITIONAL
-tattva_nama,Nāma-tattva,नामतत्त्व,sadhana,"The Holy Name — non-different from Kṛṣṇa. Primary practice in Kali-yuga. Harinām-saṅkīrtana.",Caitanya-caritāmṛta Ādi 17.22,TRADITIONAL
-tattva_rasa,Rasa-tattva,रसतत्त्व,rasa,"Transcendental mellow — five primary: śānta dāsya sakhya vātsalya mādhurya. The science of divine relationship.",Bhakti-rasāmṛta-sindhu 2.1.5,TRADITIONAL
-tattva_guru,Guru-tattva,गुरुतत्त्व,sadhana,"The spiritual master — representative of Kṛṣṇa transparent medium of the paramparā. Essential for transmission.",Bhagavad-gītā 4.34,TRADITIONAL
-tattva_lila,Līlā-tattva,लीलातत्त्व,ontology,"Divine pastimes — eternally manifest in the spiritual world. Not allegory not mythology — ontological reality.",Brahma-saṃhitā 5.37,TRADITIONAL
-tattva_dhama,Dhāma-tattva,धामतत्त्व,ontology,"The divine abode — Goloka Vṛndāvana as the highest realm. Non-different from Kṛṣṇa's own form.",Brahma-saṃhitā 5.29,TRADITIONAL
-tattva_kala,Kāla-tattva,कालतत्त्व,ontology,"Time — an energy of the Lord. Governs creation maintenance dissolution. Manifests as yuga cycle.",Bhagavad-gītā 11.32,TRADITIONAL
+id,name_iast,name_sk,category,description,source,attestation,attestation_status
+tattva_acintya,Acintya-bhedābheda,अचिन्त्यभेदाभेद,siddhanta,Inconceivable simultaneous oneness and difference. The jīva is simultaneously one with and different from Bhagavān. Neither monism nor dualism.,Caitanya-caritāmṛta Ādi 7.121,TRADITIONAL,attested_classical
+tattva_sambandha,Sambandha,सम्बन्ध,prayojana,Relationship — the jīva's eternal constitutional position as servant of Kṛṣṇa. First of the three categories of Gauḍīya theology.,Bhagavad-gītā 15.7,TRADITIONAL,attested_classical
+tattva_abhidheya,Abhidheya,अभिधेय,prayojana,Process — bhakti-yoga as the means of reawakening the dormant relationship. Second category.,Bhakti-rasāmṛta-sindhu 1.1.11,TRADITIONAL,attested_classical
+tattva_prayojana,Prayojana,प्रयोजन,prayojana,Goal — prema (pure love of Godhead). The ultimate aim of all spiritual practice. Third category.,Caitanya-caritāmṛta Madhya 20.124,TRADITIONAL,attested_classical
+tattva_svayam_bhagavan,Svayam Bhagavān,स्वयं भगवान्,ontology,Kṛṣṇa as the original Supreme Person from whom all avatāras emanate. The source of all sources.,Brahma-saṃhitā 5.1,TRADITIONAL,attested_classical
+tattva_shakti_parinam,Śakti-parināma,शक्तिपरिणाम,ontology,Transformation of energy — the world is real transformation of the Lord's energy not illusion. Distinguishes Gauḍīya from Advaita.,Vedānta-sūtra 2.1.14 commentary,TRADITIONAL,attested_classical
+tattva_jiva,Jīva-tattva,जीवतत्त्व,ontology,The individual soul — eternal marginal energy (taṭasthā-śakti) of the Lord. Qualitatively one quantitatively different.,Bhagavad-gītā 15.7,TRADITIONAL,attested_classical
+tattva_maya,Māyā-tattva,मायातत्त्व,ontology,External energy — the covering and throwing potency that obscures the jīva's constitutional position.,Bhagavad-gītā 7.14,TRADITIONAL,attested_classical
+tattva_bhakti,Bhakti-tattva,भक्तितत्त्व,sadhana,Devotional service — the intrinsic function (svarūpa-śakti) of the jīva. Nine processes beginning with śravaṇam.,Bhakti-rasāmṛta-sindhu 1.1.11,TRADITIONAL,attested_classical
+tattva_nama,Nāma-tattva,नामतत्त्व,sadhana,The Holy Name — non-different from Kṛṣṇa. Primary practice in Kali-yuga. Harinām-saṅkīrtana.,Caitanya-caritāmṛta Ādi 17.22,TRADITIONAL,attested_classical
+tattva_rasa,Rasa-tattva,रसतत्त्व,rasa,Transcendental mellow — five primary: śānta dāsya sakhya vātsalya mādhurya. The science of divine relationship.,Bhakti-rasāmṛta-sindhu 2.1.5,TRADITIONAL,attested_classical
+tattva_guru,Guru-tattva,गुरुतत्त्व,sadhana,The spiritual master — representative of Kṛṣṇa transparent medium of the paramparā. Essential for transmission.,Bhagavad-gītā 4.34,TRADITIONAL,attested_classical
+tattva_lila,Līlā-tattva,लीलातत्त्व,ontology,Divine pastimes — eternally manifest in the spiritual world. Not allegory not mythology — ontological reality.,Brahma-saṃhitā 5.37,TRADITIONAL,attested_classical
+tattva_dhama,Dhāma-tattva,धामतत्त्व,ontology,The divine abode — Goloka Vṛndāvana as the highest realm. Non-different from Kṛṣṇa's own form.,Brahma-saṃhitā 5.29,TRADITIONAL,attested_classical
+tattva_kala,Kāla-tattva,कालतत्त्व,ontology,Time — an energy of the Lord. Governs creation maintenance dissolution. Manifests as yuga cycle.,Bhagavad-gītā 11.32,TRADITIONAL,attested_classical

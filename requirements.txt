@@ -1,4 +1,25 @@
-flask>=3.0
-python-osc>=1.8
-requests>=2.28
-pyyaml>=6.0
+# === Atlas Core — requirements.txt ===
+# Core framework
+Flask==3.1.3
+
+# Computation
+numpy==2.4.4
+scipy==1.17.1
+
+# Vedic astronomy (Swiss Ephemeris bindings)
+pyswisseph==2.10.3.2
+
+# OSC protocol (sound bridge)
+python-osc==1.9.3
+
+# HTTP client
+requests==2.31.0
+
+# Config / data formats
+PyYAML==6.0.1
+
+# Audio I/O
+sounddevice==0.5.5
+
+# Browser automation (snapshot scripts)
+playwright==1.58.0

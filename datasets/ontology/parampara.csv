@@ -1,12 +1,12 @@
-id,name_iast,name_sk,position,role,era,source,attestation
-parampara_krishna,Kṛṣṇa,कृष्ण,1,source,eternal,Bhagavad-gītā 4.1,TRADITIONAL
-parampara_brahma,Brahmā,ब्रह्मा,2,adi_guru,creation,Brahma-saṃhitā 5.1,TRADITIONAL
-parampara_narada,Nārada,नारद,3,propagator,treta,Nārada-bhakti-sūtra,TRADITIONAL
-parampara_vyasa,Vyāsa,व्यास,4,compiler,dvapara,Mahābhārata / Bhāgavata,TRADITIONAL
-parampara_madhva,Madhvācārya,मध्वाचार्य,5,sampradaya_acharya,13th_century,Madhva commentary,TRADITIONAL
-parampara_isvara_puri,Īśvara Purī,ईश्वरपुरी,19,diksha_guru,15th_century,Caitanya-caritāmṛta,TRADITIONAL
-parampara_caitanya,Caitanya Mahāprabhu,चैतन्य महाप्रभु,20,yuga_avatara,1486-1534,Caitanya-caritāmṛta,TRADITIONAL
-parampara_six_gosvamis,Ṣaḍ-gosvāmī,षड्गोस्वामी,21,systematizers,16th_century,Bhakti-rasāmṛta-sindhu,TRADITIONAL
-parampara_visvanatha,Viśvanātha Cakravartī,विश्वनाथ चक्रवर्ती,26,commentator,17th_century,Sārārtha-darśinī,TRADITIONAL
-parampara_bhaktivinoda,Bhaktivinoda Ṭhākura,भक्तिविनोद ठाकुर,30,renaissance,1838-1914,Jaiva-dharma,TRADITIONAL
-parampara_bhaktisiddhanta,Bhaktisiddhānta Sarasvatī,भक्तिसिद्धान्त सरस्वती,31,preacher,1874-1937,Gauḍīya-bhāṣya,TRADITIONAL
+id,name_iast,name_sk,position,role,era,source,attestation,attestation_status
+parampara_krishna,Kṛṣṇa,कृष्ण,1,source,eternal,Bhagavad-gītā 4.1,TRADITIONAL,attested_classical
+parampara_brahma,Brahmā,ब्रह्मा,2,adi_guru,creation,Brahma-saṃhitā 5.1,TRADITIONAL,attested_classical
+parampara_narada,Nārada,नारद,3,propagator,treta,Nārada-bhakti-sūtra,TRADITIONAL,attested_classical
+parampara_vyasa,Vyāsa,व्यास,4,compiler,dvapara,Mahābhārata / Bhāgavata,TRADITIONAL,attested_classical
+parampara_madhva,Madhvācārya,मध्वाचार्य,5,sampradaya_acharya,13th_century,Madhva commentary,TRADITIONAL,attested_classical
+parampara_isvara_puri,Īśvara Purī,ईश्वरपुरी,19,diksha_guru,15th_century,Caitanya-caritāmṛta,TRADITIONAL,attested_classical
+parampara_caitanya,Caitanya Mahāprabhu,चैतन्य महाप्रभु,20,yuga_avatara,1486-1534,Caitanya-caritāmṛta,TRADITIONAL,attested_classical
+parampara_six_gosvamis,Ṣaḍ-gosvāmī,षड्गोस्वामी,21,systematizers,16th_century,Bhakti-rasāmṛta-sindhu,TRADITIONAL,attested_classical
+parampara_visvanatha,Viśvanātha Cakravartī,विश्वनाथ चक्रवर्ती,26,commentator,17th_century,Sārārtha-darśinī,TRADITIONAL,attested_classical
+parampara_bhaktivinoda,Bhaktivinoda Ṭhākura,भक्तिविनोद ठाकुर,30,renaissance,1838-1914,Jaiva-dharma,TRADITIONAL,attested_classical
+parampara_bhaktisiddhanta,Bhaktisiddhānta Sarasvatī,भक्तिसिद्धान्त सरस्वती,31,preacher,1874-1937,Gauḍīya-bhāṣya,TRADITIONAL,attested_classical

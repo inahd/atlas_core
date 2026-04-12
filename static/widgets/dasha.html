@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>S · Dasha</title>
+<link rel="stylesheet" href="/static/atlas-theme.css">
+<script src="/static/atlas.js"></script>
 <style>
-:root{--bg:#0c1520;--border:#1a2840;--gold:#e0b040;--teal:#20a88a;--purple:#7060cc;--text:#c8d8e8;--dim:#4a6a7a;--accent:#885028}
-*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#0c1520;--accent:#885028}
 body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;padding:10px;overflow-y:auto;overflow-x:hidden}
 .hdr{font-size:13px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px}
 .lord{font-family:Georgia,serif;font-size:18px;color:var(--gold);margin-bottom:0}
@@ -33,7 +34,7 @@ const dashaEnd=new Date('2027-10-01').getTime();
 async function load(){
   const el=document.getElementById('content');
   try{
-    const r=await fetch('/trajectory');const d=await r.json();
+    const d=await atlasGet('/trajectory',null);if(!d){el.innerHTML='◌ trajectory offline';return}
     const lord=p(d,'dasha_lord','')||p(d,'dasha.lord','')||p(d,'dasha','Mercury');
     const end=d.dasha_end||d.dasha?.end_date||'Oct 2027';
     const sub=d.sub_dasha||d.dasha?.sub||d.antardasha||'';

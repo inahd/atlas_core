@@ -1002,7 +1002,9 @@ def _load_entity_symbols() -> dict:
                 for sn in _GRAHA_SANSKRIT.get(_slug(name), []):
                     _ENTITY_SYMBOLS[sn] = entry
     # Nakshatras
-    p = root / "cosmology" / "nakshatra_master.csv"
+    p = root / "astro" / "nakshatra_canonical.csv"
+    if not p.exists():
+        p = root / "cosmology" / "nakshatra_master.csv"
     if p.exists():
         with p.open(encoding="utf-8") as f:
             for r in csv.DictReader(f):

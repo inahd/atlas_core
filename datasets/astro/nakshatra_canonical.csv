@@ -1,0 +1,28 @@
+nakshatra,graha,deity,element,guna,gana,dosha,yoni_animal,yoni_gender,symbol,shakti,themes,tree,plant,gemstone,direction,varna,nadi,path,color_hex,glyph,emoji,attestation_status
+Ashwini,Ketu,Ashwini Kumaras,fire,rajas,deva,vata,horse,male,horse_head,Healing,quick action healing beginnings,Kuchila,Arka,Cat's Eye,East,Kshatriya,Madhya,0.31,#8d784f,🐎✶,🐎,attested_classical
+Bharani,Venus,Yama,earth,rajas,manushya,pitta,elephant,female,yoni,Transformation,birth death rebirth endurance,Amla,Aloe Vera,Diamond,South,Brahmana,Antya,0.34,#ffa9dc,⚁✶,⚁,attested_classical
+Krittika,Sun,Agni,fire,rajas,rakshasa,pitta,sheep,female,razor,Purification,cutting illusion purification intensity,Udumbara,Ginger,Ruby,East,Brahmana,Madhya,0.7,#ffb300,🔥✶,🔥,attested_classical
+Rohini,Moon,Brahma,earth,rajas,manushya,kapha,serpent,female,chariot,Growth,fertility beauty nourishment creation,Jamun,Lotus,Pearl,East,Vaishya,Adi,0.31,#e7e7ff,🐄✶,🐄,attested_classical
+Mrigashira,Mars,Soma,earth,tamas,deva,vata,serpent,male,deer_head,Searching,curiosity wandering seeking knowledge,Khair,Jasmine,Coral,North,Vaishya,Madhya,0.64,#922610,🦌✶,🦌,attested_classical
+Ardra,Rahu,Rudra,water,tamas,manushya,vata,dog,male,teardrop,Renewal,storm destruction renewal emotional intensity,Neem,Mint,Hessonite,North,Kshatriya,Antya,0.21,#4e0d7a,💎✶,💎,attested_classical
+Punarvasu,Jupiter,Aditi,air,sattva,deva,vata,cat,female,quiver,Restoration,return renewal protection nurturing,Bamboo,Tulsi,Yellow Sapphire,East,Brahmana,Adi,0.6,#ffe574,🏹✶,🏹,attested_classical
+Pushya,Saturn,Brihaspati,water,sattva,deva,kapha,sheep,male,lotus,Nourishment,support nourishment teaching devotion,Peepal,Basil,Blue Sapphire,North,Brahmana,Madhya,0.33,#4e6175,🌸✶,🌸,attested_classical
+Ashlesha,Mercury,Nagas,water,tamas,rakshasa,kapha,cat,male,coiled_serpent,Entwining,coiling secrecy hypnotic intelligence,Nagakesar,Snake Root,Emerald,South,Brahmana,Antya,0.42,#0d7a39,🐍✶,🐍,attested_classical
+Magha,Ketu,Pitris,fire,tamas,rakshasa,pitta,rat,male,throne,Authority,ancestors heritage power leadership,Banyan,Bilva,Cat's Eye,South,Kshatriya,Madhya,0.31,#685d48,👑✶,👑,attested_classical
+Purva Phalguni,Venus,Bhaga,earth,rajas,manushya,pitta,rat,female,hammock,Enjoyment,pleasure love creativity relaxation,Palash,Rose,Diamond,East,Vaishya,Antya,0.34,#ffa9dc,🛏✶,🛏,attested_classical
+Uttara Phalguni,Sun,Aryaman,earth,sattva,manushya,kapha,cow,male,bed,Patronage,contracts friendship alliances stability,Fig,Ashwagandha,Ruby,North,Vaishya,Adi,0.58,#ffbe26,🛏✶,🛏,attested_classical
+Hasta,Moon,Savitar,air,sattva,deva,vata,buffalo,female,hand,Manifestation,skill craft dexterity manifestation,Jasmine,Banana,Pearl,East,Brahmana,Madhya,0.39,#ffffff,✋✶,✋,attested_classical
+Chitra,Mars,Tvashtar,fire,tamas,rakshasa,pitta,tiger,female,pearl,Creation,beauty architecture design brilliance,Bel,Brahmi,Coral,West,Kshatriya,Antya,0.76,#922610,💎✶,💎,attested_classical
+Swati,Rahu,Vayu,air,rajas,deva,vata,buffalo,male,young_shoot,Independence,freedom wandering scattering exploration,Arjuna,Cardamom,Hessonite,West,Vaishya,Adi,0.33,#6500aa,🌿✶,🌿,attested_classical
+Vishakha,Jupiter,Indra-Agni,fire,rajas,rakshasa,pitta,tiger,male,triumph_arch,Achievement,determination goals ambition,Sandalwood,Turmeric,Yellow Sapphire,South,Kshatriya,Madhya,0.64,#ffdd43,🎯✶,🎯,attested_classical
+Anuradha,Saturn,Mitra,water,sattva,deva,kapha,deer,female,lotus,Devotion,friendship loyalty devotion cooperation,Lotus,Lotus Root,Blue Sapphire,West,Brahmana,Antya,0.33,#4e6175,🌸✶,🌸,attested_classical
+Jyeshtha,Mercury,Indra,air,tamas,rakshasa,pitta,deer,male,earring,Leadership,authority responsibility protection,Nemali,Clove,Emerald,South,Kshatriya,Adi,0.54,#0d7a39,💫✶,💫,attested_classical
+Mula,Ketu,Nirriti,air,tamas,rakshasa,vata,dog,female,root,Destruction,roots destruction transformation investigation,Sal,Long Pepper,Cat's Eye,South,Rakshasa,Madhya,0.27,#685d48,🌱✶,🌱,attested_classical
+Purva Ashadha,Venus,Apas,water,rajas,manushya,pitta,monkey,female,fan,Invigoration,enthusiasm declaration courage,Coconut,Water Lily,Diamond,East,Brahmana,Antya,0.3,#ffa9dc,🐘✶,🐘,attested_classical
+Uttara Ashadha,Sun,Vishvadevas,earth,sattva,manushya,kapha,monkey,male,elephant_tusk,Victory,enduring success leadership ethics,Jackfruit,Plantain,Ruby,North,Kshatriya,Adi,0.58,#ffbe26,🐘✶,🐘,attested_classical
+Shravana,Moon,Vishnu,air,sattva,deva,vata,monkey,female,ear,Listening,learning listening sacred knowledge,Arjuna,Black Sesame,Pearl,North,Vaishya,Madhya,0.39,#ffffff,👂✶,👂,attested_classical
+Dhanishta,Mars,Vasus,fire,rajas,rakshasa,pitta,lion,male,drum,Fame,rhythm music prosperity community,Shami,Drumstick,Coral,West,Kshatriya,Antya,0.76,#cc2100,🥁✶,🥁,attested_classical
+Shatabhisha,Rahu,Varuna,air,tamas,rakshasa,vata,horse,female,empty_circle,Healing,mystery healing secrecy research,Kadamba,Bael,Hessonite,West,Brahmana,Adi,0.33,#4e0d7a,💊✶,💊,attested_classical
+Purva Bhadrapada,Jupiter,Aja Ekapada,fire,tamas,manushya,pitta,lion,female,front_legs_of_bed,Spiritual Fire,intensity transformation asceticism,Mango,Neem,Yellow Sapphire,South,Brahmana,Madhya,0.64,#e5c11c,⚡✶,⚡,attested_classical
+Uttara Bhadrapada,Saturn,Ahirbudhnya,water,sattva,manushya,kapha,cow,female,back_legs_of_bed,Stability,depth patience wisdom endurance,Neem,Lotus,Blue Sapphire,North,Kshatriya,Antya,0.33,#4e6175,🐍✶,🐍,attested_classical
+Revati,Mercury,Pushan,water,sattva,deva,kapha,elephant,male,fish,Prosperity,protection guidance nourishment travel,Fig,Fennel,Emerald,East,Brahmana,Adi,0.42,#00c34e,🐟✶,🐟,attested_classical

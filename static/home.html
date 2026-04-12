@@ -4,9 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Atlas</title>
+<link rel="stylesheet" href="/static/atlas-theme.css">
+<script src="/static/atlas.js"></script>
 <style>
-:root{--bg:#02030a;--panel:#070d14;--border:#1a2840;--gold:#f0c040;--teal:#28c8aa;--purple:#8070dd;--green:#3a8a4a;--text:#d8e8f0;--muted:#8aabbb;--dim:#567080;--red:#c84040;--amber:#c87820}
-*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#02030a;--panel:#070d14;--gold:#f0c040;--teal:#28c8aa;--purple:#8070dd;--green:#3a8a4a;--text:#d8e8f0;--dim:#567080}
 html,body{height:100%;overflow:hidden}
 body{background:var(--border);font-family:'Courier New',monospace;font-size:11px;color:var(--text);display:grid;grid-template-columns:160px 1fr 160px;grid-template-rows:28px 160px 1fr 160px;gap:1px}
 .g{font-family:Georgia,serif}
@@ -141,7 +142,7 @@ const OBS={};
 let history=[];// [{id,type,label}]
 
 function slug(s){return(s||'').toLowerCase().replace(/\s+/g,'_').replace(/[āáà]/g,'a').replace(/[īíì]/g,'i').replace(/[ūúù]/g,'u').replace(/ś/g,'sh').replace(/ṣ/g,'sh').replace(/ṭ/g,'t').replace(/ḍ/g,'d').replace(/ṇ/g,'n').replace(/ḥ/g,'h').replace(/ṃ/g,'m').replace(/[^a-z0-9_]/g,'')}
-async function obs(eid){if(OBS[eid])return OBS[eid];try{const r=await fetch('/observe',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({entity:eid})});const d=await r.json();OBS[eid]=d;return d}catch(e){return null}}
+async function obs(eid){if(OBS[eid])return OBS[eid];const d=await atlasPost('/observe',{entity:eid},null);if(d)OBS[eid]=d;return d}
 
 async function openEnt(eid,type,label){
   activeZone='__entity';
@@ -163,20 +164,22 @@ function updateCrumb(){
 }
 
 async function fetchAll(){
-  await Promise.all([
-    fetch('/field').then(r=>r.json()).then(d=>{F=d;online=true}).catch(()=>{}),
-    fetch('/rings').then(r=>r.json()).then(d=>RINGS=d).catch(()=>{}),
-    fetch('/guild/state').then(r=>r.json()).then(d=>GU=d).catch(()=>{}),
-    fetch('/goloka').then(r=>r.json()).then(d=>K=d).catch(()=>{}),
-    fetch('/transits').then(r=>r.json()).then(d=>TR=d).catch(()=>{}),
-    fetch('/trajectory').then(r=>r.json()).then(d=>TJ=d).catch(()=>{}),
-    fetch('/intention/now').then(r=>r.json()).then(d=>INT=d).catch(()=>{}),
-    fetch('/coherence-score').then(r=>r.json()).then(d=>COH=d).catch(()=>{}),
-    fetch('/sound/spec').then(r=>r.json()).then(d=>SND=d).catch(()=>{}),
-    fetch('/reading/bandhu').then(r=>r.json()).then(d=>RDG=d).catch(()=>{}),
-    fetch('/system/audio').then(r=>r.json()).then(d=>AUD=d).catch(()=>{}),
-    fetch('/glyphs/field').then(r=>r.json()).then(d=>FGLY=d).catch(()=>{})
-  ]);render();
+  const results=await Promise.all([
+    atlasGet('/field',DEFAULT_FIELD),
+    atlasGet('/rings',{}),
+    atlasGet('/guild/state',{}),
+    atlasGet('/goloka',{}),
+    atlasGet('/transits',{}),
+    atlasGet('/trajectory',{}),
+    atlasGet('/intention/now',{}),
+    atlasGet('/coherence-score',{}),
+    atlasGet('/sound/spec',{}),
+    atlasGet('/reading/bandhu',{}),
+    atlasGet('/system/audio',{}),
+    atlasGet('/glyphs/field',[])
+  ]);
+  F=results[0]||{};online=!!F.panchanga;RINGS=results[1]||{};GU=results[2]||{};K=results[3]||{};TR=results[4]||{};TJ=results[5]||{};INT=results[6]||{};COH=results[7]||{};SND=results[8]||{};RDG=results[9]||{};AUD=results[10]||{};FGLY=results[11]||[];
+  render();
 }
 
 function activate(z){if(activeZone===z){deactivate();return}activeZone=z;history=[];render()}
@@ -700,9 +703,56 @@ document.addEventListener('keydown',e=>{
 // ══════════════════════════════════════════════════
 // INIT + REFRESH
 // ══════════════════════════════════════════════════
+// Fast pre-populate from /dashboard/health before full fetchAll waterfall
+(async function loadDashboard(){
+  try{
+    const r=await fetch('/dashboard/health');
+    const d=await r.json();
+    if(d.field){
+      const nk=document.getElementById('nakshatra');if(nk&&d.field.nakshatra)nk.textContent=d.field.nakshatra;
+      const ti=document.getElementById('tithi');if(ti&&d.field.tithi)ti.textContent=d.field.tithi;
+      const dv=document.getElementById('devi');if(dv&&d.field.devi)dv.textContent=d.field.devi;
+    }
+    console.log('Dashboard:',d.health,'graph:',d.graph);
+  }catch(e){console.warn('Dashboard offline:',e)}
+})();
 fetchAll();
-setInterval(()=>{Promise.all([fetch('/field').then(r=>r.json()).then(d=>{F=d;online=true}).catch(()=>{}),fetch('/guild/state').then(r=>r.json()).then(d=>GU=d).catch(()=>{}),fetch('/intention/now').then(r=>r.json()).then(d=>INT=d).catch(()=>{})]).then(render)},60000);
-setInterval(()=>{Promise.all([fetch('/transits').then(r=>r.json()).then(d=>TR=d).catch(()=>{}),fetch('/coherence-score').then(r=>r.json()).then(d=>COH=d).catch(()=>{}),fetch('/rings').then(r=>r.json()).then(d=>RINGS=d).catch(()=>{})]).then(render)},300000);
+setInterval(()=>{Promise.all([atlasGet('/field',DEFAULT_FIELD).then(d=>{F=d||{};online=!!F.panchanga}),atlasGet('/guild/state',{}).then(d=>GU=d||{}),atlasGet('/intention/now',{}).then(d=>INT=d||{})]).then(render)},60000);
+setInterval(()=>{Promise.all([atlasGet('/transits',{}).then(d=>TR=d||{}),atlasGet('/coherence-score',{}).then(d=>COH=d||{}),atlasGet('/rings',{}).then(d=>RINGS=d||{})]).then(render)},300000);
+
+// ══════════════════════════════════════════════════
+// SYSTEM STATUS PANEL
+// ══════════════════════════════════════════════════
+async function loadSystemStatus(){
+  const d=await atlasGet('/dashboard/status',null);
+  if(!d)return;
+  const grid=document.getElementById('status-grid');
+  if(!grid)return;
+  const dot=v=>v==='ok'?'<span style="color:var(--teal)">●</span>':'<span style="color:var(--dim)">○</span>';
+  const items=[
+    {label:'field',value:dot(d.field)},
+    {label:'corpus',value:(d.corpus?.chunks?.toLocaleString()||'0')+' chunks'},
+    {label:'graph',value:(d.graph?.entities||0)+' entities'},
+    {label:'sound',value:dot(d.probe?.sound)},
+  ];
+  if(d.probe){
+    for(const[k,v]of Object.entries(d.probe)){
+      if(['sound'].includes(k))continue;
+      items.push({label:k,value:dot(v)});
+    }
+  }
+  const up=d.uptime?Math.round(d.uptime/60)+'m':'—';
+  grid.innerHTML='<div><span style="color:var(--gold)">uptime</span><br>'+up+'</div>'+
+    items.map(i=>'<div><span style="color:var(--gold)">'+i.label+'</span><br>'+i.value+'</div>').join('');
+}
+loadSystemStatus();
 </script>
+
+<details id="atlas-status-panel" style="position:fixed;bottom:0;left:0;right:0;background:var(--panel);border-top:1px solid #1a2840;padding:4px 12px;font-size:11px;color:var(--dim);z-index:8000">
+  <summary style="cursor:pointer;font-size:10px;letter-spacing:.1em;text-transform:uppercase">System status</summary>
+  <div id="status-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(90px,1fr));gap:6px;margin-top:6px;padding-bottom:4px">
+    <div style="color:var(--dim)">loading…</div>
+  </div>
+</details>
 </body>
 </html>

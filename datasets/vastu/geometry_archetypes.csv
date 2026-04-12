@@ -1,8 +1,8 @@
-geometry,element,symbolism,yantra_use
-bindu,ether,source_point,core_center
-circle,water,unity,mandala_ring
-triangle_up,fire,ascension,agni_yantra
-triangle_down,water,receptivity,shakti_yantra
-square,earth,stability,temple_foundation
-hexagon,air,interlocking_forces,shatkona
-lotus,ether,cosmic_unfolding,chakra_symbol
+geometry,element,symbolism,yantra_use,attestation_status
+bindu,ether,source_point,core_center,attested_secondary
+circle,water,unity,mandala_ring,attested_secondary
+triangle_up,fire,ascension,agni_yantra,attested_secondary
+triangle_down,water,receptivity,shakti_yantra,attested_secondary
+square,earth,stability,temple_foundation,attested_secondary
+hexagon,air,interlocking_forces,shatkona,attested_secondary
+lotus,ether,cosmic_unfolding,chakra_symbol,attested_secondary

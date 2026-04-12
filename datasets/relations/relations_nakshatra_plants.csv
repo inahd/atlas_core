@@ -1,136 +1,136 @@
 from_id,relation,to_id,source_title,source_locator,excerpt,tradition,confidence,notes
-nakshatra:Ashwini,nakshatra_sacred_plant,plant:Ashvagandha,nakshatra_plants.csv,,,traditional,verified,deity:Ashvini Kumaras · element:Fire · dosha:Vata
-plant:Ashvagandha,sacred_to,nakshatra:Ashwini,nakshatra_plants.csv,,,traditional,verified,deity:Ashvini Kumaras · element:Fire · dosha:Vata
-plant:Ashvagandha,dosha_balance,ayurveda:Vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
-plant:Ashvagandha,element,element:Fire,nakshatra_plants.csv,,,traditional,verified,Ashwagandha associated with Fire
-plant:Ashvagandha,body_region,body:head,nakshatra_plants.csv,,,traditional,verified,Ashwagandha supports head
-nakshatra:Bharani,nakshatra_sacred_plant,plant:Amalaki,nakshatra_plants.csv,,,traditional,verified,deity:Yama · element:Earth · dosha:Pitta
-plant:Amalaki,sacred_to,nakshatra:Bharani,nakshatra_plants.csv,,,traditional,verified,deity:Yama · element:Earth · dosha:Pitta
-plant:Amalaki,dosha_balance,ayurveda:Pitta,nakshatra_plants.csv,,,traditional,verified,plant balances Pitta
-plant:Amalaki,element,element:Earth,nakshatra_plants.csv,,,traditional,verified,Amla associated with Earth
-plant:Amalaki,body_region,body:reproductive,nakshatra_plants.csv,,,traditional,verified,Amla supports reproductive
-nakshatra:Krittika,nakshatra_sacred_plant,plant:Udumbara,nakshatra_plants.csv,,,traditional,verified,deity:Agni · element:Fire · dosha:Pitta
-plant:Udumbara,sacred_to,nakshatra:Krittika,nakshatra_plants.csv,,,traditional,verified,deity:Agni · element:Fire · dosha:Pitta
-plant:Udumbara,dosha_balance,ayurveda:Pitta,nakshatra_plants.csv,,,traditional,verified,plant balances Pitta
-plant:Udumbara,element,element:Fire,nakshatra_plants.csv,,,traditional,verified,Fig associated with Fire
-plant:Udumbara,body_region,body:eyes,nakshatra_plants.csv,,,traditional,verified,Fig supports eyes
-nakshatra:Rohini,nakshatra_sacred_plant,plant:Mallika,nakshatra_plants.csv,,,traditional,verified,deity:Brahma · element:Earth · dosha:Kapha
-plant:Mallika,sacred_to,nakshatra:Rohini,nakshatra_plants.csv,,,traditional,verified,deity:Brahma · element:Earth · dosha:Kapha
-plant:Mallika,dosha_balance,ayurveda:Kapha,nakshatra_plants.csv,,,traditional,verified,plant balances Kapha
-plant:Mallika,element,element:Earth,nakshatra_plants.csv,,,traditional,verified,Jasmine associated with Earth
-plant:Mallika,body_region,body:face,nakshatra_plants.csv,,,traditional,verified,Jasmine supports face
-nakshatra:Mrigashira,nakshatra_sacred_plant,plant:Khadira,nakshatra_plants.csv,,,traditional,verified,deity:Soma · element:Earth · dosha:Vata
-plant:Khadira,sacred_to,nakshatra:Mrigashira,nakshatra_plants.csv,,,traditional,verified,deity:Soma · element:Earth · dosha:Vata
-plant:Khadira,dosha_balance,ayurveda:Vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
-plant:Khadira,element,element:Earth,nakshatra_plants.csv,,,traditional,verified,Khadira associated with Earth
-plant:Khadira,body_region,body:throat,nakshatra_plants.csv,,,traditional,verified,Khadira supports throat
-nakshatra:Ardra,nakshatra_sacred_plant,plant:Agaru,nakshatra_plants.csv,,,traditional,verified,deity:Rudra · element:Water · dosha:Vata
-plant:Agaru,sacred_to,nakshatra:Ardra,nakshatra_plants.csv,,,traditional,verified,deity:Rudra · element:Water · dosha:Vata
-plant:Agaru,dosha_balance,ayurveda:Vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
-plant:Agaru,element,element:Water,nakshatra_plants.csv,,,traditional,verified,Agarwood associated with Water
-plant:Agaru,body_region,body:sinuses,nakshatra_plants.csv,,,traditional,verified,Agarwood supports sinuses
-nakshatra:Punarvasu,nakshatra_sacred_plant,plant:Vamsha,nakshatra_plants.csv,,,traditional,verified,deity:Aditi · element:Air · dosha:Vata
-plant:Vamsha,sacred_to,nakshatra:Punarvasu,nakshatra_plants.csv,,,traditional,verified,deity:Aditi · element:Air · dosha:Vata
-plant:Vamsha,dosha_balance,ayurveda:Vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
-plant:Vamsha,element,element:Air,nakshatra_plants.csv,,,traditional,verified,Bamboo associated with Air
-plant:Vamsha,body_region,body:arms,nakshatra_plants.csv,,,traditional,verified,Bamboo supports arms
-nakshatra:Pushya,nakshatra_sacred_plant,plant:Ashvattha,nakshatra_plants.csv,,,traditional,verified,deity:Brihaspati · element:Water · dosha:Kapha
-plant:Ashvattha,sacred_to,nakshatra:Pushya,nakshatra_plants.csv,,,traditional,verified,deity:Brihaspati · element:Water · dosha:Kapha
-plant:Ashvattha,dosha_balance,ayurveda:Kapha,nakshatra_plants.csv,,,traditional,verified,plant balances Kapha
-plant:Ashvattha,element,element:Water,nakshatra_plants.csv,,,traditional,verified,Peepal associated with Water
-plant:Ashvattha,body_region,body:chest,nakshatra_plants.csv,,,traditional,verified,Peepal supports chest
-nakshatra:Ashlesha,nakshatra_sacred_plant,plant:Nagakesara,nakshatra_plants.csv,,,traditional,verified,deity:Nagas · element:Water · dosha:Pitta
-plant:Nagakesara,sacred_to,nakshatra:Ashlesha,nakshatra_plants.csv,,,traditional,verified,deity:Nagas · element:Water · dosha:Pitta
-plant:Nagakesara,dosha_balance,ayurveda:Pitta,nakshatra_plants.csv,,,traditional,verified,plant balances Pitta
-plant:Nagakesara,element,element:Water,nakshatra_plants.csv,,,traditional,verified,Nagakesara associated with Water
-plant:Nagakesara,body_region,body:nerves,nakshatra_plants.csv,,,traditional,verified,Nagakesara supports nerves
-nakshatra:Magha,nakshatra_sacred_plant,plant:Vata,nakshatra_plants.csv,,,traditional,verified,deity:Pitrs · element:Fire · dosha:Vata
-plant:Vata,sacred_to,nakshatra:Magha,nakshatra_plants.csv,,,traditional,verified,deity:Pitrs · element:Fire · dosha:Vata
-plant:Vata,dosha_balance,ayurveda:Vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
-plant:Vata,element,element:Fire,nakshatra_plants.csv,,,traditional,verified,Banyan associated with Fire
-plant:Vata,body_region,body:spine,nakshatra_plants.csv,,,traditional,verified,Banyan supports spine
-nakshatra:Purva Phalguni,nakshatra_sacred_plant,plant:Palasha,nakshatra_plants.csv,,,traditional,verified,deity:Bhaga · element:Earth · dosha:Pitta
-plant:Palasha,sacred_to,nakshatra:Purva Phalguni,nakshatra_plants.csv,,,traditional,verified,deity:Bhaga · element:Earth · dosha:Pitta
-plant:Palasha,dosha_balance,ayurveda:Pitta,nakshatra_plants.csv,,,traditional,verified,plant balances Pitta
-plant:Palasha,element,element:Earth,nakshatra_plants.csv,,,traditional,verified,Palasha associated with Earth
-plant:Palasha,body_region,body:heart,nakshatra_plants.csv,,,traditional,verified,Palasha supports heart
-nakshatra:Uttara Phalguni,nakshatra_sacred_plant,plant:Rudraksha,nakshatra_plants.csv,,,traditional,verified,deity:Aryaman · element:Earth · dosha:Vata
-plant:Rudraksha,sacred_to,nakshatra:Uttara Phalguni,nakshatra_plants.csv,,,traditional,verified,deity:Aryaman · element:Earth · dosha:Vata
-plant:Rudraksha,dosha_balance,ayurveda:Vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
-plant:Rudraksha,element,element:Earth,nakshatra_plants.csv,,,traditional,verified,Rudraksha associated with Earth
-plant:Rudraksha,body_region,body:back,nakshatra_plants.csv,,,traditional,verified,Rudraksha supports back
-nakshatra:Hasta,nakshatra_sacred_plant,plant:Arishta,nakshatra_plants.csv,,,traditional,verified,deity:Savitar · element:Air · dosha:Kapha
-plant:Arishta,sacred_to,nakshatra:Hasta,nakshatra_plants.csv,,,traditional,verified,deity:Savitar · element:Air · dosha:Kapha
-plant:Arishta,dosha_balance,ayurveda:Kapha,nakshatra_plants.csv,,,traditional,verified,plant balances Kapha
-plant:Arishta,element,element:Air,nakshatra_plants.csv,,,traditional,verified,Soapnut associated with Air
-plant:Arishta,body_region,body:hands,nakshatra_plants.csv,,,traditional,verified,Soapnut supports hands
-nakshatra:Chitra,nakshatra_sacred_plant,plant:Bilva,nakshatra_plants.csv,,,traditional,verified,deity:Vishvakarma · element:Fire · dosha:Vata
-plant:Bilva,sacred_to,nakshatra:Chitra,nakshatra_plants.csv,,,traditional,verified,deity:Vishvakarma · element:Fire · dosha:Vata
-plant:Bilva,dosha_balance,ayurveda:Vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
-plant:Bilva,element,element:Fire,nakshatra_plants.csv,,,traditional,verified,Bael associated with Fire
-plant:Bilva,body_region,body:intestines,nakshatra_plants.csv,,,traditional,verified,Bael supports intestines
-nakshatra:Swati,nakshatra_sacred_plant,plant:Arjuna,nakshatra_plants.csv,,,traditional,verified,deity:Vayu · element:Air · dosha:Pitta
-plant:Arjuna,sacred_to,nakshatra:Swati,nakshatra_plants.csv,,,traditional,verified,deity:Vayu · element:Air · dosha:Pitta
-plant:Arjuna,dosha_balance,ayurveda:Pitta,nakshatra_plants.csv,,,traditional,verified,plant balances Pitta
-plant:Arjuna,element,element:Air,nakshatra_plants.csv,,,traditional,verified,Arjuna associated with Air
-plant:Arjuna,body_region,body:lungs,nakshatra_plants.csv,,,traditional,verified,Arjuna supports lungs
-nakshatra:Vishakha,nakshatra_sacred_plant,plant:Kapittha,nakshatra_plants.csv,,,traditional,verified,deity:Indra-Agni · element:Fire · dosha:Kapha
-plant:Kapittha,sacred_to,nakshatra:Vishakha,nakshatra_plants.csv,,,traditional,verified,deity:Indra-Agni · element:Fire · dosha:Kapha
-plant:Kapittha,dosha_balance,ayurveda:Kapha,nakshatra_plants.csv,,,traditional,verified,plant balances Kapha
-plant:Kapittha,element,element:Fire,nakshatra_plants.csv,,,traditional,verified,Wood Apple associated with Fire
-plant:Kapittha,body_region,body:stomach,nakshatra_plants.csv,,,traditional,verified,Wood Apple supports stomach
-nakshatra:Anuradha,nakshatra_sacred_plant,plant:Tulasi,nakshatra_plants.csv,,,traditional,verified,deity:Mitra · element:Water · dosha:Kapha
-plant:Tulasi,sacred_to,nakshatra:Anuradha,nakshatra_plants.csv,,,traditional,verified,deity:Mitra · element:Water · dosha:Kapha
-plant:Tulasi,dosha_balance,ayurveda:Kapha,nakshatra_plants.csv,,,traditional,verified,plant balances Kapha
-plant:Tulasi,element,element:Water,nakshatra_plants.csv,,,traditional,verified,Tulsi associated with Water
-plant:Tulasi,body_region,body:lungs,nakshatra_plants.csv,,,traditional,verified,Tulsi supports lungs
-nakshatra:Jyeshtha,nakshatra_sacred_plant,plant:Shalmali,nakshatra_plants.csv,,,traditional,verified,deity:Indra · element:Fire · dosha:Pitta
-plant:Shalmali,sacred_to,nakshatra:Jyeshtha,nakshatra_plants.csv,,,traditional,verified,deity:Indra · element:Fire · dosha:Pitta
-plant:Shalmali,dosha_balance,ayurveda:Pitta,nakshatra_plants.csv,,,traditional,verified,plant balances Pitta
-plant:Shalmali,element,element:Fire,nakshatra_plants.csv,,,traditional,verified,Silk Cotton associated with Fire
-plant:Shalmali,body_region,body:circulation,nakshatra_plants.csv,,,traditional,verified,Silk Cotton supports circulation
-nakshatra:Mula,nakshatra_sacred_plant,plant:Shala,nakshatra_plants.csv,,,traditional,verified,deity:Nirriti · element:Fire · dosha:Vata
-plant:Shala,sacred_to,nakshatra:Mula,nakshatra_plants.csv,,,traditional,verified,deity:Nirriti · element:Fire · dosha:Vata
-plant:Shala,dosha_balance,ayurveda:Vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
-plant:Shala,element,element:Fire,nakshatra_plants.csv,,,traditional,verified,Sal associated with Fire
-plant:Shala,body_region,body:colon,nakshatra_plants.csv,,,traditional,verified,Sal supports colon
-nakshatra:Purvashadha,nakshatra_sacred_plant,plant:Kamala,nakshatra_plants.csv,,,traditional,verified,deity:Apas · element:Water · dosha:Pitta
-plant:Kamala,sacred_to,nakshatra:Purvashadha,nakshatra_plants.csv,,,traditional,verified,deity:Apas · element:Water · dosha:Pitta
-plant:Kamala,dosha_balance,ayurveda:Pitta,nakshatra_plants.csv,,,traditional,verified,plant balances Pitta
-plant:Kamala,element,element:Water,nakshatra_plants.csv,,,traditional,verified,Lotus associated with Water
-plant:Kamala,body_region,body:kidneys,nakshatra_plants.csv,,,traditional,verified,Lotus supports kidneys
-nakshatra:Uttarashadha,nakshatra_sacred_plant,plant:Panasa,nakshatra_plants.csv,,,traditional,verified,deity:Vishvadevas · element:Earth · dosha:Kapha
-plant:Panasa,sacred_to,nakshatra:Uttarashadha,nakshatra_plants.csv,,,traditional,verified,deity:Vishvadevas · element:Earth · dosha:Kapha
-plant:Panasa,dosha_balance,ayurveda:Kapha,nakshatra_plants.csv,,,traditional,verified,plant balances Kapha
-plant:Panasa,element,element:Earth,nakshatra_plants.csv,,,traditional,verified,Jackfruit associated with Earth
-plant:Panasa,body_region,body:muscles,nakshatra_plants.csv,,,traditional,verified,Jackfruit supports muscles
-nakshatra:Shravana,nakshatra_sacred_plant,plant:Arka,nakshatra_plants.csv,,,traditional,verified,deity:Vishnu · element:Water · dosha:Vata
-plant:Arka,sacred_to,nakshatra:Shravana,nakshatra_plants.csv,,,traditional,verified,deity:Vishnu · element:Water · dosha:Vata
-plant:Arka,dosha_balance,ayurveda:Vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
-plant:Arka,element,element:Water,nakshatra_plants.csv,,,traditional,verified,Arka associated with Water
-plant:Arka,body_region,body:ears,nakshatra_plants.csv,,,traditional,verified,Arka supports ears
-nakshatra:Dhanishtha,nakshatra_sacred_plant,plant:Shami,nakshatra_plants.csv,,,traditional,verified,deity:Vasus · element:Air · dosha:Vata
-plant:Shami,sacred_to,nakshatra:Dhanishtha,nakshatra_plants.csv,,,traditional,verified,deity:Vasus · element:Air · dosha:Vata
-plant:Shami,dosha_balance,ayurveda:Vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
-plant:Shami,element,element:Air,nakshatra_plants.csv,,,traditional,verified,Shami associated with Air
-plant:Shami,body_region,body:legs,nakshatra_plants.csv,,,traditional,verified,Shami supports legs
-nakshatra:Shatabhisha,nakshatra_sacred_plant,plant:Kadamba,nakshatra_plants.csv,,,traditional,verified,deity:Varuna · element:Air · dosha:Kapha
-plant:Kadamba,sacred_to,nakshatra:Shatabhisha,nakshatra_plants.csv,,,traditional,verified,deity:Varuna · element:Air · dosha:Kapha
-plant:Kadamba,dosha_balance,ayurveda:Kapha,nakshatra_plants.csv,,,traditional,verified,plant balances Kapha
-plant:Kadamba,element,element:Air,nakshatra_plants.csv,,,traditional,verified,Kadamba associated with Air
-plant:Kadamba,body_region,body:skin,nakshatra_plants.csv,,,traditional,verified,Kadamba supports skin
-nakshatra:Purva Bhadrapada,nakshatra_sacred_plant,plant:Amra,nakshatra_plants.csv,,,traditional,verified,deity:Aja Ekapada · element:Fire · dosha:Pitta
-plant:Amra,sacred_to,nakshatra:Purva Bhadrapada,nakshatra_plants.csv,,,traditional,verified,deity:Aja Ekapada · element:Fire · dosha:Pitta
-plant:Amra,dosha_balance,ayurveda:Pitta,nakshatra_plants.csv,,,traditional,verified,plant balances Pitta
-plant:Amra,element,element:Fire,nakshatra_plants.csv,,,traditional,verified,Mango associated with Fire
-plant:Amra,body_region,body:blood,nakshatra_plants.csv,,,traditional,verified,Mango supports blood
-nakshatra:Uttara Bhadrapada,nakshatra_sacred_plant,plant:Nimba,nakshatra_plants.csv,,,traditional,verified,deity:Ahir Budhnya · element:Water · dosha:Pitta
-plant:Nimba,sacred_to,nakshatra:Uttara Bhadrapada,nakshatra_plants.csv,,,traditional,verified,deity:Ahir Budhnya · element:Water · dosha:Pitta
-plant:Nimba,dosha_balance,ayurveda:Pitta,nakshatra_plants.csv,,,traditional,verified,plant balances Pitta
-plant:Nimba,element,element:Water,nakshatra_plants.csv,,,traditional,verified,Neem associated with Water
-plant:Nimba,body_region,body:skin,nakshatra_plants.csv,,,traditional,verified,Neem supports skin
-nakshatra:Revati,nakshatra_sacred_plant,plant:Madhu,nakshatra_plants.csv,,,traditional,verified,deity:Pushan · element:Water · dosha:Kapha
-plant:Madhu,sacred_to,nakshatra:Revati,nakshatra_plants.csv,,,traditional,verified,deity:Pushan · element:Water · dosha:Kapha
-plant:Madhu,dosha_balance,ayurveda:Kapha,nakshatra_plants.csv,,,traditional,verified,plant balances Kapha
-plant:Madhu,element,element:Water,nakshatra_plants.csv,,,traditional,verified,Mahua associated with Water
-plant:Madhu,body_region,body:feet,nakshatra_plants.csv,,,traditional,verified,Mahua supports feet
+nakshatra:ashwini,nakshatra_sacred_plant,plant:ashvagandha,nakshatra_plants.csv,,,traditional,verified,deity:Ashvini Kumaras · element:Fire · dosha:Vata
+plant:ashvagandha,sacred_to,nakshatra:ashwini,nakshatra_plants.csv,,,traditional,verified,deity:Ashvini Kumaras · element:Fire · dosha:Vata
+plant:ashvagandha,dosha_balance,dosha:vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
+plant:ashvagandha,element,element:fire,nakshatra_plants.csv,,,traditional,verified,Ashwagandha associated with Fire
+plant:ashvagandha,body_region,body:head,nakshatra_plants.csv,,,traditional,verified,Ashwagandha supports head
+nakshatra:bharani,nakshatra_sacred_plant,plant:amalaki,nakshatra_plants.csv,,,traditional,verified,deity:Yama · element:Earth · dosha:Pitta
+plant:amalaki,sacred_to,nakshatra:bharani,nakshatra_plants.csv,,,traditional,verified,deity:Yama · element:Earth · dosha:Pitta
+plant:amalaki,dosha_balance,dosha:pitta,nakshatra_plants.csv,,,traditional,verified,plant balances Pitta
+plant:amalaki,element,element:earth,nakshatra_plants.csv,,,traditional,verified,Amla associated with Earth
+plant:amalaki,body_region,body:reproductive,nakshatra_plants.csv,,,traditional,verified,Amla supports reproductive
+nakshatra:krittika,nakshatra_sacred_plant,plant:udumbara,nakshatra_plants.csv,,,traditional,verified,deity:Agni · element:Fire · dosha:Pitta
+plant:udumbara,sacred_to,nakshatra:krittika,nakshatra_plants.csv,,,traditional,verified,deity:Agni · element:Fire · dosha:Pitta
+plant:udumbara,dosha_balance,dosha:pitta,nakshatra_plants.csv,,,traditional,verified,plant balances Pitta
+plant:udumbara,element,element:fire,nakshatra_plants.csv,,,traditional,verified,Fig associated with Fire
+plant:udumbara,body_region,body:eyes,nakshatra_plants.csv,,,traditional,verified,Fig supports eyes
+nakshatra:rohini,nakshatra_sacred_plant,plant:mallika,nakshatra_plants.csv,,,traditional,verified,deity:Brahma · element:Earth · dosha:Kapha
+plant:mallika,sacred_to,nakshatra:rohini,nakshatra_plants.csv,,,traditional,verified,deity:Brahma · element:Earth · dosha:Kapha
+plant:mallika,dosha_balance,dosha:kapha,nakshatra_plants.csv,,,traditional,verified,plant balances Kapha
+plant:mallika,element,element:earth,nakshatra_plants.csv,,,traditional,verified,Jasmine associated with Earth
+plant:mallika,body_region,body:face,nakshatra_plants.csv,,,traditional,verified,Jasmine supports face
+nakshatra:mrigashira,nakshatra_sacred_plant,plant:khadira,nakshatra_plants.csv,,,traditional,verified,deity:Soma · element:Earth · dosha:Vata
+plant:khadira,sacred_to,nakshatra:mrigashira,nakshatra_plants.csv,,,traditional,verified,deity:Soma · element:Earth · dosha:Vata
+plant:khadira,dosha_balance,dosha:vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
+plant:khadira,element,element:earth,nakshatra_plants.csv,,,traditional,verified,Khadira associated with Earth
+plant:khadira,body_region,body:throat,nakshatra_plants.csv,,,traditional,verified,Khadira supports throat
+nakshatra:ardra,nakshatra_sacred_plant,plant:agaru,nakshatra_plants.csv,,,traditional,verified,deity:Rudra · element:Water · dosha:Vata
+plant:agaru,sacred_to,nakshatra:ardra,nakshatra_plants.csv,,,traditional,verified,deity:Rudra · element:Water · dosha:Vata
+plant:agaru,dosha_balance,dosha:vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
+plant:agaru,element,element:water,nakshatra_plants.csv,,,traditional,verified,Agarwood associated with Water
+plant:agaru,body_region,body:sinuses,nakshatra_plants.csv,,,traditional,verified,Agarwood supports sinuses
+nakshatra:punarvasu,nakshatra_sacred_plant,plant:vamsha,nakshatra_plants.csv,,,traditional,verified,deity:Aditi · element:Air · dosha:Vata
+plant:vamsha,sacred_to,nakshatra:punarvasu,nakshatra_plants.csv,,,traditional,verified,deity:Aditi · element:Air · dosha:Vata
+plant:vamsha,dosha_balance,dosha:vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
+plant:vamsha,element,element:air,nakshatra_plants.csv,,,traditional,verified,Bamboo associated with Air
+plant:vamsha,body_region,body:arms,nakshatra_plants.csv,,,traditional,verified,Bamboo supports arms
+nakshatra:pushya,nakshatra_sacred_plant,plant:ashvattha,nakshatra_plants.csv,,,traditional,verified,deity:Brihaspati · element:Water · dosha:Kapha
+plant:ashvattha,sacred_to,nakshatra:pushya,nakshatra_plants.csv,,,traditional,verified,deity:Brihaspati · element:Water · dosha:Kapha
+plant:ashvattha,dosha_balance,dosha:kapha,nakshatra_plants.csv,,,traditional,verified,plant balances Kapha
+plant:ashvattha,element,element:water,nakshatra_plants.csv,,,traditional,verified,Peepal associated with Water
+plant:ashvattha,body_region,body:chest,nakshatra_plants.csv,,,traditional,verified,Peepal supports chest
+nakshatra:ashlesha,nakshatra_sacred_plant,plant:nagakesara,nakshatra_plants.csv,,,traditional,verified,deity:Nagas · element:Water · dosha:Pitta
+plant:nagakesara,sacred_to,nakshatra:ashlesha,nakshatra_plants.csv,,,traditional,verified,deity:Nagas · element:Water · dosha:Pitta
+plant:nagakesara,dosha_balance,dosha:pitta,nakshatra_plants.csv,,,traditional,verified,plant balances Pitta
+plant:nagakesara,element,element:water,nakshatra_plants.csv,,,traditional,verified,Nagakesara associated with Water
+plant:nagakesara,body_region,body:nerves,nakshatra_plants.csv,,,traditional,verified,Nagakesara supports nerves
+nakshatra:magha,nakshatra_sacred_plant,plant:vata,nakshatra_plants.csv,,,traditional,verified,deity:Pitrs · element:Fire · dosha:Vata
+plant:vata,sacred_to,nakshatra:magha,nakshatra_plants.csv,,,traditional,verified,deity:Pitrs · element:Fire · dosha:Vata
+plant:vata,dosha_balance,dosha:vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
+plant:vata,element,element:fire,nakshatra_plants.csv,,,traditional,verified,Banyan associated with Fire
+plant:vata,body_region,body:spine,nakshatra_plants.csv,,,traditional,verified,Banyan supports spine
+nakshatra:purva phalguni,nakshatra_sacred_plant,plant:palasha,nakshatra_plants.csv,,,traditional,verified,deity:Bhaga · element:Earth · dosha:Pitta
+plant:palasha,sacred_to,nakshatra:purva phalguni,nakshatra_plants.csv,,,traditional,verified,deity:Bhaga · element:Earth · dosha:Pitta
+plant:palasha,dosha_balance,dosha:pitta,nakshatra_plants.csv,,,traditional,verified,plant balances Pitta
+plant:palasha,element,element:earth,nakshatra_plants.csv,,,traditional,verified,Palasha associated with Earth
+plant:palasha,body_region,body:heart,nakshatra_plants.csv,,,traditional,verified,Palasha supports heart
+nakshatra:uttara phalguni,nakshatra_sacred_plant,plant:rudraksha,nakshatra_plants.csv,,,traditional,verified,deity:Aryaman · element:Earth · dosha:Vata
+plant:rudraksha,sacred_to,nakshatra:uttara phalguni,nakshatra_plants.csv,,,traditional,verified,deity:Aryaman · element:Earth · dosha:Vata
+plant:rudraksha,dosha_balance,dosha:vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
+plant:rudraksha,element,element:earth,nakshatra_plants.csv,,,traditional,verified,Rudraksha associated with Earth
+plant:rudraksha,body_region,body:back,nakshatra_plants.csv,,,traditional,verified,Rudraksha supports back
+nakshatra:hasta,nakshatra_sacred_plant,plant:arishta,nakshatra_plants.csv,,,traditional,verified,deity:Savitar · element:Air · dosha:Kapha
+plant:arishta,sacred_to,nakshatra:hasta,nakshatra_plants.csv,,,traditional,verified,deity:Savitar · element:Air · dosha:Kapha
+plant:arishta,dosha_balance,dosha:kapha,nakshatra_plants.csv,,,traditional,verified,plant balances Kapha
+plant:arishta,element,element:air,nakshatra_plants.csv,,,traditional,verified,Soapnut associated with Air
+plant:arishta,body_region,body:hands,nakshatra_plants.csv,,,traditional,verified,Soapnut supports hands
+nakshatra:chitra,nakshatra_sacred_plant,plant:bilva,nakshatra_plants.csv,,,traditional,verified,deity:Vishvakarma · element:Fire · dosha:Vata
+plant:bilva,sacred_to,nakshatra:chitra,nakshatra_plants.csv,,,traditional,verified,deity:Vishvakarma · element:Fire · dosha:Vata
+plant:bilva,dosha_balance,dosha:vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
+plant:bilva,element,element:fire,nakshatra_plants.csv,,,traditional,verified,Bael associated with Fire
+plant:bilva,body_region,body:intestines,nakshatra_plants.csv,,,traditional,verified,Bael supports intestines
+nakshatra:swati,nakshatra_sacred_plant,plant:arjuna,nakshatra_plants.csv,,,traditional,verified,deity:Vayu · element:Air · dosha:Pitta
+plant:arjuna,sacred_to,nakshatra:swati,nakshatra_plants.csv,,,traditional,verified,deity:Vayu · element:Air · dosha:Pitta
+plant:arjuna,dosha_balance,dosha:pitta,nakshatra_plants.csv,,,traditional,verified,plant balances Pitta
+plant:arjuna,element,element:air,nakshatra_plants.csv,,,traditional,verified,Arjuna associated with Air
+plant:arjuna,body_region,body:lungs,nakshatra_plants.csv,,,traditional,verified,Arjuna supports lungs
+nakshatra:vishakha,nakshatra_sacred_plant,plant:kapittha,nakshatra_plants.csv,,,traditional,verified,deity:Indra-Agni · element:Fire · dosha:Kapha
+plant:kapittha,sacred_to,nakshatra:vishakha,nakshatra_plants.csv,,,traditional,verified,deity:Indra-Agni · element:Fire · dosha:Kapha
+plant:kapittha,dosha_balance,dosha:kapha,nakshatra_plants.csv,,,traditional,verified,plant balances Kapha
+plant:kapittha,element,element:fire,nakshatra_plants.csv,,,traditional,verified,Wood Apple associated with Fire
+plant:kapittha,body_region,body:stomach,nakshatra_plants.csv,,,traditional,verified,Wood Apple supports stomach
+nakshatra:anuradha,nakshatra_sacred_plant,plant:tulasi,nakshatra_plants.csv,,,traditional,verified,deity:Mitra · element:Water · dosha:Kapha
+plant:tulasi,sacred_to,nakshatra:anuradha,nakshatra_plants.csv,,,traditional,verified,deity:Mitra · element:Water · dosha:Kapha
+plant:tulasi,dosha_balance,dosha:kapha,nakshatra_plants.csv,,,traditional,verified,plant balances Kapha
+plant:tulasi,element,element:water,nakshatra_plants.csv,,,traditional,verified,Tulsi associated with Water
+plant:tulasi,body_region,body:lungs,nakshatra_plants.csv,,,traditional,verified,Tulsi supports lungs
+nakshatra:jyeshtha,nakshatra_sacred_plant,plant:shalmali,nakshatra_plants.csv,,,traditional,verified,deity:Indra · element:Fire · dosha:Pitta
+plant:shalmali,sacred_to,nakshatra:jyeshtha,nakshatra_plants.csv,,,traditional,verified,deity:Indra · element:Fire · dosha:Pitta
+plant:shalmali,dosha_balance,dosha:pitta,nakshatra_plants.csv,,,traditional,verified,plant balances Pitta
+plant:shalmali,element,element:fire,nakshatra_plants.csv,,,traditional,verified,Silk Cotton associated with Fire
+plant:shalmali,body_region,body:circulation,nakshatra_plants.csv,,,traditional,verified,Silk Cotton supports circulation
+nakshatra:mula,nakshatra_sacred_plant,plant:shala,nakshatra_plants.csv,,,traditional,verified,deity:Nirriti · element:Fire · dosha:Vata
+plant:shala,sacred_to,nakshatra:mula,nakshatra_plants.csv,,,traditional,verified,deity:Nirriti · element:Fire · dosha:Vata
+plant:shala,dosha_balance,dosha:vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
+plant:shala,element,element:fire,nakshatra_plants.csv,,,traditional,verified,Sal associated with Fire
+plant:shala,body_region,body:colon,nakshatra_plants.csv,,,traditional,verified,Sal supports colon
+nakshatra:purvashadha,nakshatra_sacred_plant,plant:kamala,nakshatra_plants.csv,,,traditional,verified,deity:Apas · element:Water · dosha:Pitta
+plant:kamala,sacred_to,nakshatra:purvashadha,nakshatra_plants.csv,,,traditional,verified,deity:Apas · element:Water · dosha:Pitta
+plant:kamala,dosha_balance,dosha:pitta,nakshatra_plants.csv,,,traditional,verified,plant balances Pitta
+plant:kamala,element,element:water,nakshatra_plants.csv,,,traditional,verified,Lotus associated with Water
+plant:kamala,body_region,body:kidneys,nakshatra_plants.csv,,,traditional,verified,Lotus supports kidneys
+nakshatra:uttarashadha,nakshatra_sacred_plant,plant:panasa,nakshatra_plants.csv,,,traditional,verified,deity:Vishvadevas · element:Earth · dosha:Kapha
+plant:panasa,sacred_to,nakshatra:uttarashadha,nakshatra_plants.csv,,,traditional,verified,deity:Vishvadevas · element:Earth · dosha:Kapha
+plant:panasa,dosha_balance,dosha:kapha,nakshatra_plants.csv,,,traditional,verified,plant balances Kapha
+plant:panasa,element,element:earth,nakshatra_plants.csv,,,traditional,verified,Jackfruit associated with Earth
+plant:panasa,body_region,body:muscles,nakshatra_plants.csv,,,traditional,verified,Jackfruit supports muscles
+nakshatra:shravana,nakshatra_sacred_plant,plant:arka,nakshatra_plants.csv,,,traditional,verified,deity:Vishnu · element:Water · dosha:Vata
+plant:arka,sacred_to,nakshatra:shravana,nakshatra_plants.csv,,,traditional,verified,deity:Vishnu · element:Water · dosha:Vata
+plant:arka,dosha_balance,dosha:vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
+plant:arka,element,element:water,nakshatra_plants.csv,,,traditional,verified,Arka associated with Water
+plant:arka,body_region,body:ears,nakshatra_plants.csv,,,traditional,verified,Arka supports ears
+nakshatra:dhanishtha,nakshatra_sacred_plant,plant:shami,nakshatra_plants.csv,,,traditional,verified,deity:Vasus · element:Air · dosha:Vata
+plant:shami,sacred_to,nakshatra:dhanishtha,nakshatra_plants.csv,,,traditional,verified,deity:Vasus · element:Air · dosha:Vata
+plant:shami,dosha_balance,dosha:vata,nakshatra_plants.csv,,,traditional,verified,plant balances Vata
+plant:shami,element,element:air,nakshatra_plants.csv,,,traditional,verified,Shami associated with Air
+plant:shami,body_region,body:legs,nakshatra_plants.csv,,,traditional,verified,Shami supports legs
+nakshatra:shatabhisha,nakshatra_sacred_plant,plant:kadamba,nakshatra_plants.csv,,,traditional,verified,deity:Varuna · element:Air · dosha:Kapha
+plant:kadamba,sacred_to,nakshatra:shatabhisha,nakshatra_plants.csv,,,traditional,verified,deity:Varuna · element:Air · dosha:Kapha
+plant:kadamba,dosha_balance,dosha:kapha,nakshatra_plants.csv,,,traditional,verified,plant balances Kapha
+plant:kadamba,element,element:air,nakshatra_plants.csv,,,traditional,verified,Kadamba associated with Air
+plant:kadamba,body_region,body:skin,nakshatra_plants.csv,,,traditional,verified,Kadamba supports skin
+nakshatra:purva bhadrapada,nakshatra_sacred_plant,plant:amra,nakshatra_plants.csv,,,traditional,verified,deity:Aja Ekapada · element:Fire · dosha:Pitta
+plant:amra,sacred_to,nakshatra:purva bhadrapada,nakshatra_plants.csv,,,traditional,verified,deity:Aja Ekapada · element:Fire · dosha:Pitta
+plant:amra,dosha_balance,dosha:pitta,nakshatra_plants.csv,,,traditional,verified,plant balances Pitta
+plant:amra,element,element:fire,nakshatra_plants.csv,,,traditional,verified,Mango associated with Fire
+plant:amra,body_region,body:blood,nakshatra_plants.csv,,,traditional,verified,Mango supports blood
+nakshatra:uttara bhadrapada,nakshatra_sacred_plant,plant:nimba,nakshatra_plants.csv,,,traditional,verified,deity:Ahir Budhnya · element:Water · dosha:Pitta
+plant:nimba,sacred_to,nakshatra:uttara bhadrapada,nakshatra_plants.csv,,,traditional,verified,deity:Ahir Budhnya · element:Water · dosha:Pitta
+plant:nimba,dosha_balance,dosha:pitta,nakshatra_plants.csv,,,traditional,verified,plant balances Pitta
+plant:nimba,element,element:water,nakshatra_plants.csv,,,traditional,verified,Neem associated with Water
+plant:nimba,body_region,body:skin,nakshatra_plants.csv,,,traditional,verified,Neem supports skin
+nakshatra:revati,nakshatra_sacred_plant,plant:madhu,nakshatra_plants.csv,,,traditional,verified,deity:Pushan · element:Water · dosha:Kapha
+plant:madhu,sacred_to,nakshatra:revati,nakshatra_plants.csv,,,traditional,verified,deity:Pushan · element:Water · dosha:Kapha
+plant:madhu,dosha_balance,dosha:kapha,nakshatra_plants.csv,,,traditional,verified,plant balances Kapha
+plant:madhu,element,element:water,nakshatra_plants.csv,,,traditional,verified,Mahua associated with Water
+plant:madhu,body_region,body:feet,nakshatra_plants.csv,,,traditional,verified,Mahua supports feet

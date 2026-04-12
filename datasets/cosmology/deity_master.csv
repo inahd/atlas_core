@@ -1,28 +1,28 @@
-deity,category,vahana,primary_weapon,associated_graha,element,domain,notes
-Shiva,major,Nandi (bull),Trishula,,ether,transformation,
-Vishnu,major,Garuda,Chakra,,water,preservation,
-Brahma,major,Hamsa (swan),Vedas,,air,creation,
-Durga,devi,Lion,Trident,,fire,protection,
-Kali,devi,None,Sword,,fire,time destruction,
-Lakshmi,devi,Owl,Lotus,,water,prosperity,
-Saraswati,devi,Hamsa (swan),Veena,,air,knowledge,
-Ganesha,deva,Mouse,Axe,,earth,obstacle removal,
-Karttikeya,deva,Peacock,Spear,Mars,fire,warfare,
-Surya,deva,Seven Horses,Lotus,Sun,fire,illumination,
-Chandra,deva,Antelope,Lotus,Moon,water,mind,
-Mangala,deva,Ram,Spear,Mars,fire,energy,
-Budha,deva,Lion,Sword,Mercury,earth,intellect,
-Brihaspati,deva,Elephant,Staff,Jupiter,ether,wisdom,
-Shukra,deva,Horse,Staff,Venus,water,desire,
-Shani,deva,Crow,Danda,Saturn,air,discipline,
-Rahu,shadow,None,Spear,,air,eclipse force,
-Ketu,shadow,None,Flag,,fire,liberation,
-Indra,deva,Airavata (elephant),Vajra,,air,storms,
-Agni,deva,Ram,Flame,,fire,sacred fire,
-Varuna,deva,Sea creature,Noose,,water,cosmic order,
-Vayu,deva,Deer,Flag,,air,wind,
-Kubera,deva,Man,Club,,earth,wealth,
-Yama,deva,Buffalo,Danda,,earth,death,
-Kamadeva,deva,Parrot,Sugarcane bow,,air,desire,
-Parvati,devi,Lion,,earth,divine mother,
-Skanda,deva,Peacock,Spear,Mars,fire,war commander
+deity,category,vahana,primary_weapon,associated_graha,element,domain,notes,attestation_status
+Shiva,major,Nandi (bull),Trishula,,ether,transformation,,attested_classical
+Vishnu,major,Garuda,Chakra,,water,preservation,,attested_classical
+Brahma,major,Hamsa (swan),Vedas,,air,creation,,attested_classical
+Durga,devi,Lion,Trident,,fire,protection,,attested_classical
+Kali,devi,None,Sword,,fire,time destruction,,attested_classical
+Lakshmi,devi,Owl,Lotus,,water,prosperity,,attested_classical
+Saraswati,devi,Hamsa (swan),Veena,,air,knowledge,,attested_classical
+Ganesha,deva,Mouse,Axe,,earth,obstacle removal,,attested_classical
+Karttikeya,deva,Peacock,Spear,Mars,fire,warfare,,attested_classical
+Surya,deva,Seven Horses,Lotus,Sun,fire,illumination,,attested_classical
+Chandra,deva,Antelope,Lotus,Moon,water,mind,,attested_classical
+Mangala,deva,Ram,Spear,Mars,fire,energy,,attested_classical
+Budha,deva,Lion,Sword,Mercury,earth,intellect,,attested_classical
+Brihaspati,deva,Elephant,Staff,Jupiter,ether,wisdom,,attested_classical
+Shukra,deva,Horse,Staff,Venus,water,desire,,attested_classical
+Shani,deva,Crow,Danda,Saturn,air,discipline,,attested_classical
+Rahu,shadow,None,Spear,,air,eclipse force,,attested_classical
+Ketu,shadow,None,Flag,,fire,liberation,,attested_classical
+Indra,deva,Airavata (elephant),Vajra,,air,storms,,attested_classical
+Agni,deva,Ram,Flame,,fire,sacred fire,,attested_classical
+Varuna,deva,Sea creature,Noose,,water,cosmic order,,attested_classical
+Vayu,deva,Deer,Flag,,air,wind,,attested_classical
+Kubera,deva,Man,Club,,earth,wealth,,attested_classical
+Yama,deva,Buffalo,Danda,,earth,death,,attested_classical
+Kamadeva,deva,Parrot,Sugarcane bow,,air,desire,,attested_classical
+Parvati,devi,Lion,,earth,divine mother,,,attested_classical
+Skanda,deva,Peacock,Spear,Mars,fire,war commander,,attested_classical

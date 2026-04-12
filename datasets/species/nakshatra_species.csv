@@ -1,28 +1,28 @@
-nakshatra_id,nakshatra_name,species_id,species_name,relationship_type,source,confidence,notes
-nakshatra_ashwini,Ashwini,species_ashva,Horse,yoni_male,BPHS,0.95,Ashwini is male horse yoni
-nakshatra_shatabhisha,Shatabhisha,species_ashva,Horse,yoni_female,BPHS,0.95,Shatabhisha is female horse yoni
-nakshatra_bharani,Bharani,species_gaja,Elephant,yoni_male,BPHS,0.95,Bharani is male elephant yoni
-nakshatra_revati,Revati,species_gaja,Elephant,yoni_female,BPHS,0.95,Revati is female elephant yoni
-nakshatra_krittika,Krittika,species_mesha,Sheep,yoni_male,BPHS,0.95,Krittika is male sheep yoni
-nakshatra_pushya,Pushya,species_mesha,Sheep,yoni_female,BPHS,0.95,Pushya is female sheep yoni
-nakshatra_rohini,Rohini,species_sarpa,Serpent,yoni_male,BPHS,0.95,Rohini is male serpent yoni
-nakshatra_mrigashira,Mrigashira,species_sarpa,Serpent,yoni_female,BPHS,0.95,Mrigashira is female serpent yoni
-nakshatra_mula,Mula,species_shvan,Dog,yoni_male,BPHS,0.95,Mula is male dog yoni
-nakshatra_ardra,Ardra,species_shvan,Dog,yoni_female,BPHS,0.95,Ardra is female dog yoni
-nakshatra_punarvasu,Punarvasu,species_marjara,Cat,yoni_male,BPHS,0.95,Punarvasu is male cat yoni
-nakshatra_ashlesha,Ashlesha,species_marjara,Cat,yoni_female,BPHS,0.95,Ashlesha is female cat yoni
-nakshatra_magha,Magha,species_mushaka,Mouse,yoni_male,BPHS,0.95,Magha is male mouse yoni
-nakshatra_purva_phalguni,Purva Phalguni,species_mushaka,Mouse,yoni_female,BPHS,0.95,Purva Phalguni is female mouse yoni
-nakshatra_uttara_phalguni,Uttara Phalguni,species_go,Cow,yoni_male,BPHS,0.95,Uttara Phalguni is male cow yoni
-nakshatra_uttara_bhadrapada,Uttara Bhadrapada,species_go,Cow,yoni_female,BPHS,0.95,Uttara Bhadrapada is female cow yoni
-nakshatra_hasta,Hasta,species_mahisha,Buffalo,yoni_male,BPHS,0.95,Hasta is male buffalo yoni
-nakshatra_swati,Swati,species_mahisha,Buffalo,yoni_female,BPHS,0.95,Swati is female buffalo yoni
-nakshatra_chitra,Chitra,species_vyaghra,Tiger,yoni_male,BPHS,0.95,Chitra is male tiger yoni
-nakshatra_vishakha,Vishakha,species_vyaghra,Tiger,yoni_female,BPHS,0.95,Vishakha is female tiger yoni
-nakshatra_anuradha,Anuradha,species_shasha,Rabbit,yoni_male,BPHS,0.95,Anuradha is male rabbit yoni
-nakshatra_jyeshtha,Jyeshtha,species_shasha,Rabbit,yoni_female,BPHS,0.95,Jyeshtha is female rabbit yoni
-nakshatra_purva_ashadha,Purva Ashadha,species_vanara,Monkey,yoni_male,BPHS,0.95,Purva Ashadha is male monkey yoni
-nakshatra_shravana,Shravana,species_vanara,Monkey,yoni_female,BPHS,0.95,Shravana is female monkey yoni
-nakshatra_uttara_ashadha,Uttara Ashadha,species_nakula,Mongoose,yoni_female,BPHS,0.95,Uttara Ashadha is female mongoose yoni
-nakshatra_dhanishtha,Dhanishtha,species_simha,Lion,yoni_male,BPHS,0.95,Dhanishtha is male lion yoni
-nakshatra_purva_bhadrapada,Purva Bhadrapada,species_simha,Lion,yoni_female,BPHS,0.95,Purva Bhadrapada is female lion yoni
+nakshatra_id,nakshatra_name,species_id,species_name,relationship_type,source,confidence,notes,attestation_status
+nakshatra_ashwini,Ashwini,species_ashva,Horse,yoni_male,BPHS,0.95,Ashwini is male horse yoni,attested_secondary
+nakshatra_shatabhisha,Shatabhisha,species_ashva,Horse,yoni_female,BPHS,0.95,Shatabhisha is female horse yoni,attested_secondary
+nakshatra_bharani,Bharani,species_gaja,Elephant,yoni_male,BPHS,0.95,Bharani is male elephant yoni,attested_secondary
+nakshatra_revati,Revati,species_gaja,Elephant,yoni_female,BPHS,0.95,Revati is female elephant yoni,attested_secondary
+nakshatra_krittika,Krittika,species_mesha,Sheep,yoni_male,BPHS,0.95,Krittika is male sheep yoni,attested_secondary
+nakshatra_pushya,Pushya,species_mesha,Sheep,yoni_female,BPHS,0.95,Pushya is female sheep yoni,attested_secondary
+nakshatra_rohini,Rohini,species_sarpa,Serpent,yoni_male,BPHS,0.95,Rohini is male serpent yoni,attested_secondary
+nakshatra_mrigashira,Mrigashira,species_sarpa,Serpent,yoni_female,BPHS,0.95,Mrigashira is female serpent yoni,attested_secondary
+nakshatra_mula,Mula,species_shvan,Dog,yoni_male,BPHS,0.95,Mula is male dog yoni,attested_secondary
+nakshatra_ardra,Ardra,species_shvan,Dog,yoni_female,BPHS,0.95,Ardra is female dog yoni,attested_secondary
+nakshatra_punarvasu,Punarvasu,species_marjara,Cat,yoni_male,BPHS,0.95,Punarvasu is male cat yoni,attested_secondary
+nakshatra_ashlesha,Ashlesha,species_marjara,Cat,yoni_female,BPHS,0.95,Ashlesha is female cat yoni,attested_secondary
+nakshatra_magha,Magha,species_mushaka,Mouse,yoni_male,BPHS,0.95,Magha is male mouse yoni,attested_secondary
+nakshatra_purva_phalguni,Purva Phalguni,species_mushaka,Mouse,yoni_female,BPHS,0.95,Purva Phalguni is female mouse yoni,attested_secondary
+nakshatra_uttara_phalguni,Uttara Phalguni,species_go,Cow,yoni_male,BPHS,0.95,Uttara Phalguni is male cow yoni,attested_secondary
+nakshatra_uttara_bhadrapada,Uttara Bhadrapada,species_go,Cow,yoni_female,BPHS,0.95,Uttara Bhadrapada is female cow yoni,attested_secondary
+nakshatra_hasta,Hasta,species_mahisha,Buffalo,yoni_male,BPHS,0.95,Hasta is male buffalo yoni,attested_secondary
+nakshatra_swati,Swati,species_mahisha,Buffalo,yoni_female,BPHS,0.95,Swati is female buffalo yoni,attested_secondary
+nakshatra_chitra,Chitra,species_vyaghra,Tiger,yoni_male,BPHS,0.95,Chitra is male tiger yoni,attested_secondary
+nakshatra_vishakha,Vishakha,species_vyaghra,Tiger,yoni_female,BPHS,0.95,Vishakha is female tiger yoni,attested_secondary
+nakshatra_anuradha,Anuradha,species_shasha,Rabbit,yoni_male,BPHS,0.95,Anuradha is male rabbit yoni,attested_secondary
+nakshatra_jyeshtha,Jyeshtha,species_shasha,Rabbit,yoni_female,BPHS,0.95,Jyeshtha is female rabbit yoni,attested_secondary
+nakshatra_purva_ashadha,Purva Ashadha,species_vanara,Monkey,yoni_male,BPHS,0.95,Purva Ashadha is male monkey yoni,attested_secondary
+nakshatra_shravana,Shravana,species_vanara,Monkey,yoni_female,BPHS,0.95,Shravana is female monkey yoni,attested_secondary
+nakshatra_uttara_ashadha,Uttara Ashadha,species_nakula,Mongoose,yoni_female,BPHS,0.95,Uttara Ashadha is female mongoose yoni,attested_secondary
+nakshatra_dhanishtha,Dhanishtha,species_simha,Lion,yoni_male,BPHS,0.95,Dhanishtha is male lion yoni,attested_secondary
+nakshatra_purva_bhadrapada,Purva Bhadrapada,species_simha,Lion,yoni_female,BPHS,0.95,Purva Bhadrapada is female lion yoni,attested_secondary

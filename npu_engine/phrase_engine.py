@@ -122,6 +122,14 @@ class PhraseEngine:
         raga_def = field_state.get("devi_raga_def") or {}
         raga_name = field_state.get("devi_raga", "Yaman")
 
+        # Chandas context — metre shapes phrase length
+        try:
+            from .field.chandas_engine import derive_chandas
+            chandas = derive_chandas(field_state)
+            self._phrase_length = chandas.get("syllables_per_pada", 8)
+        except Exception:
+            self._phrase_length = 8
+
         self._raga_name  = raga_name
         self._raga_graph = get_raga_graph(raga_name) or \
                            RAGA_GRAPHS.get("Yaman") or {}
@@ -212,7 +220,11 @@ class PhraseEngine:
         musician = self._musician
 
         # ── 1. Should we rest? ────────────────────────────────────
-        rest_density = musician.get("rest_density", 0.3) * mode["rest_mult"]
+        # Chandas phrase_length modulates rest frequency:
+        # longer metres (more syllables) → fewer rests (longer phrases)
+        phrase_len = getattr(self, "_phrase_length", 8)
+        phrase_factor = 8.0 / max(phrase_len, 4)  # >8 syl = fewer rests
+        rest_density = musician.get("rest_density", 0.3) * mode["rest_mult"] * phrase_factor
         if random.random() < rest_density * (1.0 - self._density):
             return self._make_silence()
 

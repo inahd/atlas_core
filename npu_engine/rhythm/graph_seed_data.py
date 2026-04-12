@@ -272,3 +272,49 @@ def gati_for_element(element: str) -> dict:
         if g.get("element_correspondence", "").lower() == element.lower():
             return g
     return {}
+
+
+def get_tala_master_index():
+    """Return tala_master.csv rows indexed by id and by lowercase name."""
+    rows = _load_carnatic("tala_master", "tala_master.csv")
+    by_id = {}
+    by_name = {}
+    for r in rows:
+        by_id[r.get("id", "")] = r
+        name_key = r.get("name_iast", "").lower()
+        # store first match per name (typically the catusra/default jati)
+        if name_key and name_key not in by_name:
+            by_name[name_key] = r
+    return by_id, by_name
+
+
+def get_35_talas_index():
+    """Return 35_talas.csv rows indexed by tala_id and by family+jati."""
+    rows = _load_carnatic("35_talas", "35_talas.csv")
+    by_id = {}
+    by_family_jati = {}
+    for r in rows:
+        by_id[r.get("tala_id", "")] = r
+        key = (r.get("family", "").lower(), r.get("jati", "").lower())
+        by_family_jati[key] = r
+    return by_id, by_family_jati
+
+
+def get_sollukattu_index():
+    """Return sollukattu.csv rows indexed by jati."""
+    rows = get_sollukattu()
+    by_jati = {}
+    for r in rows:
+        jati = r.get("jati", "").lower()
+        if jati and jati != "n/a":
+            by_jati[jati] = r
+    return by_jati
+
+
+def get_tala_families_index():
+    """Return tala_families.csv rows indexed by family_id."""
+    rows = get_tala_families()
+    by_id = {}
+    for r in rows:
+        by_id[r.get("family_id", "").lower()] = r
+    return by_id

@@ -1,7 +1,7 @@
-id,name
-madhura,sweet
-amla,sour
-lavana,salty
-katu,pungent
-tikta,bitter
-kashaya,astringent
+id,name,attestation_status
+madhura,sweet,attested_secondary
+amla,sour,attested_secondary
+lavana,salty,attested_secondary
+katu,pungent,attested_secondary
+tikta,bitter,attested_secondary
+kashaya,astringent,attested_secondary

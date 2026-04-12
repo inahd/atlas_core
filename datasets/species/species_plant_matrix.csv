@@ -1,36 +1,36 @@
-species_id,plant_id,shared_element,shared_graha,shared_nakshatra,shared_quality,correspondence_type,source,confidence,shared_principle_description
-species_ashva,plant_ashwagandha,fire,ketu,ashwini,vata_balancing,same_field,BPHS + Charaka Samhita,0.92,Ashwagandha (horse smell) restores vitality like the horse yoni of Ashwini
-species_ashva,plant_shatavari,fire,,shatabhisha,rejuvenative,nakshatra_shared,BPHS + Charaka Samhita,0.80,Shatavari shares Shatabhisha nakshatra with horse yoni
-species_gaja,plant_banana,earth,jupiter,bharani,kapha_nourishing,same_field,BPHS + Ayurveda,0.78,Banana shares earth element and Jupiter rulership with elephant
-species_gaja,plant_lotus,earth,jupiter,revati,auspicious,nakshatra_shared,BPHS + Puranas,0.82,Lotus and elephant share auspicious Jupiter quality in Revati
-species_mesha,plant_agnihotra_grass,fire,sun,krittika,purifying,same_field,BPHS + Yajurveda,0.72,Fire grasses share Krittika solar fire with sacrificial sheep
-species_mesha,plant_kusha,fire,sun,,sacrificial,traditional_pairing,Yajurveda,0.75,Kusha grass and sheep both central to Vedic yajna
-species_sarpa,plant_neem,water,rahu,rohini,cooling,same_field,BPHS + Charaka Samhita,0.85,Neem cools serpent fire; both share Rahu and water element
-species_sarpa,plant_nagakesara,water,moon,,serpent_flower,traditional_pairing,Bhavaprakasha,0.80,Nagakesara (serpent-stamen) is traditionally paired with Naga/Sarpa
-species_shvan,plant_tulsi,air,ketu,mula,transformative,same_field,BPHS + Bhavaprakasha,0.78,Tulsi and dog both bear Ketu transformative quality at Mula
-species_shvan,plant_calotropis,air,rahu,ardra,fierce_purifying,nakshatra_shared,BPHS + Ayurveda,0.72,Calotropis (arka) shares Ardra fierce energy with dog yoni
-species_marjara,plant_brahmi,water,moon,punarvasu,cooling_sattva,same_field,BPHS + Charaka Samhita,0.82,Brahmi and cat share lunar water sattva at Punarvasu
-species_marjara,plant_jasmine,water,venus,,fragrant_intuitive,graha_correspondence,Bhavaprakasha,0.75,Jasmine and cat share Venus refinement and nocturnal quality
-species_mushaka,plant_durva,earth,mercury,magha,ancestral,same_field,BPHS + Puranas,0.80,Durva grass and mouse share Mercury earth quality; both sacred to Ganesha
-species_mushaka,plant_palasha,earth,,purva_phalguni,creative,nakshatra_shared,BPHS + Ayurveda,0.72,Palasha shares Purva Phalguni creative earth energy with mouse
-species_go,plant_tulsi,earth,jupiter,uttara_phalguni,sattvic_dharmic,same_field,BPHS + Bhagavata Purana,0.88,Tulsi and cow are both supreme sattvic beings in Vaishnava tradition
-species_go,plant_darbha,earth,saturn,,dharmic_purity,traditional_pairing,Dharmashastra,0.82,Darbha grass and cow both essential to dharmic ritual
-species_mahisha,plant_lotus,water,saturn,hasta,enduring,same_field,BPHS + Devi Mahatmya,0.75,Lotus and buffalo share water endurance; Durga stands on buffalo near lotus
-species_mahisha,plant_vetiver,water,,swati,cooling_rooted,nakshatra_shared,BPHS + Ayurveda,0.70,Vetiver shares Swati water grounding with buffalo
-species_vyaghra,plant_bilva,fire,mars,chitra,fierce_sacred,same_field,BPHS + Shiva Purana,0.78,Bilva and tiger share Mars fire; both sacred to Shiva
-species_vyaghra,plant_red_sandalwood,fire,mars,,sovereign_heat,graha_correspondence,Ayurveda,0.72,Red sandalwood and tiger share Mars sovereign fire quality
-species_shasha,plant_chandana,air,moon,anuradha,gentle_cooling,same_field,BPHS + Charaka Samhita,0.78,Sandalwood and rabbit share gentle lunar air quality
-species_shasha,plant_jasmine,air,venus,,devotional_beauty,graha_correspondence,Bhavaprakasha,0.70,Jasmine and rabbit share Venus devotional gentleness
-species_vanara,plant_amla,air,mercury,purva_ashadha,intelligent_rejuvenative,same_field,BPHS + Charaka Samhita,0.78,Amla and monkey share Mercury air intelligence
-species_vanara,plant_banana,air,,shravana,playful_nourishing,nakshatra_shared,BPHS + Ramayana,0.75,Banana shares Shravana with monkey; Hanuman fond of banana
-species_nakula,plant_haridra,fire,mars,uttara_ashadha,serpent_antidote,same_field,BPHS + Charaka Samhita,0.80,Turmeric and mongoose both antidotes to serpent venom
-species_simha,plant_sunflower,fire,sun,dhanishtha,royal_solar,same_field,BPHS + Ayurveda,0.75,Sunflower and lion share solar fire sovereignty
-species_simha,plant_palasha,fire,mars,purva_bhadrapada,fierce_bloom,nakshatra_shared,BPHS + Puranas,0.70,Palasha flame-of-forest shares fierce fire with lion
-species_mayura,plant_neem,fire,mars,,serpent_enemy_purifier,traditional_pairing,Brihat Samhita,0.78,Peacock eats serpents; neem purifies serpent poison
-species_hamsa,plant_lotus,ether,jupiter,,purity_discrimination,traditional_pairing,Upanishads,0.85,Swan discriminates milk from water as lotus rises from mud
-species_garuda,plant_amrita,fire,sun,,immortality_serpent_enemy,traditional_pairing,Garuda Purana,0.82,Garuda carries amrita; serpent-enemy brings immortal nectar
-species_nandi,plant_bilva,earth,saturn,,shiva_sacred,traditional_pairing,Shiva Purana,0.85,Nandi and bilva both sacred to Shiva; earth-sattva pair
-species_uluka,plant_ashoka,air,saturn,,seeing_in_darkness,graha_correspondence,Lakshmi Tantra,0.68,Owl and ashoka tree share Saturn patience in darkness
-species_shuka,plant_mango,air,venus,,love_sweetness,traditional_pairing,Kama Sutra,0.78,Parrot perches in mango; both symbols of Kamadeva desire
-species_makara,plant_lotus,water,saturn,,oceanic_emergence,traditional_pairing,Matsya Purana,0.75,Makara guards gateway as lotus emerges from water
-species_airavata,plant_lotus,ether,jupiter,,cosmic_rain_purity,traditional_pairing,Bhagavata Purana,0.80,Airavata draws water that becomes rain; lotus receives rain
+species_id,plant_id,shared_element,shared_graha,shared_nakshatra,shared_quality,correspondence_type,source,confidence,shared_principle_description,attestation_status
+species_ashva,plant_ashwagandha,fire,ketu,ashwini,vata_balancing,same_field,BPHS + Charaka Samhita,0.92,Ashwagandha (horse smell) restores vitality like the horse yoni of Ashwini,attested_secondary
+species_ashva,plant_shatavari,fire,,shatabhisha,rejuvenative,nakshatra_shared,BPHS + Charaka Samhita,0.80,Shatavari shares Shatabhisha nakshatra with horse yoni,attested_secondary
+species_gaja,plant_banana,earth,jupiter,bharani,kapha_nourishing,same_field,BPHS + Ayurveda,0.78,Banana shares earth element and Jupiter rulership with elephant,attested_secondary
+species_gaja,plant_lotus,earth,jupiter,revati,auspicious,nakshatra_shared,BPHS + Puranas,0.82,Lotus and elephant share auspicious Jupiter quality in Revati,attested_secondary
+species_mesha,plant_agnihotra_grass,fire,sun,krittika,purifying,same_field,BPHS + Yajurveda,0.72,Fire grasses share Krittika solar fire with sacrificial sheep,attested_secondary
+species_mesha,plant_kusha,fire,sun,,sacrificial,traditional_pairing,Yajurveda,0.75,Kusha grass and sheep both central to Vedic yajna,attested_secondary
+species_sarpa,plant_neem,water,rahu,rohini,cooling,same_field,BPHS + Charaka Samhita,0.85,Neem cools serpent fire; both share Rahu and water element,attested_secondary
+species_sarpa,plant_nagakesara,water,moon,,serpent_flower,traditional_pairing,Bhavaprakasha,0.80,Nagakesara (serpent-stamen) is traditionally paired with Naga/Sarpa,attested_secondary
+species_shvan,plant_tulsi,air,ketu,mula,transformative,same_field,BPHS + Bhavaprakasha,0.78,Tulsi and dog both bear Ketu transformative quality at Mula,attested_secondary
+species_shvan,plant_calotropis,air,rahu,ardra,fierce_purifying,nakshatra_shared,BPHS + Ayurveda,0.72,Calotropis (arka) shares Ardra fierce energy with dog yoni,attested_secondary
+species_marjara,plant_brahmi,water,moon,punarvasu,cooling_sattva,same_field,BPHS + Charaka Samhita,0.82,Brahmi and cat share lunar water sattva at Punarvasu,attested_secondary
+species_marjara,plant_jasmine,water,venus,,fragrant_intuitive,graha_correspondence,Bhavaprakasha,0.75,Jasmine and cat share Venus refinement and nocturnal quality,attested_secondary
+species_mushaka,plant_durva,earth,mercury,magha,ancestral,same_field,BPHS + Puranas,0.80,Durva grass and mouse share Mercury earth quality; both sacred to Ganesha,attested_secondary
+species_mushaka,plant_palasha,earth,,purva_phalguni,creative,nakshatra_shared,BPHS + Ayurveda,0.72,Palasha shares Purva Phalguni creative earth energy with mouse,attested_secondary
+species_go,plant_tulsi,earth,jupiter,uttara_phalguni,sattvic_dharmic,same_field,BPHS + Bhagavata Purana,0.88,Tulsi and cow are both supreme sattvic beings in Vaishnava tradition,attested_secondary
+species_go,plant_darbha,earth,saturn,,dharmic_purity,traditional_pairing,Dharmashastra,0.82,Darbha grass and cow both essential to dharmic ritual,attested_secondary
+species_mahisha,plant_lotus,water,saturn,hasta,enduring,same_field,BPHS + Devi Mahatmya,0.75,Lotus and buffalo share water endurance; Durga stands on buffalo near lotus,attested_secondary
+species_mahisha,plant_vetiver,water,,swati,cooling_rooted,nakshatra_shared,BPHS + Ayurveda,0.70,Vetiver shares Swati water grounding with buffalo,attested_secondary
+species_vyaghra,plant_bilva,fire,mars,chitra,fierce_sacred,same_field,BPHS + Shiva Purana,0.78,Bilva and tiger share Mars fire; both sacred to Shiva,attested_secondary
+species_vyaghra,plant_red_sandalwood,fire,mars,,sovereign_heat,graha_correspondence,Ayurveda,0.72,Red sandalwood and tiger share Mars sovereign fire quality,attested_secondary
+species_shasha,plant_chandana,air,moon,anuradha,gentle_cooling,same_field,BPHS + Charaka Samhita,0.78,Sandalwood and rabbit share gentle lunar air quality,attested_secondary
+species_shasha,plant_jasmine,air,venus,,devotional_beauty,graha_correspondence,Bhavaprakasha,0.70,Jasmine and rabbit share Venus devotional gentleness,attested_secondary
+species_vanara,plant_amla,air,mercury,purva_ashadha,intelligent_rejuvenative,same_field,BPHS + Charaka Samhita,0.78,Amla and monkey share Mercury air intelligence,attested_secondary
+species_vanara,plant_banana,air,,shravana,playful_nourishing,nakshatra_shared,BPHS + Ramayana,0.75,Banana shares Shravana with monkey; Hanuman fond of banana,attested_secondary
+species_nakula,plant_haridra,fire,mars,uttara_ashadha,serpent_antidote,same_field,BPHS + Charaka Samhita,0.80,Turmeric and mongoose both antidotes to serpent venom,attested_secondary
+species_simha,plant_sunflower,fire,sun,dhanishtha,royal_solar,same_field,BPHS + Ayurveda,0.75,Sunflower and lion share solar fire sovereignty,attested_secondary
+species_simha,plant_palasha,fire,mars,purva_bhadrapada,fierce_bloom,nakshatra_shared,BPHS + Puranas,0.70,Palasha flame-of-forest shares fierce fire with lion,attested_secondary
+species_mayura,plant_neem,fire,mars,,serpent_enemy_purifier,traditional_pairing,Brihat Samhita,0.78,Peacock eats serpents; neem purifies serpent poison,attested_secondary
+species_hamsa,plant_lotus,ether,jupiter,,purity_discrimination,traditional_pairing,Upanishads,0.85,Swan discriminates milk from water as lotus rises from mud,attested_secondary
+species_garuda,plant_amrita,fire,sun,,immortality_serpent_enemy,traditional_pairing,Garuda Purana,0.82,Garuda carries amrita; serpent-enemy brings immortal nectar,attested_secondary
+species_nandi,plant_bilva,earth,saturn,,shiva_sacred,traditional_pairing,Shiva Purana,0.85,Nandi and bilva both sacred to Shiva; earth-sattva pair,attested_secondary
+species_uluka,plant_ashoka,air,saturn,,seeing_in_darkness,graha_correspondence,Lakshmi Tantra,0.68,Owl and ashoka tree share Saturn patience in darkness,attested_secondary
+species_shuka,plant_mango,air,venus,,love_sweetness,traditional_pairing,Kama Sutra,0.78,Parrot perches in mango; both symbols of Kamadeva desire,attested_secondary
+species_makara,plant_lotus,water,saturn,,oceanic_emergence,traditional_pairing,Matsya Purana,0.75,Makara guards gateway as lotus emerges from water,attested_secondary
+species_airavata,plant_lotus,ether,jupiter,,cosmic_rain_purity,traditional_pairing,Bhagavata Purana,0.80,Airavata draws water that becomes rain; lotus receives rain,attested_secondary

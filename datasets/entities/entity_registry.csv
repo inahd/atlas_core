@@ -1,0 +1,837 @@
+entity_id,entity_type,name,name_iast,source_file,row_index,attestation_status
+art:agriculture,art,Agriculture,,datasets/cosmology/vedic_arts_64.csv,31,seed_unverified
+art:animal_husbandry,art,Animal_husbandry,,datasets/cosmology/vedic_arts_64.csv,60,seed_unverified
+art:animal_training,art,Animal_training,,datasets/cosmology/vedic_arts_64.csv,33,seed_unverified
+art:archery,art,Archery,,datasets/cosmology/vedic_arts_64.csv,36,seed_unverified
+art:architecture,art,Architecture,,datasets/cosmology/vedic_arts_64.csv,22,seed_unverified
+art:astrology,art,Astrology,,datasets/cosmology/vedic_arts_64.csv,44,seed_unverified
+art:bed_arrangement,art,Bed_arrangement,,datasets/cosmology/vedic_arts_64.csv,8,seed_unverified
+art:body_decoration,art,Body_decoration,,datasets/cosmology/vedic_arts_64.csv,5,seed_unverified
+art:breath_control,art,Breath_control,,datasets/cosmology/vedic_arts_64.csv,41,seed_unverified
+art:brewing,art,Brewing,,datasets/cosmology/vedic_arts_64.csv,30,seed_unverified
+art:carpentry,art,Carpentry,,datasets/cosmology/vedic_arts_64.csv,25,seed_unverified
+art:cartography,art,Cartography,,datasets/cosmology/vedic_arts_64.csv,59,seed_unverified
+art:cooking,art,Cooking,,datasets/cosmology/vedic_arts_64.csv,29,seed_unverified
+art:costume_design,art,Costume_design,,datasets/cosmology/vedic_arts_64.csv,14,seed_unverified
+art:dance_theory,art,Dance_theory,,datasets/cosmology/vedic_arts_64.csv,53,seed_unverified
+art:dancing,art,Dancing,,datasets/cosmology/vedic_arts_64.csv,2,seed_unverified
+art:debate,art,Debate,,datasets/cosmology/vedic_arts_64.csv,21,seed_unverified
+art:drama,art,Drama,,datasets/cosmology/vedic_arts_64.csv,3,seed_unverified
+art:drama_theory,art,Drama_theory,,datasets/cosmology/vedic_arts_64.csv,54,seed_unverified
+art:elephant_training,art,Elephant_training,,datasets/cosmology/vedic_arts_64.csv,35,seed_unverified
+art:embroidery,art,Embroidery,,datasets/cosmology/vedic_arts_64.csv,28,seed_unverified
+art:ethics,art,Ethics,,datasets/cosmology/vedic_arts_64.csv,56,seed_unverified
+art:flower_arrangement,art,Flower_arrangement,,datasets/cosmology/vedic_arts_64.csv,6,seed_unverified
+art:gardening,art,Gardening,,datasets/cosmology/vedic_arts_64.csv,32,seed_unverified
+art:garland_making,art,Garland_making,,datasets/cosmology/vedic_arts_64.csv,12,seed_unverified
+art:gemology,art,Gemology,,datasets/cosmology/vedic_arts_64.csv,61,seed_unverified
+art:geometry,art,Geometry,,datasets/cosmology/vedic_arts_64.csv,46,seed_unverified
+art:hair_arrangement,art,Hair_arrangement,,datasets/cosmology/vedic_arts_64.csv,13,seed_unverified
+art:herbalism,art,Herbalism,,datasets/cosmology/vedic_arts_64.csv,48,seed_unverified
+art:horse_training,art,Horse_training,,datasets/cosmology/vedic_arts_64.csv,34,seed_unverified
+art:improvisation,art,Improvisation,,datasets/cosmology/vedic_arts_64.csv,19,seed_unverified
+art:instrument_playing,art,Instrument_playing,,datasets/cosmology/vedic_arts_64.csv,1,seed_unverified
+art:jewelry_making,art,Jewelry_making,,datasets/cosmology/vedic_arts_64.csv,7,seed_unverified
+art:logic,art,Logic,,datasets/cosmology/vedic_arts_64.csv,55,seed_unverified
+art:magic_tricks,art,Magic_tricks,,datasets/cosmology/vedic_arts_64.csv,16,seed_unverified
+art:mantra_recitation,art,Mantra_recitation,,datasets/cosmology/vedic_arts_64.csv,42,seed_unverified
+art:marma_knowledge,art,Marma_knowledge,,datasets/cosmology/vedic_arts_64.csv,50,seed_unverified
+art:massage,art,Massage,,datasets/cosmology/vedic_arts_64.csv,49,seed_unverified
+art:mathematics,art,Mathematics,,datasets/cosmology/vedic_arts_64.csv,45,seed_unverified
+art:medicine,art,Medicine,,datasets/cosmology/vedic_arts_64.csv,47,seed_unverified
+art:meditation,art,Meditation,,datasets/cosmology/vedic_arts_64.csv,40,seed_unverified
+art:memory_training,art,Memory_training,,datasets/cosmology/vedic_arts_64.csv,20,seed_unverified
+art:metal_work,art,Metal_work,,datasets/cosmology/vedic_arts_64.csv,24,seed_unverified
+art:music_theory,art,Music_theory,,datasets/cosmology/vedic_arts_64.csv,51,seed_unverified
+art:navigation,art,Navigation,,datasets/cosmology/vedic_arts_64.csv,58,seed_unverified
+art:painting,art,Painting,,datasets/cosmology/vedic_arts_64.csv,4,seed_unverified
+art:perfume_mixing,art,Perfume_mixing,,datasets/cosmology/vedic_arts_64.csv,15,seed_unverified
+art:picture_puzzles,art,Picture_puzzles,,datasets/cosmology/vedic_arts_64.csv,11,seed_unverified
+art:poetry,art,Poetry,,datasets/cosmology/vedic_arts_64.csv,18,seed_unverified
+art:pottery,art,Pottery,,datasets/cosmology/vedic_arts_64.csv,26,seed_unverified
+art:rhythm_study,art,Rhythm_study,,datasets/cosmology/vedic_arts_64.csv,52,seed_unverified
+art:ritual_fire,art,Ritual_fire,,datasets/cosmology/vedic_arts_64.csv,43,seed_unverified
+art:singing,art,Singing,,datasets/cosmology/vedic_arts_64.csv,0,seed_unverified
+art:statecraft,art,Statecraft,,datasets/cosmology/vedic_arts_64.csv,57,seed_unverified
+art:storytelling,art,Storytelling,,datasets/cosmology/vedic_arts_64.csv,17,seed_unverified
+art:strategy,art,Strategy,,datasets/cosmology/vedic_arts_64.csv,38,seed_unverified
+art:swordsmanship,art,Swordsmanship,,datasets/cosmology/vedic_arts_64.csv,37,seed_unverified
+art:temple_design,art,Temple_design,,datasets/cosmology/vedic_arts_64.csv,23,seed_unverified
+art:water_music,art,Water_music,,datasets/cosmology/vedic_arts_64.csv,9,seed_unverified
+art:water_splashing,art,Water_splashing,,datasets/cosmology/vedic_arts_64.csv,10,seed_unverified
+art:weaving,art,Weaving,,datasets/cosmology/vedic_arts_64.csv,27,seed_unverified
+art:yoga,art,Yoga,,datasets/cosmology/vedic_arts_64.csv,39,seed_unverified
+asana:balance,asana,Balance,,datasets/yoga/asana_core.csv,19,seed_unverified
+asana:cat_cow,asana,Cat-Cow,,datasets/yoga/asana_core.csv,11,seed_unverified
+asana:chest_opener,asana,Chest Opener,,datasets/yoga/asana_core.csv,12,seed_unverified
+asana:child_pose,asana,Child Pose,,datasets/yoga/asana_core.csv,4,seed_unverified
+asana:dancer,asana,Dancer,,datasets/yoga/asana_core.csv,6,seed_unverified
+asana:flow,asana,Flow,,datasets/yoga/asana_core.csv,20,seed_unverified
+asana:fold,asana,Fold,,datasets/yoga/asana_core.csv,13,seed_unverified
+asana:grounding,asana,Grounding,,datasets/yoga/asana_core.csv,16,seed_unverified
+asana:heart,asana,Heart,,datasets/yoga/asana_core.csv,15,seed_unverified
+asana:hip_openers,asana,Hip Openers,,datasets/yoga/asana_core.csv,14,seed_unverified
+asana:holds,asana,Holds,,datasets/yoga/asana_core.csv,18,seed_unverified
+asana:lotus,asana,Lotus,,datasets/yoga/asana_core.csv,8,seed_unverified
+asana:mountain,asana,Mountain,,datasets/yoga/asana_core.csv,5,seed_unverified
+asana:padmasana,asana,Padmasana,,datasets/yoga/asana_core.csv,0,seed_unverified
+asana:plank,asana,Plank,,datasets/yoga/asana_core.csv,10,seed_unverified
+asana:root,asana,Root,,datasets/yoga/asana_core.csv,17,seed_unverified
+asana:shoulder_stand,asana,Shoulder Stand,,datasets/yoga/asana_core.csv,7,seed_unverified
+asana:simhasana,asana,Simhasana,,datasets/yoga/asana_core.csv,1,seed_unverified
+asana:standing,asana,Standing,,datasets/yoga/asana_core.csv,21,seed_unverified
+asana:twist,asana,Twist,,datasets/yoga/asana_core.csv,9,seed_unverified
+asana:warrior_i,asana,Warrior I,,datasets/yoga/asana_core.csv,2,seed_unverified
+asana:warrior_ii,asana,Warrior II,,datasets/yoga/asana_core.csv,3,seed_unverified
+bandha:jalandhara_bandha,bandha,Jalandhara Bandha,,datasets/yoga/bandha_core.csv,1,seed_unverified
+bandha:maha_bandha,bandha,Maha Bandha,,datasets/yoga/bandha_core.csv,3,seed_unverified
+bandha:mula_bandha,bandha,Mula Bandha,,datasets/yoga/bandha_core.csv,0,seed_unverified
+bandha:uddiyana_bandha,bandha,Uddiyana Bandha,,datasets/yoga/bandha_core.csv,2,seed_unverified
+bhava:bhava_adbhuta,bhava,Bhava Adbhuta,अद्भुत,datasets/ontology/bhava_types.csv,7,seed_unverified
+bhava:bhava_bhayanaka,bhava,Bhava Bhayanaka,भयानक,datasets/ontology/bhava_types.csv,8,seed_unverified
+bhava:bhava_bibhatsa,bhava,Bhava Bibhatsa,बीभत्स,datasets/ontology/bhava_types.csv,9,seed_unverified
+bhava:bhava_dasya,bhava,Bhava Dasya,दास्य,datasets/ontology/bhava_types.csv,1,seed_unverified
+bhava:bhava_hasya,bhava,Bhava Hasya,हास्य,datasets/ontology/bhava_types.csv,11,seed_unverified
+bhava:bhava_karuna,bhava,Bhava Karuna,करुण,datasets/ontology/bhava_types.csv,10,seed_unverified
+bhava:bhava_madhurya,bhava,Bhava Madhurya,माधुर्य,datasets/ontology/bhava_types.csv,4,seed_unverified
+bhava:bhava_raudra,bhava,Bhava Raudra,रौद्र,datasets/ontology/bhava_types.csv,5,seed_unverified
+bhava:bhava_sakhya,bhava,Bhava Sakhya,सख्य,datasets/ontology/bhava_types.csv,2,seed_unverified
+bhava:bhava_santa,bhava,Bhava Santa,शान्त,datasets/ontology/bhava_types.csv,0,seed_unverified
+bhava:bhava_vatsalya,bhava,Bhava Vatsalya,वात्सल्य,datasets/ontology/bhava_types.csv,3,seed_unverified
+bhava:bhava_virya,bhava,Bhava Virya,वीर्य,datasets/ontology/bhava_types.csv,6,seed_unverified
+chakra:ajna,chakra,Ājñā,Ājñā,datasets/tantra/chakra_master.csv,5,seed_unverified
+chakra:anahata,chakra,Anāhata,Anāhata,datasets/tantra/chakra_master.csv,3,seed_unverified
+chakra:manipura,chakra,Maṇipūra,Maṇipūra,datasets/tantra/chakra_master.csv,2,seed_unverified
+chakra:muladhara,chakra,Mūlādhāra,Mūlādhāra,datasets/tantra/chakra_master.csv,0,seed_unverified
+chakra:sahasrara,chakra,Sahasrāra,Sahasrāra,datasets/tantra/chakra_master.csv,6,seed_unverified
+chakra:svadhishthana,chakra,Svādhiṣṭhāna,Svādhiṣṭhāna,datasets/tantra/chakra_master.csv,1,seed_unverified
+chakra:vishuddha,chakra,Viśuddha,Viśuddha,datasets/tantra/chakra_master.csv,4,seed_unverified
+deity:agni,deity,Agni,,datasets/cosmology/deity_domains.csv,1,seed_unverified
+deity:anuradha,deity,Anuradha,,datasets/cosmology/deity_attributes.csv,16,seed_unverified
+deity:ardra,deity,Ardra,,datasets/cosmology/deity_attributes.csv,5,seed_unverified
+deity:ashlesha,deity,Ashlesha,,datasets/cosmology/deity_attributes.csv,8,seed_unverified
+deity:ashwini,deity,Ashwini,,datasets/cosmology/deity_attributes.csv,0,seed_unverified
+deity:bharani,deity,Bharani,,datasets/cosmology/deity_attributes.csv,1,seed_unverified
+deity:brahma,deity,Brahma,,datasets/cosmology/deity_master.csv,2,seed_unverified
+deity:brihaspati,deity,Brihaspati,,datasets/cosmology/deity_master.csv,13,seed_unverified
+deity:budha,deity,Budha,,datasets/cosmology/deity_master.csv,12,seed_unverified
+deity:chandra,deity,Chandra,,datasets/cosmology/deity_domains.csv,5,seed_unverified
+deity:chitra,deity,Chitra,,datasets/cosmology/deity_attributes.csv,13,seed_unverified
+deity:dhanishta,deity,Dhanishta,,datasets/cosmology/deity_attributes.csv,22,seed_unverified
+deity:durga,deity,Durga,,datasets/cosmology/deity_domains.csv,8,seed_unverified
+deity:ganesha,deity,Ganesha,,datasets/cosmology/deity_domains.csv,11,seed_unverified
+deity:hasta,deity,Hasta,,datasets/cosmology/deity_attributes.csv,12,seed_unverified
+deity:indra,deity,Indra,,datasets/cosmology/deity_domains.csv,0,seed_unverified
+deity:jyeshtha,deity,Jyeshtha,,datasets/cosmology/deity_attributes.csv,17,seed_unverified
+deity:kali,deity,Kali,,datasets/cosmology/deity_master.csv,4,seed_unverified
+deity:kamadeva,deity,Kamadeva,,datasets/cosmology/deity_master.csv,24,seed_unverified
+deity:karttikeya,deity,Karttikeya,,datasets/cosmology/deity_domains.csv,12,seed_unverified
+deity:ketu,deity,Ketu,,datasets/cosmology/deity_master.csv,17,seed_unverified
+deity:krittika,deity,Krittika,,datasets/cosmology/deity_attributes.csv,2,seed_unverified
+deity:kubera,deity,Kubera,,datasets/cosmology/deity_domains.csv,6,seed_unverified
+deity:lakshmi,deity,Lakshmi,,datasets/cosmology/deity_domains.csv,9,seed_unverified
+deity:magha,deity,Magha,,datasets/cosmology/deity_attributes.csv,9,seed_unverified
+deity:mangala,deity,Mangala,,datasets/cosmology/deity_master.csv,11,seed_unverified
+deity:mrigashira,deity,Mrigashira,,datasets/cosmology/deity_attributes.csv,4,seed_unverified
+deity:mula,deity,Mula,,datasets/cosmology/deity_attributes.csv,18,seed_unverified
+deity:parvati,deity,Parvati,,datasets/cosmology/deity_master.csv,25,seed_unverified
+deity:punarvasu,deity,Punarvasu,,datasets/cosmology/deity_attributes.csv,6,seed_unverified
+deity:purva_ashadha,deity,Purva Ashadha,,datasets/cosmology/deity_attributes.csv,19,seed_unverified
+deity:purva_bhadrapada,deity,Purva Bhadrapada,,datasets/cosmology/deity_attributes.csv,24,seed_unverified
+deity:purva_phalguni,deity,Purva Phalguni,,datasets/cosmology/deity_attributes.csv,10,seed_unverified
+deity:pushya,deity,Pushya,,datasets/cosmology/deity_attributes.csv,7,seed_unverified
+deity:rahu,deity,Rahu,,datasets/cosmology/deity_master.csv,16,seed_unverified
+deity:revati,deity,Revati,,datasets/cosmology/deity_attributes.csv,26,seed_unverified
+deity:rohini,deity,Rohini,,datasets/cosmology/deity_attributes.csv,3,seed_unverified
+deity:saraswati,deity,Saraswati,,datasets/cosmology/deity_domains.csv,10,seed_unverified
+deity:shani,deity,Shani,,datasets/cosmology/deity_master.csv,15,seed_unverified
+deity:shatabhisha,deity,Shatabhisha,,datasets/cosmology/deity_attributes.csv,23,seed_unverified
+deity:shiva,deity,Shiva,,datasets/cosmology/deity_master.csv,0,seed_unverified
+deity:shravana,deity,Shravana,,datasets/cosmology/deity_attributes.csv,21,seed_unverified
+deity:shukra,deity,Shukra,,datasets/cosmology/deity_master.csv,14,seed_unverified
+deity:skanda,deity,Skanda,,datasets/cosmology/deity_master.csv,26,seed_unverified
+deity:surya,deity,Surya,,datasets/cosmology/deity_domains.csv,4,seed_unverified
+deity:swati,deity,Swati,,datasets/cosmology/deity_attributes.csv,14,seed_unverified
+deity:uttara_ashadha,deity,Uttara Ashadha,,datasets/cosmology/deity_attributes.csv,20,seed_unverified
+deity:uttara_bhadrapada,deity,Uttara Bhadrapada,,datasets/cosmology/deity_attributes.csv,25,seed_unverified
+deity:uttara_phalguni,deity,Uttara Phalguni,,datasets/cosmology/deity_attributes.csv,11,seed_unverified
+deity:varuna,deity,Varuna,,datasets/cosmology/deity_domains.csv,2,seed_unverified
+deity:vayu,deity,Vayu,,datasets/cosmology/deity_domains.csv,3,seed_unverified
+deity:vishakha,deity,Vishakha,,datasets/cosmology/deity_attributes.csv,15,seed_unverified
+deity:vishnu,deity,Vishnu,,datasets/cosmology/deity_master.csv,1,seed_unverified
+deity:yama,deity,Yama,,datasets/cosmology/deity_domains.csv,7,seed_unverified
+devi:bhagamalini,devi,Bhagamālinī,Bhagamālinī,datasets/cosmology/nitya_devi_master.csv,1,seed_unverified
+devi:bherunda,devi,Bheruṇḍā,Bheruṇḍā,datasets/cosmology/nitya_devi_master.csv,3,seed_unverified
+devi:citra,devi,Citrā,Citrā,datasets/cosmology/nitya_devi_master.csv,14,seed_unverified
+devi:jvalamalini,devi,Jvālāmālinī,Jvālāmālinī,datasets/cosmology/nitya_devi_master.csv,13,seed_unverified
+devi:kameshvari,devi,Kāmeśvarī,Kāmeśvarī,datasets/cosmology/nitya_devi_master.csv,0,seed_unverified
+devi:kulasundari,devi,Kulasundarī,Kulasundarī,datasets/cosmology/nitya_devi_master.csv,8,seed_unverified
+devi:mahavajreshvari,devi,Mahāvajreśvarī,Mahāvajreśvarī,datasets/cosmology/nitya_devi_master.csv,5,seed_unverified
+devi:nilapataka,devi,Nīlapatākā,Nīlapatākā,datasets/cosmology/nitya_devi_master.csv,10,seed_unverified
+devi:nitya,devi,Nityā,Nityā,datasets/cosmology/nitya_devi_master.csv,9,seed_unverified
+devi:nityaklinna,devi,Nityaklinnā,Nityaklinnā,datasets/cosmology/nitya_devi_master.csv,2,seed_unverified
+devi:sarvangasundari,devi,Sarvāṅgasundarī,Sarvāṅgasundarī,datasets/cosmology/nitya_devi_master.csv,12,seed_unverified
+devi:shivaduti,devi,Śivadūtī,Śivadūtī,datasets/cosmology/nitya_devi_master.csv,6,seed_unverified
+devi:tvarita,devi,Tvaritā,Tvaritā,datasets/cosmology/nitya_devi_master.csv,7,seed_unverified
+devi:vahnivasini,devi,Vahnivāsinī,Vahnivāsinī,datasets/cosmology/nitya_devi_master.csv,4,seed_unverified
+devi:vijaya,devi,Vijayā,Vijayā,datasets/cosmology/nitya_devi_master.csv,11,seed_unverified
+dhatu:asthi,dhatu,Asthi,Asthi,datasets/ayurveda/sapta_dhatu.csv,4,seed_unverified
+dhatu:majja,dhatu,Majja,Majja,datasets/ayurveda/sapta_dhatu.csv,5,seed_unverified
+dhatu:mamsa,dhatu,Mamsa,Mamsa,datasets/ayurveda/sapta_dhatu.csv,2,seed_unverified
+dhatu:meda,dhatu,Meda,Meda,datasets/ayurveda/sapta_dhatu.csv,3,seed_unverified
+dhatu:rakta,dhatu,Rakta,Rakta,datasets/ayurveda/sapta_dhatu.csv,1,seed_unverified
+dhatu:rasa,dhatu,Rasa,Rasa,datasets/ayurveda/sapta_dhatu.csv,0,seed_unverified
+dhatu:shukraartava,dhatu,Shukra/Artava,Shukra/Artava,datasets/ayurveda/sapta_dhatu.csv,6,seed_unverified
+dosha:kapha,dosha,kapha,,datasets/ayurveda/dosha.csv,2,seed_unverified
+dosha:pitta,dosha,pitta,,datasets/ayurveda/dosha.csv,1,seed_unverified
+dosha:vata,dosha,vata,,datasets/ayurveda/dosha.csv,0,seed_unverified
+element:air,element,Air,,datasets/cosmology/element_master.csv,1,seed_unverified
+element:earth,element,Earth,,datasets/cosmology/element_master.csv,4,seed_unverified
+element:ether,element,Ether,,datasets/cosmology/element_master.csv,0,seed_unverified
+element:fire,element,Fire,,datasets/cosmology/element_master.csv,2,seed_unverified
+element:water,element,Water,,datasets/cosmology/element_master.csv,3,seed_unverified
+forest:bahulashva,forest,Bahulavana,Bahulavana,datasets/cosmology/vraja_forests.csv,3,seed_unverified
+forest:bhadra,forest,Bhadravana,Bhadravana,datasets/cosmology/vraja_forests.csv,7,seed_unverified
+forest:brahma,forest,Mahavana,Mahavana,datasets/cosmology/vraja_forests.csv,10,seed_unverified
+forest:dhenukasura,forest,Talavana,Talavana,datasets/cosmology/vraja_forests.csv,1,seed_unverified
+forest:kamadeva,forest,Kamyavana,Kamyavana,datasets/cosmology/vraja_forests.csv,4,seed_unverified
+forest:khanda_rishi,forest,Khadyavana,Khadyavana,datasets/cosmology/vraja_forests.csv,5,seed_unverified
+forest:loha_jata,forest,Lohavana,Lohavana,datasets/cosmology/vraja_forests.csv,9,seed_unverified
+forest:madhu_kaitabha,forest,Madhuvana,Madhuvana,datasets/cosmology/vraja_forests.csv,0,seed_unverified
+forest:nanda_yashoda,forest,Gokula,Gokula,datasets/cosmology/vraja_forests.csv,11,seed_unverified
+forest:radha_krishna,forest,Vrindavana,Vrindavana,datasets/cosmology/vraja_forests.csv,6,seed_unverified
+forest:shiva,forest,Bilvavana,Bilvavana,datasets/cosmology/vraja_forests.csv,8,seed_unverified
+forest:varuna,forest,Kumudavana,Kumudavana,datasets/cosmology/vraja_forests.csv,2,seed_unverified
+graha:budha,graha,Budha,Budha,datasets/astro/grahas.csv,3,seed_unverified
+graha:chandra,graha,Chandra,Candra,datasets/astro/grahas.csv,1,seed_unverified
+graha:guru,graha,Guru,Guru,datasets/astro/grahas.csv,4,seed_unverified
+graha:ketu,graha,Ketu,Ketu,datasets/astro/grahas.csv,8,seed_unverified
+graha:mangala,graha,Mangala,Maṅgala,datasets/astro/grahas.csv,2,seed_unverified
+graha:rahu,graha,Rahu,Rāhu,datasets/astro/grahas.csv,7,seed_unverified
+graha:shani,graha,Shani,Śani,datasets/astro/grahas.csv,6,seed_unverified
+graha:shukra,graha,Shukra,Śukra,datasets/astro/grahas.csv,5,seed_unverified
+graha:surya,graha,Surya,Sūrya,datasets/astro/grahas.csv,0,seed_unverified
+guna:dry,guna,dry,,datasets/ayurveda/guna.csv,3,seed_unverified
+guna:dull,guna,dull,,datasets/ayurveda/guna.csv,4,seed_unverified
+guna:flowing,guna,flowing,,datasets/ayurveda/guna.csv,7,seed_unverified
+guna:hard,guna,hard,,datasets/ayurveda/guna.csv,9,seed_unverified
+guna:heavy,guna,heavy,,datasets/ayurveda/guna.csv,0,seed_unverified
+guna:light,guna,light,,datasets/ayurveda/guna.csv,1,seed_unverified
+guna:rajas,guna,rajas,,datasets/ayurveda/gunas.csv,1,seed_unverified
+guna:sattva,guna,sattva,,datasets/ayurveda/gunas.csv,0,seed_unverified
+guna:sharp,guna,sharp,,datasets/ayurveda/guna.csv,5,seed_unverified
+guna:soft,guna,soft,,datasets/ayurveda/guna.csv,8,seed_unverified
+guna:stable,guna,stable,,datasets/ayurveda/guna.csv,6,seed_unverified
+guna:tamas,guna,tamas,,datasets/ayurveda/gunas.csv,2,seed_unverified
+guna:unctuous,guna,unctuous,,datasets/ayurveda/guna.csv,2,seed_unverified
+herb:amalaki,herb,Āmalakī,Āmalakī,datasets/ayurveda/herb_exemplars.csv,3,seed_unverified
+herb:ashvagandha,herb,Aśvagandhā,Aśvagandhā,datasets/ayurveda/herb_exemplars.csv,0,seed_unverified
+herb:guggulu,herb,Guggulu,Guggulu,datasets/ayurveda/herb_exemplars.csv,4,seed_unverified
+herb:h001,herb,H001,,datasets/ayurveda/herb_spine_108.csv,0,seed_unverified
+herb:h002,herb,H002,,datasets/ayurveda/herb_spine_108.csv,1,seed_unverified
+herb:h003,herb,H003,,datasets/ayurveda/herb_spine_108.csv,2,seed_unverified
+herb:h004,herb,H004,,datasets/ayurveda/herb_spine_108.csv,3,seed_unverified
+herb:h005,herb,H005,,datasets/ayurveda/herb_spine_108.csv,4,seed_unverified
+herb:h006,herb,H006,,datasets/ayurveda/herb_spine_108.csv,5,seed_unverified
+herb:h007,herb,H007,,datasets/ayurveda/herb_spine_108.csv,6,seed_unverified
+herb:h008,herb,H008,,datasets/ayurveda/herb_spine_108.csv,7,seed_unverified
+herb:h009,herb,H009,,datasets/ayurveda/herb_spine_108.csv,8,seed_unverified
+herb:h010,herb,H010,,datasets/ayurveda/herb_spine_108.csv,9,seed_unverified
+herb:h011,herb,H011,,datasets/ayurveda/herb_spine_108.csv,10,seed_unverified
+herb:h012,herb,H012,,datasets/ayurveda/herb_spine_108.csv,11,seed_unverified
+herb:h013,herb,H013,,datasets/ayurveda/herb_spine_108.csv,12,seed_unverified
+herb:h014,herb,H014,,datasets/ayurveda/herb_spine_108.csv,13,seed_unverified
+herb:h015,herb,H015,,datasets/ayurveda/herb_spine_108.csv,14,seed_unverified
+herb:h016,herb,H016,,datasets/ayurveda/herb_spine_108.csv,15,seed_unverified
+herb:h017,herb,H017,,datasets/ayurveda/herb_spine_108.csv,16,seed_unverified
+herb:h018,herb,H018,,datasets/ayurveda/herb_spine_108.csv,17,seed_unverified
+herb:h019,herb,H019,,datasets/ayurveda/herb_spine_108.csv,18,seed_unverified
+herb:h020,herb,H020,,datasets/ayurveda/herb_spine_108.csv,19,seed_unverified
+herb:h021,herb,H021,,datasets/ayurveda/herb_spine_108.csv,20,seed_unverified
+herb:h022,herb,H022,,datasets/ayurveda/herb_spine_108.csv,21,seed_unverified
+herb:h023,herb,H023,,datasets/ayurveda/herb_spine_108.csv,22,seed_unverified
+herb:h024,herb,H024,,datasets/ayurveda/herb_spine_108.csv,23,seed_unverified
+herb:h025,herb,H025,,datasets/ayurveda/herb_spine_108.csv,24,seed_unverified
+herb:h026,herb,H026,,datasets/ayurveda/herb_spine_108.csv,25,seed_unverified
+herb:h027,herb,H027,,datasets/ayurveda/herb_spine_108.csv,26,seed_unverified
+herb:h028,herb,H028,,datasets/ayurveda/herb_spine_108.csv,27,seed_unverified
+herb:h029,herb,H029,,datasets/ayurveda/herb_spine_108.csv,28,seed_unverified
+herb:h030,herb,H030,,datasets/ayurveda/herb_spine_108.csv,29,seed_unverified
+herb:h031,herb,H031,,datasets/ayurveda/herb_spine_108.csv,30,seed_unverified
+herb:h032,herb,H032,,datasets/ayurveda/herb_spine_108.csv,31,seed_unverified
+herb:h033,herb,H033,,datasets/ayurveda/herb_spine_108.csv,32,seed_unverified
+herb:h034,herb,H034,,datasets/ayurveda/herb_spine_108.csv,33,seed_unverified
+herb:h035,herb,H035,,datasets/ayurveda/herb_spine_108.csv,34,seed_unverified
+herb:h036,herb,H036,,datasets/ayurveda/herb_spine_108.csv,35,seed_unverified
+herb:h037,herb,H037,,datasets/ayurveda/herb_spine_108.csv,36,seed_unverified
+herb:h038,herb,H038,,datasets/ayurveda/herb_spine_108.csv,37,seed_unverified
+herb:h039,herb,H039,,datasets/ayurveda/herb_spine_108.csv,38,seed_unverified
+herb:h040,herb,H040,,datasets/ayurveda/herb_spine_108.csv,39,seed_unverified
+herb:h041,herb,H041,,datasets/ayurveda/herb_spine_108.csv,40,seed_unverified
+herb:h042,herb,H042,,datasets/ayurveda/herb_spine_108.csv,41,seed_unverified
+herb:h043,herb,H043,,datasets/ayurveda/herb_spine_108.csv,42,seed_unverified
+herb:h044,herb,H044,,datasets/ayurveda/herb_spine_108.csv,43,seed_unverified
+herb:h045,herb,H045,,datasets/ayurveda/herb_spine_108.csv,44,seed_unverified
+herb:h046,herb,H046,,datasets/ayurveda/herb_spine_108.csv,45,seed_unverified
+herb:h047,herb,H047,,datasets/ayurveda/herb_spine_108.csv,46,seed_unverified
+herb:h048,herb,H048,,datasets/ayurveda/herb_spine_108.csv,47,seed_unverified
+herb:h049,herb,H049,,datasets/ayurveda/herb_spine_108.csv,48,seed_unverified
+herb:h050,herb,H050,,datasets/ayurveda/herb_spine_108.csv,49,seed_unverified
+herb:h051,herb,H051,,datasets/ayurveda/herb_spine_108.csv,50,seed_unverified
+herb:h052,herb,H052,,datasets/ayurveda/herb_spine_108.csv,51,seed_unverified
+herb:h053,herb,H053,,datasets/ayurveda/herb_spine_108.csv,52,seed_unverified
+herb:h054,herb,H054,,datasets/ayurveda/herb_spine_108.csv,53,seed_unverified
+herb:h055,herb,H055,,datasets/ayurveda/herb_spine_108.csv,54,seed_unverified
+herb:h056,herb,H056,,datasets/ayurveda/herb_spine_108.csv,55,seed_unverified
+herb:h057,herb,H057,,datasets/ayurveda/herb_spine_108.csv,56,seed_unverified
+herb:h058,herb,H058,,datasets/ayurveda/herb_spine_108.csv,57,seed_unverified
+herb:h059,herb,H059,,datasets/ayurveda/herb_spine_108.csv,58,seed_unverified
+herb:h060,herb,H060,,datasets/ayurveda/herb_spine_108.csv,59,seed_unverified
+herb:h061,herb,H061,,datasets/ayurveda/herb_spine_108.csv,60,seed_unverified
+herb:h062,herb,H062,,datasets/ayurveda/herb_spine_108.csv,61,seed_unverified
+herb:h063,herb,H063,,datasets/ayurveda/herb_spine_108.csv,62,seed_unverified
+herb:h064,herb,H064,,datasets/ayurveda/herb_spine_108.csv,63,seed_unverified
+herb:h065,herb,H065,,datasets/ayurveda/herb_spine_108.csv,64,seed_unverified
+herb:h066,herb,H066,,datasets/ayurveda/herb_spine_108.csv,65,seed_unverified
+herb:h067,herb,H067,,datasets/ayurveda/herb_spine_108.csv,66,seed_unverified
+herb:h068,herb,H068,,datasets/ayurveda/herb_spine_108.csv,67,seed_unverified
+herb:h069,herb,H069,,datasets/ayurveda/herb_spine_108.csv,68,seed_unverified
+herb:h070,herb,H070,,datasets/ayurveda/herb_spine_108.csv,69,seed_unverified
+herb:h071,herb,H071,,datasets/ayurveda/herb_spine_108.csv,70,seed_unverified
+herb:h072,herb,H072,,datasets/ayurveda/herb_spine_108.csv,71,seed_unverified
+herb:h073,herb,H073,,datasets/ayurveda/herb_spine_108.csv,72,seed_unverified
+herb:h074,herb,H074,,datasets/ayurveda/herb_spine_108.csv,73,seed_unverified
+herb:h075,herb,H075,,datasets/ayurveda/herb_spine_108.csv,74,seed_unverified
+herb:h076,herb,H076,,datasets/ayurveda/herb_spine_108.csv,75,seed_unverified
+herb:h077,herb,H077,,datasets/ayurveda/herb_spine_108.csv,76,seed_unverified
+herb:h078,herb,H078,,datasets/ayurveda/herb_spine_108.csv,77,seed_unverified
+herb:h079,herb,H079,,datasets/ayurveda/herb_spine_108.csv,78,seed_unverified
+herb:h080,herb,H080,,datasets/ayurveda/herb_spine_108.csv,79,seed_unverified
+herb:h081,herb,H081,,datasets/ayurveda/herb_spine_108.csv,80,seed_unverified
+herb:h082,herb,H082,,datasets/ayurveda/herb_spine_108.csv,81,seed_unverified
+herb:h083,herb,H083,,datasets/ayurveda/herb_spine_108.csv,82,seed_unverified
+herb:h084,herb,H084,,datasets/ayurveda/herb_spine_108.csv,83,seed_unverified
+herb:h085,herb,H085,,datasets/ayurveda/herb_spine_108.csv,84,seed_unverified
+herb:h086,herb,H086,,datasets/ayurveda/herb_spine_108.csv,85,seed_unverified
+herb:h087,herb,H087,,datasets/ayurveda/herb_spine_108.csv,86,seed_unverified
+herb:h088,herb,H088,,datasets/ayurveda/herb_spine_108.csv,87,seed_unverified
+herb:h089,herb,H089,,datasets/ayurveda/herb_spine_108.csv,88,seed_unverified
+herb:h090,herb,H090,,datasets/ayurveda/herb_spine_108.csv,89,seed_unverified
+herb:h091,herb,H091,,datasets/ayurveda/herb_spine_108.csv,90,seed_unverified
+herb:h092,herb,H092,,datasets/ayurveda/herb_spine_108.csv,91,seed_unverified
+herb:h093,herb,H093,,datasets/ayurveda/herb_spine_108.csv,92,seed_unverified
+herb:h094,herb,H094,,datasets/ayurveda/herb_spine_108.csv,93,seed_unverified
+herb:h095,herb,H095,,datasets/ayurveda/herb_spine_108.csv,94,seed_unverified
+herb:h096,herb,H096,,datasets/ayurveda/herb_spine_108.csv,95,seed_unverified
+herb:h097,herb,H097,,datasets/ayurveda/herb_spine_108.csv,96,seed_unverified
+herb:h098,herb,H098,,datasets/ayurveda/herb_spine_108.csv,97,seed_unverified
+herb:h099,herb,H099,,datasets/ayurveda/herb_spine_108.csv,98,seed_unverified
+herb:h100,herb,H100,,datasets/ayurveda/herb_spine_108.csv,99,seed_unverified
+herb:h101,herb,H101,,datasets/ayurveda/herb_spine_108.csv,100,seed_unverified
+herb:h102,herb,H102,,datasets/ayurveda/herb_spine_108.csv,101,seed_unverified
+herb:h103,herb,H103,,datasets/ayurveda/herb_spine_108.csv,102,seed_unverified
+herb:h104,herb,H104,,datasets/ayurveda/herb_spine_108.csv,103,seed_unverified
+herb:h105,herb,H105,,datasets/ayurveda/herb_spine_108.csv,104,seed_unverified
+herb:h106,herb,H106,,datasets/ayurveda/herb_spine_108.csv,105,seed_unverified
+herb:h107,herb,H107,,datasets/ayurveda/herb_spine_108.csv,106,seed_unverified
+herb:h108,herb,H108,,datasets/ayurveda/herb_spine_108.csv,107,seed_unverified
+herb:nimbapatra,herb,Nimbapatra,Nimbapatra,datasets/ayurveda/herb_exemplars.csv,2,seed_unverified
+herb:tulasi,herb,Tulasi,Tulasi,datasets/ayurveda/herb_exemplars.csv,1,seed_unverified
+hexagram:abundance,hexagram,abundance,,datasets/iching/hexagrams.csv,54,seed_unverified
+hexagram:after_completion,hexagram,after_completion,,datasets/iching/hexagrams.csv,62,seed_unverified
+hexagram:approach,hexagram,approach,,datasets/iching/hexagrams.csv,18,seed_unverified
+hexagram:before_completion,hexagram,before_completion,,datasets/iching/hexagrams.csv,63,seed_unverified
+hexagram:biting_through,hexagram,biting_through,,datasets/iching/hexagrams.csv,20,seed_unverified
+hexagram:breakthrough,hexagram,breakthrough,,datasets/iching/hexagrams.csv,42,seed_unverified
+hexagram:coming_to_meet,hexagram,coming_to_meet,,datasets/iching/hexagrams.csv,43,seed_unverified
+hexagram:conflict,hexagram,conflict,,datasets/iching/hexagrams.csv,5,seed_unverified
+hexagram:contemplation,hexagram,contemplation,,datasets/iching/hexagrams.csv,19,seed_unverified
+hexagram:darkening_of_the_light,hexagram,darkening_of_the_light,,datasets/iching/hexagrams.csv,35,seed_unverified
+hexagram:decrease,hexagram,decrease,,datasets/iching/hexagrams.csv,40,seed_unverified
+hexagram:deliverance,hexagram,deliverance,,datasets/iching/hexagrams.csv,39,seed_unverified
+hexagram:development,hexagram,development,,datasets/iching/hexagrams.csv,52,seed_unverified
+hexagram:difficulty_at_the_beginning,hexagram,difficulty_at_the_beginning,,datasets/iching/hexagrams.csv,2,seed_unverified
+hexagram:dispersion,hexagram,dispersion,,datasets/iching/hexagrams.csv,58,seed_unverified
+hexagram:duration,hexagram,duration,,datasets/iching/hexagrams.csv,31,seed_unverified
+hexagram:enthusiasm,hexagram,enthusiasm,,datasets/iching/hexagrams.csv,15,seed_unverified
+hexagram:fellowship,hexagram,fellowship,,datasets/iching/hexagrams.csv,12,seed_unverified
+hexagram:following,hexagram,following,,datasets/iching/hexagrams.csv,16,seed_unverified
+hexagram:gathering_together,hexagram,gathering_together,,datasets/iching/hexagrams.csv,44,seed_unverified
+hexagram:grace,hexagram,grace,,datasets/iching/hexagrams.csv,21,seed_unverified
+hexagram:great_possession,hexagram,great_possession,,datasets/iching/hexagrams.csv,13,seed_unverified
+hexagram:great_power,hexagram,great_power,,datasets/iching/hexagrams.csv,33,seed_unverified
+hexagram:great_preponderance,hexagram,great_preponderance,,datasets/iching/hexagrams.csv,27,seed_unverified
+hexagram:holding_together,hexagram,holding_together,,datasets/iching/hexagrams.csv,7,seed_unverified
+hexagram:increase,hexagram,increase,,datasets/iching/hexagrams.csv,41,seed_unverified
+hexagram:influence,hexagram,influence,,datasets/iching/hexagrams.csv,30,seed_unverified
+hexagram:inner_truth,hexagram,inner_truth,,datasets/iching/hexagrams.csv,60,seed_unverified
+hexagram:innocence,hexagram,innocence,,datasets/iching/hexagrams.csv,24,seed_unverified
+hexagram:keeping_still,hexagram,keeping_still,,datasets/iching/hexagrams.csv,51,seed_unverified
+hexagram:limitation,hexagram,limitation,,datasets/iching/hexagrams.csv,59,seed_unverified
+hexagram:modesty,hexagram,modesty,,datasets/iching/hexagrams.csv,14,seed_unverified
+hexagram:nourishment,hexagram,nourishment,,datasets/iching/hexagrams.csv,26,seed_unverified
+hexagram:obstruction,hexagram,obstruction,,datasets/iching/hexagrams.csv,38,seed_unverified
+hexagram:opposition,hexagram,opposition,,datasets/iching/hexagrams.csv,37,seed_unverified
+hexagram:oppression,hexagram,oppression,,datasets/iching/hexagrams.csv,46,seed_unverified
+hexagram:peace,hexagram,peace,,datasets/iching/hexagrams.csv,10,seed_unverified
+hexagram:progress,hexagram,progress,,datasets/iching/hexagrams.csv,34,seed_unverified
+hexagram:pushing_upward,hexagram,pushing_upward,,datasets/iching/hexagrams.csv,45,seed_unverified
+hexagram:retreat,hexagram,retreat,,datasets/iching/hexagrams.csv,32,seed_unverified
+hexagram:return,hexagram,return,,datasets/iching/hexagrams.csv,23,seed_unverified
+hexagram:revolution,hexagram,revolution,,datasets/iching/hexagrams.csv,48,seed_unverified
+hexagram:small_preponderance,hexagram,small_preponderance,,datasets/iching/hexagrams.csv,61,seed_unverified
+hexagram:splitting_apart,hexagram,splitting_apart,,datasets/iching/hexagrams.csv,22,seed_unverified
+hexagram:standstill,hexagram,standstill,,datasets/iching/hexagrams.csv,11,seed_unverified
+hexagram:taming_power_of_the_great,hexagram,taming_power_of_the_great,,datasets/iching/hexagrams.csv,25,seed_unverified
+hexagram:taming_power_of_the_small,hexagram,taming_power_of_the_small,,datasets/iching/hexagrams.csv,8,seed_unverified
+hexagram:the_abysmal,hexagram,the_abysmal,,datasets/iching/hexagrams.csv,28,seed_unverified
+hexagram:the_army,hexagram,the_army,,datasets/iching/hexagrams.csv,6,seed_unverified
+hexagram:the_arousing,hexagram,the_arousing,,datasets/iching/hexagrams.csv,50,seed_unverified
+hexagram:the_caldron,hexagram,the_caldron,,datasets/iching/hexagrams.csv,49,seed_unverified
+hexagram:the_clinging,hexagram,the_clinging,,datasets/iching/hexagrams.csv,29,seed_unverified
+hexagram:the_creative,hexagram,the_creative,,datasets/iching/hexagrams.csv,0,seed_unverified
+hexagram:the_family,hexagram,the_family,,datasets/iching/hexagrams.csv,36,seed_unverified
+hexagram:the_gentle,hexagram,the_gentle,,datasets/iching/hexagrams.csv,56,seed_unverified
+hexagram:the_joyous,hexagram,the_joyous,,datasets/iching/hexagrams.csv,57,seed_unverified
+hexagram:the_marrying_maiden,hexagram,the_marrying_maiden,,datasets/iching/hexagrams.csv,53,seed_unverified
+hexagram:the_receptive,hexagram,the_receptive,,datasets/iching/hexagrams.csv,1,seed_unverified
+hexagram:the_wanderer,hexagram,the_wanderer,,datasets/iching/hexagrams.csv,55,seed_unverified
+hexagram:the_well,hexagram,the_well,,datasets/iching/hexagrams.csv,47,seed_unverified
+hexagram:treading,hexagram,treading,,datasets/iching/hexagrams.csv,9,seed_unverified
+hexagram:waiting,hexagram,waiting,,datasets/iching/hexagrams.csv,4,seed_unverified
+hexagram:work_on_the_decayed,hexagram,work_on_the_decayed,,datasets/iching/hexagrams.csv,17,seed_unverified
+hexagram:youthful_folly,hexagram,youthful_folly,,datasets/iching/hexagrams.csv,3,seed_unverified
+instrument:bansuri,instrument,Bānsurī,Bānsurī,datasets/gandharva/instruments.csv,8,seed_unverified
+instrument:dilruba,instrument,Dilrubā,Dilrubā,datasets/gandharva/instruments.csv,21,seed_unverified
+instrument:esraj,instrument,Esraj,Esraj,datasets/gandharva/instruments.csv,20,seed_unverified
+instrument:ghatam,instrument,Ghaṭam,Ghaṭam,datasets/gandharva/instruments.csv,16,seed_unverified
+instrument:harmonium,instrument,Harmonium,Harmonium,datasets/gandharva/instruments.csv,18,seed_unverified
+instrument:kanjira,instrument,Kañjīrā,Kañjīrā,datasets/gandharva/instruments.csv,15,seed_unverified
+instrument:manjira,instrument,Mañjīrā,Mañjīrā,datasets/gandharva/instruments.csv,24,seed_unverified
+instrument:morsing,instrument,Morsing,Morsing,datasets/gandharva/instruments.csv,17,seed_unverified
+instrument:mridangam,instrument,Mṛdaṅgam,Mṛdaṅgam,datasets/gandharva/instruments.csv,11,seed_unverified
+instrument:nadasvaram,instrument,Nādasvaram,Nādasvaram,datasets/gandharva/instruments.csv,10,seed_unverified
+instrument:pakhawaj,instrument,Pakhāwaj,Pakhāwaj,datasets/gandharva/instruments.csv,14,seed_unverified
+instrument:rudra_vina,instrument,Rudra Vīṇā,Rudra Vīṇā,datasets/gandharva/instruments.csv,3,seed_unverified
+instrument:santur,instrument,Santūr,Santūr,datasets/gandharva/instruments.csv,5,seed_unverified
+instrument:sarangi,instrument,Sārangī,Sārangī,datasets/gandharva/instruments.csv,6,seed_unverified
+instrument:sarod,instrument,Sarod,Sarod,datasets/gandharva/instruments.csv,1,seed_unverified
+instrument:shahnai,instrument,Śahnāī,Śahnāī,datasets/gandharva/instruments.csv,9,seed_unverified
+instrument:shankha,instrument,Śaṅkha,Śaṅkha,datasets/gandharva/instruments.csv,23,seed_unverified
+instrument:sitar,instrument,Sitār,Sitār,datasets/gandharva/instruments.csv,0,seed_unverified
+instrument:sursingar,instrument,Sursiṅgār,Sursiṅgār,datasets/gandharva/instruments.csv,22,seed_unverified
+instrument:svaramandal,instrument,Svaramaṇḍal,Svaramaṇḍal,datasets/gandharva/instruments.csv,19,seed_unverified
+instrument:tabla_bayan,instrument,Ṭablā (Bayān),Ṭablā (Bayān),datasets/gandharva/instruments.csv,13,seed_unverified
+instrument:tabla_dayan,instrument,Ṭablā (Dayān),Ṭablā (Dayān),datasets/gandharva/instruments.csv,12,seed_unverified
+instrument:tanpura,instrument,Tānpurā,Tānpurā,datasets/gandharva/instruments.csv,4,seed_unverified
+instrument:viloin_carnatic,instrument,Viloin (Carnatic),Viloin (Carnatic),datasets/gandharva/instruments.csv,7,seed_unverified
+instrument:vina,instrument,Vīṇā,Vīṇā,datasets/gandharva/instruments.csv,2,seed_unverified
+marma:adhipati,marma,Adhipati,Adhipati,datasets/marma/marma_field.csv,34,seed_unverified
+marma:amsha,marma,Aṃśa,Aṃśa,datasets/marma/marma_field.csv,27,seed_unverified
+marma:amshaphalaka,marma,Aṃśaphalaka,Aṃśaphalaka,datasets/marma/marma_field.csv,26,seed_unverified
+marma:ani,marma,Āṇi,Āṇi,datasets/marma/marma_field.csv,9,seed_unverified
+marma:apalapa,marma,Apālapa,Apālapa,datasets/marma/marma_field.csv,19,seed_unverified
+marma:apanga,marma,Apāṅga,Apāṅga,datasets/marma/marma_field.csv,29,seed_unverified
+marma:apastambha,marma,Apastambha,Apastambha,datasets/marma/marma_field.csv,20,seed_unverified
+marma:apastambha1,marma,Apastambha,Apastambha,datasets/yoga/marma_master.csv,12,seed_unverified
+marma:apastambha2,marma,Apastambha,Apastambha,datasets/yoga/marma_master.csv,16,seed_unverified
+marma:basti,marma,Basti,Basti,datasets/yoga/marma_master.csv,17,seed_unverified
+marma:brihati,marma,Bṛhatī,Bṛhatī,datasets/marma/marma_field.csv,25,seed_unverified
+marma:guda,marma,Gūḍa,Gūḍa,datasets/marma/marma_field.csv,13,seed_unverified
+marma:gulpha,marma,Gulpha,Gulpha,datasets/marma/marma_field.csv,5,seed_unverified
+marma:hridaya,marma,Hṛdaya,Hṛdaya,datasets/marma/marma_field.csv,16,seed_unverified
+marma:indravasti,marma,Indrāvasti,Indrāvasti,datasets/marma/marma_field.csv,6,seed_unverified
+marma:janu,marma,Jānu,Jānu,datasets/marma/marma_field.csv,8,seed_unverified
+marma:kakshadhara,marma,Kakṣadhara,Kakṣadhara,datasets/marma/marma_field.csv,11,seed_unverified
+marma:katikataruna,marma,Kaṭīkataruṇa,Kaṭīkataruṇa,datasets/marma/marma_field.csv,21,seed_unverified
+marma:krikatika,marma,Kṛkātikā,Kṛkātikā,datasets/yoga/marma_master.csv,6,seed_unverified
+marma:kshipra,marma,Kṣipra,Kṣipra,datasets/marma/marma_field.csv,0,seed_unverified
+marma:kukundara,marma,Kukuṇḍara,Kukuṇḍara,datasets/marma/marma_field.csv,22,seed_unverified
+marma:kurcca,marma,Kūrcca,Kūrcca,datasets/marma/marma_field.csv,2,seed_unverified
+marma:kurcca_shirah,marma,Kūrcca-śirah,Kūrcca-śirah,datasets/marma/marma_field.csv,3,seed_unverified
+marma:kurccashira,marma,Kurccashira,Kurccashira,datasets/yoga/marma_master.csv,30,seed_unverified
+marma:kurpara,marma,Kūrpara,Kūrpara,datasets/marma/marma_field.csv,7,seed_unverified
+marma:lohitaksha,marma,Lohitākṣa,Lohitākṣa,datasets/yoga/marma_master.csv,26,seed_unverified
+marma:manibandha,marma,Māṇibandha,Māṇibandha,datasets/marma/marma_field.csv,4,seed_unverified
+marma:manya,marma,Maṇyā,Maṇyā,datasets/marma/marma_field.csv,31,seed_unverified
+marma:manya1,marma,Manyā,Manyā,datasets/yoga/marma_master.csv,7,seed_unverified
+marma:manya2,marma,Manyā,Manyā,datasets/yoga/marma_master.csv,10,seed_unverified
+marma:nabhi,marma,Nābhi,Nābhi,datasets/marma/marma_field.csv,15,seed_unverified
+marma:nila,marma,Nīlā,Nīlā,datasets/yoga/marma_master.csv,9,seed_unverified
+marma:nila_dhamani,marma,Nīlā-dhamanī,Nīlā-dhamanī,datasets/marma/marma_field.csv,30,seed_unverified
+marma:nitamba,marma,Nitamba,Nitamba,datasets/marma/marma_field.csv,23,seed_unverified
+marma:parshva_sandhi,marma,Parṣva-sandhi,Parṣva-sandhi,datasets/marma/marma_field.csv,24,seed_unverified
+marma:parshvasandhi,marma,Pārśvasandhi,Pārśvasandhi,datasets/yoga/marma_master.csv,23,seed_unverified
+marma:phana,marma,Phāṇā,Phāṇā,datasets/marma/marma_field.csv,28,seed_unverified
+marma:shringataka,marma,Śṛṅgataka,Śṛṅgataka,datasets/marma/marma_field.csv,32,seed_unverified
+marma:simanta,marma,Simanta,Simanta,datasets/marma/marma_field.csv,33,seed_unverified
+marma:sira-matrika,marma,Śirā Mātrikā,Śirā Mātrikā,datasets/yoga/marma_master.csv,8,seed_unverified
+marma:stanamula,marma,Stanāmūla,Stanāmūla,datasets/marma/marma_field.csv,17,seed_unverified
+marma:stanarohita,marma,Stanaroḥita,Stanaroḥita,datasets/marma/marma_field.csv,18,seed_unverified
+marma:sthapani,marma,Sthāpanī,Sthāpanī,datasets/marma/marma_field.csv,36,seed_unverified
+marma:talahridaya,marma,Tālāhṛdaya,Tālāhṛdaya,datasets/marma/marma_field.csv,1,seed_unverified
+marma:urvi,marma,Ūrvi,Ūrvi,datasets/marma/marma_field.csv,10,seed_unverified
+marma:utkshepa,marma,Utkṣepa,Utkṣepa,datasets/marma/marma_field.csv,35,seed_unverified
+marma:vasti,marma,Vāstī,Vāstī,datasets/marma/marma_field.csv,14,seed_unverified
+marma:vidhura,marma,Vidhura,Vidhura,datasets/yoga/marma_master.csv,3,seed_unverified
+marma:vitapa,marma,Vitapa,Vitapa,datasets/marma/marma_field.csv,12,seed_unverified
+metre:agamic_prose,metre,Āgamic prose,Āgamic prose,datasets/chandas/metre_correspondence_matrix.csv,27,seed_unverified
+metre:anushtubh,metre,Anuṣṭubh,Anuṣṭubh,datasets/chandas/metre_correspondence_matrix.csv,11,seed_unverified
+metre:arya,metre,Āryā,Āryā,datasets/chandas/metre_correspondence_matrix.csv,22,seed_unverified
+metre:bhashya_style,metre,Bhāṣya style,Bhāṣya style,datasets/chandas/metre_correspondence_matrix.csv,26,seed_unverified
+metre:brihati,metre,Bṛhatī,Bṛhatī,datasets/chandas/metre_correspondence_matrix.csv,16,seed_unverified
+metre:campu,metre,Campū,Campū,datasets/chandas/metre_correspondence_matrix.csv,24,seed_unverified
+metre:chaupai,metre,Chaupāī,Chaupāī,datasets/chandas/metre_correspondence_matrix.csv,28,seed_unverified
+metre:doha,metre,Dohā,Dohā,datasets/chandas/metre_correspondence_matrix.csv,29,seed_unverified
+metre:gayatri,metre,Gāyatrī,Gāyatrī,datasets/chandas/metre_correspondence_matrix.csv,0,seed_unverified
+metre:jagati,metre,Jagatī,Jagatī,datasets/chandas/metre_correspondence_matrix.csv,7,seed_unverified
+metre:kriti_kirtana,metre,Kṛti / Kīrtana,Kṛti / Kīrtana,datasets/chandas/metre_correspondence_matrix.csv,31,seed_unverified
+metre:malini,metre,Mālinī,Mālinī,datasets/chandas/metre_correspondence_matrix.csv,20,seed_unverified
+metre:mandakranta,metre,Mandākrāntā,Mandākrāntā,datasets/chandas/metre_correspondence_matrix.csv,17,seed_unverified
+metre:pankti,metre,Paṅkti,Paṅkti,datasets/chandas/metre_correspondence_matrix.csv,13,seed_unverified
+metre:puranic_prose,metre,Purāṇic prose,Purāṇic prose,datasets/chandas/metres_forms.csv,22,seed_unverified
+metre:shardulavikridita,metre,Śārdūlavikrīḍita,Śārdūlavikrīḍita,datasets/chandas/metre_correspondence_matrix.csv,19,seed_unverified
+metre:shikharini,metre,Śikhariṇī,Śikhariṇī,datasets/chandas/metres_forms.csv,10,seed_unverified
+metre:shloka_classical_anushtubh,metre,Śloka (Classical Anuṣṭubh),Śloka (Classical Anuṣṭubh),datasets/chandas/metres_forms.csv,7,seed_unverified
+metre:sutra_style,metre,Sūtra style,Sūtra style,datasets/chandas/metre_correspondence_matrix.csv,25,seed_unverified
+metre:trishtubh,metre,Triṣṭubh,Triṣṭubh,datasets/chandas/metre_correspondence_matrix.csv,3,seed_unverified
+metre:ushnih,metre,Uṣṇih,Uṣṇih,datasets/chandas/metre_correspondence_matrix.csv,15,seed_unverified
+metre:vaitaliya,metre,Vaitālīya,Vaitālīya,datasets/chandas/metre_correspondence_matrix.csv,23,seed_unverified
+metre:vasantatilaka,metre,Vasantatilakā,Vasantatilakā,datasets/chandas/metre_correspondence_matrix.csv,21,seed_unverified
+metre:venpa,metre,Veṇpā,Veṇpā,datasets/chandas/metre_correspondence_matrix.csv,30,seed_unverified
+nakshatra:anuradha,nakshatra,Anuradha,,datasets/astro/nakshatra_core.csv,16,seed_unverified
+nakshatra:ardra,nakshatra,Ardra,,datasets/astro/nakshatra_core.csv,5,seed_unverified
+nakshatra:ashlesha,nakshatra,Ashlesha,,datasets/astro/nakshatra_core.csv,8,seed_unverified
+nakshatra:ashwini,nakshatra,Ashwini,,datasets/astro/nakshatra_core.csv,0,seed_unverified
+nakshatra:bharani,nakshatra,Bharani,,datasets/astro/nakshatra_core.csv,1,seed_unverified
+nakshatra:chitra,nakshatra,Chitra,,datasets/astro/nakshatra_core.csv,13,seed_unverified
+nakshatra:dhanishta,nakshatra,Dhanishta,,datasets/astro/nakshatra_core.csv,22,seed_unverified
+nakshatra:hasta,nakshatra,Hasta,,datasets/astro/nakshatra_core.csv,12,seed_unverified
+nakshatra:jyeshtha,nakshatra,Jyeshtha,,datasets/astro/nakshatra_core.csv,17,seed_unverified
+nakshatra:krittika,nakshatra,Krittika,,datasets/astro/nakshatra_core.csv,2,seed_unverified
+nakshatra:magha,nakshatra,Magha,,datasets/astro/nakshatra_core.csv,9,seed_unverified
+nakshatra:mrigashira,nakshatra,Mrigashira,,datasets/astro/nakshatra_core.csv,4,seed_unverified
+nakshatra:mula,nakshatra,Mula,,datasets/astro/nakshatra_core.csv,18,seed_unverified
+nakshatra:punarvasu,nakshatra,Punarvasu,,datasets/astro/nakshatra_core.csv,6,seed_unverified
+nakshatra:purva_ashadha,nakshatra,Purva Ashadha,,datasets/astro/nakshatra_core.csv,19,seed_unverified
+nakshatra:purva_bhadrapada,nakshatra,Purva Bhadrapada,,datasets/astro/nakshatra_core.csv,24,seed_unverified
+nakshatra:purva_phalguni,nakshatra,Purva Phalguni,,datasets/astro/nakshatra_core.csv,10,seed_unverified
+nakshatra:pushya,nakshatra,Pushya,,datasets/astro/nakshatra_core.csv,7,seed_unverified
+nakshatra:revati,nakshatra,Revati,,datasets/astro/nakshatra_core.csv,26,seed_unverified
+nakshatra:rohini,nakshatra,Rohini,,datasets/astro/nakshatra_core.csv,3,seed_unverified
+nakshatra:shatabhisha,nakshatra,Shatabhisha,,datasets/astro/nakshatra_core.csv,23,seed_unverified
+nakshatra:shravana,nakshatra,Shravana,,datasets/astro/nakshatra_core.csv,21,seed_unverified
+nakshatra:swati,nakshatra,Swati,,datasets/astro/nakshatra_core.csv,14,seed_unverified
+nakshatra:uttara_ashadha,nakshatra,Uttara Ashadha,,datasets/astro/nakshatra_core.csv,20,seed_unverified
+nakshatra:uttara_bhadrapada,nakshatra,Uttara Bhadrapada,,datasets/astro/nakshatra_core.csv,25,seed_unverified
+nakshatra:uttara_phalguni,nakshatra,Uttara Phalguni,,datasets/astro/nakshatra_core.csv,11,seed_unverified
+nakshatra:vishakha,nakshatra,Vishakha,,datasets/astro/nakshatra_core.csv,15,seed_unverified
+pada:anuradha,pada,Anuradha,,datasets/vastu/pada_topology.csv,64,seed_unverified
+pada:ardra,pada,Ardra,,datasets/vastu/pada_topology.csv,20,seed_unverified
+pada:ashwini,pada,Ashwini,,datasets/vastu/pada_topology.csv,0,seed_unverified
+pada:asles,pada,Aslesа,,datasets/vastu/pada_topology.csv,32,seed_unverified
+pada:bharani,pada,Bharani,,datasets/vastu/pada_topology.csv,4,seed_unverified
+pada:citra,pada,Citra,,datasets/vastu/pada_topology.csv,52,seed_unverified
+pada:dhanistha,pada,Dhanistha,,datasets/vastu/pada_topology.csv,88,seed_unverified
+pada:hasta,pada,Hasta,,datasets/vastu/pada_topology.csv,48,seed_unverified
+pada:jyestha,pada,Jyestha,,datasets/vastu/pada_topology.csv,68,seed_unverified
+pada:krttika,pada,Krttika,,datasets/vastu/pada_topology.csv,8,seed_unverified
+pada:magha,pada,Magha,,datasets/vastu/pada_topology.csv,36,seed_unverified
+pada:mrgasirsa,pada,Mrgasirsa,,datasets/vastu/pada_topology.csv,16,seed_unverified
+pada:mula,pada,Mula,,datasets/vastu/pada_topology.csv,72,seed_unverified
+pada:punarvasu,pada,Punarvasu,,datasets/vastu/pada_topology.csv,24,seed_unverified
+pada:purva_ashadha,pada,Purva Ashadha,,datasets/vastu/pada_topology.csv,76,seed_unverified
+pada:purva_bhadra,pada,Purva Bhadra,,datasets/vastu/pada_topology.csv,96,seed_unverified
+pada:purva_phalguni,pada,Purva Phalguni,,datasets/vastu/pada_topology.csv,40,seed_unverified
+pada:pusya,pada,Pusya,,datasets/vastu/pada_topology.csv,28,seed_unverified
+pada:revati,pada,Revati,,datasets/vastu/pada_topology.csv,104,seed_unverified
+pada:rohini,pada,Rohini,,datasets/vastu/pada_topology.csv,12,seed_unverified
+pada:satabhi,pada,Satabhi,,datasets/vastu/pada_topology.csv,92,seed_unverified
+pada:sravana,pada,Sravana,,datasets/vastu/pada_topology.csv,84,seed_unverified
+pada:svati,pada,Svati,,datasets/vastu/pada_topology.csv,56,seed_unverified
+pada:uttara_ashadha,pada,Uttara Ashadha,,datasets/vastu/pada_topology.csv,80,seed_unverified
+pada:uttara_bhadra,pada,Uttara Bhadra,,datasets/vastu/pada_topology.csv,100,seed_unverified
+pada:uttara_phalguni,pada,Uttara Phalguni,,datasets/vastu/pada_topology.csv,44,seed_unverified
+pada:visakha,pada,Visakha,,datasets/vastu/pada_topology.csv,60,seed_unverified
+parampara:bhaktisiddhanta_sarasvati,parampara,Bhaktisiddhānta Sarasvatī,Bhaktisiddhānta Sarasvatī,datasets/ontology/parampara.csv,10,seed_unverified
+parampara:bhaktivinoda_thakura,parampara,Bhaktivinoda Ṭhākura,Bhaktivinoda Ṭhākura,datasets/ontology/parampara.csv,9,seed_unverified
+parampara:brahma,parampara,Brahmā,Brahmā,datasets/ontology/parampara.csv,1,seed_unverified
+parampara:caitanya_mahaprabhu,parampara,Caitanya Mahāprabhu,Caitanya Mahāprabhu,datasets/ontology/parampara.csv,6,seed_unverified
+parampara:ishvara_puri,parampara,Īśvara Purī,Īśvara Purī,datasets/ontology/parampara.csv,5,seed_unverified
+parampara:krishna,parampara,Kṛṣṇa,Kṛṣṇa,datasets/ontology/parampara.csv,0,seed_unverified
+parampara:madhvacarya,parampara,Madhvācārya,Madhvācārya,datasets/ontology/parampara.csv,4,seed_unverified
+parampara:narada,parampara,Nārada,Nārada,datasets/ontology/parampara.csv,2,seed_unverified
+parampara:shad_gosvami,parampara,Ṣaḍ-gosvāmī,Ṣaḍ-gosvāmī,datasets/ontology/parampara.csv,7,seed_unverified
+parampara:vishvanatha_cakravarti,parampara,Viśvanātha Cakravartī,Viśvanātha Cakravartī,datasets/ontology/parampara.csv,8,seed_unverified
+parampara:vyasa,parampara,Vyāsa,Vyāsa,datasets/ontology/parampara.csv,3,seed_unverified
+period:1,period,Nisanta,,datasets/cosmology/ashtakala.csv,0,seed_unverified
+period:2,period,Pratah,,datasets/cosmology/ashtakala.csv,1,seed_unverified
+period:3,period,Purvahna,,datasets/cosmology/ashtakala.csv,2,seed_unverified
+period:4,period,Madhyahna,,datasets/cosmology/ashtakala.csv,3,seed_unverified
+period:5,period,Aparahna,,datasets/cosmology/ashtakala.csv,4,seed_unverified
+period:6,period,Sayahna,,datasets/cosmology/ashtakala.csv,5,seed_unverified
+period:7,period,Pradosha,,datasets/cosmology/ashtakala.csv,6,seed_unverified
+period:8,period,Ratri,,datasets/cosmology/ashtakala.csv,7,seed_unverified
+pitha:budha,pitha,budha,,datasets/geography/shakti_pitha_matrix.csv,2,seed_unverified
+pitha:chandra,pitha,chandra,,datasets/geography/shakti_pitha_matrix.csv,3,seed_unverified
+pitha:guru,pitha,guru,,datasets/geography/shakti_pitha_matrix.csv,20,seed_unverified
+pitha:ketu,pitha,ketu,,datasets/geography/shakti_pitha_matrix.csv,25,seed_unverified
+pitha:mangala,pitha,mangala,,datasets/geography/shakti_pitha_matrix.csv,5,seed_unverified
+pitha:rahu,pitha,rahu,,datasets/geography/shakti_pitha_matrix.csv,7,seed_unverified
+pitha:shani,pitha,shani,,datasets/geography/shakti_pitha_matrix.csv,6,seed_unverified
+pitha:shukra,pitha,shukra,,datasets/geography/shakti_pitha_matrix.csv,4,seed_unverified
+pitha:surya,pitha,surya,,datasets/geography/shakti_pitha_matrix.csv,0,seed_unverified
+plant:agarwood,plant,Agarwood,,datasets/plants/nakshatra_plants.csv,5,seed_unverified
+plant:amla,plant,Amla,,datasets/plants/nakshatra_plants.csv,1,seed_unverified
+plant:arjuna,plant,Arjuna,,datasets/plants/nakshatra_plants.csv,14,seed_unverified
+plant:arka,plant,Arka,,datasets/plants/nakshatra_plants.csv,21,seed_unverified
+plant:ashoka,plant,Ashoka,,datasets/plants/sacred_plants.csv,5,seed_unverified
+plant:ashwagandha,plant,Ashwagandha,,datasets/plants/nakshatra_plants.csv,0,seed_unverified
+plant:bael,plant,Bael,,datasets/plants/nakshatra_plants.csv,13,seed_unverified
+plant:bamboo,plant,Bamboo,,datasets/plants/nakshatra_plants.csv,6,seed_unverified
+plant:banana,plant,Banana,,datasets/plants/sacred_plants.csv,8,seed_unverified
+plant:banyan,plant,Banyan,,datasets/plants/nakshatra_plants.csv,9,seed_unverified
+plant:bilva,plant,Bilva,,datasets/plants/sacred_plants.csv,1,seed_unverified
+plant:fig,plant,Fig,,datasets/plants/nakshatra_plants.csv,2,seed_unverified
+plant:jackfruit,plant,Jackfruit,,datasets/plants/nakshatra_plants.csv,20,seed_unverified
+plant:jasmine,plant,Jasmine,,datasets/plants/nakshatra_plants.csv,3,seed_unverified
+plant:kadamba,plant,Kadamba,,datasets/plants/nakshatra_plants.csv,23,seed_unverified
+plant:khadira,plant,Khadira,,datasets/plants/nakshatra_plants.csv,4,seed_unverified
+plant:lotus,plant,Lotus,,datasets/plants/nakshatra_plants.csv,19,seed_unverified
+plant:mahua,plant,Mahua,,datasets/plants/nakshatra_plants.csv,26,seed_unverified
+plant:mango,plant,Mango,,datasets/plants/nakshatra_plants.csv,24,seed_unverified
+plant:nagakesara,plant,Nagakesara,,datasets/plants/nakshatra_plants.csv,8,seed_unverified
+plant:neem,plant,Neem,,datasets/plants/nakshatra_plants.csv,25,seed_unverified
+plant:palasha,plant,Palasha,,datasets/plants/nakshatra_plants.csv,10,seed_unverified
+plant:peepal,plant,Peepal,,datasets/plants/nakshatra_plants.csv,7,seed_unverified
+plant:rudraksha,plant,Rudraksha,,datasets/plants/nakshatra_plants.csv,11,seed_unverified
+plant:sal,plant,Sal,,datasets/plants/nakshatra_plants.csv,18,seed_unverified
+plant:sandalwood,plant,Sandalwood,,datasets/plants/sacred_plants.csv,6,seed_unverified
+plant:shami,plant,Shami,,datasets/plants/nakshatra_plants.csv,22,seed_unverified
+plant:silk_cotton,plant,Silk Cotton,,datasets/plants/nakshatra_plants.csv,17,seed_unverified
+plant:soapnut,plant,Soapnut,,datasets/plants/nakshatra_plants.csv,12,seed_unverified
+plant:tulsi,plant,Tulsi,,datasets/plants/nakshatra_plants.csv,16,seed_unverified
+plant:wood_apple,plant,Wood Apple,,datasets/plants/nakshatra_plants.csv,15,seed_unverified
+pranayama:bhastrika,pranayama,Bhastrika,,datasets/yoga/pranayama_core.csv,1,seed_unverified
+pranayama:bhramari,pranayama,Bhramari,,datasets/yoga/pranayama_core.csv,3,seed_unverified
+pranayama:kapalbhati,pranayama,Kapalbhati,,datasets/yoga/pranayama_core.csv,5,seed_unverified
+pranayama:nadi_shodhana,pranayama,Nadi Shodhana,,datasets/yoga/pranayama_core.csv,4,seed_unverified
+pranayama:sitali,pranayama,Sitali,,datasets/yoga/pranayama_core.csv,2,seed_unverified
+pranayama:ujjayi,pranayama,Ujjayi,,datasets/yoga/pranayama_core.csv,0,seed_unverified
+raga:bageshri,raga,Bāgeshrī,Bāgeshrī,datasets/sound/raga_master.csv,18,seed_unverified
+raga:bhairava,raga,Bhairava,,datasets/gandharva/raga_therapeutic.csv,2,seed_unverified
+raga:bhairavi,raga,Bhairavī,Bhairavī,datasets/sound/raga_master.csv,4,seed_unverified
+raga:bhimpalasi,raga,Bhimpalasi,,datasets/gandharva/raga_therapeutic.csv,0,seed_unverified
+raga:bhup,raga,Bhūp,Bhūp,datasets/sound/raga_master.csv,0,seed_unverified
+raga:bihag,raga,Bihāg,Bihāg,datasets/sound/raga_master.csv,2,seed_unverified
+raga:darbari,raga,Darbari,,datasets/gandharva/raga_therapeutic.csv,3,seed_unverified
+raga:desha,raga,Deśa,Deśa,datasets/sound/raga_master.csv,9,seed_unverified
+raga:hindol,raga,Hindol,Hindol,datasets/sound/raga_master.csv,7,seed_unverified
+raga:jhinjhoti,raga,Jhinjhoṭī,Jhinjhoṭī,datasets/sound/raga_master.csv,19,seed_unverified
+raga:kedara,raga,Kedāra,Kedāra,datasets/sound/raga_master.csv,3,seed_unverified
+raga:khamaj,raga,Khāmaj,Khāmaj,datasets/sound/raga_master.csv,10,seed_unverified
+raga:lalit,raga,Lalit,Lalit,datasets/sound/raga_master.csv,12,seed_unverified
+raga:malkauns,raga,Mālkauns,Mālkauns,datasets/sound/raga_master.csv,8,seed_unverified
+raga:marwa,raga,Marwa,,datasets/gandharva/raga_therapeutic.csv,6,seed_unverified
+raga:miya_malhar,raga,Mīyā Mālhar,Mīyā Mālhar,datasets/sound/raga_master.csv,15,seed_unverified
+raga:nata_bhairav,raga,Nāṭa Bhairav,Nāṭa Bhairav,datasets/sound/raga_master.csv,16,seed_unverified
+raga:pilu,raga,Pīlu,Pīlu,datasets/sound/raga_master.csv,11,seed_unverified
+raga:puriya,raga,Pūriyā,Pūriyā,datasets/sound/raga_master.csv,6,seed_unverified
+raga:purvi,raga,Pūrvī,Pūrvī,datasets/sound/raga_master.csv,13,seed_unverified
+raga:shree,raga,Shree,,datasets/gandharva/raga_therapeutic.csv,7,seed_unverified
+raga:shri,raga,Śrī,Śrī,datasets/sound/raga_master.csv,14,seed_unverified
+raga:tilaka_kamod,raga,Tilaka Kāmod,Tilaka Kāmod,datasets/sound/raga_master.csv,17,seed_unverified
+raga:todi,raga,Ṭoḍī,Ṭoḍī,datasets/sound/raga_master.csv,5,seed_unverified
+raga:yaman,raga,Yaman,,datasets/gandharva/raga_therapeutic.csv,4,seed_unverified
+raga:yaman_kalyan,raga,Yaman Kalyān,Yaman Kalyān,datasets/sound/raga_master.csv,1,seed_unverified
+rasa:adbhuta,rasa,Adbhuta,Adbhuta,datasets/ontology/rasa_siddhanta.csv,6,seed_unverified
+rasa:astringent,rasa,astringent,,datasets/ayurveda/rasa.csv,5,seed_unverified
+rasa:bhayanaka,rasa,Bhayānaka,Bhayānaka,datasets/ontology/rasa_siddhanta.csv,10,seed_unverified
+rasa:bibhatsa,rasa,Bībhatsa,Bībhatsa,datasets/ontology/rasa_siddhanta.csv,11,seed_unverified
+rasa:bitter,rasa,bitter,,datasets/ayurveda/rasa.csv,4,seed_unverified
+rasa:dasya,rasa,Dāsya,Dāsya,datasets/ontology/rasa_siddhanta.csv,1,seed_unverified
+rasa:hasya,rasa,Hāsya,Hāsya,datasets/ontology/rasa_siddhanta.csv,5,seed_unverified
+rasa:karuna,rasa,Karuṇā,Karuṇā,datasets/ontology/rasa_siddhanta.csv,8,seed_unverified
+rasa:madhurya,rasa,Mādhurya,Mādhurya,datasets/ontology/rasa_siddhanta.csv,4,seed_unverified
+rasa:pungent,rasa,pungent,,datasets/ayurveda/rasa.csv,3,seed_unverified
+rasa:raudra,rasa,Raudra,Raudra,datasets/ontology/rasa_siddhanta.csv,9,seed_unverified
+rasa:sakhya,rasa,Sakhya,Sakhya,datasets/ontology/rasa_siddhanta.csv,2,seed_unverified
+rasa:salty,rasa,salty,,datasets/ayurveda/rasa.csv,2,seed_unverified
+rasa:shanta,rasa,Śānta,Śānta,datasets/ontology/rasa_siddhanta.csv,0,seed_unverified
+rasa:sour,rasa,sour,,datasets/ayurveda/rasa.csv,1,seed_unverified
+rasa:sweet,rasa,sweet,,datasets/ayurveda/rasa.csv,0,seed_unverified
+rasa:vatsalya,rasa,Vātsalya,Vātsalya,datasets/ontology/rasa_siddhanta.csv,3,seed_unverified
+rasa:vira,rasa,Vīra,Vīra,datasets/ontology/rasa_siddhanta.csv,7,seed_unverified
+rashi:aquarius,rashi,Aquarius,,datasets/entities/rashi.csv,10,seed_unverified
+rashi:aries,rashi,Aries,,datasets/entities/rashi.csv,0,seed_unverified
+rashi:cancer,rashi,Cancer,,datasets/entities/rashi.csv,3,seed_unverified
+rashi:capricorn,rashi,Capricorn,,datasets/entities/rashi.csv,9,seed_unverified
+rashi:gemini,rashi,Gemini,,datasets/entities/rashi.csv,2,seed_unverified
+rashi:leo,rashi,Leo,,datasets/entities/rashi.csv,4,seed_unverified
+rashi:libra,rashi,Libra,,datasets/entities/rashi.csv,6,seed_unverified
+rashi:pisces,rashi,Pisces,,datasets/entities/rashi.csv,11,seed_unverified
+rashi:sagittarius,rashi,Sagittarius,,datasets/entities/rashi.csv,8,seed_unverified
+rashi:scorpio,rashi,Scorpio,,datasets/entities/rashi.csv,7,seed_unverified
+rashi:taurus,rashi,Taurus,,datasets/entities/rashi.csv,1,seed_unverified
+rashi:virgo,rashi,Virgo,,datasets/entities/rashi.csv,5,seed_unverified
+site:budha,site,budha,,datasets/geography/sacred_sites_global.csv,3,seed_unverified
+site:chandra,site,chandra,,datasets/geography/sacred_sites_global.csv,10,seed_unverified
+site:guru,site,guru,,datasets/geography/sacred_sites_global.csv,12,seed_unverified
+site:ketu,site,ketu,,datasets/geography/sacred_sites_global.csv,2,seed_unverified
+site:mangal,site,mangal,,datasets/geography/sacred_sites_global.csv,7,seed_unverified
+site:shani,site,shani,,datasets/geography/sacred_sites_global.csv,1,seed_unverified
+site:surya,site,surya,,datasets/geography/sacred_sites_global.csv,0,seed_unverified
+species:airavata,species,Airāvata,Airāvata,datasets/species/species_entities.csv,21,seed_unverified
+species:ashva,species,Aśva,Aśva,datasets/species/species_entities.csv,0,seed_unverified
+species:gaja,species,Gaja,Gaja,datasets/species/species_entities.csv,1,seed_unverified
+species:garuda,species,Garuḍa,Garuḍa,datasets/species/species_entities.csv,16,seed_unverified
+species:go,species,Go,Go,datasets/species/species_entities.csv,7,seed_unverified
+species:hamsa,species,Haṃsa,Haṃsa,datasets/species/species_entities.csv,15,seed_unverified
+species:mahisha,species,Mahiṣa,Mahiṣa,datasets/species/species_entities.csv,8,seed_unverified
+species:makara,species,Makara,Makara,datasets/species/species_entities.csv,20,seed_unverified
+species:marjara,species,Mārjāra,Mārjāra,datasets/species/species_entities.csv,5,seed_unverified
+species:mayura,species,Mayūra,Mayūra,datasets/species/species_entities.csv,14,seed_unverified
+species:mesha,species,Meṣa,Meṣa,datasets/species/species_entities.csv,2,seed_unverified
+species:mushaka,species,Mūṣaka,Mūṣaka,datasets/species/species_entities.csv,6,seed_unverified
+species:nakula,species,Nakula,Nakula,datasets/species/species_entities.csv,12,seed_unverified
+species:nandi,species,Nandī,Nandī,datasets/species/species_entities.csv,17,seed_unverified
+species:sarpa,species,Sarpa,Sarpa,datasets/species/species_entities.csv,3,seed_unverified
+species:shashaka,species,Śaśaka,Śaśaka,datasets/species/species_entities.csv,10,seed_unverified
+species:shuka,species,Śuka,Śuka,datasets/species/species_entities.csv,19,seed_unverified
+species:shvan,species,Śvan,Śvan,datasets/species/species_entities.csv,4,seed_unverified
+species:simha,species,Siṃha,Siṃha,datasets/species/species_entities.csv,13,seed_unverified
+species:uluka,species,Ulūka,Ulūka,datasets/species/species_entities.csv,18,seed_unverified
+species:vanara,species,Vānara,Vānara,datasets/species/species_entities.csv,11,seed_unverified
+species:vyaghra,species,Vyāghra,Vyāghra,datasets/species/species_entities.csv,9,seed_unverified
+tala:adi,tala,Ādi,Ādi,datasets/carnatic/tala_master.csv,35,seed_unverified
+tala:ata,tala,Āṭa,Āṭa,datasets/carnatic/tala_master.csv,25,seed_unverified
+tala:ata_catusra,tala,Ata Catusra,,datasets/carnatic/35_talas.csv,26,seed_unverified
+tala:ata_khanda,tala,Ata Khanda,,datasets/carnatic/35_talas.csv,27,seed_unverified
+tala:ata_misra,tala,Ata Misra,,datasets/carnatic/35_talas.csv,28,seed_unverified
+tala:ata_sankirna,tala,Ata Sankirna,,datasets/carnatic/35_talas.csv,29,seed_unverified
+tala:ata_tisra,tala,Ata Tisra,,datasets/carnatic/35_talas.csv,25,seed_unverified
+tala:dadra,tala,Dādrā,Dādrā,datasets/carnatic/tala_master.csv,44,seed_unverified
+tala:dhamar,tala,Dhamār,Dhamār,datasets/carnatic/tala_master.csv,47,seed_unverified
+tala:dhruva,tala,Dhruva,Dhruva,datasets/carnatic/tala_master.csv,0,seed_unverified
+tala:dhruva_catusra,tala,Dhruva Catusra,,datasets/carnatic/35_talas.csv,1,seed_unverified
+tala:dhruva_khanda,tala,Dhruva Khanda,,datasets/carnatic/35_talas.csv,2,seed_unverified
+tala:dhruva_misra,tala,Dhruva Misra,,datasets/carnatic/35_talas.csv,3,seed_unverified
+tala:dhruva_sankirna,tala,Dhruva Sankirna,,datasets/carnatic/35_talas.csv,4,seed_unverified
+tala:dhruva_tisra,tala,Dhruva Tisra,,datasets/carnatic/35_talas.csv,0,seed_unverified
+tala:dipchandi,tala,Dīpchandī,Dīpchandī,datasets/carnatic/tala_master.csv,46,seed_unverified
+tala:eka,tala,Eka,Eka,datasets/carnatic/tala_master.csv,30,seed_unverified
+tala:eka_catusra,tala,Eka Catusra,,datasets/carnatic/35_talas.csv,31,seed_unverified
+tala:eka_khanda,tala,Eka Khanda,,datasets/carnatic/35_talas.csv,32,seed_unverified
+tala:eka_misra,tala,Eka Misra,,datasets/carnatic/35_talas.csv,33,seed_unverified
+tala:eka_sankirna,tala,Eka Sankirna,,datasets/carnatic/35_talas.csv,34,seed_unverified
+tala:eka_tisra,tala,Eka Tisra,,datasets/carnatic/35_talas.csv,30,seed_unverified
+tala:ektal,tala,Ektāl,Ektāl,datasets/carnatic/tala_master.csv,41,seed_unverified
+tala:jhampa,tala,Jhampā,Jhampā,datasets/carnatic/tala_master.csv,15,seed_unverified
+tala:jhampa_catusra,tala,Jhampa Catusra,,datasets/carnatic/35_talas.csv,16,seed_unverified
+tala:jhampa_khanda,tala,Jhampa Khanda,,datasets/carnatic/35_talas.csv,17,seed_unverified
+tala:jhampa_misra,tala,Jhampa Misra,,datasets/carnatic/35_talas.csv,18,seed_unverified
+tala:jhampa_sankirna,tala,Jhampa Sankirna,,datasets/carnatic/35_talas.csv,19,seed_unverified
+tala:jhampa_tisra,tala,Jhampa Tisra,,datasets/carnatic/35_talas.csv,15,seed_unverified
+tala:jhaptal,tala,Jhaptāl,Jhaptāl,datasets/carnatic/tala_master.csv,42,seed_unverified
+tala:jhoomra,tala,Jhoomrā,Jhoomrā,datasets/carnatic/tala_master.csv,49,seed_unverified
+tala:keharwa,tala,Keharwa,Keharwa,datasets/carnatic/tala_master.csv,45,seed_unverified
+tala:khanda_capu,tala,Khaṇḍa Cāpu,Khaṇḍa Cāpu,datasets/carnatic/tala_master.csv,37,seed_unverified
+tala:matya,tala,Matya,Matya,datasets/carnatic/tala_master.csv,5,seed_unverified
+tala:matya_catusra,tala,Matya Catusra,,datasets/carnatic/35_talas.csv,6,seed_unverified
+tala:matya_khanda,tala,Matya Khanda,,datasets/carnatic/35_talas.csv,7,seed_unverified
+tala:matya_misra,tala,Matya Misra,,datasets/carnatic/35_talas.csv,8,seed_unverified
+tala:matya_sankirna,tala,Matya Sankirna,,datasets/carnatic/35_talas.csv,9,seed_unverified
+tala:matya_tisra,tala,Matya Tisra,,datasets/carnatic/35_talas.csv,5,seed_unverified
+tala:mishra_capu,tala,Miśra Cāpu,Miśra Cāpu,datasets/carnatic/tala_master.csv,38,seed_unverified
+tala:rupak,tala,Rūpak,Rūpak,datasets/carnatic/tala_master.csv,43,seed_unverified
+tala:rupaka,tala,Rupaka,Rupaka,datasets/carnatic/tala_master.csv,10,seed_unverified
+tala:rupaka_catusra,tala,Rupaka Catusra,,datasets/carnatic/35_talas.csv,11,seed_unverified
+tala:rupaka_khanda,tala,Rupaka Khanda,,datasets/carnatic/35_talas.csv,12,seed_unverified
+tala:rupaka_misra,tala,Rupaka Misra,,datasets/carnatic/35_talas.csv,13,seed_unverified
+tala:rupaka_sankirna,tala,Rupaka Sankirna,,datasets/carnatic/35_talas.csv,14,seed_unverified
+tala:rupaka_tisra,tala,Rupaka Tisra,,datasets/carnatic/35_talas.csv,10,seed_unverified
+tala:sankirna_capu,tala,Saṅkīrṇa Cāpu,Saṅkīrṇa Cāpu,datasets/carnatic/tala_master.csv,39,seed_unverified
+tala:tilwada,tala,Tilwāḍā,Tilwāḍā,datasets/carnatic/tala_master.csv,48,seed_unverified
+tala:tintal,tala,Tīntāl,Tīntāl,datasets/carnatic/tala_master.csv,40,seed_unverified
+tala:triputa,tala,Triputā,Triputā,datasets/carnatic/tala_master.csv,20,seed_unverified
+tala:triputa_catusra,tala,Triputa Catusra,,datasets/carnatic/35_talas.csv,21,seed_unverified
+tala:triputa_khanda,tala,Triputa Khanda,,datasets/carnatic/35_talas.csv,22,seed_unverified
+tala:triputa_misra,tala,Triputa Misra,,datasets/carnatic/35_talas.csv,23,seed_unverified
+tala:triputa_sankirna,tala,Triputa Sankirna,,datasets/carnatic/35_talas.csv,24,seed_unverified
+tala:triputa_tisra,tala,Triputa Tisra,,datasets/carnatic/35_talas.csv,20,seed_unverified
+tattva:abhidheya,tattva,Abhidheya,Abhidheya,datasets/ontology/vaishnava_tattva.csv,2,seed_unverified
+tattva:acintya_bhedabheda,tattva,Acintya-bhedābheda,Acintya-bhedābheda,datasets/ontology/vaishnava_tattva.csv,0,seed_unverified
+tattva:bhakti_tattva,tattva,Bhakti-tattva,Bhakti-tattva,datasets/ontology/vaishnava_tattva.csv,8,seed_unverified
+tattva:dhama_tattva,tattva,Dhāma-tattva,Dhāma-tattva,datasets/ontology/vaishnava_tattva.csv,13,seed_unverified
+tattva:guru_tattva,tattva,Guru-tattva,Guru-tattva,datasets/ontology/vaishnava_tattva.csv,11,seed_unverified
+tattva:jiva_tattva,tattva,Jīva-tattva,Jīva-tattva,datasets/ontology/vaishnava_tattva.csv,6,seed_unverified
+tattva:kala_tattva,tattva,Kāla-tattva,Kāla-tattva,datasets/ontology/vaishnava_tattva.csv,14,seed_unverified
+tattva:lila_tattva,tattva,Līlā-tattva,Līlā-tattva,datasets/ontology/vaishnava_tattva.csv,12,seed_unverified
+tattva:maya_tattva,tattva,Māyā-tattva,Māyā-tattva,datasets/ontology/vaishnava_tattva.csv,7,seed_unverified
+tattva:nama_tattva,tattva,Nāma-tattva,Nāma-tattva,datasets/ontology/vaishnava_tattva.csv,9,seed_unverified
+tattva:prayojana,tattva,Prayojana,Prayojana,datasets/ontology/vaishnava_tattva.csv,3,seed_unverified
+tattva:rasa_tattva,tattva,Rasa-tattva,Rasa-tattva,datasets/ontology/vaishnava_tattva.csv,10,seed_unverified
+tattva:sambandha,tattva,Sambandha,Sambandha,datasets/ontology/vaishnava_tattva.csv,1,seed_unverified
+tattva:shakti_parinama,tattva,Śakti-parināma,Śakti-parināma,datasets/ontology/vaishnava_tattva.csv,5,seed_unverified
+tattva:svayam_bhagavan,tattva,Svayam Bhagavān,Svayam Bhagavān,datasets/ontology/vaishnava_tattva.csv,4,seed_unverified
+tithi:amavasya,tithi,Amavasya,,datasets/astro/tithi_core.csv,15,seed_unverified
+tithi:ashtami,tithi,Ashtami,Aṣṭamī,datasets/astro/tithi_list.csv,7,seed_unverified
+tithi:chaturdashi,tithi,Chaturdashi,Caturdaśī,datasets/astro/tithi_list.csv,13,seed_unverified
+tithi:chaturthi,tithi,Chaturthi,Caturthī,datasets/astro/tithi_list.csv,3,seed_unverified
+tithi:dashami,tithi,Dashami,Daśamī,datasets/astro/tithi_list.csv,9,seed_unverified
+tithi:dvadashi,tithi,Dvadashi,Dvādaśī,datasets/astro/tithi_list.csv,11,seed_unverified
+tithi:dvitiya,tithi,Dvitiya,Dvitīyā,datasets/astro/tithi_list.csv,1,seed_unverified
+tithi:ekadashi,tithi,Ekadashi,Ekādaśī,datasets/astro/tithi_list.csv,10,seed_unverified
+tithi:krishna_amavasya,tithi,Amāvāsyā,Amāvāsyā,datasets/astro/tithi_master.csv,29,seed_unverified
+tithi:krishna_ashtami,tithi,Aṣṭamī,Aṣṭamī,datasets/astro/tithi_master.csv,22,seed_unverified
+tithi:krishna_caturdashi,tithi,Caturdaśī,Caturdaśī,datasets/astro/tithi_master.csv,28,seed_unverified
+tithi:krishna_caturthi,tithi,Caturthī,Caturthī,datasets/astro/tithi_master.csv,18,seed_unverified
+tithi:krishna_dashami,tithi,Daśamī,Daśamī,datasets/astro/tithi_master.csv,24,seed_unverified
+tithi:krishna_dvadashi,tithi,Dvādaśī,Dvādaśī,datasets/astro/tithi_master.csv,26,seed_unverified
+tithi:krishna_dvitiya,tithi,Dvitīyā,Dvitīyā,datasets/astro/tithi_master.csv,16,seed_unverified
+tithi:krishna_ekadashi,tithi,Ekādaśī,Ekādaśī,datasets/astro/tithi_master.csv,25,seed_unverified
+tithi:krishna_navami,tithi,Navamī,Navamī,datasets/astro/tithi_master.csv,23,seed_unverified
+tithi:krishna_pancami,tithi,Pañcamī,Pañcamī,datasets/astro/tithi_master.csv,19,seed_unverified
+tithi:krishna_pratipada,tithi,Pratipadā,Pratipadā,datasets/astro/tithi_master.csv,15,seed_unverified
+tithi:krishna_saptami,tithi,Saptamī,Saptamī,datasets/astro/tithi_master.csv,21,seed_unverified
+tithi:krishna_shashthi,tithi,Ṣaṣṭhī,Ṣaṣṭhī,datasets/astro/tithi_master.csv,20,seed_unverified
+tithi:krishna_trayodashi,tithi,Trayodaśī,Trayodaśī,datasets/astro/tithi_master.csv,27,seed_unverified
+tithi:krishna_tritiya,tithi,Tṛtīyā,Tṛtīyā,datasets/astro/tithi_master.csv,17,seed_unverified
+tithi:navami,tithi,Navami,Navamī,datasets/astro/tithi_list.csv,8,seed_unverified
+tithi:panchami,tithi,Panchami,Pañcamī,datasets/astro/tithi_list.csv,4,seed_unverified
+tithi:pratipada,tithi,Pratipada,,datasets/astro/tithi_core.csv,0,seed_unverified
+tithi:pratipat,tithi,Pratipat,Pratipadā,datasets/astro/tithi_list.csv,0,seed_unverified
+tithi:purnima,tithi,Purnima,,datasets/astro/tithi_core.csv,14,seed_unverified
+tithi:purnimaamavasya,tithi,Purnima/Amavasya,Pūrṇimā/Amāvasyā,datasets/astro/tithi_list.csv,14,seed_unverified
+tithi:saptami,tithi,Saptami,Saptamī,datasets/astro/tithi_list.csv,6,seed_unverified
+tithi:shashthi,tithi,Shashthi,Ṣaṣṭhī,datasets/astro/tithi_list.csv,5,seed_unverified
+tithi:shukla_ashtami,tithi,Aṣṭamī,Aṣṭamī,datasets/astro/tithi_master.csv,7,seed_unverified
+tithi:shukla_caturdashi,tithi,Caturdaśī,Caturdaśī,datasets/astro/tithi_master.csv,13,seed_unverified
+tithi:shukla_caturthi,tithi,Caturthī,Caturthī,datasets/astro/tithi_master.csv,3,seed_unverified
+tithi:shukla_dashami,tithi,Daśamī,Daśamī,datasets/astro/tithi_master.csv,9,seed_unverified
+tithi:shukla_dvadashi,tithi,Dvādaśī,Dvādaśī,datasets/astro/tithi_master.csv,11,seed_unverified
+tithi:shukla_dvitiya,tithi,Dvitīyā,Dvitīyā,datasets/astro/tithi_master.csv,1,seed_unverified
+tithi:shukla_ekadashi,tithi,Ekādaśī,Ekādaśī,datasets/astro/tithi_master.csv,10,seed_unverified
+tithi:shukla_navami,tithi,Navamī,Navamī,datasets/astro/tithi_master.csv,8,seed_unverified
+tithi:shukla_pancami,tithi,Pañcamī,Pañcamī,datasets/astro/tithi_master.csv,4,seed_unverified
+tithi:shukla_paurnima,tithi,Paurṇimā,Paurṇimā,datasets/astro/tithi_master.csv,14,seed_unverified
+tithi:shukla_pratipada,tithi,Pratipadā,Pratipadā,datasets/astro/tithi_master.csv,0,seed_unverified
+tithi:shukla_saptami,tithi,Saptamī,Saptamī,datasets/astro/tithi_master.csv,6,seed_unverified
+tithi:shukla_shashthi,tithi,Ṣaṣṭhī,Ṣaṣṭhī,datasets/astro/tithi_master.csv,5,seed_unverified
+tithi:shukla_trayodashi,tithi,Trayodaśī,Trayodaśī,datasets/astro/tithi_master.csv,12,seed_unverified
+tithi:shukla_tritiya,tithi,Tṛtīyā,Tṛtīyā,datasets/astro/tithi_master.csv,2,seed_unverified
+tithi:trayodashi,tithi,Trayodashi,Trayodaśī,datasets/astro/tithi_list.csv,12,seed_unverified
+tithi:tritiya,tithi,Tritiya,Tṛtīyā,datasets/astro/tithi_list.csv,2,seed_unverified
+trigram:earth,trigram,earth,,datasets/iching/trigrams.csv,1,seed_unverified
+trigram:fire,trigram,fire,,datasets/iching/trigrams.csv,5,seed_unverified
+trigram:heaven,trigram,heaven,,datasets/iching/trigrams.csv,0,seed_unverified
+trigram:lake,trigram,lake,,datasets/iching/trigrams.csv,7,seed_unverified
+trigram:mountain,trigram,mountain,,datasets/iching/trigrams.csv,6,seed_unverified
+trigram:thunder,trigram,thunder,,datasets/iching/trigrams.csv,2,seed_unverified
+trigram:water,trigram,water,,datasets/iching/trigrams.csv,4,seed_unverified
+trigram:wind,trigram,wind,,datasets/iching/trigrams.csv,3,seed_unverified
+vipaka:pungent,vipaka,pungent,,datasets/ayurveda/vipaka.csv,2,seed_unverified
+vipaka:sour,vipaka,sour,,datasets/ayurveda/vipaka.csv,1,seed_unverified
+vipaka:sweet,vipaka,sweet,,datasets/ayurveda/vipaka.csv,0,seed_unverified
+virya:cooling,virya,cooling,,datasets/ayurveda/virya.csv,1,seed_unverified
+virya:heating,virya,heating,,datasets/ayurveda/virya.csv,0,seed_unverified

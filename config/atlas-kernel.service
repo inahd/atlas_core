@@ -1,0 +1,18 @@
+[Unit]
+Description=Atlas 330 Flask Kernel
+After=network.target
+StartLimitIntervalSec=60
+StartLimitBurst=3
+
+[Service]
+Type=simple
+User=inahd
+WorkingDirectory=/home/inahd/atlas_core
+ExecStart=/usr/bin/python3 /home/inahd/atlas_core/kernel.py
+Restart=on-failure
+RestartSec=5
+StandardOutput=append:/home/inahd/atlas_core/logs/kernel.log
+StandardError=append:/home/inahd/atlas_core/logs/kernel.log
+
+[Install]
+WantedBy=multi-user.target
