@@ -291,6 +291,19 @@ def _compose_llm():
         return jsonify({"error": str(e), "status": "failed"})
 
 
+@system_bp.route("/layer/<layer_id>/compose")
+def _layer_compose(layer_id):
+    """Self-assembling layer from dataset manifests."""
+    from kernel import field_state
+    try:
+        from npu_engine.field.layer_composer import assemble_layer
+        fs = field_state()
+        result = assemble_layer(layer_id, fs)
+        return jsonify(result)
+    except Exception as e:
+        return jsonify({"error": str(e), "layer_id": layer_id})
+
+
 @system_bp.route("/corpus/semantic")
 def _corpus_semantic():
     """Semantic search over Atlas corpus via NPU embeddings."""
