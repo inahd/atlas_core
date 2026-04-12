@@ -5,6 +5,7 @@
 <title>S0 · Goloka</title>
 <link rel="stylesheet" href="/static/atlas-theme.css">
 <script src="/static/atlas.js"></script>
+<script src="/static/interaction_engine.js"></script>
 <style>
 body{background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:13px;min-height:100vh;display:flex;flex-direction:column}
 .main{flex:1;display:flex;align-items:center;justify-content:center;padding:40px 20px}
@@ -131,7 +132,8 @@ async function load(){
   if (padas.length) {
     const p = padas[0];
     h += '<div class="pada-block">';
-    h += '<div class="pada-text">' + (p.pallavi_text || '') + '</div>';
+    const padaTxt = p.pallavi_text || '';
+    h += '<div class="pada-text" data-passage="' + padaTxt.replace(/"/g,'&quot;') + '" data-source="' + (p.composer||'') + '">' + padaTxt + '</div>';
     const meta = [p.composer, p.raga].filter(Boolean).join(' \u00b7 ');
     if (meta) h += '<div class="pada-meta">' + meta + '</div>';
     h += '</div>';

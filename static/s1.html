@@ -5,6 +5,7 @@
 <title>S1 · Archetype</title>
 <link rel="stylesheet" href="/static/atlas-theme.css">
 <script src="/static/atlas.js"></script>
+<script src="/static/interaction_engine.js"></script>
 <style>
 body{background:var(--bg);color:var(--text);font-family:var(--font-mono);font-size:11px;height:100vh;display:grid;grid-template-columns:200px 1fr 200px;grid-template-rows:1fr 28px;overflow:hidden}
 .col{padding:12px;overflow-y:auto}.col-l{border-right:1px solid var(--border)}.col-r{border-left:1px solid var(--border)}
@@ -143,7 +144,7 @@ async function load(){
     if(wpns.length){
       C+=`<div class="hdr" style="text-align:center">WEAPONS</div>`;
       C+=`<div class="weapon-list">`;
-      wpns.forEach(w=>C+=`<span class="weapon">${fmt(w)}</span>`);
+      wpns.forEach(w=>C+=`<span class="weapon" data-entity-id="weapon_${w}" data-label="${fmt(w)}">${fmt(w)}</span>`);
       C+=`</div>`;
     }
 
@@ -177,7 +178,7 @@ async function load(){
     const src=p.source||p.text_id||'';
     if(txt){
       C+=`<div class="sep" style="max-width:160px;margin:12px auto"></div>`;
-      C+=`<div class="scripture">${txt.slice(0,250)}</div>`;
+      C+=`<div class="scripture" data-passage="${txt.slice(0,500).replace(/"/g,'&quot;')}" data-source="${src}">${txt.slice(0,250)}</div>`;
       if(src)C+=`<div class="scripture-src">— ${src}</div>`;
     }
   }

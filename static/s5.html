@@ -5,6 +5,7 @@
 <title>S5 · Bhumi</title>
 <link rel="stylesheet" href="/static/atlas-theme.css">
 <script src="/static/atlas.js"></script>
+<script src="/static/interaction_engine.js"></script>
 <style>
 body{background:var(--bg);color:var(--text);font-family:var(--font-mono);font-size:11px;min-height:100vh;display:flex;flex-direction:column}
 .main{flex:1;padding:24px 20px 32px;max-width:640px;margin:0 auto;width:100%;overflow-y:auto}
@@ -221,7 +222,7 @@ async function load(){
     h += '<div class="herbs-grid">';
     herbCards.forEach(hb=>{
       h += '<div class="herb-card">';
-      h += `<div class="hname">${hb.name}</div>`;
+      h += `<div class="hname" data-herb="${hb.name}">${hb.name}</div>`;
       if(hb.details.length) h += `<div class="hdetail">${hb.details.join(' · ')}</div>`;
       h += '</div>';
     });
@@ -267,7 +268,7 @@ async function load(){
   // yoni animal
   if(yoni){
     h += '<div class="animal-card">';
-    h += `<div class="aname">${yoni}</div>`;
+    h += `<div class="aname" data-animal="${yoni}">${yoni}</div>`;
     h += `<div class="ameta">yoni animal · ${curNak}</div>`;
     h += '</div>';
   }
@@ -289,7 +290,7 @@ async function load(){
   animalList.slice(0,3).forEach(row=>{
     const name = row.animal||row.name||row.species||'';
     h += '<div class="animal-card">';
-    h += `<div class="aname">${name}</div>`;
+    h += `<div class="aname" data-animal="${name}">${name}</div>`;
     const meta = [];
     if(row.medicine_card_archetype) meta.push(row.medicine_card_archetype);
     if(row.vpk_inference) meta.push('vpk: '+row.vpk_inference);
