@@ -2,52 +2,366 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>S5 · Bhūmi</title>
+<title>S5 · Bhumi</title>
 <link rel="stylesheet" href="/static/atlas-theme.css">
 <script src="/static/atlas.js"></script>
 <style>
 body{background:var(--bg);color:var(--text);font-family:var(--font-mono);font-size:11px;min-height:100vh;display:flex;flex-direction:column}
-.main{flex:1;padding:20px;max-width:640px;margin:0 auto;overflow-y:auto}
+.main{flex:1;padding:24px 20px 32px;max-width:640px;margin:0 auto;width:100%;overflow-y:auto}
+
+/* day type */
 .day{font-family:var(--font-body);font-size:36px;color:#1a5a2e;text-align:center;margin-bottom:2px;text-transform:uppercase;letter-spacing:.08em}
-.class{font-family:var(--font-mono);font-size:10px;color:var(--dim);text-align:center;margin-bottom:14px}
-.qbar{width:180px;height:5px;background:var(--border);border-radius:2px;margin:4px auto}.qfill{height:100%;border-radius:2px;background:#1a5a2e}
-.hdr{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em;margin-bottom:5px;margin-top:12px}.hdr:first-child{margin-top:0}
-.sub{font-size:11px;color:var(--text);margin-bottom:2px}.dim{font-size:10px;color:var(--dim);margin-bottom:2px}
-.sep{height:1px;background:var(--border);margin:10px 0}
-.herb{font-size:11px;color:var(--text);padding:3px 0;border-bottom:1px solid var(--border)}.herb:last-child{border-bottom:none}
-.lunar{font-family:var(--font-body);font-size:12px;color:var(--muted);line-height:1.6;font-style:italic;padding:10px;border-left:2px solid #1a5a2e40;margin-top:6px}
+.class{font-family:var(--font-mono);font-size:10px;color:var(--dim);text-align:center;margin-bottom:18px}
+
+/* planting bar */
+.qbar{width:220px;height:6px;background:var(--border);border-radius:3px;margin:4px auto}
+.qfill{height:100%;border-radius:3px;background:#1a5a2e}
+.qpct{text-align:center;font-size:10px;color:var(--dim);margin-bottom:20px}
+
+/* headers */
+.hdr{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em;margin-bottom:5px;margin-top:18px}
+.hdr:first-child{margin-top:0}
+.sub{font-size:11px;color:var(--text);margin-bottom:2px;line-height:1.45}
+.dim{font-size:10px;color:var(--dim);margin-bottom:2px}
+.muted{font-size:10px;color:var(--muted);margin-bottom:2px}
+.sep{height:1px;background:var(--border);margin:16px 0}
+
+/* compact row */
+.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-bottom:4px}
+.row3 .cell{font-size:10px;color:var(--text);line-height:1.4}
+.row3 .cell .lbl{display:block;font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.1em;margin-bottom:2px}
+
+/* herb cards */
+.herbs-grid{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.herb-card{background:var(--panel);border:1px solid var(--border);border-radius:4px;padding:8px 10px;min-width:140px;flex:1 1 calc(50% - 4px)}
+.herb-card .hname{font-family:var(--font-body);font-size:13px;color:var(--gold);margin-bottom:2px}
+.herb-card .hdetail{font-size:9px;color:var(--muted);line-height:1.4}
+
+/* plant row */
+.plant-row{display:flex;gap:20px;margin-top:6px}
+.plant-item{flex:1}
+.plant-item .plbl{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.1em;margin-bottom:2px}
+.plant-item .pval{font-family:var(--font-body);font-size:14px;color:var(--teal)}
+
+/* animal cards */
+.animal-card{background:var(--panel);border:1px solid var(--border);border-radius:4px;padding:10px 12px;margin-top:6px}
+.animal-card .aname{font-family:var(--font-body);font-size:14px;color:var(--gold);margin-bottom:3px}
+.animal-card .ameta{font-size:9px;color:var(--muted);line-height:1.5}
+
+/* body map */
+.body-item{display:flex;gap:16px;margin-top:6px}
+.body-item .bregion{font-family:var(--font-body);font-size:14px;color:var(--teal-lt)}
+.body-item .bmarma{font-size:11px;color:var(--muted);margin-top:2px}
+
+/* lunar note */
+.lunar{font-family:var(--font-body);font-size:12px;color:var(--muted);line-height:1.6;font-style:italic;padding:12px 14px;border-left:2px solid #1a5a2e40;margin-top:6px}
+
+/* field summary */
+.field-sum{font-size:11px;color:var(--muted);text-align:center;margin-top:6px}
+
+/* footer */
 .footer{background:var(--panel);border-top:1px solid var(--border);height:28px;display:flex;align-items:center;justify-content:center;gap:12px;font-size:10px;color:var(--dim)}
 .footer .nak{font-family:var(--font-body);color:var(--gold);font-size:12px}
+
+/* nav dots */
 .nav{position:fixed;right:12px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px}
-.nav a{width:8px;height:8px;border-radius:50%;border:1px solid var(--border);display:block;text-decoration:none}.nav a.on{background:var(--green);border-color:var(--green)}.nav a:hover{border-color:var(--gold)}
+.nav a{width:8px;height:8px;border-radius:50%;border:1px solid var(--border);display:block;text-decoration:none}
+.nav a.on{background:#3a7a4a;border-color:#3a7a4a}
+.nav a:hover{border-color:var(--gold)}
 </style>
 </head>
 <body>
+
 <div class="main" id="c">◌</div>
-<div class="footer"><span id="fn" class="nak">—</span><span id="ft">—</span><span id="fv">—</span><span id="fd">—</span><span style="width:6px;height:6px;border-radius:50%;background:var(--teal)"></span></div>
-<nav class="nav"><a href="/s0"></a><a href="/s1"></a><a href="/s2"></a><a href="/s3"></a><a href="/s4"></a><a href="/s5" class="on"></a><a href="/s6"></a></nav>
+<div class="footer">
+  <span id="fn" class="nak">—</span>
+  <span id="ft">—</span>
+  <span id="fv">—</span>
+  <span id="fd">—</span>
+  <span style="width:6px;height:6px;border-radius:50%;background:var(--teal)"></span>
+</div>
+<nav class="nav">
+  <a href="/s0"></a><a href="/s1"></a><a href="/s2"></a>
+  <a href="/s3"></a><a href="/s4"></a><a href="/s5" class="on"></a><a href="/s6"></a>
+</nav>
+
 <script>
+function s(v){return v||'—'}
+function fmt(v){return typeof v==='string'?v.replace(/_/g,' '):String(v||'')}
+function arr(v){return Array.isArray(v)?v:v?[v]:[]}
 function dv(o){return typeof o==='object'&&o?(o.name||'—'):(o||'—')}
-async function load(){
-  const[ab,f]=await Promise.all([atlasGet('/astrobotany',{}),atlasGet('/field',{})]);
-  const pa=f?.panchanga||{};
-  document.getElementById('fn').textContent=pa.nakshatra||'—';document.getElementById('ft').textContent=pa.tithi||'—';
-  document.getElementById('fv').textContent=pa.vara||'—';document.getElementById('fd').textContent=dv(pa.devi);
-  if(!ab||ab.error){document.getElementById('c').innerHTML='<div class="dim">astrobotany engine offline</div>';return}
-  const pq=ab.planting_quality||0;
-  let h=`<div class="day">${ab.day_type||'—'}</div><div class="class">${ab.class_name||ab.day_class||''}</div>`;
-  h+=`<div class="qbar"><div class="qfill" style="width:${pq*100}%"></div></div>`;
-  h+=`<div style="text-align:center;font-size:10px;color:var(--dim);margin-bottom:12px">planting quality ${(pq*100).toFixed(0)}%</div>`;
-  h+=`<div class="hdr">BEST ACTIVITIES</div><div class="sub">${ab.best_activities||'—'}</div>`;
-  h+=`<div class="hdr">DOSHA</div><div class="sub">${ab.dosha_heuristic||'—'}</div>`;
-  h+=`<div class="hdr">HARVEST</div><div class="dim">${ab.harvest_timing||'—'}</div>`;
-  const herbs=ab.recommended_herbs||[];
-  if(herbs.length){h+=`<div class="sep"></div><div class="hdr">HERBS (${herbs.length})</div>`;herbs.forEach(hb=>h+=`<div class="herb">${hb}</div>`)}
-  if(ab.lunar_note){h+=`<div class="sep"></div><div class="hdr">LUNAR BIOLOGY</div><div class="lunar">${ab.lunar_note}</div>`}
-  h+=`<div class="sep"></div><div class="hdr">FIELD</div><div class="sub">${ab.nakshatra||pa.nakshatra||''} · ${ab.element||pa.element||''} · ${ab.paksha||pa.paksha||''}</div>`;
-  document.getElementById('c').innerHTML=h;
+
+// case-insensitive substring match on a value against current nakshatra
+function nakMatch(val, nak){
+  if(!val||!nak) return false;
+  return String(val).toLowerCase().indexOf(nak.toLowerCase())>=0;
 }
-load();setInterval(load,60000);
+
+// find rows in a raw_data array matching nakshatra
+function matchRows(data, nak){
+  if(!Array.isArray(data)||!nak) return [];
+  return data.filter(row=>{
+    if(!row||typeof row!=='object') return false;
+    // check any key containing 'nakshatra' or 'nak'
+    for(const k of Object.keys(row)){
+      if(/nakshatra|^nak$/i.test(k) && nakMatch(row[k], nak)) return true;
+    }
+    return false;
+  });
+}
+
+// find rows matching graha
+function matchGraha(data, graha){
+  if(!Array.isArray(data)||!graha) return [];
+  return data.filter(row=>{
+    if(!row||typeof row!=='object') return false;
+    for(const k of Object.keys(row)){
+      if(/graha|planet|lord/i.test(k) && nakMatch(row[k], graha)) return true;
+    }
+    return false;
+  });
+}
+
+async function load(){
+  const [ab, f, compose] = await Promise.all([
+    atlasGet('/astrobotany',{}),
+    atlasGet('/field',{}),
+    atlasGet('/layer/s5/compose',{})
+  ]);
+
+  const pa = f?.panchanga||{};
+  const nd = pa.nak_data||{};
+  const raw = compose?.raw_data||{};
+  const curNak = pa.nakshatra||ab?.nakshatra||'';
+  const curGraha = nd.graha||nd.lord||'';
+
+  // footer
+  document.getElementById('fn').textContent = curNak||'—';
+  document.getElementById('ft').textContent = s(pa.tithi);
+  document.getElementById('fv').textContent = s(pa.vara);
+  document.getElementById('fd').textContent = dv(pa.devi);
+
+  if(!ab||ab.error){
+    document.getElementById('c').innerHTML='<div class="dim">astrobotany engine offline</div>';
+    return;
+  }
+
+  let h = '';
+
+  // 1. DAY TYPE
+  h += `<div class="day">${s(ab.day_type)}</div>`;
+  h += `<div class="class">${ab.class_name||ab.day_class||''}</div>`;
+
+  // 2. PLANTING QUALITY BAR
+  const pq = ab.planting_quality||0;
+  h += `<div class="qbar"><div class="qfill" style="width:${pq*100}%"></div></div>`;
+  h += `<div class="qpct">planting quality ${(pq*100).toFixed(0)}%</div>`;
+
+  // 3. BEST ACTIVITIES + DOSHA + HARVEST — compact row
+  h += '<div class="row3">';
+  h += `<div class="cell"><span class="lbl">activities</span>${fmt(ab.best_activities)}</div>`;
+  h += `<div class="cell"><span class="lbl">dosha</span>${fmt(ab.dosha_heuristic)}</div>`;
+  h += `<div class="cell"><span class="lbl">harvest</span>${fmt(ab.harvest_timing)}</div>`;
+  h += '</div>';
+
+  h += '<div class="sep"></div>';
+
+  // 4. HERBS — merge recommended_herbs + sacred_plants + dhatu_herb_matrix
+  const recHerbs = arr(ab.recommended_herbs);
+  const sacredPlants = arr(raw.sacred_plants);
+  const dhatuMatrix = arr(raw.dhatu_herb_matrix);
+
+  // sacred plants matched to current nakshatra
+  const sacredMatched = matchRows(sacredPlants, curNak);
+  // dhatu herbs matched
+  const dhatuMatched = matchRows(dhatuMatrix, curNak);
+  // also match dhatu by graha
+  const dhatuGraha = curGraha ? matchGraha(dhatuMatrix, curGraha) : [];
+
+  // build herb list
+  const herbCards = [];
+  const seen = new Set();
+
+  // from recommended_herbs (strings)
+  recHerbs.forEach(name=>{
+    const key = String(name).toLowerCase();
+    if(!seen.has(key)){seen.add(key); herbCards.push({name:name, details:[]})}
+  });
+
+  // from sacred_plants matches
+  sacredMatched.forEach(row=>{
+    const name = row.plant||row.name||row.herb||'';
+    if(!name) return;
+    const key = name.toLowerCase();
+    if(seen.has(key)) return; seen.add(key);
+    const details = [];
+    if(row.dosha) details.push('dosha: '+row.dosha);
+    if(row.graha) details.push('graha: '+row.graha);
+    if(row.action) details.push(row.action);
+    if(row.rasa) details.push('rasa: '+row.rasa);
+    herbCards.push({name, details});
+  });
+
+  // from dhatu herb matrix matches (nak + graha)
+  [...dhatuMatched, ...dhatuGraha].forEach(row=>{
+    const name = row.herb||row.plant||row.name||'';
+    if(!name) return;
+    const key = name.toLowerCase();
+    if(seen.has(key)) return; seen.add(key);
+    const details = [];
+    if(row.dosha) details.push('dosha: '+row.dosha);
+    if(row.graha) details.push('graha: '+row.graha);
+    if(row.action) details.push(row.action);
+    if(row.dhatu) details.push('dhatu: '+row.dhatu);
+    herbCards.push({name, details});
+  });
+
+  if(herbCards.length){
+    h += `<div class="hdr">HERBS (${herbCards.length})</div>`;
+    h += '<div class="herbs-grid">';
+    herbCards.forEach(hb=>{
+      h += '<div class="herb-card">';
+      h += `<div class="hname">${hb.name}</div>`;
+      if(hb.details.length) h += `<div class="hdetail">${hb.details.join(' · ')}</div>`;
+      h += '</div>';
+    });
+    h += '</div>';
+  }
+
+  h += '<div class="sep"></div>';
+
+  // 5. NAKSHATRA PLANTS
+  const nakPlants = arr(raw.nakshatra_plants);
+  const nakSpecies = arr(raw.nakshatra_species);
+  const npMatched = matchRows(nakPlants, curNak);
+  const nsMatched = matchRows(nakSpecies, curNak);
+  const plantRow = npMatched[0]||nsMatched[0]||null;
+
+  h += '<div class="hdr">NAKSHATRA PLANTS</div>';
+  if(plantRow){
+    h += '<div class="plant-row">';
+    const tree = plantRow.tree||plantRow.sacred_tree||'';
+    const plant = plantRow.plant||plantRow.herb||'';
+    if(tree) h += `<div class="plant-item"><div class="plbl">tree</div><div class="pval">${tree}</div></div>`;
+    if(plant) h += `<div class="plant-item"><div class="plbl">plant</div><div class="pval">${plant}</div></div>`;
+    if(!tree&&!plant){
+      // show all available fields
+      const keys = Object.keys(plantRow).filter(k=>!/nakshatra|nak/i.test(k));
+      keys.slice(0,3).forEach(k=>{
+        h += `<div class="plant-item"><div class="plbl">${fmt(k)}</div><div class="pval">${plantRow[k]}</div></div>`;
+      });
+    }
+    h += '</div>';
+  } else {
+    h += '<div class="dim">no plant data for current nakshatra</div>';
+  }
+
+  h += '<div class="sep"></div>';
+
+  // 6. ANIMAL MEDICINE
+  const animals = arr(raw.aboriginal_animals);
+  const yoni = nd.yoni||'';
+
+  h += '<div class="hdr">ANIMAL MEDICINE</div>';
+
+  // yoni animal
+  if(yoni){
+    h += '<div class="animal-card">';
+    h += `<div class="aname">${yoni}</div>`;
+    h += `<div class="ameta">yoni animal · ${curNak}</div>`;
+    h += '</div>';
+  }
+
+  // aboriginal animals matched by nakshatra or graha
+  const animalNak = matchRows(animals, curNak);
+  const animalGraha = curGraha ? matchGraha(animals, curGraha) : [];
+  const animalSeen = new Set();
+  const animalList = [];
+
+  [...animalNak, ...animalGraha].forEach(row=>{
+    const name = row.animal||row.name||row.species||'';
+    if(!name) return;
+    const key = name.toLowerCase();
+    if(animalSeen.has(key)) return; animalSeen.add(key);
+    animalList.push(row);
+  });
+
+  animalList.slice(0,3).forEach(row=>{
+    const name = row.animal||row.name||row.species||'';
+    h += '<div class="animal-card">';
+    h += `<div class="aname">${name}</div>`;
+    const meta = [];
+    if(row.medicine_card_archetype) meta.push(row.medicine_card_archetype);
+    if(row.vpk_inference) meta.push('vpk: '+row.vpk_inference);
+    if(row.graha) meta.push('graha: '+row.graha);
+    if(row.element) meta.push(row.element);
+    if(row.direction) meta.push(row.direction);
+    h += `<div class="ameta">${meta.join(' · ')||'—'}</div>`;
+    h += '</div>';
+  });
+
+  if(!yoni&&!animalList.length){
+    h += '<div class="dim">no animal data for current nakshatra</div>';
+  }
+
+  h += '<div class="sep"></div>';
+
+  // 7. BODY MAP
+  const bodyMap = arr(raw.nakshatra_body_map);
+  const marmaField = arr(raw.marma_field);
+  const bodyMatched = matchRows(bodyMap, curNak);
+  const marmaMatched = matchRows(marmaField, curNak);
+
+  h += '<div class="hdr">BODY MAP</div>';
+
+  if(bodyMatched.length){
+    const brow = bodyMatched[0];
+    const region = brow.body_region||brow.region||brow.body_part||brow.limb||'';
+    h += '<div class="body-item">';
+    h += `<div><div class="bregion">${region||'—'}</div>`;
+    // show extra fields
+    const bExtra = [];
+    if(brow.organ) bExtra.push('organ: '+brow.organ);
+    if(brow.system) bExtra.push(brow.system);
+    if(brow.dosha) bExtra.push('dosha: '+brow.dosha);
+    if(bExtra.length) h += `<div class="bmarma">${bExtra.join(' · ')}</div>`;
+    h += '</div></div>';
+  } else {
+    h += '<div class="dim">no body region data</div>';
+  }
+
+  if(marmaMatched.length){
+    const mrow = marmaMatched[0];
+    const mname = mrow.marma||mrow.name||mrow.point||'';
+    if(mname){
+      h += `<div style="margin-top:6px"><div class="hdr" style="margin-top:8px">MARMA POINT</div>`;
+      h += `<div class="sub" style="color:var(--teal-lt)">${mname}</div>`;
+      const mMeta = [];
+      if(mrow.location) mMeta.push(mrow.location);
+      if(mrow.type) mMeta.push(mrow.type);
+      if(mrow.effect) mMeta.push(mrow.effect);
+      if(mMeta.length) h += `<div class="dim">${mMeta.join(' · ')}</div>`;
+      h += '</div>';
+    }
+  }
+
+  h += '<div class="sep"></div>';
+
+  // 8. LUNAR NOTE
+  if(ab.lunar_note){
+    h += '<div class="hdr">LUNAR BIOLOGY</div>';
+    h += `<div class="lunar">${ab.lunar_note}</div>`;
+    h += '<div class="sep"></div>';
+  }
+
+  // 9. FIELD SUMMARY
+  h += '<div class="hdr">FIELD</div>';
+  h += `<div class="field-sum">${s(curNak)} · ${s(ab.element||nd.element||pa.element)} · ${s(ab.paksha||pa.paksha)}</div>`;
+
+  document.getElementById('c').innerHTML = h;
+}
+
+load(); setInterval(load, 60000);
 </script>
 </body>
 </html>

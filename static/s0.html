@@ -6,69 +6,176 @@
 <link rel="stylesheet" href="/static/atlas-theme.css">
 <script src="/static/atlas.js"></script>
 <style>
-body{background:#020408;color:var(--text);font-family:var(--font-body);font-size:13px;min-height:100vh;display:flex;flex-direction:column}
+body{background:var(--bg);color:var(--text);font-family:var(--font-body);font-size:13px;min-height:100vh;display:flex;flex-direction:column}
 .main{flex:1;display:flex;align-items:center;justify-content:center;padding:40px 20px}
 .card{max-width:560px;width:100%;text-align:center}
-.forest{font-size:28px;color:var(--gold);font-style:italic;margin-bottom:4px}
-.lila{font-size:13px;color:var(--muted);margin-bottom:20px;line-height:1.6}
-.period{font-family:var(--font-mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.2em;margin-bottom:4px}
-.sakhi{font-size:18px;color:#9370db;margin-bottom:3px}
-.mood{font-size:12px;color:var(--muted);margin-bottom:14px}
-.devi-block{margin-top:20px;padding:14px;border:1px solid var(--border);border-radius:4px}
-.bija{font-size:22px;color:var(--teal);margin-bottom:3px}
-.devi-name{font-size:20px;margin-bottom:3px}
+
+.period-name{font-size:28px;color:var(--gold);font-family:var(--font-body);margin-bottom:2px}
+.period-time{font-family:var(--font-mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.2em;margin-bottom:20px}
+
+.forest-name{font-size:24px;color:var(--text);font-style:italic;margin-bottom:3px}
+.forest-lila{font-size:13px;color:var(--muted);line-height:1.6;margin-bottom:18px}
+
+.sakhi{font-size:18px;margin-bottom:16px}
+
+.devi-block{margin-top:4px;padding:18px 14px;border:1px solid var(--border);border-radius:4px;margin-bottom:16px}
+.bija{font-size:24px;color:var(--teal);letter-spacing:.12em;margin-bottom:6px}
+.devi-name{font-size:20px;margin-bottom:2px}
+.devi-deva{font-size:14px;color:var(--dim);margin-bottom:6px}
+.devi-desc{font-size:12px;color:var(--muted);font-style:italic;line-height:1.5}
+
+.pada-block{margin:16px 0;padding:10px 20px}
+.pada-text{font-family:var(--font-body);font-size:13px;color:var(--muted);font-style:italic;line-height:1.7}
+.pada-meta{font-family:var(--font-mono);font-size:9px;color:var(--dim);margin-top:4px;letter-spacing:.05em}
+
+.coh-label{font-family:var(--font-mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em}
 .coh-bar{width:180px;height:4px;background:var(--border);border-radius:2px;margin:6px auto}
 .coh-fill{height:100%;border-radius:2px;background:var(--teal)}
+.coh-pct{font-family:var(--font-mono);font-size:11px;color:var(--teal)}
+
+.tattva-line{font-family:var(--font-mono);font-size:10px;color:var(--dim);margin-top:14px;letter-spacing:.04em}
+
+.temple-block{margin-top:14px}
+.temple-block a{color:var(--teal);text-decoration:none;font-family:var(--font-mono);font-size:10px}
+.temple-block a.stream{text-decoration:underline;text-underline-offset:2px}
+
 .footer{background:var(--panel);border-top:1px solid var(--border);height:28px;display:flex;align-items:center;justify-content:center;gap:12px;font-family:var(--font-mono);font-size:10px;color:var(--dim)}
 .footer .nak{font-family:var(--font-body);color:var(--gold);font-size:12px}
+
 .nav{position:fixed;right:12px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px}
 .nav a{width:8px;height:8px;border-radius:50%;border:1px solid var(--border);display:block;text-decoration:none}
-.nav a.on{background:var(--purple);border-color:var(--purple)}.nav a:hover{border-color:var(--gold)}
+.nav a.on{background:var(--gold);border-color:var(--gold)}
+.nav a:hover{border-color:var(--gold)}
 </style>
 </head>
 <body>
-<div class="main"><div class="card" id="c">◌</div></div>
-<div class="footer"><span id="fn" class="nak">—</span><span id="ft">—</span><span id="fv">—</span><span id="fd">—</span><span style="width:6px;height:6px;border-radius:50%;background:var(--teal)"></span></div>
-<nav class="nav"><a href="/s0" class="on"></a><a href="/s1"></a><a href="/s2"></a><a href="/s3"></a><a href="/s4"></a><a href="/s5"></a><a href="/s6"></a></nav>
+<div class="main"><div class="card" id="c">&#x25cc;</div></div>
+<div class="footer">
+  <span id="fn" class="nak">&mdash;</span>
+  <span id="ft">&mdash;</span>
+  <span id="fv">&mdash;</span>
+  <span id="fd">&mdash;</span>
+  <span style="width:6px;height:6px;border-radius:50%;background:var(--teal)"></span>
+</div>
+<nav class="nav">
+  <a href="/s0" class="on"></a><a href="/s1"></a><a href="/s2"></a>
+  <a href="/s3"></a><a href="/s4"></a><a href="/s5"></a><a href="/s6"></a>
+</nav>
 <script>
-function dv(o){return typeof o==='object'&&o?(o.name||'—'):(o||'—')}
+function dv(o){return typeof o==='object'&&o?(o.name||'\u2014'):(o||'\u2014')}
+
 async function load(){
-  const[g,f,res]=await Promise.all([atlasGet('/goloka',{}),atlasGet('/field',{}),atlasGet('/resonance',{})]);
-  const pa=f?.panchanga||{};document.getElementById('fn').textContent=pa.nakshatra||'—';
-  document.getElementById('ft').textContent=pa.tithi||'—';document.getElementById('fv').textContent=pa.vara||'—';
-  document.getElementById('fd').textContent=dv(pa.devi);
-  const ap=g?.ashtakala_period||{},nd=g?.nitya_devi||{},fo=g?.active_forest||{},br=g?.bridge_to_material||{};
-  const dc=nd.color||'#9370db';
-  document.body.style.background=`radial-gradient(ellipse at center,${dc}06 0%,#020408 70%)`;
-  let h=`<div class="forest">${fo.name||'Vṛndāvana'}</div>`;
-  if(fo.lila)h+=`<div class="lila">${fo.lila}</div>`;
-  h+=`<div class="period">${ap.name||'—'} · ${ap.time_approximate||''}</div>`;
-  const sk=ap.presiding_sakhi||(g?.active_sakhis||[])[0]||'';
-  if(sk)h+=`<div class="sakhi">${sk}</div>`;
-  h+=`<div class="mood">${ap.mood||''}</div>`;
-  if(ap.raga)h+=`<div style="font-size:12px;color:var(--teal)">rāga ${ap.raga}</div>`;
-  if(ap.rasa)h+=`<div style="font-size:10px;color:var(--dim);margin-bottom:8px">${ap.rasa}</div>`;
-  h+=`<div class="devi-block" style="border-color:${dc}40">`;
-  if(nd.bija)h+=`<div class="bija">${nd.bija}</div>`;
-  h+=`<div class="devi-name" style="color:${dc}">${nd.name||dv(pa.devi)}</div>`;
-  if(nd.description)h+=`<div style="font-size:10px;color:var(--muted);margin-top:4px">${nd.description}</div>`;
-  h+=`</div>`;
-  if(br.coherence!=null){const pct=Math.round(br.coherence*100);
-    h+=`<div style="margin-top:14px"><div style="font-family:var(--font-mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em">pratibimba coherence</div>`;
-    h+=`<div class="coh-bar"><div class="coh-fill" style="width:${pct}%"></div></div>`;
-    h+=`<div style="font-family:var(--font-mono);font-size:11px;color:var(--teal)">${pct}%</div></div>`}
-  if(br.tithi_resonance)h+=`<div style="font-size:10px;color:var(--dim);margin-top:4px">${br.tithi_resonance}</div>`;
-  if(br.raga_match!=null)h+=`<div style="font-size:10px;color:${br.raga_match?'var(--teal)':'var(--amber)'};margin-top:2px">raga: ${br.raga_match?'✓ aligned':'≠ divergent'}</div>`;
-  // Resonance — deity image + temple stream
-  if(res?.deity_images?.length){const di=res.deity_images[0];
-    if(di.image_url)h+=`<div style="margin-top:14px"><img src="${di.image_url}" alt="${di.deity_name}" style="max-width:200px;max-height:160px;border-radius:4px;opacity:0.85"><div style="font-size:9px;color:var(--dim);margin-top:2px">${di.deity_name} · ${di.match_reason} · ${di.attribution||'CC'}</div></div>`}
-  if(res?.temples?.length){const t=res.temples[0];if(t.stream_url){
-    if(res.live_now&&res.live_summary)h+=`<div style="margin-top:8px"><a href="${t.stream_url}" target="_blank" rel="noopener" style="color:var(--teal);text-decoration:none;font-family:var(--font-mono);font-size:10px">● ${res.live_summary} →</a></div>`;
-    h+=`<div style="margin-top:4px"><a href="${t.stream_url}" target="_blank" rel="noopener" style="color:var(--teal);text-decoration:underline;text-underline-offset:2px;font-family:var(--font-mono);font-size:10px">${t.name} · ${t.deity} →</a></div>`;
-  }}
-  document.getElementById('c').innerHTML=h;
+  const [g, f, res, lc] = await Promise.all([
+    atlasGet('/goloka', {}),
+    atlasGet('/field', {}),
+    atlasGet('/resonance', {}),
+    atlasGet('/layer/s0/compose', {})
+  ]);
+
+  // Footer panchanga
+  const pa = f?.panchanga || {};
+  document.getElementById('fn').textContent = pa.nakshatra || '\u2014';
+  document.getElementById('ft').textContent = pa.tithi || '\u2014';
+  document.getElementById('fv').textContent = pa.vara || '\u2014';
+  document.getElementById('fd').textContent = dv(pa.devi);
+
+  // Data sources
+  const ap = g?.ashtakala_period || {};
+  const nd = g?.nitya_devi || {};
+  const fo = g?.active_forest || {};
+  const br = g?.bridge_to_material || {};
+  const rd = lc?.raw_data || {};
+
+  // Devi color for background + accents
+  const dc = nd.color || '#9370db';
+  document.body.style.background = 'radial-gradient(ellipse at center, ' + dc + '06 0%, #030608 70%)';
+
+  let h = '';
+
+  // 1. ASHTAKALA PERIOD
+  h += '<div class="period-name">' + (ap.name || '\u2014') + '</div>';
+  h += '<div class="period-time">' + (ap.time_approximate || '') + '</div>';
+
+  // 2. FOREST
+  h += '<div class="forest-name">' + (fo.name || 'V\u1E5Bnd\u0101vana') + '</div>';
+  if (fo.lila) h += '<div class="forest-lila">' + fo.lila + '</div>';
+
+  // 3. SAKHI
+  const sk = ap.presiding_sakhi || (g?.active_sakhis || [])[0] || '';
+  if (sk) h += '<div class="sakhi" style="color:' + dc + '">' + sk + '</div>';
+
+  // 4. DEVI BLOCK
+  h += '<div class="devi-block" style="border-color:' + dc + '40">';
+
+  // Bija — prefer master data for richer info
+  const deviMaster = (rd.nitya_devi_master || [])[0];
+  const bija = (deviMaster && deviMaster.bija) || nd.bija || '';
+  if (bija) h += '<div class="bija" style="text-shadow:0 0 12px ' + dc + '60">' + bija + '</div>';
+
+  // Devi name
+  h += '<div class="devi-name" style="color:' + dc + '">' + (nd.name || dv(pa.devi)) + '</div>';
+
+  // Devanagari name from master
+  if (deviMaster && deviMaster.name_devanagari) {
+    h += '<div class="devi-deva">' + deviMaster.name_devanagari + '</div>';
+  }
+
+  // Description
+  const desc = (deviMaster && deviMaster.description) || nd.description || '';
+  if (desc) h += '<div class="devi-desc">' + desc + '</div>';
+
+  h += '</div>';
+
+  // 5. NAROTTAMA PADA
+  const padas = rd.narottama_padas || [];
+  if (padas.length) {
+    const p = padas[0];
+    h += '<div class="pada-block">';
+    h += '<div class="pada-text">' + (p.pallavi_text || '') + '</div>';
+    const meta = [p.composer, p.raga].filter(Boolean).join(' \u00b7 ');
+    if (meta) h += '<div class="pada-meta">' + meta + '</div>';
+    h += '</div>';
+  }
+
+  // 6. COHERENCE BAR
+  if (br.coherence != null) {
+    const pct = Math.round(br.coherence * 100);
+    h += '<div style="margin-top:14px">';
+    h += '<div class="coh-label">pratibimba coherence</div>';
+    h += '<div class="coh-bar"><div class="coh-fill" style="width:' + pct + '%"></div></div>';
+    h += '<div class="coh-pct">' + pct + '%</div>';
+    h += '</div>';
+  }
+
+  // 7. TATTVA
+  const tattvas = rd.vaishnava_tattva || [];
+  if (tattvas.length >= 3) {
+    const names = tattvas.slice(0, 3).map(function(t) {
+      return t.name_iast || t.tattva || t.name || '';
+    }).filter(Boolean);
+    if (names.length) {
+      h += '<div class="tattva-line">' + names.join(' \u00b7 ') + '</div>';
+    }
+  }
+
+  // 8. TEMPLE STREAM
+  if (res?.temples?.length) {
+    const t = res.temples[0];
+    if (t.stream_url) {
+      h += '<div class="temple-block">';
+      if (res.live_now && res.live_summary) {
+        h += '<a href="' + t.stream_url + '" target="_blank" rel="noopener">\u25cf ' + res.live_summary + ' \u2192</a><br>';
+      }
+      h += '<a class="stream" href="' + t.stream_url + '" target="_blank" rel="noopener">' + t.name + ' \u00b7 ' + t.deity + ' \u2192</a>';
+      h += '</div>';
+    }
+  }
+
+  document.getElementById('c').innerHTML = h;
 }
-load();setInterval(load,60000);
+
+load();
+setInterval(load, 60000);
 </script>
 </body>
 </html>

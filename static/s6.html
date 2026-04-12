@@ -7,16 +7,25 @@
 <script src="/static/atlas.js"></script>
 <style>
 body{background:var(--bg);color:var(--text);font-family:var(--font-mono);font-size:11px;min-height:100vh;display:flex;flex-direction:column}
-.main{flex:1;padding:20px;max-width:640px;margin:0 auto;overflow-y:auto}
-.now{font-family:var(--font-body);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.3em;margin-bottom:4px}
+.main{flex:1;padding:24px 20px 32px;max-width:640px;margin:0 auto;overflow-y:auto;width:100%}
+.now{font-family:var(--font-mono);font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.3em;margin-bottom:6px}
 .period{font-family:var(--font-body);font-size:24px;color:var(--gold);margin-bottom:2px}
-.seva{font-size:12px;color:var(--muted);margin-bottom:14px}
-.hdr{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em;margin-bottom:5px;margin-top:12px}.hdr:first-child{margin-top:0}
-.val{font-family:var(--font-body);font-size:14px;color:var(--gold);margin-bottom:2px}.sub{font-size:11px;color:var(--text);margin-bottom:2px}.dim{font-size:10px;color:var(--dim);margin-bottom:2px}
-.sep{height:1px;background:var(--border);margin:10px 0}
-.act{font-size:10px;color:var(--muted);padding-left:6px;margin-bottom:1px}.act::before{content:'· '}
-.avoid{font-size:10px;color:var(--red);opacity:.7;padding-left:6px;margin-bottom:1px}.avoid::before{content:'✗ '}
-.sc-dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:3px}
+.time-range{font-size:10px;color:var(--dim);margin-bottom:4px}
+.seva{font-family:var(--font-body);font-size:13px;color:var(--muted);margin-bottom:18px;line-height:1.4}
+.section{margin-top:20px}
+.hdr{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em;margin-bottom:6px}
+.val{font-family:var(--font-body);font-size:14px;color:var(--gold);margin-bottom:3px}
+.sub{font-size:11px;color:var(--text);margin-bottom:3px;line-height:1.4}
+.dim{font-size:10px;color:var(--dim);margin-bottom:3px}
+.sep{height:1px;background:var(--border);margin:16px 0}
+.act{font-size:10px;color:var(--muted);padding-left:6px;margin-bottom:2px}.act::before{content:'· '}
+.avoid-item{font-size:10px;color:var(--red);opacity:.7;padding-left:6px;margin-bottom:2px}.avoid-item::before{content:'✗ '}
+.sc-dot{display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:4px;vertical-align:middle}
+.pada-quote{font-family:var(--font-body);font-size:13px;color:var(--text);font-style:italic;line-height:1.5;margin-bottom:4px;padding-left:8px;border-left:2px solid var(--border)}
+.nadi-label{font-family:var(--font-body);font-size:14px;color:var(--teal);margin-bottom:2px}
+.coherence-bar-outer{width:100%;height:4px;background:var(--border);border-radius:2px;margin:6px 0 4px}
+.coherence-bar-inner{height:100%;border-radius:2px;transition:width .5s ease}
+.coherence-text{font-size:10px;color:var(--muted);margin-bottom:2px}
 .footer{background:var(--panel);border-top:1px solid var(--border);height:28px;display:flex;align-items:center;justify-content:center;gap:12px;font-size:10px;color:var(--dim)}
 .footer .nak{font-family:var(--font-body);color:var(--gold);font-size:12px}
 .nav{position:fixed;right:12px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px}
@@ -28,39 +37,163 @@ body{background:var(--bg);color:var(--text);font-family:var(--font-mono);font-si
 <div class="footer"><span id="fn" class="nak">—</span><span id="ft">—</span><span id="fv">—</span><span id="fd">—</span><span style="width:6px;height:6px;border-radius:50%;background:var(--teal)"></span></div>
 <nav class="nav"><a href="/s0"></a><a href="/s1"></a><a href="/s2"></a><a href="/s3"></a><a href="/s4"></a><a href="/s5"></a><a href="/s6" class="on"></a></nav>
 <script>
+const _bhakti=/harinama|japa|smarana|kirtan|remembrance.*supreme|chanting|nama_sankirtana/i;
 function dv(o){return typeof o==='object'&&o?(o.name||'—'):(o||'—')}
+function esc(s){if(!s)return'—';const d=document.createElement('span');d.textContent=String(s);return d.innerHTML}
+function clean(s){return s?String(s).replace(/_/g,' '):'—'}
+
 async function load(){
-  const[din,f,gol,snd]=await Promise.all([atlasGet('/dinacharya',{}),atlasGet('/field',{}),atlasGet('/goloka',{}),atlasGet('/sound/state',{})]);
+  const[din,f,gol,snd,svar,chan,s6]=await Promise.all([
+    atlasGet('/dinacharya',{}),
+    atlasGet('/field',{}),
+    atlasGet('/goloka',{}),
+    atlasGet('/sound/state',{}),
+    atlasGet('/svarodaya',{}),
+    atlasGet('/chandas',{}),
+    atlasGet('/layer/s6/compose',{})
+  ]);
+
   const pa=f?.panchanga||{},ss=f?.sound_state||{};
-  document.getElementById('fn').textContent=pa.nakshatra||'—';document.getElementById('ft').textContent=pa.tithi||'—';
-  document.getElementById('fv').textContent=pa.vara||'—';document.getElementById('fd').textContent=dv(pa.devi);
+  document.getElementById('fn').textContent=pa.nakshatra||'—';
+  document.getElementById('ft').textContent=pa.tithi||'—';
+  document.getElementById('fv').textContent=pa.vara||'—';
+  document.getElementById('fd').textContent=dv(pa.devi);
+
   const ap=gol?.ashtakala_period||{};
-  let h=`<div class="now">what to do now</div>`;
-  h+=`<div class="period">${din?.ashtakala_period||ap.name||'—'}</div>`;
-  if(ap.time_approximate)h+=`<div class="dim">${ap.time_approximate}</div>`;
-  h+=`<div class="seva">${din?.primary_activity?.replace(/_/g,' ')||ap.mood||''}</div>`;
-  // Practice
-  h+=`<div class="hdr">PRACTICE</div>`;
-  if(din?.mantra)h+=`<div class="sub">mantra: ${din.mantra}</div>`;
-  if(din?.offering)h+=`<div class="sub">offering: ${din.offering}</div>`;
-  if(din?.recommended_practices?.length)(din.recommended_practices).forEach(p=>h+=`<div class="act">${p}</div>`);
-  // Sound
-  const raga=ss.raga||snd?.raga||ap.raga||'';
-  if(raga){h+=`<div class="sep"></div><div class="hdr">SOUND</div>`;
-    h+=`<div class="val">${raga}</div>`;
-    const tala=ss.tala||snd?.tala||'';const bpm=ss.bpm||snd?.bpm||'';
-    if(tala||bpm)h+=`<div class="dim">${tala}${bpm?' · '+bpm+'bpm':''}</div>`;
-    const sc=snd?.sc||{};const scOk=sc.status==='booted'||sc.status==='ready';
-    h+=`<div style="margin-top:4px;font-size:10px"><span class="sc-dot" style="background:${scOk?'var(--teal)':'var(--dim)'}"></span>SC ${scOk?'running':'stopped'}</div>`}
-  // Goloka
+  const raw=s6?.raw_data||{};
+  const padas=raw.narottama_padas||[];
+  let h='';
+
+  // 1. WHAT TO DO NOW
+  h+=`<div class="now">what to do now</div>`;
+
+  // 2. Period name + time range
+  h+=`<div class="period">${esc(din?.ashtakala_period||ap.name||'—')}</div>`;
+  if(ap.time_approximate)h+=`<div class="time-range">${esc(ap.time_approximate)}</div>`;
+
+  // 3. Primary activity as seva description
+  h+=`<div class="seva">${clean(din?.primary_activity||ap.mood||'')}</div>`;
+
+  // 4. NADI
+  if(svar&&(svar.optimal_nadi||svar.nadi_side)){
+    h+=`<div class="section"><div class="hdr">NADI</div>`;
+    const nadiName=svar.optimal_nadi||svar.nadi_side||'';
+    const side=svar.nadi_side||'';
+    const quality=svar.nadi_quality||'';
+    h+=`<div class="nadi-label">${esc(nadiName)}${side&&nadiName!==side?' · '+esc(side):''}${quality?' · '+esc(quality):''}</div>`;
+    if(svar.element_of_breath)h+=`<div class="sub">element: ${esc(svar.element_of_breath)}</div>`;
+    if(svar.recommended){
+      const recs=Array.isArray(svar.recommended)?svar.recommended:[svar.recommended];
+      recs.forEach(r=>h+=`<div class="act">${clean(r)}</div>`);
+    }
+    h+=`</div>`;
+  }
+
+  h+=`<div class="sep"></div>`;
+
+  // 5. PRACTICE
+  h+=`<div class="section"><div class="hdr">PRACTICE</div>`;
+  if(din?.mantra)h+=`<div class="sub">mantra: ${esc(din.mantra)}</div>`;
+  if(din?.offering)h+=`<div class="sub">offering: ${esc(din.offering)}</div>`;
+  if(din?.recommended_practices?.length){
+    din.recommended_practices.forEach(p=>h+=`<div class="act">${clean(p)}</div>`);
+  }
+  h+=`</div>`;
+
+  h+=`<div class="sep"></div>`;
+
+  // 6. WHAT TO SING — narottama pada
+  if(padas.length){
+    h+=`<div class="section"><div class="hdr">WHAT TO SING</div>`;
+    const curRaga=(ss.raga||snd?.raga||din?.raga||'').toLowerCase();
+    let pick=padas[0];
+    if(curRaga){
+      const match=padas.find(p=>(p.raga||'').toLowerCase()===curRaga);
+      if(match)pick=match;
+    }
+    if(pick.pallavi_text)h+=`<div class="pada-quote">${esc(pick.pallavi_text)}</div>`;
+    else if(pick.title)h+=`<div class="pada-quote">${esc(pick.title)}</div>`;
+    const padaRaga=pick.raga||curRaga||'';
+    const padaTala=pick.tala||'';
+    if(padaRaga||padaTala)h+=`<div class="dim">${esc(padaRaga)}${padaTala?' · '+esc(padaTala):''}</div>`;
+    h+=`</div>`;
+    h+=`<div class="sep"></div>`;
+  }
+
+  // 7. SOUND
+  const raga=ss.raga||snd?.raga||din?.raga||ap.raga||'';
+  if(raga||snd){
+    h+=`<div class="section"><div class="hdr">SOUND</div>`;
+    h+=`<div class="val">${esc(raga||'—')}</div>`;
+    const tala=ss.tala||snd?.tala||'';
+    const bpm=ss.bpm||snd?.bpm||'';
+    if(tala||bpm)h+=`<div class="dim">${esc(tala)}${bpm?' · '+bpm+'bpm':''}</div>`;
+    const sc=snd?.sc||{};
+    const scOk=sc.status==='booted'||sc.status==='ready';
+    h+=`<div style="margin-top:4px;font-size:10px"><span class="sc-dot" style="background:${scOk?'var(--teal)':'var(--dim)'}"></span>SC ${scOk?'running':'stopped'}</div>`;
+    h+=`</div>`;
+    h+=`<div class="sep"></div>`;
+  }
+
+  // 8. CHANDAS
+  if(chan&&(chan.active_metre||chan.name)){
+    h+=`<div class="section"><div class="hdr">CHANDAS</div>`;
+    const metreName=chan.active_metre||chan.name||'—';
+    const syllables=chan.syllable_count||chan.syllables||'';
+    h+=`<div class="val">${esc(metreName)}</div>`;
+    if(syllables)h+=`<div class="dim">${syllables} syllables</div>`;
+    h+=`</div>`;
+    h+=`<div class="sep"></div>`;
+  }
+
+  // 9. DIETARY
+  if(din?.dietary_guidance||din?.recommended_herbs?.length){
+    h+=`<div class="section"><div class="hdr">DIETARY</div>`;
+    if(din?.dietary_guidance)h+=`<div class="sub">${esc(din.dietary_guidance)}</div>`;
+    if(din?.recommended_herbs?.length){
+      h+=`<div style="margin-top:6px"><div class="dim">herbs</div>`;
+      din.recommended_herbs.forEach(hb=>h+=`<div class="act">${esc(hb)}</div>`);
+      h+=`</div>`;
+    }
+    h+=`</div>`;
+    h+=`<div class="sep"></div>`;
+  }
+
+  // 10. AVOID — bhedabheda filtered (only material avoids)
+  if(din?.avoid?.length){
+    const materialAvoids=din.avoid.filter(a=>!_bhakti.test(a));
+    if(materialAvoids.length){
+      h+=`<div class="section"><div class="hdr">AVOID</div>`;
+      materialAvoids.slice(0,6).forEach(a=>h+=`<div class="avoid-item">${clean(a)}</div>`);
+      h+=`</div>`;
+      h+=`<div class="sep"></div>`;
+    }
+  }
+
+  // 11. FOREST
   const fo=gol?.active_forest||{};
-  if(fo.name){h+=`<div class="sep"></div><div class="hdr">FOREST</div><div class="sub" style="font-style:italic">${fo.name}</div>`;if(fo.lila)h+=`<div class="dim">${fo.lila}</div>`}
-  if(ap.presiding_sakhi)h+=`<div class="dim" style="color:var(--purple)">${ap.presiding_sakhi}</div>`;
-  // Dietary
-  if(din?.dietary_guidance){h+=`<div class="sep"></div><div class="hdr">DIETARY</div><div class="sub">${din.dietary_guidance}</div>`}
-  if(din?.recommended_herbs?.length){h+=`<div class="hdr">HERBS</div>`;din.recommended_herbs.forEach(hb=>h+=`<div class="act">${hb}</div>`)}
-  // Avoid
-  if(din?.avoid?.length){h+=`<div class="sep"></div><div class="hdr">AVOID</div>`;din.avoid.slice(0,5).forEach(a=>h+=`<div class="avoid">${a.replace(/_/g,' ')}</div>`)}
+  if(fo.name||ap.presiding_sakhi){
+    h+=`<div class="section"><div class="hdr">FOREST</div>`;
+    if(fo.name)h+=`<div class="sub" style="font-style:italic">${esc(fo.name)}</div>`;
+    if(fo.lila)h+=`<div class="dim">${esc(fo.lila)}</div>`;
+    if(ap.presiding_sakhi)h+=`<div class="sub" style="color:var(--purple);margin-top:4px">${esc(ap.presiding_sakhi)}</div>`;
+    h+=`</div>`;
+    h+=`<div class="sep"></div>`;
+  }
+
+  // 12. COHERENCE
+  const cScore=svar?.coherence_score;
+  if(cScore!==undefined&&cScore!==null){
+    const pct=Math.round(cScore*100);
+    let barColor='var(--red)';let label='gentle foundation practices';
+    if(cScore>0.7){barColor='var(--teal)';label='deep practice appropriate'}
+    else if(cScore>=0.4){barColor='var(--gold)';label='steady practice'}
+    h+=`<div class="section"><div class="hdr">COHERENCE</div>`;
+    h+=`<div class="coherence-bar-outer"><div class="coherence-bar-inner" style="width:${pct}%;background:${barColor}"></div></div>`;
+    h+=`<div class="coherence-text">${pct}% — ${label}</div>`;
+    h+=`</div>`;
+  }
+
   document.getElementById('c').innerHTML=h;
 }
 load();setInterval(load,60000);

@@ -1,119 +1,291 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>S2 · sound</title>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>S2 · Sound</title>
 <link rel="stylesheet" href="/static/atlas-theme.css">
 <script src="/static/atlas.js"></script>
 <style>
-body{background:var(--bg);color:var(--text);font-family:'Courier New',monospace;font-size:10px;display:flex;flex-direction:column;height:100vh;overflow:hidden}
-.layer-strip{height:24px;background:var(--panel);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 12px;flex-shrink:0}
-.layer-left{display:flex;align-items:center;gap:8px}
-.layer-id{font-size:12px;color:var(--dim)}
-.layer-name{font-size:13px;color:var(--teal);font-family:Georgia,serif}
-.layer-clock{font-size:11px;color:var(--dim)}
-.main{flex:1;overflow-y:auto;padding:16px}
-.field-strip{height:20px;background:var(--panel);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:12px;font-size:11px;color:var(--dim);flex-shrink:0}
-.block-header{font-size:10px;text-transform:uppercase;color:var(--dim);letter-spacing:0.12em;margin-bottom:8px;margin-top:20px}
-.block-header:first-child{margin-top:0}
-.raga-name{font-family:Georgia,serif;font-size:20px;color:var(--gold);margin-bottom:4px}
-.tala-name{font-family:Georgia,serif;font-size:14px;color:var(--gold);margin-bottom:4px}
-.bpm{font-size:12px;color:var(--teal);margin-bottom:4px}
-.notes{font-size:10px;color:var(--text);margin-bottom:2px}
-.dim{font-size:11px;color:var(--dim);margin-bottom:2px}
-.beats{display:flex;gap:4px;margin-bottom:4px;flex-wrap:wrap}
-.beat{width:8px;height:8px;border-radius:50%;border:1px solid var(--dim)}
-.beat.on{background:var(--teal);border-color:var(--teal)}
-.beat.sam{background:var(--gold);border-color:var(--gold)}
-.shruti-row{display:flex;gap:3px;margin-bottom:4px;flex-wrap:wrap}
-.shruti-dot{width:6px;height:6px;border-radius:50%;background:#1a2030}
-.shruti-dot.active{background:var(--gold)}
-.shruti-labels{display:flex;font-size:10px;color:var(--dim);margin-top:2px}
-.bija-text{font-family:Georgia,serif;font-size:24px;color:var(--teal)}
-.home-link{position:fixed;bottom:8px;right:8px;font-family:'Courier New',monospace;font-size:10px;color:var(--dim);text-decoration:none;letter-spacing:0.15em}
-.nav{position:fixed;right:12px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px}
-.nav a{width:8px;height:8px;border-radius:50%;border:1px solid var(--border);display:block;text-decoration:none}.nav a.on{background:var(--teal);border-color:var(--teal)}.nav a:hover{border-color:var(--gold)}
+body{background:var(--bg);color:var(--text);font-family:var(--font-mono);font-size:11px;height:100vh;display:grid;grid-template-columns:200px 1fr 200px;grid-template-rows:1fr 28px;overflow:hidden}
+.col{padding:12px;overflow-y:auto}.col-l{border-right:1px solid var(--border)}.col-r{border-left:1px solid var(--border)}
+.hdr{font-size:8px;color:var(--dim);text-transform:uppercase;letter-spacing:.2em;margin-bottom:5px;margin-top:12px}.hdr:first-child{margin-top:0}
+.val{font-family:var(--font-body);font-size:14px;color:var(--gold);margin-bottom:2px}
+.sub{font-size:10px;color:var(--muted);margin-bottom:2px}
+.dim{font-size:9px;color:var(--dim);margin-bottom:1px}
+.sep{height:1px;background:var(--border);margin:8px 0}
+
+/* Center column */
+.raga-hero{font-family:var(--font-body);font-size:32px;color:var(--gold);text-align:center;margin-bottom:4px}
+.swara-line{font-family:var(--font-mono);font-size:11px;color:var(--muted);text-align:center;margin-bottom:2px;letter-spacing:.08em}
+.vadi-line{font-family:var(--font-body);font-size:13px;color:var(--teal);text-align:center;margin-bottom:6px}
+.raga-meta{font-size:9px;color:var(--dim);text-align:center;margin-bottom:2px}
+.phrase-box{font-family:var(--font-mono);font-size:10px;color:var(--teal-lt);text-align:center;background:rgba(32,168,138,.04);border:1px solid rgba(32,168,138,.1);border-radius:3px;padding:6px 10px;margin:8px auto;max-width:340px;letter-spacing:.06em}
+.gamak-list{font-size:9px;color:var(--muted);text-align:center;margin:4px 0;line-height:1.6}
+.beat-dots{display:flex;gap:5px;justify-content:center;flex-wrap:wrap;margin:6px 0}
+.beat-dot{width:9px;height:9px;border-radius:50%;border:1px solid var(--dim)}
+.beat-dot.sam{background:var(--gold);border-color:var(--gold)}
+.beat-dot.khali{background:transparent;border-color:rgba(255,255,255,.1)}
+.beat-dot.on{background:var(--teal);border-color:var(--teal)}
+.tala-label{font-family:var(--font-body);font-size:16px;color:var(--gold);text-align:center;margin-bottom:2px}
+.pada-quote{font-family:var(--font-body);font-size:12px;color:var(--muted);font-style:italic;text-align:center;line-height:1.6;max-width:320px;margin:0 auto;opacity:.85}
+.pada-src{font-size:8px;color:var(--dim);text-align:center;margin-top:3px;font-style:normal}
+.sc-dot{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:4px;vertical-align:middle}
+.sc-dot.running{background:#50c878}.sc-dot.stopped{background:var(--red)}
+.layer-row{display:flex;justify-content:space-between;align-items:center;margin-bottom:2px}
+.layer-bar{height:3px;background:var(--teal);border-radius:1px;opacity:.6}
+
+.footer{grid-column:1/-1;background:var(--panel);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:12px;font-size:9px;color:var(--dim)}
+.footer .nak{font-family:var(--font-body);color:var(--gold);font-size:12px}
+.nav{position:fixed;right:12px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:8px}
+.nav a{width:7px;height:7px;border-radius:50%;border:1px solid rgba(255,255,255,.12);display:block;text-decoration:none;transition:all .3s}
+.nav a.on{width:9px;height:9px;background:var(--teal);border-color:var(--teal);box-shadow:0 0 6px rgba(32,168,138,.4)}
+.nav a:hover{border-color:var(--gold)}
 </style>
 </head>
 <body>
-<div class="layer-strip">
-  <div class="layer-left"><span class="layer-id">S2</span><span class="layer-name">sound</span></div>
-  <span class="layer-clock" id="clock"></span>
-</div>
-<div class="main">
-  <div class="block-header">RAGA</div>
-  <div id="raga">◌ loading</div>
-  <div class="block-header">TALA</div>
-  <div id="tala">◌ loading</div>
-  <div class="block-header">SHRUTI</div>
-  <div id="shruti">◌</div>
-  <div class="block-header">BIJA</div>
-  <div id="bija">◌</div>
-</div>
-<div class="field-strip" id="field-strip">◌</div>
-<a href="/" class="home-link">✦ ATLAS</a>
+<div class="col col-l" id="left"></div>
+<div class="col" id="center" style="display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:16px;overflow-y:auto"></div>
+<div class="col col-r" id="right"></div>
+<div class="footer"><span id="fn" class="nak">—</span><span style="opacity:.3">·</span><span id="ft">—</span><span style="opacity:.3">·</span><span id="fv">—</span><span style="opacity:.3">·</span><span id="fd">—</span></div>
 <nav class="nav"><a href="/s0"></a><a href="/s1"></a><a href="/s2" class="on"></a><a href="/s3"></a><a href="/s4"></a><a href="/s5"></a><a href="/s6"></a></nav>
 <script>
-function tick(){document.getElementById('clock').textContent=new Date().toLocaleTimeString('en-GB',{hour12:false})}
-tick();setInterval(tick,1000);
-
-function p(d,path,fb){let v=d;for(const k of path.split('.')){if(!v)return fb;v=v[k]}return(typeof v==='object'&&v!==null)?(v.name||fb):v||fb}
+function dv(o){return typeof o==='object'&&o?(o.name||'—'):(o||'—')}
+function fmt(s){return s?String(s).replace(/_/g,' '):'—'}
+function arrStr(v){return Array.isArray(v)?v.join(' '):v||''}
 
 async function load(){
-  try{
-    const[d,s]=await Promise.all([atlasGet('/field',DEFAULT_FIELD),atlasGet('/sound/spec',{})]);
+  const [f, snd, chandas, theka, lyr] = await Promise.all([
+    atlasGet('/field', DEFAULT_FIELD),
+    atlasGet('/sound/state', {}),
+    atlasGet('/chandas', {}),
+    atlasGet('/rhythm/theka', {}),
+    atlasGet('/layer/s2/compose', {})
+  ]);
 
-    const nak=p(d,'panchanga.nakshatra','—');
-    const tithi=p(d,'panchanga.tithi','—');
-    const vara=p(d,'panchanga.vara','—');
-    const devi=p(d,'panchanga.devi','—');
-    document.getElementById('field-strip').textContent=[nak,tithi,vara,devi].join(' · ');
+  const pa = f?.panchanga || {};
+  const ss = f?.sound_state || {};
+  const raw = lyr?.raw_data || {};
 
-    // Raga
-    const raga=s.raga||s.raga_name||p(d,'field.raga','')||'—';
-    const arohana=s.arohana||s.aroha||'';
-    const avarohana=s.avarohana||s.avaroha||'';
-    const timeOfDay=s.time||s.time_of_day||s.prahar||'';
-    const rasa=s.rasa||s.mood||'';
-    let rhtml='<div class="raga-name">'+(typeof raga==='object'?raga.name||'—':raga)+'</div>';
-    if(arohana)rhtml+='<div class="notes">↑ '+(Array.isArray(arohana)?arohana.join(' '):arohana)+'</div>';
-    if(avarohana)rhtml+='<div class="notes">↓ '+(Array.isArray(avarohana)?avarohana.join(' '):avarohana)+'</div>';
-    if(timeOfDay)rhtml+='<div class="dim">'+timeOfDay+'</div>';
-    if(rasa)rhtml+='<div class="dim">'+rasa+'</div>';
-    document.getElementById('raga').innerHTML=rhtml;
+  // Footer panchanga
+  document.getElementById('fn').textContent = pa.nakshatra || '—';
+  document.getElementById('ft').textContent = pa.tithi || '—';
+  document.getElementById('fv').textContent = pa.vara || '—';
+  document.getElementById('fd').textContent = dv(pa.devi);
 
-    // Tala
-    const tala=s.tala||s.tala_name||'—';
-    const bpm=s.bpm||s.tempo||'';
-    const beats=s.beats||s.beat_count||0;
-    let thtml='<div class="tala-name">'+(typeof tala==='object'?tala.name||'—':tala)+'</div>';
-    if(bpm)thtml+='<div class="bpm">'+bpm+' bpm</div>';
-    if(beats){
-      thtml+='<div class="beats">';
-      const n=typeof beats==='number'?beats:parseInt(beats)||0;
-      for(let i=0;i<n;i++)thtml+='<div class="beat'+(i===0?' sam':' on')+'"></div>';
-      thtml+='</div>';
+  // Current raga name
+  const ragaName = ss.raga || snd?.raga || '—';
+  const ragaLower = String(ragaName).toLowerCase();
+
+  // Find raga in raga_master
+  const ragaMasterArr = raw.raga_master || [];
+  const ragaRec = ragaMasterArr.find(r =>
+    r.name_iast && r.name_iast.toLowerCase().includes(ragaLower)
+  ) || ragaMasterArr.find(r =>
+    r.name_iast && ragaLower.includes(r.name_iast.toLowerCase())
+  ) || {};
+
+  // Raga detail from sound/state or raga_master
+  const rd = ss.raga_detail || snd?.raga_detail || {};
+
+  // ── LEFT: Panchanga + Sound State ──
+  let L = '<div class="hdr">PANCHANGA</div>';
+  L += `<div class="val">${pa.nakshatra||'—'}</div>`;
+  L += `<div class="sub">${pa.tithi||'—'} · ${pa.paksha||''}</div>`;
+  L += `<div class="sub">${pa.vara||'—'}</div>`;
+  const elem = pa.nak_data?.element || pa.element || ragaRec.element || '';
+  const guna = pa.guna || ragaRec.guna || '';
+  if(elem || guna) L += `<div class="dim">${elem}${elem&&guna?' · ':''}${guna}</div>`;
+
+  L += '<div class="sep"></div><div class="hdr">SOUND STATE</div>';
+
+  // SC status
+  const scStatus = snd?.sc_status || snd?.status || 'unknown';
+  const scRunning = /running|ok|active/i.test(String(scStatus));
+  L += `<div class="sub"><span class="sc-dot ${scRunning?'running':'stopped'}"></span>SC ${scRunning?'running':'stopped'}</div>`;
+
+  // Layers mix levels
+  const layers = snd?.layers || snd?.active_layers || [];
+  if(Array.isArray(layers) && layers.length){
+    L += '<div class="sep"></div><div class="hdr">LAYERS</div>';
+    layers.forEach(ly => {
+      const name = ly.name || ly.synth || ly.id || '?';
+      const amp = ly.amp != null ? ly.amp : (ly.level != null ? ly.level : 0.5);
+      const pct = Math.round(parseFloat(amp) * 100);
+      L += `<div class="layer-row"><span class="dim" style="margin:0">${name}</span><span class="dim" style="margin:0">${pct}%</span></div>`;
+      L += `<div style="background:rgba(255,255,255,.04);height:3px;border-radius:1px;margin-bottom:3px"><div class="layer-bar" style="width:${pct}%"></div></div>`;
+    });
+  } else {
+    L += '<div class="dim">no layers active</div>';
+  }
+
+  document.getElementById('left').innerHTML = L;
+
+  // ── CENTER: Raga + Tala + Pada ──
+  let C = '';
+
+  // Raga name large
+  C += `<div class="raga-hero">${ragaName}</div>`;
+
+  // Aroha / avaroha
+  const aroha = ragaRec.aroha || rd.aroha || rd.arohana || ss.aroha || '';
+  const avaroha = ragaRec.avaroha || rd.avaroha || rd.avarohana || ss.avaroha || '';
+  if(aroha) C += `<div class="swara-line">↑ ${arrStr(aroha)}</div>`;
+  if(avaroha) C += `<div class="swara-line">↓ ${arrStr(avaroha)}</div>`;
+
+  // Vadi / samvadi
+  const vadi = ss.raga_vadi || ragaRec.vadi || rd.vadi || '';
+  const samvadi = ss.raga_samvadi || ragaRec.samvadi || rd.samvadi || '';
+  if(vadi) C += `<div class="vadi-line">vādī ${vadi}${samvadi?' · samvādī '+samvadi:''}</div>`;
+
+  // Raga time, rasa, element
+  const ragaTime = ragaRec.time_of_day || rd.time || ss.raga_time || '';
+  const ragaRasa = ragaRec.rasa_primary || rd.rasa || '';
+  const ragaElem = ragaRec.element || rd.element || '';
+  const metaItems = [ragaTime, ragaRasa, ragaElem].filter(Boolean);
+  if(metaItems.length) C += `<div class="raga-meta">${metaItems.join(' · ')}</div>`;
+
+  // Characteristic phrase from raga_phrase_library
+  const phraseLib = raw.raga_phrase_library || [];
+  const matchPhrase = phraseLib.find(p =>
+    p.raga && p.raga.toLowerCase().includes(ragaLower)
+  ) || phraseLib.find(p =>
+    p.raga && ragaLower.includes(p.raga.toLowerCase())
+  );
+  if(matchPhrase){
+    const swaras = matchPhrase.swaras || matchPhrase.phrase || matchPhrase.notes || '';
+    C += `<div class="hdr" style="text-align:center;margin-top:10px">CHARACTERISTIC PHRASE</div>`;
+    C += `<div class="phrase-box">${arrStr(swaras)}</div>`;
+  }
+
+  // Gamaks
+  const gamakProps = raw.gamak_properties || [];
+  if(gamakProps.length){
+    // Filter by coherence — show those with coherence >= 0.3 or show all if none pass
+    let activeGamaks = gamakProps.filter(g => g.coherence == null || parseFloat(g.coherence) >= 0.3);
+    if(!activeGamaks.length) activeGamaks = gamakProps.slice(0, 4);
+    if(activeGamaks.length){
+      C += `<div class="hdr" style="text-align:center;margin-top:10px">GAMAKS</div>`;
+      C += '<div class="gamak-list">';
+      activeGamaks.forEach(g => {
+        const name = g.type || g.name || g.gamak || '?';
+        const rate = g.rate_hz ? g.rate_hz + ' Hz' : '';
+        const depth = g.depth_cents ? g.depth_cents + ' cents' : '';
+        const detail = [rate, depth].filter(Boolean).join(' · ');
+        C += `<div>${fmt(name)}${detail?' — '+detail:''}</div>`;
+      });
+      C += '</div>';
     }
-    document.getElementById('tala').innerHTML=thtml;
+  }
 
-    // Shruti
-    const activeShrutis=s.shrutis||s.active_shrutis||[];
-    let shtml='<div class="shruti-row">';
-    for(let i=0;i<22;i++){
-      const active=Array.isArray(activeShrutis)&&activeShrutis.includes(i);
-      shtml+='<div class="shruti-dot'+(active?' active':'')+'"></div>';
+  C += '<div class="sep" style="max-width:200px;margin:12px auto"></div>';
+
+  // Tala section
+  const talaName = theka?.tala || ss.tala || snd?.tala || '—';
+  C += `<div class="hdr" style="text-align:center">TALA</div>`;
+  C += `<div class="tala-label">${talaName}</div>`;
+
+  // Beat dots from theka events
+  const events = theka?.events || [];
+  if(events.length){
+    C += '<div class="beat-dots">';
+    events.forEach((ev, i) => {
+      const isSam = (ev.beat === 1 || ev.beat === '1' || i === 0);
+      const isKhali = ev.bol === 'tin' || ev.bol === 'Tin' || ev.variation === 'khali' || ev.khali === true;
+      let cls = 'beat-dot';
+      if(isSam) cls += ' sam';
+      else if(isKhali) cls += ' khali';
+      else cls += ' on';
+      const title = ev.bol ? ev.bol : '';
+      C += `<div class="${cls}" title="${title}"></div>`;
+    });
+    C += '</div>';
+    // Show bol sequence
+    const bols = events.map(e => e.bol || '·').join(' ');
+    C += `<div class="raga-meta">${bols}</div>`;
+  } else {
+    // Fallback: simple beat count
+    const bpm = ss.bpm || snd?.bpm || '';
+    if(bpm) C += `<div class="raga-meta">${bpm} bpm</div>`;
+  }
+
+  C += '<div class="sep" style="max-width:200px;margin:12px auto"></div>';
+
+  // Narottama pada
+  const padas = raw.narottama_padas || [];
+  const matchPada = padas.find(p =>
+    p.raga && p.raga.toLowerCase().includes(ragaLower)
+  ) || padas.find(p =>
+    p.raga && ragaLower.includes(p.raga.toLowerCase())
+  );
+  if(matchPada){
+    C += `<div class="hdr" style="text-align:center">NAROTTAMA PADA</div>`;
+    const txt = matchPada.text || matchPada.pada || matchPada.verse || '';
+    C += `<div class="pada-quote">${txt}</div>`;
+    const src = matchPada.source || matchPada.title || matchPada.raga || '';
+    if(src) C += `<div class="pada-src">— ${src}</div>`;
+  }
+
+  document.getElementById('center').innerHTML = C;
+
+  // ── RIGHT: Chandas + Field Mood + Therapeutic ──
+  let R = '<div class="hdr">CHANDAS</div>';
+  const metreName = chandas?.primary_metre || chandas?.metre || '—';
+  R += `<div class="val">${fmt(metreName)}</div>`;
+  const syllables = chandas?.syllables_per_pada || chandas?.syllables || '';
+  if(syllables) R += `<div class="sub">${syllables} syllables/pāda</div>`;
+  const cadence = chandas?.cadence_pattern || '';
+  if(cadence) R += `<div class="dim" style="font-family:var(--font-mono);letter-spacing:.15em">${cadence}</div>`;
+
+  R += '<div class="sep"></div><div class="hdr">FIELD MOOD</div>';
+  const moods = raw.field_music_mood || [];
+  const curGuna = pa.guna || ragaRec.guna || '';
+  const curElem = pa.nak_data?.element || pa.element || ragaRec.element || '';
+  const matchMood = moods.find(m =>
+    (m.guna && curGuna && m.guna.toLowerCase() === curGuna.toLowerCase()) ||
+    (m.element && curElem && m.element.toLowerCase() === curElem.toLowerCase())
+  );
+  if(matchMood){
+    R += `<div class="val" style="font-size:12px">${matchMood.mood || matchMood.name || '—'}</div>`;
+    if(matchMood.quality) R += `<div class="dim">${matchMood.quality}</div>`;
+    if(matchMood.tempo) R += `<div class="dim">tempo: ${matchMood.tempo}</div>`;
+    if(matchMood.description) R += `<div class="sub" style="margin-top:4px;line-height:1.5">${matchMood.description}</div>`;
+  } else {
+    R += '<div class="dim">—</div>';
+  }
+
+  R += '<div class="sep"></div><div class="hdr">THERAPEUTIC</div>';
+  if(ragaRec.dosha_balance){
+    R += `<div class="sub">${ragaRec.dosha_balance}</div>`;
+  }
+  if(ragaRec.therapeutic_note){
+    R += `<div class="sub" style="line-height:1.5;margin-top:4px">${ragaRec.therapeutic_note}</div>`;
+  }
+  if(!ragaRec.dosha_balance && !ragaRec.therapeutic_note){
+    R += '<div class="dim">—</div>';
+  }
+
+  // Extra raga metadata
+  if(ragaRec.deity || ragaRec.graha || ragaRec.season || ragaRec.color_hex){
+    R += '<div class="sep"></div><div class="hdr">RAGA PROPERTIES</div>';
+    if(ragaRec.deity) R += `<div class="dim">deity: ${ragaRec.deity}</div>`;
+    if(ragaRec.graha) R += `<div class="dim">graha: ${ragaRec.graha}</div>`;
+    if(ragaRec.tradition) R += `<div class="dim">tradition: ${ragaRec.tradition}</div>`;
+    if(ragaRec.season) R += `<div class="dim">season: ${ragaRec.season}</div>`;
+    if(ragaRec.color_hex){
+      R += `<div class="dim" style="display:flex;align-items:center;gap:4px">color: <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:${ragaRec.color_hex}"></span> ${ragaRec.color_hex}</div>`;
     }
-    shtml+='</div><div class="shruti-labels"><span style="flex:1">Sa</span><span style="flex:1;text-align:center">Pa</span><span style="flex:1;text-align:right">Sa</span></div>';
-    document.getElementById('shruti').innerHTML=shtml;
+  }
 
-    // Bija
-    const bija=s.bija||s.bija_mantra||p(d,'field.bija','')||'◌';
-    document.getElementById('bija').innerHTML='<div class="bija-text">'+(typeof bija==='object'?bija.syllable||bija.name||'◌':bija)+'</div>';
-  }catch(e){document.getElementById('field-strip').textContent='◌'}
+  // Sa Hz
+  if(ss.sa_hz) {
+    R += '<div class="sep"></div>';
+    R += `<div class="dim">Sa: ${ss.sa_hz} Hz</div>`;
+  }
+
+  document.getElementById('right').innerHTML = R;
 }
 
-load();setInterval(load,60000);
+load(); setInterval(load, 60000);
 </script>
 </body>
 </html>
