@@ -227,6 +227,30 @@ def _resonance():
         return jsonify({"error": str(e), "temples": [], "deity_images": [], "raga_recordings": []})
 
 
+@system_bp.route("/yantra/extended")
+def _yantra_extended():
+    """Extended yantra (Kronecker product) with eigendecomposition."""
+    from kernel import field_state
+    try:
+        from npu_engine.field.yantra_extension_engine import yantra_query
+        level = int(request.args.get("level", 2))
+        level = max(1, min(4, level))
+        return jsonify(yantra_query(field_state(), depth=level))
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+
+@system_bp.route("/yantra/benchmark")
+def _yantra_benchmark():
+    """Benchmark eigendecomposition across levels 1-4."""
+    try:
+        from npu_engine.field.yantra_extension_engine import benchmark
+        k = int(request.args.get("k", 0))
+        return jsonify(benchmark(k))
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+
 @system_bp.route("/yantra/navagraha")
 def _yantra_navagraha():
     """Navagraha yantra matrix for current field state."""
