@@ -8,36 +8,69 @@
 <style>
 body{background:var(--bg);color:var(--text);font-family:var(--font-mono);font-size:11px;height:100vh;display:grid;grid-template-columns:200px 1fr 200px;grid-template-rows:1fr 28px;overflow:hidden}
 .col{padding:12px;overflow-y:auto}.col-l{border-right:1px solid var(--border)}.col-r{border-left:1px solid var(--border)}
-.hdr{font-size:9px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em;margin-bottom:5px;margin-top:10px}.hdr:first-child{margin-top:0}
-.val{font-family:var(--font-body);font-size:14px;color:var(--gold);margin-bottom:2px}.sub{font-size:10px;color:var(--muted);margin-bottom:2px}.dim{font-size:10px;color:var(--dim);margin-bottom:2px}
+.hdr{font-size:8px;color:var(--dim);text-transform:uppercase;letter-spacing:.2em;margin-bottom:5px;margin-top:12px}.hdr:first-child{margin-top:0}
+.val{font-family:var(--font-body);font-size:14px;color:var(--gold);margin-bottom:2px}.sub{font-size:10px;color:var(--muted);margin-bottom:2px}.dim{font-size:9px;color:var(--dim);margin-bottom:1px}
 .sep{height:1px;background:var(--border);margin:8px 0}
-.devi-name{font-family:var(--font-body);font-size:28px;text-align:center;margin-bottom:4px}
-.deity-name{font-family:var(--font-body);font-size:18px;color:var(--teal);text-align:center;margin-bottom:8px}
-.weapon-list{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:6px 0}
-.weapon{font-size:10px;color:var(--amber);border:1px solid var(--border);padding:2px 6px;border-radius:3px}
+.devi-name{font-family:var(--font-body);font-size:32px;text-align:center;margin-bottom:2px}
+.devi-desc{font-family:var(--font-body);font-size:11px;color:var(--muted);text-align:center;font-style:italic;margin-bottom:4px;line-height:1.5;max-width:340px;margin-left:auto;margin-right:auto}
+.deity-name{font-family:var(--font-body);font-size:18px;color:var(--teal);text-align:center;margin-bottom:6px}
+.weapon-list{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin:6px 0}
+.weapon{font-size:9px;color:var(--amber);border:1px solid rgba(200,120,32,.15);padding:2px 6px;border-radius:2px}
 .attr-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px 12px;margin:4px 0}
-.attr-k{font-size:9px;color:var(--dim);text-align:right}.attr-v{font-size:10px;color:var(--muted)}
-.footer{grid-column:1/-1;background:var(--panel);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:12px;font-size:10px;color:var(--dim)}
+.attr-k{font-size:8px;color:var(--dim);text-align:right}.attr-v{font-size:9px;color:var(--muted)}
+.bija{font-family:var(--font-body);color:var(--sacred,#d4a84b);text-shadow:0 0 16px rgba(212,168,75,.2);letter-spacing:.12em}
+.scripture{font-family:var(--font-body);font-size:11px;color:var(--muted);font-style:italic;text-align:center;line-height:1.6;max-width:320px;margin:0 auto;opacity:.8}
+.scripture-src{font-size:8px;color:var(--dim);text-align:center;margin-top:4px;font-style:normal}
+.footer{grid-column:1/-1;background:var(--panel);border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;gap:12px;font-size:9px;color:var(--dim)}
 .footer .nak{font-family:var(--font-body);color:var(--gold);font-size:12px}
-.nav{position:fixed;right:12px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px}
-.nav a{width:8px;height:8px;border-radius:50%;border:1px solid var(--border);display:block;text-decoration:none}.nav a.on{background:var(--gold);border-color:var(--gold)}.nav a:hover{border-color:var(--gold)}
+.nav{position:fixed;right:12px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:8px}
+.nav a{width:7px;height:7px;border-radius:50%;border:1px solid rgba(255,255,255,.12);display:block;text-decoration:none;transition:all .3s}
+.nav a.on{width:9px;height:9px;background:var(--gold);border-color:var(--gold);box-shadow:0 0 6px rgba(200,168,85,.4)}
+.nav a:hover{border-color:var(--gold)}
 </style>
 </head>
 <body>
-<div class="col col-l" id="left">◌</div>
-<div class="col" id="center" style="display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:20px">◌</div>
-<div class="col col-r" id="right">◌</div>
-<div class="footer"><span id="fn" class="nak">—</span><span id="ft">—</span><span id="fv">—</span><span id="fd">—</span><span style="width:6px;height:6px;border-radius:50%;background:var(--teal)"></span></div>
+<div class="col col-l" id="left"></div>
+<div class="col" id="center" style="display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:16px;overflow-y:auto"></div>
+<div class="col col-r" id="right"></div>
+<div class="footer"><span id="fn" class="nak">—</span><span style="opacity:.3">·</span><span id="ft">—</span><span style="opacity:.3">·</span><span id="fv">—</span><span style="opacity:.3">·</span><span id="fd">—</span></div>
 <nav class="nav"><a href="/s0"></a><a href="/s1" class="on"></a><a href="/s2"></a><a href="/s3"></a><a href="/s4"></a><a href="/s5"></a><a href="/s6"></a></nav>
 <script>
+const NS='http://www.w3.org/2000/svg';
+function se(t,a){const e=document.createElementNS(NS,t);for(const[k,v]of Object.entries(a))e.setAttribute(k,v);return e}
 function dv(o){return typeof o==='object'&&o?(o.name||'—'):(o||'—')}
 function fmt(s){return s?s.replace(/_/g,' '):'—'}
 
+function buildDeviYantra(color,size){
+  const s=size,m=s/2,g=s*0.08;
+  const svg=se('svg',{width:s,height:s,viewBox:`0 0 ${s} ${s}`});
+  // Outer square
+  svg.appendChild(se('rect',{x:g,y:g,width:s-g*2,height:s-g*2,fill:'none',stroke:color,'stroke-opacity':'0.2','stroke-width':'1'}));
+  // 4 gates (T-shapes on each side)
+  const gw=s*0.12,gh=s*0.06;
+  [[m,g,'h'],[m,s-g,'h'],[g,m,'v'],[s-g,m,'v']].forEach(([x,y,d])=>{
+    if(d==='h'){svg.appendChild(se('rect',{x:x-gw/2,y:y-gh/2,width:gw,height:gh,fill:color,'fill-opacity':'0.08'}))}
+    else{svg.appendChild(se('rect',{x:x-gh/2,y:y-gw/2,width:gh,height:gw,fill:color,'fill-opacity':'0.08'}))}
+  });
+  // Circle
+  const cr=s*0.32;
+  svg.appendChild(se('circle',{cx:m,cy:m,r:cr,fill:'none',stroke:color,'stroke-opacity':'0.15','stroke-width':'0.8'}));
+  // Upward triangle
+  const tr=s*0.22;
+  const pts=`${m},${m-tr} ${m-tr*0.87},${m+tr*0.5} ${m+tr*0.87},${m+tr*0.5}`;
+  svg.appendChild(se('polygon',{points:pts,fill:'none',stroke:color,'stroke-opacity':'0.25','stroke-width':'0.8'}));
+  // Bindu
+  svg.appendChild(se('circle',{cx:m,cy:m,r:3,fill:color,'fill-opacity':'0.5'}));
+  svg.appendChild(se('circle',{cx:m,cy:m,r:8,fill:color,'fill-opacity':'0.06'}));
+  return svg;
+}
+
 async function load(){
-  const[f,lyr,snd]=await Promise.all([
+  const[f,lyr,snd,corpus]=await Promise.all([
     atlasGet('/field',{}),
     atlasGet('/layer/s1/compose',{}),
-    atlasGet('/sound/state',{})
+    atlasGet('/sound/state',{}),
+    atlasGet('/corpus/search?q=Nitya+Devi+eternal&limit=1',{})
   ]);
   const pa=f?.panchanga||{},ss=f?.sound_state||{};
   document.getElementById('fn').textContent=pa.nakshatra||'—';
@@ -49,55 +82,72 @@ async function load(){
   const secs={};
   (lyr?.sections||[]).forEach(s=>{secs[s.title]=s.content});
 
-  // ── LEFT: Panchanga + Sound ──
+  // Also get the devi master data from raw_data
+  const rawDevi=(lyr?.raw_data?.nitya_devi_master||lyr?.raw_data?.nitya_devi_mapping||[])[0]||{};
+
+  // ── LEFT: Panchanga ──
   let L=`<div class="hdr">PANCHANGA</div><div class="val">${pa.nakshatra||'—'}</div>`;
   if(pa.nak_data?.deity)L+=`<div class="sub">${pa.nak_data.deity} · ${pa.nak_data.shakti||''}</div>`;
   L+=`<div class="sub">${pa.tithi||'—'} · ${pa.paksha||''}</div><div class="sub">${pa.vara||'—'}</div>`;
-  if(pa.element)L+=`<div class="dim">${pa.element} · ${pa.guna||''}</div>`;
+  if(pa.nak_data?.element)L+=`<div class="dim">${pa.nak_data.element} · ${pa.guna||''}</div>`;
+  else if(pa.element)L+=`<div class="dim">${pa.element} · ${pa.guna||''}</div>`;
 
   L+=`<div class="sep"></div><div class="hdr">SOUND</div>`;
   const raga=ss.raga||snd?.raga||'—';
   L+=`<div class="val">${raga}</div>`;
-  const tala=ss.tala||snd?.tala||'—';
-  L+=`<div class="dim">${tala} · ${ss.bpm||snd?.bpm||'?'}bpm</div>`;
+  L+=`<div class="dim">${ss.tala||snd?.tala||'—'} · ${ss.bpm||snd?.bpm||'?'}bpm</div>`;
 
-  // Graha bija from layer
   const bija=secs['GRAHA BIJA'];
-  if(Array.isArray(bija)){
+  if(Array.isArray(bija)&&bija.length){
     L+=`<div class="sep"></div><div class="hdr">GRAHA BIJA</div>`;
-    bija.forEach(b=>L+=`<div class="dim">${b.graha||''}: ${b.bija||''}</div>`);
+    bija.forEach(b=>{if(b.bija)L+=`<div class="dim">${b.graha||''}: ${b.bija}</div>`});
   }
+
+  // Hora + rahu kala
+  const hora=f?.hora||{};
+  if(hora.hora_lord){L+=`<div class="sep"></div><div class="dim">hora: ${hora.hora_lord}</div>`}
+  const rk=f?.rahu_kala||{};
+  if(rk.rahu_kala_start){L+=`<div class="dim" style="color:${rk.rahu_kala_active?'var(--red)':'var(--dim)'}">rahu: ${rk.rahu_kala_start}–${rk.rahu_kala_end}</div>`}
 
   document.getElementById('left').innerHTML=L;
 
-  // ── CENTER: Devi + Deity profile ──
+  // ── CENTER: Devi + Deity + Yantra + Scripture ──
   const deviSec=secs['NITYA DEVI']||{};
   const deitySec=secs['NAKSHATRA DEITY']||{};
-  const dc=deviSec.color||'#7060cc';
+  const dc=deviSec.color||rawDevi.color_hex||'#9370db';
+  const deviName=deviSec.name||rawDevi.name_iast||dv(pa.devi);
 
   let C='';
-  // Devi header
-  C+=`<div class="devi-name" style="color:${dc}">${deviSec.name||dv(pa.devi)}</div>`;
-  if(deviSec.color_meaning)C+=`<div class="dim" style="text-align:center">${deviSec.color_meaning}</div>`;
 
-  C+=`<div class="sep"></div>`;
+  // Devi name + description
+  C+=`<div class="devi-name" style="color:${dc}">${deviName}</div>`;
+  const deviNameDeva=rawDevi.name_devanagari||'';
+  if(deviNameDeva)C+=`<div style="font-family:var(--font-body);font-size:14px;color:${dc};opacity:.6;text-align:center;margin-bottom:4px">${deviNameDeva}</div>`;
+  const deviDesc=rawDevi.description||deviSec.color_meaning||'';
+  if(deviDesc)C+=`<div class="devi-desc">${deviDesc}</div>`;
+
+  // Bija mantra
+  const deviBija=rawDevi.bija||'';
+  if(deviBija)C+=`<div class="bija" style="font-size:20px;text-align:center;margin:8px 0">${deviBija}</div>`;
+  const deviMantra=rawDevi.mantra_short||'';
+  if(deviMantra)C+=`<div style="font-size:9px;color:var(--dim);text-align:center;margin-bottom:6px">${deviMantra}</div>`;
+
+  C+=`<div class="sep" style="max-width:200px;margin:10px auto"></div>`;
 
   // Nakshatra deity
   if(deitySec.deity){
     C+=`<div class="deity-name">${fmt(deitySec.deity)}</div>`;
     C+=`<div class="dim" style="text-align:center">${fmt(deitySec.nakshatra)} · ${fmt(deitySec.rasa)} · ${fmt(deitySec.tattva)}</div>`;
 
-    // Weapons
     const wpns=deitySec.weapons||[];
     if(wpns.length){
-      C+=`<div class="hdr" style="text-align:center;margin-top:10px">WEAPONS</div>`;
+      C+=`<div class="hdr" style="text-align:center">WEAPONS</div>`;
       C+=`<div class="weapon-list">`;
       wpns.forEach(w=>C+=`<span class="weapon">${fmt(w)}</span>`);
       C+=`</div>`;
     }
 
-    // Attributes grid
-    C+=`<div class="attr-grid" style="margin-top:8px">`;
+    C+=`<div class="attr-grid" style="margin-top:6px;max-width:260px;margin-left:auto;margin-right:auto">`;
     const attrs=[
       ['vahana',deitySec.vahana],['mudra',deitySec.mudra],
       ['color',deitySec.color_body],['garment',deitySec.color_garment],
@@ -110,22 +160,58 @@ async function load(){
     C+=`</div>`;
   }
 
+  // Devi yantra SVG
+  C+=`<div style="margin:16px auto 8px;text-align:center" id="yantra-mount"></div>`;
+
+  // Devi weapons if available from master
+  const deviWeaponsFull=rawDevi.weapons_full||'';
+  if(deviWeaponsFull&&deviWeaponsFull!=='MISSING DATA (none listed explicitly)'){
+    C+=`<div style="font-size:8px;color:var(--dim);text-align:center;max-width:280px;margin:0 auto 8px;line-height:1.5">${deviWeaponsFull}</div>`;
+  }
+
+  // Corpus passage
+  const passages=corpus?.results||corpus?.passages||[];
+  if(passages.length){
+    const p=passages[0];
+    const txt=p.text||p.passage||p.excerpt||'';
+    const src=p.source||p.text_id||'';
+    if(txt){
+      C+=`<div class="sep" style="max-width:160px;margin:12px auto"></div>`;
+      C+=`<div class="scripture">${txt.slice(0,250)}</div>`;
+      if(src)C+=`<div class="scripture-src">— ${src}</div>`;
+    }
+  }
+
   document.getElementById('center').innerHTML=C;
 
-  // ── RIGHT: Domains + Vahana + Raga ──
+  // Mount SVG yantra
+  const mount=document.getElementById('yantra-mount');
+  if(mount){mount.appendChild(buildDeviYantra(dc,140))}
+
+  // ── RIGHT: Raga + Domains + Vahana ──
   let R='';
+
+  // Sound state — raga details
+  R+=`<div class="hdr">RAGA</div>`;
+  R+=`<div class="val" style="font-size:18px">${raga}</div>`;
+  if(ss.raga_vadi)R+=`<div class="sub">vādī ${ss.raga_vadi}${ss.raga_samvadi?' · samvādī '+ss.raga_samvadi:''}</div>`;
+  const ragaDetail=ss.raga_detail||snd?.raga_detail||{};
+  if(ragaDetail.rasa)R+=`<div class="dim">${ragaDetail.rasa}</div>`;
+  if(ragaDetail.time||ss.raga_time)R+=`<div class="dim">${ragaDetail.time||ss.raga_time||''}</div>`;
+  if(ss.sa_hz)R+=`<div class="dim">Sa ${ss.sa_hz}Hz</div>`;
+
   const masterSec=secs['DEITY']||{};
   if(masterSec.name){
-    R+=`<div class="hdr">GRAHA DEITY</div>`;
-    R+=`<div class="val">${masterSec.name}</div>`;
+    R+=`<div class="sep"></div><div class="hdr">GRAHA DEITY</div>`;
+    R+=`<div class="val" style="font-size:13px">${masterSec.name}</div>`;
     R+=`<div class="dim">${masterSec.domain||''} · ${masterSec.element||''}</div>`;
     if(masterSec.weapon)R+=`<div class="dim">${masterSec.weapon} · ${masterSec.vahana||''}</div>`;
   }
 
   const domainSec=secs['DOMAINS'];
-  if(Array.isArray(domainSec)){
-    R+=`<div class="hdr">DEITY DOMAINS</div>`;
-    domainSec.forEach(d=>R+=`<div class="dim">${d.deity||''}: ${d.domain||''} (${d.element||''})</div>`);
+  if(Array.isArray(domainSec)&&domainSec.length){
+    R+=`<div class="sep"></div><div class="hdr">DEITY DOMAINS</div>`;
+    domainSec.forEach(d=>{if(d.deity)R+=`<div class="dim">${d.deity}: ${d.domain||''}</div>`});
   }
 
   const vahanaSec=secs['VAHANA']||{};
@@ -135,15 +221,18 @@ async function load(){
     R+=`<div class="dim">${fmt(vahanaSec.symbolism)}</div>`;
   }
 
-  const ragaSec=secs['GRAHA RAGA'];
-  if(Array.isArray(ragaSec)){
-    R+=`<div class="sep"></div><div class="hdr">GRAHA RAGA</div>`;
-    ragaSec.forEach(r=>{if(r.raga)R+=`<div class="dim">${r.graha||''}: ${r.raga}</div>`});
-  }
+  // Devi metadata
+  R+=`<div class="sep"></div><div class="hdr">DEVI</div>`;
+  R+=`<div class="dim">element: ${rawDevi.element||'—'}</div>`;
+  R+=`<div class="dim">guna: ${rawDevi.guna||'—'}</div>`;
+  R+=`<div class="dim">rasa: ${rawDevi.rasa||'—'}</div>`;
+  R+=`<div class="dim">graha: ${rawDevi.graha||'—'}</div>`;
+  R+=`<div class="dim">shakti: ${rawDevi.shakti||'—'}</div>`;
+  if(rawDevi.capability_signature)R+=`<div class="dim" style="margin-top:4px">${rawDevi.capability_signature}</div>`;
 
-  R+=`<div class="sep"></div><div class="hdr">LAYERS</div><div style="display:flex;gap:4px">`;
+  R+=`<div class="sep"></div><div class="hdr">LAYERS</div><div style="display:flex;gap:5px;margin-top:4px">`;
   ['#7060cc','#e0b040','#20a88a','#c8d8e8','#e0b040','#3a7a4a','#7060cc'].forEach((c,i)=>{
-    R+=`<a href="/s${i}" style="width:8px;height:8px;border-radius:50%;background:${c};opacity:${i===1?1:0.3};display:block"></a>`;
+    R+=`<a href="/s${i}" style="width:7px;height:7px;border-radius:50%;background:${i===1?c:'transparent'};border:1px solid ${i===1?c:c+'40'};display:block"></a>`;
   });R+=`</div>`;
   document.getElementById('right').innerHTML=R;
 }

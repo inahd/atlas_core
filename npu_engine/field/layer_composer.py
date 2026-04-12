@@ -205,7 +205,7 @@ def query_datasets_for_field(
         has_raga = any("raga" in c for c in cols_lower)
 
         # Determine if any standard filter column exists
-        has_tithi_id = any("tithi_id" in c for c in cols_lower)
+        has_tithi_id = any("tithi_id" in c or "tithi_num" in c for c in cols_lower)
         can_filter = has_nak or has_tithi or has_tithi_id or has_deity or has_raga
 
         if not can_filter:
@@ -213,9 +213,9 @@ def query_datasets_for_field(
             matched = rows[:20]
         else:
             for row in rows:
-                # Exact tithi_id match (highest priority for devi mappings)
+                # Exact tithi_id/tithi_num match (highest priority for devi mappings)
                 if has_tithi_id and tidx:
-                    tid = row.get("tithi_id", "")
+                    tid = row.get("tithi_id", row.get("tithi_num", ""))
                     if tid and str(tidx) == str(tid):
                         matched.append(row)
                         continue
