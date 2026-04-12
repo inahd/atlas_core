@@ -324,7 +324,41 @@ SynthDef(\tabla_bol, {
 }).store;
 
 // ======================================================
-// SYNTHDEF 5 — BIJA DRONE
+// SYNTHDEF 5 — SANTOOR NOTE
+// 100-string hammered dulcimer — 4 detuned strings per course
+// Characteristic shimmer from beating frequencies
+// ======================================================
+
+SynthDef(\santoor_note, {
+    |out=0, freq=440, amp=0.4,
+     dur=1.0, pan=0, shimmer=0.003|
+
+    var s1, s2, s3, s4, strings, strike, env, sig;
+
+    // 4 strings per course — slight detuning creates santoor shimmer
+    s1 = CombL.ar(WhiteNoise.ar(0.08), 0.05, freq.reciprocal, dur * 3.5);
+    s2 = CombL.ar(WhiteNoise.ar(0.08), 0.05, (freq * (1 + shimmer)).reciprocal, dur * 3.5);
+    s3 = CombL.ar(WhiteNoise.ar(0.08), 0.05, (freq * (1 - shimmer)).reciprocal, dur * 3.5);
+    s4 = CombL.ar(WhiteNoise.ar(0.08), 0.05, (freq * (1 + (shimmer * 0.7))).reciprocal, dur * 3.5);
+    strings = (s1 + s2 + s3 + s4) * 0.25;
+
+    // Mallet strike transient
+    strike = WhiteNoise.ar(0.15) *
+        EnvGen.ar(Env.perc(0.001, 0.012));
+
+    // Natural hammered dulcimer envelope
+    env = EnvGen.ar(
+        Env.new([0, 1, 0.3, 0], [0.002, 0.05, dur]),
+        doneAction: 2
+    );
+
+    sig = (strings + strike) * env * amp;
+    Out.ar(out, Pan2.ar(sig, pan));
+
+}).store;
+
+// ======================================================
+// SYNTHDEF 6 — BIJA DRONE
 // Formant synthesis from bija vowel.
 // ======================================================
 
@@ -512,6 +546,30 @@ OSCFunc({ |msg|
     ~mixBrightness = msg[1] ? 0.0;
     ~mixReverb = msg[2] ? 0.15;
 }, '/atlas/mix/global');
+
+// ======================================================
+// SANTOOR OSC — receives note events from Python
+// ======================================================
+
+// /atlas/santoor/note [freq, amp, dur, pan]
+OSCFunc({ |msg|
+    Synth(\santoor_note, [
+        \out,     0,
+        \freq,    msg[1] ? 440,
+        \amp,     msg[2] ? 0.35,
+        \dur,     msg[3] ? 0.8,
+        \pan,     msg[4] ? 0,
+        \shimmer, 0.003,
+    ]);
+}, '/atlas/santoor/note');
+
+OSCFunc({ |msg|
+    "Santoor: melodic layer active".postln;
+}, '/atlas/santoor/start');
+
+OSCFunc({ |msg|
+    "Santoor: melodic layer stopped".postln;
+}, '/atlas/santoor/stop');
 
 // ======================================================
 // TABLA THEKA ROUTINES

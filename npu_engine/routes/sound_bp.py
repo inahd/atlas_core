@@ -434,6 +434,33 @@ def _tabla_cycle():
         return jsonify({"error": str(e), "bols": []})
 
 
+@sound_bp.route("/sound/santoor", methods=["POST"])
+def _sound_santoor():
+    """Start/stop santoor melodic layer.
+
+    POST body: {action: 'start'|'stop'|'toggle'}
+    """
+    from kernel import field_state
+    try:
+        from npu_engine.sound.santoor_engine import start_santoor, stop_santoor, is_playing
+        data = request.get_json(force=True) if request.data else {}
+        action = data.get("action", "toggle")
+
+        if action == "stop":
+            stop_santoor()
+            return jsonify({"playing": False})
+        elif action == "start" or (action == "toggle" and not is_playing()):
+            fs = field_state()
+            start_santoor(fs)
+            raga = fs.get("sound_state", {}).get("raga", "?")
+            return jsonify({"playing": True, "raga": raga})
+        else:
+            stop_santoor()
+            return jsonify({"playing": False})
+    except Exception as e:
+        return jsonify({"error": str(e), "playing": False})
+
+
 # ── Perform mode ─────────────────────────────
 
 @sound_bp.route("/sound/perform_mode", methods=["POST"])
