@@ -1,25 +1,21 @@
 /*  Atlas 330 — Unified Theme
- *  Single source of truth for CSS variables across all 20 pages.
- *
- *  Note: The spec-canonical palette (warm rgba tones: --bg:#040201, --gold:rgba(200,169,110,1), etc.)
- *  differs from what shipped in the HTML files (cool hex tones). This file unifies
- *  around the shipped values to avoid visual regression. A future palette migration
- *  can update these variables in one place.
+ *  Sacred instrument palette — deep space, warm gold, restrained structure.
  */
 
-/* ── Fonts ── */
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap');
 
-/* ── Variables ── */
+/* Variables */
 :root {
   /* backgrounds */
-  --bg:      #060d14;
-  --panel:   #0c1520;
-  --surface: #0c1520;
+  --bg:      #030608;
+  --panel:   #080e16;
+  --surface: #080e16;
 
   /* palette */
-  --gold:    #e0b040;
-  --gold-lt: #f0d070;
+  --gold:    #c8a855;
+  --gold-lt: #d4b870;
+  --sacred:  #d4a84b;
   --teal:    #20a88a;
   --teal-lt: #40c8a8;
   --purple:  #7060cc;
@@ -28,18 +24,18 @@
   --red:     #c84040;
 
   /* text */
-  --text:    #c8d8e8;
-  --muted:   #8aabbb;
-  --dim:     #4a6a7a;
-  --bright:  #c8d8e8;
+  --text:    #e8d5a8;
+  --muted:   #9a8a6a;
+  --dim:     rgba(255,255,255,0.25);
+  --bright:  #ffffff;
 
   /* structure */
-  --border:  #1a2840;
+  --border:  rgba(255,255,255,0.06);
 
   /* fonts */
   --font-body: 'Cormorant Garamond', Georgia, serif;
   --font-mono: 'Space Mono', 'Courier New', monospace;
 }
 
-/* ── Base resets ── */
+/* Base resets */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
