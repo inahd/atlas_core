@@ -6,7 +6,7 @@
 <link rel="stylesheet" href="/static/atlas-theme.css">
 <script src="/static/atlas.js"></script>
 <style>
-body{background:#020408;color:var(--text);font-family:var(--font-mono);font-size:10px;height:100vh;display:grid;grid-template-columns:180px 1fr 180px;grid-template-rows:28px 140px 1fr 140px 24px;gap:1px;overflow:hidden;margin:0}
+body{background:var(--bg);color:var(--text);font-family:var(--font-mono);font-size:10px;height:100vh;display:grid;grid-template-columns:180px 1fr 180px;grid-template-rows:28px 140px 1fr 140px 24px;gap:1px;overflow:hidden;margin:0}
 .z{background:#020408;padding:8px;overflow:hidden;position:relative}
 .zhdr{font-size:7px;color:var(--dim);text-transform:uppercase;letter-spacing:.15em;margin-bottom:4px;display:flex;justify-content:space-between}
 .zdir{font-size:7px;color:var(--dim);opacity:.5}
@@ -34,6 +34,10 @@ body{background:#020408;color:var(--text);font-family:var(--font-mono);font-size
 .probe{display:inline-flex;align-items:center;gap:3px;font-size:8px;color:var(--dim);margin-right:5px}
 .pdot{width:4px;height:4px;border-radius:50%}
 .temple-link{color:var(--teal);text-decoration:none;font-size:8px;display:block}.temple-link:hover{text-decoration:underline}
+
+/* Nav dots */
+.nav{position:fixed;right:12px;top:50%;transform:translateY(-50%);display:flex;flex-direction:column;gap:6px;z-index:10}
+.nav a{width:8px;height:8px;border-radius:50%;border:1px solid var(--border);display:block;text-decoration:none;font-size:0}.nav a.on{background:var(--gold);border-color:var(--gold)}.nav a:hover{border-color:var(--gold)}
 
 /* Center zone */
 .center-zone{display:flex;flex-direction:column;overflow:hidden;position:relative}
@@ -81,12 +85,14 @@ body{background:#020408;color:var(--text);font-family:var(--font-mono);font-size
     <button onclick="sw('g')" data-v="g">G</button>
     <button onclick="sw('t')" data-v="t">T</button>
     <button onclick="sw('s')" data-v="s">S</button>
+    <button onclick="sw('r')" data-v="r">R</button>
   </div>
 </div>
 <div class="z z-e" id="z-e"></div>
 <div class="z z-sw" id="z-sw"></div>
 <div class="z s-band" id="z-s"></div>
 <div class="z z-se" id="z-se"></div>
+<nav class="nav"><a href="/" class="on"></a><a href="/s0"></a><a href="/s1"></a><a href="/s2"></a><a href="/s3"></a><a href="/s4"></a><a href="/s5"></a><a href="/s6"></a></nav>
 <div class="bot"><span>ATLAS 330</span><span>·</span><span>Vedic Cosmological Field Computer</span><span>·</span><span id="bd"></span><span class="bot-dot"></span></div>
 
 <script>
@@ -99,23 +105,24 @@ const NS='http://www.w3.org/2000/svg';
 function se(t,a){const e=document.createElementNS(NS,t);for(const[k,v]of Object.entries(a))e.setAttribute(k,v);return e}
 
 // ═══ STATE ═══
-let F={},Y={},GOL={},H={},RES={},DIN={},SV={},SND={};
+let F={},Y={},GOL={},H={},RES={},DIN={},SV={},SND={},GL={},RNG={};
 let cv='f'; // current view
 const GC={Sun:'#FFD700',Moon:'#C0C0C0',Mars:'#FF4444',Mercury:'#44FF88',Jupiter:'#FFAA00',Venus:'#FF88CC',Saturn:'#8888AA',Rahu:'#444466',Ketu:'#664444'};
 const GRAHAS=['Sun','Moon','Mars','Mercury','Jupiter','Venus','Saturn','Rahu','Ketu'];
 
 // ═══ VIEW SWITCHER ═══
 function sw(k){cv=k;document.querySelectorAll('#view-sw button').forEach(b=>b.classList.toggle('on',b.dataset.v===k));
-  const labels={f:'FIELD · orbital',y:'YANTRA · navagraha',g:'GOLOKA · pratibimba',t:'TOROID · field geometry',s:'SOUND · tanpura'};
+  const labels={f:'FIELD · orbital',y:'YANTRA · navagraha',g:'GOLOKA · pratibimba',t:'TOROID · field geometry',s:'SOUND · tanpura',r:'RINGS · nakshatra'};
   document.getElementById('view-label').textContent=labels[k]||'';renderCenter()}
-document.addEventListener('keydown',e=>{if('fygts'.includes(e.key)&&!e.ctrlKey&&!e.metaKey)sw(e.key)});
+document.addEventListener('keydown',e=>{if('fygtrsa'.includes(e.key)&&!e.ctrlKey&&!e.metaKey)sw(e.key)});
 
 // ═══ FETCH ALL ═══
 async function loadAll(){
-  [F,Y,GOL,H,RES,DIN,SV,SND]=await Promise.all([
+  [F,Y,GOL,H,RES,DIN,SV,SND,GL,RNG]=await Promise.all([
     atlasGet('/field',{}),atlasGet('/yantra/navagraha',{}),atlasGet('/goloka',{}),
     atlasGet('/dashboard/health',{}),atlasGet('/resonance',{}),atlasGet('/dinacharya',{}),
-    atlasGet('/svarodaya',{}),atlasGet('/sound/state',{})
+    atlasGet('/svarodaya',{}),atlasGet('/sound/state',{}),
+    atlasGet('/glyphs/field',{}),atlasGet('/ring/nakshatra',{})
   ]);
   renderZones();renderCenter();
 }
@@ -125,7 +132,11 @@ function renderZones(){
   const pa=F?.panchanga||{},ss=F?.sound_state||SND||{},da=F?.dasha||{};
   const nak=pa.nakshatra||'—',tithi=pa.tithi||'—',vara=pa.vara||'—',devi=dv(pa.devi);
   const raga=ss.raga||'',bpm=ss.bpm||'';
-  document.getElementById('pbar').innerHTML=`<span class="nak">${nak}</span> · ${tithi} · ${pa.paksha||''} · ${vara} · ${devi}${raga?' · '+raga:''}${bpm?' · '+bpm+'bpm':''}`;
+  // Glyphs from /glyphs/field
+  let glyphStr='';
+  const glyphs=Array.isArray(GL)?GL:(GL?.glyphs||GL?.field_glyphs||[]);
+  if(Array.isArray(glyphs)){glyphs.slice(0,6).forEach(g=>{const gl=g.glyph||g.emoji||'';if(gl)glyphStr+=`<span title="${g.entity_id||g.name||''}" style="font-size:12px;margin:0 1px">${gl}</span>`})}
+  document.getElementById('pbar').innerHTML=`<span class="nak">${nak}</span> · ${tithi} · ${pa.paksha||''} · ${vara} · ${devi}${raga?' · '+raga:''}${bpm?' · '+bpm+'bpm':''} ${glyphStr}`;
 
   // NW · Sound
   let nw=`<div class="zhdr"><span>SOUND</span><span class="zdir">NW · Vāyu</span></div><div class="zval">${raga||'—'}</div>`;
@@ -189,7 +200,7 @@ function renderZones(){
 }
 
 // ═══ CENTER VIEWS ═══
-function renderCenter(){({f:renderField,y:renderYantra,g:renderGoloka,t:renderToroid,s:renderSound})[cv]?.()}
+function renderCenter(){({f:renderField,y:renderYantra,g:renderGoloka,t:renderToroid,s:renderSound,r:renderRings})[cv]?.()}
 
 // ── VIEW F: ORBITAL FIELD ──
 function renderField(){
@@ -299,6 +310,39 @@ function renderSound(){
   const scOk=SND?.sc?.status==='booted';
   h+=`<div style="margin-top:8px;font-size:8px;color:var(--dim)"><span style="display:inline-block;width:4px;height:4px;border-radius:50%;background:${scOk?'var(--teal)':'var(--dim)'};margin-right:3px"></span>SC ${scOk?'running':'offline'}</div>`;
   h+=`</div>`;el.innerHTML=h;
+}
+
+// ── VIEW R: NAKSHATRA RING ──
+function renderRings(){
+  const el=document.getElementById('center-view');
+  const sz=Math.min(el.clientWidth,el.clientHeight)-20;if(sz<100)return;
+  const svg=se('svg',{width:sz,height:sz,viewBox:'0 0 400 400'});
+  const cx=200,cy=200,R=160;
+  // Ring circle
+  svg.appendChild(se('circle',{cx,cy,r:R,fill:'none',stroke:'rgba(200,169,110,0.08)','stroke-width':'0.5'}));
+  // 27 nakshatra dots
+  const NAKS=['Ashwini','Bharani','Krittika','Rohini','Mrigashira','Ardra','Punarvasu','Pushya','Ashlesha','Magha','Purva Phalguni','Uttara Phalguni','Hasta','Chitra','Swati','Vishakha','Anuradha','Jyeshtha','Mula','Purva Ashadha','Uttara Ashadha','Shravana','Dhanishta','Shatabhisha','Purva Bhadrapada','Uttara Bhadrapada','Revati'];
+  const curNak=(F?.panchanga?.nak_data?.name_key||F?.panchanga?.nakshatra||'').toLowerCase().replace(/[āīūṛṝḷṃḥṅñṭḍṇśṣ]/g,c=>'aiurllmhnnttdnss'['āīūṛṝḷṃḥṅñṭḍṇśṣ'.indexOf(c)]||c);
+  NAKS.forEach((n,i)=>{
+    const ang=-Math.PI/2+(i/27)*Math.PI*2;
+    const px=cx+R*Math.cos(ang),py=cy+R*Math.sin(ang);
+    const isCur=curNak&&n.toLowerCase().includes(curNak.slice(0,5));
+    const r_=isCur?7:3;const op=isCur?1:0.4;
+    if(isCur)svg.appendChild(se('circle',{cx:px,cy:py,r:12,fill:'rgba(200,169,110,0.1)'}));
+    svg.appendChild(se('circle',{cx:px,cy:py,r:r_,fill:'#c8a96e','fill-opacity':op}));
+    // Label for current + every 3rd
+    if(isCur||i%3===0){
+      const lr=R+(isCur?18:12);const lx=cx+lr*Math.cos(ang),ly=cy+lr*Math.sin(ang);
+      const anchor=Math.cos(ang)>0.3?'start':Math.cos(ang)<-0.3?'end':'middle';
+      const t=se('text',{x:lx,y:ly+3,'text-anchor':anchor,'font-size':isCur?'9':'6','font-family':"'Space Mono',monospace",fill:isCur?'#c8a96e':'rgba(200,169,110,0.4)'});
+      t.textContent=n;svg.appendChild(t)}
+  });
+  // Center label
+  const t1=se('text',{x:cx,y:cy-4,'text-anchor':'middle','font-family':"'Cormorant Garamond',serif",'font-size':'16','font-style':'italic',fill:'#c8a96e'});
+  t1.textContent=F?.panchanga?.nakshatra||'—';svg.appendChild(t1);
+  const t2=se('text',{x:cx,y:cy+12,'text-anchor':'middle','font-size':'7','font-family':"'Space Mono',monospace",fill:'rgba(200,169,110,0.4)'});
+  t2.textContent=`${F?.panchanga?.nak_data?.deity||''} · ${F?.panchanga?.nak_data?.shakti||''}`;svg.appendChild(t2);
+  el.innerHTML='';el.appendChild(svg);
 }
 
 loadAll();setInterval(loadAll,60000);

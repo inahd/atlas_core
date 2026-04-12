@@ -304,6 +304,141 @@ def _layer_compose(layer_id):
         return jsonify({"error": str(e), "layer_id": layer_id})
 
 
+# ── Rhythm routes ─────────────────────────────
+
+@system_bp.route("/rhythm/theka")
+def _rhythm_theka():
+    """Generate theka cycle for current tala/mode."""
+    try:
+        from npu_engine.rhythm.theka_engine import generate_theka_cycle
+        tala = request.args.get("tala", "Adi")
+        mode = request.args.get("mode", "gat")
+        arc = float(request.args.get("arc", 0.5))
+        rasa = request.args.get("rasa", "shanta")
+        events = generate_theka_cycle(tala, mode, arc, rasa)
+        return jsonify({"tala": tala, "mode": mode, "events": [e._asdict() for e in events]})
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+
+@system_bp.route("/rhythm/tihai")
+def _rhythm_tihai():
+    """Find tihai landing on sam from given beat."""
+    try:
+        from npu_engine.rhythm.tihai_engine import find_tihai
+        beat = int(request.args.get("beat", 1))
+        tala = request.args.get("tala", "Adi")
+        beats = int(request.args.get("beats", 16))
+        result = find_tihai(beat, tala, beats)
+        if result:
+            return jsonify(result._asdict())
+        return jsonify({"tihai": None, "reason": "no clean landing on sam"})
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+
+@system_bp.route("/rhythm/layakari")
+def _rhythm_layakari():
+    """Get target layakari factor for current mode/arc."""
+    try:
+        from npu_engine.rhythm.layakari_engine import get_layakari
+        mode = request.args.get("mode", "gat")
+        arc = float(request.args.get("arc", 0.5))
+        current = float(request.args.get("current", 1.0))
+        factor = get_layakari(mode, arc, current)
+        return jsonify({"mode": mode, "arc": arc, "current": current, "target": factor})
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+
+@system_bp.route("/rhythm/cross")
+def _rhythm_cross():
+    """Get cross-rhythm for current rasa/arc."""
+    try:
+        from npu_engine.rhythm.cross_rhythm_engine import get_cross_rhythm
+        tala = request.args.get("tala", "Adi")
+        beats = int(request.args.get("beats", 16))
+        rasa = request.args.get("rasa", "shanta")
+        arc = float(request.args.get("arc", 0.5))
+        result = get_cross_rhythm(tala, beats, rasa, arc)
+        if result:
+            return jsonify(result._asdict())
+        return jsonify({"cross_rhythm": None, "reason": "rasa/arc does not call for polyrhythm"})
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+
+@system_bp.route("/rhythm/sam")
+def _rhythm_sam():
+    """Sam-gravity field for a beat position."""
+    try:
+        from npu_engine.rhythm.sam_field import get_gravity, get_tension, beats_to_sam
+        beat = int(request.args.get("beat", 1))
+        tala = request.args.get("tala", "Adi")
+        gravity = get_gravity(beat, tala)
+        tension = get_tension(beat, tala)
+        to_sam = beats_to_sam(beat, tala)
+        return jsonify({"beat": beat, "tala": tala, "gravity": round(gravity, 4),
+                        "tension": round(tension, 4), "beats_to_sam": to_sam})
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+
+# ── City / Vastu city routes ─────────────────────────────
+
+@system_bp.route("/city/report")
+def _city_report():
+    """Vastu city report for current field."""
+    from kernel import field_state
+    try:
+        from npu_engine.field.city_engine import city_report
+        return jsonify(city_report(field_state()))
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+
+@system_bp.route("/city/vastu")
+def _city_vastu():
+    """Vastu city layout for current field."""
+    from kernel import field_state
+    try:
+        from npu_engine.field.city_engine import derive_vastu_city
+        size = request.args.get("size", "village")
+        return jsonify(derive_vastu_city(field_state(), size))
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+
+@system_bp.route("/city/gate/<direction>")
+def _city_gate(direction):
+    """Gate inscription for a direction."""
+    from kernel import field_state
+    try:
+        from npu_engine.field.city_engine import get_gate_inscription
+        return jsonify(get_gate_inscription(direction, field_state()))
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+
+# ── Code context route ─────────────────────────────
+
+@system_bp.route("/code/context", methods=["GET", "POST"])
+def _code_context():
+    """Code context for a task description."""
+    try:
+        from npu_engine.field.code_engine import derive_code_context
+        if request.method == "POST":
+            data = request.get_json(silent=True) or {}
+            task = data.get("task", "")
+        else:
+            task = request.args.get("task", "")
+        if not task:
+            return jsonify({"error": "task parameter required"})
+        return jsonify(derive_code_context(task))
+    except Exception as e:
+        return jsonify({"error": str(e)})
+
+
 @system_bp.route("/corpus/semantic")
 def _corpus_semantic():
     """Semantic search over Atlas corpus via NPU embeddings."""
