@@ -45,17 +45,35 @@ def get_available_model() -> str:
 
 
 def get_corpus_context(field_state: dict, limit: int = 3) -> str:
-    """Pull relevant scripture from Atlas corpus."""
-    try:
-        pa = field_state.get("panchanga", {})
-        nak = pa.get("nakshatra", "")
-        if isinstance(nak, dict):
-            nak = nak.get("name", "")
-        tithi = pa.get("tithi", "")
-        if isinstance(tithi, dict):
-            tithi = tithi.get("name", "")
+    """Pull relevant scripture — semantic search first, keyword fallback."""
+    pa = field_state.get("panchanga", {})
+    nak = pa.get("nakshatra", "")
+    if isinstance(nak, dict):
+        nak = nak.get("name", "")
+    tithi = pa.get("tithi", "")
+    if isinstance(tithi, dict):
+        tithi = tithi.get("name", "")
 
-        query = f"{nak} {tithi} devotion practice"
+    query = f"{nak} {tithi} devotion practice"
+
+    # Try semantic search (NPU-powered) first
+    try:
+        from npu_engine.field.semantic_engine import semantic_search
+        results = semantic_search(query, limit=limit, tradition="gaudiya")
+        if results:
+            passages = []
+            for res in results[:limit]:
+                source = res.get("source", "")
+                text = res.get("text", "")[:250]
+                if text:
+                    passages.append(f"[{source}]: {text}")
+            if passages:
+                return "\n\n".join(passages)
+    except Exception:
+        pass
+
+    # Fallback: keyword search via corpus API
+    try:
         r = requests.get(
             "http://localhost:5000/corpus/search",
             params={"q": query, "limit": limit},

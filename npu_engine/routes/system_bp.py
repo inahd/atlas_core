@@ -276,3 +276,30 @@ def _yantra_navagraha():
         return jsonify(get_current_yantra(field_state()))
     except Exception as e:
         return jsonify({"error": str(e)})
+
+
+@system_bp.route("/compose/llm", methods=["GET", "POST"])
+def _compose_llm():
+    """LLM-driven composition for current field state."""
+    from kernel import field_state
+    try:
+        from npu_engine.field.llm_composition_engine import compose
+        fs = field_state()
+        result = compose(fs)
+        return jsonify(result)
+    except Exception as e:
+        return jsonify({"error": str(e), "status": "failed"})
+
+
+@system_bp.route("/corpus/semantic")
+def _corpus_semantic():
+    """Semantic search over Atlas corpus via NPU embeddings."""
+    from npu_engine.field.semantic_engine import semantic_search, corpus_status
+    q = request.args.get("q", "")
+    if not q:
+        return jsonify(corpus_status())
+    tradition = request.args.get("tradition")
+    limit = int(request.args.get("limit", 10))
+    limit = max(1, min(50, limit))
+    results = semantic_search(q, limit=limit, tradition=tradition)
+    return jsonify({"query": q, "results": results, "count": len(results)})
