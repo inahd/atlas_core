@@ -434,6 +434,25 @@ def _tabla_cycle():
         return jsonify({"error": str(e), "bols": []})
 
 
+@sound_bp.route("/raga/phrase")
+def _raga_phrase():
+    """Generate a raga phrase spec for current field state."""
+    from kernel import field_state
+    try:
+        from npu_engine.sound.raga_engine import derive_raga_phrase
+        fs = field_state()
+        # Merge svarodaya if not present
+        if "svarodaya" not in fs:
+            try:
+                from npu_engine.field.svarodaya_engine import derive_svarodaya
+                fs["svarodaya"] = derive_svarodaya(fs)
+            except Exception:
+                fs["svarodaya"] = {"coherence_score": 0.5}
+        return jsonify(derive_raga_phrase(fs))
+    except Exception as e:
+        return jsonify({"error": str(e), "swaras": [], "osc_messages": []})
+
+
 @sound_bp.route("/sound/santoor", methods=["POST"])
 def _sound_santoor():
     """Start/stop santoor melodic layer.

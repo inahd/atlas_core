@@ -156,49 +156,76 @@ SynthDef(\tanpura_string, {
 }).store;
 
 // ======================================================
-// SYNTHDEF 3 — MELODIC NOTE
-// One note with gamaka modulation.
+// SYNTHDEF 3 — MELODIC NOTE (single swara with gamak)
+// Gamaks are not ornaments — they ARE the note (Pearson 2016)
 // ======================================================
 
 SynthDef(\raga_note, {
     |out=0, freq=261.63, amp=0.4,
      dur=1.0, gamaka=0, gamaka_rate=5,
-     gamaka_depth=0.015|
+     gamaka_depth=0.015, pan=0|
 
     var sig, env, freq_mod;
 
     // Gamaka types: 0=none 1=kampita 2=andolan 3=meend
     freq_mod = Select.ar(gamaka, [
         DC.ar(freq),
-        // kampita — fast oscillation
         freq * (1 + SinOsc.ar(gamaka_rate, 0, gamaka_depth)),
-        // andolan — slow wave
         freq * (1 + SinOsc.ar(gamaka_rate * 0.4, 0, gamaka_depth * 0.6)),
-        // meend — exponential approach
         freq * (1 + XLine.ar(0.05, 0.001, dur * 0.3)),
     ]);
 
-    // Plucked string timbre
-    sig = Pluck.ar(
-        WhiteNoise.ar(0.3),
-        Impulse.ar(0),
-        1/20.0,
-        1/freq_mod,
-        dur * 2,
-        0.25
-    );
-
-    // Slight breath quality
+    sig = Pluck.ar(WhiteNoise.ar(0.3), Impulse.ar(0),
+        1/20.0, 1/freq_mod, dur * 2, 0.25);
     sig = sig + (SinOsc.ar(freq_mod, 0, 0.1) *
         EnvGen.ar(Env.perc(0.01, dur * 0.8)));
-
     env = EnvGen.ar(
         Env.new([0, 1, 0.7, 0], [0.005, dur * 0.7, dur * 0.25]),
-        doneAction: 2
+        doneAction: 2);
+    Out.ar(out, Pan2.ar(sig * amp * env, pan));
+}).store;
+
+// ======================================================
+// SYNTHDEF 3b — CONTINUOUS RAGA PHRASE
+// Pitch envelope across multiple swaras — gamaks AS notes
+// Source: Pearson 2016 — gamakas are continuous pitch events
+// ======================================================
+
+SynthDef(\raga_phrase, {
+    |out=0, freq1=240, freq2=270, freq3=320,
+     dur1=0.5, dur2=0.5, dur3=1.0,
+     gamak_rate=3, gamak_depth=30,
+     gamak_note=1, amp=0.4, pan=0|
+
+    var totalDur, pitchEnv, andolan, sig, env;
+
+    totalDur = dur1 + dur2 + dur3;
+
+    // Continuous pitch envelope — the phrase IS the pitch curve
+    pitchEnv = EnvGen.kr(
+        Env([freq1, freq2, freq3], [dur1, dur2], \exponential)
     );
 
-    Out.ar(out, sig * amp * env ! 2);
+    // Andolan on specified note position
+    // Activates during the gamak_note segment only
+    andolan = SinOsc.kr(gamak_rate) * gamak_depth *
+        Select.kr(gamak_note, [
+            EnvGen.kr(Env([1,1,0,0], [dur1, 0.01, dur2+dur3-0.01])),
+            EnvGen.kr(Env([0,0,1,1,0], [dur1, 0.01, dur2-0.02, 0.01])),
+            EnvGen.kr(Env([0,0,0,1], [dur1+dur2, 0.01, dur3-0.01])),
+        ]);
 
+    // Sarangi-like bowed timbre for phrase
+    sig = Saw.ar(pitchEnv + andolan, 0.3) +
+          SinOsc.ar(pitchEnv + andolan, 0, 0.5) +
+          Saw.ar((pitchEnv + andolan) * 2.01, 0.08);
+    sig = LPF.ar(sig, (pitchEnv + andolan) * 4);
+
+    env = EnvGen.ar(
+        Env.new([0, 1, 0.8, 0], [0.01, totalDur * 0.85, totalDur * 0.14]),
+        doneAction: 2);
+
+    Out.ar(out, Pan2.ar(sig * amp * env, pan));
 }).store;
 
 // ======================================================
@@ -546,6 +573,25 @@ OSCFunc({ |msg|
     ~mixBrightness = msg[1] ? 0.0;
     ~mixReverb = msg[2] ? 0.15;
 }, '/atlas/mix/global');
+
+// ── Raga phrase OSC — continuous pitch envelope ──
+// /atlas/phrase [freq1 freq2 freq3 dur1 dur2 dur3 gamak_rate gamak_depth gamak_note amp pan]
+OSCFunc({ |msg|
+    Synth(\raga_phrase, [
+        \out, 0,
+        \freq1,       msg[1] ? 240,
+        \freq2,       msg[2] ? 270,
+        \freq3,       msg[3] ? 320,
+        \dur1,        msg[4] ? 0.5,
+        \dur2,        msg[5] ? 0.5,
+        \dur3,        msg[6] ? 1.0,
+        \gamak_rate,  msg[7] ? 3,
+        \gamak_depth, msg[8] ? 30,
+        \gamak_note,  msg[9] ? 1,
+        \amp,         msg[10] ? 0.35,
+        \pan,         msg[11] ? 0,
+    ]);
+}, '/atlas/phrase');
 
 // ======================================================
 // SANTOOR OSC — receives note events from Python

@@ -1,0 +1,15 @@
+field_state,guna,element,time_period,rasa_primary,phrase_density,gamak_intensity,note_duration_range,rest_probability,dynamic_range,layakari_tendency,description,attestation
+tamas_water_night,tamas,water,night,karuna,sparse,low,1.0-2.5,0.45,soft,thah,Deep stillness — minimal movement,INTERPRETATION
+tamas_earth_night,tamas,earth,night,shanta,sparse,low,1.2-3.0,0.5,very_soft,thah,Grounding silence — near-alap,INTERPRETATION
+tamas_fire_night,tamas,fire,night,raudra,sparse,medium,0.8-2.0,0.4,moderate,thah,Smoldering intensity — slow fire,INTERPRETATION
+rajas_fire_day,rajas,fire,afternoon,vira,medium,high,0.3-0.8,0.15,loud,dugun,Energetic movement — taan-oriented,INTERPRETATION
+rajas_air_day,rajas,air,afternoon,adbhuta,medium,medium,0.4-1.0,0.2,moderate,dugun,Flowing movement — wind quality,INTERPRETATION
+rajas_water_evening,rajas,water,evening,shringara,medium,high,0.5-1.2,0.2,moderate,thah_to_dugun,Evening romance — gamak-rich,INTERPRETATION
+sattva_ether_dawn,sattva,ether,dawn,shanta,balanced,medium,0.6-1.5,0.3,moderate,thah,Dawn clarity — sattvic balance,INTERPRETATION
+sattva_fire_morning,sattva,fire,morning,vira,balanced,medium,0.5-1.0,0.25,moderate,thah_to_dugun,Morning strength — balanced fire,INTERPRETATION
+sattva_water_night,sattva,water,night,karuna,balanced,high,0.7-1.8,0.3,soft_to_moderate,thah,Night devotion — deep feeling,INTERPRETATION
+tamas_air_dawn,tamas,air,dawn,adbhuta,sparse,low,1.5-3.0,0.5,very_soft,aadh,Pre-dawn wonder — barely moving,INTERPRETATION
+rajas_earth_afternoon,rajas,earth,afternoon,hasya,dense,medium,0.2-0.6,0.1,loud,dugun_to_tigun,Playful afternoon — fast earth,INTERPRETATION
+sattva_air_evening,sattva,air,evening,shringara,balanced,high,0.5-1.2,0.25,moderate,thah,Evening elegance — air lightness,INTERPRETATION
+tamas_ether_midnight,tamas,ether,midnight,bhayanaka,very_sparse,low,2.0-4.0,0.6,very_soft,aadh,Midnight void — near silence,INTERPRETATION
+rajas_fire_evening,rajas,fire,evening,raudra,dense,high,0.3-0.7,0.1,loud,dugun,Evening fire — intense energy,INTERPRETATION

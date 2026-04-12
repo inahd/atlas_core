@@ -1,0 +1,17 @@
+gamak_id,gamak_name,gamak_name_iast,type,rate_hz,depth_cents,envelope,coherence_threshold,description,attestation
+andolan,Andolan,Āndolana,oscillation,3,30,slow_sine,0.7,Slow wave on sustained notes — characteristic of dhrupad,OBSERVED
+kampita,Kampita,Kampita,vibrato,5,40,sine,0.5,Fast oscillation — standard melodic vibrato,OBSERVED
+gamaka,Gamaka,Gamaka,shake,7,50,triangle,0.6,Rapid shake between adjacent swaras,OBSERVED
+meend,Meend,Mīṇḍa,glide,0,0,linear,0.3,Continuous pitch glide between swaras — the note IS the slide,OBSERVED
+murki,Murki,Murkī,grace,12,20,fast_burst,0.6,Rapid ornamental turn around target note,OBSERVED
+kan,Kan,Kaṇa,touch,0,0,instant,0.2,Grace note — barely touches before landing,OBSERVED
+krintan,Krintan,Kṛntana,pull,0,0,exponential,0.5,Pull-off ornament on stringed instruments,OBSERVED
+zamzama,Zamzama,Zamzamā,tremolo,8,30,fast_oscillation,0.7,Rapid trembling between two notes,OBSERVED
+gitkari,Gitkari,Gitkṛī,trill,10,25,trill,0.6,Trill between adjacent swaras,OBSERVED
+jaru,Jaru,Jāru,slide,0,0,portamento,0.3,Sliding approach from below or above,OBSERVED
+sut,Sut,Sūt,throw,0,0,fast_exponential,0.5,Throwing voice/finger to higher note,OBSERVED
+harkat,Harkat,Harkāt,phrase_ornament,0,0,mixed,0.6,Characteristic turn or phrase-level ornament,OBSERVED
+nyasa,Nyasa,Nyāsa,landing,0,0,decelerate,0.2,Final resting emphasis on a swara,OBSERVED
+sparsh,Sparsh,Sparśa,touch_return,0,0,instant_return,0.3,Touch and return to original note,OBSERVED
+tirip,Tirip,Tirip,rapid_repetition,15,15,staccato,0.7,Rapid repetition of same note — santoor specialty,OBSERVED
+lahak,Lahak,Lahak,ascending_run,0,0,scalar,0.6,Quick ascending scalar passage,OBSERVED

@@ -1,0 +1,27 @@
+phrase_id,raga,phrase_type,swaras,vadi_position,gamak_on,gamak_type,time_context,rasa_context,description,attestation
+bihag_pakad,Bihag,pakad,Ga ma Pa Ni SA Ni Dha Pa Ma Ga,0,Ga,andolan,night,shringara,Signature phrase — Ga emphasis with descending return,OBSERVED
+bihag_aroha_1,Bihag,aroha,Sa Ga ma Pa Ni SA,0,Ga,kampita,night,shringara,Ascending with tivra Ma skip,OBSERVED
+bihag_avaroha_1,Bihag,avaroha,SA Ni Dha Pa Ma Ga Re Sa,2,Pa,andolan,night,karuna,Full descent — both Ma used,OBSERVED
+bihag_gamak_1,Bihag,gamak,Pa Ma Ga,0,Ga,andolan,night,karuna,Characteristic descending gamak — the Bihag signature,OBSERVED
+bihag_taan_1,Bihag,taan,Sa Ga ma Pa Ga ma Pa Ni SA,0,Ga;Pa,kampita,night,vira,Fast ascending taan,OBSERVED
+bihag_mukhda,Bihag,mukhda,Ga ma Pa Ni SA,0,Ga,andolan,night,shringara,Opening phrase landing on SA,OBSERVED
+yaman_pakad,Yaman,pakad,Ni Re Ga Re Sa,2,Ga,andolan,evening,shringara,Yaman pakad — NiRe approach unique,OBSERVED
+yaman_aroha_1,Yaman,aroha,Sa Re Ga ma Pa Dha Ni SA,2,Ga,kampita,evening,shringara,Full Yaman aroha with tivra Ma,OBSERVED
+yaman_avaroha_1,Yaman,avaroha,SA Ni Dha Pa ma Ga Re Sa,1,Ni,andolan,evening,karuna,Descending with tivra Ma,OBSERVED
+yaman_taan_1,Yaman,taan,Ni Re Ga ma Pa Dha Ni SA,0,Ga;Ni,kampita,evening,vira,Fast ascending taan,OBSERVED
+bhairav_pakad,Bhairav,pakad,re Ga re Sa,0,re,meend,morning,karuna,Bhairav pakad — komal Re approach,OBSERVED
+bhairav_aroha_1,Bhairav,aroha,Sa re Ga Ma Pa dha Ni SA,0,re;dha,andolan,morning,karuna,Full ascending with komal Re+Dha,OBSERVED
+bhairav_gamak_1,Bhairav,gamak,Ma Ga re Sa,0,re,andolan,morning,shanta,Descending with lingering komal Re,OBSERVED
+todi_pakad,Todi,pakad,re ga Ma re Sa,1,ga,andolan,late_morning,karuna,Todi signature — deep pathos,OBSERVED
+todi_aroha_1,Todi,aroha,Sa re ga Ma dha Ni SA,0,ga;dha,meend,late_morning,karuna,Komal Ga and komal Dha,OBSERVED
+marwa_pakad,Marwa,pakad,re Ga Ma Dha Ni Dha,0,Dha,andolan,sunset,adbhuta,No Pa — Marwa tension,OBSERVED
+malkauns_pakad,Malkauns,pakad,ga Ma dha ni Sa,0,ga,andolan,midnight,bhayanaka,Pentatonic depth — komal ga ni,OBSERVED
+puriya_pakad,Puriya,pakad,ni Re Ga Ma Dha ni,0,Ga,andolan,evening,karuna,Evening gravity — komal Ni approach,OBSERVED
+bageshri_pakad,Bageshri,pakad,Ma ga Ma Dha ni Sa,0,Ma,kampita,late_night,shringara,Late night tenderness,OBSERVED
+darbari_pakad,Darbari,pakad,Re ga Re Sa,0,ga,andolan,midnight,karuna,Darbari Kanada — deep komal Ga,OBSERVED
+khamaj_pakad,Khamaj,pakad,Sa Re Ga Ma Pa Dha ni SA,0,Pa,kampita,evening,shringara,Light evening raga — both Ni used,OBSERVED
+bhimpalasi_pakad,Bhimpalasi,pakad,ma Pa Ni Sa ni Dha Pa,0,Pa,andolan,afternoon,karuna,Afternoon pathos — Ma Pa ascent,OBSERVED
+shree_pakad,Shree,pakad,re Ma Pa Ni SA,0,Ni,andolan,evening,adbhuta,Shree grandeur — skip swaras,OBSERVED
+lalit_pakad,Lalit,pakad,Ma re ga Ma Sa,0,Ma,meend,dawn,adbhuta,Dawn raga — both Ma and Ga komal,OBSERVED
+ramkali_pakad,Ramkali,pakad,Sa re ga Ma Pa,0,Ma,kampita,dawn,shanta,Pre-dawn devotional,OBSERVED
+durga_pakad,Durga,pakad,Sa Re Ma Pa Dha SA,0,Ma,kampita,evening,vira,Pentatonic strength,OBSERVED
