@@ -434,6 +434,40 @@ def _tabla_cycle():
         return jsonify({"error": str(e), "bols": []})
 
 
+@sound_bp.route("/sound/melody", methods=["POST"])
+def _sound_melody():
+    """Start/stop continuous raga melody loop.
+
+    POST body: {action: 'start'|'stop'|'toggle'}
+    Generates phrases from raga_engine, sends OSC to SC, loops.
+    """
+    from kernel import field_state
+    try:
+        from npu_engine.sound.melody_engine import start_melody, stop_melody, is_playing
+        data = request.get_json(force=True) if request.data else {}
+        action = data.get("action", "toggle")
+
+        if action == "stop":
+            stop_melody()
+            return jsonify({"playing": False})
+        elif action == "start" or (action == "toggle" and not is_playing()):
+            fs = field_state()
+            # Merge svarodaya for coherence
+            try:
+                from npu_engine.field.svarodaya_engine import derive_svarodaya
+                fs["svarodaya"] = derive_svarodaya(fs)
+            except Exception:
+                fs["svarodaya"] = {"coherence_score": 0.5}
+            start_melody(fs)
+            raga = fs.get("sound_state", {}).get("raga", "?")
+            return jsonify({"playing": True, "raga": raga})
+        else:
+            stop_melody()
+            return jsonify({"playing": False})
+    except Exception as e:
+        return jsonify({"error": str(e), "playing": False})
+
+
 @sound_bp.route("/raga/phrase")
 def _raga_phrase():
     """Generate a raga phrase spec for current field state."""
