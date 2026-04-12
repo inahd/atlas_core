@@ -240,6 +240,22 @@ def _yantra_extended():
         return jsonify({"error": str(e)})
 
 
+@system_bp.route("/interpret/llm", methods=["GET", "POST"])
+def _interpret_llm():
+    """Field interpretation via Qwen3 + Gaudiya corpus context."""
+    from kernel import field_state
+    try:
+        from npu_engine.field.interpret_engine import interpret_field
+        fs = field_state()
+        query = "What does this moment call for?"
+        if request.method == "POST":
+            data = request.get_json(silent=True) or {}
+            query = data.get("query", query)
+        return jsonify(interpret_field(fs, query))
+    except Exception as e:
+        return jsonify({"error": str(e), "status": "failed"})
+
+
 @system_bp.route("/yantra/benchmark")
 def _yantra_benchmark():
     """Benchmark eigendecomposition across levels 1-4."""
