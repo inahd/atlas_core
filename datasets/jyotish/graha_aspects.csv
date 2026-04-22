@@ -1,0 +1,15 @@
+# Source: BPHS Ch. 28 (Graha Drishti). House offsets from graha's position.
+# All grahas aspect the 7th house. Special aspects per BPHS.
+# Rahu/Ketu aspects: "5,7,9" per some schools (Parashara tradition).
+# Other schools treat Rahu/Ketu as having no special aspects or only 7th.
+# This file records the Parashara convention; engine should allow configuration.
+graha,aspect_house_offsets
+Sun,7
+Moon,7
+Mars,"4,7,8"
+Mercury,7
+Jupiter,"5,7,9"
+Venus,7
+Saturn,"3,7,10"
+Rahu,"5,7,9"
+Ketu,"5,7,9"

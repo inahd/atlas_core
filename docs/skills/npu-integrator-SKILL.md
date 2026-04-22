@@ -226,6 +226,55 @@ For each generated output:
 - **Check missing files first.** If the task touches layer_mapping, marma_coordinates,
   matrika_50, sacred_sites_india, vraja_parikrama, or dasha_meanings — those files are
   missing and need creating before the engine will work.
+- **BIHS register awareness.** When outreach, Thompson's work, or BIHS positioning
+  comes up — consult atlas-state SKILL.md §BIHS institutional context. Do not re-derive
+  the lineage framing each time.
+- **Confessional-methodology honesty.** Per atlas-state §Confessional-methodology stance:
+  Atlas is lineage-continuation-through-re-expression in the specific Bhaskara →
+  Bhaktisiddhanta → Thompson lineage, not orthodoxy-inheritance. Do not inflate the claim.
+- **Research papers are first-class.** Before working in a domain covered by research/
+  papers (yantra math, wave interference, chladni, planetary primes, vertebral anatomy),
+  read the relevant paper first. Do not re-derive findings already captured there.
+
+---
+
+## Research Layer (`research/`)
+
+First-class repo member as of April 2026. Contains active research papers
+in markdown. See atlas-state SKILL.md for full paper inventory. When task
+involves: yantra mathematics, wave interference, chladni geometry,
+planetary primes, vertebral correspondence, or Sri Yantra structural
+claims — read the relevant paper in `research/` before proposing new
+analysis. Papers cite each other; do not re-derive findings already
+captured there.
+
+---
+
+## Current Wiring State (April 22, 2026)
+
+### Fully wired (kernel + engine + route + data connected)
+- `kernel.field_state()` — the spine. Everything derives from this.
+- `/jyotish/*` routes (Apr 16-18) — Swiss Ephemeris via `jyotisha_engine.py`;
+  `jyotish_chart.html` mandala + wave field; 10 routes including /natal, /transits,
+  /wave_field, /calendar, /sound_state
+- Sound engine field loop — tanpura drone live, 15 OSC messages per tick,
+  wave field → gamak/tempo/partials/rhythm, breathing tanpura SynthDef
+- Oracle layer at `/oracle` — I Ching hexagram + Pasaka dice side by side
+- S-layer pages (s0-s6) — self-assembling from layer_composer
+- Plant/guild/agriculture — plants_bp (17 routes), live field integration
+- Corpus search — 140K chunks, vector store active
+
+### Partially wired
+- Kala calendar (atlas_330) — calls /jyotish/calendar for real ephemeris
+- Chladni yantra interference (s4-bloom.html, 54K) — built but unrouted
+- Vocal/rhythm pipeline — engines built, not exposed via routes
+- Wiki (atlas_330/apps/vidya) — routes registered, content in atlas_330
+
+### Known gaps per OPEN_QUESTIONS.md
+- natal.json personal data exposure
+- 3 S-layers without layer_composer content (S0, S2, S6)
+- HTML-in-core boundary violation (16 pages vs "JSON only" stated rule)
+- Krishna paksha Devi ordering unresolved
 
 ---
 

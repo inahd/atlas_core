@@ -1,0 +1,14 @@
+# Source: BPHS Ch. 3 (Graha Gunas). Degrees are sidereal (Lahiri).
+# Rahu/Ketu exaltation per Parashara convention — other traditions differ (Uttara Kalamrita gives Mithuna/Dhanu).
+# Mooltrikona ranges per BPHS; some sources give slightly different spans.
+# own_rashi_2 is blank where graha owns only one sign.
+graha,exaltation_rashi,exaltation_deg,debilitation_rashi,debilitation_deg,mooltrikona_rashi,mooltrikona_deg_start,mooltrikona_deg_end,own_rashi_1,own_rashi_2
+Sun,Mesha,10,Tula,10,Simha,0,20,Simha,
+Moon,Vrishabha,3,Vrishchika,3,Vrishabha,4,30,Karka,
+Mars,Makara,28,Karka,28,Mesha,0,12,Mesha,Vrishchika
+Mercury,Kanya,15,Meena,15,Kanya,16,20,Mithuna,Kanya
+Jupiter,Karka,5,Makara,5,Dhanu,0,10,Dhanu,Meena
+Venus,Meena,27,Kanya,27,Tula,0,15,Tula,Vrishabha
+Saturn,Tula,20,Mesha,20,Kumbha,0,20,Makara,Kumbha
+Rahu,Vrishabha,20,Vrishchika,20,Kumbha,0,30,Kumbha,
+Ketu,Vrishchika,20,Vrishabha,20,Simha,0,30,Simha,

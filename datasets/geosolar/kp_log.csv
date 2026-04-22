@@ -1,0 +1,555 @@
+datetime,kp,kp_class,solar_wind_speed,solar_wind_bz,flare_class,flare_active,xray_flux,seismic_count,max_magnitude,field_modifier,tithi,nakshatra,hora,vara,paksha
+2026-04-12T15:09:48,1.0,quiet,599.3,0.0,none,False,3.0879937185090967e-07,1,4.6,0.32,Ekādaśī,Śatabhiṣā,budha,Ravivāra,Kṛṣṇa
+2026-04-12T15:10:00,1.0,quiet,599.3,0.0,none,False,3.0879937185090967e-07,1,4.6,0.32,Ekādaśī,Śatabhiṣā,,Ravivāra ☀,Kṛṣṇa
+2026-04-12T15:20:04,1.0,quiet,644.9,0.0,none,False,3.378552833055437e-07,1,4.6,0.33,Ekādaśī,Śatabhiṣā,,Ravivāra ☀,Kṛṣṇa
+2026-04-12T15:51:45,1.0,quiet,573.1,0.0,none,False,4.533816877483332e-07,1,2.5,0.27,Ekādaśī,Śatabhiṣā,,Ravivāra ☀,Kṛṣṇa
+2026-04-12T16:01:48,1.0,quiet,563.2,0.0,none,False,4.6780692741776875e-07,2,4.0,0.306,Ekādaśī,Śatabhiṣā,,Ravivāra ☀,Kṛṣṇa
+2026-04-12T16:11:51,1.0,quiet,573.8,0.0,none,False,3.974089679559256e-07,2,4.5,0.317,Ekādaśī,Śatabhiṣā,,Ravivāra ☀,Kṛṣṇa
+2026-04-12T16:34:23,1.0,quiet,507.7,0.0,none,False,3.2835157526278635e-07,4,5.1,0.317,Ekādaśī,Śatabhiṣā,,Ravivāra ☀,Kṛṣṇa
+2026-04-12T16:44:28,1.0,quiet,569.9,0.0,none,False,3.3751413752725057e-07,4,5.1,0.329,Ekādaśī,Śatabhiṣā,,Ravivāra ☀,Kṛṣṇa
+2026-04-12T16:54:30,1.0,quiet,561.1,0.0,none,False,3.219674056254007e-07,4,5.1,0.326,Ekādaśī,Śatabhiṣā,,Ravivāra ☀,Kṛṣṇa
+2026-04-12T17:15:01,0.0,quiet,534.1,0.0,none,False,3.2928610949056747e-07,3,4.6,0.276,Ekādaśī,Śatabhiṣā,,Ravivāra ☀,Kṛṣṇa
+2026-04-12T17:25:03,0.0,quiet,542.4,0.0,none,False,3.4544851246209873e-07,4,4.6,0.278,Ekādaśī,Śatabhiṣā,,Ravivāra ☀,Kṛṣṇa
+2026-04-12T17:35:08,0.0,quiet,555.5,0.0,none,False,3.5356671901354275e-07,4,4.6,0.281,Ekādaśī,Śatabhiṣā,,Ravivāra ☀,Kṛṣṇa
+2026-04-12T17:45:12,0.0,quiet,507.7,0.0,none,False,4.175817878149246e-07,1,4.6,0.275,Ekādaśī,Śatabhiṣā,,Ravivāra ☀,Kṛṣṇa
+2026-04-12T17:55:17,0.0,quiet,544.8,0.0,none,False,3.6181231166665384e-07,1,4.6,0.279,Ekādaśī,Śatabhiṣā,,Ravivāra ☀,Kṛṣṇa
+2026-04-13T07:06:38,0.0,quiet,497.8,0.0,none,False,3.155867887016939e-07,1,2.5,0.216,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T07:16:42,0.0,quiet,500.3,0.0,none,False,3.150014435959747e-07,0,0,0.154,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T07:26:46,0.0,quiet,486.0,0.0,none,False,3.491219615625596e-07,0,0,0.153,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T07:36:50,0.0,quiet,505.5,0.0,none,False,9.15214570795797e-07,0,0,0.173,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T07:46:55,0.0,quiet,500.8,0.0,C,False,1.010710889204347e-06,0,0,0.174,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T07:56:56,1.0,quiet,501.5,0.0,none,False,7.033391398181266e-07,1,4.4,0.311,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T08:06:58,0.0,quiet,510.5,0.0,none,False,5.586658744505257e-07,0,0,0.166,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T08:16:59,0.0,quiet,504.7,0.0,none,False,5.001018621442199e-07,0,0,0.163,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T08:27:04,0.0,quiet,503.9,0.0,none,False,4.169838803136372e-07,0,0,0.159,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T08:37:10,0.0,quiet,499.5,0.0,none,False,3.635600762663671e-07,0,0,0.156,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T08:47:11,0.0,quiet,500.4,0.0,none,False,3.273337938480836e-07,1,4.4,0.264,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T08:47:55,0.0,quiet,501.5,0.0,none,False,3.273337938480836e-07,1,4.4,0.265,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T08:57:56,0.0,quiet,492.0,0.0,none,False,4.950953211846354e-07,1,4.4,0.27,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T09:07:57,0.0,quiet,495.5,0.0,none,False,3.09971909473461e-07,1,4.4,0.263,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T09:17:58,0.0,quiet,491.8,0.0,none,False,2.968172054806928e-07,1,4.4,0.261,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T09:19:55,0.0,quiet,491.7,0.0,none,False,2.8805450824620493e-07,1,4.4,0.261,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T09:29:56,0.0,quiet,489.3,0.0,none,False,2.588209895293403e-07,0,0,0.148,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T09:39:57,0.0,quiet,483.2,0.0,none,False,2.8233867510607524e-07,0,0,0.149,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T09:44:13,0.0,quiet,490.1,0.0,none,False,2.886102379306976e-07,0,0,0.15,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T09:54:14,0.0,quiet,473.0,0.0,none,False,3.1973942782315135e-07,1,4.7,0.266,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T10:04:15,0.0,quiet,499.2,0.0,none,False,3.5140882914674876e-07,0,0,0.155,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T10:14:17,0.0,quiet,475.4,0.0,none,False,3.152468934786157e-07,0,0,0.149,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T10:52:26,0.0,quiet,492.3,0.0,none,False,2.9847157634321775e-07,0,0,0.151,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T11:02:27,0.0,quiet,478.8,0.0,none,False,3.2351360346183355e-07,0,0,0.15,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T11:12:29,0.0,quiet,494.3,0.0,none,False,3.1865963023847144e-07,0,0,0.153,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T11:22:30,0.0,quiet,519.8,0.0,none,False,3.355585533881822e-07,0,0,0.158,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T11:32:31,0.0,quiet,521.8,0.0,none,False,3.046597214506619e-07,0,0,0.157,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T11:42:32,0.0,quiet,491.0,0.0,none,False,3.836920257072052e-07,0,0,0.155,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T11:52:37,0.0,quiet,461.1,0.0,none,False,3.007913278452179e-07,0,0,0.146,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T12:02:40,0.0,quiet,493.0,0.0,none,False,2.772522975647007e-07,0,0,0.15,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T12:12:44,0.0,quiet,505.0,0.0,none,False,2.754291301698686e-07,0,0,0.152,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T12:29:44,0.0,quiet,509.3,0.0,none,False,2.6413110276735097e-07,1,2.5,0.215,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T12:39:48,0.0,quiet,489.9,0.0,none,False,3.55287937736648e-07,1,2.5,0.216,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T12:49:52,0.0,quiet,486.5,0.0,none,False,2.8390073225637025e-07,1,2.5,0.212,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T12:59:56,0.0,quiet,489.3,0.0,none,False,2.552577313963411e-07,2,3.2,0.228,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T13:09:59,0.0,quiet,499.7,0.0,none,False,2.5257378410969977e-07,2,3.2,0.23,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T13:20:03,0.0,quiet,465.7,0.0,none,False,2.6791565232997527e-07,1,3.2,0.224,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T14:41:22,0.0,quiet,506.7,0.0,none,False,3.5499556361173745e-07,2,4.4,0.267,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T14:51:26,0.0,quiet,494.4,0.0,none,False,3.7040175016045396e-07,2,4.4,0.265,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T15:01:30,0.0,quiet,511.5,0.0,none,False,3.875937011343922e-07,0,0,0.159,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T15:32:33,0.0,quiet,468.4,0.0,none,False,3.1970617442311777e-07,3,4.6,0.263,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T15:42:35,0.0,quiet,471.3,0.0,none,False,3.1737317840452306e-07,2,4.6,0.263,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T15:52:36,1.0,quiet,470.2,0.0,none,False,3.2322557785846584e-07,1,4.6,0.297,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T16:02:37,1.0,quiet,479.6,0.0,none,False,3.134161943307845e-07,0,0,0.183,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T16:12:38,0.0,quiet,469.8,0.0,none,False,3.0649189852738346e-07,0,0,0.148,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T16:22:40,0.0,quiet,463.6,0.0,none,False,3.227321485610446e-07,1,3.2,0.227,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T16:32:41,0.0,quiet,467.2,0.0,none,False,3.2811348660288786e-07,1,3.2,0.228,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T16:32:52,0.0,quiet,467.2,0.0,none,False,3.2811348660288786e-07,1,3.2,0.228,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T16:42:53,0.0,quiet,471.2,0.0,none,False,3.3778317742871877e-07,0,0,0.149,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T16:44:48,0,unknown,0,0,none,False,0,0,0,0.0,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T16:45:25,0.0,quiet,457.3,0.0,none,False,3.3761685358513205e-07,0,0,0.147,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T16:51:12,0.0,quiet,469.5,0.0,none,False,3.289421215413313e-07,0,0,0.149,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T17:01:13,0.0,quiet,463.8,0.0,none,False,3.3404367627554166e-07,0,0,0.148,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T17:11:14,0.0,quiet,451.2,0.0,none,False,3.346047776631167e-07,0,0,0.146,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T21:52:09,2.0,unsettled,475.8,0.0,none,False,3.7980808542670275e-07,13,5.7,0.362,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T22:02:13,1.0,quiet,509.3,0.0,none,False,3.410726776564843e-07,16,5.5,0.328,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T22:12:18,2.0,unsettled,465.7,0.0,none,False,3.463109976564738e-07,17,5.5,0.353,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T22:17:08,1.0,quiet,459.7,0.0,none,False,3.4842446439142805e-07,18,5.5,0.319,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T22:27:17,2.0,unsettled,443.6,0.0,none,False,3.4175613450315723e-07,20,5.5,0.349,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T22:37:19,2.0,unsettled,443.6,0.0,none,False,3.3520981901347113e-07,15,3.4,0.296,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T22:47:23,1.0,quiet,435.0,0.0,none,False,3.213438048987882e-07,8,3.4,0.26,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T22:57:27,1.0,quiet,448.0,0.0,none,False,3.2754576295701554e-07,5,3.4,0.263,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T23:07:31,0.0,quiet,446.6,0.0,none,False,3.040543674615037e-07,5,3.0,0.218,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T23:17:34,0.0,quiet,455.6,0.0,none,False,3.0221011115827423e-07,8,5.5,0.282,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-13T23:27:35,0.0,quiet,433.0,0.0,none,False,3.076820291880722e-07,7,5.5,0.278,Dvādaśī,Pūrva Bhādrapadā,,Somavāra ☽,Kṛṣṇa
+2026-04-14T07:29:45,0.0,quiet,430.5,0.0,none,False,2.962587757338042e-07,1,3.3,0.222,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T07:39:49,1.0,quiet,402.6,0.0,none,False,2.945236872164969e-07,0,0,0.168,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T07:40:02,1.0,quiet,425.4,0.0,none,False,2.941344234841381e-07,0,0,0.172,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T07:41:02,1.0,quiet,425.4,0.0,none,False,2.983521767419006e-07,0,0,0.172,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T07:51:03,1.0,quiet,424.0,0.0,none,False,3.0675437301397324e-07,0,0,0.172,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T08:01:04,1.0,quiet,408.9,0.0,none,False,3.3325702020192693e-07,0,0,0.171,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T08:11:05,0.0,quiet,414.8,0.0,none,False,2.9338315243876423e-07,0,0,0.136,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T08:21:06,0.0,quiet,418.2,0.0,none,False,2.9700822778977454e-07,0,0,0.137,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T08:31:10,0.0,quiet,430.5,0.0,none,False,2.943457104720437e-07,1,2.6,0.204,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T08:41:57,0,unknown,430.4,0.0,none,False,2.879251894682966e-07,1,2.6,0.204,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T08:51:59,1.0,quiet,429.9,0.0,none,False,3.1709461723039567e-07,1,2.6,0.239,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T09:02:00,1.0,quiet,452.0,0.0,none,False,2.9756353114862577e-07,2,5.2,0.307,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T09:12:01,1.0,quiet,461.7,0.0,none,False,3.0914739568288496e-07,2,4.7,0.297,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T09:22:01,1.0,quiet,478.1,0.0,none,False,3.4790573977261374e-07,2,4.7,0.302,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T09:32:02,1.0,quiet,477.2,0.0,none,False,3.389825451449724e-07,1,4.7,0.302,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T09:42:03,1.0,quiet,479.4,0.0,none,False,3.402110735351016e-07,1,4.7,0.302,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T09:52:04,1.0,quiet,479.9,0.0,none,False,3.708704809923802e-07,0,0,0.186,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T10:02:05,1.0,quiet,478.1,0.0,none,False,3.496315059692279e-07,0,0,0.185,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T10:12:06,1.0,quiet,468.0,0.0,none,False,3.402668653507135e-07,0,0,0.182,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T10:22:07,1.0,quiet,455.9,0.0,none,False,3.424767385240557e-07,0,0,0.18,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T10:32:08,1.0,quiet,439.8,0.0,none,False,3.4322266628805664e-07,0,0,0.177,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T10:42:09,1.0,quiet,445.7,0.0,none,False,3.509956911784684e-07,0,0,0.179,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T10:52:10,1.0,quiet,445.7,0.0,none,False,4.4673780053017254e-07,0,0,0.183,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T11:02:11,1.0,quiet,460.1,0.0,none,False,4.1382310200788197e-07,0,0,0.184,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T11:12:12,1.0,quiet,451.1,0.0,none,False,0,0,0,0.118,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T11:22:16,1.0,quiet,452.4,0.0,none,False,4.3578725694715104e-07,0,0,0.184,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T11:32:19,1.0,quiet,454.6,0.0,none,False,3.4185470099146187e-07,0,0,0.18,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T11:42:23,1.0,quiet,442.3,0.0,none,False,3.014593232819607e-07,0,0,0.175,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T11:52:28,1.0,quiet,461.2,0.0,none,False,2.995153352003399e-07,0,0,0.179,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T12:02:31,1.0,quiet,443.0,0.0,none,False,3.015607603629178e-07,0,0,0.176,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T12:12:35,1.0,quiet,458.5,0.0,none,False,3.2159400120690407e-07,0,0,0.18,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T12:22:41,1.0,quiet,452.6,0.0,none,False,3.2719623277444043e-07,0,0,0.179,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T12:32:45,1.0,quiet,435.4,0.0,none,False,3.122297584923217e-07,0,0,0.175,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T12:42:51,1.0,quiet,450.4,0.0,none,False,3.082766397710657e-07,0,0,0.177,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T12:52:54,1.0,quiet,438.4,0.0,none,False,3.136093482680735e-07,0,0,0.175,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T13:02:55,1.0,quiet,442.7,0.0,none,False,3.0734526035303134e-07,2,4.6,0.291,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T13:12:56,1.0,quiet,429.6,0.0,none,False,3.1263792266145174e-07,2,4.6,0.289,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T13:22:58,1.0,quiet,431.8,0.0,none,False,2.9123239642103727e-07,2,4.6,0.288,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T14:09:28,0.0,quiet,429.9,0.0,none,False,3.502605352423416e-07,0,0,0.142,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T14:19:29,0.0,quiet,419.2,0.0,none,False,3.6933474234501773e-07,1,2.9,0.214,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T14:29:54,0.0,quiet,0,0,none,False,3.3891032558130973e-07,1,2.9,0.134,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T14:39:59,0.0,quiet,411.3,0.0,none,False,3.5295161637804995e-07,1,2.9,0.212,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T14:50:04,0.0,quiet,398.5,0.0,none,False,3.932712502319191e-07,1,2.9,0.211,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T15:00:09,0.0,quiet,424.7,0.0,none,False,4.072184651704447e-07,3,3.3,0.227,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T15:10:12,0.0,quiet,402.2,0.0,none,False,4.5551112748398737e-07,2,3.3,0.224,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T15:20:13,0.0,quiet,416.9,0.0,none,False,3.6781628409698897e-07,2,3.3,0.223,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T15:30:15,0.0,quiet,412.5,0.0,none,False,3.6323314134278917e-07,3,3.3,0.222,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T15:40:16,0.0,quiet,406.0,0.0,none,False,3.671246702197095e-07,3,3.3,0.221,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T15:50:17,0.0,quiet,414.6,0.0,none,False,3.5867174119630363e-07,3,4.3,0.247,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T20:21:23,0.0,quiet,410.4,0.0,none,False,2.874217273074464e-07,0,0,0.135,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T20:31:23,0.0,quiet,385.9,0.0,none,False,3.0898800673639926e-07,0,0,0.132,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T20:41:25,0.0,quiet,388.3,0.0,none,False,3.177149778821331e-07,0,0,0.133,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T20:51:26,0.0,quiet,390.2,0.0,none,False,3.313135437110759e-07,0,0,0.134,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T21:01:27,0.0,quiet,393.1,0.0,none,False,3.485466777419788e-07,0,0,0.135,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T21:11:28,0.0,quiet,395.7,0.0,none,False,3.810918087765458e-07,0,0,0.137,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T21:21:29,0.0,quiet,399.4,0.0,none,False,3.758530624509149e-07,0,0,0.138,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T21:31:30,0.0,quiet,406.9,0.0,none,False,3.865754365506291e-07,0,0,0.14,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T21:41:34,0.0,quiet,405.2,0.0,none,False,3.8107626210148737e-07,1,4.3,0.247,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T21:51:36,0.0,quiet,410.9,0.0,none,False,3.819574203589582e-07,1,4.3,0.248,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T22:01:40,1.0,quiet,400.0,0.0,none,False,4.154898078922997e-07,1,4.3,0.281,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T22:11:43,0.0,quiet,412.2,0.0,none,False,4.1699018993313075e-07,1,4.3,0.25,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T22:21:47,0.0,quiet,397.2,0.0,none,False,4.243245257384842e-07,0,0,0.14,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T22:31:52,0.0,quiet,412.6,0.0,none,False,4.3455213472043397e-07,0,0,0.143,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T22:41:55,0.0,quiet,415.3,0.0,none,False,5.53024790406198e-07,1,4.9,0.27,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T22:51:58,0.0,quiet,411.9,0.0,none,False,6.04016520355799e-07,1,4.9,0.271,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T23:02:03,0.0,quiet,412.0,0.0,none,False,4.7637533384659037e-07,1,4.9,0.267,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T23:12:08,0.0,quiet,398.3,0.0,none,False,3.993744712715852e-07,0,0,0.139,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T23:22:11,0.0,quiet,398.5,0.0,none,False,4.0539390511185047e-07,1,5.0,0.264,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T23:32:11,0.0,quiet,381.0,0.0,none,False,3.9355595049528347e-07,1,5.0,0.26,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T23:42:13,0.0,quiet,402.9,0.0,none,False,3.48780190506659e-07,0,0,0.137,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-14T23:52:14,0.0,quiet,377.5,0.0,none,False,3.283814464793977e-07,0,0,0.131,Trayodaśī,Uttara Bhādrapadā,,Maṅgalavāra ♂,Kṛṣṇa
+2026-04-15T00:02:15,0.0,quiet,378.1,0.0,none,False,3.3300577229056216e-07,0,0,0.132,Trayodaśī,Uttara Bhādrapadā,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T00:12:16,0.0,quiet,403.0,0.0,none,False,3.508458519263513e-07,0,0,0.137,Trayodaśī,Uttara Bhādrapadā,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T00:22:17,0.0,quiet,405.7,0.0,none,False,3.5762766970037774e-07,0,0,0.138,Trayodaśī,Uttara Bhādrapadā,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T00:32:18,0.0,quiet,395.1,0.0,none,False,3.492210680633434e-07,1,4.3,0.243,Trayodaśī,Uttara Bhādrapadā,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T00:42:19,0.0,quiet,367.8,0.0,none,False,3.980784413215588e-07,1,4.3,0.24,Trayodaśī,Uttara Bhādrapadā,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T00:52:20,0.0,quiet,388.2,0.0,none,False,7.852383987483336e-07,1,4.3,0.256,Trayodaśī,Uttara Bhādrapadā,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T01:02:20,0.0,quiet,396.8,0.0,none,False,6.11728808053158e-07,0,0,0.146,Trayodaśī,Uttara Bhādrapadā,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T01:12:22,1.0,quiet,400.2,0.0,none,False,7.617740038767806e-07,0,0,0.184,Trayodaśī,Uttara Bhādrapadā,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T01:22:22,1.0,quiet,400.2,0.0,none,False,8.802258548712416e-07,0,0,0.186,Trayodaśī,Uttara Bhādrapadā,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T01:32:24,1.0,quiet,390.1,0.0,none,False,7.401944799312332e-07,0,0,0.181,Trayodaśī,Uttara Bhādrapadā,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T01:42:25,1.0,quiet,387.1,0.0,none,False,6.629969107052602e-07,0,0,0.179,Trayodaśī,Uttara Bhādrapadā,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T01:52:26,1.0,quiet,389.8,0.0,none,False,5.833757654727378e-07,0,0,0.177,Trayodaśī,Uttara Bhādrapadā,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T02:02:27,1.0,quiet,370.4,0.0,none,False,5.759638384006394e-07,0,0,0.173,Trayodaśī,Uttara Bhādrapadā,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T02:12:29,0.0,quiet,374.7,0.0,none,False,4.979143568561994e-07,0,0,0.138,Trayodaśī,Uttara Bhādrapadā,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T02:22:31,0.0,quiet,366.7,0.0,none,False,4.5514812541114225e-07,0,0,0.135,Trayodaśī,Uttara Bhādrapadā,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T02:32:36,0.0,quiet,379.9,0.0,none,False,4.278828953374614e-07,0,0,0.136,Trayodaśī,Uttara Bhādrapadā,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T02:42:42,1.0,quiet,359.9,0.0,none,False,4.154955774993141e-07,0,0,0.166,Trayodaśī,Uttara Bhādrapadā,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T02:52:48,0.0,quiet,363.6,0.0,none,False,3.9089971437533677e-07,0,0,0.132,Trayodaśī,Uttara Bhādrapadā,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T03:02:53,1.0,quiet,393.5,0.0,none,False,4.327546321292175e-07,0,0,0.173,Trayodaśī,Uttara Bhādrapadā,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T03:12:59,1.0,quiet,356.0,0.0,none,False,4.874679575550545e-07,0,0,0.168,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T03:23:04,1.0,quiet,385.4,0.0,none,False,4.315824924105982e-07,1,5.7,0.313,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T03:33:08,1.0,quiet,384.2,0.0,none,False,4.029278386497026e-07,1,5.7,0.312,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T03:43:10,1.0,quiet,380.0,0.0,none,False,5.963738090031256e-07,1,5.7,0.318,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T03:53:11,1.0,quiet,369.0,0.0,none,False,8.104768767225323e-07,1,5.7,0.321,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T04:03:12,0.0,quiet,370.1,0.0,none,False,4.0370366605202435e-07,0,0,0.134,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T04:13:13,1.0,quiet,377.3,0.0,none,False,4.053898123856925e-07,0,0,0.168,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T05:32:05,0.0,quiet,376.8,0.0,none,False,3.747962011857453e-07,0,0,0.134,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T05:42:08,0.0,quiet,366.3,0.0,none,False,3.772999832563073e-07,0,0,0.132,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T05:52:10,0.0,quiet,372.6,0.0,none,False,3.881070256284147e-07,0,0,0.133,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T06:02:13,0.0,quiet,376.9,0.0,none,False,3.7777238048875006e-07,0,0,0.134,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T06:12:17,0.0,quiet,370.6,0.0,none,False,3.4920756775136397e-07,0,0,0.131,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T06:22:22,0.0,quiet,378.6,0.0,none,False,3.312481169359671e-07,0,0,0.132,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T06:32:26,0.0,quiet,357.7,0.0,none,False,3.3297499157924904e-07,3,4.4,0.238,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T06:42:31,0.0,quiet,360.9,0.0,none,False,3.3236858598684194e-07,3,4.4,0.239,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T06:52:35,0.0,quiet,366.6,0.0,none,False,3.1961988611328707e-07,3,4.4,0.239,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T07:02:38,0.0,quiet,376.8,0.0,none,False,3.7098354255249433e-07,3,4.4,0.243,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T07:12:41,0.0,quiet,373.7,0.0,none,False,3.292695964773884e-07,3,4.4,0.241,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T07:32:19,0.0,quiet,379.2,0.0,none,False,3.538772261890699e-07,0,0,0.133,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T07:42:23,0,unknown,393.2,0.0,none,False,3.331673212869646e-07,0,0,0.135,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T07:52:27,1.0,quiet,379.2,0.0,none,False,3.2369175073654333e-07,0,0,0.165,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T08:02:30,0.0,quiet,368.9,0.0,none,False,3.2923344406299293e-07,0,0,0.13,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T08:12:35,0.0,quiet,381.9,0.0,none,False,3.729991249201703e-07,0,0,0.134,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T08:22:39,0.0,quiet,372.0,0.0,none,False,3.377177790753194e-07,0,0,0.131,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T08:32:44,0.0,quiet,389.5,0.0,none,False,3.33136313201976e-07,0,0,0.134,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T08:42:49,0.0,quiet,380.7,0.0,none,False,3.3431174983888923e-07,0,0,0.132,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T08:52:53,0.0,quiet,358.1,0.0,none,False,3.3723301839927444e-07,0,0,0.128,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T09:02:55,0.0,quiet,382.7,0.0,none,False,3.283256262420764e-07,1,3.2,0.212,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T09:12:59,0.0,quiet,398.5,0.0,none,False,3.258537333294953e-07,1,3.2,0.215,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T09:23:00,0.0,quiet,391.1,0.0,none,False,3.0937837891542586e-07,1,3.2,0.213,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T09:33:40,0,unknown,0,0,none,False,0,0,0,0.0,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T09:43:45,0.0,quiet,382.6,0.0,none,False,2.864798887003417e-07,1,3.2,0.21,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T09:53:49,0.0,quiet,388.0,0.0,none,False,2.8579023592101294e-07,1,3.2,0.211,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T10:03:53,0.0,quiet,384.4,0.0,none,False,3.0711959198015393e-07,0,0,0.132,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T10:13:57,0.0,quiet,381.1,0.0,none,False,3.138544286684919e-07,0,0,0.131,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T10:23:59,0.0,quiet,392.9,0.0,none,False,3.2674503813723277e-07,0,0,0.134,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T10:34:00,0.0,quiet,374.7,0.0,none,False,3.721521295574348e-07,0,0,0.133,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T10:44:00,0.0,quiet,384.6,0.0,none,False,3.2404850003331376e-07,0,0,0.133,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T10:54:02,0.0,quiet,374.3,0.0,none,False,3.5042430113207956e-07,1,3.5,0.219,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T11:04:02,0.0,quiet,356.0,0.0,none,False,3.1001346201264823e-07,2,3.5,0.214,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T11:14:03,0.0,quiet,379.4,0.0,none,False,3.184900378983002e-07,2,3.5,0.219,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T11:24:04,1.0,quiet,352.3,0.0,none,False,3.158629340305197e-07,2,3.5,0.247,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T11:34:06,1.0,quiet,387.6,0.0,none,False,3.384315050425357e-07,2,3.5,0.255,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T11:44:07,1.0,quiet,380.0,0.0,none,False,3.1448388426724705e-07,2,3.2,0.244,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T11:54:07,1.0,quiet,353.2,0.0,none,False,2.9584890626210836e-07,1,2.5,0.221,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T12:04:09,1.0,quiet,353.5,0.0,none,False,3.059689106521546e-07,0,0,0.159,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T12:14:10,1.0,quiet,354.9,0.0,none,False,3.4270303217454057e-07,0,0,0.161,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T12:24:11,1.0,quiet,341.0,0.0,none,False,3.2790129012028046e-07,1,3.8,0.253,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T12:34:12,0.0,quiet,340.1,0.0,none,False,3.165320094922208e-07,1,3.8,0.219,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T12:44:14,1.0,quiet,374.2,0.0,none,False,3.2050223808255396e-07,1,3.8,0.259,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T12:54:14,1.0,quiet,376.9,0.0,none,False,3.225138698326191e-07,1,3.8,0.259,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T13:04:16,1.0,quiet,365.7,0.0,none,False,3.578490179734217e-07,0,0,0.164,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T13:34:30,1.0,quiet,379.9,0.0,none,False,3.037108342596184e-07,0,0,0.164,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T13:44:31,1.0,quiet,359.5,0.0,none,False,3.299892910035851e-07,2,4.7,0.279,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T13:54:33,1.0,quiet,360.8,0.0,none,False,3.1890849072624405e-07,2,4.7,0.279,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T14:04:34,0.0,quiet,363.2,0.0,none,False,3.467048657057603e-07,2,4.7,0.247,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T14:14:45,0.0,quiet,363.8,0.0,none,False,3.342498473557498e-07,1,3.4,0.214,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T14:24:48,0.0,quiet,375.2,0.0,none,False,3.590464814351435e-07,1,3.4,0.218,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T14:34:52,0.0,quiet,387.4,0.0,none,False,3.5515421359377797e-07,1,3.4,0.22,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T14:44:56,0.0,quiet,378.5,0.0,none,False,3.3196354820574925e-07,0,0,0.132,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T14:54:58,0.0,quiet,392.2,0.0,none,False,4.238961537339492e-07,0,0,0.139,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T15:05:01,0.0,quiet,385.5,0.0,none,False,3.883718591168872e-07,0,0,0.136,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T15:15:04,0.0,quiet,363.5,0.0,none,False,3.7881011394347297e-07,0,0,0.131,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T15:25:09,0.0,quiet,384.9,0.0,none,False,3.617246875364799e-07,0,0,0.135,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T15:35:11,0.0,quiet,0.0,0.0,none,False,4.297906457395584e-07,0,0,0.065,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T15:45:13,0.0,quiet,361.9,0.0,none,False,4.0244543697554036e-07,0,0,0.132,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T15:55:17,0.0,quiet,398.4,0.0,none,False,3.889940671797376e-07,1,3.4,0.223,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-15T16:05:21,1.0,quiet,399.9,0.0,none,False,3.6147017112853064e-07,1,3.4,0.256,Caturdaśī,Revatī,,Budhavāra ☿,Kṛṣṇa
+2026-04-16T07:01:22,0.0,quiet,339.5,0.0,none,False,4.1728185351530556e-07,0,0,0.128,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T07:09:25,0,unknown,0,0,none,False,0,0,0,0.0,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T07:19:29,0.0,quiet,342.8,0.0,none,False,7.624882414347667e-07,0,0,0.14,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T07:29:31,1.0,quiet,328.3,0.0,none,False,6.517631732094742e-07,0,0,0.167,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T07:39:36,2.0,unsettled,329.2,0.0,none,False,6.343595373436983e-07,0,0,0.2,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T07:49:40,0.0,quiet,337.4,0.0,none,False,6.014129780851363e-07,0,0,0.134,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T07:59:43,1.0,quiet,341.7,0.0,none,False,0,0,0,0.097,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T08:09:47,0.0,quiet,337.9,0.0,none,False,5.302318868416478e-07,0,0,0.132,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T08:19:50,0.0,quiet,343.6,0.0,none,False,8.031802849473024e-07,0,0,0.141,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T08:29:54,0.0,quiet,339.0,0.0,C,False,1.7453695591029827e-06,0,0,0.153,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T08:39:57,0.0,quiet,329.2,0.0,C,False,1.2234744417582988e-06,0,0,0.145,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T08:49:58,0.0,quiet,339.2,0.0,none,False,7.37255845706386e-07,0,0,0.138,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T09:00:04,0.0,quiet,333.4,0.0,none,False,5.686931103809911e-07,0,0,0.133,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T09:10:06,0.0,quiet,354.7,0.0,none,False,9.497878750153177e-07,0,0,0.146,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T09:15:25,0.0,quiet,355.6,0.0,C,False,1.083054030459607e-06,0,0,0.148,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T09:25:29,0.0,quiet,358.7,0.0,none,False,6.908138061589852e-07,0,0,0.141,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T09:28:06,0.0,quiet,364.6,0.0,none,False,6.639917842221621e-07,0,0,0.141,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T09:35:03,0.0,quiet,353.7,0.0,none,False,5.563093168348132e-07,1,4.8,0.256,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T09:45:04,0.0,quiet,341.9,0.0,none,False,3.9521418671029096e-07,0,0,0.128,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T09:55:06,0.0,quiet,324.8,0.0,none,False,4.699444104971917e-07,2,6.0,0.278,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T09:58:04,0.0,quiet,339.8,0.0,none,False,4.391942240999924e-07,2,6.0,0.279,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T10:08:05,0.0,quiet,343.8,0.0,none,False,6.345584324662923e-07,2,6.0,0.287,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T10:13:22,0.0,quiet,344.6,0.0,none,False,5.762481123383623e-07,2,6.0,0.285,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T10:23:26,0.0,quiet,355.0,0.0,none,False,4.4021422240803076e-07,2,6.0,0.282,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T10:33:30,0.0,quiet,348.2,0.0,none,False,4.799327371074469e-07,1,2.7,0.2,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T10:43:36,0.0,quiet,341.5,0.0,none,False,5.02492071063898e-07,1,2.7,0.2,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T10:44:46,0.0,quiet,355.1,0.0,none,False,5.064257493359037e-07,1,2.7,0.202,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T10:54:50,0.0,quiet,344.5,0.0,none,False,5.457695806398988e-07,0,0,0.134,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T11:04:56,0.0,quiet,347.2,0.0,none,False,4.94729590627685e-07,0,0,0.133,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T11:14:58,0.0,quiet,359.3,0.0,none,False,0,1,5.0,0.192,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T11:19:04,0.0,quiet,359.2,0.0,none,False,4.2777239173119597e-07,1,5.0,0.258,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T11:29:05,0.0,quiet,345.2,0.0,none,False,4.238734447881143e-07,1,5.0,0.255,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T11:39:06,0.0,quiet,339.6,0.0,none,False,4.1233872138946026e-07,1,5.0,0.253,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T11:49:07,0.0,quiet,326.7,0.0,none,False,4.4075329697079724e-07,0,0,0.127,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T11:59:08,0.0,quiet,329.9,0.0,none,False,4.1249396076636913e-07,0,0,0.126,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T12:09:08,0,unknown,0,0,none,False,0,0,0,0.0,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T12:19:08,0,unknown,0,0,none,False,0,0,0,0.0,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T12:31:24,0,unknown,0,0,none,False,0,0,0,0.0,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T12:42:03,0,unknown,0,0,none,False,0,0,0,0.0,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T12:52:03,0,unknown,0,0,none,False,0,0,0,0.0,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T13:02:14,0.0,quiet,344.0,0.0,none,False,4.671900910580007e-07,0,0,0.131,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T13:12:16,0.0,quiet,342.9,0.0,none,False,4.933557420372381e-07,0,0,0.132,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T13:22:37,0.0,quiet,342.7,0.0,none,False,4.6755397420383815e-07,0,0,0.131,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T13:32:50,0.0,quiet,335.9,0.0,none,False,4.188120499293291e-07,0,0,0.128,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T13:35:11,0.0,quiet,337.1,0.0,none,False,4.116783429708448e-07,0,0,0.128,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T13:39:03,0.0,quiet,335.9,0.0,none,False,4.114555451906199e-07,0,0,0.128,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T14:23:01,0.0,quiet,345.7,0.0,none,False,3.921695963526872e-07,0,0,0.129,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T14:33:02,0.0,quiet,337.8,0.0,none,False,3.8603721463914553e-07,2,4.5,0.239,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T14:43:03,0.0,quiet,336.1,0.0,none,False,3.6244404100216343e-07,2,4.5,0.238,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T14:53:04,0.0,quiet,338.6,0.0,none,False,4.137981477470021e-07,3,4.5,0.241,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T15:03:05,0.0,quiet,353.0,0.0,none,False,4.124108556879946e-07,4,4.5,0.243,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T15:13:06,0.0,quiet,352.4,0.0,none,False,4.0119530808624404e-07,3,3.3,0.213,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T15:23:07,0.0,quiet,343.8,0.0,none,False,4.499366355048551e-07,3,3.3,0.213,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T15:33:08,0.0,quiet,338.3,0.0,none,False,4.272189073617483e-07,2,3.4,0.214,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T15:39:48,0.0,quiet,336.4,0.0,none,False,4.140031535371236e-07,1,2.9,0.2,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T15:50:00,0.0,quiet,341.1,0.0,none,False,4.5712917540186027e-07,2,4.4,0.24,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T15:53:54,0.0,quiet,336.7,0.0,none,False,4.6770426820330613e-07,1,4.4,0.24,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T16:03:54,0,unknown,0,0,none,False,0,0,0,0.0,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T16:14:03,1.0,quiet,338.0,0.0,none,False,4.6405912712543795e-07,1,4.4,0.273,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T16:16:55,2.0,unsettled,347.9,0.0,none,False,4.4327231307761394e-07,2,4.7,0.315,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T16:27:07,2.0,unsettled,342.1,0.0,none,False,4.2220517570967786e-07,1,4.7,0.313,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T16:27:48,2.0,unsettled,342.1,0.0,none,False,4.2220517570967786e-07,1,4.7,0.313,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T16:38:02,2.0,unsettled,349.0,0.0,none,False,4.2889311657745566e-07,1,4.7,0.315,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T16:48:04,2.0,unsettled,352.3,0.0,none,False,5.869067081221147e-07,2,4.7,0.321,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T22:32:44,0.0,quiet,330.1,0.0,none,False,5.453589437820483e-07,0,0,0.131,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T22:42:46,0.0,quiet,330.4,0.0,none,False,7.353716569014068e-07,0,0,0.137,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T22:52:52,0.0,quiet,328.3,0.0,none,False,6.623048420806299e-07,0,0,0.134,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T23:02:58,0.0,quiet,342.1,0.0,none,False,5.37493235697184e-07,0,0,0.133,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T23:13:02,0.0,quiet,296.5,0.0,none,False,4.921044478578551e-07,0,0,0.123,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T23:23:16,0.0,quiet,300.1,0.0,none,False,4.4745516447619593e-07,0,0,0.122,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T23:33:24,0.0,quiet,329.6,0.0,none,False,4.518487912719138e-07,0,0,0.128,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T23:43:25,0.0,quiet,328.5,0.0,none,False,4.0943839962892525e-07,0,0,0.126,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-16T23:53:26,0.0,quiet,299.6,0.0,none,False,4.0899158193496987e-07,0,0,0.121,Amāvāsyā,Aśvinī,,Guruvāra ♃,Kṛṣṇa
+2026-04-17T00:03:30,0.0,quiet,335.6,0.0,none,False,4.1191466948475863e-07,0,0,0.128,Amāvāsyā,Aśvinī,,Śukravāra ♀,Kṛṣṇa
+2026-04-17T00:13:33,0.0,quiet,344.1,0.0,none,False,4.4355959971653647e-07,0,0,0.13,Amāvāsyā,Aśvinī,,Śukravāra ♀,Kṛṣṇa
+2026-04-17T00:23:34,0.0,quiet,332.7,0.0,none,False,4.760027536576672e-07,0,0,0.129,Amāvāsyā,Aśvinī,,Śukravāra ♀,Kṛṣṇa
+2026-04-17T00:33:35,0.0,quiet,349.0,0.0,none,False,5.494712809195335e-07,0,0,0.135,Amāvāsyā,Aśvinī,,Śukravāra ♀,Kṛṣṇa
+2026-04-17T00:43:45,0.0,quiet,316.0,0.0,C,False,3.872454271913739e-06,0,0,0.163,Amāvāsyā,Aśvinī,,Śukravāra ♀,Kṛṣṇa
+2026-04-17T00:53:58,0.0,quiet,318.7,0.0,C,False,3.641042439994635e-06,0,0,0.162,Amāvāsyā,Aśvinī,,Śukravāra ♀,Kṛṣṇa
+2026-04-17T01:04:06,0.0,quiet,320.9,0.0,C,False,2.5280894533352694e-06,0,0,0.156,Amāvāsyā,Aśvinī,,Śukravāra ♀,Kṛṣṇa
+2026-04-17T01:14:11,0.0,quiet,341.1,0.0,C,False,1.6172895129784592e-06,0,0,0.152,Amāvāsyā,Aśvinī,,Śukravāra ♀,Kṛṣṇa
+2026-04-17T01:24:17,0.0,quiet,300.9,0.0,C,False,1.0833975920832017e-06,0,0,0.138,Amāvāsyā,Aśvinī,,Śukravāra ♀,Kṛṣṇa
+2026-04-17T01:53:41,0.0,quiet,337.9,0.0,none,False,5.420359343588643e-07,0,0,0.133,Amāvāsyā,Aśvinī,,Śukravāra ♀,Kṛṣṇa
+2026-04-17T02:03:43,0.0,quiet,318.5,0.0,none,False,4.729140812287369e-07,0,0,0.127,Amāvāsyā,Aśvinī,,Śukravāra ♀,Kṛṣṇa
+2026-04-17T02:14:08,0.0,quiet,308.6,0.0,none,False,0,0,0,0.058,Amāvāsyā,Aśvinī,,Śukravāra ♀,Kṛṣṇa
+2026-04-17T03:47:01,0.0,quiet,329.6,0.0,none,False,3.856522425849107e-07,2,4.9,0.248,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T03:57:02,0.0,quiet,335.7,0.0,none,False,4.0253425481751037e-07,1,2.8,0.197,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T05:41:56,0.0,quiet,338.6,0.0,none,False,4.993690936316852e-07,0,0,0.131,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T07:06:08,1.0,quiet,294.7,0.0,none,False,3.9001275808914215e-07,1,4.7,0.27,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T07:16:46,0,unknown,324.5,0.0,none,False,0,1,4.7,0.178,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T07:36:38,1.0,quiet,322.0,0.0,none,False,3.419179108732351e-07,1,2.5,0.218,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T07:46:49,0.0,quiet,312.5,0.0,none,False,3.8671319657623826e-07,1,2.5,0.185,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T07:56:54,1.0,quiet,301.1,0.0,none,False,3.4248594715791114e-07,1,2.5,0.214,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T11:08:19,0.0,quiet,283.8,0.0,none,False,4.1211660573026165e-07,1,2.6,0.183,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T11:18:20,0.0,quiet,289.5,0.0,none,False,3.8435283045146207e-07,1,2.6,0.183,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T11:28:21,0.0,quiet,292.3,0.0,none,False,3.7042792655483936e-07,1,2.8,0.188,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T11:38:24,0.0,quiet,293.9,0.0,none,False,5.5352916206175e-07,1,2.8,0.195,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T11:48:25,0.0,quiet,326.8,0.0,none,False,3.931468199880328e-07,1,2.8,0.195,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T11:58:27,0.0,quiet,329.5,0.0,none,False,3.5680918131220096e-07,1,2.8,0.194,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T12:08:25,0.0,quiet,302.9,0.0,none,False,3.4367531043244526e-07,1,2.8,0.188,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T12:18:27,0.0,quiet,328.7,0.0,none,False,3.40573762969143e-07,1,2.8,0.193,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T12:28:28,0.0,quiet,336.4,0.0,none,False,3.929779097688879e-07,0,0,0.127,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T12:38:29,0.0,quiet,313.0,0.0,none,False,3.767717373648338e-07,0,0,0.122,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T12:48:30,0.0,quiet,314.8,0.0,none,False,4.6284856125566876e-07,1,3.4,0.211,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T12:58:32,0.0,quiet,325.8,0.0,none,False,4.485077909066604e-07,1,3.4,0.212,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T13:08:33,0.0,quiet,324.7,0.0,none,False,4.986863473277481e-07,1,3.4,0.214,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T13:46:50,0.0,quiet,312.9,0.0,none,False,3.753287387553428e-07,0,0,0.122,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-17T13:56:51,0.0,quiet,325.8,0.0,none,False,3.50393491999057e-07,0,0,0.123,Dvitīyā,Bharaṇī,,Śukravāra ♀,Śukla
+2026-04-18T07:51:27,4.0,active,305.2,0.0,none,False,3.5930162312070024e-07,2,5.0,0.378,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T08:01:28,4.0,active,310.5,0.0,none,False,3.433427480104001e-07,2,5.0,0.378,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T08:11:29,1.0,quiet,305.8,0.0,none,False,3.423041619043943e-07,0,0,0.152,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T08:21:29,2.0,unsettled,306.1,0.0,none,False,3.5148343613400357e-07,0,0,0.186,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T08:31:30,2.0,unsettled,301.5,0.0,none,False,4.4243054730941367e-07,0,0,0.189,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T08:41:31,3.0,unsettled,336.0,0.0,none,False,3.851918393138476e-07,1,5.2,0.356,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T09:23:30,3.0,unsettled,317.6,0.0,none,False,3.40463486736553e-07,0,0,0.221,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T09:33:31,3.0,unsettled,322.9,0.0,none,False,3.414443767724151e-07,1,5.0,0.347,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T10:14:20,3.0,unsettled,332.3,0.0,none,False,3.18335764859512e-07,1,5.0,0.347,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T10:24:23,3.0,unsettled,329.4,0.0,none,False,3.463393341007759e-07,0,0,0.223,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T11:15:43,2.0,unsettled,334.2,0.0,none,False,3.752838608761522e-07,1,4.5,0.305,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T11:25:43,2.0,unsettled,332.3,0.0,none,False,3.7589342127830605e-07,2,5.8,0.337,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T11:46:20,2.0,unsettled,343.8,0.0,none,False,3.7207914260761754e-07,1,5.8,0.339,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T11:56:21,2.0,unsettled,337.2,0.0,none,False,3.9148130781541113e-07,2,5.8,0.339,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T12:06:23,2.0,unsettled,333.0,0.0,none,False,4.2192499449811294e-07,1,4.4,0.304,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T12:16:24,3.0,unsettled,343.3,0.0,none,False,4.2205113004456507e-07,1,4.4,0.339,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T12:26:25,3.0,unsettled,335.1,0.0,none,False,4.4057429704480455e-07,2,5.3,0.361,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T12:36:26,3.0,unsettled,333.4,0.0,none,False,4.7567317551511223e-07,1,5.3,0.362,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T13:01:57,3.0,unsettled,340.2,0.0,none,False,3.6523474022942537e-07,2,5.3,0.359,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T13:11:57,3.0,unsettled,329.3,0.0,none,False,3.282275713445415e-07,1,2.5,0.285,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T13:14:28,3.0,unsettled,331.6,0.0,none,False,0,1,2.5,0.225,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T13:16:45,3.0,unsettled,333.2,0.0,none,False,3.266185899519769e-07,1,2.5,0.286,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T13:24:44,3.0,unsettled,329.4,0.0,none,False,3.3482845651633397e-07,1,2.5,0.285,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T13:34:45,3.0,unsettled,334.5,0.0,none,False,3.241763124606223e-07,2,2.6,0.288,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T13:44:46,3.0,unsettled,341.5,0.0,none,False,3.1179709480966267e-07,1,2.6,0.289,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T13:54:47,3.0,unsettled,331.6,0.0,none,False,3.37255045224083e-07,1,2.6,0.288,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T14:18:03,1.0,quiet,330.4,0.0,none,False,3.083203239384602e-07,2,3.4,0.24,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T14:28:04,1.0,quiet,341.6,0.0,none,False,3.171204525642679e-07,1,3.4,0.242,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T15:28:04,3.0,unsettled,327.4,0.0,none,False,3.0661902883366565e-07,2,5.4,0.356,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T15:38:08,3.0,unsettled,333.1,0.0,none,False,3.296591160051321e-07,1,3.9,0.321,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T15:48:11,3.0,unsettled,335.9,0.0,none,False,3.323747250760789e-07,1,3.9,0.321,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T15:58:15,3.0,unsettled,338.7,0.0,none,False,3.2928468840509595e-07,0,0,0.224,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T16:08:19,3.0,unsettled,325.5,0.0,none,False,3.336677423249057e-07,1,4.8,0.342,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T16:18:22,3.0,unsettled,336.0,0.0,none,False,3.2914968528530153e-07,1,4.8,0.344,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T16:28:23,3.0,unsettled,323.1,0.0,none,False,3.1984112069949333e-07,2,5.6,0.361,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T16:38:24,3.0,unsettled,316.6,0.0,none,False,3.267947192853171e-07,3,5.6,0.36,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T21:19:09,3.0,unsettled,357.8,0.0,none,False,3.4422609473949706e-07,0,0,0.229,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T21:29:13,3.0,unsettled,359.9,0.0,none,False,3.507627468479768e-07,0,0,0.229,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T21:39:16,3.0,unsettled,377.5,0.0,none,False,3.376453889814002e-07,0,0,0.232,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-18T21:49:18,3.0,unsettled,375.7,0.0,none,False,3.145272273741284e-07,1,2.8,0.3,Tṛtīyā,Kṛttikā,,Śanivāra ♄,Śukla
+2026-04-19T07:23:49,3.0,unsettled,473.2,0.0,none,False,3.649868460797734e-07,1,4.4,0.361,Caturthī,Rohiṇī,,Ravivāra ☀,Śukla
+2026-04-19T07:33:54,2.0,unsettled,480.7,0.0,none,False,3.527024432514736e-07,2,4.5,0.331,Caturthī,Rohiṇī,,Ravivāra ☀,Śukla
+2026-04-19T07:43:57,3.0,unsettled,480.1,0.0,none,False,3.75516094663908e-07,1,4.5,0.366,Caturthī,Rohiṇī,,Ravivāra ☀,Śukla
+2026-04-19T07:54:00,3.0,unsettled,532.3,0.0,none,False,3.407903648167121e-07,1,3.2,0.341,Caturthī,Rohiṇī,,Ravivāra ☀,Śukla
+2026-04-19T09:19:41,2.0,unsettled,478.1,0.0,none,False,5.004423542231962e-07,6,4.2,0.329,Caturthī,Rohiṇī,,Ravivāra ☀,Śukla
+2026-04-19T09:40:02,2.0,unsettled,450.1,0.0,none,False,5.94617233673489e-07,5,4.2,0.327,Caturthī,Rohiṇī,,Ravivāra ☀,Śukla
+2026-04-19T09:50:03,2.0,unsettled,469.2,0.0,none,False,5.737833248531388e-07,3,2.6,0.29,Caturthī,Rohiṇī,,Ravivāra ☀,Śukla
+2026-04-19T10:00:04,2.0,unsettled,460.0,0.0,none,False,5.093565960123669e-07,2,3.3,0.304,Caturthī,Rohiṇī,,Ravivāra ☀,Śukla
+2026-04-19T14:31:22,1.0,quiet,519.2,0.0,none,False,4.2364766272839915e-07,3,6.1,0.348,Caturthī,Rohiṇī,,Ravivāra ☀,Śukla
+2026-04-19T14:41:26,1.0,quiet,516.7,0.0,none,False,4.119504524169315e-07,2,4.6,0.31,Caturthī,Rohiṇī,,Ravivāra ☀,Śukla
+2026-04-20T09:12:20,2.0,unsettled,515.4,0.0,none,False,4.2433595126567525e-07,0,0,0.228,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T09:22:21,4.0,active,488.6,0.0,none,False,5.110758820592309e-07,1,5.1,0.421,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T09:32:25,3.0,unsettled,489.5,0.0,none,False,5.508834988177114e-07,2,5.1,0.389,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T09:42:30,3.0,unsettled,488.3,0.0,none,False,5.540278493754158e-07,2,5.1,0.389,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T09:52:33,3.0,unsettled,495.1,0.0,none,False,6.823098601671518e-07,2,5.1,0.394,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T10:02:38,3.0,unsettled,495.1,0.0,none,False,8.391491519432748e-07,1,3.7,0.362,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T10:12:42,4.0,active,493.5,0.0,none,False,7.85326449204149e-07,2,3.7,0.394,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T10:22:45,4.0,active,511.3,0.0,none,False,5.849479975950089e-07,2,3.7,0.392,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T10:32:50,4.0,active,496.1,0.0,none,False,5.292778837429069e-07,1,3.5,0.383,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T10:42:52,4.0,active,508.6,0.0,none,False,4.928002681481303e-07,1,3.5,0.384,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T10:52:56,4.0,active,503.7,0.0,none,False,4.5940112158859847e-07,1,3.5,0.382,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T11:02:59,4.0,active,499.0,0.0,none,False,4.364346466445568e-07,1,3.5,0.38,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T11:13:02,0.0,quiet,494.2,0.0,C,False,1.4850676279820618e-06,0,0,0.18,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T11:23:03,2.0,unsettled,497.4,0.0,C,False,1.5358035625467892e-06,0,0,0.247,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T11:33:04,2.0,unsettled,495.8,0.0,none,False,8.25433971840539e-07,0,0,0.236,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T11:43:05,3.0,unsettled,500.8,0.0,none,False,5.641259122057818e-07,0,0,0.264,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T11:53:06,3.0,unsettled,497.9,0.0,none,False,4.7622359033994144e-07,0,0,0.26,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T12:03:07,3.0,unsettled,498.6,0.0,none,False,4.400749560318218e-07,0,0,0.259,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T12:27:49,3.0,unsettled,522.5,0.0,none,False,3.665554402232374e-07,2,2.9,0.333,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T12:37:53,3.0,unsettled,523.9,0.0,none,False,3.562297195003339e-07,2,2.9,0.333,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T12:47:56,3.0,unsettled,503.1,0.0,none,False,3.34281622826893e-07,2,2.9,0.328,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T12:58:00,3.0,unsettled,499.4,0.0,none,False,3.521359701608162e-07,2,2.9,0.328,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T13:08:00,3.0,unsettled,524.0,0.0,none,False,3.906681911303167e-07,3,2.9,0.334,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T13:18:01,3.0,unsettled,523.1,0.0,none,False,4.1768922187657154e-07,1,2.7,0.33,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T13:28:02,4.0,active,504.9,0.0,none,False,4.6371670237022045e-07,2,2.8,0.365,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T13:38:03,4.0,active,514.3,0.0,none,False,4.508588347107434e-07,3,2.8,0.366,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T13:48:04,3.0,unsettled,504.2,0.0,none,False,0,4,3.2,0.275,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T13:58:06,3.0,unsettled,499.3,0.0,none,False,5.172850023882347e-07,5,3.9,0.36,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T14:08:07,0.0,quiet,510.1,0.0,none,False,5.59190937110543e-07,4,3.9,0.263,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T14:18:08,2.0,unsettled,518.9,0.0,none,False,4.521103562638018e-07,3,3.3,0.313,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T14:28:09,2.0,unsettled,518.5,0.0,none,False,4.528069439402316e-07,2,3.3,0.313,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T14:38:49,0,unknown,0,0,none,False,0,0,0,0.0,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T14:48:52,2.0,unsettled,508.2,0.0,none,False,4.00922317567165e-07,0,0,0.226,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T14:58:55,2.0,unsettled,512.9,0.0,none,False,3.8461257645394653e-07,0,0,0.226,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T15:09:04,3.0,unsettled,499.7,0.0,none,False,3.9840165300120134e-07,1,5.3,0.39,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T15:19:04,4.0,active,503.5,0.0,none,False,4.0583859117759857e-07,1,5.3,0.425,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T15:29:05,3.0,unsettled,515.0,0.0,none,False,4.0072640672406123e-07,1,5.3,0.393,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T15:39:06,4.0,active,515.4,0.0,none,False,4.984284487363766e-07,1,5.3,0.43,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T15:49:07,5.0,storm,511.0,0.0,none,False,4.819438004233234e-07,0,0,0.33,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T15:59:08,5.0,storm,507.4,0.0,none,False,5.561849434343458e-07,0,0,0.332,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-20T16:09:09,5.0,storm,488.1,0.0,none,False,6.943903940737073e-07,0,0,0.332,Pañcamī,Mṛgaśīrṣa,,Somavāra ☽,Śukla
+2026-04-21T07:34:57,2.0,unsettled,486.5,0.0,C,False,2.209975264122477e-06,0,0,0.252,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T07:45:00,2.0,unsettled,501.0,0.0,C,False,1.4212795349521912e-06,1,4.7,0.364,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T07:55:03,2.0,unsettled,485.3,0.0,C,False,3.7330839859350817e-06,1,4.7,0.378,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T08:05:06,0.0,quiet,483.6,0.0,none,False,0,0,0,0.091,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T08:15:07,0.0,quiet,503.2,0.0,C,False,1.7208182043759734e-06,0,0,0.184,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T08:25:08,0.0,quiet,490.2,0.0,C,False,1.211650101140549e-06,0,0,0.175,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T08:35:09,1.0,quiet,448.3,0.0,C,False,1.1209940566914156e-06,0,0,0.199,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T08:45:10,0.0,quiet,497.4,0.0,none,False,8.940182283367903e-07,0,0,0.171,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T08:55:11,1.0,quiet,529.4,0.0,none,False,7.152993930503726e-07,1,2.5,0.269,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T09:05:12,1.0,quiet,506.2,0.0,none,False,6.112385335654835e-07,2,2.6,0.265,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T09:15:13,1.0,quiet,493.9,0.0,none,False,6.050171919014247e-07,2,2.6,0.262,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T09:25:14,1.0,quiet,533.0,0.0,none,False,5.919940235799004e-07,2,2.6,0.269,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T09:35:15,2.0,unsettled,511.5,0.0,none,False,6.073973395359644e-07,2,2.6,0.299,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T09:45:16,2.0,unsettled,495.4,0.0,none,False,7.225934268717538e-07,1,2.6,0.299,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T09:55:17,2.0,unsettled,523.2,0.0,C,False,1.0860279644475668e-06,0,0,0.246,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T10:05:18,2.0,unsettled,509.2,0.0,C,False,1.4898180324962595e-06,0,0,0.249,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T10:19:24,3.0,unsettled,516.6,0.0,C,False,1.079775984180742e-06,1,2.9,0.351,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T10:29:26,2.0,unsettled,536.6,0.0,C,False,1.80329629984044e-06,1,2.9,0.33,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T10:39:28,2.0,unsettled,532.1,0.0,C,False,1.653425215408788e-06,1,2.9,0.328,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T10:49:32,3.0,unsettled,523.9,0.0,C,False,1.289284568883886e-06,1,2.9,0.355,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T10:59:36,3.0,unsettled,546.1,0.0,none,False,9.942195902112871e-07,1,2.9,0.355,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T11:09:40,0.0,quiet,523.1,0.0,none,False,8.241194677793828e-07,0,0,0.175,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T11:20:54,1.0,quiet,528.2,0.0,none,False,7.556202490377473e-07,1,5.0,0.333,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T11:30:55,2.0,unsettled,521.9,0.0,none,False,6.815811275373562e-07,1,5.0,0.363,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T11:40:56,2.0,unsettled,522.5,0.0,none,False,6.557983169841464e-07,1,5.0,0.362,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T11:53:53,2.0,unsettled,564.9,0.0,none,False,6.940576326996961e-07,0,0,0.246,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T12:03:57,2.0,unsettled,541.7,0.0,none,False,8.077711299847579e-07,0,0,0.245,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T12:14:00,2.0,unsettled,522.5,0.0,none,False,7.553458090114873e-07,0,0,0.24,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T12:24:01,2.0,unsettled,525.3,0.0,none,False,6.453071250689391e-07,0,0,0.238,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T12:34:35,0,unknown,0,0,none,False,0,0,0,0.0,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T12:45:15,0,unknown,0,0,none,False,0,0,0,0.0,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T12:55:16,3.0,unsettled,527.3,0.0,C,False,1.1625237448242842e-06,0,0,0.281,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T15:35:00,2.0,unsettled,506.4,0.0,none,False,6.463867521233624e-07,2,5.6,0.374,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T21:55:11,1.0,quiet,0,0,none,False,6.718315717080259e-07,0,0,0.106,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T22:05:12,1.0,quiet,486.9,0.0,none,False,5.575011527980678e-07,0,0,0.194,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T22:15:14,1.0,quiet,485.8,0.0,none,False,6.244198402782786e-07,0,0,0.196,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T22:25:15,1.0,quiet,461.5,0.0,none,False,5.24533675161365e-07,0,0,0.189,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T22:35:17,1.0,quiet,488.5,0.0,none,False,5.271385816740803e-07,1,2.8,0.264,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T22:45:18,1.0,quiet,479.0,0.0,none,False,5.612069458038604e-07,1,2.8,0.263,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T22:55:19,1.0,quiet,499.3,0.0,none,False,0,2,2.9,0.199,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T23:05:20,0.0,quiet,493.4,0.0,none,False,5.19305956458993e-07,2,2.9,0.234,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T23:15:24,0.0,quiet,488.7,0.0,none,False,6.577628823833948e-07,2,2.9,0.237,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T23:25:30,0.0,quiet,489.9,0.0,none,False,7.262441954480892e-07,3,3.2,0.246,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T23:35:46,0.0,quiet,513.6,0.0,none,False,6.591250780729752e-07,1,3.2,0.249,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T23:46:05,0.0,quiet,501.7,0.0,none,False,5.75105161715328e-07,1,3.2,0.244,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-21T23:56:08,0.0,quiet,509.4,0.0,none,False,5.567862899624743e-07,0,0,0.165,Ṣaṣṭhī,Ārdrā,,Maṅgalavāra ♂,Śukla
+2026-04-22T00:06:11,0.0,quiet,476.0,0.0,none,False,5.994809839648951e-07,0,0,0.16,Ṣaṣṭhī,Ārdrā,,Budhavāra ☿,Śukla
+2026-04-22T00:16:14,0.0,quiet,503.8,0.0,none,False,6.176498459353752e-07,1,2.6,0.231,Ṣaṣṭhī,Ārdrā,,Budhavāra ☿,Śukla
+2026-04-22T00:26:16,0.0,quiet,510.4,0.0,none,False,7.134102588679525e-07,1,2.6,0.235,Ṣaṣṭhī,Ārdrā,,Budhavāra ☿,Śukla
+2026-04-22T00:36:17,0.0,quiet,495.3,0.0,C,False,1.4309144944490981e-06,2,2.9,0.252,Ṣaṣṭhī,Ārdrā,,Budhavāra ☿,Śukla
+2026-04-22T00:46:18,0.0,quiet,506.7,0.0,none,False,9.419225079909666e-07,2,3.1,0.251,Ṣaṣṭhī,Ārdrā,,Budhavāra ☿,Śukla
+2026-04-22T00:56:19,0.0,quiet,504.6,0.0,none,False,7.977707809914136e-07,3,3.1,0.248,Ṣaṣṭhī,Ārdrā,,Budhavāra ☿,Śukla
+2026-04-22T01:06:21,0.0,quiet,498.5,0.0,none,False,7.996568456292152e-07,3,3.1,0.247,Ṣaṣṭhī,Ārdrā,,Budhavāra ☿,Śukla
+2026-04-22T01:16:24,0.0,quiet,514.8,0.0,none,False,7.87363831022958e-07,2,3.1,0.25,Ṣaṣṭhī,Ārdrā,,Budhavāra ☿,Śukla
+2026-04-22T01:26:26,1.0,quiet,512.3,0.0,none,False,7.939465831441339e-07,1,2.5,0.268,Ṣaṣṭhī,Ārdrā,,Budhavāra ☿,Śukla
+2026-04-22T01:36:31,0.0,quiet,524.6,0.0,none,False,8.35910611840518e-07,1,2.5,0.238,Ṣaṣṭhī,Ārdrā,,Budhavāra ☿,Śukla
+2026-04-22T01:47:01,0.0,quiet,499.4,0.0,none,False,8.707423830855987e-07,0,0,0.171,Ṣaṣṭhī,Ārdrā,,Budhavāra ☿,Śukla
+2026-04-22T01:57:12,0.0,quiet,512.1,0.0,none,False,9.487363286098116e-07,0,0,0.175,Ṣaṣṭhī,Ārdrā,,Budhavāra ☿,Śukla
+2026-04-22T02:07:14,0.0,quiet,546.9,0.0,none,False,8.061675202952756e-07,0,0,0.179,Ṣaṣṭhī,Ārdrā,,Budhavāra ☿,Śukla
+2026-04-22T02:17:15,0.0,quiet,519.8,0.0,none,False,8.739551731196116e-07,0,0,0.175,Ṣaṣṭhī,Ārdrā,,Budhavāra ☿,Śukla
+2026-04-22T02:27:17,0.0,quiet,519.9,0.0,none,False,8.58037935813627e-07,0,0,0.175,Ṣaṣṭhī,Ārdrā,,Budhavāra ☿,Śukla
+2026-04-22T02:37:18,0.0,quiet,514.9,0.0,none,False,7.921849487502186e-07,0,0,0.172,Ṣaṣṭhī,Ārdrā,,Budhavāra ☿,Śukla
+2026-04-22T02:47:20,0.0,quiet,527.1,0.0,none,False,6.06423100180109e-07,0,0,0.17,Ṣaṣṭhī,Ārdrā,,Budhavāra ☿,Śukla
+2026-04-22T02:57:20,0.0,quiet,509.7,0.0,none,False,5.506673232957837e-07,0,0,0.165,Ṣaṣṭhī,Ārdrā,,Budhavāra ☿,Śukla
+2026-04-22T03:07:24,0.0,quiet,525.6,0.0,none,False,5.525552637664077e-07,0,0,0.168,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T03:17:25,0.0,quiet,512.7,0.0,none,False,6.101018357185239e-07,0,0,0.168,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T03:27:29,0.0,quiet,511.6,0.0,none,False,5.373315730139439e-07,0,0,0.165,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T03:37:49,0.0,quiet,516.6,0.0,none,False,6.638210265919042e-07,1,2.8,0.24,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T03:48:02,0.0,quiet,529.3,0.0,none,False,6.26358655608783e-07,2,2.8,0.241,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T03:58:11,0.0,quiet,529.6,0.0,none,False,6.419741680474544e-07,2,2.8,0.242,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T04:08:14,0.0,quiet,496.4,0.0,none,False,6.827023071309668e-07,2,2.8,0.236,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T04:18:16,0.0,quiet,517.8,0.0,none,False,6.22566005858971e-07,2,4.9,0.291,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T04:28:20,0.0,quiet,524.5,0.0,none,False,6.639047001044673e-07,2,4.9,0.294,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T04:38:21,0.0,quiet,514.5,0.0,none,False,5.858629492649925e-07,2,4.9,0.29,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T04:48:24,0.0,quiet,533.7,0.0,none,False,6.34387447462359e-07,0,0,0.172,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T04:58:27,0.0,quiet,533.0,0.0,none,False,6.400901497727318e-07,1,4.9,0.295,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T05:08:31,0.0,quiet,523.3,0.0,none,False,7.123203431547154e-07,1,4.9,0.295,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T05:18:37,0.0,quiet,496.9,0.0,none,False,6.252941489037767e-07,1,4.9,0.288,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T05:28:44,0.0,quiet,493.1,0.0,none,False,5.854514029124402e-07,2,4.9,0.286,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T05:38:53,0.0,quiet,520.6,0.0,none,False,5.824859385938908e-07,1,2.5,0.231,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T05:48:58,1.0,quiet,499.5,0.0,none,False,5.871893904441094e-07,1,2.5,0.26,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T05:59:07,1.0,quiet,526.4,0.0,none,False,7.947285212139832e-07,1,2.5,0.271,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T06:09:09,1.0,quiet,525.6,0.0,none,False,8.767177632762468e-07,0,0,0.21,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T06:19:11,1.0,quiet,527.7,0.0,none,False,6.719527618770371e-07,1,4.2,0.31,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T06:29:12,1.0,quiet,522.9,0.0,none,False,6.199018685038027e-07,1,4.2,0.308,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T06:39:13,1.0,quiet,526.0,0.0,none,False,9.062020467354159e-07,1,4.2,0.315,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T06:49:14,1.0,quiet,511.3,0.0,none,False,9.014842135002255e-07,1,4.2,0.312,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T06:59:15,1.0,quiet,528.1,0.0,none,False,6.901034907969006e-07,0,0,0.206,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T07:09:16,1.0,quiet,512.4,0.0,none,False,5.956603104095848e-07,0,0,0.2,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T08:09:33,0.0,quiet,534.2,0.0,none,False,5.750389391323552e-07,1,4.9,0.293,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T08:20:01,0.0,quiet,518.0,0.0,none,False,5.773691214017163e-07,0,0,0.168,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T08:30:02,0.0,quiet,541.8,0.0,none,False,5.797166977572488e-07,2,4.6,0.287,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T08:40:03,0.0,quiet,530.0,0.0,none,False,6.415539246518165e-07,3,5.0,0.297,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T08:50:04,0.0,quiet,514.4,0.0,none,False,8.028682145777566e-07,3,5.0,0.298,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T09:00:05,0.0,quiet,486.9,0.0,none,False,9.445822115594638e-07,3,5.0,0.295,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T09:10:06,0.0,quiet,536.3,0.0,C,False,1.2290765880607069e-06,1,5.0,0.309,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T09:20:07,0.0,quiet,525.5,0.0,C,False,1.1417340601838077e-06,0,0,0.181,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T09:30:08,0.0,quiet,539.8,0.0,none,False,8.424899533565622e-07,0,0,0.178,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T09:40:09,1.0,quiet,540.3,0.0,none,False,9.213561611431942e-07,0,0,0.213,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T09:50:10,1.0,quiet,524.1,0.0,none,False,7.205107976915315e-07,0,0,0.206,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T10:00:14,1.0,quiet,543.1,0.0,none,False,6.17312196027342e-07,0,0,0.207,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T10:10:17,1.0,quiet,0.0,0.0,none,False,5.562981186812976e-07,1,5.0,0.228,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T10:20:22,1.0,quiet,541.4,0.0,none,False,5.394592221819039e-07,1,5.0,0.329,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T10:30:26,1.0,quiet,546.6,0.0,none,False,5.542636358768505e-07,0,0,0.206,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T10:40:30,1.0,quiet,553.3,0.0,none,False,5.496398784998746e-07,1,2.6,0.272,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T10:50:34,1.0,quiet,528.1,0.0,none,False,5.42412180948304e-07,2,3.2,0.282,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T11:00:38,1.0,quiet,513.8,0.0,none,False,5.898720019104076e-07,3,3.2,0.281,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T11:10:41,0.0,quiet,525.8,0.0,none,False,8.99092924555589e-07,2,3.2,0.257,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T11:20:44,0.0,quiet,524.9,0.0,none,False,0,2,3.2,0.178,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T11:30:47,0.0,quiet,523.8,0.0,none,False,5.7617836546342e-07,2,3.2,0.249,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T11:40:51,0.0,quiet,532.1,0.0,none,False,5.929395001658122e-07,1,2.7,0.238,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T12:20:43,0.0,quiet,528.9,0.0,none,False,6.293508363341971e-07,0,0,0.171,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T12:30:47,0.0,quiet,528.4,0.0,none,False,6.441504751819593e-07,0,0,0.171,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T12:37:56,0.0,quiet,541.7,0.0,none,False,6.748842906745267e-07,0,0,0.175,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T12:47:57,0.0,quiet,556.3,0.0,none,False,7.835892574803438e-07,0,0,0.18,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T12:57:58,0.0,quiet,546.4,0.0,none,False,7.452786121575627e-07,1,3.5,0.265,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T13:07:58,0.0,quiet,530.2,0.0,none,False,8.28344923320401e-07,1,3.5,0.264,Saptamī,Punarvasu,,Budhavāra ☿,Śukla
+2026-04-22T13:17:59,0.0,quiet,531.3,0.0,C,False,3.7422842069645412e-06,1,3.5,0.29,Saptamī,Punarvasu,,Budhavāra ☿,Śukla

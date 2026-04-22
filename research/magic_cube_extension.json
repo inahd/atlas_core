@@ -1,0 +1,78 @@
+{
+  "title": "Magic Cube Kronecker Extension + Composite Analysis",
+  "date": "2026-04-12",
+  "cube_source": "Andrews 1917, M=42",
+
+  "findings": [
+    {
+      "id": 1,
+      "title": "Kronecker extension scales identically to Lo Shu",
+      "detail": "Level-n Kronecker product: M_n = 42^n, secondary = 9 × 42^(n-1). Full rank at every level, zero null dimensions. Same multiplicative eigenvalue scaling as Lo Shu (M_n = 15^n, sec = 2√6 × 15^(n-1)).",
+      "data": {
+        "level_1": {"grid": "3×3", "M": 42, "secondary": 9, "rank": 3, "null": 0},
+        "level_2": {"grid": "9×9", "M": 1764, "secondary": 378, "rank": 9, "null": 0},
+        "level_3": {"grid": "27×27", "M": 74088, "secondary": 15876, "rank": 27, "null": 0},
+        "level_4": {"grid": "81×81", "M": 3111696, "secondary": 666792, "rank": 81, "null": 0}
+      },
+      "formula": "secondary_n = invariant × M^(n-1), invariant = 9 for cube, 2√6 for Lo Shu"
+    },
+    {
+      "id": 2,
+      "title": "9×9 cyclic composite IS magic — mirrors Navagraha structure exactly",
+      "detail": "Block-circulant 9×9 from the 3 cube layers: M_composite = 126 = 3×42. Eigenvalues {126, ±2.598, ±2.598, 0, 0, 0, 0}. Rank 5, null 4. This is the SAME rank/null structure as the Navagraha 9×9 composite (rank 5, null 4).",
+      "composite_M": 126,
+      "eigenvalues": [126.0, 2.598, 2.598, 0.0, 0.0, 0.0, 0.0, -2.598, -2.598],
+      "rank": 5,
+      "null_dims": 4,
+      "navagraha_comparison": "Navagraha 9×9: M=81, rank 5, null 4 — identical topology"
+    },
+    {
+      "id": 3,
+      "title": "Lo Shu-weighted composite collapses spectrum further",
+      "detail": "Placing cube layers at Lo Shu positions (mod 3) yields M=126 but eigenvalues collapse toward {126, 0, 0, ...}. The Lo Shu weighting concentrates all spectral energy into the uniform mode — maximum coherence.",
+      "eigenvalues": [126.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+      "interpretation": "Lo Shu ordering is the maximally coherent arrangement of the 3D layers"
+    },
+    {
+      "id": 4,
+      "title": "Perfect isotropy — all axis means = 14 exactly",
+      "detail": "Mean value along layers, rows, and columns all = 14.0 = (1+27)/2. No axis is privileged. The cube is spectrally isotropic in all three tensor modes (σ₁ = 72.75 for all three)."
+    },
+    {
+      "id": 5,
+      "title": "Centered layers: spectral mirror symmetry {-9, 0, +9}",
+      "detail": "After centering (subtract 14): Layer 0 evals {0, -9, -9}, Layer 1 evals {0, 0, 0}, Layer 2 evals {9, 9, 0}. The outer layers are ±9 mirrors, middle layer is null. The non-trivial spectrum lives entirely in the shell.",
+      "centered_evals": {
+        "layer_0": [0.0, -9.0, -9.0],
+        "layer_1": [0.0, 0.0, 0.0],
+        "layer_2": [9.0, 9.0, 0.0]
+      }
+    },
+    {
+      "id": 6,
+      "title": "Composite secondary eigenvalue ±2.598 ≈ ±3×2√6/√(2·3·9)?",
+      "detail": "The cyclic composite secondary ±2.598 needs algebraic identification. Note: 2.598 ≈ 3×√(3)/2 = 2.598. CHECK: 3√3/2 = 2.5981. YES — the composite invariant is 3√3/2, replacing 3·2√6 from the Navagraha composite (which has secondary 14.697 = 3×2√6).",
+      "composite_invariant": 2.5981,
+      "formula": "3√3/2",
+      "navagraha_composite_invariant": 14.6969,
+      "navagraha_formula": "3 × 2√6"
+    },
+    {
+      "id": 7,
+      "title": "2D→3D invariant transition: irrational→rational",
+      "detail": "2D Lo Shu invariant ±2√6 is irrational. 3D cube invariant ±9 = ±3² is rational (perfect square). The 3D composite invariant 3√3/2 reintroduces irrationality at the composite level. Pattern: base invariant rationality alternates with dimension.",
+      "invariants": {
+        "2d_base": "±2√6 (irrational)",
+        "2d_composite": "±3·2√6 (irrational)",
+        "3d_base": "±9 (rational, = 3²)",
+        "3d_composite": "±3√3/2 (irrational)"
+      }
+    }
+  ],
+
+  "structural_parallel": {
+    "property": ["Magic constant", "Base invariant", "Composite M", "Composite invariant", "Composite rank", "Composite null", "Brahmasthana"],
+    "lo_shu_2d": ["15", "±2√6", "81 (=navagraha)", "±3·2√6", "5", "4", "center cell (dim 0)"],
+    "cube_3d": ["42", "±9", "126 (=3×42)", "±3√3/2", "5", "4", "middle layer (dim 2)"]
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "test1_universality": {
+    "andrews_original": {
+      "valid_magic": true,
+      "layer_invariants": [
+        [
+          -9.0,
+          -9.0
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          9.0,
+          9.0
+        ]
+      ],
+      "all_nine": false
+    },
+    "andrews_rot1": {
+      "valid_magic": true,
+      "layer_invariants": [
+        [
+          -13.5,
+          -13.5
+        ],
+        [
+          0.0,
+          0.0
+        ],
+        [
+          13.5,
+          13.5
+        ]
+      ],
+      "all_nine": false
+    },
+    "andrews_rot2": {
+      "valid_magic": true,
+      "layer_invariants": [
+        [
+          19.0688,
+          -10.0688
+        ],
+        [
+          16.5227,
+          -16.5227
+        ],
+        [
+          10.0688,
+          -19.0688
+        ]
+      ],
+      "all_nine": false
+    },
+    "andrews_reflect": {
+      "valid_magic": true,
+      "layer_invariants": [
+        [
+          9.0,
+          9.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -9.0,
+          -9.0
+        ]
+      ],
+      "all_nine": false
+    },
+    "andrews_complement": {
+      "valid_magic": true,
+      "layer_invariants": [
+        [
+          9.0,
+          9.0
+        ],
+        [
+          -0.0,
+          -0.0
+        ],
+        [
+          -9.0,
+          -9.0
+        ]
+      ],
+      "all_nine": false
+    }
+  },
+  "test2_4d": {
+    "M_4d": 123,
+    "valid": true,
+    "uses_1_to_n4": true,
+    "note": "see slice analysis above"
+  },
+  "test3_kronecker": {
+    "level_1": {
+      "size": "3x3",
+      "rank": 3,
+      "null": 0,
+      "max_eval": 15.0,
+      "unique_magnitudes": [
+        15.0,
+        4.899
+      ],
+      "predicted_max": 15.0,
+      "predicted_secondary": 4.899,
+      "max_matches": "True",
+      "secondary_matches": "True"
+    },
+    "level_2": {
+      "size": "9x9",
+      "rank": 9,
+      "null": 0,
+      "max_eval": 225.0,
+      "unique_magnitudes": [
+        225.0,
+        73.485,
+        24.0
+      ],
+      "predicted_max": 225.0,
+      "predicted_secondary": 73.4847,
+      "max_matches": "True",
+      "secondary_matches": "True"
+    },
+    "level_3": {
+      "size": "27x27",
+      "rank": 27,
+      "null": 0,
+      "max_eval": 3375.0,
+      "unique_magnitudes": [
+        3375.0,
+        1102.27,
+        360.0,
+        117.576
+      ],
+      "predicted_max": 3375.0,
+      "predicted_secondary": 1102.2704,
+      "max_matches": "True",
+      "secondary_matches": "True"
+    },
+    "level_4": {
+      "size": "81x81",
+      "rank": 81,
+      "null": 0,
+      "max_eval": 50625.0,
+      "unique_magnitudes": [
+        50625.0,
+        16534.056,
+        5400.0,
+        1763.633,
+        576.0
+      ],
+      "predicted_max": 50625.0,
+      "predicted_secondary": 16534.0558,
+      "max_matches": "True",
+      "secondary_matches": "True"
+    }
+  },
+  "test4_efficiency": {
+    "2d_ms": 0.0355,
+    "3d_ms": 0.1322,
+    "overhead": 3.727,
+    "note": "3D scores 3 layers and averages"
+  },
+  "test5_navagraha_cube": {
+    "cube_composite_M": 162.0,
+    "cube_rank": 7,
+    "cube_null": 2,
+    "cube_evals": [
+      162.0,
+      14.6969,
+      0.0,
+      0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -0.0,
+      -14.6969
+    ],
+    "navagraha_M": 81.0,
+    "navagraha_rank": 5,
+    "navagraha_null": 4,
+    "navagraha_evals": [
+      81.0,
+      14.6969,
+      14.6969,
+      0.0,
+      0.0,
+      -0.0,
+      -0.0,
+      -14.6969,
+      -14.6969
+    ],
+    "topology_match": "False"
+  }
+}

@@ -1,64 +1,63 @@
-pitha_id,site_name,body_part,devi_name,bhairava,latitude,longitude,country,element,marma_region,chakra_correspondence,graha,attestation,notes,attestation_status
-SP001,Hinglaj,Brahmarandhra (crown),Kotari/Kottavi,Bhimlochan,25.51,65.52,Pakistan,ether,adhipati,sahasrara,surya,OBSERVED:PRIMARY_TEXT,Crown of Sati; Balochistan cave temple,attested_secondary
-SP002,Sharvananda/Karnat,Eyes,Mahishamardini,Krodhish,14.68,75.98,India,fire,apanga,ajna,surya,OBSERVED:PRIMARY_TEXT,Karnataka; seat of vision,attested_secondary
-SP003,Varanasi (Manikarnika),Earrings/ear,Vishalakshi,Kala Bhairava,25.31,83.01,India,ether,vidhura,vishuddha,budha,OBSERVED:PRIMARY_TEXT,Kashi; most sacred ghat,attested_secondary
-SP004,Guhyeshwari,Knees/yoni,Mahashira/Guhyakali,Kapali,27.71,85.35,Nepal,water,janu,svadhishthana,chandra,OBSERVED:PRIMARY_TEXT,Kathmandu; Pashupatinath complex,attested_secondary
-SP005,Kamakhya,Yoni,Kamakhya,Umananda,26.17,91.70,India,water,vitapa,svadhishthana,shukra,OBSERVED:PRIMARY_TEXT,Guwahati; most famous pitha; menstruation temple,attested_secondary
-SP006,Jwalamukhi,Tongue,Ambika/Siddhida,Unmatta Bhairava,31.87,76.32,India,fire,jihva,vishuddha,mangala,OBSERVED:PRIMARY_TEXT,Himachal; eternal flame,attested_secondary
-SP007,Kalighat,Right toes,Kalika,Nakulish,22.52,88.35,India,earth,kshipra_foot,muladhara,shani,OBSERVED:PRIMARY_TEXT,Kolkata; origin of Calcutta name,attested_secondary
-SP008,Tarapith,Third eye/forehead,Tara,Chandrashekhar,24.00,87.87,India,ether,sthapani,ajna,rahu,OBSERVED:PRIMARY_TEXT,Bengal; Bamakhepa sadhu seat,attested_secondary
-SP009,Kamarupa,Genitals/yoni,Kamakhya,Umananda,26.17,91.70,India,water,basti,svadhishthana,shukra,OBSERVED:TRADITIONAL,Alt name for Kamakhya,attested_secondary
-SP010,Jessoreswari,Hands/palms,Yashoreshwari,Chanda,23.17,89.22,Bangladesh,air,talahridaya,anahata,budha,OBSERVED:PRIMARY_TEXT,Bangladesh; palm of hand,attested_secondary
-SP011,Attahas (Labhpur),Lower lip,Phullara,Vishvesh,23.85,87.80,India,water,oshtha,vishuddha,shukra,OBSERVED:PRIMARY_TEXT,West Bengal,attested_secondary
-SP012,Nalhati,Throat bone,Kalika/Nalini,Yogish,24.30,87.82,India,ether,nila,vishuddha,shani,OBSERVED:PRIMARY_TEXT,West Bengal; tracheal bone,attested_secondary
-SP013,Mithila,Left shoulder,Mahadevi/Uma,Mahodar,26.12,85.89,India,earth,amsa,anahata,shani,OBSERVED:PRIMARY_TEXT,Bihar; Sita birthland,attested_secondary
-SP014,Ratnavali (Khanakul),Right shoulder bone,Kumari,Bhairava,22.63,87.74,India,earth,amsaphalaka,anahata,mangala,OBSERVED:TRADITIONAL,West Bengal,attested_secondary
-SP015,Ambernath,Sati head,Jogeshwari,Vaidyanath,19.19,73.19,India,ether,adhipati,sahasrara,surya,OBSERVED:TRADITIONAL,Maharashtra; ancient Shiva temple,attested_secondary
-SP016,Jayanti (Sylhet),Left thigh,Jayanti,Kramadishvar,24.90,91.87,Bangladesh,earth,urvi,muladhara,shani,OBSERVED:PRIMARY_TEXT,Bangladesh; Jaintia Hills origin,attested_secondary
-SP017,Kiriteswari,Crown/tiara,Vimala/Kiriti,Sanvart,23.61,86.14,India,ether,adhipati,sahasrara,surya,OBSERVED:PRIMARY_TEXT,Murshidabad; the fallen crown,attested_secondary
-SP018,Manibandha,Wrist/bracelet,Devi Mani,Sarvananda,20.39,86.08,India,air,manibandha,manipura,budha,OBSERVED:PRIMARY_TEXT,Odisha; wrist joint,attested_secondary
-SP019,Srisailam,Neck,Maheshwari/Bhramaramba,Samvartananda,15.85,78.87,India,ether,manya,vishuddha,budha,OBSERVED:PRIMARY_TEXT,Andhra; jyotirlinga dual seat,attested_secondary
-SP020,Ujjain,Upper lip,Mahakali,Mahakaleshwar,23.18,75.77,India,water,oshtha,vishuddha,mangala,OBSERVED:PRIMARY_TEXT,Madhya Pradesh; jyotirlinga,attested_secondary
-SP021,Prabhas (Somnath),Stomach,Chandrabhaga,Vakratunda,20.89,70.40,India,fire,nabhi,manipura,guru,OBSERVED:PRIMARY_TEXT,Gujarat; jyotirlinga; belly,attested_secondary
-SP022,Bhairavaparvat,Left ankle bone,Avanti,Lambakarna,23.52,75.26,India,earth,gulpha,muladhara,shani,OBSERVED:TRADITIONAL,Ujjain region,attested_secondary
-SP023,Jalandhar,Left breast,Tripurmalini,Bhishana,31.33,75.58,India,water,stanamula,anahata,chandra,OBSERVED:PRIMARY_TEXT,Punjab; throat-heart junction,attested_secondary
-SP024,Ramgiri (Chitrakoot),Right breast,Shivani,Chandrashekhar,25.20,80.88,India,water,stanamulaR,anahata,chandra,OBSERVED:TRADITIONAL,Uttar Pradesh,attested_secondary
-SP025,Vaidyanath (Deoghar),Heart,Jaya Durga,Vaidyanath,24.49,86.70,India,air,hridaya,anahata,surya,OBSERVED:PRIMARY_TEXT,Jharkhand; jyotirlinga; heart seat,attested_secondary
-SP026,Nainativu,Anklets/shins,Nagapooshani/Indrakshi,Nagaraja/Rakshasa,9.62,79.85,Sri Lanka,earth,janu,muladhara,ketu,OBSERVED:TRADITIONAL,Sri Lankan pitha,attested_secondary
-SP027,Kanchipuram,Skeleton/bones,Kamakshi,Shankara,12.84,79.70,India,earth,asthi,muladhara,shani,OBSERVED:TRADITIONAL,Tamil Nadu; Shankaracharya seat,attested_secondary
-SP028,Kalmadhav,Left buttock,Kali,Asitananda,23.02,81.39,India,earth,sphik,muladhara,shani,OBSERVED:TRADITIONAL,Madhya Pradesh,attested_secondary
-SP029,Shondesh (Amarkantak),Right buttock,Narmada/Shondeshi,Karabhaka,22.67,81.75,India,earth,sphikR,muladhara,shani,OBSERVED:TRADITIONAL,MP; Narmada source,attested_secondary
-SP030,Kurukshetra,Right ankle bone,Savitri/Sthanu,Ashvinau,29.97,76.84,India,earth,gulphaR,muladhara,mangala,OBSERVED:TRADITIONAL,Haryana; Mahabharata field,attested_secondary
-SP031,Bakreshwar,Mind/manas,Mahishamardini,Vakranath,23.88,87.38,India,ether,shringataka,ajna,budha,OBSERVED:PRIMARY_TEXT,Bengal; hot springs; seat of mind,attested_secondary
-SP032,Manasa (Manas Sarovar),Right hand,Dakshayani,Amar,30.67,81.45,Tibet/China,air,kshipra_hand,anahata,surya,OBSERVED:TRADITIONAL,Tibet; highest pitha,attested_secondary
-SP033,Lanka,Anklet/payal,Indrakshi,Rakshasesha,6.93,79.85,Sri Lanka,earth,gulpha,muladhara,rahu,OBSERVED:TRADITIONAL,Sri Lanka; southern extremity,attested_secondary
-SP034,Birat (Virat),Left foot toes,Ambika,Ambar,26.98,87.26,Nepal,earth,kshipra_footL,muladhara,ketu,OBSERVED:TRADITIONAL,Nepal border,attested_secondary
-SP035,Panchsagar,Lower teeth,Varahi,Maharudra,24.50,80.33,India,earth,danta,vishuddha,mangala,OBSERVED:TRADITIONAL,Central India,attested_secondary
-SP036,Bhaironpur (Bhairon),Right arm,Avanti/Sakambhari,Lambakarna,33.35,74.95,India,air,bahvi,anahata,mangala,OBSERVED:TRADITIONAL,Jammu; arm + martial,attested_secondary
-SP037,Shriparvatam,Right ear,Shri Sundari,Sundaranand,15.85,78.87,India,ether,vidhuraR,vishuddha,budha,OBSERVED:TRADITIONAL,Andhra; Srisailam region,attested_secondary
-SP038,Vrindavan,Hair,Vishweshwari/Uma,Bhutesh,27.58,77.70,India,ether,kesha,sahasrara,ketu,OBSERVED:TRADITIONAL,UP; hair fell as devotion,attested_secondary
-SP039,Shuchi (Suchindram),Upper teeth,Narayani,Sanhar,8.15,77.47,India,earth,dantaU,vishuddha,surya,OBSERVED:TRADITIONAL,Tamil Nadu; trimurti temple,attested_secondary
-SP040,Karavir (Kolhapur),Three eyes/tri-netra,Mahalakshmi,Krodhish,16.70,74.24,India,fire,apangaT,ajna,surya,OBSERVED:PRIMARY_TEXT,Maharashtra; Mahalakshmi seat,attested_secondary
-SP041,Prayag (Allahabad),Fingers,Lalita,Bhava,25.43,81.85,India,air,kshipra_hand,manipura,budha,OBSERVED:TRADITIONAL,UP; triveni sangam,attested_secondary
-SP042,Vibhasha (Vikarnanath),Left ear,Kapali,Vikarnanath,20.93,86.42,India,ether,vidhuraL,vishuddha,budha,OBSERVED:TRADITIONAL,Odisha,attested_secondary
-SP043,Prabhasa (Junagadh),Navel,Chandrabhaga,Vakratunda,21.52,70.47,India,fire,nabhi,manipura,guru,OBSERVED:TRADITIONAL,Gujarat; variant location,attested_secondary
-SP044,Tripura Malini,Feet soles,Tripura Sundari,Tripuresh,24.58,92.30,India,earth,talahridaya,muladhara,ketu,OBSERVED:TRADITIONAL,Tripura; sole of feet,attested_secondary
-SP045,Sainkul (Shikhar),Neck vertebrae,Mahamaya,Vyomakesh,25.08,86.97,India,earth,manya_asthi,vishuddha,shani,OBSERVED:TRADITIONAL,Bihar,attested_secondary
-SP046,Chattagram (Chittagong),Right arm/upper,Bhavani,Chandrashekhar,22.34,91.83,Bangladesh,air,bahviR,anahata,mangala,OBSERVED:PRIMARY_TEXT,Bangladesh,attested_secondary
-SP047,Sugandha,Nose,Sunanda,Tryambaka,23.00,89.12,Bangladesh,air,phana,ajna,budha,OBSERVED:TRADITIONAL,Bangladesh; scent/nose,attested_secondary
-SP048,Trisrota,Left foot,Bhramari,Ishvara,25.40,88.73,India,earth,padaL,muladhara,ketu,OBSERVED:TRADITIONAL,West Bengal; Jalpaiguri,attested_secondary
-SP049,Pundravardhana,Navel string,Charpatika,Vamadev,24.75,88.25,Bangladesh,fire,nabhi_nala,manipura,guru,OBSERVED:TRADITIONAL,Bangladesh; umbilical cord,attested_secondary
-SP050,Chandradvipa,Left thumb,Sarvani,Vamadev,22.39,90.32,Bangladesh,air,angushthaL,manipura,budha,OBSERVED:TRADITIONAL,Bangladesh; Barisal,attested_secondary
-SP051,Bahula,Left arm,Bahula,Bhiruk,23.85,87.55,India,air,bahviL,anahata,chandra,OBSERVED:TRADITIONAL,Bengal; Ketugram,attested_secondary
-SP052,Ujaani,Right wrist,Mangal Chandika,Kapilambar,23.52,88.05,India,air,manibandhR,manipura,mangala,OBSERVED:TRADITIONAL,Bengal,attested_secondary
-SP053,Kashmir (Amarnath),Right ankle,Mahamaya,Trishuleshwar,34.21,75.50,India,earth,gulpha_kashmir,muladhara,shani,OBSERVED:TRADITIONAL,J&K; ice lingam cave,attested_secondary
-SP054,Mysore,Hair tuft/shikha,Chamundeshwari,Maheshwara,12.31,76.65,India,fire,shikha,sahasrara,mangala,OBSERVED:TRADITIONAL,Karnataka; Chamundi hill,attested_secondary
-SP055,Sravasti,Right shin,Vishweshwari,Dandapani,27.51,82.08,India,earth,jangha,muladhara,shani,OBSERVED:TRADITIONAL,UP; Buddhist site overlap,attested_secondary
-SP056,Gaya,Right cheek,Sarvamangala,Daksha,24.75,84.99,India,earth,ganda,ajna,guru,OBSERVED:TRADITIONAL,Bihar; Vishnupada,attested_secondary
-SP057,Kankalitala (Kopai),Bone/kankal,Devgarbha/Kankalini,Ruru,23.69,87.65,India,earth,asthi,muladhara,shani,OBSERVED:PRIMARY_TEXT,Bengal; bone relic,attested_secondary
-SP058,Pushkara,Right cheek alt,Gayatri,Ajnana,26.49,74.55,India,air,gandaR,ajna,guru,OBSERVED:TRADITIONAL,Rajasthan; Brahma temple,attested_secondary
-SP059,Bhavanipur,Left cheek,Bhavani,Dandapani,24.01,88.42,India,earth,gandaL,ajna,shukra,OBSERVED:TRADITIONAL,Bengal,attested_secondary
-SP060,Yuganadha,Both feet joined,Yugadyaprakiti,Maheshvara,24.88,89.63,Bangladesh,earth,pada_yugma,muladhara,ketu,OBSERVED:TRADITIONAL,Bangladesh; Sherpur,attested_secondary
-SP061,Nalahati Var,Intestines,Kalika Devi,Yogesh,24.30,87.82,India,fire,antra,manipura,mangala,OBSERVED:TRADITIONAL,Variant of Nalhati; visceral seat,attested_secondary
-SP062,Vibhash (Tamralipti),Left ankle,Kapalini,Sarvananda,22.29,87.92,India,earth,gulphaL,muladhara,shani,OBSERVED:TRADITIONAL,Bengal; Tamluk ancient port,attested_secondary
-SP063,Iswaripur,Necklace/hara,Sarvasundari,Chaturanana,22.50,89.50,Bangladesh,ether,nila_hara,vishuddha,shukra,OBSERVED:TRADITIONAL,Bangladesh; neck ornament,attested_secondary
+pitha_id,site_name,modern_location,country,lat,lon,body_part,devi_name,bhairava_name,element,direction,source_text,source_chapter,confidence,attestation,notes
+amarnath,Amarnath,Jammu and Kashmir,India,34.1872,75.502,Throat,Mahamaya,Trisandhyeshwar,N/A,N/A,Pitha Nirnaya,N/A,0.75,OBSERVED:TRADITIONAL,Cave shrine in Himalayas.
+ambaji,Ambaji,"Anart, Gujarat",India,24.3333,72.85,Heart,Ambaji,Batuk Bhairav,N/A,N/A,Pitha Nirnaya,N/A,0.75,OBSERVED:TRADITIONAL,Also one of 51 Shakti Pithas.
+arbuda,Arbuda Devi (Mount Abu),"Mount Abu, Rajasthan",India,24.5937,72.7126,Adhar (pelvic bone),Arbuda Devi,Bhairav,N/A,N/A,Pitha Nirnaya,N/A,0.75,OBSERVED:TRADITIONAL,Known as Adhar Devi.
+attahas,Attahas,"Dakshindihi, Bardhaman",India,23.5729,88.0519,Lips,Phullara,Vishvesh,N/A,N/A,Pitha Nirnaya,N/A,0.75,OBSERVED:TRADITIONAL,Near Katwa.
+bahuchara,Bahuchara Mata,"Becharaji, Gujarat",India,23.518,71.8708,Left hand,Bahuchara Mata,Kal Bhairav,N/A,N/A,Pitha Nirnaya,N/A,0.75,OBSERVED:TRADITIONAL,Also a seat of transgender goddess.
+bahula,Bahula,"Ketugram, West Bengal",India,23.88,88.4,Left arm,Bahula,Bhiruk,N/A,N/A,Pitha Nirnaya,N/A,0.75,OBSERVED:TRADITIONAL,On banks of Ajay river.
+bakreshwar,Bakreshwar,"Siuri, Birbhum, West Bengal",India,23.879,87.3721,Between the eyebrows,Mahishmardini,Vakranath,N/A,N/A,Pitha Nirnaya,N/A,0.75,OBSERVED:TRADITIONAL,Hot springs near temple.
+bhairavparvat,Bhairavparvat,"Ujjain, Madhya Pradesh",India,23.1828,75.778,Upper lips,Avanti,Lambkarna,N/A,N/A,Pitha Nirnaya,N/A,0.75,OBSERVED:TRADITIONAL,Located at Bhairav Hills on Shipra river.
+bhabanipur,Bhabanipur,"Sherpur, Bogra District",Bangladesh,24.97,89.89,Left anklet,Arpana,Vaman,N/A,N/A,Pitha Nirnaya,N/A,0.75,OBSERVED:TRADITIONAL,Known as Jessoreshwari.
+chandikathan,Chandika Sthan,"Munger, Bihar",India,25.371,86.465,Left eye,Chandika,Bholeshankar,N/A,N/A,Pitha Nirnaya,N/A,0.75,OBSERVED:TRADITIONAL,On banks of Ganga.
+chintpurni,Chintpurni (Chhinnamastika),"Una district, Himachal Pradesh",India,31.5154,76.1261,Feet,Chhinnamastika,Rudra Mahadev,N/A,N/A,Pitha Nirnaya,N/A,0.75,OBSERVED:TRADITIONAL,Also one of Mahashakti pithas.
+danteshwari,Danteshwari,"Dantewada, Chhattisgarh",India,18.9,81.35,Teeth,Danteshwari,Kapalbhairav,N/A,N/A,Pitha Nirnaya,N/A,0.75,OBSERVED:TRADITIONAL,Kuldevi of Bastar.
+gandaki,Gandaki (Goddess Chandi),"Muktinath, Nepal",Nepal,28.699,83.873,Temple (yoni?),Gandaki Chandi,Chakrapani,N/A,N/A,Pitha Nirnaya,N/A,0.65,OBSERVED:TRADITIONAL,Located on Gandaki river at Muktinath.
+saptashrungi,Saptashrungi,"Vani, Nashik",India,20.371,73.999,Chin,Bhramari,Vikritaksh,N/A,N/A,Pitha Nirnaya,N/A,0.65,OBSERVED:TRADITIONAL,One of Maha Shakti Pithas.
+hinglaj,Hinglaj,Balochistan,Pakistan,25.5111,65.5333,Brahmarandhra (part of head),Kottari,Bhimlochan,N/A,N/A,Pitha Nirnaya,N/A,0.75,OBSERVED:TRADITIONAL,Also called Hingula.
+jayanti,Jayanti,"Nartiang, Meghalaya",India,25.6339,92.3333,Left thigh,Jayanti,Kramadishwar,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Known as Nartiang Durga temple.
+jessoreswari,Jessoreswari,"Ishwaripur, Satkhira",Bangladesh,22.9446,89.1833,Palms and soles,Jashoreshwari,Chanda,N/A,N/A,Pitha Nirnaya,N/A,0.75,OBSERVED:TRADITIONAL,In Bangladesh near Sundarbans.
+jwalaji,Jwalaji,"Kangra, Himachal Pradesh",India,31.8933,76.3218,Tongue,Siddhida (Ambika),Unmatta Bhairav,Fire,South-East,Pitha Nirnaya,N/A,0.85,OBSERVED:PRIMARY_TEXT,Temple with eternal flames.
+kalighat,Kalighat (Dakshina Kalika),"Kolkata, West Bengal",India,22.5203,88.3378,Right toes,Kalika,Nakuleshwar,Earth,South,Pitha Nirnaya,N/A,0.85,OBSERVED:PRIMARY_TEXT,One of Adi Shakti pithas; Kali's face is enshrined.
+kalmadhav,Kalmadhav,"Amarkantak, Madhya Pradesh",India,22.6739,81.7499,Left buttock,Kali,Asitang,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Near confluence of Narmada and Son rivers.
+kamakhya,Kamakhya,"Guwahati, Assam",India,26.1651,91.7066,Genitals (yoni),Kamakhya,Umananda,Water,North-East,Kalika Purana,Pratham khanda,0.95,OBSERVED:PRIMARY_TEXT,Major Shakta centre; Kaula and Kamakhya tradition.
+kamakshi,Kamakshi,"Kanchipuram, Tamil Nadu",India,12.8352,79.7036,Ottiyana (stomach covering),Kamakshi,Kaal Bhairav,N/A,N/A,Pitha Nirnaya,N/A,0.75,OBSERVED:TRADITIONAL,Kamakshi temple part of Lalita traditions.
+kankalitala,Kankalitala,"Kankalitala, Birbhum",India,23.6978,87.6631,Bones,Devgarbha,Ruru,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,On banks of Kopai River.
+sarvani,Sarvani / Kanyakumari,"Kanyakumari, Tamil Nadu",India,8.0883,77.5385,Back,Sarvani,Nimish,N/A,South,Pitha Nirnaya,N/A,0.75,OBSERVED:TRADITIONAL,At Bhagavathy temple; some believe site in Bangladesh.
+karnat,Karnat,"Kangra, Himachal Pradesh",India,32.1169,76.3306,Both ears,Jayadurga,Abhiru,N/A,N/A,Pitha Nirnaya,N/A,0.65,OBSERVED:TRADITIONAL,Ears of Sati fell here.
+kireet,Kireet (Kiriteswari),"Kireetkona, Murshidabad",India,23.7548,88.0267,Crown,Vimala,Sanwart,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Also called Mukuteswari.
+ratnavali,Ratnavali (Anandamayee),"Hooghly, West Bengal",India,22.9,88.39,Right shoulder,Kumari,Shiva,N/A,N/A,Pitha Nirnaya,N/A,0.65,OBSERVED:TRADITIONAL,Near Khanakul-Krishnanagar on Ratnakar river.
+bhraamari,Bhraamari,"Boda, Jalpaiguri",India,26.39,89.3,Left leg,Bhraamari,Ambar,N/A,N/A,Pitha Nirnaya,N/A,0.65,OBSERVED:TRADITIONAL,On Teesta river; also called Trishrota.
+manas,Manas,"Lake Manasarovar, Tibet",Tibet,30.6667,81.1333,Right hand,Dakshayani,Amar,N/A,North,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Stone at Manasarovar; part of Kailash region.
+manibandh,Manibandh,"Gayatri Hills, Pushkar",India,26.4241,74.6417,Two bracelets,Gayatri,Sarvanand,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Near Ajmer; associated with Gayatri mantra.
+mithila,Mithila,"Janakpur, Nepal",Nepal,26.72,85.92,Left shoulder,Uma,Mahodar,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Birthplace of Sita (Janaki).
+nainativu,Nainativu (Nagapooshani),"Nainativu, Sri Lanka",Sri Lanka,9.62,79.6333,Anklets (silambu),Indrakshi (Nagapooshani),Rakshaseshwar (Nayanair),Water,South,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Nagapooshani Amman temple on island.
+nalhati,Nalhati,"Nalhati, Birbhum",India,24.27,87.8215,Vocal chord,Kalika Devi,Yogesh,N/A,N/A,Pitha Nirnaya,N/A,0.65,OBSERVED:TRADITIONAL,Also called Nalateshwari.
+guhyeshwari,Guhyeshwari,"Kathmandu, Nepal",India,27.7167,85.3486,Groin,Guhyeshwari,Kapali,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Near Pashupatinath temple.
+chandranath,Chandranath,"Sitakunda, Chittagong",Bangladesh,22.5983,91.909,Right arm,Bhawani,Chandrashekhar,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Temple atop Chandranath hill.
+padmavati,Padmavati,"Panna, Madhya Pradesh",India,24.6333,80.1635,Padma (lotus or navel?),Padmavati,Kapalbhairav,N/A,N/A,Pitha Nirnaya,N/A,0.65,OBSERVED:TRADITIONAL,Near Padmavatipuri Dham; some variant of lotus body part.
+panchsagar,Panchsagar,Near Haridwar,India,29.95,78.15,Lower teeth,Varahi,Maharudra,N/A,N/A,Pitha Nirnaya,N/A,0.6,OBSERVED:TRADITIONAL,Exact location uncertain; near Haridwar.
+patan,Patan Devi,"Patna, Bihar",India,25.611,85.2219,Left shoulder and cloth,Badi Patan Devi,Bhairav,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Two temples (Chhoti & Badi) in Patna.
+prabhas,Prabhas,"Somnath (Veraval), Gujarat",India,20.888,70.401,Stomach,Chandrabhaga,Vakratund,N/A,West,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Near Somnath Jyotirlinga.
+prayag,Prayag (Alopi Devi),"Allahabad (Prayagraj), Uttar Pradesh",India,25.4358,81.8463,Finger,Alopi Devi (Madhaveswari),Bhava,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Site at Sangam; finger or hand fell here.
+savitri,Savitri/Bhadra Kali,"Thanesar, Kurukshetra",India,29.9696,76.8711,Ankle bone,Savitri/Bhadra Kali,Sthanu,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Temple near Kurukshetra.
+ramgiri,Ramgiri (Shivani),"Chitrakoot, Uttar Pradesh",India,25.2019,80.8945,Right breast,Shivani,Chanda,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Located at Chitrakuta.
+sainthia,Sainthia (Nandikeshwari),"Sainthia, Birbhum",India,23.95,87.5664,Necklace,Nandini,Nandikeshwar,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Temple under banyan tree.
+sarvashail,Sarvashail,"Rajahmundry, Andhra Pradesh",India,17.015,81.795,Cheeks,Rakini (Vishweshwari),Vatsnabh,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Near Kotilingeswar temple on Godavari bank.
+shivaharkaray,Shivaharkaray,Karachi region,Pakistan,24.942,67.1244,Eyes,Mahishamardini,Krodhish,N/A,N/A,Pitha Nirnaya,N/A,0.75,OBSERVED:TRADITIONAL,Near Sukkur or Karachi; contested location.
+shondesh,Shondesh,"Amarkantak, Madhya Pradesh",India,22.6739,81.7499,Right buttock,Narmada,Bhadrasen,N/A,N/A,Pitha Nirnaya,N/A,0.65,OBSERVED:TRADITIONAL,Source of Narmada river.
+shri_parvat,Shri Parvat,Srisailam or Ladakh,India,15.8794,78.8656,Right anklet,Shrisundari,Sundaranand,N/A,N/A,Pitha Nirnaya,N/A,0.6,OBSERVED:TRADITIONAL,Location debated; also near Srisailam.
+shri_shail,Shri Shail,"Joinpur, Sylhet",Bangladesh,24.9045,91.8687,Neck,Mahalaxmi,Sambaranand,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Shakti Peetha near Sylhet town.
+shuchi,Shuchi,"Suchindrum, Tamil Nadu",India,8.154,77.4892,Upper teeth,Narayani,Sanhar,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Within Suchindram temple complex.
+sugandha,Sugandha,"Shikarpur, Barisal",Bangladesh,22.8,90.222,Nose,Sugandha,Trayambak,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,On Sonda River banks.
+tripura_sundari,Tripura Sundari,"Udaipur, Tripura",India,23.517,91.4821,Right leg,Tripura Sundari,Tripuresh,N/A,N/A,Pitha Nirnaya,N/A,0.75,OBSERVED:TRADITIONAL,At top of hills near Udaipur town.
+tripurmalini,Tripurmalini,"Jalandhar, Punjab",India,31.326,75.5762,Left breast,Tripurmalini,Bhutesh/Bhishan,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Devi Talab Mandir area.
+ujani,Ujani (Mangal Chandika),"Ujani (near Guskara), West Bengal",India,23.5,87.8,Right wrist,Mangal Chandika,Kapilambar,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Also called Capalishvari.
+vajreshwari,Vajreshwari,"Kangra, Himachal Pradesh",India,31.999,76.3529,Left breast,Vajreshwari,Kal Bhairav,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Also called Bajreshwari Devi.
+varanasi,Varanasi (Vishalakshi),"Manikarnika Ghat, Varanasi",India,25.282,83.0092,Earring (kundal),Vishalakshi & Manikarni,Kalbhairav,N/A,N/A,Pitha Nirnaya,N/A,0.85,OBSERVED:PRIMARY_TEXT,Earring of Sati fell; associated with Kashi Vishwanath.
+vibhash,Vibhash (Tamluk),"Tamluk, Purba Medinipur",India,22.3,87.916,Left ankle,Kapalini (Bhimarupa),Sarvanand,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Temple near Rupnarayan river.
+virat,Virat,"Bharatpur, Rajasthan",India,27.2125,77.4895,Left toes,Ambika,Amriteshwar,N/A,N/A,Pitha Nirnaya,N/A,0.65,OBSERVED:TRADITIONAL,Also known as Brij; location near Virat Nagar?
+vrindavan,Vrindavan (Katyayani),"Vrindavan, Uttar Pradesh",India,27.5806,77.7009,Hair (ringlets),Uma (Katyayani),Bhutesh,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Within Bhuteshwar Mahadev temple.
+dantakali,Dantakali,"Dharan, Nepal",India,26.8127,87.283,Teeth,Dantakali Devi,Bhairav,N/A,N/A,Pitha Nirnaya,N/A,0.65,OBSERVED:TRADITIONAL,"In Dharan, Sunsari district."
+chandi_memari,Chandi Mandir (Memari),"Memari, West Bengal",India,23.37,88.12,Intestines (small),Maa Chandi,Shiva,N/A,N/A,Pitha Nirnaya,N/A,0.6,OBSERVED:TRADITIONAL,Near Memari railway station.
+surkanda,Sirkhanda/Surkanda,"Dhanaulti, Uttarakhand",India,30.3855,78.1616,Head,Ma Surkanda,Kal Bhairav,N/A,N/A,Pitha Nirnaya,N/A,0.7,OBSERVED:TRADITIONAL,Located near Mussoorie; also called Surkanda Devi.
+tarapith,Tarapith,"Tarapith, Birbhum",India,23.76,87.4114,Third eye,Ugra Tara,Chandrachur,N/A,N/A,Kalika Purana,Chapter on Tara,0.85,OBSERVED:PRIMARY_TEXT,Famed for Tantric Tara sadhana.

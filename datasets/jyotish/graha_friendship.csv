@@ -1,0 +1,11 @@
+# Source: BPHS Ch. 3 v.55-57 (Naisargika Maitri). Natural (permanent) friendships.
+# Seven visible grahas only. Rahu/Ketu friendships vary by tradition — omitted per spec.
+# friend/neutral/enemy columns padded with empty where fewer than 3.
+graha,friend_1,friend_2,friend_3,neutral_1,neutral_2,enemy_1,enemy_2,enemy_3
+Sun,Moon,Mars,Jupiter,Mercury,,Venus,Saturn,
+Moon,Sun,Mercury,,Mars,Jupiter,Venus,Saturn,Rahu
+Mars,Sun,Moon,Jupiter,Venus,Saturn,Mercury,,
+Mercury,Sun,Venus,,Mars,Jupiter,Saturn,Moon,
+Jupiter,Sun,Moon,Mars,Saturn,,Mercury,Venus,
+Venus,Mercury,Saturn,,Mars,Jupiter,Sun,Moon,
+Saturn,Mercury,Venus,,Jupiter,,Sun,Moon,Mars

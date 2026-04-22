@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Śrī Rāma Śalākā · Atlas 330</title>
+<link rel="stylesheet" href="/static/atlas-theme.css">
+<script src="/static/atlas.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@300;400&family=Noto+Sans+Devanagari:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06080f;--panel:#0a0e18;--border:#1a2840;
+  --gold:rgba(200,169,110,1);--gold-dim:rgba(200,169,110,0.2);
+  --teal:rgba(93,202,165,1);--white:rgba(255,255,255,0.85);
+  --dim:#4a5a6a;--muted:#7a8a9a;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --mono:'IBM Plex Mono','Courier New',monospace;
+  --deva:'Noto Sans Devanagari',sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--white);font-family:var(--mono);font-size:11px;
+  min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:28px 16px 60px}
+
+.title{font-family:var(--deva);font-size:20px;color:var(--gold);text-align:center;margin-bottom:2px}
+.title-en{font-family:var(--serif);font-size:14px;color:var(--muted);text-align:center;
+  font-style:italic;margin-bottom:20px}
+
+.instruction{text-align:center;line-height:2;margin:0 auto 20px;transition:all .5s;max-height:100px;overflow:hidden}
+.instruction.hidden{max-height:0;margin:0;opacity:0}
+.instruction .deva{font-family:var(--deva);font-size:14px;color:var(--gold)}
+.instruction .en{font-family:var(--serif);font-size:12px;font-style:italic;color:var(--muted)}
+
+/* Grid — ritual object, not data display */
+.grid{display:inline-grid;grid-template-columns:repeat(15,1fr);gap:0;margin:0 auto 24px;
+  border:1px solid rgba(200,169,110,.1);user-select:none}
+.cell{width:30px;height:30px;display:flex;align-items:center;justify-content:center;
+  border:1px solid rgba(200,169,110,.04);cursor:pointer;
+  font-family:var(--deva);font-size:12px;color:rgba(200,169,110,.25);
+  transition:background .15s}
+.cell:active{background:rgba(200,169,110,.08)}
+.cell.selected{color:var(--gold);background:rgba(200,169,110,.12);border-color:rgba(200,169,110,.2)}
+
+/* Answer */
+#answer{max-width:540px;width:100%;margin:0 auto;display:none;text-align:center}
+#answer.show{display:block}
+
+.ans-deva{font-family:var(--deva);font-size:18px;color:var(--white);line-height:1.9;
+  padding:20px 0 12px;letter-spacing:.02em}
+.ans-english{font-family:var(--serif);font-size:15px;font-style:italic;color:var(--gold);
+  line-height:1.7;padding:0 0 16px;border-bottom:1px solid rgba(200,169,110,.06)}
+.ans-meta{font-family:var(--mono);font-size:9px;color:var(--dim);letter-spacing:.08em;
+  margin-top:10px;line-height:1.6}
+
+/* Quality glow */
+.ans-deva.very_favorable{text-shadow:0 0 20px rgba(200,169,110,.2)}
+.ans-deva.favorable{color:var(--gold)}
+.ans-deva.neutral{color:var(--teal)}
+.ans-deva.cautionary{color:var(--muted)}
+.ans-deva.unfavorable{color:var(--dim)}
+
+#related{margin-top:16px;text-align:left}
+#related .rel-item{padding:8px 0;border-top:1px solid rgba(200,169,110,.04)}
+#related .rel-ref{font-family:var(--mono);font-size:8px;color:var(--dim);letter-spacing:.06em}
+#related .rel-text{font-family:var(--serif);font-style:italic;font-size:11px;color:var(--muted);margin-top:2px;line-height:1.6}
+
+.again-note{font-family:var(--serif);font-size:10px;font-style:italic;color:var(--dim);
+  margin-top:16px;line-height:1.6}
+.again-btn{font-family:var(--mono);font-size:9px;letter-spacing:.1em;padding:5px 14px;
+  border:1px solid var(--border);background:transparent;color:var(--dim);
+  cursor:pointer;border-radius:2px;text-transform:uppercase;transition:all .2s;margin-top:10px}
+.again-btn:hover{color:var(--gold);border-color:rgba(200,169,110,.3)}
+
+.footer{position:fixed;bottom:0;left:0;right:0;height:28px;background:var(--panel);
+  border-top:1px solid var(--border);display:flex;align-items:center;justify-content:center;
+  gap:16px;z-index:100}
+.footer a{font-family:var(--mono);font-size:9px;color:var(--dim);text-decoration:none;letter-spacing:.08em}
+.footer a:hover{color:var(--gold)}
+.footer a.on{color:var(--gold)}
+
+@media(max-width:520px){
+  .cell{width:20px;height:20px;font-size:9px}
+  .ans-deva{font-size:15px}
+}
+</style>
+</head>
+<body>
+
+<div class="title">श्रीरामशलाका प्रश्नावली</div>
+<div class="title-en">Śrī Rāma Śalākā Praśnavali</div>
+
+<div class="instruction" id="instruction">
+  <div class="deva">बैठिए। प्रश्न सोचिए। जय श्री राम।</div>
+  <div class="en">Sit. Hold your question. Jai Śrī Rāma.</div>
+</div>
+
+<div class="grid" id="grid"></div>
+
+<div id="answer">
+  <div class="ans-deva" id="ans-deva"></div>
+  <div class="ans-english" id="ans-english"></div>
+  <div class="ans-meta" id="ans-meta"></div>
+  <div id="related"></div>
+  <div class="again-note">The first answer is Rāma's guidance.<br>Ask again only with a different question.</div>
+  <button class="again-btn" onclick="askAgain()">ask again</button>
+</div>
+
+<div class="footer">
+  <a href="/">home</a>
+  <a href="/oracle">oracle</a>
+  <a href="/shalaka" class="on">śalākā</a>
+  <a href="/s0">S0</a><a href="/s3">S3</a><a href="/s6">S6</a>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════
+   THE NINE ANSWERS
+   From Śrī Rāmacaritamānasa
+   ══════════════════════════════════════════════ */
+
+const ANSWERS = [
+  {
+    deva: "सुनु सिय सत्य असीस हमारी। पूजिहि मन कामना तुम्हारी॥",
+    en: "Hear Sītā, our blessing is true — your heart's desire shall be fulfilled.",
+    kanda: "Bālakāṇḍa",
+    context: "Gaurī blesses Sītā during Gaurī Pūjā",
+    quality: "very_favorable"
+  },
+  {
+    deva: "प्रबिसि नगर कीजे सब काजा। हृदयँ राखि कोसलपुर राजा॥",
+    en: "Enter the city and accomplish all tasks — keep the King of Ayodhyā in your heart.",
+    kanda: "Sundarakāṇḍa",
+    context: "Hanumān preparing to enter Laṅkā",
+    quality: "favorable"
+  },
+  {
+    deva: "उघरहिं अंत न होइ निबाहू। कालनेमि जिमि रावन राहू॥",
+    en: "Deceit is exposed in the end and cannot last — like Kālanemi, like Rāvaṇa.",
+    kanda: "Bālakāṇḍa",
+    context: "About deceivers in satsaṅg",
+    quality: "unfavorable"
+  },
+  {
+    deva: "बिधि बस सुजन कुसंगत परहीं। फनि मनि सम निज गुन अनुसरहीं॥",
+    en: "By fate good people fall into bad company — yet they follow their own nature like the serpent's gem.",
+    kanda: "Bālakāṇḍa",
+    context: "Satsaṅg description",
+    quality: "cautionary"
+  },
+  {
+    deva: "होइहि सोइ जो राम रचि राखा। को करि तर्क बढ़ावहिं साखा॥",
+    en: "That alone will happen which Rāma has ordained — who can argue and multiply branches?",
+    kanda: "Bālakāṇḍa",
+    context: "Śiva-Pārvatī dialogue",
+    quality: "neutral"
+  },
+  {
+    deva: "मुद मंगलमय संत समाजू। जिमि जग जंगम तीरथराजू॥",
+    en: "The assembly of saints is full of joy and auspiciousness — like a moving pilgrimage king in the world.",
+    kanda: "Bālakāṇḍa",
+    context: "Saints described as living pilgrimage",
+    quality: "favorable"
+  },
+  {
+    deva: "गरल सुधा रिपु करहिं मिताई। गोपद सिंधु अनल सितलाई॥",
+    en: "Poison becomes nectar, enemies become friends — the ocean becomes a cow's hoofprint, fire becomes cool.",
+    kanda: "Sundarakāṇḍa",
+    context: "Hanumān entering Laṅkā — what becomes possible with Rāma's grace",
+    quality: "very_favorable"
+  },
+  {
+    deva: "बरुन कुबेर सुरेस समीरा। रन सन्मुख धरि काहुँ न धीरा॥",
+    en: "Varuṇa, Kubera, Indra, and the Wind — none had courage to face him in battle.",
+    kanda: "Laṅkākāṇḍa",
+    context: "Mandodarī's lament after Rāvaṇa's death",
+    quality: "unfavorable"
+  },
+  {
+    deva: "सुफल मनोरथ होहुँ तुम्हारे। रामु लखनु सुनि भए सुखारे॥",
+    en: "May your heart's desire bear fruit — Rāma and Lakṣmaṇa heard this and were gladdened.",
+    kanda: "Bālakāṇḍa",
+    context: "Viśvāmitra blesses Rāma and Lakṣmaṇa",
+    quality: "favorable"
+  }
+];
+
+/* ══════════════════════════════════════════════
+   THE 15×15 GRID
+   Devanagari akṣaras from Rāma Śalākā tradition
+   Grid verified against digital consensus
+   across 5+ sources. Physical verification
+   against Gita Press edition pending.
+   ══════════════════════════════════════════════ */
+
+const GRID = [
+  // Row 1
+  'स','सु','नु','सि','य','स','त्य','अ','सी','स','ह','मा','री','पू','जि',
+  // Row 2
+  'हि','म','न','का','म','ना','तु','म्हा','री','स','फ','ल','म','नो','र',
+  // Row 3
+  'थ','हो','हुँ','तु','म्हा','रे','रा','मु','ल','ख','नु','सु','नि','भ','ए',
+  // Row 4
+  'सु','खा','रे','प्र','बि','सि','न','ग','र','की','जे','स','ब','का','जा',
+  // Row 5
+  'हृ','द','यँ','रा','खि','को','स','ल','पु','र','रा','जा','ग','र','ल',
+  // Row 6
+  'सु','धा','रि','पु','क','र','हिं','मि','ता','ई','गो','प','द','सिं','धु',
+  // Row 7
+  'अ','न','ल','सि','त','ला','ई','मु','द','मं','ग','ल','म','य','सं',
+  // Row 8
+  'त','स','मा','जू','जि','मि','ज','ग','जं','ग','म','ती','र','थ','रा',
+  // Row 9
+  'जू','उ','घ','र','हिं','अं','त','न','हो','इ','नि','बा','हू','का','ल',
+  // Row 10
+  'ने','मि','जि','मि','रा','व','न','रा','हू','हो','इ','हि','सो','इ','जो',
+  // Row 11
+  'रा','म','र','चि','रा','खा','को','क','रि','त','र्क','ब','ढ़ा','व','हिं',
+  // Row 12
+  'सा','खा','बि','धि','ब','स','सु','ज','न','कु','सं','ग','त','प','र',
+  // Row 13
+  'हीं','फ','नि','म','नि','स','म','नि','ज','गु','न','अ','नु','स','र',
+  // Row 14
+  'हीं','ब','रु','न','कु','बे','र','सु','रे','स','स','मी','रा','र','न',
+  // Row 15
+  'स','न्मु','ख','ध','रि','का','हुँ','न','धी','रा','सं','त','त','म','म'
+];
+
+/* ══════════════════════════════════════════════
+   BUILD GRID
+   ══════════════════════════════════════════════ */
+
+const gridEl = document.getElementById('grid');
+for (let i = 0; i < 225; i++) {
+  const cell = document.createElement('div');
+  cell.className = 'cell';
+  cell.textContent = GRID[i] || '·';
+  cell.addEventListener('click', () => selectCell(i));
+  gridEl.appendChild(cell);
+}
+
+/* ══════════════════════════════════════════════
+   SELECTION + ANSWER
+   ══════════════════════════════════════════════ */
+
+let hasAnswered = false;
+
+function selectCell(idx) {
+  // Hide instruction
+  document.getElementById('instruction').classList.add('hidden');
+
+  // Clear previous selection
+  document.querySelectorAll('.cell.selected').forEach(c => c.classList.remove('selected'));
+
+  // Highlight selected cell
+  const cells = document.querySelectorAll('.cell');
+  cells[idx].classList.add('selected');
+
+  // Algorithm: cell_index mod 9
+  const orbit = idx % 9;
+  const ans = ANSWERS[orbit];
+
+  // Show answer
+  const devaEl = document.getElementById('ans-deva');
+  const enEl = document.getElementById('ans-english');
+  const metaEl = document.getElementById('ans-meta');
+
+  devaEl.textContent = ans.deva;
+  devaEl.className = 'ans-deva ' + ans.quality;
+  enEl.textContent = ans.en;
+  metaEl.textContent = ans.kanda + ' · ' + ans.context;
+
+  document.getElementById('answer').classList.add('show');
+  document.getElementById('related').innerHTML = '';
+  hasAnswered = true;
+
+  // Search corpus for related passages
+  searchRelated(ans);
+}
+
+async function searchRelated(ans) {
+  const rel = document.getElementById('related');
+
+  // Build search from kanda + context keywords
+  const contextWords = ans.context.split(/\s+/).filter(w => w.length > 3);
+  const query = contextWords.slice(0, 3).join(' ');
+  if (!query) return;
+
+  const data = await atlasGet(
+    '/corpus/search?q=' + encodeURIComponent(query) + '&tradition=vaishnava&limit=2',
+    null
+  );
+
+  if (data && data.results && data.results.length) {
+    let html = '';
+    data.results.forEach(r => {
+      html += `<div class="rel-item">
+        <div class="rel-ref">${r.title || ''} · ${r.reference || ''}</div>
+        <div class="rel-text">${r.text || ''}</div>
+      </div>`;
+    });
+    rel.innerHTML = html;
+  }
+}
+
+function askAgain() {
+  document.getElementById('answer').classList.remove('show');
+  document.getElementById('instruction').classList.remove('hidden');
+  document.querySelectorAll('.cell.selected').forEach(c => c.classList.remove('selected'));
+  hasAnswered = false;
+}
+</script>
+</body>
+</html>

@@ -30,7 +30,7 @@ _LAYER_NAMES = ("tanpura", "melody", "tabla", "bija", "drone", "sympathetic")
 
 _MODE_WEIGHTS = {
     "field": {
-        "tanpura": 1.0, "melody": 0.2, "tabla": 0.0,
+        "tanpura": 1.0, "melody": 0.2, "tabla": 0.25,
         "bija": 0.15, "drone": 0.0, "sympathetic": 0.1,
     },
     "daw": {
@@ -365,9 +365,374 @@ def derive_sound_spec(field_state: dict, mode: str = "field") -> dict:
     # Build OSC messages
     spec["osc_messages"] = _build_osc_messages(spec)
 
+    # Enrich with wave field data (non-blocking — failures are silent)
+    try:
+        _enrich_with_wave_field(spec)
+    except Exception:
+        pass  # wave data is optional; sound continues without it
+
     # Strip internal fields
     spec.pop("_element", None)
     spec.pop("_guna", None)
     spec.pop("_bija_path", None)
 
     return _validate_spec(spec)
+
+
+# ══════════════════════════════════════════════════════════
+# WAVE FIELD ENRICHMENT
+# ══════════════════════════════════════════════════════════
+
+# Nakshatra → suggested raga mapping
+_NAK_RAGA = {
+    'Ashwini': 'Bilawal', 'Bharani': 'Kalyani', 'Krittika': 'Todi',
+    'Rohini': 'Bhairavi', 'Mrigashira': 'Hindol', 'Ardra': 'Darbari',
+    'Punarvasu': 'Yaman', 'Pushya': 'Kafi', 'Ashlesha': 'Bhairav',
+    'Magha': 'Marwa', 'Purva Phalguni': 'Puriya', 'Uttara Phalguni': 'Bihag',
+    'Hasta': 'Miyan ki Todi', 'Chitra': 'Ahir Bhairav', 'Swati': 'Desh',
+    'Vishakha': 'Jaunpuri', 'Anuradha': 'Malkauns', 'Jyeshtha': 'Bageshri',
+    'Mula': 'Shree', 'Purva Ashadha': 'Kedar', 'Uttara Ashadha': 'Hamir',
+    'Shravana': 'Durga', 'Dhanishta': 'Sarang', 'Shatabhisha': 'Lalit',
+    'Purva Bhadrapada': 'Basant', 'Uttara Bhadrapada': 'Jayjaywanti',
+    'Revati': 'Hansadhwani',
+}
+
+# Dominant harmonic → tanpura partial emphasis
+_K_TO_PARTIAL = {
+    1: 'sa', 3: 'ga', 4: 'ma', 6: 'dha', 7: 'ni', 12: 'pa',
+}
+
+_K_LABELS = {1: 'conjunction', 2: 'opposition', 3: 'trine', 4: 'square',
+             6: 'sextile', 7: 'septile', 12: 'rashi'}
+
+_WAVE_K_VALUES = [1, 3, 4, 6, 7, 12]
+
+
+def _enrich_with_wave_field(spec: dict):
+    """Add wave field data to the sound spec. Non-destructive — only adds keys."""
+    import math
+    from itertools import combinations
+    from datetime import datetime, timezone
+
+    try:
+        from npu_engine.jyotisha_engine import compute_chart, compute_pair_interference
+    except ImportError:
+        return  # jyotish engine not available
+
+    now = datetime.now(timezone.utc).replace(tzinfo=None)
+    try:
+        chart = compute_chart(now, 29.65, -82.32)
+    except Exception:
+        return
+
+    grahas = chart.get('grahas', {})
+    if not grahas or 'Moon' not in grahas:
+        return
+
+    moon = grahas['Moon']
+    moon_long = moon['deg_absolute']
+    moon_nak = moon.get('nakshatra', '')
+    nak_size = 360.0 / 27.0
+    moon_nak_mid = (int(moon_long / nak_size)) * nak_size + nak_size / 2
+
+    # 1. Raga from Moon nakshatra (suggestion only)
+    wave_raga = _NAK_RAGA.get(moon_nak, '')
+    if wave_raga and not spec.get('raga'):
+        spec['raga'] = wave_raga
+    spec['wave_raga'] = wave_raga
+    spec['wave_moon_nak'] = moon_nak
+
+    # 2. Gamak intensity from wave activation at Moon's nak midpoint
+    graha_names = [g for g in grahas if g != 'Moon']
+    pairs = list(combinations(graha_names, 2))
+
+    activation = 0.0
+    k_scores = {k: 0.0 for k in _WAVE_K_VALUES}
+    peak_amp = 0.0
+    peak_pair = ''
+    peak_k = 0
+
+    for a, b in pairs:
+        lon_a = grahas[a]['deg_absolute']
+        lon_b = grahas[b]['deg_absolute']
+        for k in _WAVE_K_VALUES:
+            amp = compute_pair_interference(lon_a, lon_b, moon_nak_mid, k)
+            abs_amp = abs(amp)
+            activation += abs_amp
+            k_scores[k] += abs_amp
+            if abs_amp > peak_amp:
+                peak_amp = abs_amp
+                peak_pair = f"{a}-{b}"
+                peak_k = k
+
+    # Normalize (28 pairs × 6 k-values × max amp 2 = 336 theoretical max)
+    max_possible = len(pairs) * len(_WAVE_K_VALUES) * 2.0
+    gamak_intensity = min(activation / max_possible, 1.0) if max_possible > 0 else 0.5
+
+    spec['wave_gamak_intensity'] = round(gamak_intensity, 3)
+    spec['wave_peak_pair'] = peak_pair
+    spec['wave_peak_k'] = peak_k
+
+    # 3. Tempo from tithi phase
+    tithi = chart.get('tithi', {})
+    phase = tithi.get('sun_moon_phase_deg', 180)
+    wave_bpm = 81 + 27 * math.sin(math.radians(phase))
+    spec['wave_bpm'] = round(wave_bpm, 1)
+
+    # Blend into existing bpm
+    existing_bpm = spec.get('bpm', 72)
+    spec['bpm'] = round(0.7 * existing_bpm + 0.3 * wave_bpm, 1)
+
+    # 4. Dominant harmonic → partial emphasis
+    dominant_k = max(k_scores, key=k_scores.get) if k_scores else 12
+    spec['wave_partial'] = _K_TO_PARTIAL.get(dominant_k, 'pa')
+    spec['wave_dominant_k'] = dominant_k
+    spec['wave_dominant_k_name'] = _K_LABELS.get(dominant_k, f'k={dominant_k}')
+
+    # 5. Pair interference → interval mix (partial ratios + amplitudes)
+    interval_mix = _compute_interval_mix(grahas, moon_nak_mid, k_scores)
+    spec['wave_interval_mix'] = interval_mix
+
+    # 6. Planetary prime rhythm mode
+    rhythm = _compute_rhythm_mode(k_scores)
+    spec['wave_rhythm_mode'] = rhythm
+
+    # 7. Natal tonal filter
+    natal_filter = _compute_natal_filter(gamak_intensity)
+    spec['wave_natal_filter'] = natal_filter
+
+    # 8. Breath cycle micro-variation
+    breath = _compute_breath(gamak_intensity, phase)
+    spec['wave_breath'] = breath
+
+    # 9. Tempo: wider range (60-120 bpm, sinusoidal)
+    wave_bpm = 90 + 30 * math.sin(math.radians(phase))
+    spec['wave_bpm'] = round(wave_bpm, 1)
+    existing_bpm = spec.get('bpm', 72)
+    spec['bpm'] = round(0.7 * existing_bpm + 0.3 * wave_bpm, 1)
+
+    # 10. Hora weight (slow timescale)
+    hora = chart.get('meta', {})
+    hora_data = _compute_hora_weight(chart)
+    spec['wave_hora'] = hora_data
+
+    # 11. Append ALL wave OSC messages
+    osc = spec.get('osc_messages', [])
+    osc.append(['/atlas/wave/gamak', [gamak_intensity]])
+    osc.append(['/atlas/wave/bpm', [wave_bpm]])
+    osc.append(['/atlas/wave/partial', [_K_TO_PARTIAL.get(dominant_k, 'pa')]])
+    osc.append(['/atlas/wave/k', [float(dominant_k)]])
+
+    # Interval mix: flatten to [ratio1, amp1, ratio2, amp2, ...]
+    partials_flat = []
+    for ratio, amp in sorted(interval_mix.items()):
+        partials_flat.extend([ratio, round(amp, 3)])
+    if partials_flat:
+        osc.append(['/atlas/wave/partials', partials_flat])
+
+    # Rhythm mode
+    osc.append(['/atlas/wave/rhythm_mode', [
+        float(rhythm['dominant_prime']),
+        float(rhythm['secondary_prime']),
+        round(rhythm['blend_ratio'], 2),
+    ]])
+
+    # Breath (fast cycle params — sent at medium rate, SC interpolates)
+    osc.append(['/atlas/wave/breath', [
+        round(breath['gamak_probability'], 3),
+        round(breath['pitch_drift_cents'], 1),
+        round(breath['energy'], 3),
+    ]])
+
+    # Hora weight (slow timescale)
+    osc.append(['/atlas/wave/hora', [hora_data['graha'], hora_data['weight']]])
+
+    # Natal filter
+    if natal_filter.get('home_raga'):
+        osc.append(['/atlas/natal/raga', [natal_filter['home_raga']]])
+        osc.append(['/atlas/natal/partial_emphasis', [
+            natal_filter.get('partial_ratio', 1.5),
+            natal_filter.get('weight', 0.3),
+        ]])
+
+
+# ══════════════════════════════════════════════════════════
+# INTERVAL MIX, RHYTHM, NATAL FILTER, BREATH
+# ══════════════════════════════════════════════════════════
+
+# Harmonic k → just-intonation partial ratio
+_K_TO_RATIO = {
+    1: 1.0,      # Sa (unison)
+    2: 2.0,      # Sa' (octave)
+    3: 1.5,      # Pa (3:2 perfect fifth)
+    4: 4/3,      # Ma (4:3 perfect fourth)
+    5: 5/4,      # Ga (5:4 major third)
+    6: 6/5,      # ga (6:5 minor third)
+    7: 7/4,      # Ni (7:4 natural seventh)
+    9: 9/8,      # Re (9:8 major second)
+    11: 11/8,    # Ma tivra (11:8 tritone)
+    12: 1.0,     # rashi → Sa (complete cycle returns to fundamental)
+}
+
+# Planetary prime → phrase grouping
+_PRIME_BOL = {
+    3: 'ta-ki-ta',
+    5: 'ta-ka-ta-ki-ta',
+    7: 'ta-ki-ta-ta-ka-ta-ki',
+    11: 'dha-ti-dha-ge-na-ti-na-ke-dha-ti-na',
+}
+
+
+def _compute_interval_mix(grahas, moon_nak_mid, k_scores):
+    """Map wave field k-scores to drone partial ratios + amplitudes."""
+    if not k_scores:
+        return {1.5: 0.5}  # default Pa emphasis
+
+    # Normalize k_scores to 0-1
+    total = sum(k_scores.values())
+    if total <= 0:
+        return {1.5: 0.5}
+
+    mix = {}
+    for k, score in k_scores.items():
+        ratio = _K_TO_RATIO.get(k, 1.0)
+        amp = score / total  # proportional weight
+        if ratio in mix:
+            mix[ratio] = max(mix[ratio], amp)
+        else:
+            mix[ratio] = amp
+
+    # Keep top 4 partials, normalize to sum=1
+    top = dict(sorted(mix.items(), key=lambda x: x[1], reverse=True)[:4])
+    top_total = sum(top.values())
+    if top_total > 0:
+        top = {k: v / top_total for k, v in top.items()}
+    return top
+
+
+def _compute_rhythm_mode(k_scores):
+    """Determine dominant and secondary planetary prime from wave field."""
+    # Map k-scores to planetary primes
+    prime_scores = {}
+    for k, score in k_scores.items():
+        # k=3 → Mercury(3), k=4 → relates to Mars(7) via 4th aspect
+        # k=6 → Venus(5) via sextile, k=7 → Mars(7), k=12 → full cycle
+        # Direct mapping: use the k value if it's a prime, else nearest
+        if k in (3, 5, 7, 11):
+            prime_scores[k] = prime_scores.get(k, 0) + score
+        elif k == 4:
+            prime_scores[7] = prime_scores.get(7, 0) + score * 0.5
+        elif k == 6:
+            prime_scores[5] = prime_scores.get(5, 0) + score * 0.5
+            prime_scores[3] = prime_scores.get(3, 0) + score * 0.5
+        elif k == 12:
+            prime_scores[3] = prime_scores.get(3, 0) + score * 0.3
+
+    if not prime_scores:
+        return {'dominant_prime': 7, 'secondary_prime': 3, 'blend_ratio': 0.8,
+                'dominant_bol': _PRIME_BOL[7], 'secondary_bol': _PRIME_BOL[3]}
+
+    sorted_primes = sorted(prime_scores.items(), key=lambda x: x[1], reverse=True)
+    dom = sorted_primes[0]
+    sec = sorted_primes[1] if len(sorted_primes) > 1 else (3, 0)
+
+    # Blend ratio: how dominant is the primary (0.5 = equal, 1.0 = total dominance)
+    total = dom[1] + sec[1]
+    blend = dom[1] / total if total > 0 else 0.8
+
+    return {
+        'dominant_prime': dom[0],
+        'secondary_prime': sec[0],
+        'blend_ratio': round(blend, 2),
+        'dominant_bol': _PRIME_BOL.get(dom[0], 'ta-ki-ta'),
+        'secondary_bol': _PRIME_BOL.get(sec[0], 'ta-ki-ta'),
+    }
+
+
+def _compute_natal_filter(transit_activation):
+    """Natal tonal personality — blends with transit state."""
+    try:
+        from npu_engine.jyotisha_engine import load_natal_json, compute_chart
+        natal = load_natal_json()
+        natal_chart = compute_chart(natal['dt_utc'], natal['lat'], natal['lon'])
+    except Exception:
+        return {'home_raga': '', 'weight': 0.0, 'partial_ratio': 1.5}
+
+    natal_moon_nak = natal_chart['grahas']['Moon'].get('nakshatra', '')
+    home_raga = _NAK_RAGA.get(natal_moon_nak, '')
+
+    # Find strongest dignity graha for partial emphasis
+    best_dignity = ''
+    best_graha = 'Moon'
+    dignity_rank = {'deeply_exalted': 6, 'exalted': 5, 'mooltrikona': 4,
+                    'own': 3, 'friend': 2, 'neutral': 1, 'enemy': 0,
+                    'debilitated': -1, 'deeply_debilitated': -2}
+    best_score = -3
+    for name, g in natal_chart['grahas'].items():
+        d = g.get('dignity', 'neutral')
+        if dignity_rank.get(d, 0) > best_score:
+            best_score = dignity_rank.get(d, 0)
+            best_graha = name
+            best_dignity = d
+
+    # Partial ratio from strongest graha's nak lord chain
+    partial_ratio = 1.5  # default Pa
+
+    # Natal weight: inverse of transit activation
+    # High transit → sky speaks (natal weight low)
+    # Low transit → self speaks (natal weight high)
+    import math
+    natal_weight = 1.0 - math.tanh(2.0 * (transit_activation - 0.5))
+    natal_weight = max(0.1, min(0.9, natal_weight * 0.5))
+
+    return {
+        'home_raga': home_raga,
+        'weight': round(natal_weight, 3),
+        'partial_ratio': partial_ratio,
+        'strongest_graha': best_graha,
+        'strongest_dignity': best_dignity,
+    }
+
+
+def _compute_breath(activation, tithi_phase):
+    """Micro-variation params for the 5s fast cycle."""
+    import math
+    # Breath depth scales with activation
+    # High activation → wider breath (±5 bpm), more gamak
+    # Low activation → shallow breath (±1 bpm), less gamak
+    breath_depth = 1.0 + 4.0 * activation  # 1-5 bpm amplitude
+
+    # Gamak probability: chance of ornament on each note
+    gamak_prob = 0.2 + 0.6 * activation  # 0.2-0.8
+
+    # Pitch drift: slow sruti wavering (±cents)
+    drift = 2.0 + 3.0 * (1.0 - activation)  # quieter = more drift (meditative)
+
+    # Energy: overall intensity for the fast cycle
+    energy = 0.3 + 0.5 * math.sin(math.radians(tithi_phase)) * activation
+
+    return {
+        'gamak_probability': round(gamak_prob, 3),
+        'pitch_drift_cents': round(drift, 1),
+        'breath_depth_bpm': round(breath_depth, 1),
+        'energy': round(max(0, min(1, energy)), 3),
+    }
+
+
+def _compute_hora_weight(chart):
+    """Hora graha → tonal center weight (slow timescale)."""
+    grahas = chart.get('grahas', {})
+    # Find hora from Sun's position (approximate: hora = 1/24 of day)
+    # The actual hora is in field_state, not in chart. Use Sun position as proxy.
+    sun = grahas.get('Sun', {})
+    sun_nak_lord = sun.get('nakshatra_lord', 'Sun')
+
+    # Map hora graha to tonal weight
+    _HORA_WEIGHT = {
+        'Sun': 0.9, 'Moon': 0.6, 'Mars': 0.8,
+        'Mercury': 0.7, 'Jupiter': 0.75, 'Venus': 0.65,
+        'Saturn': 0.5, 'Rahu': 0.4, 'Ketu': 0.35,
+    }
+    weight = _HORA_WEIGHT.get(sun_nak_lord, 0.7)
+
+    return {'graha': sun_nak_lord, 'weight': round(weight, 2)}

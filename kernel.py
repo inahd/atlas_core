@@ -628,10 +628,25 @@ def _load_text_entity_relations() -> list:
     return _text_entity_relations
 
 
+def _fold_diacritics(s: str) -> str:
+    """Fold diacritics for search: Rāma→rama, Śrī→sri, å→a, ∂→i."""
+    import unicodedata
+    # NFKD decomposition separates base chars from combining marks
+    nfkd = unicodedata.normalize("NFKD", s)
+    folded = "".join(c for c in nfkd if unicodedata.category(c) != "Mn")
+    # Additional replacements for characters NFKD doesn't decompose
+    folded = folded.replace("å", "a").replace("∂", "i").replace("ƒ", "n")
+    folded = folded.replace("¡", "n").replace("¶", "sh").replace("∫", "n")
+    folded = folded.replace("≈", "m").replace("¢", "n").replace("¶", "sh")
+    folded = folded.replace("›", "S").replace("Œ", "d").replace("∆", "n")
+    return folded.lower()
+
+
 def _search_full_corpus(query: str, tradition: str = "",
                         limit: int = 10) -> list:
-    """Search across all corpus JSONL files. Returns ranked results."""
-    q = str(query or "").strip().lower()
+    """Search across all corpus JSONL files. Returns ranked results.
+    Folds diacritics for matching but returns original text."""
+    q = _fold_diacritics(str(query or "").strip())
     if not q:
         return []
     registry = _load_full_corpus_registry()
@@ -645,24 +660,29 @@ def _search_full_corpus(query: str, tradition: str = "",
         if not chunk_path or not chunk_path.exists():
             continue
         for record in _iter_jsonl_records(chunk_path):
-            hay = " ".join(
+            # Build original text for display
+            original = " ".join(
                 str(record.get(k, "")).strip()
                 for k in ("verse_ref", "text", "translation", "purport",
                            "sanskrit", "iast", "synonyms")
                 if str(record.get(k, "")).strip()
-            ).lower()
+            )
+            # Fold diacritics for matching
+            hay = _fold_diacritics(original)
             if not all(t in hay for t in terms):
                 continue
+            # Build snippet from ORIGINAL text (preserves diacritics)
             pos = hay.find(terms[0])
             start = max(0, pos - 80)
             end = min(len(hay), pos + 200)
-            snippet = hay[start:end].strip()
+            # Map positions back to original (same length after folding)
+            snippet = original[start:end].strip()
             results.append({
                 "corpus_id": entry.get("id", ""),
                 "title": entry.get("title", entry.get("name", "")),
                 "tradition": entry.get("tradition", ""),
                 "reference": record.get("verse_ref", "") or str(record.get("id", "")),
-                "text": snippet or hay[:280],
+                "text": snippet or original[:280],
                 "domain": record.get("domain", entry.get("domain", "")),
                 "authority": entry.get("authority", 0.5),
             })
@@ -3943,6 +3963,16 @@ def create_app():
     # ── Health/system/snapshot/dashboard routes → system_bp ────────
     from npu_engine.routes.system_bp import system_bp
     app.register_blueprint(system_bp)
+
+    # ── Jyotisha chart engine → jyotish_bp ────────
+    from npu_engine.routes.jyotish_bp import jyotish_bp
+    app.register_blueprint(jyotish_bp)
+    print(f"  [jyotish] /jyotish/natal /jyotish/transits /jyotish/compute /jyotish/tara/<nak> /jyotish/compatibility")
+
+    # ── Nitya Devi → nitya_bp ────────
+    from npu_engine.routes.nitya_bp import nitya_bp
+    app.register_blueprint(nitya_bp)
+    print(f"  [nitya] /nitya/devi/today /nitya/devi/<tithi> /nitya/field/<tithi> /nitya/srichakra")
 
     @app.route("/osc", methods=["POST", "OPTIONS"])
     def _osc_proxy():
@@ -8052,6 +8082,278 @@ def create_app():
 
     @app.route('/widgets/<path:name>')
     def widgets(name): return send_from_directory('static/widgets', name)
+
+    # ── Oracle page ────────
+    @app.route('/oracle')
+    def _oracle_page(): return send_from_directory('static', 'oracle.html')
+
+    # ── Lila: I Ching augury engine ──��─────
+    from npu_engine.field.iching_augury_engine import (
+        score_hexagram, score_omen, trigram_field_map, cast_hexagram,
+    )
+
+    @app.route('/lila/augury/hexagram/<int:hex_int>')
+    def _augury_hexagram(hex_int):
+        if not 0 <= hex_int <= 63:
+            return jsonify({"error": "hexagram must be 0-63"}), 400
+        return jsonify(score_hexagram(hex_int, field_state()))
+
+    @app.route('/lila/augury/omen/<phenomenon>')
+    @app.route('/lila/augury/omen/<phenomenon>/<direction>')
+    def _augury_omen(phenomenon, direction=None):
+        return jsonify(score_omen(phenomenon, direction or '', field_state()))
+
+    @app.route('/lila/augury/cast')
+    def _augury_cast():
+        return jsonify(cast_hexagram(field_state()))
+
+    @app.route('/lila/augury/field')
+    def _augury_field():
+        return jsonify(trigram_field_map(field_state()))
+
+    # ── Lila: Pāśaka dice oracle ─────────
+    @app.route('/lila/augury/pasaka')
+    def _augury_pasaka():
+        from npu_engine.pasaka_engine import cast
+        return jsonify(cast(field_state()))
+
+    @app.route('/lila/augury/pasaka/<int:d1>/<int:d2>/<int:d3>')
+    def _augury_pasaka_fixed(d1, d2, d3):
+        from npu_engine.pasaka_engine import get
+        return jsonify(get(d1, d2, d3))
+
+    print(f"  [pasaka] /lila/augury/pasaka")
+    print(f"  [pasaka] /lila/augury/pasaka/<d1>/<d2>/<d3>")
+
+    # ── Lila: Time Pointer oracle ─��──────
+    @app.route('/lila/oracle/timepointer')
+    def _oracle_timepointer():
+        """Find next occurrence of a tithi+nakshatra pair within 90 days."""
+        import csv as _tp_csv
+        from datetime import timedelta
+
+        target_tithi = request.args.get('tithi', '')
+        target_nak = request.args.get('nakshatra', '')
+        if not target_tithi and not target_nak:
+            return jsonify({"error": "provide tithi and/or nakshatra"}), 400
+
+        now = datetime.now()
+        tithi_match = None
+        nak_match = None
+        conjunction = None
+
+        # Scan daily for 90 days
+        for day_offset in range(1, 91):
+            dt = now + timedelta(days=day_offset)
+            try:
+                p5 = calc_panchanga(dt)
+            except Exception:
+                continue
+
+            p_tithi = p5.get("tithi", "")
+            p_nak = p5.get("nakshatra", "")
+
+            # Check tithi match
+            if target_tithi and not tithi_match:
+                if target_tithi.lower() in p_tithi.lower():
+                    tithi_match = {"date": dt.strftime("%Y-%m-%d"),
+                                   "weekday": dt.strftime("%A"),
+                                   "days_from_now": day_offset,
+                                   "panchanga": p5}
+
+            # Check nakshatra match
+            if target_nak and not nak_match:
+                if target_nak.lower() in p_nak.lower():
+                    nak_match = {"date": dt.strftime("%Y-%m-%d"),
+                                 "weekday": dt.strftime("%A"),
+                                 "days_from_now": day_offset,
+                                 "panchanga": p5}
+
+            # Check conjunction
+            if target_tithi and target_nak and not conjunction:
+                if (target_tithi.lower() in p_tithi.lower() and
+                        target_nak.lower() in p_nak.lower()):
+                    conjunction = {"date": dt.strftime("%Y-%m-%d"),
+                                   "weekday": dt.strftime("%A"),
+                                   "days_from_now": day_offset,
+                                   "panchanga": p5}
+
+            if tithi_match and nak_match and conjunction:
+                break
+
+        # Get hora from matching panchanga
+        best = conjunction or tithi_match or nak_match
+        hora_lord = ""
+        if best:
+            p = best.get("panchanga", {})
+            vara = p.get("vara", "")
+            hora_lord = _vara_to_hora(vara)
+
+        # Load chakra for nakshatra
+        chakra = ""
+        try:
+            _ck_path = os.path.join(_here, "datasets", "tantra",
+                                    "chakra_cross_domain.csv")
+            if os.path.exists(_ck_path):
+                with open(_ck_path) as _ckf:
+                    for row in _tp_csv.DictReader(_ckf):
+                        naks = row.get("nakshatras", "")
+                        if target_nak and target_nak.lower() in naks.lower():
+                            chakra = row.get("name_iast", "")
+                            break
+        except Exception:
+            pass
+
+        # Load tithi good_for
+        preparation = ""
+        try:
+            _td_path = os.path.join(_here, "datasets", "astro",
+                                    "tithi_data.csv")
+            if os.path.exists(_td_path):
+                with open(_td_path) as _tdf:
+                    for row in _tp_csv.DictReader(
+                            (l for l in _tdf if l.strip())):
+                        if (target_tithi and
+                                target_tithi.lower() in
+                                row.get("name_iast", "").lower()):
+                            preparation = row.get("good_for", "")
+                            break
+        except Exception:
+            pass
+
+        # Cast hexagram for that field
+        hex_result = None
+        if best:
+            dt_best = datetime.strptime(best["date"], "%Y-%m-%d")
+            try:
+                p5_best = calc_panchanga(dt_best)
+                fs_best = {"panchanga": p5_best,
+                           "hora": {"hora_lord": hora_lord}}
+                hex_result = cast_hexagram(fs_best, seed=hash(
+                    best["date"]) % (2**31))
+            except Exception:
+                pass
+
+        return jsonify({
+            "target_tithi": target_tithi,
+            "target_nakshatra": target_nak,
+            "tithi_match": tithi_match,
+            "nakshatra_match": nak_match,
+            "conjunction": conjunction,
+            "hora_lord": hora_lord,
+            "chakra": chakra,
+            "preparation": preparation,
+            "hexagram": hex_result,
+        })
+
+    def _vara_to_hora(vara):
+        """Extract hora lord from vara string."""
+        vara_map = {
+            "ravi": "surya", "soma": "chandra", "mangala": "mangala",
+            "budha": "budha", "guru": "guru", "brihas": "guru",
+            "shukra": "shukra", "shani": "shani",
+        }
+        vl = vara.lower()
+        for k, v in vara_map.items():
+            if k in vl:
+                return v
+        return "surya"
+
+    print(f"  [oracle] /oracle")
+    print(f"  [oracle] /lila/augury/hexagram|omen|cast|field")
+    print(f"  [oracle] /lila/oracle/timepointer")
+
+    # ── Geosolar field monitor ─────────────────────────────
+    from npu_engine.field.geosolar_engine import (
+        get_geosolar_state, read_log, correlate_with_panchanga,
+        _start_geosolar_logger,
+    )
+
+    @app.route('/geosolar')
+    def _geosolar():
+        return jsonify(get_geosolar_state())
+
+    @app.route('/geosolar/log')
+    def _geosolar_log():
+        return jsonify(read_log(50))
+
+    @app.route('/geosolar/correlate')
+    def _geosolar_correlate():
+        return jsonify(correlate_with_panchanga())
+
+    # Start background logger — inject panchanga function
+    _start_geosolar_logger(lambda: calc_panchanga(), interval_s=600)
+    print(f"  [geosolar] /geosolar /geosolar/log /geosolar/correlate")
+
+    # ── Briefing engine ────────────────────────────────────
+    from npu_engine.field.briefing_engine import get_briefing
+
+    @app.route('/briefing')
+    def _briefing():
+        return jsonify(get_briefing(calc_panchanga, field_state))
+
+    print(f"  [briefing] /briefing (qwen2.5:1.5b via ollama)")
+
+    # ── Transit analysis (Tarabala) ───────────────────────
+    from npu_engine.field.transit_engine import get_transit_analysis
+
+    @app.route('/transit/analysis')
+    def _transit_analysis():
+        td = get_transit_data()
+        return jsonify(get_transit_analysis(td.get('natal', {}), td.get('positions', {})))
+
+    print(f"  [transit] /transit/analysis (Tarabala)")
+
+    # ── Shalaka page ──────────────────────────────────────
+    @app.route('/shalaka')
+    def _shalaka_page():
+        return send_from_directory('static', 'shalaka.html')
+
+    print(f"  [shalaka] /shalaka")
+
+    # ── Sound field loop ─────────────────────────────────
+    # Re-derive sound spec from live field state every 60s and push to SC.
+    # Makes tanpura/bija/tabla/reverb follow nakshatra, hora, coherence, Ekadashi.
+    def _sound_field_loop():
+        import time, sys
+        from npu_engine.sound.sound_engine import derive_sound_spec
+        from npu_engine.sound.osc_bridge import send_sound_spec
+        import npu_engine.routes._sound_state as _ss_local
+
+        def _log(msg):
+            print(msg, file=sys.stderr, flush=True)
+
+        # Wait for SC to finish booting and loading SynthDefs
+        time.sleep(8)
+        _log("  ✦ sound field loop started (60s tick)")
+
+        last_sig = None
+        while True:
+            try:
+                fs = field_state()
+                spec = derive_sound_spec(fs, _ss_local.sound_mode)
+                send_sound_spec(spec)
+
+                # Log only when something meaningful changed
+                sig = (
+                    spec.get("sa_hz"),
+                    spec.get("mode"),
+                    spec.get("ekadashi"),
+                    tuple(sorted(spec.get("layers", {}).items())),
+                )
+                if sig != last_sig:
+                    _log(f"  ♪ sound: mode={spec['mode']} sa={spec['sa_hz']} "
+                         f"eka={spec['ekadashi']} layers={spec['layers']}")
+                    last_sig = sig
+            except Exception as e:
+                _log(f"  ⚠ sound loop: {e}")
+
+            time.sleep(60)
+
+    import threading as _t
+    _sound_loop_thread = _t.Thread(
+        target=_sound_field_loop, daemon=True, name="atlas-sound-loop")
+    _sound_loop_thread.start()
 
     return app
 

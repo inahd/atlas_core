@@ -1,0 +1,52 @@
+{
+  "title": "Magic Structure Test Series — Interpretation",
+  "date": "2026-04-12",
+  "raw_data": "magic_structure_test_series.json",
+
+  "test1_verdict": {
+    "title": "±9 is NOT universal — it is axis-dependent",
+    "detail": "±9 appears only in Andrews' natural layering. Transposing axes (rot1) gives ±13.5, (rot2) gives mixed irrational values (19.07, 10.07, 16.52). Unlike 2D where ±2√6 is invariant for ALL 3×3 magic squares regardless of orientation, the 3D layer eigenvalue depends on which axis you slice along. This is a fundamental 2D→3D asymmetry.",
+    "implication": "The Lo Shu's ±2√6 invariance is a special property of 2D: a 3×3 matrix has orientation-independent eigenvalues. In 3D, slicing along different axes produces different 3×3 matrices with different spectra. There is no single scalar 3D invariant analogous to 2√6.",
+    "correction": "Previous finding '±9 is the 3D spectral invariant' was too strong. Correct statement: ±9 is the layer eigenvalue of Andrews' cube in its canonical orientation."
+  },
+
+  "test2_verdict": {
+    "title": "4D hypercube: no clean invariant pattern",
+    "detail": "Valid 3×3×3×3 magic hypercube (M=123) constructed. Slice eigenvalues are messy: {30.2, 44.7, 63.6, 47.4, 27.6, 66.2} — no single value dominates. However, σ₁ = 213.042 is identical across all 3D slices, preserving first-mode isotropy.",
+    "implication": "The d=2 case (±2√6 universal) appears to be uniquely clean. Higher dimensions do not produce a single universal invariant. The isotropy property (identical σ₁ across modes) does generalize."
+  },
+
+  "test3_verdict": {
+    "title": "Kronecker scaling CONFIRMED — exact at all 4 levels",
+    "detail": "Lo Shu Kronecker: λ_max = 15^n, λ_2 = 15^(n-1) × 2√6. Exact to machine precision at levels 1-4 (3×3 through 81×81). Full rank, zero null dimensions at every level.",
+    "implication": "The multiplicative eigenvalue structure of Kronecker products is algebraically guaranteed. This was expected but good to verify computationally."
+  },
+
+  "test4_verdict": {
+    "title": "3D query overhead: 3.73× — acceptable for production",
+    "detail": "2D yantra query: 0.035ms, 3D cube query: 0.132ms (3 eigenvector projections + average). For 16,224 entities, both are sub-millisecond.",
+    "implication": "If 3D cube scoring adds value, the compute cost is negligible. The question is whether the extra information from 3 layer projections is semantically useful."
+  },
+
+  "test5_verdict": {
+    "title": "Cube composite preserves ±3·2√6 but NOT the rank/null topology",
+    "detail": "Navagraha 2D: M=81, rank 5, null 4, λ₂=±14.697=±3·2√6. Cube composite: M=162, rank 7, null 2, λ₂=±14.697=±3·2√6. The secondary eigenvalue ±3·2√6 appears IDENTICALLY in both, despite the rank/null structure being completely different (5/4 vs 7/2).",
+    "key_finding": "±3·2√6 is carried by the Lo Shu weighting, not by the cell content. Whether you fill Lo Shu positions with graha yantras or cube layers, the Lo Shu's own spectral structure imprints ±3·2√6 on the composite. The Lo Shu is the invariant carrier.",
+    "implication": "This confirms that the Navagraha composite's ±3·2√6 comes from the Lo Shu META-structure, not from the individual graha yantras. The yantras determine rank/null; the Lo Shu determines the invariant eigenvalue."
+  },
+
+  "overall_synthesis": {
+    "what_generalizes_to_3d": [
+      "Magic constant formula: M = n(n^d+1)/2",
+      "Associativity: antipodal sum = n^d + 1",
+      "Center value = (n^d + 1) / 2",
+      "First-mode isotropy (σ₁ identical across all tensor modes)",
+      "Kronecker extension preserves multiplicative eigenvalue scaling"
+    ],
+    "what_does_NOT_generalize": [
+      "Universal scalar invariant (±2√6 is uniquely 2D — 3D eigenvalues are axis-dependent)",
+      "Composite rank/null topology (5/4 in 2D vs 7/2 in 3D composite)"
+    ],
+    "surprise_finding": "±3·2√6 appearing identically in both composites proves Lo Shu is the invariant carrier. The cell content (graha yantras vs cube layers) affects topology but not the fundamental spectral constant."
+  }
+}

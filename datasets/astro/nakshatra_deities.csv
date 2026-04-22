@@ -1,28 +1,28 @@
-nakshatra,deity,attestation_status
-Ashwini,Ashwini_Kumaras,attested_classical
-Bharani,Yama,attested_classical
-Krittika,Agni,attested_classical
-Rohini,Brahma,attested_classical
-Mrigashira,Soma,attested_classical
-Ardra,Rudra,attested_classical
-Punarvasu,Aditi,attested_classical
-Pushya,Brihaspati,attested_classical
-Ashlesha,Nagas,attested_classical
-Magha,Pitrs,attested_classical
-Purva_Phalguni,Bhaga,attested_classical
-Uttara_Phalguni,Aryaman,attested_classical
-Hasta,Savitar,attested_classical
-Chitra,Tvashtar,attested_classical
-Swati,Vayu,attested_classical
-Vishakha,Indra_Agni,attested_classical
-Anuradha,Mitra,attested_classical
-Jyeshtha,Indra,attested_classical
-Mula,Nirriti,attested_classical
-Purva_Ashadha,Apas,attested_classical
-Uttara_Ashadha,Vishvadevas,attested_classical
-Shravana,Vishnu,attested_classical
-Dhanishta,Vasus,attested_classical
-Shatabhisha,Varuna,attested_classical
-Purva_Bhadrapada,Aja_Ekapada,attested_classical
-Uttara_Bhadrapada,Ahirbudhnya,attested_classical
-Revati,Pushan,attested_classical
+deity,nakshatra,item_1,item_2,item_3,item_4,vahana,mudra,color_body,color_garment,direction,gemstone,metal,time_of_day,day,mantra_bija,shakti_name,iconography_brief,tattva,rasa
+Ashvini Kumaras,Ashwini,pot_of_amrita,herbs_bouquet,lotus,bandage,horse,abhaya_mudra,golden,white,east,coral,gold,dawn,Sunday,hām,Saubhagya,"Twin youthful physicians with horse heads, carrying healing herbs, amrita pot, lotus and bandages, riding swift horses.",vayu,vira
+Yama,Bharani,staff_danda,noose_pasha,mace_gada,scales,buffalo,varada_mudra,dark_blue,red,south,onyx,iron,late_night,Saturday,yam,Dhumorna,"Fearsome lord of dharma with dark complexion holding staff, noose, mace and scales, riding a black buffalo and upholding justice.",earth,bhayanaka
+Agni,Krittika,flame,ladle_sruk,spoon_sruva,water_pot,ram,abhaya_mudra,red,yellow,southeast,ruby,copper,midday,Tuesday,ram,Swaha,"Two-faced red deity with flames for hair, holding sacrificial ladle, spoon, water pot and fire, riding a ram.",agni,raudra
+Brahma/Prajapati,Rohini,rosary_aksha_mala,book_pustaka,water_pot_kamandalu,lotus_padma,swan,abhaya_mudra,golden,white,east,pearl,gold,morning,Thursday,rim,Sarasvati,"Four-headed creator seated on a lotus, holding rosary, book, water pot and lotus, riding a swan.",akasha,adbhuta
+Soma/Chandra,Mrigashira,crescent_moon,lotus,conch_shankha,rod_danda,deer,varada_mudra,white,silver,northwest,pearl,silver,night,Monday,som,Rohini,"Gentle moon-faced deity holding lotus, conch and staff with crescent moon crown, riding a deer.",jala,shringara
+Rudra,Ardra,trident_trishula,drum_damaru,bow_dhanush,deer_skin,bull,abhaya_mudra,blue,tiger_skin,northeast,turquoise,bronze,midday,Monday,hum,Gauri,"Fierce blue-throated Rudra with matted hair, holding trident, drum, bow and deer skin, riding Nandi.",vayu,raudra
+Aditi,Punarvasu,lotus_padma,corn_anna,water_pot_kamandalu,rosary_aksha_mala,eagle,varada_mudra,golden,green,north,yellow_sapphire,gold,morning,Monday,aim,Ananta,"Radiant mother of devas holding lotus, grain, rosary and water pot, riding an eagle and nurturing creation.",akasha,karuna
+Brihaspati,Pushya,staff_danda,book,rosary_aksha_mala,lotus_padma,elephant,abhaya_mudra,yellow,yellow,northeast,yellow_sapphire,gold,morning,Thursday,gum,Tara,"Wise sage with yellow complexion holding staff, book, rosary and lotus, riding an elephant.",akasha,shanta
+Sarpa/Nagas,Ashlesha,serpent_naga,gem_mani,water_pot,protective_staff,serpent,naga_mudra,dark_green,dark_blue,southwest,cats_eye,copper,midnight,Wednesday,sam,Manasa,"Serpentine deities with coiled bodies, holding gem, water pot and staff, embodying occult wisdom.",earth,bhayanaka
+Pitrs/Ancestors,Magha,rice_ball_pinda,staff_danda,water_pot,rosary_aksha_mala,crow,varada_mudra,pale,white,south,smoky_quartz,iron,twilight,Saturday,pit,Swadha,"Ancestral spirits bearing rice balls, staff and water pot, clad in white and riding a crow, representing lineage.",earth,karuna
+Aryaman,Purva Phalguni,goad_ankusha,noose_pasha,lotus,rosary,horse,varada_mudra,golden,green,southeast,garnet,bronze,afternoon,Friday,yam,Usha,"Noble deity of hospitality holding goad, noose, lotus and rosary, riding a horse.",air,shringara
+Bhaga,Uttara Phalguni,discus_chakra,conch_shankha,lotus,mace_gada,lion,varada_mudra,golden,red,north,ruby,gold,morning,Sunday,bhaṃ,Lakshmi,"Prosperity deity smiling and holding discus, conch, lotus and mace, riding a lion.",earth,shringara
+Savitar/Surya,Hasta,lotus,rosary,water_pot,abhaya_mudra,seven_horses,abhaya_mudra,golden,crimson,east,ruby,gold,morning,Sunday,hrām,Gayatri,"Radiant sun god holding lotus, rosary and water pot while blessing, riding a chariot of seven horses.",agni,adbhuta
+Tvashtar/Vishvakarma,Chitra,hammer,chisel,bow,axe,elephant,abhaya_mudra,golden,multicolored,west,carnelian,brass,midday,Wednesday,tvam,Chitrini,"Divine architect with four arms holding hammer, chisel, bow and axe, riding an elephant.",earth,adbhuta
+Vayu,Swati,flag_dhvaja,conch_shankha,staff_danda,scarf,antelope,abhaya_mudra,crystal_blue,white,northwest,sapphire,silver,afternoon,Saturday,yam,Anjana,"Swift air god carrying banner, conch, staff and scarf, riding an antelope, symbolizing the breath.",air,shanta
+Indra+Agni,Vishakha,thunderbolt_vajra,bow_dhanush,torch_flame,lotus,elephant,abhaya_mudra,golden,red,east,blue_sapphire,gold,afternoon,Thursday,im,Shachi,"Mighty composite deity wielding thunderbolt, bow, torch and lotus, riding Airavata and symbolizing conquest.",agni,vira
+Mitra,Anuradha,rosary_aksha_mala,lotus,soma_flask,staff_danda,horse,abhaya_mudra,golden,blue,south,topaz,bronze,morning,Friday,mim,Rashmi,"Kind-hearted god of friendship holding rosary, lotus, soma flask and staff, riding a horse.",water,shanta
+Indra,Jyeshtha,thunderbolt_vajra,bow_dhanush,conch_shankha,banner,elephant,abhaya_mudra,yellow,green,east,yellow_sapphire,gold,noon,Thursday,lam,Shachi,"Lord of devas wielding thunderbolt, bow, conch and banner, seated on Airavata, displaying sovereignty.",air,vira
+Nirriti,Mula,sword,noose_pasha,trident_trishula,skull_cup,crow,abhaya_mudra,black,dark_red,southwest,black_onyx,iron,night,Saturday,ṛm,Alakshmi,"Fearsome goddess with dark complexion carrying sword, noose, trident and skull cup, riding a crow and governing dissolution.",earth,bhayanaka
+Apas/Waters,Purva Ashadha,water_pot,lotus,conch_shankha,fish,makara,varada_mudra,blue,white,west,pearl,silver,afternoon,Monday,vam,Varuni,"Graceful water deity holding water pot, lotus, conch and fish, riding a makara and governing cosmic waters.",jala,shanta
+Vishvedevas,Uttara Ashadha,lotus,banner,conch_shankha,staff,horse,abhaya_mudra,golden,rainbow,north,crystal,gold,morning,Sunday,om,Samanya_Devi,"Collective deities representing universal virtues, each holding lotus, banner, conch and staff, riding a horse.",akasha,shanta
+Vishnu/Hari,Shravana,conch_shankha,discus_chakra,mace_gada,lotus,garuda,abhaya_mudra,dark_blue,yellow,east,blue_sapphire,gold,evening,Thursday,hrim,Lakshmi,"Cosmic preserver with dark blue skin holding conch, discus, mace and lotus, riding Garuda.",jala,shanta
+Vasus/Eight,Dhanishta,drum_damaru,mace_gada,lamp,treasure_pot,goat,varada_mudra,multicolored,red,east,garnet,iron,evening,Tuesday,vam,Pratyusha,"Eight shining Vasus carrying a drum, mace, lamp and treasure pot, riding a goat and symbolizing elemental abundance.",earth,vira
+Varuna,Shatabhisha,noose_pasha,lotus,conch_shankha,mace_gada,makara,varada_mudra,blue_black,deep_blue,west,blue_sapphire,silver,night,Monday,vam,Varuni,"Ocean lord with blue-black complexion holding noose, lotus, conch and mace, riding a makara and governing cosmic waters.",jala,shanta
+Aja Ekapada,Purva Bhadrapada,staff_danda,fire_pot,noose_pasha,spear,goat,abhaya_mudra,dark,red,south,agate,copper,midnight,Tuesday,am,Shobhini,"Mysterious one-footed deity carrying staff, fiery pot, noose and spear, riding a goat and embodying ascetic fervor.",agni,adbhuta
+Ahirbudhnya,Uttara Bhadrapada,sword,lotus,noose_pasha,shield,serpent,varada_mudra,dark_blue,white,north,aquamarine,lead,night,Wednesday,sam,Mahalakshmi,"Deep-ocean serpent deity holding sword, lotus, noose and shield, riding a serpent, embodying the power of the abyss.",jala,shanta
+Pushan,Revati,shepherds_staff,spoon,grain_bag,harp,goat,abhaya_mudra,golden,yellow,southeast,peridot,bronze,morning,Sunday,pom,Revati,"Gentle pastoral god guiding souls, carrying a shepherd's staff, spoon, bag of grain and harp, riding a goat.",earth,shanta

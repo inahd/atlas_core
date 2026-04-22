@@ -1,0 +1,14 @@
+# Source: BPHS Ch. 32 (Naisargika Karakas). These are natural significations — fixed per graha.
+# Chara (variable) karakas depend on individual chart and are computed, not tabled.
+# atma_karaka_rank: ordering by longitude for chara karaka assignment (1=highest eligible).
+# naisargika_karakas: comma-separated list is a plain-text field, not multiple columns.
+graha,atma_karaka_rank,naisargika_karakas
+Sun,1,"atma, father, king, government, soul, vitality, authority, bones"
+Moon,2,"manas, mother, mind, emotions, nourishment, fluids, public"
+Mars,3,"parakrama, brothers, courage, energy, land, surgery, fire"
+Mercury,4,"buddhi, speech, intellect, learning, commerce, skin, maternal uncle"
+Jupiter,5,"jnana, children, husband (female chart), guru, wisdom, dharma, fat"
+Venus,6,"kama, wife (male chart), vehicles, art, beauty, semen, luxury"
+Saturn,7,"ayu, longevity, suffering, karma, servants, discipline, iron, chronic disease"
+Rahu,,"paternal grandfather, foreign, obsession, unconventional, outcaste, serpent"
+Ketu,,"moksha, maternal grandfather, asceticism, liberation, flag, sudden events"

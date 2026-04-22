@@ -1,0 +1,73 @@
+{
+  "trigram_loshu_weights": {
+    "Li": 9,
+    "Kan": 1,
+    "Zhen": 3,
+    "Dui": 7,
+    "Xun": 4,
+    "Gen": 8,
+    "Kun": 2,
+    "Qian": 6
+  },
+  "test3_matrices": {
+    "sum": {
+      "evals": [
+        85.607,
+        0.0,
+        0.0,
+        0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -5.607
+      ],
+      "rank": 2
+    },
+    "product": {
+      "evals": [
+        260.0,
+        0.0,
+        0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "rank": 1
+    },
+    "difference": {
+      "evals": [
+        25.7242,
+        -0.5662,
+        -0.5887,
+        -0.852,
+        -1.0293,
+        -2.0,
+        -4.1062,
+        -16.5817
+      ],
+      "rank": 8
+    }
+  },
+  "test4_weighted_Q6": {
+    "unweighted_unique": 7,
+    "weighted_unique": 27,
+    "weighted_top7": [
+      1.0838,
+      0.6214,
+      0.4941,
+      0.418,
+      0.2938,
+      0.2534,
+      0.2462
+    ],
+    "degeneracy_broken": true
+  },
+  "test5_spectral_gap": {
+    "gap_unweighted": 2.0,
+    "gap_weighted": 0.4624,
+    "fiedler_unweighted": 2.0,
+    "fiedler_weighted": 0.1944
+  }
+}

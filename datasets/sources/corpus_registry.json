@@ -1550,7 +1550,10 @@
     "family": "jyotish",
     "domain": "jyotish",
     "lang": "en",
-    "layer_refs": ["S3", "S5"],
+    "layer_refs": [
+      "S3",
+      "S5"
+    ],
     "chunks_path": "datasets/sources/jyotish/brhat_samhita_shakuna_chunks.jsonl",
     "raw_path": "",
     "chunks": 15,
@@ -1558,5 +1561,17 @@
     "name": "Brhat Samhita Shakuna (15 passages)",
     "tradition": "jyotish",
     "authority": 0.95
+  },
+  {
+    "id": "ramcharitmanas",
+    "title": "Śrī Rāmacaritamānasa",
+    "chunks_path": "corpus/ramcharitmanas/ramcharitmanas_gitapress.jsonl",
+    "tradition": "vaishnava",
+    "language": "en",
+    "source": "Gita Press Gorakhpur",
+    "domain": "bhakti",
+    "authority": 0.95,
+    "family": "itihasa",
+    "notes": "Tulsidas, Gita Press English translation. 5378 chunks."
   }
 ]

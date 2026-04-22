@@ -1,0 +1,15 @@
+# Source: BPHS Ch. 4 (Rashi Svarupa). Rashi names in IAST per kernel.py RASHIS[].
+# Graha names in English per graha_master.csv column 'graha'.
+rashi,rashi_num,lord
+Mesha,1,Mars
+Vrishabha,2,Venus
+Mithuna,3,Mercury
+Karka,4,Moon
+Simha,5,Sun
+Kanya,6,Mercury
+Tula,7,Venus
+Vrishchika,8,Mars
+Dhanu,9,Jupiter
+Makara,10,Saturn
+Kumbha,11,Saturn
+Meena,12,Jupiter

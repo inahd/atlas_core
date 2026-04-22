@@ -13,8 +13,19 @@
 
   SynthDefs:
     \tanpura_engine  — four physical strings, staggered pluck
+    \tanpura_string  — single string (per-string control)
     \raga_note       — melodic note with gamaka
-    \tabla_bol       — tabla stroke synthesis
+    \raga_phrase     — continuous pitch envelope
+    \tabla_bayan     — bass drum membrane
+    \tabla_dayan     — treble drum membrane
+    \tabla_bol       — composite tabla stroke (7 bols)
+    \santoor_note    — hammered dulcimer shimmer
+    \sarangi_note    — bowed gut string (the voice)
+    \mridangam_bol   — Carnatic barrel drum (7 bols)
+    \pakhawaj_bol    — Dhrupad barrel drum (7 bols)
+    \bansuri_note    — bamboo flute (breathy, pure)
+    \sitar_note      — plucked with jawari buzz + taraf
+    \shehnai_note    — double reed (festive, temple)
     \bija_drone      — formant bija mantra
     \master          — reverb + limiter on master bus
 
@@ -23,7 +34,15 @@
     /atlas/tanpura/jivari  [jivari]
     /atlas/tanpura/amp     [scale]
     /atlas/note            [freq amp dur gamaka gamaka_rate gamaka_depth]
+    /atlas/phrase          [freq1..3 dur1..3 gamak_rate depth note amp pan]
     /atlas/tabla           [bol_idx amp]
+    /atlas/santoor/note    [freq amp dur pan]
+    /atlas/sarangi/note    [freq amp dur bow gamaka rate depth pan]
+    /atlas/mridangam       [bol_idx amp freq]
+    /atlas/pakhawaj        [bol_idx amp freq]
+    /atlas/bansuri/note    [freq amp dur breath gamaka rate depth pan]
+    /atlas/sitar/note      [freq amp dur jawari gamaka rate depth pan]
+    /atlas/shehnai/note    [freq amp dur reed gamaka rate depth pan]
     /atlas/bija            [freq f1 f2 f3 amp]
     /atlas/master          [reverb decay amp]
     /atlas/field           [sa jivari guna_idx elem_idx]
@@ -65,10 +84,15 @@ SynthDef(\tanpura_engine, {
     |out=0, sa=130.81,
      amp_pa=0.22, amp_sa1=0.30,
      amp_sa2=0.28, amp_salow=0.20,
-     jivari=0.40, gate=1|
+     amp_ga=0.0, amp_ma=0.0,
+     drift=0, jivari=0.40, gate=1|
 
-    var pa, sa1, sa2, sa_low;
+    var pa, sa1, sa2, sa_low, ga_str, ma_str;
     var mix, cycle, excite_pa, excite_sa1, excite_sa2, excite_salow;
+
+    // ── Breath: 4-second prana cycle, depth controlled by \drift (in cents)
+    var breathLFO = SinOsc.kr(1/4, 0, drift.lag(2));
+    var f = sa * (2 ** (breathLFO / 1200));  // cents → frequency ratio
 
     // Cycle impulse — 7 second cycle, staggered phases
     cycle = 1/7.0;
@@ -83,38 +107,44 @@ SynthDef(\tanpura_engine, {
     excite_salow = PinkNoise.ar(0.2) *
         EnvGen.ar(Env.perc(0.001, 0.04), Impulse.ar(cycle, 0.429));
 
-    // Pa string — fundamental + overtones
-    pa = CombL.ar(excite_pa, 1/20.0, 1/(sa*1.5), 8.0)
-       + CombL.ar(excite_pa, 1/20.0, 1/(sa*3.0), 5.6) * 0.3
-       + CombL.ar(excite_pa, 1/20.0, 1/(sa*4.5), 4.0) * 0.15;
+    // Pa string — perfect fifth (3:2) + overtones, uses drifted freq
+    pa = CombL.ar(excite_pa, 1/20.0, 1/(f*1.5), 8.0)
+       + CombL.ar(excite_pa, 1/20.0, 1/(f*3.0), 5.6) * 0.3
+       + CombL.ar(excite_pa, 1/20.0, 1/(f*4.5), 4.0) * 0.15;
 
     // Sa string 1 — fundamental + overtones
-    sa1 = CombL.ar(excite_sa1, 1/20.0, 1/sa, 10.0)
-        + CombL.ar(excite_sa1, 1/20.0, 1/(sa*2), 7.0) * 0.3
-        + CombL.ar(excite_sa1, 1/20.0, 1/(sa*3), 5.0) * 0.15;
+    sa1 = CombL.ar(excite_sa1, 1/20.0, 1/f, 10.0)
+        + CombL.ar(excite_sa1, 1/20.0, 1/(f*2), 7.0) * 0.3
+        + CombL.ar(excite_sa1, 1/20.0, 1/(f*3), 5.0) * 0.15;
 
     // Sa string 2 — slight detune (3.5 cents)
-    sa2 = CombL.ar(excite_sa2, 1/20.0, 1/(sa*1.002), 10.0)
-        + CombL.ar(excite_sa2, 1/20.0, 1/(sa*2.004), 7.0) * 0.3
-        + CombL.ar(excite_sa2, 1/20.0, 1/(sa*3.006), 5.0) * 0.15;
+    sa2 = CombL.ar(excite_sa2, 1/20.0, 1/(f*1.002), 10.0)
+        + CombL.ar(excite_sa2, 1/20.0, 1/(f*2.004), 7.0) * 0.3
+        + CombL.ar(excite_sa2, 1/20.0, 1/(f*3.006), 5.0) * 0.15;
 
     // Sa low — octave below + overtones
-    sa_low = CombL.ar(excite_salow, 1/20.0, 1/(sa*0.5), 12.0)
-           + CombL.ar(excite_salow, 1/20.0, 1/sa, 8.4) * 0.3
-           + CombL.ar(excite_salow, 1/20.0, 1/(sa*1.5), 6.0) * 0.15;
+    sa_low = CombL.ar(excite_salow, 1/20.0, 1/(f*0.5), 12.0)
+           + CombL.ar(excite_salow, 1/20.0, 1/f, 8.4) * 0.3
+           + CombL.ar(excite_salow, 1/20.0, 1/(f*1.5), 6.0) * 0.15;
 
-    // Jivari — start minimal, no instability
+    // ── Wave field partials: Ga (minor 3rd, 6:5) and Ma (4th, 4:3)
+    // These are additive sinusoidal partials, not physical strings
+    // .lag(2) gives 2-second crossfade when amplitudes change
+    ga_str = SinOsc.ar(f * 1.2, 0, amp_ga.lag(2) * 0.15)
+           + SinOsc.ar(f * 1.201, 0, amp_ga.lag(2) * 0.05);  // slight chorus
+    ma_str = SinOsc.ar(f * 1.333, 0, amp_ma.lag(2) * 0.15)
+           + SinOsc.ar(f * 1.335, 0, amp_ma.lag(2) * 0.05);
+
+    // Jivari — gentle waveshaping for buzz
     pa     = pa     * 0.8;
     sa1    = sa1    * 0.8;
     sa2    = sa2    * 0.8;
     sa_low = sa_low * 0.8;
 
-    // No waveshaping yet.
-    // Get the clean string tone first.
-    // Add jivari back once stable.
-
-    // Mix with per-string levels
-    mix = (pa * amp_pa) + (sa1 * amp_sa1) + (sa2 * amp_sa2) + (sa_low * amp_salow);
+    // Mix: physical strings + wave field partials
+    mix = (pa * amp_pa.lag(2)) + (sa1 * amp_sa1.lag(2))
+        + (sa2 * amp_sa2.lag(2)) + (sa_low * amp_salow.lag(2))
+        + ga_str + ma_str;
 
     // Gentle reverb — gourd resonance
     mix = mix + FreeVerb.ar(mix, 0.15, 0.3, 0.4);
@@ -385,7 +415,353 @@ SynthDef(\santoor_note, {
 }).store;
 
 // ======================================================
-// SYNTHDEF 6 — BIJA DRONE
+// SYNTHDEF 6 — SARANGI NOTE
+// Bowed gut string — the voice of the raga.
+// Physical model: CombL delay-line strings with bow excitation.
+// Odd harmonics dominate. Gut inharmonicity. Nasal body.
+// Three main strings (Sa Pa Sa+) + sympathetic taraf ring.
+// Modeled from sarangi_voice.py additive engine.
+// ======================================================
+
+SynthDef(\sarangi_note, {
+    |out=0, freq=261.63, amp=0.45,
+     dur=2.0, bow=0.55, gamaka=0,
+     gamaka_rate=5.2, gamaka_depth=0.006, pan=0|
+
+    var sig, bow_excite, string, taraf, body, env, freq_mod;
+    var h2, h3, h5;
+
+    // Gamaka
+    freq_mod = Select.ar(gamaka, [
+        DC.ar(freq),
+        freq * (1 + SinOsc.ar(gamaka_rate, 0, gamaka_depth)),
+        freq * (1 + SinOsc.ar(gamaka_rate * 0.4, 0, gamaka_depth * 1.5)),
+        freq * (1 + XLine.ar(0.04, 0.001, dur * 0.3)),
+    ]);
+
+    // Bow excitation — continuous friction noise, not impulse
+    bow_excite = LPF.ar(PinkNoise.ar(0.25 * bow), freq_mod * 3)
+        + Dust.ar(freq_mod * 0.5, 0.08 * bow); // rosin grain
+
+    // Physical string — CombL delay line at fundamental
+    string = CombL.ar(bow_excite, 0.05, freq_mod.reciprocal, dur * 4);
+
+    // Gut string odd-harmonic emphasis — bowed strings ring odd partials
+    // Inharmonicity factor B=0.0006 (gut string stretching)
+    h2 = CombL.ar(bow_excite * 0.20, 0.05, (freq_mod * 2 * (1 + 0.0024).sqrt).reciprocal, dur * 2.8);
+    h3 = CombL.ar(bow_excite * 0.55, 0.05, (freq_mod * 3 * (1 + 0.0054).sqrt).reciprocal, dur * 2.0);
+    h5 = CombL.ar(bow_excite * 0.30, 0.05, (freq_mod * 5 * (1 + 0.015).sqrt).reciprocal, dur * 1.2);
+
+    sig = string + h2 + h3 + h5;
+
+    // Sympathetic taraf — faint ringing at octave and fifth
+    taraf = CombL.ar(sig * 0.04, 0.05, (freq_mod * 2).reciprocal, dur * 3)
+          + CombL.ar(sig * 0.025, 0.05, (freq_mod * 1.5).reciprocal, dur * 3.5);
+
+    sig = sig + taraf;
+
+    // Nasal body resonance — skin membrane ~400Hz peak, ~800Hz notch
+    body = BPF.ar(sig, 400, 0.35) * 2.0;
+    sig = sig + body;
+    sig = BRF.ar(sig, 800, 0.4);
+
+    // Bow pressure vibrato — delayed onset, slow
+    sig = sig * (1 + (
+        SinOsc.kr(gamaka_rate * 0.9, 0, 0.03 * bow) *
+        EnvGen.kr(Env([0, 0, 1], [dur * 0.2, dur * 0.3]))
+    ));
+
+    env = EnvGen.ar(
+        Env.new([0, 1, 0.85, 0], [0.04, dur * 0.7, dur * 0.26]),
+        doneAction: 2);
+
+    sig = Limiter.ar(sig, 0.8);
+    Out.ar(out, Pan2.ar(sig * amp * env, pan));
+}).store;
+
+// ======================================================
+// SYNTHDEF 7 — MRIDANGAM BOL
+// Carnatic barrel drum — both heads tuned to Sa.
+// Near-perfect harmonic overtone series (unique among drums).
+// Ramamatya's 16th-c. tuning: head modes at 1:1.56:2:2.61:3
+// Right (valanthalai): tuned, ringing. Left (thoppi): bass drop.
+// 0=Tha 1=Dhi 2=Thom 3=Nam 4=Dhin 5=Ki 6=Ta
+// ======================================================
+
+SynthDef(\mridangam_bol, {
+    |out=0, bol=0, freq=130.81, amp=0.5|
+
+    var right, left, strike, sig, env;
+    var rAmp, lAmp, rFreq, lFreq, rDecay, lDecay;
+    var rMembrane, rMode2, rMode3, rMode4, rMode5;
+
+    rAmp   = Select.kr(bol, [0.6,  0.7,  0.0,  0.6,  0.7,  0.5,  0.6]);
+    lAmp   = Select.kr(bol, [0.5,  0.3,  0.9,  0.0,  0.5,  0.0,  0.0]);
+    rFreq  = Select.kr(bol, [1.0,  1.0,  1.0,  1.5,  1.0,  2.0,  1.5]) * freq;
+    lFreq  = Select.kr(bol, [0.5,  0.5,  0.4,  0.5,  0.5,  0.5,  0.5]) * freq;
+    rDecay = Select.kr(bol, [0.15, 0.30, 0.12, 0.08, 0.28, 0.05, 0.06]);
+    lDecay = Select.kr(bol, [0.25, 0.20, 0.45, 0.25, 0.25, 0.25, 0.25]);
+
+    // Right head — CombL delay-line membrane at harmonic modes
+    // Mridangam modes: 1.0, 1.56, 2.0, 2.61, 3.0 (Ramamatya ratios)
+    rMembrane = Pluck.ar(WhiteNoise.ar(0.5), Impulse.ar(0),
+        0.05, rFreq.reciprocal, rDecay * 3, 0.3);
+    rMode2 = Pluck.ar(WhiteNoise.ar(0.25), Impulse.ar(0),
+        0.05, (rFreq * 1.56).reciprocal, rDecay * 2.5, 0.3) * 0.45;
+    rMode3 = Pluck.ar(WhiteNoise.ar(0.15), Impulse.ar(0),
+        0.05, (rFreq * 2.0).reciprocal, rDecay * 2, 0.3) * 0.3;
+    rMode4 = Pluck.ar(WhiteNoise.ar(0.1), Impulse.ar(0),
+        0.05, (rFreq * 2.61).reciprocal, rDecay * 1.5, 0.3) * 0.15;
+    rMode5 = Pluck.ar(WhiteNoise.ar(0.08), Impulse.ar(0),
+        0.05, (rFreq * 3.0).reciprocal, rDecay * 1.2, 0.3) * 0.1;
+    right = rMembrane + rMode2 + rMode3 + rMode4 + rMode5;
+    right = HPF.ar(right, 100);
+
+    // Left head — bass membrane with pitch drop (clay-loaded)
+    left = SinOsc.ar(
+        XLine.ar(lFreq, lFreq * 0.55, lDecay * 0.5), 0, 0.7
+    ) * EnvGen.ar(Env.perc(0.002, lDecay));
+    left = left + Pluck.ar(
+        WhiteNoise.ar(0.3), Impulse.ar(0),
+        0.05, lFreq.reciprocal, lDecay * 2, 0.2) * 0.4;
+    left = LPF.ar(left, 400);
+
+    // Palm strike transient
+    strike = BPF.ar(WhiteNoise.ar(0.4), 1200, 0.4) *
+        EnvGen.ar(Env.perc(0.001, 0.02));
+
+    sig = (right * rAmp) + (left * lAmp) + (strike * 0.3);
+
+    // Barrel body resonance
+    sig = sig + FreeVerb.ar(sig, 0.06, 0.12, 0.15) * 0.12;
+
+    env = EnvGen.ar(Env.perc(0.001, 0.5), doneAction: 2);
+    Out.ar(out, sig * amp * env ! 2);
+}).store;
+
+// ======================================================
+// SYNTHDEF 8 — PAKHAWAJ BOL
+// Dhrupad barrel drum — deeper, longer than mridangam.
+// Larger barrel body. Thunderous bass. Lower tuning.
+// Both heads struck with full palms — massive transient.
+// 0=Ge 1=Dha 2=Din 3=Ta 4=Tete 5=Ka 6=Ghen
+// ======================================================
+
+SynthDef(\pakhawaj_bol, {
+    |out=0, bol=0, freq=110, amp=0.5|
+
+    var right, left, strike, sig, env;
+    var rAmp, lAmp, rDecay, lDecay, lDrop;
+
+    rAmp   = Select.kr(bol, [0.0,  0.6,  0.7,  0.6,  0.5,  0.0,  0.3]);
+    lAmp   = Select.kr(bol, [0.9,  0.5,  0.0,  0.0,  0.0,  0.8,  0.8]);
+    rDecay = Select.kr(bol, [0.20, 0.25, 0.30, 0.10, 0.08, 0.20, 0.22]);
+    lDecay = Select.kr(bol, [0.55, 0.45, 0.35, 0.30, 0.30, 0.50, 0.50]);
+    lDrop  = Select.kr(bol, [0.35, 0.45, 0.50, 0.50, 0.50, 0.30, 0.35]);
+
+    // Right head — deep physical membrane, fewer modes than mridangam
+    right = Pluck.ar(WhiteNoise.ar(0.5), Impulse.ar(0),
+        0.05, freq.reciprocal, rDecay * 4, 0.25);
+    right = right + Pluck.ar(WhiteNoise.ar(0.2), Impulse.ar(0),
+        0.05, (freq * 2).reciprocal, rDecay * 3, 0.25) * 0.2;
+    right = right + Pluck.ar(WhiteNoise.ar(0.1), Impulse.ar(0),
+        0.05, (freq * 3).reciprocal, rDecay * 2, 0.25) * 0.08;
+
+    // Left head — massive bass, slow pitch drop (thunderous)
+    left = SinOsc.ar(
+        XLine.ar(freq * 0.5, freq * lDrop, lDecay * 0.6), 0, 0.8
+    ) * EnvGen.ar(Env.perc(0.003, lDecay));
+    // Bass body resonance — the pakhawaj barrel rings
+    left = left + CombL.ar(left * 0.3, 0.05, (freq * 0.5).reciprocal, lDecay * 1.5);
+    left = LPF.ar(left, 280);
+
+    // Heavy full-palm strike
+    strike = LPF.ar(WhiteNoise.ar(0.5), 500) *
+        EnvGen.ar(Env.perc(0.002, 0.05));
+
+    sig = (right * rAmp) + (left * lAmp) + (strike * 0.25);
+
+    // Large barrel body resonance — longer reverb than mridangam
+    sig = sig + FreeVerb.ar(sig, 0.15, 0.3, 0.35) * 0.2;
+
+    env = EnvGen.ar(Env.perc(0.001, 0.65), doneAction: 2);
+    Out.ar(out, sig * amp * env ! 2);
+}).store;
+
+// ======================================================
+// SYNTHDEF 9 — BANSURI NOTE
+// Bamboo flute — Krishna's voice. Side-blown.
+// Waveguide model: breath excites a tube (DelayL feedback loop).
+// Overblowing at octave. Breathy air across embouchure.
+// ======================================================
+
+SynthDef(\bansuri_note, {
+    |out=0, freq=261.63, amp=0.4,
+     dur=1.5, breath=0.08, gamaka=0,
+     gamaka_rate=4, gamaka_depth=0.008, pan=0|
+
+    var sig, air, tube, excite, feedback, freq_mod, env;
+
+    // Gamaka
+    freq_mod = Select.ar(gamaka, [
+        DC.ar(freq),
+        freq * (1 + SinOsc.ar(gamaka_rate, 0, gamaka_depth)),
+        freq * (1 + SinOsc.ar(gamaka_rate * 0.3, 0, gamaka_depth * 1.2)),
+        freq * (1 + XLine.ar(0.03, 0.001, dur * 0.25)),
+    ]);
+
+    // Breath excitation — turbulent air across embouchure hole
+    excite = BPF.ar(PinkNoise.ar(0.4), freq_mod * 2, 0.8) +
+             LPF.ar(WhiteNoise.ar(0.15), freq_mod * 4);
+
+    // Bamboo tube — delay-line waveguide
+    tube = CombL.ar(excite, 0.05, freq_mod.reciprocal, dur * 3);
+    // Octave partial — overblowing (weaker)
+    tube = tube + CombL.ar(excite * 0.15, 0.05, (freq_mod * 2).reciprocal, dur * 2) * 0.25;
+    // Faint third
+    tube = tube + CombL.ar(excite * 0.05, 0.05, (freq_mod * 3).reciprocal, dur * 1.2) * 0.08;
+
+    sig = tube;
+
+    // Breath noise — side-blown character (air you hear across the hole)
+    air = BPF.ar(PinkNoise.ar(breath), freq_mod * 1.5, 0.5);
+    air = air + BPF.ar(PinkNoise.ar(breath * 0.4), freq_mod * 3, 0.4);
+    sig = sig + air;
+
+    // Bamboo body — warm LPF, no harsh highs
+    sig = LPF.ar(sig, freq_mod * 5);
+
+    // Breath vibrato — slower, delayed onset
+    sig = sig * (1 + (
+        SinOsc.kr(gamaka_rate * 0.8, 0, 0.025) *
+        EnvGen.kr(Env([0, 0, 1], [dur * 0.25, dur * 0.2]))
+    ));
+
+    env = EnvGen.ar(
+        Env.new([0, 0.7, 1, 0.8, 0], [0.06, 0.08, dur * 0.65, dur * 0.21]),
+        doneAction: 2);
+
+    Out.ar(out, Pan2.ar(sig * amp * env, pan));
+}).store;
+
+// ======================================================
+// SYNTHDEF 10 — SITAR NOTE
+// Steel string plucked with mizrab (wire plectrum).
+// Jawari: flat curved bridge — string buzzes against it.
+// 13 sympathetic taraf strings tuned to the raga.
+// Physical model: Pluck + CombL taraf + jawari waveshaping.
+// ======================================================
+
+SynthDef(\sitar_note, {
+    |out=0, freq=261.63, amp=0.4,
+     dur=1.5, jawari=0.5, gamaka=0,
+     gamaka_rate=5, gamaka_depth=0.012, pan=0|
+
+    var main, main2, taraf, buzz, sig, env, freq_mod;
+
+    // Gamaka
+    freq_mod = Select.ar(gamaka, [
+        DC.ar(freq),
+        freq * (1 + SinOsc.ar(gamaka_rate, 0, gamaka_depth)),
+        freq * (1 + SinOsc.ar(gamaka_rate * 0.4, 0, gamaka_depth * 0.8)),
+        freq * (1 + XLine.ar(0.06, 0.001, dur * 0.35)),
+    ]);
+
+    // Main string — Karplus-Strong with steel brightness
+    main = Pluck.ar(WhiteNoise.ar(0.5), Impulse.ar(0),
+        0.05, freq_mod.reciprocal, dur * 4, 0.3);
+    // Second course — slight detune for thickness
+    main2 = Pluck.ar(WhiteNoise.ar(0.4), Impulse.ar(0),
+        0.05, (freq_mod * 1.001).reciprocal, dur * 3.8, 0.3) * 0.3;
+    main = main + main2;
+
+    // Jawari buzz — flat bridge nonlinear waveshaping
+    // The sitar's soul — string lifts off and slaps back against bridge
+    buzz = (main * (1 + (jawari * 8))).tanh / (1 + (jawari * 8));
+    main = (main * (1 - jawari)) + (buzz * jawari);
+
+    // Sympathetic taraf strings — 13 strings ringing at raga intervals
+    // Sa, Re, Ga, Ma, Pa, Dha, Ni + octaves — tuned to raga
+    taraf = CombL.ar(main * 0.06, 0.05, (freq_mod * 2).reciprocal, dur * 3)     // Sa+
+          + CombL.ar(main * 0.04, 0.05, (freq_mod * 1.5).reciprocal, dur * 3.5)  // Pa
+          + CombL.ar(main * 0.035, 0.05, (freq_mod * 3).reciprocal, dur * 2)      // Sa++
+          + CombL.ar(main * 0.03, 0.05, (freq_mod * 1.25).reciprocal, dur * 2.5)  // Ga (5/4)
+          + CombL.ar(main * 0.025, 0.05, (freq_mod * 1.333).reciprocal, dur * 2.5) // Ma (4/3)
+          + CombL.ar(main * 0.02, 0.05, (freq_mod * 1.667).reciprocal, dur * 2);   // Dha (5/3)
+
+    // Mizrab strike transient — hard wire plectrum on steel
+    sig = main + taraf;
+    sig = sig + (HPF.ar(WhiteNoise.ar(0.1), 2500) *
+        EnvGen.ar(Env.perc(0.0005, 0.012)));
+
+    env = EnvGen.ar(
+        Env.new([0, 1, 0.35, 0], [0.002, dur * 0.25, dur * 0.75]),
+        doneAction: 2);
+
+    sig = Limiter.ar(sig, 0.8);
+    Out.ar(out, Pan2.ar(sig * amp * env, pan));
+}).store;
+
+// ======================================================
+// SYNTHDEF 11 — SHEHNAI NOTE
+// Double-reed conical bore — Indian oboe.
+// Waveguide tube + reed nonlinearity + conical bore modes.
+// Penetrating, festive. Bismillah Khan's voice.
+// ======================================================
+
+SynthDef(\shehnai_note, {
+    |out=0, freq=261.63, amp=0.35,
+     dur=2.0, reed=0.6, gamaka=0,
+     gamaka_rate=5, gamaka_depth=0.01, pan=0|
+
+    var excite, tube, bore, sig, env, freq_mod;
+
+    // Gamaka
+    freq_mod = Select.ar(gamaka, [
+        DC.ar(freq),
+        freq * (1 + SinOsc.ar(gamaka_rate, 0, gamaka_depth)),
+        freq * (1 + SinOsc.ar(gamaka_rate * 0.35, 0, gamaka_depth * 1.3)),
+        freq * (1 + XLine.ar(0.05, 0.001, dur * 0.3)),
+    ]);
+
+    // Reed excitation — double reed creates complex waveform
+    // Nonlinear pressure-flow reed model
+    excite = LPF.ar(WhiteNoise.ar(0.3), freq_mod * 6);
+    excite = (excite * (1 + (reed * 5))).tanh / (1 + (reed * 5)); // reed nonlinearity
+    excite = excite + (Pulse.ar(freq_mod, 0.48, 0.15 * reed)); // reed buzz component
+
+    // Conical bore — CombL tube with multiple resonant modes
+    // Conical bore supports both odd AND even harmonics (unlike clarinet)
+    tube = CombL.ar(excite, 0.05, freq_mod.reciprocal, dur * 2);
+    tube = tube + CombL.ar(excite * 0.5, 0.05, (freq_mod * 2).reciprocal, dur * 1.5) * 0.45;
+    tube = tube + CombL.ar(excite * 0.3, 0.05, (freq_mod * 3).reciprocal, dur * 1.2) * 0.3;
+    tube = tube + CombL.ar(excite * 0.15, 0.05, (freq_mod * 4).reciprocal, dur * 0.8) * 0.15;
+    tube = tube + CombL.ar(excite * 0.08, 0.05, (freq_mod * 5).reciprocal, dur * 0.5) * 0.08;
+
+    sig = tube;
+
+    // Conical bore resonance — mid boost (penetrating quality)
+    bore = BPF.ar(sig, 1200, 0.4) * 1.8;
+    sig = sig + bore;
+
+    // Bell radiation — slight high boost at flare
+    sig = sig + HPF.ar(sig, 2000) * 0.15;
+
+    // Breath pressure variation — circular breathing wobble
+    sig = sig * (1 + SinOsc.kr(3.2 + LFNoise1.kr(0.4, 0.8), 0, 0.04));
+
+    sig = LPF.ar(sig, freq_mod * 10);
+
+    env = EnvGen.ar(
+        Env.new([0, 0.85, 1, 0.8, 0], [0.015, 0.03, dur * 0.75, dur * 0.2]),
+        doneAction: 2);
+
+    sig = Limiter.ar(sig, 0.8);
+    Out.ar(out, Pan2.ar(sig * amp * env, pan));
+}).store;
+
+// ======================================================
+// SYNTHDEF 12 — BIJA DRONE
 // Formant synthesis from bija vowel.
 // ======================================================
 
@@ -430,6 +806,20 @@ SynthDef(\master, {
 
     Out.ar(out, sig * amp);
 
+}).store;
+
+// ======================================================
+// WAVE FIELD RHYTHM — soft percussive pulse
+// ======================================================
+
+SynthDef(\bol, {
+    |out=0, freq=400, amp=0.1, pan=0, decay=0.06|
+    var env = EnvGen.kr(Env.perc(0.001, decay), doneAction: 2);
+    var body = SinOsc.ar(freq, 0, 0.7) * env;
+    var click = WhiteNoise.ar(0.3) * EnvGen.kr(Env.perc(0.001, 0.015));
+    var sig = (body + click) * amp;
+    sig = HPF.ar(sig, 80);  // remove sub-bass rumble
+    Out.ar(out, Pan2.ar(sig, pan));
 }).store;
 
 // ======================================================
@@ -617,6 +1007,92 @@ OSCFunc({ |msg|
     "Santoor: melodic layer stopped".postln;
 }, '/atlas/santoor/stop');
 
+// ── Sarangi OSC ──
+// /atlas/sarangi/note [freq amp dur bow gamaka gamaka_rate gamaka_depth pan]
+OSCFunc({ |msg|
+    Synth(\sarangi_note, [
+        \out,           0,
+        \freq,          msg[1] ? 261.63,
+        \amp,           msg[2] ? 0.45,
+        \dur,           msg[3] ? 2.0,
+        \bow,           msg[4] ? 0.55,
+        \gamaka,        msg[5] ? 0,
+        \gamaka_rate,   msg[6] ? 5.2,
+        \gamaka_depth,  msg[7] ? 0.006,
+        \pan,           msg[8] ? 0,
+    ]);
+}, '/atlas/sarangi/note');
+
+// ── Mridangam OSC ──
+// /atlas/mridangam [bol_idx amp freq]
+OSCFunc({ |msg|
+    Synth(\mridangam_bol, [
+        \out,  0,
+        \bol,  msg[1] ? 0,
+        \amp,  msg[2] ? 0.5,
+        \freq, msg[3] ? 130.81,
+    ]);
+}, '/atlas/mridangam');
+
+// ── Pakhawaj OSC ──
+// /atlas/pakhawaj [bol_idx amp freq]
+OSCFunc({ |msg|
+    Synth(\pakhawaj_bol, [
+        \out,  0,
+        \bol,  msg[1] ? 0,
+        \amp,  msg[2] ? 0.5,
+        \freq, msg[3] ? 110,
+    ]);
+}, '/atlas/pakhawaj');
+
+// ── Bansuri OSC ──
+// /atlas/bansuri/note [freq amp dur breath gamaka gamaka_rate gamaka_depth pan]
+OSCFunc({ |msg|
+    Synth(\bansuri_note, [
+        \out,           0,
+        \freq,          msg[1] ? 261.63,
+        \amp,           msg[2] ? 0.4,
+        \dur,           msg[3] ? 1.5,
+        \breath,        msg[4] ? 0.08,
+        \gamaka,        msg[5] ? 0,
+        \gamaka_rate,   msg[6] ? 4,
+        \gamaka_depth,  msg[7] ? 0.008,
+        \pan,           msg[8] ? 0,
+    ]);
+}, '/atlas/bansuri/note');
+
+// ── Sitar OSC ──
+// /atlas/sitar/note [freq amp dur jawari gamaka gamaka_rate gamaka_depth pan]
+OSCFunc({ |msg|
+    Synth(\sitar_note, [
+        \out,           0,
+        \freq,          msg[1] ? 261.63,
+        \amp,           msg[2] ? 0.4,
+        \dur,           msg[3] ? 1.5,
+        \jawari,        msg[4] ? 0.5,
+        \gamaka,        msg[5] ? 0,
+        \gamaka_rate,   msg[6] ? 5,
+        \gamaka_depth,  msg[7] ? 0.012,
+        \pan,           msg[8] ? 0,
+    ]);
+}, '/atlas/sitar/note');
+
+// ── Shehnai OSC ──
+// /atlas/shehnai/note [freq amp dur reed gamaka gamaka_rate gamaka_depth pan]
+OSCFunc({ |msg|
+    Synth(\shehnai_note, [
+        \out,           0,
+        \freq,          msg[1] ? 261.63,
+        \amp,           msg[2] ? 0.35,
+        \dur,           msg[3] ? 2.0,
+        \reed,          msg[4] ? 0.6,
+        \gamaka,        msg[5] ? 0,
+        \gamaka_rate,   msg[6] ? 5,
+        \gamaka_depth,  msg[7] ? 0.01,
+        \pan,           msg[8] ? 0,
+    ]);
+}, '/atlas/shehnai/note');
+
 // ======================================================
 // TABLA THEKA ROUTINES
 // ======================================================
@@ -697,12 +1173,158 @@ OSCFunc({ |msg|
 "  /atlas/tanpura/sa     set Sa frequency".postln;
 "  /atlas/tanpura/jivari set buzz".postln;
 "  /atlas/note           play melodic note".postln;
+"  /atlas/phrase         continuous raga phrase".postln;
 "  /atlas/tabla          play single bol (0-6)".postln;
-"  /atlas/tabla/start    start theka [bpm, theka, amp]".postln;
+"  /atlas/tabla/start    start theka".postln;
 "  /atlas/tabla/stop     stop theka".postln;
+"  /atlas/santoor/note   hammered dulcimer".postln;
+"  /atlas/sarangi/note   bowed gut string".postln;
+"  /atlas/mridangam      carnatic barrel drum".postln;
+"  /atlas/pakhawaj       dhrupad barrel drum".postln;
+"  /atlas/bansuri/note   bamboo flute".postln;
+"  /atlas/sitar/note     plucked + jawari + taraf".postln;
+"  /atlas/shehnai/note   double reed".postln;
 "  /atlas/bija           update bija drone".postln;
 "  /atlas/master         global mix".postln;
 "  /atlas/field          full field update".postln;
+"".postln;
+
+// ── Wave field modulation (from jyotisha engine) ──────────
+// These handlers APPLY changes to sound, not just log them.
+
+~gamakDepth = 0.3;
+~waveBpm = 84;
+~breathGamakProb = 0.5;
+~breathDriftCents = 3.0;
+~breathEnergy = 0.5;
+~rhythmPrime = 7;
+~rhythmSecondary = 3;
+~rhythmBlend = 0.8;
+~rhythmRunning = false;
+
+// /atlas/wave/gamak — modulates gamak depth on melody
+OSCFunc({ |msg|
+    ~gamakDepth = msg[1].linlin(0, 1, 0.1, 0.8);
+}, '/atlas/wave/gamak');
+
+// /atlas/wave/bpm — sets wave tempo
+OSCFunc({ |msg|
+    ~waveBpm = msg[1];
+}, '/atlas/wave/bpm');
+
+// /atlas/wave/partial — logs dominant partial name
+OSCFunc({ |msg|
+    ("  \u2669 partial: " ++ msg[1].asString).postln;
+}, '/atlas/wave/partial');
+
+// /atlas/wave/k — logs dominant harmonic
+OSCFunc({ |msg| }, '/atlas/wave/k');
+
+// /atlas/wave/partials — SET tanpura partial amplitudes in real time
+OSCFunc({ |msg|
+    var pairs = msg[1..].clump(2);
+    pairs.do({ |pair|
+        var ratio = pair[0], ampVal = pair[1];
+        if(~tanpura.notNil, {
+            case
+                { (ratio - 1.0).abs < 0.05 }  { ~tanpura.set(\amp_sa1, ampVal * 0.35) }
+                { (ratio - 1.2).abs < 0.05 }  { ~tanpura.set(\amp_ga, ampVal * 0.20) }
+                { (ratio - 1.333).abs < 0.1 } { ~tanpura.set(\amp_ma, ampVal * 0.20) }
+                { (ratio - 1.5).abs < 0.05 }  { ~tanpura.set(\amp_pa, ampVal * 0.25) };
+        });
+    });
+    ("  \u2669 partials: " ++ pairs.collect({ |p| p[0].round(0.01) ++ "=" ++ p[1].round(0.01) }).join(" ")).postln;
+}, '/atlas/wave/partials');
+
+// /atlas/wave/rhythm_mode — set phrase grouping
+OSCFunc({ |msg|
+    ~rhythmPrime = msg[1].asInteger;
+    ~rhythmSecondary = msg[2].asInteger;
+    ~rhythmBlend = msg[3];
+    ("  \u2669 rhythm: " ++ ~rhythmPrime ++ "/" ++ ~rhythmSecondary ++ " blend=" ++ ~rhythmBlend.round(0.01)).postln;
+}, '/atlas/wave/rhythm_mode');
+
+// /atlas/wave/breath — SET tanpura drift + store breath params
+OSCFunc({ |msg|
+    ~breathGamakProb = msg[1];
+    ~breathDriftCents = msg[2];
+    ~breathEnergy = msg[3];
+    // Apply drift to tanpura — the SynthDef's internal LFO uses this
+    if(~tanpura.notNil, {
+        ~tanpura.set(\drift, ~breathDriftCents);
+    });
+}, '/atlas/wave/breath');
+
+// /atlas/wave/hora — log only (slow timescale, future use)
+OSCFunc({ |msg|
+    ("  \u2669 hora: " ++ msg[1].asString ++ " w=" ++ msg[2].round(0.01)).postln;
+}, '/atlas/wave/hora');
+
+// /atlas/natal/raga — log natal home raga
+OSCFunc({ |msg|
+    ("  \u2669 natal raga: " ++ msg[1].asString).postln;
+}, '/atlas/natal/raga');
+
+// /atlas/natal/partial_emphasis — log natal partial
+OSCFunc({ |msg|
+    ("  \u2669 natal partial: " ++ msg[1].round(0.01) ++ " w=" ++ msg[2].round(0.01)).postln;
+}, '/atlas/natal/partial_emphasis');
+
+// ── Rhythm Task — soft percussive pulse in prime groupings ──
+~rhythmTask = Task({
+    ("  \u2669 rhythm task started").postln;
+    loop {
+        var prime, secondary, blend, dur;
+        prime = ~rhythmPrime ? 7;
+        secondary = ~rhythmSecondary ? 3;
+        blend = ~rhythmBlend ? 0.8;
+        dur = 60 / (~waveBpm ? 90) / 2;  // eighth note
+
+        // Decide: dominant or secondary grouping (coin flip weighted by blend)
+        if(blend.coin, {
+            // Dominant prime grouping
+            prime.do({ |i|
+                var accent = if(i == 0, 1.0, 0.4);
+                var freq = if(i == 0, 280, 420);
+                Synth(\bol, [
+                    \freq, freq,
+                    \amp, 0.06 * accent * (~breathEnergy ? 0.5),
+                    \decay, 0.05,
+                    \pan, 0.2.rand2,
+                ]);
+                dur.wait;
+            });
+        }, {
+            // Secondary prime grouping
+            secondary.do({ |i|
+                var accent = if(i == 0, 1.0, 0.35);
+                var freq = if(i == 0, 240, 380);
+                Synth(\bol, [
+                    \freq, freq,
+                    \amp, 0.04 * accent * (~breathEnergy ? 0.5),
+                    \decay, 0.04,
+                    \pan, 0.3.rand2,
+                ]);
+                dur.wait;
+            });
+        });
+        // One eighth rest between groups
+        dur.wait;
+    }
+});
+
+// Start rhythm after a short delay
+SystemClock.sched(2.0, {
+    ~rhythmTask.play;
+    ~rhythmRunning = true;
+    nil;
+});
+
+"  wave handlers active:".postln;
+"    /atlas/wave/gamak bpm partial k partials rhythm_mode breath hora".postln;
+"    /atlas/natal/raga partial_emphasis".postln;
+"    rhythm task: prime grouping pulse".postln;
+"    tanpura drift: 4s prana breath cycle".postln;
 "".postln;
 
 }; // end fork

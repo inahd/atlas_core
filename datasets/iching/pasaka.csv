@@ -1,0 +1,65 @@
+id,dice_1,dice_2,dice_3,total,name,sanskrit,quality,body_region,graha,rasa,field_reading
+1,1,1,1,3,Kṛta,कृत,excellent,crown,Sun,madhura,The highest throw. All endeavors succeed. The field is fully coherent. Act without hesitation.
+2,1,1,2,4,Tretā,त्रेता,very_good,forehead,Moon,madhura,Excellent fortune. What you seek is near. The field supports movement forward.
+3,1,1,3,5,Dvāpara,द्वापर,good,right_eye,Mars,kaṭu,Good outcome with effort. Obstacles exist but yield. The field is active — press forward.
+4,1,1,4,6,Kali,कलि,mixed,left_eye,Rahu,tikta,The weakest throw of this family. Proceed with awareness. The field holds tension unresolved.
+5,1,2,1,4,Vijaya,विजय,excellent,right_ear,Jupiter,madhura,Victory. The field aligns with your intention. An auspicious time for all undertakings.
+6,1,2,2,5,Jayā,जया,very_good,left_ear,Venus,madhura,Success follows effort. The field is supportive. Move now while the current is favorable.
+7,1,2,3,6,Siddhi,सिद्धि,good,nose,Mercury,amla,Accomplishment. What has been cultivated bears fruit. The field rewards sustained practice.
+8,1,2,4,7,Ṛddhi,ऋद्धि,good,mouth,Moon,madhura,Growth and increase. The field expands. Resources accumulate around clear intention.
+9,1,3,1,5,Śrī,श्री,excellent,throat,Venus,madhura,Auspicious. Lakṣmī is present in the field. Wealth beauty and harmony are indicated.
+10,1,3,2,6,Hrī,ह्री,very_good,right_shoulder,Sun,kaṭu,Dignity and modesty. The field calls for reserve. Do not overreach — restraint brings more than force.
+11,1,3,3,7,Dhṛti,धृति,good,left_shoulder,Saturn,tikta,Steadiness. The field rewards patience. Hold your position — the right moment approaches.
+12,1,3,4,8,Puṣṭi,पुष्टि,good,right_arm,Jupiter,madhura,Nourishment. The field is fertile. What is given now returns multiplied.
+13,1,4,1,6,Tuṣṭi,तुष्टि,very_good,left_arm,Moon,madhura,Contentment. The field is at rest. Satisfaction is available now — receive it.
+14,1,4,2,7,Kīrti,कीर्ति,good,right_hand,Sun,kaṭu,Reputation. The field amplifies your name. Actions taken now have lasting consequence.
+15,1,4,3,8,Smṛti,स्मृति,good,left_hand,Mercury,amla,Memory and recall. The field holds what has been. Look to the past for the answer present.
+16,1,4,4,9,Medhā,मेधा,mixed,chest,Mercury,amla,Intelligence active but scattered. The field is complex. Slow down and let clarity emerge.
+17,2,1,1,4,Pratibhā,प्रतिभा,excellent,right_breast,Moon,madhura,Intuition blazing. The field speaks directly. Trust what arises without translation.
+18,2,1,2,5,Prajñā,प्रज्ञा,very_good,left_breast,Jupiter,madhura,Wisdom present. The field carries deep knowledge. What you need to know is already known.
+19,2,1,3,6,Śraddhā,श्रद्धा,good,heart,Sun,madhura,Faith. The field asks for surrender. Trust the process even when the outcome is not visible.
+20,2,1,4,7,Māyā,माया,mixed,stomach,Rahu,tikta,Illusion is present. The field carries confusion. What appears is not what is — look deeper.
+21,2,2,1,5,Lakṣmī,लक्ष्मी,excellent,navel,Venus,madhura,Full auspiciousness. Lakṣmī stands in the field. Abundance flows to the open hand.
+22,2,2,2,6,Sarasvatī,सरस्वती,excellent,lower_abdomen,Moon,madhura,The goddess of knowledge and art is present. The field is luminous. Create now.
+23,2,2,3,7,Durgā,दुर्गा,good,right_hip,Mars,kaṭu,Fierce protection. The field guards what is precious. Cross the obstacle — you will not fall.
+24,2,2,4,8,Kālī,काली,mixed,left_hip,Saturn,tikta,Dissolution is at work. The field clears what has expired. Release before you can receive.
+25,2,3,1,6,Gāyatrī,गायत्री,excellent,right_thigh,Sun,madhura,The mother of mantras illuminates the field. Chant speak pray — the sound carries power now.
+26,2,3,2,7,Sāvitrī,सावित्री,very_good,left_thigh,Sun,madhura,Solar force. The field is charged with vital energy. This is a time of awakening.
+27,2,3,3,8,Umā,उमा,good,right_knee,Moon,madhura,Gentle grace. The field holds the softness of Pārvatī. Approach with love not force.
+28,2,3,4,9,Rudrā,रुद्रा,mixed,left_knee,Mars,kaṭu,Transformation through disruption. The field is stormy. What breaks was ready to break.
+29,2,4,1,7,Indrāṇī,इन्द्राणी,very_good,right_calf,Jupiter,madhura,Royal favor. The field carries the energy of the sovereign. Leadership and authority are supported.
+30,2,4,2,8,Varuṇānī,वरुणानी,good,left_calf,Saturn,kaṣāya,Deep waters. The field holds what is hidden. What moves below the surface now surfaces.
+31,2,4,3,9,Brahmāṇī,ब्रह्माणी,good,right_ankle,Jupiter,madhura,Creative force. The field is generative. Begin — the first step is the whole journey.
+32,2,4,4,10,Vaiṣṇavī,वैष्णवी,mixed,left_ankle,Mercury,madhura,Preservation. The field holds steady. Protect what has been built before adding more.
+33,3,1,1,5,Kaumārī,कौमारी,good,right_foot,Mars,kaṭu,Youthful energy. The field carries the enthusiasm of the warrior. Move with courage and speed.
+34,3,1,2,6,Māheśvarī,माहेश्वरी,excellent,left_foot,Moon,madhura,Śiva's śakti moves in the field. What is destroyed makes way for what has never existed.
+35,3,1,3,7,Cāmuṇḍā,चामुण्डा,mixed,right_sole,Saturn,tikta,The fierce one. The field strips illusion. Face what you have been avoiding — it holds your power.
+36,3,1,4,8,Nārasiṃhī,नारसिंही,mixed,left_sole,Sun,kaṭu,Ferocious protection. The field guards the threshold. What threatens you cannot cross this line.
+37,3,2,1,6,Śāntā,शान्ता,very_good,top_of_head,Moon,madhura,Peace descends. The field is still. This is not inaction — it is the calm of deep alignment.
+38,3,2,2,7,Priyā,प्रिया,good,back_of_head,Venus,madhura,Beloved. The field carries the fragrance of devotion. What you love is what you become.
+39,3,2,3,8,Nandā,नन्दा,good,right_temple,Jupiter,madhura,Joy. The field is in a moment of celebration. Receive it fully — do not qualify happiness.
+40,3,2,4,9,Bhadrā,भद्रा,mixed,left_temple,Mercury,amla,Auspicious but complex. The field holds both blessing and challenge. Navigate carefully.
+41,3,3,1,7,Jayantī,जयन्ती,excellent,right_cheek,Sun,kaṭu,The victorious one. The field is charged with triumph. What seemed impossible now yields.
+42,3,3,2,8,Maṅgalā,मङ्गला,very_good,left_cheek,Mars,kaṭu,Auspiciousness on all sides. The field is fully supportive. Begin all new endeavors now.
+43,3,3,3,9,Aparājitā,अपराजिता,excellent,chin,Jupiter,tikta,The unconquered. The field is invincible. No force can stop what moves with this energy.
+44,3,3,4,10,Vijayā,विजया,good,neck,Venus,madhura,Victory through beauty and grace. The field rewards elegance not force. Soften to succeed.
+45,3,4,1,8,Raudrī,रौद्री,mixed,upper_back,Mars,kaṭu,Fierce energy that demands outlet. The field is combustible. Direct this force or it burns you.
+46,3,4,2,9,Bhīmā,भीमा,mixed,middle_back,Saturn,tikta,Tremendous force. The field bears tremendous weight. Set down what does not serve — travel light.
+47,3,4,3,10,Ugratārā,उग्रतारा,mixed,lower_back,Rahu,tikta,The fierce star. The field carries an intensity that cuts. What is cut away was blocking the view.
+48,3,4,4,11,Mahiṣāsuramardinī,महिषासुरमर्दिनी,good,sacrum,Mars,kaṭu,The buffalo demon is slain. The field is clear of a long obstruction. Move forward freely.
+49,4,1,1,6,Śubhā,शुभा,very_good,right_side,Venus,madhura,Auspiciousness. The field is favorable. All that is undertaken with pure intention succeeds.
+50,4,1,2,7,Varadā,वरदा,good,left_side,Jupiter,madhura,Boon-giving. The field is generous. Ask clearly and specifically — the answer is yes.
+51,4,1,3,8,Abhayā,अभया,good,right_collarbone,Mars,kaṭu,Fearlessness. The field holds no threat. What you fear is already behind you — turn around.
+52,4,1,4,9,Śaraṇā,शरणा,mixed,left_collarbone,Moon,madhura,Refuge. The field offers sanctuary. Rest before the next movement — restoration is the task.
+53,4,2,1,7,Tārā,तारा,excellent,sternum,Moon,madhura,The star goddess navigates. The field is a vast ocean — you have a guide. Trust the stars.
+54,4,2,2,8,Bhuvaneśvarī,भुवनेश्वरी,excellent,diaphragm,Moon,madhura,Sovereign of worlds. The field is vast and benevolent. You are held in something much larger.
+55,4,2,3,9,Tripurā,त्रिपुरा,good,solar_plexus,Venus,madhura,Three cities — body speech mind aligned. The field is integrated. Act from wholeness not fragment.
+56,4,2,4,10,Mātaṅgī,मातङ्गी,mixed,spleen,Rahu,amla,Outcast wisdom. The field holds what the orthodox excludes. Look where others refuse to look.
+57,4,3,1,8,Bagalāmukhī,बगलामुखी,mixed,liver,Mars,kaṭu,The paralyzer. The field freezes opposition. What has been blocking you is now immobilized.
+58,4,3,2,9,Dhūmāvatī,धूमावती,mixed,gallbladder,Saturn,kaṣāya,The widow smoke goddess. The field carries loss. What has ended must be honored before moving on.
+59,4,3,3,10,Chinnamastā,छिन्नमस्ता,mixed,kidneys,Mars,tikta,Self-sacrifice for life. The field demands giving what you hold most precious. This is the gift.
+60,4,3,4,11,Ṣoḍaśī,षोडशी,good,adrenals,Sun,madhura,The sixteen-year-old perfection. The field is at the peak of beauty. This is the moment — enter it fully.
+61,4,4,1,9,Annapūrṇā,अन्नपूर्णा,excellent,intestines,Moon,madhura,Full nourishment. The field feeds all who approach. Share what you have — abundance returns.
+62,4,4,2,10,Saṅkarṣaṇī,सङ्कर्षणी,good,bladder,Saturn,kaṣāya,Drawing in. The field is contracting to concentrate power. Gather — do not scatter now.
+63,4,4,3,11,Vāruṇī,वारुणी,mixed,reproductive,Venus,amla,The intoxicating one. The field carries altered states. Perception is shifted — use this carefully.
+64,4,4,4,12,Mahāvidyā,महाविद्या,excellent,whole_body,Jupiter,madhura,The great wisdom. All ten Mahāvidyās present simultaneously. The field is complete. You already have what you seek.

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nakshatra Mandala · Atlas 330</title>
+<link rel="stylesheet" href="/static/atlas-theme.css">
+<script src="/static/atlas.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#06080f;--panel:#0a0e18;--border:#1a2840;
+  --gold:rgba(200,169,110,1);--gold-dim:rgba(200,169,110,0.2);--gold-bright:rgba(240,192,64,0.9);
+  --teal:rgba(93,202,165,1);--teal-dim:rgba(93,202,165,0.15);
+  --white:rgba(255,255,255,0.85);--dim:#4a5a6a;--muted:#7a8a9a;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --mono:'IBM Plex Mono','Courier New',monospace;
+  --cinzel:'Cinzel',Georgia,serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;overflow:hidden}
+body{background:var(--bg);color:var(--white);font-family:var(--mono);font-size:11px;display:flex;flex-direction:column}
+
+#topbar{position:fixed;top:0;left:0;right:0;height:28px;background:var(--panel);border-bottom:1px solid var(--border);
+  display:flex;align-items:center;justify-content:space-between;padding:0 16px;z-index:100}
+#topbar .brand{font-family:var(--mono);font-size:11px;color:var(--gold);letter-spacing:.15em}
+#topbar .field-strip{font-size:9px;color:var(--muted);letter-spacing:.04em}
+
+#main{display:flex;flex:1;margin-top:28px;overflow:hidden}
+#mandala-wrap{flex:1;display:flex;align-items:center;justify-content:center;padding:20px;min-width:0}
+#mandala-wrap svg{max-width:100%;max-height:100%}
+
+#detail{flex:0 0 320px;border-left:1px solid var(--border);overflow-y:auto;padding:16px 20px}
+#detail h3{font-family:var(--cinzel);font-size:12px;color:var(--gold);letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+.d-section{margin:10px 0;font-size:10px;color:var(--muted);line-height:1.8}
+.d-lbl{font-family:var(--mono);font-size:8px;color:var(--dim);letter-spacing:.08em;text-transform:uppercase;margin-top:6px}
+.d-val{font-family:var(--serif);font-size:12px;font-style:italic;color:var(--white);line-height:1.6}
+.d-val-gold{font-family:var(--serif);font-size:12px;font-style:italic;color:var(--gold);line-height:1.6}
+.d-val-dim{font-family:var(--serif);font-size:11px;font-style:italic;color:var(--muted);line-height:1.5}
+.d-badge{display:inline-block;font-family:var(--mono);font-size:8px;letter-spacing:.08em;text-transform:uppercase;
+  padding:2px 8px;border-radius:2px;border:1px solid var(--border);margin:2px 4px 2px 0}
+.d-badge.good{color:var(--gold);border-color:rgba(200,169,110,.3)}
+.d-badge.bad{color:#cc5555;border-color:rgba(204,85,85,.3)}
+.d-badge.neutral{color:var(--muted);border-color:var(--border)}
+
+#overlay-btns{position:absolute;top:36px;left:50%;transform:translateX(-50%);display:flex;gap:0;z-index:10}
+#overlay-btns button{font-family:var(--mono);font-size:9px;letter-spacing:.1em;padding:5px 14px;
+  border:1px solid var(--border);background:transparent;color:var(--dim);cursor:pointer;text-transform:uppercase;transition:all .15s}
+#overlay-btns button:first-child{border-radius:2px 0 0 2px}
+#overlay-btns button:last-child{border-radius:0 2px 2px 0}
+#overlay-btns button+button{border-left:none}
+#overlay-btns button:hover,#overlay-btns button.on{color:var(--gold);border-color:rgba(200,169,110,.3);background:rgba(200,169,110,.04)}
+
+#transit-toggle{position:absolute;top:36px;right:340px;font-family:var(--mono);font-size:9px;letter-spacing:.1em;
+  padding:5px 14px;border:1px solid var(--border);background:transparent;color:var(--dim);cursor:pointer;
+  text-transform:uppercase;border-radius:2px;transition:all .15s;z-index:10}
+#transit-toggle:hover,#transit-toggle.on{color:var(--teal);border-color:rgba(93,202,165,.3);background:rgba(93,202,165,.04)}
+
+.nak-seg{cursor:pointer;transition:opacity .2s, filter .2s}
+.nak-seg:hover{filter:brightness(1.4)}
+.pada-seg{pointer-events:none;transition:fill-opacity .2s}
+.graha-glyph{cursor:pointer;transition:all .15s}
+.graha-glyph:hover{filter:brightness(1.5) drop-shadow(0 0 4px rgba(200,169,110,.5))}
+
+@keyframes pulse{0%,100%{opacity:.6}50%{opacity:1}}
+.moon-nak{animation:pulse 3s ease-in-out infinite}
+
+@media(max-width:900px){
+  #main{flex-direction:column}
+  #detail{flex:none;max-height:40vh;border-left:none;border-top:1px solid var(--border)}
+}
+</style>
+</head>
+<body>
+
+<div id="topbar">
+  <span class="brand">&#10022; NAKSHATRA MANDALA</span>
+  <span class="field-strip" id="field-strip">loading...</span>
+</div>
+
+<div id="overlay-btns">
+  <button class="on" onclick="setOverlay('nak')">Nakshatra</button>
+  <button onclick="setOverlay('south')">South Indian</button>
+  <button onclick="setOverlay('north')" title="Coming soon">North Indian</button>
+</div>
+
+<button id="transit-toggle" onclick="toggleTransits()">Transits</button>
+
+<div id="main">
+  <div id="mandala-wrap">
+    <svg id="mandala" viewBox="-400 -400 800 800" xmlns="http://www.w3.org/2000/svg"></svg>
+  </div>
+  <div id="detail">
+    <h3>Select</h3>
+    <div class="d-section" id="detail-body">
+      <div class="d-val-dim">Click a nakshatra segment or graha glyph to see details.</div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ══════════════════════════════════════════════
+//  REFERENCE DATA
+// ══════════════════════════════════════════════
+
+const NAKS = [
+  {name:'Ashwini',    abbr:'Ash', eid:'Ashwini',            lord:'Ketu',    deity:'Ashwini Kumaras', yoni:'Horse',    guna:'rajas',  el:'fire',  syl:['Chu','Che','Cho','La']},
+  {name:'Bharani',    abbr:'Bha', eid:'Bharani',            lord:'Venus',   deity:'Yama',            yoni:'Elephant', guna:'rajas',  el:'earth', syl:['Li','Lu','Le','Lo']},
+  {name:'Krittika',   abbr:'Kri', eid:'Krittika',           lord:'Sun',     deity:'Agni',            yoni:'Goat',     guna:'rajas',  el:'fire',  syl:['A','I','U','E']},
+  {name:'Rohini',     abbr:'Roh', eid:'Rohini',             lord:'Moon',    deity:'Brahma',          yoni:'Serpent',  guna:'rajas',  el:'earth', syl:['O','Va','Vi','Vu']},
+  {name:'Mrigashira', abbr:'Mri', eid:'Mrigashira',         lord:'Mars',    deity:'Soma',            yoni:'Serpent',  guna:'tamas',  el:'air',   syl:['Ve','Vo','Ka','Ki']},
+  {name:'Ardra',      abbr:'Ard', eid:'Ardra',              lord:'Rahu',    deity:'Rudra',           yoni:'Dog',      guna:'tamas',  el:'water', syl:['Ku','Gha','Ng','Na']},
+  {name:'Punarvasu',  abbr:'Pun', eid:'Punarvasu',          lord:'Jupiter', deity:'Aditi',           yoni:'Cat',      guna:'sattva', el:'water', syl:['Ke','Ko','Ha','Hi']},
+  {name:'Pushya',     abbr:'Pus', eid:'Pushya',             lord:'Saturn',  deity:'Brihaspati',      yoni:'Goat',     guna:'sattva', el:'water', syl:['Hu','He','Ho','Da']},
+  {name:'Ashlesha',   abbr:'Asl', eid:'Ashlesha',           lord:'Mercury', deity:'Naga',            yoni:'Cat',      guna:'sattva', el:'water', syl:['Di','Du','De','Do']},
+  {name:'Magha',      abbr:'Mag', eid:'Magha',              lord:'Ketu',    deity:'Pitris',          yoni:'Rat',      guna:'rajas',  el:'fire',  syl:['Ma','Mi','Mu','Me']},
+  {name:'P.Phalguni', abbr:'PPh', eid:'Purva Phalguni',     lord:'Venus',   deity:'Bhaga',           yoni:'Rat',      guna:'rajas',  el:'fire',  syl:['Mo','Ta','Ti','Tu']},
+  {name:'U.Phalguni', abbr:'UPh', eid:'Uttara Phalguni',    lord:'Sun',     deity:'Aryaman',         yoni:'Cow',      guna:'rajas',  el:'fire',  syl:['Te','To','Pa','Pi']},
+  {name:'Hasta',      abbr:'Has', eid:'Hasta',              lord:'Moon',    deity:'Savitar',         yoni:'Buffalo',  guna:'tamas',  el:'earth', syl:['Pu','Sha','Na','Tha']},
+  {name:'Chitra',     abbr:'Chi', eid:'Chitra',             lord:'Mars',    deity:'Tvashtar',        yoni:'Tiger',    guna:'tamas',  el:'fire',  syl:['Pe','Po','Ra','Ri']},
+  {name:'Swati',      abbr:'Swa', eid:'Swati',              lord:'Rahu',    deity:'Vayu',            yoni:'Buffalo',  guna:'tamas',  el:'fire',  syl:['Ru','Re','Ro','Taa']},
+  {name:'Vishakha',   abbr:'Vis', eid:'Vishakha',           lord:'Jupiter', deity:'Indra-Agni',      yoni:'Tiger',    guna:'sattva', el:'fire',  syl:['Ti','Tu','Te','To']},
+  {name:'Anuradha',   abbr:'Anu', eid:'Anuradha',           lord:'Saturn',  deity:'Mitra',           yoni:'Hare',     guna:'sattva', el:'fire',  syl:['Na','Ni','Nu','Ne']},
+  {name:'Jyeshtha',   abbr:'Jye', eid:'Jyeshtha',           lord:'Mercury', deity:'Indra',           yoni:'Hare',     guna:'sattva', el:'air',   syl:['No','Ya','Yi','Yu']},
+  {name:'Mula',       abbr:'Mul', eid:'Mula',               lord:'Ketu',    deity:'Nirriti',         yoni:'Dog',      guna:'rajas',  el:'air',   syl:['Ye','Yo','Bha','Bhi']},
+  {name:'P.Ashadha',  abbr:'PAs', eid:'Purva Ashadha',      lord:'Venus',   deity:'Apas',            yoni:'Monkey',   guna:'rajas',  el:'air',   syl:['Bhu','Dha','Pha','Dha']},
+  {name:'U.Ashadha',  abbr:'UAs', eid:'Uttara Ashadha',     lord:'Sun',     deity:'Vishvadevas',     yoni:'Mongoose', guna:'rajas',  el:'air',   syl:['Bhe','Bho','Ja','Ji']},
+  {name:'Shravana',   abbr:'Shr', eid:'Shravana',           lord:'Moon',    deity:'Vishnu',          yoni:'Monkey',   guna:'tamas',  el:'air',   syl:['Ju','Je','Jo','Gha']},
+  {name:'Dhanishta',  abbr:'Dha', eid:'Dhanishta',          lord:'Mars',    deity:'Vasu',            yoni:'Lion',     guna:'tamas',  el:'ether', syl:['Ga','Gi','Gu','Ge']},
+  {name:'Shatabhisha',abbr:'Sha', eid:'Shatabhisha',        lord:'Rahu',    deity:'Varuna',          yoni:'Horse',    guna:'tamas',  el:'ether', syl:['Go','Sa','Si','Su']},
+  {name:'P.Bhadra',   abbr:'PBh', eid:'Purva Bhadrapada',   lord:'Jupiter', deity:'Ajaikapada',      yoni:'Lion',     guna:'sattva', el:'ether', syl:['Se','So','Da','Di']},
+  {name:'U.Bhadra',   abbr:'UBh', eid:'Uttara Bhadrapada',  lord:'Saturn',  deity:'Ahirbudhnya',     yoni:'Cow',      guna:'sattva', el:'ether', syl:['Du','Tha','Jha','Da']},
+  {name:'Revati',     abbr:'Rev', eid:'Revati',             lord:'Mercury', deity:'Pushan',          yoni:'Elephant', guna:'sattva', el:'water', syl:['De','Do','Cha','Chi']},
+];
+// Reverse lookup: engine nakshatra name -> NAKS index
+const NAK_BY_EID = {};
+NAKS.forEach((n,i) => NAK_BY_EID[n.eid] = i);
+
+const GRAHA_COLORS = {
+  Sun:'#D4A017', Moon:'#C0C0C0', Mars:'#CC3333', Mercury:'#33AA55',
+  Jupiter:'#CCAA00', Venus:'#FFFFFF', Saturn:'#4466AA', Rahu:'#777777', Ketu:'#8B6914'
+};
+const GRAHA_ABBR = {Sun:'Su',Moon:'Mo',Mars:'Ma',Mercury:'Me',Jupiter:'Ju',Venus:'Ve',Saturn:'Sa',Rahu:'Ra',Ketu:'Ke'};
+
+// ══════════════════════════════════════════════
+//  STATE
+// ══════════════════════════════════════════════
+
+let natalChart = null, transitChart = null, waveField = null;
+let showTransits = false;
+let currentOverlay = 'nak';
+
+// ══════════════════════════════════════════════
+//  SVG HELPERS
+// ══════════════════════════════════════════════
+
+const R_OUTER = 340, R_INNER = 180, R_PADA_INNER = 155, R_NATAL = 210, R_TRANSIT = 260, R_LABEL = 355, R_LAGNA = 345;
+const DEG = Math.PI / 180;
+const NAK_ARC = 360 / 27;
+const PADA_ARC = NAK_ARC / 4;
+
+function polarToXY(angle_deg, r) {
+  const a = (angle_deg - 90) * DEG; // 0° = top
+  return [r * Math.cos(a), r * Math.sin(a)];
+}
+
+function arcPath(startDeg, endDeg, rOuter, rInner) {
+  const [x1,y1] = polarToXY(startDeg, rOuter);
+  const [x2,y2] = polarToXY(endDeg, rOuter);
+  const [x3,y3] = polarToXY(endDeg, rInner);
+  const [x4,y4] = polarToXY(startDeg, rInner);
+  const large = (endDeg - startDeg) > 180 ? 1 : 0;
+  return `M${x1},${y1} A${rOuter},${rOuter} 0 ${large},1 ${x2},${y2} L${x3},${y3} A${rInner},${rInner} 0 ${large},0 ${x4},${y4} Z`;
+}
+
+// ══════════════════════════════════════════════
+//  RENDER MANDALA
+// ══════════════════════════════════════════════
+
+function renderMandala() {
+  const svg = document.getElementById('mandala');
+  svg.innerHTML = '';
+
+  // Background circle
+  svg.innerHTML += `<circle cx="0" cy="0" r="${R_OUTER+10}" fill="none" stroke="rgba(200,169,110,0.06)" stroke-width="1"/>`;
+
+  // 27 nakshatra segments
+  for (let i = 0; i < 27; i++) {
+    const nak = NAKS[i];
+    const startDeg = i * NAK_ARC;
+    const endDeg = (i + 1) * NAK_ARC;
+    const color = GRAHA_COLORS[nak.lord] || '#555';
+
+    // Wave activation opacity (Task C: tuned range 0.25–0.90)
+    let opacity = 0.25;
+    if (waveField && waveField.nakshatras) {
+      const wn = waveField.nakshatras[nak.eid];
+      if (wn) opacity = 0.25 + 0.65 * (wn.composite_normalized || 0);
+    }
+
+    // Check if Moon's current transit nak
+    const isMoonNak = transitChart && transitChart.grahas?.Moon?.nakshatra === nak.eid;
+
+    svg.innerHTML += `<path class="nak-seg ${isMoonNak?'moon-nak':''}" d="${arcPath(startDeg, endDeg, R_OUTER, R_INNER)}"
+      fill="${color}" fill-opacity="${opacity}" stroke="rgba(200,169,110,0.12)" stroke-width="0.5"
+      onclick="selectNak(${i})" data-nak="${i}">
+      <title>${nak.name} · ${nak.lord}</title></path>`;
+
+    // Nakshatra label
+    const midDeg = startDeg + NAK_ARC / 2;
+    const [lx, ly] = polarToXY(midDeg, R_LABEL);
+    const rot = midDeg > 90 && midDeg < 270 ? midDeg + 180 : midDeg;
+    svg.innerHTML += `<text x="${lx}" y="${ly}" fill="rgba(200,169,110,0.5)" font-family="'IBM Plex Mono',monospace"
+      font-size="7" text-anchor="middle" dominant-baseline="middle"
+      transform="rotate(${rot},${lx},${ly})">${nak.abbr}</text>`;
+
+    // Pada ring (4 subdivisions per nakshatra)
+    for (let p = 0; p < 4; p++) {
+      const padaStart = startDeg + p * PADA_ARC;
+      const padaEnd = padaStart + PADA_ARC;
+      // Check if any natal graha occupies this pada
+      let padaOccupied = false;
+      if (natalChart?.grahas) {
+        for (const g of Object.values(natalChart.grahas)) {
+          if (g.nakshatra === nak.eid && g.pada === p + 1) { padaOccupied = true; break; }
+        }
+      }
+      svg.innerHTML += `<path d="${arcPath(padaStart, padaEnd, R_INNER, R_PADA_INNER)}"
+        fill="${color}" fill-opacity="${padaOccupied ? 0.4 : 0.08}"
+        stroke="rgba(200,169,110,0.06)" stroke-width="0.3"
+        class="pada-seg" data-nak="${i}" data-pada="${p+1}"/>`;
+      if (padaOccupied) {
+        const dotAng = padaStart + PADA_ARC / 2;
+        const [dx, dy] = polarToXY(dotAng, (R_INNER + R_PADA_INNER) / 2);
+        svg.innerHTML += `<circle cx="${dx}" cy="${dy}" r="2" fill="${color}" fill-opacity="0.7"/>`;
+      }
+    }
+  }
+
+  // Center: tithi info
+  if (natalChart?.tithi) {
+    const t = natalChart.tithi;
+    svg.innerHTML += `<text x="0" y="-12" fill="var(--gold)" font-family="'Cormorant Garamond',serif"
+      font-size="16" font-style="italic" text-anchor="middle">${t.name||''}</text>`;
+    svg.innerHTML += `<text x="0" y="8" fill="var(--muted)" font-family="'IBM Plex Mono',monospace"
+      font-size="9" text-anchor="middle">${t.paksha||''} · ${(t.sun_moon_phase_deg||0).toFixed(1)}°</text>`;
+  }
+
+  // Natal grahas
+  if (natalChart?.grahas) {
+    for (const [name, g] of Object.entries(natalChart.grahas)) {
+      const ang = g.deg_absolute;
+      const [gx, gy] = polarToXY(ang, R_NATAL);
+      const color = GRAHA_COLORS[name] || '#888';
+      svg.innerHTML += `<circle class="graha-glyph" cx="${gx}" cy="${gy}" r="10" fill="${color}" fill-opacity="0.8"
+        stroke="${color}" stroke-width="1.5" onclick="selectGraha('${name}','natal')"/>`;
+      svg.innerHTML += `<text x="${gx}" y="${gy+1}" fill="${name==='Venus'||name==='Moon'?'#111':'#fff'}"
+        font-family="'IBM Plex Mono',monospace" font-size="7" font-weight="bold" text-anchor="middle"
+        dominant-baseline="middle" pointer-events="none">${GRAHA_ABBR[name]||name.slice(0,2)}</text>`;
+    }
+  }
+
+  // Lagna marker
+  if (natalChart?.ascendant) {
+    const ang = natalChart.ascendant.deg_absolute;
+    const [lx, ly] = polarToXY(ang, R_LAGNA);
+    const [lx2, ly2] = polarToXY(ang, R_LAGNA - 12);
+    const [lx3, ly3] = polarToXY(ang - 2, R_LAGNA);
+    const [lx4, ly4] = polarToXY(ang + 2, R_LAGNA);
+    svg.innerHTML += `<polygon points="${lx},${ly} ${lx3},${ly3} ${lx2},${ly2} ${lx4},${ly4}"
+      fill="var(--gold)" fill-opacity="0.7"/>`;
+  }
+
+  // Transit grahas
+  if (showTransits && transitChart?.grahas) {
+    for (const [name, g] of Object.entries(transitChart.grahas)) {
+      const ang = g.deg_absolute;
+      const [gx, gy] = polarToXY(ang, R_TRANSIT);
+      const color = GRAHA_COLORS[name] || '#888';
+      svg.innerHTML += `<circle class="graha-glyph" cx="${gx}" cy="${gy}" r="8" fill="none"
+        stroke="${color}" stroke-width="1.5" stroke-opacity="0.6" onclick="selectGraha('${name}','transit')"/>`;
+      svg.innerHTML += `<text x="${gx}" y="${gy+1}" fill="${color}" fill-opacity="0.6"
+        font-family="'IBM Plex Mono',monospace" font-size="6" text-anchor="middle"
+        dominant-baseline="middle" pointer-events="none">${GRAHA_ABBR[name]||''}</text>`;
+    }
+  }
+
+  // South Indian overlay
+  if (currentOverlay === 'south') renderSouthIndianOverlay(svg);
+
+  // Pada hover: brighten padas when parent nak segment is hovered
+  svg.querySelectorAll('.nak-seg').forEach(seg => {
+    const ni = seg.getAttribute('data-nak');
+    seg.addEventListener('mouseenter', () => {
+      svg.querySelectorAll(`.pada-seg[data-nak="${ni}"]`).forEach(p => p.style.fillOpacity = '0.35');
+    });
+    seg.addEventListener('mouseleave', () => {
+      svg.querySelectorAll(`.pada-seg[data-nak="${ni}"]`).forEach(p => p.style.fillOpacity = '');
+    });
+  });
+}
+
+function renderSouthIndianOverlay(svg) {
+  if (!natalChart) return;
+  const RASHIS = ['Mesha','Vrishabha','Mithuna','Karka','Simha','Kanya','Tula','Vrishchika','Dhanu','Makara','Kumbha','Meena'];
+  const RASHI_SHORT = ['Mes','Vrs','Mit','Kar','Sim','Kan','Tul','Vrs','Dha','Mak','Kum','Mee'];
+  // SI layout: fixed positions (Pisces top-left going clockwise)
+  // Row 0: Mee(11) Mes(0) Vrs(1) Mit(2)
+  // Row 1: Kum(10) --- --- Kar(3)
+  // Row 2: Mak(9) --- --- Sim(4)
+  // Row 3: Dha(8) Vrs(7) Tul(6) Kan(5)
+  const SI = [[11,0,1,2],[10,-1,-1,3],[9,-1,-1,4],[8,7,6,5]];
+  const cellW = 70, cellH = 50;
+  const ox = -cellW*2, oy = -cellH*2;
+
+  svg.innerHTML += `<rect x="${ox}" y="${oy}" width="${cellW*4}" height="${cellH*4}"
+    fill="rgba(10,14,24,0.85)" stroke="rgba(200,169,110,0.2)" stroke-width="0.5" rx="4"/>`;
+
+  for (let r=0;r<4;r++) for (let c=0;c<4;c++) {
+    const idx = SI[r][c];
+    if (idx < 0) continue;
+    const x = ox + c*cellW, y = oy + r*cellH;
+    svg.innerHTML += `<rect x="${x}" y="${y}" width="${cellW}" height="${cellH}"
+      fill="none" stroke="rgba(200,169,110,0.15)" stroke-width="0.5"/>`;
+    svg.innerHTML += `<text x="${x+4}" y="${y+10}" fill="rgba(200,169,110,0.4)"
+      font-family="'IBM Plex Mono',monospace" font-size="7">${RASHI_SHORT[idx]}</text>`;
+
+    // Place grahas in their rashi box
+    if (natalChart?.bhavas) {
+      const bhava = natalChart.bhavas[String(((idx - (natalChart.ascendant?.rashi ? RASHIS.indexOf(natalChart.ascendant.rashi) : 0)) % 12 + 12) % 12 + 1)];
+      // Actually just check rashi match
+      const occupants = Object.entries(natalChart.grahas||{}).filter(([_,g]) => {
+        const gi = RASHIS.indexOf(g.rashi);
+        return gi === idx;
+      });
+      occupants.forEach(([name,_], oi) => {
+        const gx = x + 10 + (oi % 3) * 20, gy = y + 25 + Math.floor(oi/3) * 14;
+        svg.innerHTML += `<text x="${gx}" y="${gy}" fill="${GRAHA_COLORS[name]||'#888'}" fill-opacity="0.8"
+          font-family="'IBM Plex Mono',monospace" font-size="8" font-weight="bold">${GRAHA_ABBR[name]||''}</text>`;
+      });
+    }
+  }
+}
+
+// ══════════════════════════════════════════════
+//  INTERACTIONS
+// ══════════════════════════════════════════════
+
+function selectNak(idx) {
+  const nak = NAKS[idx];
+  let h = `<h3>${nak.eid}</h3>`;
+  h += `<div class="d-section">`;
+  h += `<div class="d-lbl">lord</div><div class="d-val-gold">${nak.lord}</div>`;
+  h += `<div class="d-lbl">deity</div><div class="d-val">${nak.deity}</div>`;
+  h += `<div class="d-lbl">animal yoni</div><div class="d-val">${nak.yoni}</div>`;
+  h += `<div class="d-lbl">guna · element</div><div class="d-val">${nak.guna} · ${nak.el}</div>`;
+  h += `<div class="d-lbl">syllables</div><div class="d-val">${nak.syl.join(' · ')}</div>`;
+
+  // Wave activation
+  if (waveField?.nakshatras) {
+    const wn = waveField.nakshatras[nak.eid];
+    if (wn) {
+      h += `<div class="d-lbl">wave activation</div>`;
+      h += `<div class="d-val-gold">${wn.composite_normalized.toFixed(3)}</div>`;
+      h += `<div class="d-val-dim">composite: ${wn.composite.toFixed(4)}</div>`;
+    }
+  }
+
+  // Natal grahas in this nak
+  if (natalChart?.grahas) {
+    const inNak = Object.entries(natalChart.grahas).filter(([_,g]) => g.nakshatra === nak.eid);
+    if (inNak.length) {
+      h += `<div class="d-lbl">natal grahas</div>`;
+      inNak.forEach(([name,g]) => {
+        const dc = g.dignity==='exalted'||g.dignity==='deeply_exalted'||g.dignity==='own'||g.dignity==='mooltrikona'?'good':g.dignity==='debilitated'||g.dignity==='deeply_debilitated'?'bad':'neutral';
+        h += `<div class="d-val">${name} ${g.deg_in_rashi.toFixed(1)}° <span class="d-badge ${dc}">${g.dignity||'—'}</span></div>`;
+      });
+    }
+  }
+
+  // Transit grahas
+  if (showTransits && transitChart?.grahas) {
+    const inNak = Object.entries(transitChart.grahas).filter(([_,g]) => g.nakshatra === nak.eid);
+    if (inNak.length) {
+      h += `<div class="d-lbl">transit grahas</div>`;
+      inNak.forEach(([name,g]) => {
+        h += `<div class="d-val-dim">${name} ${g.deg_in_rashi.toFixed(1)}°</div>`;
+      });
+    }
+  }
+
+  // Tara Bala
+  h += `<div class="d-lbl">tara bala</div><div class="d-val-dim" id="tara-result">loading...</div>`;
+  h += `</div>`;
+  document.getElementById('detail-body').innerHTML = h;
+  document.querySelector('#detail h3').textContent = nak.eid;
+
+  // Fetch tara
+  (typeof atlasGet==='function'?atlasGet:fetch)(`/jyotish/tara/${encodeURIComponent(nak.eid)}`)
+    .then(r => r.json ? r.json() : r)
+    .then(data => {
+      const el = document.getElementById('tara-result');
+      if (!el) return;
+      if (data.error) { el.textContent = data.error; return; }
+      const fc = data.favorable ? 'good' : 'bad';
+      el.innerHTML = `<span class="d-badge ${fc}">${data.category}</span> cycle ${data.cycle} · ${data.favorable?'favorable':'unfavorable'}`;
+    }).catch(() => {});
+}
+
+function selectGraha(name, chartType) {
+  const chart = chartType === 'transit' ? transitChart : natalChart;
+  if (!chart?.grahas?.[name]) return;
+  const g = chart.grahas[name];
+
+  let h = `<h3>${name}</h3>`;
+  h += `<div class="d-section">`;
+  h += `<div class="d-val-gold" style="font-size:14px">${g.rashi} · ${g.nakshatra} pada ${g.pada}</div>`;
+  h += `<div class="d-val-dim">${g.deg_absolute.toFixed(2)}° (${g.deg_in_rashi.toFixed(2)}° in sign)</div>`;
+
+  // Status badges
+  h += `<div style="margin:6px 0">`;
+  if (g.dignity) {
+    const dc = g.dignity==='exalted'||g.dignity==='deeply_exalted'||g.dignity==='own'||g.dignity==='mooltrikona'?'good':g.dignity==='debilitated'||g.dignity==='deeply_debilitated'?'bad':'neutral';
+    h += `<span class="d-badge ${dc}">${g.dignity}</span>`;
+  }
+  if (g.retrograde) h += `<span class="d-badge bad">retrograde</span>`;
+  if (g.combust) h += `<span class="d-badge bad">combust</span>`;
+  h += `</div>`;
+
+  h += `<div class="d-lbl">bhava</div><div class="d-val">${g.bhava}</div>`;
+  h += `<div class="d-lbl">nakshatra lord</div><div class="d-val">${g.nakshatra_lord}</div>`;
+
+  // Lord chain (3 levels)
+  h += `<div class="d-lbl">lord chain</div>`;
+  let lordChain = [g.nakshatra_lord];
+  if (chart.grahas[g.nakshatra_lord]) {
+    const l2 = chart.grahas[g.nakshatra_lord].nakshatra_lord;
+    lordChain.push(l2);
+    if (chart.grahas[l2]) lordChain.push(chart.grahas[l2].nakshatra_lord);
+  }
+  h += `<div class="d-val">${name} → ${lordChain.join(' → ')}</div>`;
+
+  // Aspects
+  if (chart.aspects) {
+    const casts = chart.aspects.filter(a => a.from === name);
+    const receives = chart.aspects.filter(a => a.to === name);
+    if (casts.length) {
+      h += `<div class="d-lbl">aspects cast</div>`;
+      casts.forEach(a => h += `<div class="d-val-dim">${a.type} → ${a.to}${a.mutual?' (mutual)':''}</div>`);
+    }
+    if (receives.length) {
+      h += `<div class="d-lbl">aspects received</div>`;
+      receives.forEach(a => h += `<div class="d-val-dim">${a.type} ← ${a.from}${a.mutual?' (mutual)':''}</div>`);
+    }
+  }
+
+  // Wave signature
+  if (chart.phase_pairs?.targets?.[name]) {
+    const wt = chart.phase_pairs.targets[name];
+    h += `<div class="d-lbl">wave activation</div>`;
+    h += `<div class="d-val-gold">${wt.composite_mean.toFixed(3)}</div>`;
+    h += `<div class="d-lbl">peak resonance</div>`;
+    (wt.peak_activation||[]).forEach(p => h += `<div class="d-val-dim">${p.pair} k=${p.k} (${p.label}) ${p.amplitude>0?'+':''}${p.amplitude.toFixed(3)}</div>`);
+    h += `<div class="d-lbl">peak cancellation</div>`;
+    (wt.peak_cancellation||[]).forEach(p => h += `<div class="d-val-dim">${p.pair} k=${p.k} (${p.label}) ${p.amplitude>0?'+':''}${p.amplitude.toFixed(3)}</div>`);
+  }
+
+  h += `</div>`;
+  document.getElementById('detail-body').innerHTML = h;
+  document.querySelector('#detail h3').textContent = name;
+}
+
+function toggleTransits() {
+  showTransits = !showTransits;
+  document.getElementById('transit-toggle').classList.toggle('on', showTransits);
+  renderMandala();
+}
+
+function setOverlay(mode) {
+  if (mode === 'north') return; // coming soon
+  currentOverlay = mode;
+  document.querySelectorAll('#overlay-btns button').forEach((b,i) => b.classList.toggle('on', ['nak','south','north'][i]===mode));
+  renderMandala();
+}
+
+// ══════════════════════════════════════════════
+//  DATA LOADING
+// ══════════════════════════════════════════════
+
+const _get = typeof atlasGet === 'function' ? atlasGet : async (url) => {
+  const r = await fetch(url); return r.ok ? r.json() : null;
+};
+
+async function loadData() {
+  document.getElementById('field-strip').textContent = 'loading natal...';
+
+  natalChart = await _get('/jyotish/natal');
+  document.getElementById('field-strip').textContent = 'loading transits...';
+
+  transitChart = await _get('/jyotish/transits');
+  document.getElementById('field-strip').textContent = 'loading wave field...';
+
+  try { waveField = await _get('/jyotish/wave_field?chart_type=natal'); } catch(e) {}
+
+  // Update field strip
+  if (natalChart?.ascendant) {
+    const a = natalChart.ascendant;
+    const t = natalChart.tithi;
+    document.getElementById('field-strip').textContent =
+      `${a.rashi} lagna · ${a.nakshatra} · ${t?.name||''} · ${natalChart.meta?.ayanamsha||''}`;
+  } else {
+    document.getElementById('field-strip').textContent = 'data loaded';
+  }
+
+  renderMandala();
+}
+
+window.addEventListener('DOMContentLoaded', loadData);
+</script>
+</body>
+</html>
