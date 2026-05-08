@@ -530,16 +530,28 @@ def compute_pair_interference(
     source_2_long: float,
     target_long: float,
     k: int,
-) -> float:
+) -> complex:
     """
-    Two-source wave interference at a target point.
-    Sources and target are sidereal longitudes in degrees.
-    k is the harmonic order.
-    Returns amplitude in range [-2.0, +2.0].
+    Two-source wave interference at a target point (versor / phasor form).
+
+    Sources and target are sidereal longitudes in degrees; k is the harmonic order.
+
+    Returns a complex Z_k = exp(j·k·(θ-α)) + exp(j·k·(θ-β)) with:
+        Re(Z_k) = cos(k·(θ-α)) + cos(k·(θ-β))   — broadside-radial / magnetic-mode component
+        Im(Z_k) = sin(k·(θ-α)) + sin(k·(θ-β))   — axial-longitudinal / dielectric-mode component
+        |Z_k|   = mathematically correct interference magnitude (range [0, 2])
+
+    The previous implementation returned only Re(Z_k) (real-cosine-sum). That value
+    is recoverable as `compute_pair_interference(...).real` for any caller that
+    needs strict backward compatibility. Callers that take `abs(...)` of the result
+    now get the proper magnitude |Z_k| instead of |cos(...)+cos(...)|; these scalars
+    coincide only when phase geometry happens to align them.
     """
     d1 = math.radians(target_long - source_1_long)
     d2 = math.radians(target_long - source_2_long)
-    return math.cos(k * d1) + math.cos(k * d2)
+    z1 = complex(math.cos(k * d1), math.sin(k * d1))
+    z2 = complex(math.cos(k * d2), math.sin(k * d2))
+    return z1 + z2
 
 
 def compute_wave_field(
@@ -548,11 +560,45 @@ def compute_wave_field(
     k_values: List[int] = None,
 ) -> dict:
     """
-    Two-source interference for all graha pairs at all target positions.
+    Two-source interference for all graha pairs at all target positions
+    (versor / phasor form with magnetic/dielectric mode decomposition).
 
     grahas: {name: {"deg_absolute": float, ...}} from compute_chart
     targets: {name: longitude} — defaults to all graha positions
     k_values: harmonic orders — defaults to [1, 3, 4, 6, 7, 12]
+
+    Each graha pair contributes a complex phasor Z_k = e^(jk(θ-α)) + e^(jk(θ-β))
+    at every target θ and harmonic k. The vector sum across pairs at a given
+    (target, k) splits into:
+
+        Re(Σ Z_k)  →  broadside-radial / magnetic-mode component
+        Im(Σ Z_k)  →  axial-longitudinal / dielectric-mode component
+                       (Steinmetz/Dollard formalism)
+        |Σ Z_k|    →  total interference magnitude
+
+    Backward-compatibility note: the per-pair `amplitude` field stored under
+    `peak_activation` / `peak_cancellation` / `nodal_lines` continues to hold
+    Re(Z_k) (≡ the previous cosine-sum value), and the per-target `composite`
+    / `composite_mean` continue to use sum-of-`abs(Re(Z_k))` per k (≡ the
+    previous `sum |cos+cos|` aggregate) so existing UI consumers see identical
+    data.
+
+    Why composite is NOT switched to |Z_k|: a closed-form identity
+    |Z_k| = 2|cos(k(β-α)/2)| shows |Z_k| depends only on the source-pair
+    angular separation, not on the target θ. Sum-over-pairs of |Z_k| is
+    therefore identical at every target at fixed k, and the per-target
+    min-max normalization across targets becomes degenerate (it amplifies
+    floating-point noise). The target-dependent interference structure lives
+    entirely in Re/Im of Σ_pairs Z_k (the vector sum across pairs *before*
+    abs), exposed via the new mode-decomposed fields below.
+
+    New top-level fields exposed by this function:
+        targets_magnetic[t][k]    = |Re(Σ_pairs Z_k)|
+        targets_dielectric[t][k]  = |Im(Σ_pairs Z_k)|
+        targets_mode_ratio[t][k]  = dielectric / (magnetic + dielectric + ε)
+        composite_magnetic        = mean over (t,k) of magnetic[t][k]
+        composite_dielectric      = mean over (t,k) of dielectric[t][k]
+        composite_mode_ratio      = total_dielectric / (total_magnetic + total_dielectric + ε)
     """
     if k_values is None:
         k_values = _DEFAULT_K
@@ -566,8 +612,10 @@ def compute_wave_field(
     graha_names = list(g_longs.keys())
     pairs = list(combinations(graha_names, 2))
 
-    # Compute raw amplitudes: target -> k -> list of (pair_name, amplitude)
+    # Compute complex Z_k per (target, k, pair); also accumulate the vector
+    # sum across pairs for mode decomposition.
     raw = {t: {k: [] for k in k_values} for t in targets}
+    pair_sum = {t: {k: 0+0j for k in k_values} for t in targets}
 
     for a, b in pairs:
         pair_name = f"{a}-{b}"
@@ -575,26 +623,65 @@ def compute_wave_field(
         lon_b = g_longs[b]
         for t_name, t_lon in targets.items():
             for k in k_values:
-                amp = compute_pair_interference(lon_a, lon_b, t_lon, k)
-                raw[t_name][k].append((pair_name, amp))
+                z = compute_pair_interference(lon_a, lon_b, t_lon, k)
+                raw[t_name][k].append((pair_name, z))
+                pair_sum[t_name][k] += z
 
-    # Build target summaries
+    # ── mode decomposition (vector-sum split) ───────────────────────
+    eps = 1e-12
+    targets_magnetic = {}
+    targets_dielectric = {}
+    targets_mode_ratio = {}
+    total_magnetic_sum = 0.0
+    total_dielectric_sum = 0.0
+    nk_total = 0
+    for t_name in targets:
+        targets_magnetic[t_name] = {}
+        targets_dielectric[t_name] = {}
+        targets_mode_ratio[t_name] = {}
+        for k in k_values:
+            zs = pair_sum[t_name][k]
+            mag = abs(zs.real)
+            die = abs(zs.imag)
+            targets_magnetic[t_name][k] = round(mag, 4)
+            targets_dielectric[t_name][k] = round(die, 4)
+            targets_mode_ratio[t_name][k] = round(die / (mag + die + eps), 4)
+            total_magnetic_sum += mag
+            total_dielectric_sum += die
+            nk_total += 1
+
+    composite_magnetic = round(total_magnetic_sum / nk_total, 4) if nk_total else 0.0
+    composite_dielectric = round(total_dielectric_sum / nk_total, 4) if nk_total else 0.0
+    composite_mode_ratio = round(
+        total_dielectric_sum / (total_magnetic_sum + total_dielectric_sum + eps), 4
+    )
+
+    # ── per-target composite (now from |Z_k| not |cos+cos|) ─────────
     target_results = {}
-    # For normalization: collect composite sums per k across all targets
-    composites_by_k = {k: {} for k in k_values}  # k -> {target: sum_abs}
+    composites_by_k = {k: {} for k in k_values}  # k -> {target: sum |Z_k|}
 
     for t_name in targets:
         composite = {}
         all_activations = []
         for k in k_values:
             entries = raw[t_name][k]
-            total = sum(abs(a) for _, a in entries)
+            # Per-target backward-compat aggregate: sum_pairs |Re(Z_k)|
+            # ≡ sum_pairs |cos(k(θ-α)) + cos(k(θ-β))|. See class docstring
+            # for why we don't switch this to |Z_k| (would collapse targets).
+            total = sum(abs(z.real) for _, z in entries)
             composite[k] = round(total, 4)
             composites_by_k[k][t_name] = total
-            for pair_name, amp in entries:
-                all_activations.append({"pair": pair_name, "k": k,
-                                        "label": _K_LABELS.get(k, f"k={k}"),
-                                        "amplitude": round(amp, 4)})
+            for pair_name, z in entries:
+                # Backward-compat: store Re(Z_k) under "amplitude" — this is
+                # exactly the previous cosine-sum value. Add "magnitude" for
+                # callers that want the corrected scalar.
+                all_activations.append({
+                    "pair": pair_name,
+                    "k": k,
+                    "label": _K_LABELS.get(k, f"k={k}"),
+                    "amplitude": round(z.real, 4),
+                    "magnitude": round(abs(z), 4),
+                })
 
         target_results[t_name] = {
             "composite": composite,
@@ -640,6 +727,12 @@ def compute_wave_field(
         "k_labels": _K_LABELS,
         "pair_count": len(pairs),
         "targets": target_results,
+        "targets_magnetic": targets_magnetic,
+        "targets_dielectric": targets_dielectric,
+        "targets_mode_ratio": targets_mode_ratio,
+        "composite_magnetic": composite_magnetic,
+        "composite_dielectric": composite_dielectric,
+        "composite_mode_ratio": composite_mode_ratio,
         "field_summary": {
             "most_activated": by_mean[0][0] if by_mean else None,
             "least_activated": by_mean[-1][0] if by_mean else None,
@@ -742,7 +835,11 @@ def compute_pair_nakshatra_pattern(
 
         by_k = {}
         for k in k_values:
-            total = sum(compute_pair_interference(graha1_long, graha2_long, s, k)
+            # Use .real to preserve signed-cosine-sum semantics for the
+            # per-arc pattern visualization (constructive vs destructive
+            # average across the arc). The complex magnitude is always
+            # nonneg and would lose the sign distinction the UI relies on.
+            total = sum(compute_pair_interference(graha1_long, graha2_long, s, k).real
                         for s in samples)
             by_k[k] = round(total / len(samples), 4)
 

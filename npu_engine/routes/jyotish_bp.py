@@ -148,6 +148,42 @@ def wave_field():
     })
 
 
+@jyotish_bp.route("/wave_field_modes")
+def wave_field_modes():
+    """Versor-aware mode decomposition of the wave field.
+
+    Mirrors /wave_field's structure but exposes the magnetic/dielectric
+    split that the real-cosine-sum reduction collapses.
+
+    Re(Σ Z_k) → broadside-radial / magnetic mode (mainstream EM convention)
+    Im(Σ Z_k) → axial-longitudinal / dielectric mode (Steinmetz/Dollard)
+    """
+    from npu_engine.jyotisha_engine import compute_chart, load_natal_json
+
+    chart_type = request.args.get("chart_type", "natal")
+    if chart_type == "transit":
+        now = datetime.now(timezone.utc).replace(tzinfo=None)
+        chart = compute_chart(now, _DEFAULT_LAT, _DEFAULT_LON)
+    else:
+        natal = load_natal_json()
+        chart = compute_chart(natal["dt_utc"], natal["lat"], natal["lon"])
+
+    pp = chart.get("phase_pairs", {})
+    return jsonify({
+        "chart_type": chart_type,
+        "k_labels": pp.get("k_labels", {}),
+        "pair_count": pp.get("pair_count", 0),
+        "targets_magnetic": pp.get("targets_magnetic", {}),
+        "targets_dielectric": pp.get("targets_dielectric", {}),
+        "targets_mode_ratio": pp.get("targets_mode_ratio", {}),
+        "composite_magnetic": pp.get("composite_magnetic", 0.0),
+        "composite_dielectric": pp.get("composite_dielectric", 0.0),
+        "composite_mode_ratio": pp.get("composite_mode_ratio", 0.0),
+        "targets": pp.get("targets", {}),
+        "field_summary": pp.get("field_summary", {}),
+    })
+
+
 @jyotish_bp.route("/wave_field/pair/<graha1>/<graha2>")
 def wave_field_pair(graha1, graha2):
     """Single pair interference across 27 nakshatra arcs."""
