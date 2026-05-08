@@ -45,3 +45,6 @@ data/coherence_cache/
 *.h5
 *.npy
 *.npz
+
+# Python virtualenvs (e.g., .venv-archive/ for the geosolar fetch pipeline)
+.venv*/
