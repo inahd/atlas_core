@@ -4,7 +4,7 @@
 
 This document **locks the analysis design** for a confirmatory test of the Sun-Moon wave-field amplitude → bhūmi-layer correspondence hypothesis on the multi-decade geosolar archive (1973–2024).
 
-The design is locked at the commit hash of this file's commit: **`7e0686e`**. Any analysis run on the multi-decade data after this commit MUST reference this hash. The multi-decade data has **NOT** been loaded for analysis at the time of this pre-registration. The 2025 pilot data was used only to motivate the choice of reduction; it does not enter the multi-decade test in any role.
+The locking commit for this pre-registration is the most recent commit affecting this file path in git history. Verify with: `git log --follow research/geosolar/preregistrations/PREREG_001_sun_moon_bhumi_multidecade.md`. The first commit on that file is the lock; subsequent commits (if any) must be reported as deviations under the deviation clause above.
 
 Any deviation from the design specified below — different reduction, different test family, different correction, different stratification, different effect-size threshold, different sample window — must be reported as **exploratory** and labeled as such in the resulting analysis document. Such deviations do not invalidate the confirmatory result, but they do not contribute to the confirmatory claim either (see §6).
 
@@ -148,7 +148,7 @@ Any analysis run on the 1973–2024 multi-decade data that deviates from the loc
 
 - **Date of pre-registration (UTC):** 2026-05-08
 - **Location:** Atlas Core repository, branch `main`, file `research/geosolar/preregistrations/PREREG_001_sun_moon_bhumi_multidecade.md`
-- **Locking commit hash (short):** `7e0686e`
+- **Locking commit:** recover from `git log --follow` on this file path (the first commit is the lock; see §1)
 - **Author:** inahd (Gainesville, FL)
 - **Multi-decade data state at time of pre-registration:** NOT LOADED for analysis. The bulk archive 1973–2024 may exist on disk in `datasets/geosolar/archive/` but no statistical or correlational analysis has been performed against `sun_moon_amplitude` over that window.
 
