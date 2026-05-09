@@ -1,0 +1,1836 @@
+{
+  "scan_time_utc": "2026-05-08T22:21:11Z",
+  "total_pdfs_scanned": 239,
+  "extract_failures": 0,
+  "low_text_pdfs_total": 76,
+  "unique_canonical_count": 217,
+  "duplicates_moved": 22,
+  "by_tier_before": {
+    "01_steinmetz": 51,
+    "02_dollard": 55,
+    "03_heaviside": 7,
+    "04_maxwell_faraday": 5,
+    "05_thomson_jj": 5,
+    "06_kennelly": 7,
+    "07_macfarlane": 6,
+    "08_whittaker": 9,
+    "09_tesla_primary": 18,
+    "10_jenny_cymatics": 1,
+    "11_wachsmuth_steiner_marti": 7,
+    "12_russell": 20,
+    "14_lawlor_sacred_geom": 1,
+    "15_bortoft_goethe": 2,
+    "16_steinmetz_lineage_supports": 10,
+    "17_borderland_journal": 30,
+    "18_lebon_lodge_crookes": 5
+  },
+  "by_tier_after": {
+    "12_russell": 18,
+    "06_kennelly": 7,
+    "02_dollard": 42,
+    "17_borderland_journal": 30,
+    "16_steinmetz_lineage_supports": 10,
+    "01_steinmetz": 49,
+    "03_heaviside": 7,
+    "18_lebon_lodge_crookes": 5,
+    "04_maxwell_faraday": 5,
+    "07_macfarlane": 6,
+    "08_whittaker": 7,
+    "09_tesla_primary": 15,
+    "11_wachsmuth_steiner_marti": 7,
+    "05_thomson_jj": 5,
+    "14_lawlor_sacred_geom": 1,
+    "15_bortoft_goethe": 2,
+    "10_jenny_cymatics": 1
+  },
+  "low_text_by_tier_after": {
+    "01_steinmetz": 16,
+    "02_dollard": 26,
+    "03_heaviside": 3,
+    "04_maxwell_faraday": 1,
+    "06_kennelly": 2,
+    "07_macfarlane": 1,
+    "08_whittaker": 4,
+    "09_tesla_primary": 4,
+    "12_russell": 2,
+    "15_bortoft_goethe": 1,
+    "16_steinmetz_lineage_supports": 3,
+    "18_lebon_lodge_crookes": 4
+  },
+  "groups": [
+    {
+      "group_size": 4,
+      "canonical": "02_dollard/System for reception and Transmission of Telluric Waves by Eric Dollard (older version).pdf",
+      "duplicates": [
+        "02_dollard/System for reception and Transmission of Telluic Waves by Eric Dollard.pdf",
+        "02_dollard/Eric Dollard EPD Teluric Currents Paper.pdf",
+        "02_dollard/Eric-Dollard--Telluric-Currents-Paper.pdf"
+      ],
+      "tier": "02_dollard",
+      "page_count": 30,
+      "low_text": false
+    },
+    {
+      "group_size": 4,
+      "canonical": "02_dollard/Eric Dollard Introduction to Dielectric and Magnetic Discharges in Electrical Windings (older version).pdf",
+      "duplicates": [
+        "02_dollard/Eric Dollard Introduction to Dielectric Magnetic Discharges in Electrical Windings Electrical Oscillation.pdf",
+        "02_dollard/Eric Dollard Introduction to Dielectric and Magnetic Discharges in Electrical Windings.pdf",
+        "02_dollard/Introduction to Dielectric Magnetic Discharges in Electrical Windings.pdf"
+      ],
+      "tier": "02_dollard",
+      "page_count": 43,
+      "low_text": true
+    },
+    {
+      "group_size": 3,
+      "canonical": "02_dollard/Symbolic Representation of the Generalized Electric Wave by Eric Dollard (older version).pdf",
+      "duplicates": [
+        "02_dollard/Symbolic Representation of the Generalized Electric Wave by Eric Dollard.pdf",
+        "02_dollard/Symbolic Representation of the Generalized Electric Wave.pdf"
+      ],
+      "tier": "02_dollard",
+      "page_count": 93,
+      "low_text": true
+    },
+    {
+      "group_size": 3,
+      "canonical": "08_whittaker/Whittaker History of Theories of Aether and Electricity 502p.pdf",
+      "duplicates": [
+        "08_whittaker/Whittaker History of Theories of Aether and Electricity.pdf",
+        "08_whittaker/ET-Whittaker--A-History-of-the-Theories-of-Aether-and-Electricity.pdf"
+      ],
+      "tier": "08_whittaker",
+      "page_count": 502,
+      "low_text": false
+    },
+    {
+      "group_size": 3,
+      "canonical": "09_tesla_primary/Nikola Tesla - Modern Physics for Engineers.pdf",
+      "duplicates": [
+        "09_tesla_primary/Nikola-Tesla--Modern-Physics-For-Engineers-1.pdf",
+        "09_tesla_primary/Nikola-Tesla--Modern-Physics-for-Engineers-2.pdf"
+      ],
+      "tier": "09_tesla_primary",
+      "page_count": 22,
+      "low_text": false
+    },
+    {
+      "group_size": 2,
+      "canonical": "01_steinmetz/Charles Steinmetz Electrical Discharges Waves and Impulses 2nd Ed.pdf",
+      "duplicates": [
+        "01_steinmetz/Charles Steinmetz - Electrical Discharges Waves and Impulses 2ndEd.pdf"
+      ],
+      "tier": "01_steinmetz",
+      "page_count": 186,
+      "low_text": true
+    },
+    {
+      "group_size": 2,
+      "canonical": "01_steinmetz/Steinmetz-CPTheory-and-Calculation-of-Transient-Electric-Phenomena-and-Oscillations.pdf",
+      "duplicates": [
+        "01_steinmetz/CharlesSteinmetzTheory-and-Calculation-of-Transient-Electric-Phenomena-and-Oscillations.pdf"
+      ],
+      "tier": "01_steinmetz",
+      "page_count": 717,
+      "low_text": false
+    },
+    {
+      "group_size": 2,
+      "canonical": "02_dollard/Eric Dollard - Teluric Currents Paper.pdf",
+      "duplicates": [
+        "02_dollard/Eric Dollard.pdf"
+      ],
+      "tier": "02_dollard",
+      "page_count": 30,
+      "low_text": false
+    },
+    {
+      "group_size": 2,
+      "canonical": "02_dollard/Eric Dollard Notes 1986 to 1991.pdf",
+      "duplicates": [
+        "02_dollard/Eric Dollard Notes.pdf"
+      ],
+      "tier": "02_dollard",
+      "page_count": 29,
+      "low_text": true
+    },
+    {
+      "group_size": 2,
+      "canonical": "02_dollard/Eric Dollard SFTS Powerpoint 01.pdf",
+      "duplicates": [
+        "02_dollard/Eric Dollard SFTS Powerpoint.pdf"
+      ],
+      "tier": "02_dollard",
+      "page_count": 50,
+      "low_text": true
+    },
+    {
+      "group_size": 2,
+      "canonical": "02_dollard/The Oscillating Current Transformer - Eric Dollard.pdf",
+      "duplicates": [
+        "02_dollard/Eric Dollard The Oscillating Current Transformer.pdf"
+      ],
+      "tier": "02_dollard",
+      "page_count": 9,
+      "low_text": true
+    },
+    {
+      "group_size": 2,
+      "canonical": "02_dollard/Understanding the Rotating Magnetic Field by Eric P. Dollard.pdf",
+      "duplicates": [
+        "02_dollard/Rotating Magnetic Field.pdf"
+      ],
+      "tier": "02_dollard",
+      "page_count": 6,
+      "low_text": false
+    },
+    {
+      "group_size": 2,
+      "canonical": "09_tesla_primary/NIKOLA-TESLA-On-His-Work-With-Alternating-Currents-and-Their-Application-to-Wireless-Telgraphy-Telephony-and-Transmission-of-Power-Leland-I-Anders.pdf",
+      "duplicates": [
+        "09_tesla_primary/Nikola-Tesla--On-His-Work-With-Alternating-Currents-and-Their-Application-to-Wireless-Telgraphy-Telephony-and-Transmission-of-Power-Leland-I-Ande.pdf"
+      ],
+      "tier": "09_tesla_primary",
+      "page_count": 262,
+      "low_text": false
+    },
+    {
+      "group_size": 2,
+      "canonical": "12_russell/WalterRussellTheSecretofLight.pdf",
+      "duplicates": [
+        "12_russell/33365473TheSecretofLightbyWalterRussell.pdf"
+      ],
+      "tier": "12_russell",
+      "page_count": 163,
+      "low_text": false
+    },
+    {
+      "group_size": 2,
+      "canonical": "12_russell/ANewConceptoftheUniversebyWalterRussell.pdf",
+      "duplicates": [
+        "12_russell/Walter-RussellA-New-Concept-Of-The-Universe.pdf"
+      ],
+      "tier": "12_russell",
+      "page_count": 98,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Charles Steinmetz General Lectures on Electrical Engineers.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 300,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Charles Steinmetz Radiation Light and Illumination.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 328,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Charles Steinmetz Theory and Calculation of Alternating Current Phenomenon.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 474,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Electric Discharges Waves and Impulses by Charles Proteus Steinmetz.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 172,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Electric Discharges Waves and Impulses.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 170,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Four Lectures on Relativity and Space Steinmetz.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 140,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz CP Abnormal Strains in Transformers 1912.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 7,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz CP Complex Quantities and Their Use in Electrical Engineering.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 44,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz CP Discussion on The effect of iron in distorting Alternating Current Wave Form.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 20,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz CP Electric Transients 1911.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 17,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz CP Electrical Discharges Waves and Impulses 2ndEd.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 179,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz CP Electrical Disturbances the Nature of Electrical Energy 1912.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 9,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz CP Engineering Mathematics.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 319,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz CP General Equations of the Electric Circuit Pt1 1908.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 88,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz CP General Lectures on Electrical Engineering.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 294,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz CP Magnetic Reluctivity.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 8,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz CP On the Law of Hysteresis Part 1.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 64,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz CP On the Law of Hysteresis Part 2.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 140,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz CP On the Law of Hysteresis Part 3.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 47,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz CP Radiation Light and Illumination.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 323,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz CP Symbolic Representation of General Alternating Waves and Double Frequency Vectors 1.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 29,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz CP Theory Amp Calculation of Alternating Current Phenonena 4th Ed 2nd Imp 1908.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 765,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz CP Theory amp Calculation of Transient Electric Phenomena amp Oscillations 3rd Ed 5th Imp 1920.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 726,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz CP Theory and Calculation of Transient Electric Phenomena and Oscillations.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 718,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz CP Theory and Calculations of Electrical Apparatus.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 509,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz Theory Calculations.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 558,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CP-Discussion-on-The-effect-of-iron-in-distorting-AlternatingCurrent-WaveForm.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 20,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CP-Electrical-Discharges-Waves-and-Impulses-2ndEd.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 178,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CP-On-the-Law-of-Hysteresis-Part-1.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 64,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CP-On-the-Law-of-Hysteresis-Part-2.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 140,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CP-On-the-Law-of-Hysteresis-Part-3.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 47,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CP-TheoryampCalculationofAlternatingCurrentPhenonena4thEd2ndImp1908.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 764,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CPAbnormalStrainsinTransformers1912.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 6,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CPComplexQuantitiesandTheirUseinElectricalEngineering.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 43,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CPElectricTransients1911.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 16,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CPElectrical-Discharges-Waves-and-Impulses-2ndEd.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 178,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CPElectricalDisturbancestheNatureofElectricalEnergy1912.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 8,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CPEngineering-Mathematics.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 318,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CPGeneral-Lectures-on-Electrical-Engineering.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 293,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CPGeneralEquationsoftheElectricCircuitPt11908.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 87,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CPMagneticReluctivity.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 7,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CPRadiationLight-and-Illumination.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 322,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CPSymbolicRepresentationofGeneralAlternatingWavesandDoubleFrequencyVectors1.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 28,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CPTheory-and-Calculations-of-Electrical-Apparatus.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 508,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CPTheoryampCalculationofAlternatingCurrentPhenonena4thEd2ndImp1908.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 764,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Steinmetz-CPTheoryampCalculationofTransientElectricPhenomenaampOscillations3rdEd5thImp1920.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 725,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "01_steinmetz/Theory and Calculation of Transient Electric Phenomena and Oscillations by Steinmetz.pdf",
+      "duplicates": [],
+      "tier": "01_steinmetz",
+      "page_count": 456,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/A-Common-Language-For-Electrical-Engineering--Eric-Dollard.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 82,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Alexanderson Antenna Analysis by Eric Dollard.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 36,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Bolinas Incident by Eric Dollard.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 54,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Dielectricity and Capacitance by Eric P Dollard.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 8,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric Dollard - Symbolic Representation of the Generalized Electric Wave.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 89,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric Dollard - The Transmission of Electricity pt1 and pt2.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 7,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric Dollard - Theory of Wireless Power.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 70,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric Dollard Collected Articles.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 31,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric Dollard Condensed Intro to Tesla Coils.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 59,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric Dollard Introduction to Dielectric Magnetic Discharges in Electrical Windings.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 33,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric Dollard Posts on Energetic Forum.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 5,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric Dollard Resource Directory.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 645,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric Dollard SFTS Powerpoint Aether 02.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 67,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric Dollard SFTS Powerpoint Algebra 03.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 234,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric Dollard Theory of Wireless Power.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 71,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric Dollard s Letter 001.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 6,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric Dollard s Letter 002 With Scrap Notes on the Backside.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 4,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric Dollard s Letter 002.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 4,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric Dollard s Letter 003.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 4,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric Dollard, Chris Carson - Tesla Longitudinal Wave Energy SBARC Ham Radio parts 1 to 6.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 163,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric-Dollard--Introduction-to-Dielectric--Magnetic-Discharges-in-Electrical-Windings-Electrical-Oscillation.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 39,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric-Dollard--Notes-19861991.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 29,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric-Dollard--Symbolic-Representation-of-the-Generalized-Electric-Wave.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 89,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Eric-Dollard--Theory-of-Wireless-Power.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 70,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Four Quadrant Representation of Electricity by Eric Dollard.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 327,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Functional Thinking - An Interview with Eric Dollard by Tom Brown(OCR).pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 11,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Recent Posts by Eric Dollard on the Energetic Forum.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 104,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Symbolic Representation of Alternating Electric Waves by Eric Dollard.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 57,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Symbolic Representation of the Generalized Electric Wave - Eric Dollard - New and Remade.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 47,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/System for reception and Transmission of Telluric Waves by Eric Dollard - newer.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 19,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/The Transmission and Reception of Telluric Waves - N6KPH - collected posts.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 15,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Theory of Wireless Power by Eric Dollard.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 73,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/Transmission of Electricity 1 and 2.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 6,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "02_dollard/buy this book - Wireless Giant of the Pacific by Eric Dollard.pdf",
+      "duplicates": [],
+      "tier": "02_dollard",
+      "page_count": 9,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "03_heaviside/Heaviside-OliverElectricalpapers.pdf",
+      "duplicates": [],
+      "tier": "03_heaviside",
+      "page_count": 605,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "03_heaviside/Heaviside-OliverElectromagneticTheory-01.pdf",
+      "duplicates": [],
+      "tier": "03_heaviside",
+      "page_count": 494,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "03_heaviside/Heaviside-OliverElectromagneticTheory-02.pdf",
+      "duplicates": [],
+      "tier": "03_heaviside",
+      "page_count": 564,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "03_heaviside/Heaviside-OliverElectromagneticTheory-03.pdf",
+      "duplicates": [],
+      "tier": "03_heaviside",
+      "page_count": 558,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "03_heaviside/Heaviside-OliverElectromagnetictheory.pdf",
+      "duplicates": [],
+      "tier": "03_heaviside",
+      "page_count": 493,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "03_heaviside/Heaviside-OliverElectromagneticwaves.pdf",
+      "duplicates": [],
+      "tier": "03_heaviside",
+      "page_count": 149,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "03_heaviside/Oliver-HeavisideElectromagneticTheory-01.pdf",
+      "duplicates": [],
+      "tier": "03_heaviside",
+      "page_count": 500,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "04_maxwell_faraday/Faraday-MichaelExperimentalResearchesinElectricity.pdf",
+      "duplicates": [],
+      "tier": "04_maxwell_faraday",
+      "page_count": 324,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "04_maxwell_faraday/Faraday-MichaelOn-the-Various-Forces-of-Nature.pdf",
+      "duplicates": [],
+      "tier": "04_maxwell_faraday",
+      "page_count": 129,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "04_maxwell_faraday/Maxwell-JCEquations.pdf",
+      "duplicates": [],
+      "tier": "04_maxwell_faraday",
+      "page_count": 414,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "04_maxwell_faraday/Maxwell-JCScientific-Papers-01.pdf",
+      "duplicates": [],
+      "tier": "04_maxwell_faraday",
+      "page_count": 663,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "04_maxwell_faraday/Maxwell-JCScientific-Papers-02.pdf",
+      "duplicates": [],
+      "tier": "04_maxwell_faraday",
+      "page_count": 837,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "05_thomson_jj/Electricity and Matter by J J Thomson 1904 167p.pdf",
+      "duplicates": [],
+      "tier": "05_thomson_jj",
+      "page_count": 167,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "05_thomson_jj/Electricity and Matter by J J Thomson 1904 181p.pdf",
+      "duplicates": [],
+      "tier": "05_thomson_jj",
+      "page_count": 181,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "05_thomson_jj/Electricity and Matter by J J Thomson 1904 188p.pdf",
+      "duplicates": [],
+      "tier": "05_thomson_jj",
+      "page_count": 188,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "05_thomson_jj/Electricity and Matter by J J Thomson 1916 180p.pdf",
+      "duplicates": [],
+      "tier": "05_thomson_jj",
+      "page_count": 180,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "05_thomson_jj/THOMPSON-JJElectricity-and-Matter.pdf",
+      "duplicates": [],
+      "tier": "05_thomson_jj",
+      "page_count": 180,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "06_kennelly/Kennelly-ArthurAlgebraMadeEasy1898.pdf",
+      "duplicates": [],
+      "tier": "06_kennelly",
+      "page_count": 104,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "06_kennelly/Kennelly-ArthurApplication-of-Hyperbolic-Functions-to-Electrical-Engineering-Problems.pdf",
+      "duplicates": [],
+      "tier": "06_kennelly",
+      "page_count": 320,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "06_kennelly/Kennelly-ArthurElectricity-Made-Easy.pdf",
+      "duplicates": [],
+      "tier": "06_kennelly",
+      "page_count": 347,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "06_kennelly/Kennelly-ArthurElectricity-in-electrotherapeutics-.pdf",
+      "duplicates": [],
+      "tier": "06_kennelly",
+      "page_count": 468,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "06_kennelly/Kennelly-AurthurImpedanceAngularVelocitiesampFrequenciesofOscillatingCurrents.pdf",
+      "duplicates": [],
+      "tier": "06_kennelly",
+      "page_count": 32,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "06_kennelly/Kennelly-AurthurTables-of-Complex-Hyperbolic-and-Cicular-Functions.pdf",
+      "duplicates": [],
+      "tier": "06_kennelly",
+      "page_count": 251,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "06_kennelly/Kennelly-AurthurVectorPowerinAlternatingCurrentCircuits.pdf",
+      "duplicates": [],
+      "tier": "06_kennelly",
+      "page_count": 35,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "07_macfarlane/Alexander-MacFarlanePHYSICAL-MATHEMATICS.pdf",
+      "duplicates": [],
+      "tier": "07_macfarlane",
+      "page_count": 404,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "07_macfarlane/Alexander-MacFarlanePrinciplesofEllipticandHyperbolicAnalysis1894.pdf",
+      "duplicates": [],
+      "tier": "07_macfarlane",
+      "page_count": 49,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "07_macfarlane/Alexander-McFarLaneVector-Analysis-and-Quaternions.pdf",
+      "duplicates": [],
+      "tier": "07_macfarlane",
+      "page_count": 73,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "07_macfarlane/Alexander-McFarlaneLectures-on-ten-British-physicists-of-the-nineteenth-century.pdf",
+      "duplicates": [],
+      "tier": "07_macfarlane",
+      "page_count": 151,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "07_macfarlane/Alexander-McFarlaneUtility-of-Quaternions-in-Physics.pdf",
+      "duplicates": [],
+      "tier": "07_macfarlane",
+      "page_count": 130,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "07_macfarlane/MacFarlane-APapers-on-Space-Analysis-Imaginary-Algebra.pdf",
+      "duplicates": [],
+      "tier": "07_macfarlane",
+      "page_count": 239,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "08_whittaker/A History of the Theories of Aether and Electricity.pdf",
+      "duplicates": [],
+      "tier": "08_whittaker",
+      "page_count": 495,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "08_whittaker/History-of-the-Theories-of-Ether-and-Electricity--Whitakerbw.pdf",
+      "duplicates": [],
+      "tier": "08_whittaker",
+      "page_count": 496,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "08_whittaker/HistoryoftheTheoriesofAetherandElectricityVol2-Whitaker.pdf",
+      "duplicates": [],
+      "tier": "08_whittaker",
+      "page_count": 165,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "08_whittaker/Whitaker History of the Theories of Aether and Electricity Vol 2.pdf",
+      "duplicates": [],
+      "tier": "08_whittaker",
+      "page_count": 165,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "08_whittaker/Whittaker-ET--On-an-Expression-of-the-Electromagnetic-Field-due-to-Electrons-by-means-of-two-Scalar-Potential-Functions.pdf",
+      "duplicates": [],
+      "tier": "08_whittaker",
+      "page_count": 6,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "08_whittaker/Whittaker-ET--On-the-Partial-Differential-Equations-of-Mathematical-Physics.pdf",
+      "duplicates": [],
+      "tier": "08_whittaker",
+      "page_count": 24,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "09_tesla_primary/(ebook - english) John J. O'Neill - Biography of Nikola Tesla (1944).pdf",
+      "duplicates": [],
+      "tier": "09_tesla_primary",
+      "page_count": 280,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "09_tesla_primary/Collection-of-articles-by-Nikola-Tesla.pdf",
+      "duplicates": [],
+      "tier": "09_tesla_primary",
+      "page_count": 162,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "09_tesla_primary/Inventions Researches and Writings of Tesla.pdf",
+      "duplicates": [],
+      "tier": "09_tesla_primary",
+      "page_count": 324,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "09_tesla_primary/JAR010101-An-Appreciation-of-Nikola-Tesla.pdf",
+      "duplicates": [],
+      "tier": "09_tesla_primary",
+      "page_count": 2,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "09_tesla_primary/Nikola Tesla - Electromagnetic Engineering.pdf",
+      "duplicates": [],
+      "tier": "09_tesla_primary",
+      "page_count": 13,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "09_tesla_primary/Nikola Tesla - Lectures, Patents, Articles.pdf",
+      "duplicates": [],
+      "tier": "09_tesla_primary",
+      "page_count": 867,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "09_tesla_primary/Nikola Tesla - The Future of the Wireless Art.pdf",
+      "duplicates": [],
+      "tier": "09_tesla_primary",
+      "page_count": 5,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "09_tesla_primary/Nikola-Tesla--Colorado-Springs-Notes-1899-1900.pdf",
+      "duplicates": [],
+      "tier": "09_tesla_primary",
+      "page_count": 431,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "09_tesla_primary/Nikola-Tesla--Lectures-Patents-Articles.pdf",
+      "duplicates": [],
+      "tier": "09_tesla_primary",
+      "page_count": 867,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "09_tesla_primary/Nikola-Tesla--Method-of-Utilizing-Radiant-Energy.pdf",
+      "duplicates": [],
+      "tier": "09_tesla_primary",
+      "page_count": 4,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "09_tesla_primary/On-Light--other-High-Frequency-Phenomena-by-Nikola-Tesla.pdf",
+      "duplicates": [],
+      "tier": "09_tesla_primary",
+      "page_count": 64,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "09_tesla_primary/eBook - The Strange Life of Nikola Tesla.pdf",
+      "duplicates": [],
+      "tier": "09_tesla_primary",
+      "page_count": 47,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "09_tesla_primary/tesla18910520lecture.pdf",
+      "duplicates": [],
+      "tier": "09_tesla_primary",
+      "page_count": 33,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "10_jenny_cymatics/Hans-Jenny--Study-of-Wave--Vibration-1--Cymatics-1967-FULL-EN.pdf",
+      "duplicates": [],
+      "tier": "10_jenny_cymatics",
+      "page_count": 135,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "11_wachsmuth_steiner_marti/Ernst-MartiThe-Four-Ethers.pdf",
+      "duplicates": [],
+      "tier": "11_wachsmuth_steiner_marti",
+      "page_count": 33,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "11_wachsmuth_steiner_marti/Etheric-Formative-Forces-In-Earth-Cosmos-and-Man-by-Guenther-WachsmuthOCR.pdf",
+      "duplicates": [],
+      "tier": "11_wachsmuth_steiner_marti",
+      "page_count": 255,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "11_wachsmuth_steiner_marti/Etheric-Formative-Forces-in-Cosmos-Earth-and-Man-by-Guenther-Wachsmuth.pdf",
+      "duplicates": [],
+      "tier": "11_wachsmuth_steiner_marti",
+      "page_count": 128,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "11_wachsmuth_steiner_marti/Man or Matter.pdf",
+      "duplicates": [],
+      "tier": "11_wachsmuth_steiner_marti",
+      "page_count": 381,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "11_wachsmuth_steiner_marti/Man-or-Matter-Ernst-Lehrs.pdf",
+      "duplicates": [],
+      "tier": "11_wachsmuth_steiner_marti",
+      "page_count": 380,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "11_wachsmuth_steiner_marti/Rudolph-SteinerThe-Light-Course.pdf",
+      "duplicates": [],
+      "tier": "11_wachsmuth_steiner_marti",
+      "page_count": 209,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "11_wachsmuth_steiner_marti/Rudolph-SteinerThe-Warmth-Course.pdf",
+      "duplicates": [],
+      "tier": "11_wachsmuth_steiner_marti",
+      "page_count": 119,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "12_russell/61865273WalterRussellsHomeStudyCourseUnit1Lessons1234.pdf",
+      "duplicates": [],
+      "tier": "12_russell",
+      "page_count": 76,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "12_russell/618657WalterRussellsHomeStudyCourseUnit2Lessons5678.pdf",
+      "duplicates": [],
+      "tier": "12_russell",
+      "page_count": 70,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "12_russell/Walter Russell Genero Radiative Concept or The Cyclic Theory of Continuous Motion.pdf",
+      "duplicates": [],
+      "tier": "12_russell",
+      "page_count": 64,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "12_russell/Walter Russell The Secret of Light.pdf",
+      "duplicates": [],
+      "tier": "12_russell",
+      "page_count": 164,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "12_russell/Walter-Russell--Raythe0n-Correspondance-Optical-Dynamo.pdf",
+      "duplicates": [],
+      "tier": "12_russell",
+      "page_count": 90,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "12_russell/WalterLao-RussellAtomicSuicide.pdf",
+      "duplicates": [],
+      "tier": "12_russell",
+      "page_count": 300,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "12_russell/WalterRussellsHomeStudyCourseUnit10Lessons373840.pdf",
+      "duplicates": [],
+      "tier": "12_russell",
+      "page_count": 57,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "12_russell/WalterRussellsHomeStudyCourseUnit11Lessons41424344.pdf",
+      "duplicates": [],
+      "tier": "12_russell",
+      "page_count": 96,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "12_russell/WalterRussellsHomeStudyCourseUnit12Lessons45464748.pdf",
+      "duplicates": [],
+      "tier": "12_russell",
+      "page_count": 152,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "12_russell/WalterRussellsHomeStudyCourseUnit3Lessons9101112.pdf",
+      "duplicates": [],
+      "tier": "12_russell",
+      "page_count": 71,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "12_russell/WalterRussellsHomeStudyCourseUnit4Lessons13141516.pdf",
+      "duplicates": [],
+      "tier": "12_russell",
+      "page_count": 67,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "12_russell/WalterRussellsHomeStudyCourseUnit5Lessons17181920.pdf",
+      "duplicates": [],
+      "tier": "12_russell",
+      "page_count": 73,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "12_russell/WalterRussellsHomeStudyCourseUnit6Lessons21222324.pdf",
+      "duplicates": [],
+      "tier": "12_russell",
+      "page_count": 66,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "12_russell/WalterRussellsHomeStudyCourseUnit7Lessons25262728.pdf",
+      "duplicates": [],
+      "tier": "12_russell",
+      "page_count": 63,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "12_russell/WalterRussellsHomeStudyCourseUnit8Lessons29303132.pdf",
+      "duplicates": [],
+      "tier": "12_russell",
+      "page_count": 57,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "12_russell/WalterRussellsHomeStudyCourseUnit9Lessons33343536.pdf",
+      "duplicates": [],
+      "tier": "12_russell",
+      "page_count": 89,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "14_lawlor_sacred_geom/RobertLawlorSacredGeometryPhilosophyandPractice1982.pdf",
+      "duplicates": [],
+      "tier": "14_lawlor_sacred_geom",
+      "page_count": 114,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "15_bortoft_goethe/GoethesTheoryofColours.pdf",
+      "duplicates": [],
+      "tier": "15_bortoft_goethe",
+      "page_count": 483,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "15_bortoft_goethe/The-Wholeness-of-Nature--Bortoft-Henri.pdf",
+      "duplicates": [],
+      "tier": "15_bortoft_goethe",
+      "page_count": 1175,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "16_steinmetz_lineage_supports/Communication Networks.pdf",
+      "duplicates": [],
+      "tier": "16_steinmetz_lineage_supports",
+      "page_count": 73,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "16_steinmetz_lineage_supports/ErnstAdolphGuilleminCommunicationNetworksVolume21935.pdf",
+      "duplicates": [],
+      "tier": "16_steinmetz_lineage_supports",
+      "page_count": 72,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "16_steinmetz_lineage_supports/FORTESCUE-CLMethodofSymmetricalCoOrdinatesAppliedtotheSolutionofPolyphaseNetworks.pdf",
+      "duplicates": [],
+      "tier": "16_steinmetz_lineage_supports",
+      "page_count": 114,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "16_steinmetz_lineage_supports/Happell and Hesselberth - Engineering Electronics - McGraw-Hill Electrical and Electronic Engineering Series (1953).pdf",
+      "duplicates": [],
+      "tier": "16_steinmetz_lineage_supports",
+      "page_count": 518,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "16_steinmetz_lineage_supports/LVBewleyTravelingWavesonTransmissionSystems1933.pdf",
+      "duplicates": [],
+      "tier": "16_steinmetz_lineage_supports",
+      "page_count": 331,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "16_steinmetz_lineage_supports/RadioFrequency-Electronics--Circuits-and-Applications-2009-Malestrom.pdf",
+      "duplicates": [],
+      "tier": "16_steinmetz_lineage_supports",
+      "page_count": 454,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "16_steinmetz_lineage_supports/Samuel Seely (Ed.) - Radio Electronics - McGraw-Hill Electrical and Electronic Engineering Series (1956).pdf",
+      "duplicates": [],
+      "tier": "16_steinmetz_lineage_supports",
+      "page_count": 493,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "16_steinmetz_lineage_supports/The-Electron.pdf",
+      "duplicates": [],
+      "tier": "16_steinmetz_lineage_supports",
+      "page_count": 20,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "16_steinmetz_lineage_supports/The-Proton.pdf",
+      "duplicates": [],
+      "tier": "16_steinmetz_lineage_supports",
+      "page_count": 19,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "16_steinmetz_lineage_supports/White--Energy-from-Electrons-and-Matter-from-Protons--A-Preliminary-Model-Based-on-Observer-Physics-2003.pdf",
+      "duplicates": [],
+      "tier": "16_steinmetz_lineage_supports",
+      "page_count": 35,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol L No 2 Second Quarter 1994.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 52,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLII No 1 January February 1986.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 38,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLII No 2 March April 1986.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 38,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLII No 3 May June 1986.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 38,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLII No 4 July August 1986.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 38,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLIII No 2 March April 1987.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 38,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLIII No 3 May June 1987.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 38,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLIII No 4 July August 1987.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 36,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLIII No 5 September October 1987.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 38,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLIII No 6 November December 1987.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 38,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLIV No 1 January February 1988.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 38,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLIV No 2 March April 1988.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 38,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLIV No 3 May June 1988.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 38,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLIV No 4 July August 1988.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 36,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLIV No 5 September October 1988.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 36,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLIX No 1 1st Quarter 1993.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 52,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLV No 4 July August 1989.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 32,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLV No 5 September October 1989.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 32,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLV No 6 November December 1989.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 32,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLVI No 1 January February 1990.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 32,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLVI No 2 March April 1990.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 32,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLVI No 6 November December 1990.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 32,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLVI Nos 3 4 May June July August 1990.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 56,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLVII No 1 January February 1991.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 32,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLVII No 2 March April 1991.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 32,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLVII No 3 May June 1991.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 32,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLVII No 4 July August 1991.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 32,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLVII No 6 November December 1991.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 32,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLVIII No 1 January February 1992.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 32,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "17_borderland_journal/Journal of Borderland Research Vol XLVIII No 6 November December 1992.pdf",
+      "duplicates": [],
+      "tier": "17_borderland_journal",
+      "page_count": 32,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "18_lebon_lodge_crookes/Le-Bon-Gustave-Evolution-of-Forces.pdf",
+      "duplicates": [],
+      "tier": "18_lebon_lodge_crookes",
+      "page_count": 445,
+      "low_text": false
+    },
+    {
+      "group_size": 1,
+      "canonical": "18_lebon_lodge_crookes/Le-Bon-GustaveEvolution-of-Matter.pdf",
+      "duplicates": [],
+      "tier": "18_lebon_lodge_crookes",
+      "page_count": 477,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "18_lebon_lodge_crookes/Oliver-LodgeTheEtherofSpace.pdf",
+      "duplicates": [],
+      "tier": "18_lebon_lodge_crookes",
+      "page_count": 96,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "18_lebon_lodge_crookes/STolverPrestonPhysicsofTheEther1875.pdf",
+      "duplicates": [],
+      "tier": "18_lebon_lodge_crookes",
+      "page_count": 146,
+      "low_text": true
+    },
+    {
+      "group_size": 1,
+      "canonical": "18_lebon_lodge_crookes/Sir-William-CrookesOn-Radiant-Matter.pdf",
+      "duplicates": [],
+      "tier": "18_lebon_lodge_crookes",
+      "page_count": 23,
+      "low_text": true
+    }
+  ],
+  "fix_note": "Empty/low-text PDFs are NOT grouped by text-content hashes (would collapse all scan-only PDFs into one false group). They are still grouped via file-bytes SHA256, which catches truly byte-identical duplicates."
+}
