@@ -30,6 +30,7 @@ logs/
 /tmp/
 om.log
 data/coherence_cache/
+datasets/geosolar/kp_log.csv
 
 # Audio and media
 *.wav
