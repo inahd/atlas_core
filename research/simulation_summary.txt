@@ -1,0 +1,61 @@
+Wootz Solidification Simulation - Summary Report
+============================================================
+
+Melt conditions:
+  Carbon: 1.5%
+  Vanadium: 50.0 ppm
+  Cooling rate: 2.0 C/min
+  Grid: 128x128 nm
+
+Scenarios:
+
+  quiet_field:
+    Effective field strength: 34.0 uT
+    Solidified fraction: 100.0%
+    Mean V in solid: 47.9 ppm
+    V std in solid: 24.26 ppm
+    Band alignment score: 0.0410
+
+  strong_aligned:
+    Effective field strength: 119.5 uT
+    Solidified fraction: 100.0%
+    Mean V in solid: 48.1 ppm
+    V std in solid: 23.31 ppm
+    Band alignment score: 0.2332
+
+  strong_perpendicular:
+    Effective field strength: 119.5 uT
+    Solidified fraction: 100.0%
+    Mean V in solid: 48.4 ppm
+    V std in solid: 23.52 ppm
+    Band alignment score: 0.1718
+
+  storm_disruptive:
+    Effective field strength: 122.3 uT
+    Solidified fraction: 100.0%
+    Mean V in solid: 48.3 ppm
+    V std in solid: 23.07 ppm
+    Band alignment score: 0.0074
+
+Interpretation:
+  Higher band alignment scores indicate more directional
+  organization of vanadium-rich regions, which would correspond
+  to clearer Damascus pattern in the final forged blade.
+
+  Standard deviation of vanadium concentration in the solid
+  indicates the degree of segregation - higher std = more
+  pronounced banding.
+
+Caveats:
+  - This is plausibility modeling, not verified physics.
+  - Real-world coupling magnitudes between geomagnetic field
+    and steel solidification dendrite alignment are uncertain.
+  - Validation requires physical experiments with controlled
+    field conditions during high-carbon steel solidification.
+
+Atlas integration:
+  Inputs (panchanga, Kp, tidal, wave-field, graha-compat) are
+  computed by Atlas's existing engines. The transduction layer
+  combines them into the effective_field_strength used by
+  the simulation. Outputs feed back into Atlas's relational
+  graph as predicted-outcome data.

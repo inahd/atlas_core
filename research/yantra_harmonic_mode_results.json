@@ -1,0 +1,947 @@
+{
+  "size": 512,
+  "spatial_frequency_k": 5.0,
+  "test_1_petal_prediction": {
+    "1": {
+      "tithi": 1,
+      "DEVI_N": 3,
+      "traditional_petals": 8,
+      "predicted_top3_modes": [
+        6,
+        12,
+        5
+      ],
+      "predicted_top8_modes": [
+        6,
+        12,
+        5,
+        1,
+        7,
+        11,
+        4,
+        2
+      ],
+      "top3_powers": [
+        97.119,
+        2.114,
+        1.432
+      ],
+      "top1_mode": 6,
+      "petal_in_top3": false,
+      "petal_in_top8": false,
+      "n_DEVI_N_harmonics_in_top3": 2,
+      "n_DEVI_N_harmonics_in_top8": 2
+    },
+    "2": {
+      "tithi": 2,
+      "DEVI_N": 6,
+      "traditional_petals": 16,
+      "predicted_top3_modes": [
+        6,
+        12,
+        5
+      ],
+      "predicted_top8_modes": [
+        6,
+        12,
+        5,
+        1,
+        7,
+        11,
+        4,
+        2
+      ],
+      "top3_powers": [
+        97.119,
+        2.114,
+        1.432
+      ],
+      "top1_mode": 6,
+      "petal_in_top3": false,
+      "petal_in_top8": false,
+      "n_DEVI_N_harmonics_in_top3": 2,
+      "n_DEVI_N_harmonics_in_top8": 2
+    },
+    "3": {
+      "tithi": 3,
+      "DEVI_N": 3,
+      "traditional_petals": 8,
+      "predicted_top3_modes": [
+        6,
+        12,
+        5
+      ],
+      "predicted_top8_modes": [
+        6,
+        12,
+        5,
+        1,
+        7,
+        11,
+        4,
+        2
+      ],
+      "top3_powers": [
+        97.119,
+        2.114,
+        1.432
+      ],
+      "top1_mode": 6,
+      "petal_in_top3": false,
+      "petal_in_top8": false,
+      "n_DEVI_N_harmonics_in_top3": 2,
+      "n_DEVI_N_harmonics_in_top8": 2
+    },
+    "4": {
+      "tithi": 4,
+      "DEVI_N": 3,
+      "traditional_petals": 8,
+      "predicted_top3_modes": [
+        6,
+        12,
+        5
+      ],
+      "predicted_top8_modes": [
+        6,
+        12,
+        5,
+        1,
+        7,
+        11,
+        4,
+        2
+      ],
+      "top3_powers": [
+        97.119,
+        2.114,
+        1.432
+      ],
+      "top1_mode": 6,
+      "petal_in_top3": false,
+      "petal_in_top8": false,
+      "n_DEVI_N_harmonics_in_top3": 2,
+      "n_DEVI_N_harmonics_in_top8": 2
+    },
+    "5": {
+      "tithi": 5,
+      "DEVI_N": 8,
+      "traditional_petals": 12,
+      "predicted_top3_modes": [
+        8,
+        1,
+        7
+      ],
+      "predicted_top8_modes": [
+        8,
+        1,
+        7,
+        9,
+        16,
+        2,
+        6,
+        10
+      ],
+      "top3_powers": [
+        37.742,
+        1.103,
+        0.819
+      ],
+      "top1_mode": 8,
+      "petal_in_top3": false,
+      "petal_in_top8": false,
+      "n_DEVI_N_harmonics_in_top3": 1,
+      "n_DEVI_N_harmonics_in_top8": 2
+    },
+    "6": {
+      "tithi": 6,
+      "DEVI_N": 6,
+      "traditional_petals": 8,
+      "predicted_top3_modes": [
+        6,
+        12,
+        5
+      ],
+      "predicted_top8_modes": [
+        6,
+        12,
+        5,
+        1,
+        7,
+        11,
+        4,
+        2
+      ],
+      "top3_powers": [
+        97.119,
+        2.114,
+        1.432
+      ],
+      "top1_mode": 6,
+      "petal_in_top3": false,
+      "petal_in_top8": false,
+      "n_DEVI_N_harmonics_in_top3": 2,
+      "n_DEVI_N_harmonics_in_top8": 2
+    },
+    "7": {
+      "tithi": 7,
+      "DEVI_N": 7,
+      "traditional_petals": 8,
+      "predicted_top3_modes": [
+        1,
+        14,
+        2
+      ],
+      "predicted_top8_modes": [
+        1,
+        14,
+        2,
+        13,
+        15,
+        12,
+        3,
+        11
+      ],
+      "top3_powers": [
+        1.478,
+        0.266,
+        0.011
+      ],
+      "top1_mode": 1,
+      "petal_in_top3": false,
+      "petal_in_top8": false,
+      "n_DEVI_N_harmonics_in_top3": 1,
+      "n_DEVI_N_harmonics_in_top8": 1
+    },
+    "8": {
+      "tithi": 8,
+      "DEVI_N": 8,
+      "traditional_petals": 8,
+      "predicted_top3_modes": [
+        8,
+        1,
+        7
+      ],
+      "predicted_top8_modes": [
+        8,
+        1,
+        7,
+        9,
+        16,
+        2,
+        6,
+        10
+      ],
+      "top3_powers": [
+        37.74,
+        1.103,
+        0.819
+      ],
+      "top1_mode": 8,
+      "petal_in_top3": true,
+      "petal_in_top8": true,
+      "n_DEVI_N_harmonics_in_top3": 1,
+      "n_DEVI_N_harmonics_in_top8": 2
+    },
+    "9": {
+      "tithi": 9,
+      "DEVI_N": 9,
+      "traditional_petals": 8,
+      "predicted_top3_modes": [
+        1,
+        2,
+        18
+      ],
+      "predicted_top8_modes": [
+        1,
+        2,
+        18,
+        17,
+        3,
+        19,
+        16,
+        4
+      ],
+      "top3_powers": [
+        1.478,
+        0.011,
+        0.002
+      ],
+      "top1_mode": 1,
+      "petal_in_top3": false,
+      "petal_in_top8": false,
+      "n_DEVI_N_harmonics_in_top3": 1,
+      "n_DEVI_N_harmonics_in_top8": 1
+    },
+    "10": {
+      "tithi": 10,
+      "DEVI_N": 10,
+      "traditional_petals": 12,
+      "predicted_top3_modes": [
+        10,
+        1,
+        9
+      ],
+      "predicted_top8_modes": [
+        10,
+        1,
+        9,
+        11,
+        2,
+        8,
+        12,
+        20
+      ],
+      "top3_powers": [
+        10.798,
+        1.191,
+        0.31
+      ],
+      "top1_mode": 10,
+      "petal_in_top3": false,
+      "petal_in_top8": true,
+      "n_DEVI_N_harmonics_in_top3": 1,
+      "n_DEVI_N_harmonics_in_top8": 2
+    },
+    "11": {
+      "tithi": 11,
+      "DEVI_N": 11,
+      "traditional_petals": 8,
+      "predicted_top3_modes": [
+        1,
+        2,
+        3
+      ],
+      "predicted_top8_modes": [
+        1,
+        2,
+        3,
+        22,
+        21,
+        4,
+        20,
+        16
+      ],
+      "top3_powers": [
+        1.478,
+        0.011,
+        0.0
+      ],
+      "top1_mode": 1,
+      "petal_in_top3": false,
+      "petal_in_top8": false,
+      "n_DEVI_N_harmonics_in_top3": 0,
+      "n_DEVI_N_harmonics_in_top8": 1
+    },
+    "12": {
+      "tithi": 12,
+      "DEVI_N": 12,
+      "traditional_petals": 8,
+      "predicted_top3_modes": [
+        12,
+        1,
+        11
+      ],
+      "predicted_top8_modes": [
+        12,
+        1,
+        11,
+        2,
+        13,
+        10,
+        3,
+        14
+      ],
+      "top3_powers": [
+        2.233,
+        1.46,
+        0.079
+      ],
+      "top1_mode": 12,
+      "petal_in_top3": false,
+      "petal_in_top8": false,
+      "n_DEVI_N_harmonics_in_top3": 1,
+      "n_DEVI_N_harmonics_in_top8": 1
+    },
+    "13": {
+      "tithi": 13,
+      "DEVI_N": 13,
+      "traditional_petals": 8,
+      "predicted_top3_modes": [
+        1,
+        2,
+        3
+      ],
+      "predicted_top8_modes": [
+        1,
+        2,
+        3,
+        4,
+        16,
+        24,
+        32,
+        8
+      ],
+      "top3_powers": [
+        1.478,
+        0.011,
+        0.0
+      ],
+      "top1_mode": 1,
+      "petal_in_top3": false,
+      "petal_in_top8": true,
+      "n_DEVI_N_harmonics_in_top3": 0,
+      "n_DEVI_N_harmonics_in_top8": 0
+    },
+    "14": {
+      "tithi": 14,
+      "DEVI_N": 14,
+      "traditional_petals": 32,
+      "predicted_top3_modes": [
+        1,
+        14,
+        2
+      ],
+      "predicted_top8_modes": [
+        1,
+        14,
+        2,
+        13,
+        15,
+        12,
+        3,
+        11
+      ],
+      "top3_powers": [
+        1.478,
+        0.266,
+        0.011
+      ],
+      "top1_mode": 1,
+      "petal_in_top3": false,
+      "petal_in_top8": false,
+      "n_DEVI_N_harmonics_in_top3": 1,
+      "n_DEVI_N_harmonics_in_top8": 1
+    },
+    "15": {
+      "tithi": 15,
+      "DEVI_N": 15,
+      "traditional_petals": 16,
+      "predicted_top3_modes": [
+        1,
+        2,
+        3
+      ],
+      "predicted_top8_modes": [
+        1,
+        2,
+        3,
+        4,
+        16,
+        24,
+        32,
+        8
+      ],
+      "top3_powers": [
+        1.478,
+        0.011,
+        0.0
+      ],
+      "top1_mode": 1,
+      "petal_in_top3": false,
+      "petal_in_top8": true,
+      "n_DEVI_N_harmonics_in_top3": 0,
+      "n_DEVI_N_harmonics_in_top8": 0
+    }
+  },
+  "test_2_superposition": {
+    "composite_shape": [
+      512,
+      512
+    ],
+    "spatial_frequency_k": 5.0,
+    "pearson_vs_project_sri_yantra": 1.0,
+    "pearson_vs_synthetic_9triangle": -0.0912,
+    "composite_region_count_threshold": {
+      "above": 7,
+      "below": 1
+    },
+    "composite_local_maxima": 14,
+    "synthetic_9triangle_region_count_threshold": {
+      "above": 1,
+      "below": 1
+    },
+    "synthetic_9triangle_local_maxima": 58457,
+    "project_sri_yantra_region_count_threshold": {
+      "above": 7,
+      "below": 1
+    },
+    "sri_yantra_canonical_region_count": 44,
+    "composite_top15_modes": [
+      [
+        6,
+        13.133
+      ],
+      [
+        8,
+        1.659
+      ],
+      [
+        1,
+        1.467
+      ],
+      [
+        10,
+        0.768
+      ],
+      [
+        12,
+        0.331
+      ],
+      [
+        5,
+        0.194
+      ],
+      [
+        7,
+        0.118
+      ],
+      [
+        9,
+        0.029
+      ],
+      [
+        2,
+        0.011
+      ],
+      [
+        11,
+        0.008
+      ],
+      [
+        14,
+        0.004
+      ],
+      [
+        16,
+        0.002
+      ],
+      [
+        13,
+        0.002
+      ],
+      [
+        4,
+        0.002
+      ],
+      [
+        15,
+        0.0
+      ]
+    ],
+    "DEVI_N_values_in_top15": [
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "DEVI_N_unique_values": [
+      3,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "alignment_assessment": {
+      "vs_project_sri_yantra_note": "project_sri_yantra is itself a sum-of-15 multigrid superposition; high correlation here reflects implementation alignment, not independent validation of the substrate hypothesis.",
+      "vs_synthetic_9triangle": "low (<0.5)"
+    }
+  },
+  "test_3_substrate_dominance": {
+    "spatial_frequency_k": 5.0,
+    "substrate_top20_modes": [
+      [
+        6,
+        13.133
+      ],
+      [
+        8,
+        1.659
+      ],
+      [
+        1,
+        1.467
+      ],
+      [
+        10,
+        0.768
+      ],
+      [
+        12,
+        0.331
+      ],
+      [
+        5,
+        0.194
+      ],
+      [
+        7,
+        0.118
+      ],
+      [
+        9,
+        0.029
+      ],
+      [
+        2,
+        0.011
+      ],
+      [
+        11,
+        0.008
+      ],
+      [
+        14,
+        0.004
+      ],
+      [
+        16,
+        0.002
+      ],
+      [
+        13,
+        0.002
+      ],
+      [
+        4,
+        0.002
+      ],
+      [
+        15,
+        0.0
+      ],
+      [
+        3,
+        0.0
+      ],
+      [
+        18,
+        0.0
+      ],
+      [
+        17,
+        0.0
+      ],
+      [
+        20,
+        0.0
+      ],
+      [
+        22,
+        0.0
+      ]
+    ],
+    "DEVI_N_detection_in_substrate": {
+      "3": {
+        "multiplicity_in_DEVI_N": 3,
+        "appears_in_substrate_top20": true,
+        "rank_in_substrate_top20": 16,
+        "power": 0.0,
+        "tithis_with_this_N": [
+          1,
+          3,
+          4
+        ]
+      },
+      "6": {
+        "multiplicity_in_DEVI_N": 2,
+        "appears_in_substrate_top20": true,
+        "rank_in_substrate_top20": 1,
+        "power": 13.133,
+        "tithis_with_this_N": [
+          2,
+          6
+        ]
+      },
+      "7": {
+        "multiplicity_in_DEVI_N": 1,
+        "appears_in_substrate_top20": true,
+        "rank_in_substrate_top20": 7,
+        "power": 0.118,
+        "tithis_with_this_N": [
+          7
+        ]
+      },
+      "8": {
+        "multiplicity_in_DEVI_N": 2,
+        "appears_in_substrate_top20": true,
+        "rank_in_substrate_top20": 2,
+        "power": 1.659,
+        "tithis_with_this_N": [
+          5,
+          8
+        ]
+      },
+      "9": {
+        "multiplicity_in_DEVI_N": 1,
+        "appears_in_substrate_top20": true,
+        "rank_in_substrate_top20": 8,
+        "power": 0.029,
+        "tithis_with_this_N": [
+          9
+        ]
+      },
+      "10": {
+        "multiplicity_in_DEVI_N": 1,
+        "appears_in_substrate_top20": true,
+        "rank_in_substrate_top20": 4,
+        "power": 0.768,
+        "tithis_with_this_N": [
+          10
+        ]
+      },
+      "11": {
+        "multiplicity_in_DEVI_N": 1,
+        "appears_in_substrate_top20": true,
+        "rank_in_substrate_top20": 10,
+        "power": 0.008,
+        "tithis_with_this_N": [
+          11
+        ]
+      },
+      "12": {
+        "multiplicity_in_DEVI_N": 1,
+        "appears_in_substrate_top20": true,
+        "rank_in_substrate_top20": 5,
+        "power": 0.331,
+        "tithis_with_this_N": [
+          12
+        ]
+      },
+      "13": {
+        "multiplicity_in_DEVI_N": 1,
+        "appears_in_substrate_top20": true,
+        "rank_in_substrate_top20": 13,
+        "power": 0.002,
+        "tithis_with_this_N": [
+          13
+        ]
+      },
+      "14": {
+        "multiplicity_in_DEVI_N": 1,
+        "appears_in_substrate_top20": true,
+        "rank_in_substrate_top20": 11,
+        "power": 0.004,
+        "tithis_with_this_N": [
+          14
+        ]
+      },
+      "15": {
+        "multiplicity_in_DEVI_N": 1,
+        "appears_in_substrate_top20": true,
+        "rank_in_substrate_top20": 15,
+        "power": 0.0,
+        "tithis_with_this_N": [
+          15
+        ]
+      }
+    },
+    "per_tithi_dominance_check": {
+      "1": {
+        "N_assumed": 3,
+        "N_dominant_measured": 6,
+        "top3_modes": [
+          6,
+          12,
+          5
+        ],
+        "N_or_harmonic_in_top3": true
+      },
+      "2": {
+        "N_assumed": 6,
+        "N_dominant_measured": 6,
+        "top3_modes": [
+          6,
+          12,
+          5
+        ],
+        "N_or_harmonic_in_top3": true
+      },
+      "3": {
+        "N_assumed": 3,
+        "N_dominant_measured": 6,
+        "top3_modes": [
+          6,
+          12,
+          5
+        ],
+        "N_or_harmonic_in_top3": true
+      },
+      "4": {
+        "N_assumed": 3,
+        "N_dominant_measured": 6,
+        "top3_modes": [
+          6,
+          12,
+          5
+        ],
+        "N_or_harmonic_in_top3": true
+      },
+      "5": {
+        "N_assumed": 8,
+        "N_dominant_measured": 8,
+        "top3_modes": [
+          8,
+          1,
+          7
+        ],
+        "N_or_harmonic_in_top3": true
+      },
+      "6": {
+        "N_assumed": 6,
+        "N_dominant_measured": 6,
+        "top3_modes": [
+          6,
+          12,
+          5
+        ],
+        "N_or_harmonic_in_top3": true
+      },
+      "7": {
+        "N_assumed": 7,
+        "N_dominant_measured": 1,
+        "top3_modes": [
+          1,
+          14,
+          2
+        ],
+        "N_or_harmonic_in_top3": true
+      },
+      "8": {
+        "N_assumed": 8,
+        "N_dominant_measured": 8,
+        "top3_modes": [
+          8,
+          1,
+          7
+        ],
+        "N_or_harmonic_in_top3": true
+      },
+      "9": {
+        "N_assumed": 9,
+        "N_dominant_measured": 1,
+        "top3_modes": [
+          1,
+          2,
+          18
+        ],
+        "N_or_harmonic_in_top3": true
+      },
+      "10": {
+        "N_assumed": 10,
+        "N_dominant_measured": 10,
+        "top3_modes": [
+          10,
+          1,
+          9
+        ],
+        "N_or_harmonic_in_top3": true
+      },
+      "11": {
+        "N_assumed": 11,
+        "N_dominant_measured": 1,
+        "top3_modes": [
+          1,
+          2,
+          3
+        ],
+        "N_or_harmonic_in_top3": false
+      },
+      "12": {
+        "N_assumed": 12,
+        "N_dominant_measured": 12,
+        "top3_modes": [
+          12,
+          1,
+          11
+        ],
+        "N_or_harmonic_in_top3": true
+      },
+      "13": {
+        "N_assumed": 13,
+        "N_dominant_measured": 1,
+        "top3_modes": [
+          1,
+          2,
+          3
+        ],
+        "N_or_harmonic_in_top3": false
+      },
+      "14": {
+        "N_assumed": 14,
+        "N_dominant_measured": 1,
+        "top3_modes": [
+          1,
+          14,
+          2
+        ],
+        "N_or_harmonic_in_top3": true
+      },
+      "15": {
+        "N_assumed": 15,
+        "N_dominant_measured": 1,
+        "top3_modes": [
+          1,
+          2,
+          3
+        ],
+        "N_or_harmonic_in_top3": false
+      }
+    },
+    "DEVI_N_values_detected_in_substrate": [
+      3,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "DEVI_N_values_NOT_detected": []
+  },
+  "summary": {
+    "test1_petals_in_top3": "1/15",
+    "test1_petals_in_top8": "4/15",
+    "test2_pearson_synthetic_sri_yantra": -0.0912,
+    "test3_DEVI_N_detected": [
+      3,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "test3_DEVI_N_not_detected": [],
+    "test3_per_tithi_sanity_pass": "12/15"
+  }
+}
