@@ -1,15 +1,15 @@
 #import "../_shared/preamble.typ": compendium-preamble, title-page
 
 #compendium-preamble(
-  title: "Ayurveda and the 108 Herbs",
+  title: "Astrobotany and Lunar Planting",
   subtitle: "Field Dive",
   version: "1.0 — converted from markdown",
 )
 
 #title-page(
-  title: "Ayurveda and the 108 Herbs",
-  subtitle: "Dosha, dhatu, rasa, and the herbal correspondence matrix",
-  volume: "COHERENCE ATLAS · FIELD DIVE V",
+  title: "Astrobotany and Lunar Planting",
+  subtitle: "Nakshatra-plant correspondences and biodynamic agriculture",
+  volume: "COHERENCE ATLAS · FIELD DIVE",
   version: "1.0 · April 2026",
 )
 
@@ -17,7 +17,7 @@
 #align(center)[#text(size: 11pt, weight: "semibold")[Status]]
 #v(0.4em)
 
-_Converted from `research/research_ayurveda_panchanga.md`. Content-lossless conversion._
+_Converted from `research/research_astrobotanical_classes.md`. Content-lossless conversion._
 
 #pagebreak()
 

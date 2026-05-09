@@ -1,49 +1,59 @@
-# Coherence Atlas Compendium
+# The Atlas Compendium
 
-The Coherence Atlas Compendium is the growing body of deep treatments,
-research papers, positioning essays, and technical references that extend
-the Atlas founding document into full-depth exposition of each domain.
+A living almanac of Vedic cosmological computation.
 
-The founding document (`docs/atlas_paper_v02.typ`) remains the spine. Each
-compendium volume expands a specific section into standalone treatment.
+## What this is
 
-## Structure
+The founding document (`docs/atlas_paper_v02.typ`) is the spine. The compendium
+extends it: each volume deepens one section into a standalone treatment. Research
+papers present mathematical results. Positioning essays frame Atlas in its
+intellectual lineage. Field dives explore each domain at full depth. Technical
+references document architecture and ontology.
 
-- `_shared/` — shared preamble and styling (extracted from founding document)
-- `field_dives/` — 11 thematic expositions of each research domain
-- `research_papers/` — 6 canonical typeset versions of research output
-- `positioning_essays/` — 3 lineage and stance essays
-- `technical_reference/` — 4 architecture, ontology, federation, skill docs
-- `appendices/` — glossary, primary sources (shared across volumes)
-- `build/` — build script + PDF artifacts
+The compendium is 5% written. 1 of 25 volumes has substantive content (Lo Shu
+Spectral Carrier). The other 24 are structural scaffolds indicating planned
+scope. This is honest by design: the infrastructure is complete; the contents
+grow volume by volume.
 
-## Build
+## Building
 
 ```bash
 cd compendium
-./build/build.sh                                            # build everything
-./build/build.sh field_dives/01_jyotish_and_wave_field.typ  # one volume
-./build/build.sh field_dives/01                             # prefix match
+./build/build_all.sh                        # everything: master + volumes, both editions
+./build/build_all.sh --edition=public       # public edition only
+./build/build_all.sh --master-only          # just the master PDF
+./build/build_all.sh --volumes-only         # just per-volume PDFs
+./build/build_all.sh --clean                # wipe output first, then build
+./build/build_all.sh --version              # print version from manifest
 ```
 
-Requires `typst` (tested with 0.14.2).
+Output goes to `build/output/{public,private}/`. Requires `typst` (tested with
+0.14.2) and `python3` with `pyyaml`.
 
-## Status per volume
+## Editions
 
-Check each `.typ` file header for its current status:
-- `scaffold` — structure only, content pending
-- `drafted` — content present, unrefined
-- `refined` — content refined, not yet canonized
-- `canonical` — ready for circulation
+- **Public**: all volumes except those marked private in MANIFEST.yaml
+- **Private**: everything, including personal chart material and unverified claims
 
-Promotion is explicit per `docs/LITERATURE_MATURATION.md` discipline.
+A volume defaults to both editions. Flag as `[private]` in the manifest when
+there's a specific reason (personal data, unverified claims, institutional names).
 
-## Counts
+## Adding a volume
 
-| Directory | Files | Status |
-|-----------|-------|--------|
-| field_dives/ | 11 | scaffold |
-| research_papers/ | 6 | scaffold (wrappers around markdown drafts) |
-| positioning_essays/ | 3 | scaffold |
-| technical_reference/ | 4 | scaffold |
-| **Total** | **24** | |
+1. Create `{kind}/{filename}.typ` using the shared preamble import
+2. Add an entry to `MANIFEST.yaml` with id, title, kind, order, status, editions
+3. Run `./build/build_all.sh`
+
+## Structure
+
+- `_shared/preamble.typ` — typographic identity (DejaVu Serif 11pt, Cinzel headings)
+- `_shared/volume_helpers.typ` — dual-context helpers (standalone vs master)
+- `MANIFEST.yaml` — single source of truth for all volumes
+- `compendium.typ` — master document (includes all volumes, filtered by edition)
+- `build/build_all.sh` — full pipeline
+- `build/output/` — generated PDFs (git-ignored)
+
+## Versioning
+
+Every PDF carries: `Atlas Compendium · v{version} · {date} · {git hash}`.
+Version is in MANIFEST.yaml. Bump it when releasing a new edition.

@@ -1,0 +1,655 @@
+compendium:
+  title: The Atlas Compendium
+  subtitle: A Living Almanac of Vedic Cosmological Computation
+  author: inahd
+  version: 0.5.0
+editions:
+  public:
+    description: All volumes except those flagged private
+  private:
+    description: Full compendium including unverified and personal material
+volumes:
+- id: research_papers/lo_shu_spectral_carrier
+  title: The Lo Shu Spectral Carrier
+  kind: research_paper
+  order: 100
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: 2026-04-22
+  notes: Converted from markdown. 7 findings. ±2√6 invariant.
+  research_source:
+  - research/yantra_eigenvalue_exploration.md
+  - research/magic_cube_analysis.json
+  - research/loshu_iching_interaction.json
+  - research/magic_cube_extension.json
+  - research/magic_structure_test_series.json
+  - research/magic_structure_test_interpretation.json
+  dataset_domains:
+  - canonical
+  - iching
+  - cosmology
+  pair_status: FULL_PAIR
+- id: research_papers/two_source_interference
+  title: Two-Source Interference and Classical Aspect Theory
+  kind: research_paper
+  order: 110
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-04-22'
+  notes: Findings 7-14. Working draft at research/two-source-interference-v3.md Converted
+    from markdown 2026-04-22.
+  research_source:
+  - research/two-source-interference-v3.md
+  - research/iching_spectral_analysis.json
+  dataset_domains:
+  - astro
+  - jyotish
+  - cosmology
+  - geosolar
+  pair_status: RESEARCH_WITH_DATASET
+- id: research_papers/planetary_primes
+  title: Planetary Primes
+  kind: research_paper
+  order: 120
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-04-22'
+  notes: Retrograde symmetries {3,5,7,11}. Converted from markdown 2026-04-22.
+  research_source:
+  - research/planetary-primes-v1.md
+  dataset_domains:
+  - astro
+  - cosmology
+  - jyotish
+  pair_status: RESEARCH_WITH_DATASET
+- id: research_papers/vertebral_primes
+  title: Vertebral Primes Across Vertebrates
+  kind: research_paper
+  order: 130
+  status: built
+  editions:
+  - private
+  last_updated: '2026-04-22'
+  notes: Bat T=12 verification pending — private only until resolved Converted from
+    markdown 2026-04-22.
+  research_source:
+  - research/vertebral-primes-v1.md
+  dataset_domains:
+  - species
+  - marma
+  - morphogenesis
+  pair_status: RESEARCH_WITH_DATASET
+- id: research_papers/sri_yantra_chladni
+  title: Sri Yantra as Chladni Figure
+  kind: research_paper
+  order: 140
+  status: scaffold
+  editions:
+  - public
+  - private
+  last_updated: 2026-04-22
+  research_source: []
+  dataset_domains:
+  - cosmology
+  - iching
+  pair_status: RESEARCH_ONLY
+  notes: No separate sri_yantra_chladni_paper.md exists. Content overlaps with yantra_eigenvalue_exploration
+    (already converted). Needs dedicated authoring or merge decision.
+- id: research_papers/yantra_eigenvalue_exploration
+  title: Yantra Eigenvalue Exploration
+  kind: research_paper
+  order: 150
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-04-22'
+  research_source:
+  - research/yantra_eigenvalue_exploration.md
+  - research/yantra_eigenvalue_exploration.json
+  dataset_domains:
+  - cosmology
+  - canonical
+  pair_status: RESEARCH_WITH_DATASET
+  notes: ' Converted from markdown 2026-04-22.'
+- id: positioning_essays/01_atlas_in_the_bhaktisiddhanta_thompson_lineage
+  title: Atlas in the Bhaktisiddhanta-Thompson Lineage
+  kind: positioning_essay
+  order: 200
+  status: scaffold
+  editions:
+  - public
+  - private
+  last_updated: 2026-04-22
+  research_source: []
+  dataset_domains: []
+  pair_status: RESEARCH_ONLY
+- id: positioning_essays/02_confessional_methodology_as_honest_stance
+  title: Confessional Methodology as Honest Stance
+  kind: positioning_essay
+  order: 210
+  status: scaffold
+  editions:
+  - public
+  - private
+  last_updated: 2026-04-22
+  research_source: []
+  dataset_domains: []
+  pair_status: RESEARCH_ONLY
+- id: positioning_essays/03_bihs_institutional_context
+  title: BIHS Institutional Context
+  kind: positioning_essay
+  order: 220
+  status: scaffold
+  editions:
+  - private
+  last_updated: 2026-04-22
+  notes: Researcher names — private until outreach conversations
+  research_source: []
+  dataset_domains: []
+  pair_status: RESEARCH_ONLY
+- id: field_dives/01_jyotish_and_wave_field
+  title: Jyotish and the Wave Field
+  kind: field_dive
+  order: 300
+  status: scaffold
+  editions:
+  - public
+  - private
+  last_updated: 2026-04-22
+  research_source:
+  - research/two-source-interference-v3.md
+  dataset_domains:
+  - astro
+  - jyotish
+  - svarodaya
+  pair_status: RESEARCH_WITH_DATASET
+- id: field_dives/02_nitya_devi_registry
+  title: The Nitya Devi Registry
+  kind: field_dive
+  order: 310
+  status: scaffold
+  editions:
+  - public
+  - private
+  last_updated: 2026-04-22
+  research_source:
+  - research/two-source-interference-v3.md
+  dataset_domains:
+  - cosmology
+  - astro
+  - tantra
+  pair_status: RESEARCH_WITH_DATASET
+- id: field_dives/03_nada_and_raga_cosmology
+  title: Nada and Raga Cosmology
+  kind: field_dive
+  order: 320
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-04-22'
+  research_source:
+  - research/research_gandharva_veda.md
+  - research/research_svara_shastra.md
+  - research/research_chandas.md
+  dataset_domains:
+  - gandharva
+  - sound
+  - chandas
+  - carnatic
+  pair_status: RESEARCH_WITH_DATASET
+  notes: ' Converted from markdown 2026-04-22.'
+- id: field_dives/04_yantra_geometry_and_chladni
+  title: Yantra Geometry and Chladni Interference
+  kind: field_dive
+  order: 330
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-04-22'
+  research_source:
+  - research/yantra_eigenvalue_exploration.md
+  - research/planetary-primes-v1.md
+  dataset_domains:
+  - cosmology
+  - iching
+  - canonical
+  pair_status: RESEARCH_WITH_DATASET
+  notes: ' Converted from markdown 2026-04-22.'
+- id: field_dives/05_ayurveda_and_the_108_herbs
+  title: Ayurveda and the 108 Herbs
+  kind: field_dive
+  order: 340
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-04-22'
+  research_source:
+  - research/research_ayurveda_panchanga.md
+  dataset_domains:
+  - ayurveda
+  - plants
+  - marma
+  pair_status: RESEARCH_WITH_DATASET
+  notes: ' Converted from markdown 2026-04-22.'
+- id: field_dives/06_vastu_and_ecological_design
+  title: Vastu and Ecological Design
+  kind: field_dive
+  order: 350
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-04-22'
+  research_source:
+  - research/research_vastu_mandala.md
+  dataset_domains:
+  - vastu
+  - permaculture
+  - geography
+  pair_status: RESEARCH_WITH_DATASET
+  notes: 'Converted from markdown 2026-04-22. Tables use #table() with escaped cells.'
+- id: field_dives/07_nakshatra_plant_correspondences
+  title: Nakshatra-Plant Correspondences
+  kind: field_dive
+  order: 360
+  status: scaffold
+  editions:
+  - public
+  - private
+  last_updated: '2026-04-22'
+  research_source:
+  - research/research_astrobotany_lunar.md
+  dataset_domains:
+  - plants
+  - astrobotany
+  - astro
+  pair_status: RESEARCH_WITH_DATASET
+  notes: 'Intended for nakshatra-specific plant data (distinct from astrobotany).
+    Source: research_astrobotany_lunar.md for lunar planting + datasets/plants/nakshatra_plants.csv.'
+- id: field_dives/08_vedic_cosmology_and_the_loka_system
+  title: Vedic Cosmology and the Loka System
+  kind: field_dive
+  order: 370
+  status: scaffold
+  editions:
+  - public
+  - private
+  last_updated: 2026-04-22
+  research_source: []
+  dataset_domains:
+  - cosmology
+  pair_status: DATASET_ONLY
+- id: field_dives/09_gaudiya_lineage_and_confessional_methodology
+  title: Gaudiya Lineage and Confessional Methodology
+  kind: field_dive
+  order: 380
+  status: scaffold
+  editions:
+  - public
+  - private
+  last_updated: 2026-04-22
+  research_source: []
+  dataset_domains:
+  - sources
+  - compositions
+  pair_status: RESEARCH_ONLY
+- id: field_dives/10_oracle_instruments
+  title: Oracle Instruments
+  kind: field_dive
+  order: 390
+  status: scaffold
+  editions:
+  - public
+  - private
+  last_updated: 2026-04-22
+  research_source:
+  - research/iching_spectral_analysis.json
+  dataset_domains:
+  - iching
+  pair_status: RESEARCH_WITH_DATASET
+- id: field_dives/11_coherence_spectrum_and_devi_field
+  title: Coherence Spectrum and The Devi Field
+  kind: field_dive
+  order: 400
+  status: scaffold
+  editions:
+  - public
+  - private
+  last_updated: 2026-04-22
+  research_source: []
+  dataset_domains:
+  - game
+  pair_status: ORPHAN
+- id: field_dives/carnatic_tala
+  title: Carnatic Tala and Rhythm
+  kind: field_dive
+  order: 410
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-04-22'
+  notes: Created by correspondence audit Converted from markdown 2026-04-22.
+  research_source:
+  - research/research_carnatic_tala_complete.md
+  dataset_domains:
+  - carnatic
+  - sound
+  pair_status: RESEARCH_WITH_DATASET
+- id: field_dives/astrobotany
+  title: Astrobotany and Lunar Planting
+  kind: field_dive
+  order: 420
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-04-22'
+  notes: Created by correspondence audit Converted from markdown 2026-04-22.
+  research_source:
+  - research/research_astrobotanical_classes.md
+  - research/research_astrobotany_lunar.md
+  dataset_domains:
+  - astrobotany
+  - plants
+  pair_status: RESEARCH_WITH_DATASET
+- id: field_dives/yoga_and_pranayama
+  title: Yoga and Pranayama
+  kind: field_dive
+  order: 430
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-04-22'
+  notes: Created by correspondence audit Converted from markdown 2026-04-22.
+  research_source:
+  - research/research_pranayama_asana.md
+  dataset_domains:
+  - yoga
+  - marma
+  pair_status: RESEARCH_WITH_DATASET
+- id: field_dives/svarodaya
+  title: Svarodaya and the Breath Clock
+  kind: field_dive
+  order: 440
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-04-22'
+  notes: Created by correspondence audit Converted from markdown 2026-04-22.
+  research_source:
+  - research/research_svara_shastra.md
+  dataset_domains:
+  - svarodaya
+  pair_status: RESEARCH_WITH_DATASET
+- id: technical_reference/architecture_and_api
+  title: Architecture and API Reference
+  kind: technical_reference
+  order: 500
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-04-22'
+  research_source:
+  - research/gpu_benchmark_results.md
+  - research/igpu_benchmark_full_report.md
+  dataset_domains:
+  - system
+  pair_status: RESEARCH_WITH_DATASET
+  notes: Converted from research_vedic_software_landscape.md. cite annotations stripped,
+    $ escaped.
+- id: technical_reference/ontology_and_attestation
+  title: Ontology and Attestation Model
+  kind: technical_reference
+  order: 510
+  status: scaffold
+  editions:
+  - public
+  - private
+  last_updated: 2026-04-22
+  research_source: []
+  dataset_domains:
+  - ontology
+  - entities
+  - relations
+  pair_status: DATASET_ONLY
+- id: technical_reference/federation_protocol
+  title: Federation Protocol
+  kind: technical_reference
+  order: 520
+  status: scaffold
+  editions:
+  - public
+  - private
+  last_updated: 2026-04-22
+  research_source: []
+  dataset_domains: []
+  pair_status: ORPHAN
+- id: technical_reference/skill_system
+  title: Skill System
+  kind: technical_reference
+  order: 530
+  status: scaffold
+  editions:
+  - private
+  last_updated: 2026-04-22
+  notes: Internal workflow
+  research_source: []
+  dataset_domains: []
+  pair_status: RESEARCH_ONLY
+# ── Research papers added 2026-05-02 / 2026-05-03 ──────────────
+- id: research_papers/harmonic_mode_hypothesis
+  title: Yantra Harmonic-Mode Hypothesis Test Report
+  kind: research_paper
+  order: 140
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-05-01'
+  notes: RESEARCH-018. Three-test report on the 15-Nityā harmonic decomposition hypothesis. Strong claim refuted; phason reading consistent with null. Reproducer at research/scripts/yantra_harmonic_mode_tests.py.
+  research_source:
+  - research/yantra_harmonic_mode_hypothesis.md
+  - research/yantra_harmonic_mode_results.json
+  dataset_domains:
+  - cosmology
+  pair_status: FULL_PAIR
+- id: research_papers/phason_abhijit_refinement
+  title: Yantra Phason-Abhijit Refinement
+  kind: research_paper
+  order: 150
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-05-02'
+  notes: RESEARCH-019. Standalone synthesis extending v0.5 §2.5 (lunisolar gear) and §3 (Phason Node) using the RESEARCH-018 null result. Articulates the prism-through-Abhijit reading.
+  research_source:
+  - research/yantra_phason_abhijit_refinement.md
+  dataset_domains:
+  - cosmology
+  pair_status: FULL_PAIR
+# ── Dhātu-bhasma compendium (11 volumes, ingested 2026-05-02) ──
+- id: dhatu_bhasma/volume_i_mercury_parada
+  title: 'Dhātu Compendium Volume I: Mercury (Parada)'
+  kind: dhatu_compendium
+  order: 600
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-05-03'
+  notes: Mercury reference volume — 18 samskaras, dosha framework, sapta kanchuka, makaradhwaja, sindoor.
+  research_source:
+  - docs/compendium/dhatu_bhasma/COMPENDIUM_Volume_I_Mercury_Parada.md
+  dataset_domains:
+  - rasashastra
+  pair_status: FULL_PAIR
+- id: dhatu_bhasma/volume_ii_gold_suvarna
+  title: 'Dhātu Compendium Volume II: Gold (Suvarna)'
+  kind: dhatu_compendium
+  order: 610
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-05-03'
+  notes: Gold reference volume — FCC nano-gold 5–57 nm; cleanest classical-modern convergence.
+  research_source:
+  - docs/compendium/dhatu_bhasma/COMPENDIUM_Volume_II_Gold_Suvarna.md
+  dataset_domains:
+  - rasashastra
+  pair_status: FULL_PAIR
+- id: dhatu_bhasma/volume_iii_silver_rajata
+  title: 'Dhātu Compendium Volume III: Silver (Rajata)'
+  kind: dhatu_compendium
+  order: 620
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-05-03'
+  notes: Silver reference volume — Ag₂S acanthite chemistry divergence; Chandra no-enemy status.
+  research_source:
+  - docs/compendium/dhatu_bhasma/COMPENDIUM_Volume_III_Silver_Rajata.md
+  dataset_domains:
+  - rasashastra
+  pair_status: FULL_PAIR
+- id: dhatu_bhasma/volume_iv_iron_lauha
+  title: 'Dhātu Compendium Volume IV: Iron (Lauha)'
+  kind: dhatu_compendium
+  order: 630
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-05-03'
+  notes: Iron reference volume — cross-tradition disambiguation (Shani vs Mars); Iron Pillar tie-in.
+  research_source:
+  - docs/compendium/dhatu_bhasma/COMPENDIUM_Volume_IV_Iron_Lauha.md
+  dataset_domains:
+  - rasashastra
+  pair_status: FULL_PAIR
+- id: dhatu_bhasma/volume_v_copper_tamra
+  title: 'Dhātu Compendium Volume V: Copper (Tamra)'
+  kind: dhatu_compendium
+  order: 640
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-05-03'
+  notes: Copper reference volume — Aranmula kannadi tie-in; bell-bronze acoustic test as cheapest validation.
+  research_source:
+  - docs/compendium/dhatu_bhasma/COMPENDIUM_Volume_V_Copper_Tamra.md
+  dataset_domains:
+  - rasashastra
+  pair_status: FULL_PAIR
+- id: dhatu_bhasma/volume_vi_tin_vanga
+  title: 'Dhātu Compendium Volume VI: Tin (Vanga)'
+  kind: dhatu_compendium
+  order: 650
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-05-03'
+  notes: Tin reference volume — Indian-Western convergence on Jupiter; SnO₂ cassiterite.
+  research_source:
+  - docs/compendium/dhatu_bhasma/COMPENDIUM_Volume_VI_Tin_Vanga.md
+  dataset_domains:
+  - rasashastra
+  pair_status: FULL_PAIR
+- id: dhatu_bhasma/volume_vii_lead_naga
+  title: 'Dhātu Compendium Volume VII: Lead (Naga)'
+  kind: dhatu_compendium
+  order: 660
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-05-03'
+  notes: Lead reference volume — 60-puta protocol with realgar excess.
+  research_source:
+  - docs/compendium/dhatu_bhasma/COMPENDIUM_Volume_VII_Lead_Naga.md
+  dataset_domains:
+  - rasashastra
+  pair_status: FULL_PAIR
+- id: dhatu_bhasma/volume_viii_zinc_yashada
+  title: 'Dhātu Compendium Volume VIII: Zinc (Yashada)'
+  kind: dhatu_compendium
+  order: 670
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-05-03'
+  notes: Zinc reference volume — hexagonal ZnO wurtzite; highest-leverage validation target.
+  research_source:
+  - docs/compendium/dhatu_bhasma/COMPENDIUM_Volume_VIII_Zinc_Yashada.md
+  dataset_domains:
+  - rasashastra
+  pair_status: FULL_PAIR
+- id: dhatu_bhasma/volume_ix_dhatu_homology
+  title: 'Dhātu Compendium Volume IX: Dhātu Homology'
+  kind: dhatu_compendium
+  order: 680
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-05-03'
+  notes: Bridge volume — skin as bhasma, tissue as metal, body as murti, Ayurvedic continuity.
+  research_source:
+  - docs/compendium/dhatu_bhasma/COMPENDIUM_Volume_IX_Dhatu_Homology.md
+  dataset_domains:
+  - rasashastra
+  - ayurveda
+  pair_status: FULL_PAIR
+- id: dhatu_bhasma/volume_x_sacred_alloys
+  title: 'Dhātu Compendium Volume X: Sacred Alloys'
+  kind: dhatu_compendium
+  order: 690
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-05-03'
+  notes: 'CORE RESEARCH CONTRIBUTION: 91.7% structural validation of murti pratiṣṭhā prescriptions (panchaloha + ashtadhatu, equal-graha-weighting). Reproducer verify_result.py confirmed on kanjira 2026-05-02.'
+  research_source:
+  - docs/compendium/dhatu_bhasma/COMPENDIUM_Volume_X_Sacred_Alloys.md
+  - research/scripts/verify_result.py
+  - research/scripts/panchaloha_alloy.py
+  dataset_domains:
+  - rasashastra
+  - jyotish
+  pair_status: FULL_PAIR
+- id: dhatu_bhasma/volume_xi_lost_and_recovered
+  title: 'Dhātu Compendium Volume XI: Lost and Recovered Procedures'
+  kind: dhatu_compendium
+  order: 700
+  status: built
+  editions:
+  - public
+  - private
+  last_updated: '2026-05-03'
+  notes: Recovery model registry — lohavada, Iron Pillar, Aranmula, wootz, Sri Yantra Chladni. References v0.5 §2.5 finding.
+  research_source:
+  - docs/compendium/dhatu_bhasma/COMPENDIUM_Volume_XI_Lost_and_Recovered.md
+  dataset_domains:
+  - rasashastra
+  - cosmology
+  pair_status: FULL_PAIR
