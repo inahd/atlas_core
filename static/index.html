@@ -194,7 +194,7 @@ function renderZones(){
   document.getElementById('z-w').innerHTML=w;
 
   // E · Jyotish
-  let e_=`<div class="zhdr"><span>JYOTISH</span><span class="zdir">E · Indra</span></div>`;
+  let e_=`<div class="zhdr"><span><a href="/jyotish/chart" style="color:inherit;text-decoration:none">JYOTISH</a></span><span class="zdir">E · Indra</span></div>`;
   e_+=`<div class="zval" style="font-size:14px">${pa.element||'—'} · ${pa.guna||'—'}</div>`;
   e_+=`<div class="zsub">Vṛṣabha · Rohiṇī pada 1</div>`;
   if(SV?.optimal_nadi)e_+=`<div class="zdim" style="margin-top:4px">${SV.optimal_nadi} nāḍī · ${((SV.coherence_score||0)*100).toFixed(0)}%</div>`;

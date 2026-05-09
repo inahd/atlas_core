@@ -6,8 +6,6 @@
 #
 # Usage: ./sc/start_sc.sh
 
-set -e
-
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
 # Kill any existing SC processes
@@ -16,24 +14,24 @@ pkill -9 sclang 2>/dev/null || true
 sleep 1
 
 echo "Starting scsynth via PipeWire JACK bridge..."
-# JACK_NO_AUDIO_RESERVATION=1 prevents JACK shim from trying to reserve ALSA device
-# JACK_START_SERVER=0 prevents fallback JACK server launch
+# setsid: new session so scsynth survives parent shell exit
+# </dev/null: detach stdin
 JACK_NO_AUDIO_RESERVATION=1 \
 JACK_START_SERVER=0 \
 PIPEWIRE_LATENCY=1024/48000 \
-pw-jack scsynth -u 57110 -o 2 -i 0 -R 0 -l 1 \
-    &>/tmp/scsynth.log &
-SCSYNTH_PID=$!
-echo "scsynth PID: $SCSYNTH_PID"
+setsid pw-jack scsynth -u 57110 -o 2 -i 0 -R 0 -l 1 \
+    </dev/null &>/tmp/scsynth.log &
+disown
 
 # Wait for scsynth to be ready
 sleep 3
-if ! kill -0 $SCSYNTH_PID 2>/dev/null; then
+SCSYNTH_PID=$(pgrep -x scsynth 2>/dev/null | head -1)
+if [ -z "$SCSYNTH_PID" ]; then
     echo "ERROR: scsynth failed to start"
     cat /tmp/scsynth.log
     exit 1
 fi
-echo "scsynth running."
+echo "scsynth running (pid $SCSYNTH_PID)."
 
 # Connect SC outputs to MOTU M2 via pw-link (native PipeWire, not JACK shim)
 # NOTE: pw-jack jack_connect creates connections that appear but don't pass audio
@@ -47,13 +45,14 @@ echo "Audio connected (pw-link)."
 echo "WARNING: SC→MOTU audio may be silent due to PW 1.2.6 JACK shim bug."
 echo "om.py (pw-cat) is the working audio output path."
 
-# Start sclang with atlas_synth.scd (background)
+# Start sclang with atlas_synth.scd (own session, detached)
 echo "Loading atlas_synth.scd..."
-sclang "$SCRIPT_DIR/atlas_synth.scd" &
-SCLANG_PID=$!
+setsid sclang "$SCRIPT_DIR/atlas_synth.scd" </dev/null &>/tmp/sclang.log &
+disown
 
 # Wait for sclang to load SynthDefs + create Synths
 sleep 8
+SCLANG_PID=$(pgrep -x sclang 2>/dev/null | head -1)
 
 # Notify kernel that SC is ready
 echo "Notifying kernel..."
@@ -67,8 +66,5 @@ curl -s -X POST http://localhost:5000/sound/sc_boot \
   2>/dev/null || echo "  (sc_boot skipped — kernel not running)"
 
 echo ""
-echo "SC engine running. PIDs: scsynth=$SCSYNTH_PID sclang=$SCLANG_PID"
-echo "To stop: kill $SCSYNTH_PID $SCLANG_PID"
-
-# Wait for sclang
-wait $SCLANG_PID
+echo "SC engine running. PIDs: scsynth=$SCSYNTH_PID sclang=${SCLANG_PID:-?}"
+echo "To stop: pkill -x scsynth; pkill -x sclang"

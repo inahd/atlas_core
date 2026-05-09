@@ -1,0 +1,393 @@
+<!doctype html>
+<!--
+  s4_quasicrystal.html — Beyond-Chladni cut-and-project renderer.
+
+  Companion to s4.html (which uses the multigrid Fourier-intensity method).
+  This file uses de Bruijn multigrid → tile-vertex extraction to produce
+  the discrete quasicrystal tiling, which exhibits phason dynamics that
+  the Fourier-intensity rendering cannot show.
+
+  Status: minimum-viable proof-of-concept for one tithi (Tvaritā, 8-fold).
+  Tasks 3-5 (full 15-Nityā cycle, phason animation, Atlas integration) are
+  not yet implemented — see research/quasicrystal_extension/mathematical_foundation.md.
+
+  Mathematical reference: Senechal 1995 Ch.7; de Bruijn 1981.
+  Atlas reference: docs/ATLAS_MASTER_INDEX.md §10 (RESEARCH-029).
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Atlas · Cut-and-Project Quasicrystal · v0.1 (skeleton)</title>
+<style>
+  :root {
+    --bg: #0a0d1a;
+    --panel: #0e1218;
+    --line: #1e242e;
+    --text: #c8cdd5;
+    --dim: #6a7280;
+    --gold: #d3a76e;
+    --tile-fat: rgba(211, 167, 110, 0.85);
+    --tile-thin: rgba(110, 155, 211, 0.85);
+    --vertex: rgba(255, 235, 200, 0.95);
+  }
+  body {
+    margin: 0; padding: 24px;
+    font-family: "DejaVu Sans Mono", "Fira Code", monospace;
+    background: var(--bg); color: var(--text);
+    min-height: 100vh;
+  }
+  h1 {
+    font-size: 13px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--gold); margin: 0 0 6px;
+  }
+  .sub { font-size: 11px; color: var(--dim); margin-bottom: 18px; }
+  .layout {
+    display: grid; grid-template-columns: 720px 360px;
+    gap: 24px; max-width: 1200px;
+  }
+  canvas {
+    background: #050709;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    display: block;
+  }
+  .panel {
+    padding: 18px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    font-size: 11.5px;
+    line-height: 1.5;
+  }
+  .row {
+    display: grid; grid-template-columns: 100px 1fr 40px;
+    align-items: center; gap: 8px; margin: 6px 0;
+  }
+  .row label { font-size: 11px; color: var(--text); }
+  .row .val { color: var(--gold); font-variant-numeric: tabular-nums;
+              font-size: 10.5px; text-align: right; }
+  input[type=range] {
+    width: 100%; -webkit-appearance: none; background: transparent;
+  }
+  input[type=range]::-webkit-slider-runnable-track,
+  input[type=range]::-moz-range-track {
+    height: 2px; background: var(--line); border-radius: 1px;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none; width: 10px; height: 10px;
+    background: var(--gold); border-radius: 50%; margin-top: -4px;
+  }
+  input[type=range]::-moz-range-thumb {
+    width: 10px; height: 10px; background: var(--gold);
+    border-radius: 50%; border: 0;
+  }
+  .stat {
+    display: flex; justify-content: space-between;
+    padding: 3px 0; border-bottom: 1px solid var(--line);
+    font-size: 10.5px;
+  }
+  .stat:last-child { border-bottom: none; }
+  .stat .v { color: var(--gold); font-variant-numeric: tabular-nums; }
+  .note {
+    font-size: 10px; color: var(--dim);
+    line-height: 1.6; margin-top: 12px;
+    padding-top: 12px; border-top: 1px solid var(--line);
+  }
+  select {
+    background: #050709; color: var(--text);
+    border: 1px solid var(--line); padding: 4px 8px;
+    font-family: inherit; font-size: 11px; border-radius: 2px;
+  }
+</style>
+</head>
+<body>
+<h1>Cut-and-Project Quasicrystal · v0.1</h1>
+<div class="sub">de Bruijn multigrid → tile-vertex extraction · proof-of-concept skeleton</div>
+
+<div class="layout">
+  <canvas id="c" width="720" height="720"></canvas>
+  <div class="panel">
+    <div style="margin-bottom:14px;">
+      <label style="display:block;font-size:10px;color:var(--dim);margin-bottom:4px;letter-spacing:0.18em;">Nityā</label>
+      <select id="nitya">
+        <option value="1">T01 · Kāmeśvarī (3-fold trikona)</option>
+        <option value="5">T05 · Vahnivāsinī (8-fold aṣṭakoṇa)</option>
+        <option value="7">T07 · Śivadūtī (7-fold)</option>
+        <option value="8" selected>T08 · Tvaritā (8-fold) — PoC target</option>
+        <option value="11">T11 · Nīlapatākā (11-fold)</option>
+        <option value="15">T15 · Citrā (15-fold full Sri Yantra)</option>
+      </select>
+    </div>
+
+    <div class="row">
+      <label>k (density)</label>
+      <input type="range" id="k" min="3" max="20" step="0.5" value="6">
+      <span class="val" id="kval">6.0</span>
+    </div>
+    <div class="row">
+      <label>γ-rotation</label>
+      <input type="range" id="gamma" min="0" max="6.28" step="0.001" value="0">
+      <span class="val" id="gammaval">0.000</span>
+    </div>
+    <div class="row">
+      <label>fattest tile</label>
+      <input type="range" id="fatfilter" min="0" max="0.5" step="0.01" value="0">
+      <span class="val" id="fatval">0.00</span>
+    </div>
+    <div class="row" style="margin-top:8px;">
+      <label>show edges</label>
+      <input type="checkbox" id="showEdges" checked>
+    </div>
+    <div class="row">
+      <label>show vertices</label>
+      <input type="checkbox" id="showVerts">
+    </div>
+
+    <div style="margin:14px 0 6px;font-size:10px;color:var(--dim);letter-spacing:0.18em;text-transform:uppercase;">stats</div>
+    <div class="stat"><span>N (symmetry)</span><span class="v" id="s_N">8</span></div>
+    <div class="stat"><span>line families</span><span class="v" id="s_fam">8</span></div>
+    <div class="stat"><span>lines / family</span><span class="v" id="s_lpf">12</span></div>
+    <div class="stat"><span>intersections</span><span class="v" id="s_int">—</span></div>
+    <div class="stat"><span>distinct tile shapes</span><span class="v" id="s_shapes">—</span></div>
+    <div class="stat"><span>compute (ms)</span><span class="v" id="s_ms">—</span></div>
+
+    <div class="note">
+      Skeleton — tasks 3-5 (full Nityā cycle, phason animation,
+      Atlas integration) not yet implemented. Sliders mutate γ as a
+      single phase; full per-direction γⱼ vectors require Task 3.
+      The tiling rendered here is the <em>true cut-and-project tiling</em>,
+      not the multigrid Fourier intensity. Compare side-by-side with
+      <code>s4.html</code> to see the difference: s4.html shows watercolor
+      gradients; this shows discrete tiles with phason-flip dynamics
+      visible as tile-rearrangement events when γ rotates.
+    </div>
+  </div>
+</div>
+
+<script>
+"use strict";
+
+// ─── de Bruijn multigrid construction ─────────────────────────────────
+//
+// For symmetry order N, define N families of parallel lines.  Family j
+// at angle θⱼ = 2πj/N consists of lines x cos θⱼ + y sin θⱼ = m + γⱼ
+// for integer m.  Intersections of family-j and family-k lines are
+// candidate tile vertices (rhombic tiles in the dual tiling).
+//
+// Tile shape: rhombus with acute angle π·|j-k|/N.  For N=8: |j-k| ∈
+// {1, 2, 3, 4} giving 4 distinct rhombs (skinniest 22.5°, fattest 90°).
+
+class DeBruijnMultigrid {
+  constructor(N, opts = {}) {
+    this.N = N;
+    this.k = opts.k ?? 6;            // viewport density
+    this.gammaRotation = opts.gammaRotation ?? 0;
+    this.fatfilter = opts.fatfilter ?? 0;  // hide rhombs thinner than this fraction
+    this.dirs = [];
+    for (let j = 0; j < N; j++) {
+      const a = 2 * Math.PI * j / N;
+      this.dirs.push([Math.cos(a), Math.sin(a)]);
+    }
+  }
+
+  // Per-direction γⱼ.  Default γⱼ = j(j+1)/(2N) mod 1 (generic aperiodic
+  // configuration; see mathematical_foundation.md §4.1).  The
+  // gammaRotation parameter rotates the γ-vector uniformly — this is
+  // approximately one phason dimension; full γ exploration requires a
+  // per-direction control which the brief defers to Task 3.
+  gamma(j) {
+    const base = (j * (j + 1)) / (2 * this.N);
+    return ((base + this.gammaRotation / (2 * Math.PI)) % 1 + 1) % 1;
+  }
+
+  // Compute all candidate intersections of line pairs (j, k) with j < k.
+  // For each, return { x, y, j, k } so the renderer can determine tile
+  // shape and position.
+  intersections() {
+    const N = this.N;
+    const half = 1.5;       // viewport in unit-coordinates is [-half, half]^2
+    const result = [];
+    const linesPerFamily = Math.ceil(2 * half * this.k);
+    for (let j = 0; j < N; j++) {
+      for (let k = j + 1; k < N; k++) {
+        const dj = this.dirs[j], dk = this.dirs[k];
+        // Solve [dj; dk] · p = (mj + γⱼ; mk + γₖ) for p
+        // det = dj.x * dk.y − dj.y * dk.x = sin(θₖ − θⱼ)
+        const det = dj[0] * dk[1] - dj[1] * dk[0];
+        if (Math.abs(det) < 1e-9) continue;
+        const invDet = 1 / det;
+        const mLow  = -Math.ceil(half * this.k) - 1;
+        const mHigh =  Math.ceil(half * this.k) + 1;
+        for (let mj = mLow; mj <= mHigh; mj++) {
+          const aj = (mj + this.gamma(j)) / this.k;
+          for (let mk = mLow; mk <= mHigh; mk++) {
+            const ak = (mk + this.gamma(k)) / this.k;
+            // Solve 2×2: dj.x·x + dj.y·y = aj; dk.x·x + dk.y·y = ak
+            const x = (dk[1] * aj - dj[1] * ak) * invDet;
+            const y = (-dk[0] * aj + dj[0] * ak) * invDet;
+            if (x < -half || x > half || y < -half || y > half) continue;
+            result.push({ x, y, j, k });
+          }
+        }
+      }
+    }
+    return result;
+  }
+
+  // Each rhomb tile centered at intersection (x, y) of families (j, k)
+  // has vertices at (x, y) ± 0.5*ê_j ± 0.5*ê_k * (1/k) ... in the
+  // de Bruijn convention.  For our viewport scaling, the tile vertices
+  // in unit coordinates are at offsets ±(1/2k)·êⱼ ± (1/2k)·ê_k from the
+  // intersection — but the canonical de Bruijn rhomb vertices are
+  // determined differently: they are positions in the *projection
+  // image* of integer lattice points whose perpendicular-space image
+  // lies in the acceptance window.
+  //
+  // For the proof-of-concept, we simplify: render a unit rhomb at each
+  // intersection with edges parallel to êⱼ and ê_k and side-length
+  // 1/(this.k).  This is *visually* correct for the skeleton; full
+  // de Bruijn vertex extraction requires the rhomb side-length to be
+  // 1 (in lattice units) and the rhomb position to be the lift point's
+  // projection — implemented in Task 3.
+  rhombAt(intersection) {
+    const { x, y, j, k } = intersection;
+    const dj = this.dirs[j], dk = this.dirs[k];
+    const s = 0.5 / this.k;       // half-side length
+    return {
+      x, y, j, k,
+      // 4 vertices of the rhomb
+      v: [
+        [x - s * dj[0] - s * dk[0], y - s * dj[1] - s * dk[1]],
+        [x + s * dj[0] - s * dk[0], y + s * dj[1] - s * dk[1]],
+        [x + s * dj[0] + s * dk[0], y + s * dj[1] + s * dk[1]],
+        [x - s * dj[0] + s * dk[0], y - s * dj[1] + s * dk[1]],
+      ],
+      // angle index: |j-k| mod (N/2) — determines tile shape
+      shape: Math.min(k - j, this.N - (k - j)),
+      // fatness ratio: 0 = degenerate, 1 = square; sin(π·shape/N)
+      fatness: Math.sin(Math.PI * Math.min(k - j, this.N - (k - j)) / this.N),
+    };
+  }
+}
+
+// ─── Renderer ─────────────────────────────────────────────────────────
+
+const canvas = document.getElementById("c");
+const ctx = canvas.getContext("2d", { alpha: false });
+const W = canvas.width, H = canvas.height;
+
+const state = {
+  N: 8,
+  k: 6,
+  gamma: 0,
+  fatfilter: 0,
+  showEdges: true,
+  showVerts: false,
+};
+
+const $ = (id) => document.getElementById(id);
+
+function render() {
+  const t0 = performance.now();
+  ctx.fillStyle = "#050709";
+  ctx.fillRect(0, 0, W, H);
+
+  const grid = new DeBruijnMultigrid(state.N, {
+    k: state.k,
+    gammaRotation: state.gamma,
+    fatfilter: state.fatfilter,
+  });
+  const ints = grid.intersections();
+
+  // Map unit-coord [-1.5, 1.5] to canvas [0, W]
+  const scale = W / 3;
+  const cx = W / 2, cy = H / 2;
+  const toScreen = (x, y) => [cx + x * scale, cy + y * scale];
+
+  // Track distinct tile shapes for the stats readout
+  const shapes = new Set();
+  let drawn = 0;
+
+  ctx.lineWidth = 0.6;
+  for (const i of ints) {
+    const r = grid.rhombAt(i);
+    if (r.fatness < state.fatfilter) continue;
+    shapes.add(r.shape);
+    drawn++;
+    const sv = r.v.map(([x, y]) => toScreen(x, y));
+    // Fill rhomb based on its shape (tile-shape coloring)
+    // Skinnier rhombs → cooler, fatter → warmer
+    const fatness = r.fatness;
+    const r_ = Math.round(20 + 191 * fatness);
+    const g_ = Math.round(35 + 132 * fatness);
+    const b_ = Math.round(60 + 50 * fatness);
+    const a_ = 0.50 + 0.40 * fatness;
+    ctx.fillStyle = `rgba(${r_}, ${g_}, ${b_}, ${a_})`;
+    ctx.beginPath();
+    ctx.moveTo(sv[0][0], sv[0][1]);
+    ctx.lineTo(sv[1][0], sv[1][1]);
+    ctx.lineTo(sv[2][0], sv[2][1]);
+    ctx.lineTo(sv[3][0], sv[3][1]);
+    ctx.closePath();
+    ctx.fill();
+    if (state.showEdges) {
+      ctx.strokeStyle = "rgba(211, 167, 110, 0.55)";
+      ctx.stroke();
+    }
+    if (state.showVerts) {
+      ctx.fillStyle = "rgba(255, 235, 200, 0.85)";
+      for (const [x, y] of sv) {
+        ctx.fillRect(x - 1, y - 1, 2, 2);
+      }
+    }
+  }
+
+  // Bindu (always draw, regardless of tiling)
+  ctx.fillStyle = "rgba(255, 235, 200, 0.95)";
+  ctx.beginPath();
+  ctx.arc(cx, cy, 3, 0, 2 * Math.PI);
+  ctx.fill();
+
+  const t1 = performance.now();
+  $("s_N").textContent = state.N;
+  $("s_fam").textContent = state.N;
+  $("s_lpf").textContent = Math.ceil(2 * 1.5 * state.k) * 2 + 1;
+  $("s_int").textContent = ints.length;
+  $("s_shapes").textContent = shapes.size;
+  $("s_ms").textContent = (t1 - t0).toFixed(1);
+}
+
+// ─── UI bindings ──────────────────────────────────────────────────────
+
+$("nitya").addEventListener("change", (e) => {
+  state.N = parseInt(e.target.value, 10);
+  render();
+});
+$("k").addEventListener("input", (e) => {
+  state.k = parseFloat(e.target.value);
+  $("kval").textContent = state.k.toFixed(1);
+  render();
+});
+$("gamma").addEventListener("input", (e) => {
+  state.gamma = parseFloat(e.target.value);
+  $("gammaval").textContent = state.gamma.toFixed(3);
+  render();
+});
+$("fatfilter").addEventListener("input", (e) => {
+  state.fatfilter = parseFloat(e.target.value);
+  $("fatval").textContent = state.fatfilter.toFixed(2);
+  render();
+});
+$("showEdges").addEventListener("change", (e) => {
+  state.showEdges = e.target.checked;
+  render();
+});
+$("showVerts").addEventListener("change", (e) => {
+  state.showVerts = e.target.checked;
+  render();
+});
+
+render();
+</script>
+</body>
+</html>

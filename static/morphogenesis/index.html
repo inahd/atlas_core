@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Atlas Morphogenesis Playground v0.18 · Lifecycle Fix</title>
+<style>
+  :root {
+    --bg: #07090d;
+    --shyama: #0a0d1a;
+    --panel: #0e1218;
+    --line: #1e242e;
+    --text: #c8cdd5;
+    --dim: #6a7280;
+    --accent: #d3a76e;
+    --bar: #20262f;
+    --bar-fill: #d3a76e;
+    --warn: #d97a5a;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "DejaVu Sans Mono", "Fira Code", "SF Mono", monospace;
+    background: var(--bg);
+    color: var(--text);
+    overflow: hidden;
+    height: 100vh;
+  }
+  .app {
+    display: grid;
+    grid-template-columns: 1fr 380px;
+    height: 100vh;
+  }
+  .stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--shyama);
+    border-right: 1px solid var(--line);
+    padding: 24px;
+  }
+  canvas {
+    width: 720px;
+    height: 720px;
+    max-width: calc(100vw - 380px - 48px);
+    max-height: calc(100vh - 48px);
+    image-rendering: auto;
+    box-shadow: 0 0 60px rgba(140, 100, 60, 0.07);
+  }
+  .panel {
+    background: var(--panel);
+    padding: 18px 18px 24px;
+    overflow-y: auto;
+    border-left: 1px solid var(--line);
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  .panel::-webkit-scrollbar { width: 6px; }
+  .panel::-webkit-scrollbar-track { background: var(--panel); }
+  .panel::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
+
+  h1 {
+    font-size: 13px; font-weight: 600;
+    letter-spacing: 0.18em; text-transform: uppercase;
+    margin: 4px 0 4px; color: var(--accent);
+  }
+  .sub {
+    font-size: 10.5px; color: var(--dim);
+    margin-bottom: 18px; letter-spacing: 0.05em;
+  }
+  .group {
+    margin-bottom: 18px; padding-bottom: 16px;
+    border-bottom: 1px solid var(--line);
+  }
+  .group:last-child { border-bottom: none; }
+  .group h2 {
+    font-size: 10px; font-weight: 600;
+    letter-spacing: 0.20em; text-transform: uppercase;
+    color: var(--dim); margin: 0 0 10px;
+  }
+  .row {
+    display: grid;
+    grid-template-columns: 75px 1fr 38px;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 6px;
+  }
+  .row label { font-size: 11px; color: var(--text); }
+  .row .val {
+    font-size: 10.5px; color: var(--accent);
+    text-align: right; font-variant-numeric: tabular-nums;
+  }
+  input[type=range] {
+    width: 100%;
+    -webkit-appearance: none; background: transparent;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    height: 2px; background: var(--line); border-radius: 1px;
+  }
+  input[type=range]::-moz-range-track {
+    height: 2px; background: var(--line); border-radius: 1px;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px; height: 10px;
+    background: var(--accent); border-radius: 50%;
+    margin-top: -4px;
+  }
+  input[type=range]::-moz-range-thumb {
+    width: 10px; height: 10px;
+    background: var(--accent); border-radius: 50%; border: 0;
+  }
+  .btn {
+    background: transparent;
+    border: 1px solid var(--line);
+    color: var(--text);
+    padding: 6px 10px; cursor: pointer;
+    font-family: inherit; font-size: 11px;
+    letter-spacing: 0.06em;
+    border-radius: 2px;
+    transition: all 120ms ease;
+  }
+  .btn:hover { border-color: var(--accent); color: var(--accent); }
+  .btnrow { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 8px; }
+  .btnrow .btn { flex: 1 1 auto; }
+  input[type=number], select {
+    background: #050709;
+    border: 1px solid var(--line);
+    color: var(--text);
+    padding: 5px 7px;
+    font-family: inherit; font-size: 11px;
+    width: 100%; border-radius: 2px;
+  }
+  input[type=number]:focus, select:focus {
+    outline: none; border-color: var(--accent);
+  }
+  .preset_btn {
+    display: block; width: 100%;
+    text-align: left;
+    margin-bottom: 5px; padding: 7px 10px;
+    line-height: 1.4;
+  }
+  .preset_btn .pname { font-size: 11.5px; color: var(--text); }
+  .preset_btn .pdesc { font-size: 10px; color: var(--dim); margin-top: 2px; }
+  .mode-label {
+    font-size: 10.5px; color: var(--accent);
+    margin-top: 6px; font-style: italic;
+  }
+  .meta {
+    font-size: 10.5px; color: var(--dim);
+    display: flex; justify-content: space-between;
+    margin-top: 4px;
+  }
+  .meta .v { color: var(--accent); font-variant-numeric: tabular-nums; }
+  .meta .vw { color: var(--warn); font-variant-numeric: tabular-nums; }
+
+  .toggle-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4px 10px;
+  }
+  .toggle {
+    display: flex; align-items: center; gap: 6px;
+    cursor: pointer; font-size: 10.5px; color: var(--dim);
+  }
+  .toggle input { margin: 0; cursor: pointer; }
+  .toggle:has(input:checked) { color: var(--text); }
+
+  .relation-row {
+    display: grid;
+    grid-template-columns: 1fr 60px 30px;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 4px;
+    font-size: 10.5px;
+  }
+  .relation-row .rname {
+    color: var(--text);
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .relation-row .rbar {
+    height: 4px; background: var(--bar);
+    border-radius: 2px; overflow: hidden;
+  }
+  .relation-row .rfill {
+    height: 100%; width: 0%;
+    background: var(--bar-fill);
+    transition: width 100ms linear;
+  }
+  .relation-row .rval {
+    color: var(--accent);
+    text-align: right;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .grammar-row {
+    display: flex; justify-content: space-between;
+    font-size: 10.5px; color: var(--dim);
+    margin-bottom: 3px;
+  }
+  .grammar-row .v { color: var(--accent); font-variant-numeric: tabular-nums; }
+  .grammar-kinds {
+    font-size: 10px; color: var(--dim);
+    margin-top: 5px; line-height: 1.5;
+    word-break: break-word;
+  }
+
+  /* ── Vision Mode ─────────────────────────────────────────────── */
+  body.vision-mode {
+    cursor: none;
+    background: var(--shyama);
+  }
+  body.vision-mode .app {
+    grid-template-columns: 1fr;
+  }
+  body.vision-mode .panel {
+    display: none;
+  }
+  body.vision-mode .stage {
+    padding: 0;
+    border-right: none;
+    background: var(--shyama);
+    width: 100vw;
+    height: 100vh;
+  }
+  body.vision-mode #canvas {
+    width: min(100vw, 100vh);
+    height: min(100vw, 100vh);
+    max-width: 100vw;
+    max-height: 100vh;
+    box-shadow: none;
+  }
+  /* Cursor reappears when HUD is visible */
+  body.vision-mode:has(.vision-hud.show) {
+    cursor: default;
+  }
+
+  .vision-hud {
+    position: fixed;
+    bottom: 32px;
+    left: 32px;
+    right: 32px;
+    z-index: 200;
+    display: none;
+    pointer-events: none;
+    font-family: "DejaVu Sans Mono", "Fira Code", "SF Mono", monospace;
+    color: rgba(200, 205, 213, 0.92);
+    font-size: 11px;
+    letter-spacing: 0.05em;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+    text-shadow:
+      0 0 4px rgba(10, 13, 26, 0.95),
+      0 0 10px rgba(10, 13, 26, 0.85);
+  }
+  body.vision-mode .vision-hud { display: block; }
+  .vision-hud.show { opacity: 1; }
+
+  .vision-hud-preset {
+    font-size: 11px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: rgba(211, 167, 110, 0.92);
+    margin-bottom: 14px;
+  }
+  .vision-hud-content {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 18px;
+    row-gap: 3px;
+    max-width: 640px;
+    line-height: 1.5;
+  }
+  .vision-hud-content .k {
+    color: rgba(120, 128, 140, 0.78);
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-size: 9.5px;
+    align-self: center;
+  }
+  .vision-hud-content .v {
+    color: rgba(211, 167, 110, 0.95);
+  }
+  .vision-hud-keys {
+    margin-top: 18px;
+    font-size: 9.5px;
+    color: rgba(106, 114, 128, 0.72);
+    letter-spacing: 0.10em;
+    line-height: 1.7;
+    max-width: 640px;
+  }
+  .vision-hud-fps {
+    position: fixed;
+    top: 24px;
+    right: 28px;
+    font-size: 10px;
+    color: rgba(106, 114, 128, 0.62);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.10em;
+    pointer-events: none;
+    text-shadow: 0 0 6px rgba(10, 13, 26, 0.9);
+  }
+
+  /* v0.8 — Vision-Mode tool strip — only visible in advanced mode */
+  .vision-tools {
+    position: fixed;
+    top: 24px;
+    left: 28px;
+    z-index: 200;
+    display: none;
+    pointer-events: none;
+    font-family: "DejaVu Sans Mono", "Fira Code", "SF Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.10em;
+    color: rgba(200, 205, 213, 0.85);
+    text-shadow: 0 0 6px rgba(10, 13, 26, 0.95);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  body.vision-mode.advanced-mode .vision-tools { display: block; }
+  .vision-tools.show { opacity: 1; }
+  /* In advanced mode, tone the keys-help line to match */
+  body.vision-mode.advanced-mode .vision-hud-keys { display: block; }
+  body.vision-mode:not(.advanced-mode) .vision-hud-keys { display: none; }
+
+  /* v0.13 — Beginner HUD: minimal, friendly */
+  .beginner-hud {
+    position: fixed;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 200;
+    display: none;
+    pointer-events: none;
+    font-family: "DejaVu Sans Mono", "Fira Code", "SF Mono", monospace;
+    font-size: 11px;
+    letter-spacing: 0.20em;
+    text-transform: uppercase;
+    color: rgba(200, 205, 213, 0.86);
+    text-shadow: 0 0 6px rgba(10, 13, 26, 0.95),
+                 0 0 14px rgba(10, 13, 26, 0.85);
+    background: rgba(10, 13, 26, 0.55);
+    border: 1px solid rgba(211, 167, 110, 0.18);
+    border-radius: 2px;
+    padding: 10px 18px;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+  body.vision-mode:not(.advanced-mode) .beginner-hud { display: flex; gap: 22px; }
+  .beginner-hud.show { opacity: 1; }
+  .beginner-hud .b-style { color: rgba(211, 167, 110, 0.95); }
+  .beginner-hud .b-brush,
+  .beginner-hud .b-last  { color: rgba(140, 150, 165, 0.85); }
+  .beginner-hud .b-last  { color: rgba(180, 190, 205, 0.95); }
+  .beginner-hud .b-phrase {
+    color: rgba(120, 128, 142, 0.78);
+    font-style: italic;
+    letter-spacing: 0.16em;
+  }
+
+  /* Hide the verbose vision-hud bottom block in beginner mode — the
+     beginner-hud + corner FPS is enough.  Advanced-mode users still get it. */
+  body.vision-mode:not(.advanced-mode) .vision-hud { display: none; }
+
+  /* v0.16 — diagnostic profiler */
+  .profiler-hud {
+    position: fixed;
+    top: 24px;
+    right: 28px;
+    z-index: 220;
+    display: none;
+    margin: 0;
+    padding: 10px 14px;
+    background: rgba(10, 13, 26, 0.85);
+    border: 1px solid rgba(120, 128, 140, 0.32);
+    border-radius: 2px;
+    font-family: "DejaVu Sans Mono", "Fira Code", "SF Mono", monospace;
+    font-size: 10.5px;
+    line-height: 1.5;
+    color: rgba(200, 205, 213, 0.92);
+    white-space: pre;
+    pointer-events: none;
+    text-shadow: 0 0 6px rgba(10, 13, 26, 0.95);
+  }
+  .profiler-hud.show { display: block; }
+  .vision-tools .row {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    column-gap: 14px;
+    row-gap: 2px;
+    line-height: 1.5;
+  }
+  .vision-tools .k {
+    color: rgba(120, 128, 140, 0.78);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 9.5px;
+    align-self: center;
+  }
+  .vision-tools .v { color: rgba(211, 167, 110, 0.95); }
+
+  /* v0.8 — Command phrase modal */
+  .command-phrase {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 300;
+    display: none;
+    background: rgba(10, 13, 26, 0.92);
+    border: 1px solid rgba(211, 167, 110, 0.45);
+    border-radius: 3px;
+    padding: 14px 18px;
+    min-width: 380px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.75);
+    font-family: "DejaVu Sans Mono", "Fira Code", "SF Mono", monospace;
+    color: var(--text);
+  }
+  .command-phrase.show { display: flex; align-items: center; gap: 8px; }
+  .command-phrase .cp-prefix {
+    color: var(--accent);
+    font-size: 16px;
+    line-height: 1;
+  }
+  .command-phrase input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text);
+    font-family: inherit;
+    font-size: 13px;
+    letter-spacing: 0.06em;
+    padding: 2px 0;
+    width: 100%;
+  }
+  .command-phrase .cp-status {
+    color: var(--dim);
+    font-size: 10.5px;
+    letter-spacing: 0.10em;
+    min-width: 24px;
+    text-align: right;
+  }
+
+  /* Enter button styled prominently at panel top */
+  .btn.enter_vision {
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 10px;
+    border-color: var(--accent);
+    color: var(--accent);
+    letter-spacing: 0.20em;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+  .btn.enter_vision:hover {
+    background: rgba(211, 167, 110, 0.08);
+  }
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="stage">
+    <canvas id="canvas" width="720" height="720"></canvas>
+  </div>
+  <div class="panel">
+    <h1>Morphogenesis</h1>
+    <div class="sub">v0.18 · click lifecycle hardened · pointer reset · debug HUD fields</div>
+
+    <button class="btn enter_vision" id="btn_enter_vision">enter field mode</button>
+
+    <!-- v0.7 Debug presets -->
+    <div class="group">
+      <h2>Debug presets</h2>
+      <button class="btn preset_btn" id="dbg_today_field">
+        <div class="pname">Today Field</div>
+        <div class="pdesc">live Atlas /field/morphogenesis</div>
+      </button>
+      <button class="btn preset_btn" id="dbg_twisting_flame_spine">
+        <div class="pname">Twisting Flame Spine</div>
+        <div class="pdesc">thoracic helix · puta agni · Bhastrika</div>
+      </button>
+      <button class="btn preset_btn" id="dbg_soma_bloom_body">
+        <div class="pname">Soma Bloom Body</div>
+        <div class="pdesc">heart muscle · amritikarana · Bhramari</div>
+      </button>
+      <button class="btn preset_btn" id="dbg_quasicrystal_bone_temple">
+        <div class="pname">Quasicrystal Bone Temple</div>
+        <div class="pdesc">skull vault · 11-fold · Ujjayi</div>
+      </button>
+      <button class="btn preset_btn" id="dbg_mula_root_inversion_dbg">
+        <div class="pname">Mula Root Inversion</div>
+        <div class="pdesc">pelvis · 7-fold · Kevala Kumbhaka</div>
+      </button>
+      <button class="btn preset_btn" id="dbg_storm_marma_discharge">
+        <div class="pname">Storm Marma Discharge</div>
+        <div class="pdesc">heart marma · Kapalabhati staccato</div>
+      </button>
+    </div>
+
+    <!-- v0.7 Timeline -->
+    <div class="group">
+      <h2>Activity timeline</h2>
+      <canvas id="timeline_canvas" width="344" height="120"
+              style="width:100%; height:120px; display:block; border:1px solid var(--line); border-radius:2px;"></canvas>
+    </div>
+
+    <!-- v0.7 Director matrix -->
+    <div class="group">
+      <h2>Director matrix</h2>
+      <div class="row">
+        <label>master</label>
+        <input type="range" id="slider_gain_master" min="0" max="2" step="0.05" value="1">
+        <span class="val" id="val_gain_master">1.00</span>
+      </div>
+      <div class="row">
+        <label>bhasma</label>
+        <input type="range" id="slider_gain_bhasma" min="0" max="2" step="0.05" value="1">
+        <span class="val" id="val_gain_bhasma">1.00</span>
+      </div>
+      <div class="row">
+        <label>dhātu</label>
+        <input type="range" id="slider_gain_dhatu" min="0" max="2" step="0.05" value="1">
+        <span class="val" id="val_gain_dhatu">1.00</span>
+      </div>
+      <div class="row">
+        <label>marma</label>
+        <input type="range" id="slider_gain_pulseMarma" min="0" max="2" step="0.05" value="1">
+        <span class="val" id="val_gain_pulseMarma">1.00</span>
+      </div>
+      <div class="row">
+        <label>helix</label>
+        <input type="range" id="slider_gain_helicalShear" min="0" max="2" step="0.05" value="1">
+        <span class="val" id="val_gain_helicalShear">1.00</span>
+      </div>
+      <div class="row">
+        <label>spine</label>
+        <input type="range" id="slider_gain_tensegrity" min="0" max="2" step="0.05" value="1">
+        <span class="val" id="val_gain_tensegrity">1.00</span>
+      </div>
+      <div class="row">
+        <label>breath</label>
+        <input type="range" id="slider_gain_movementPhrase" min="0" max="2" step="0.05" value="1">
+        <span class="val" id="val_gain_movementPhrase">1.00</span>
+      </div>
+      <div class="row">
+        <label>qcrystal</label>
+        <input type="range" id="slider_gain_quasicrystal" min="0" max="2" step="0.05" value="1">
+        <span class="val" id="val_gain_quasicrystal">1.00</span>
+      </div>
+      <label class="toggle" style="margin-top:8px;">
+        <input type="checkbox" id="toggle_stress"> stress test (×2 all gains)
+      </label>
+      <div class="meta" style="margin-top:6px;">
+        <span>guard</span><span class="v" id="g_guard">—</span>
+      </div>
+    </div>
+
+    <!-- Expression Modes -->
+    <div class="group">
+      <h2>Expression modes</h2>
+      <button class="btn preset_btn" id="mode_capillary_bloom">
+        <div class="pname">Capillary Bloom</div>
+        <div class="pdesc">water + life + ether · soft watercolor</div>
+      </button>
+      <button class="btn preset_btn" id="mode_filament_memory">
+        <div class="pname">Filament Memory</div>
+        <div class="pdesc">wood + earth · branch traces in shyama</div>
+      </button>
+      <button class="btn preset_btn" id="mode_interference_body">
+        <div class="pname">Interference Body</div>
+        <div class="pdesc">ether + bilateral · coherence rings</div>
+      </button>
+      <button class="btn preset_btn" id="mode_crystal_pressure">
+        <div class="pname">Crystal Pressure</div>
+        <div class="pdesc">earth + fire · radial faceting</div>
+      </button>
+      <button class="btn preset_btn" id="mode_storm_discharge">
+        <div class="pname">Storm Discharge</div>
+        <div class="pdesc">fire + air · filamentary lightning</div>
+      </button>
+      <button class="btn preset_btn" id="mode_rohini_soma">
+        <div class="pname">Rohini Soma</div>
+        <div class="pdesc">earth + wood + water · lunar fertility</div>
+      </button>
+      <div class="mode-label" id="mode_label">(custom)</div>
+    </div>
+
+    <!-- v0.5 Sacred-spatial modes — bundles include vastu/yantra/mandala/phyllotaxy -->
+    <div class="group">
+      <h2>Sacred-spatial modes</h2>
+      <button class="btn preset_btn" id="mode_rohini_soma_bloom">
+        <div class="pname">Rohini Soma Bloom</div>
+        <div class="pdesc">bindu yantra · 3-ring mandala · lunar fertility</div>
+      </button>
+      <button class="btn preset_btn" id="mode_ashwini_twin_discharge">
+        <div class="pname">Ashwini Twin Discharge</div>
+        <div class="pdesc">shatkona yantra · twin-fire bilateral discharge</div>
+      </button>
+      <button class="btn preset_btn" id="mode_mula_root_inversion">
+        <div class="pname">Mula Root Inversion</div>
+        <div class="pdesc">downward triangle · inverted mandala · descending</div>
+      </button>
+      <button class="btn preset_btn" id="mode_swati_wind_seed">
+        <div class="pname">Swati Wind Seed</div>
+        <div class="pdesc">circle yantra · golden-angle phyllotaxy</div>
+      </button>
+      <button class="btn preset_btn" id="mode_chitra_gem_lattice">
+        <div class="pname">Chitra Gem Lattice</div>
+        <div class="pdesc">square + 6-ring mandala · 4 cardinal gates</div>
+      </button>
+      <button class="btn preset_btn" id="mode_cosmic_body_mandala">
+        <div class="pname">Cosmic Body Mandala</div>
+        <div class="pdesc">composite Sri-yantra · 5-ring · phyllotaxy</div>
+      </button>
+    </div>
+
+    <!-- Sacred-spatial controls — vastu/yantra/mandala/phyllotaxy -->
+    <div class="group">
+      <h2>Sacred bias</h2>
+      <div class="row">
+        <label>master</label>
+        <input type="range" id="slider_sacred_master" min="0" max="1" step="0.01" value="0">
+        <span class="val" id="val_sacred_master">0.00</span>
+      </div>
+      <div class="row">
+        <label>vastu</label>
+        <input type="range" id="slider_sacred_vastu" min="0" max="1" step="0.01" value="0">
+        <span class="val" id="val_sacred_vastu">0.00</span>
+      </div>
+      <div class="row">
+        <label>yantra</label>
+        <input type="range" id="slider_sacred_yantra" min="0" max="1" step="0.01" value="0">
+        <span class="val" id="val_sacred_yantra">0.00</span>
+      </div>
+      <div class="row">
+        <label>mandala</label>
+        <input type="range" id="slider_sacred_mandala" min="0" max="1" step="0.01" value="0">
+        <span class="val" id="val_sacred_mandala">0.00</span>
+      </div>
+      <div class="row" style="margin-top: 6px;">
+        <label>yantra type</label>
+        <select id="select_yantra" style="grid-column: 2 / 4">
+          <option value="none">none</option>
+          <option value="bindu">bindu</option>
+          <option value="circle">circle</option>
+          <option value="triangle_up">triangle ▲ (Shiva)</option>
+          <option value="triangle_down">triangle ▽ (Shakti)</option>
+          <option value="shatkona">shatkona ✡</option>
+          <option value="square">square</option>
+          <option value="lotus_8">lotus · 8 petals</option>
+          <option value="lotus_12">lotus · 12 petals</option>
+          <option value="sri_yantra_lite">Sri Yantra (composite)</option>
+        </select>
+      </div>
+      <div class="row">
+        <label>m. rings</label>
+        <input type="number" id="input_mandala_rings" min="0" max="9" step="1" value="0" style="grid-column: 2 / 4">
+      </div>
+      <div class="row">
+        <label>m. gates</label>
+        <input type="number" id="input_mandala_gates" min="0" max="8" step="1" value="0" style="grid-column: 2 / 4">
+      </div>
+      <label class="toggle" style="margin-top: 6px;">
+        <input type="checkbox" id="input_mandala_invert"> invert mandala (root direction)
+      </label>
+      <div style="height: 10px;"></div>
+      <label class="toggle">
+        <input type="checkbox" id="input_phyllotaxy_enabled"> phyllotaxy emitter placement
+      </label>
+      <div class="row" style="margin-top: 4px;">
+        <label>p. count</label>
+        <input type="number" id="input_phyllotaxy_count" min="4" max="200" step="1" value="48" style="grid-column: 2 / 4">
+      </div>
+      <div class="row">
+        <label>p. scale</label>
+        <input type="number" id="input_phyllotaxy_scale" min="1" max="20" step="0.5" value="4" style="grid-column: 2 / 4">
+      </div>
+    </div>
+
+    <!-- Energy / Decay / Contrast / Exposure -->
+    <div class="group">
+      <h2>Energy &amp; tone</h2>
+      <div class="row">
+        <label>energy</label>
+        <input type="range" id="slider_energy" min="0" max="1" step="0.01" value="0.55">
+        <span class="val" id="val_energy">0.55</span>
+      </div>
+      <div class="row">
+        <label>replenish</label>
+        <input type="range" id="slider_replenish" min="0" max="1" step="0.01" value="0.55">
+        <span class="val" id="val_replenish">0.55</span>
+      </div>
+      <div class="row">
+        <label>decay</label>
+        <input type="range" id="slider_decay" min="0.85" max="1" step="0.005" value="0.95">
+        <span class="val" id="val_decay">0.95</span>
+      </div>
+      <div class="row">
+        <label>contrast</label>
+        <input type="range" id="slider_contrast" min="0.5" max="1.6" step="0.01" value="1.10">
+        <span class="val" id="val_contrast">1.10</span>
+      </div>
+      <div class="row">
+        <label>exposure</label>
+        <input type="range" id="slider_exposure" min="0.5" max="1.5" step="0.01" value="1.00">
+        <span class="val" id="val_exposure">1.00</span>
+      </div>
+      <div class="row">
+        <label>history α</label>
+        <input type="range" id="slider_history_alpha" min="0" max="1" step="0.01" value="0.65">
+        <span class="val" id="val_history_alpha">0.65</span>
+      </div>
+    </div>
+
+    <!-- Scene grammar -->
+    <div class="group">
+      <h2>Grammar</h2>
+      <div class="row">
+        <label>complexity</label>
+        <input type="range" id="slider_complexity" min="0" max="1" step="0.01" value="0.55">
+        <span class="val" id="val_complexity">0.55</span>
+      </div>
+      <div class="row">
+        <label>structure</label>
+        <input type="range" id="slider_structure" min="0" max="1" step="0.01" value="0.45">
+        <span class="val" id="val_structure">0.45</span>
+      </div>
+      <div class="row">
+        <label>phase</label>
+        <select id="select_phase" style="grid-column: 2 / 4">
+          <option value="auto" selected>auto progression</option>
+          <option value="dormant">dormant</option>
+          <option value="ignition">ignition</option>
+          <option value="bloom">bloom</option>
+          <option value="decay">decay</option>
+          <option value="collapse">collapse</option>
+          <option value="memory">memory</option>
+          <option value="renewal">renewal</option>
+        </select>
+      </div>
+      <div style="margin-top: 8px;">
+        <div class="grammar-row"><span>mode</span><span class="v" id="g_mode">—</span></div>
+        <div class="grammar-row"><span>symmetry</span><span class="v" id="g_symmetry">—</span></div>
+        <div class="grammar-row"><span>events</span><span class="v" id="g_total">0</span></div>
+        <div class="grammar-row"><span>focal / void</span><span class="v"><span id="g_focal">0</span> / <span id="g_void">0</span></span></div>
+        <div class="grammar-row"><span>axis</span><span class="v" id="g_axis">—</span></div>
+        <div class="grammar-row"><span>phase</span><span class="v" id="g_phase">—</span></div>
+        <div class="grammar-kinds" id="g_kinds"></div>
+      </div>
+    </div>
+
+    <!-- Elements -->
+    <div class="group">
+      <h2>Elements</h2>
+      <div class="row"><label>water</label><input type="range" id="slider_water" min="0" max="1" step="0.01" value="0.5"><span class="val" id="val_water">0.50</span></div>
+      <div class="row"><label>air</label><input type="range" id="slider_air" min="0" max="1" step="0.01" value="0.5"><span class="val" id="val_air">0.50</span></div>
+      <div class="row"><label>fire</label><input type="range" id="slider_fire" min="0" max="1" step="0.01" value="0.5"><span class="val" id="val_fire">0.50</span></div>
+      <div class="row"><label>earth</label><input type="range" id="slider_earth" min="0" max="1" step="0.01" value="0.5"><span class="val" id="val_earth">0.50</span></div>
+      <div class="row"><label>wood</label><input type="range" id="slider_wood" min="0" max="1" step="0.01" value="0.5"><span class="val" id="val_wood">0.50</span></div>
+      <div class="row"><label>ether</label><input type="range" id="slider_ether" min="0" max="1" step="0.01" value="0.5"><span class="val" id="val_ether">0.50</span></div>
+    </div>
+
+    <!-- Relations -->
+    <div class="group">
+      <h2>Relations</h2>
+      <div id="relations_panel"></div>
+    </div>
+
+    <!-- Render -->
+    <div class="group">
+      <h2>Render</h2>
+      <div class="row">
+        <label>palette</label>
+        <select id="select_palette" style="grid-column: 2 / 4">
+          <option value="cosmic">cosmic</option>
+          <option value="rohini">rohini</option>
+          <option value="ashwini">ashwini</option>
+          <option value="shanta">shānta · peace</option>
+          <option value="shringara">śṛṅgāra · love</option>
+          <option value="vira">vīra · heroic</option>
+          <option value="raudra">raudra · wrath</option>
+          <option value="karuna">karuṇā · compassion</option>
+          <option value="adbhuta">adbhuta · wonder</option>
+        </select>
+      </div>
+      <div class="row">
+        <label>debug</label>
+        <select id="select_debug" style="grid-column: 2 / 4">
+          <option value="composite">composite (palette)</option>
+          <option value="density">density</option>
+          <option value="moisture">moisture</option>
+          <option value="heat">heat</option>
+          <option value="charge">charge</option>
+          <option value="coherence">coherence</option>
+          <option value="branch_memory">branch_memory</option>
+          <option value="rigidity">rigidity</option>
+          <option value="pressure">pressure</option>
+          <option value="life">life</option>
+          <option value="vx">velocity x</option>
+          <option value="vy">velocity y</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Show toggles -->
+    <div class="group">
+      <h2>Show</h2>
+      <div class="toggle-grid">
+        <label class="toggle"><input type="checkbox" id="overlay_history" checked> history</label>
+        <label class="toggle"><input type="checkbox" id="overlay_branch_filaments" checked> branch memory</label>
+        <label class="toggle"><input type="checkbox" id="overlay_streamlines"> flow</label>
+        <label class="toggle"><input type="checkbox" id="overlay_coherence_rings"> coherence rings</label>
+        <label class="toggle"><input type="checkbox" id="overlay_discharge_paths"> discharge</label>
+        <label class="toggle"><input type="checkbox" id="overlay_nodes"> cells</label>
+        <label class="toggle"><input type="checkbox" id="overlay_void_mask"> void mask</label>
+      </div>
+      <div class="btnrow" style="margin-top: 8px;">
+        <button class="btn" id="btn_clear_history">clear history</button>
+      </div>
+    </div>
+
+    <!-- Pass toggles -->
+    <div class="group">
+      <h2>Passes</h2>
+      <div class="toggle-grid">
+        <label class="toggle"><input type="checkbox" id="pass_replenish"     checked> replenish</label>
+        <label class="toggle"><input type="checkbox" id="pass_events"        checked> events</label>
+        <label class="toggle"><input type="checkbox" id="pass_sacred"        checked> sacred</label>
+        <label class="toggle"><input type="checkbox" id="pass_diffusion"     checked> diffusion</label>
+        <label class="toggle"><input type="checkbox" id="pass_reaction"      checked> reaction</label>
+        <label class="toggle"><input type="checkbox" id="pass_curl"          checked> curl flow</label>
+        <label class="toggle"><input type="checkbox" id="pass_advection"     checked> advection</label>
+        <label class="toggle"><input type="checkbox" id="pass_branch"        checked> branch mem</label>
+        <label class="toggle"><input type="checkbox" id="pass_discharge"     checked> discharge</label>
+        <label class="toggle"><input type="checkbox" id="pass_interference"  checked> interference</label>
+        <label class="toggle"><input type="checkbox" id="pass_voronoi"       checked> voronoi</label>
+        <label class="toggle"><input type="checkbox" id="pass_life"          checked> life</label>
+        <label class="toggle"><input type="checkbox" id="pass_bhasma"        checked> bhasma</label>
+        <label class="toggle"><input type="checkbox" id="pass_dhatu"         checked> dhātu</label>
+        <label class="toggle"><input type="checkbox" id="pass_pulseMarma"    checked> marma pulse</label>
+        <label class="toggle"><input type="checkbox" id="pass_helicalShear"  checked> helical shear</label>
+        <label class="toggle"><input type="checkbox" id="pass_tensegrity"    checked> tensegrity</label>
+        <label class="toggle"><input type="checkbox" id="pass_movementPhrase" checked> movement</label>
+        <label class="toggle"><input type="checkbox" id="pass_quasicrystal"  checked> quasicrystal</label>
+      </div>
+    </div>
+
+    <!-- v0.6 Embodiment / Bhasma / Quasicrystal -->
+    <div class="group">
+      <h2>Embodiment (Atlas)</h2>
+      <div class="btnrow">
+        <button class="btn" id="btn_load_atlas">load /field/morphogenesis</button>
+        <button class="btn" id="btn_clear_atlas">clear</button>
+      </div>
+      <div class="meta"><span>region</span><span class="v" id="emb_region">—</span></div>
+      <div class="meta"><span>archetype</span><span class="v" id="emb_archetype">—</span></div>
+      <div class="meta"><span>graha · dhātu</span><span class="v" id="emb_graha_dhatu">—</span></div>
+      <div class="meta"><span>asana</span><span class="v" id="emb_asana">—</span></div>
+      <div class="meta"><span>pranayama</span><span class="v" id="emb_pranayama">—</span></div>
+      <div class="meta"><span>marma</span><span class="v" id="emb_marma">—</span></div>
+      <div class="meta"><span>cycle ms</span><span class="v" id="emb_cycle">—</span></div>
+      <div style="height: 8px;"></div>
+      <div class="meta"><span>bhasma stage</span><span class="v" id="bha_stage">—</span></div>
+      <div class="meta"><span>tithi · paksha</span><span class="v" id="bha_tithi">—</span></div>
+      <div style="height: 8px;"></div>
+      <div class="meta"><span>quasicrystal</span><span class="v" id="qc_active">off</span></div>
+      <div class="meta"><span>fold · strength</span><span class="v" id="qc_fold">—</span></div>
+    </div>
+
+    <!-- Legacy Presets (kept for continuity) -->
+    <div class="group">
+      <h2>Legacy presets</h2>
+      <button class="btn preset_btn" id="btn_preset_rohini"><div class="pname">Rohini Growth Field</div></button>
+      <button class="btn preset_btn" id="btn_preset_ashwini"><div class="pname">Ashwini Lightning Root</div></button>
+      <button class="btn preset_btn" id="btn_preset_cosmic"><div class="pname">Cosmic Body Field</div></button>
+      <button class="btn preset_btn" id="btn_preset_airwater"><div class="pname">Air–Water–Flesh</div></button>
+    </div>
+
+    <!-- Seed -->
+    <div class="group">
+      <h2>Seed</h2>
+      <div class="row">
+        <label>seed</label>
+        <input type="number" id="seed_input" value="4271" style="grid-column: 2 / 4">
+      </div>
+      <div class="btnrow">
+        <button class="btn" id="btn_reset">reset</button>
+        <button class="btn" id="btn_random">random</button>
+        <button class="btn" id="btn_pause">pause</button>
+        <button class="btn" id="btn_export">export PNG</button>
+      </div>
+    </div>
+
+    <!-- Anti-collapse monitor -->
+    <div class="group">
+      <h2>Monitor</h2>
+      <div class="meta"><span>field variance</span><span class="v" id="m_var">—</span></div>
+      <div class="meta"><span>black ratio</span><span class="v" id="m_black">—</span></div>
+      <div class="meta"><span>avg luminance</span><span class="v" id="m_lum">—</span></div>
+      <div class="meta"><span>collapse strike</span><span class="vw" id="m_strike">0</span></div>
+      <div class="meta"><span>auto-rebloom</span><span class="v" id="m_intervene">0</span></div>
+    </div>
+
+    <!-- Status -->
+    <div class="group">
+      <h2>Status</h2>
+      <div class="meta"><span>fps</span><span class="v" id="fps">—</span></div>
+      <div class="meta"><span>tick</span><span class="v" id="tick">0</span></div>
+      <div class="meta"><span>grid</span><span class="v">192 × 192</span></div>
+    </div>
+  </div>
+
+  <!-- Vision Mode HUD overlay -->
+  <div class="vision-hud" id="vision_hud">
+    <div class="vision-hud-preset" id="vision_hud_preset">Vision</div>
+    <div class="vision-hud-content" id="vision_hud_content"></div>
+    <div class="vision-hud-keys">
+      <strong>1–6</strong> presets · <strong>TAB</strong> tool · <strong>[</strong>/<strong>]</strong> palette · <strong>SPACE</strong> breath · <strong>:</strong> command · <strong>F</strong> fullscreen · <strong>H</strong> hud · <strong>L</strong> load atlas · <strong>R</strong> reseed · <strong>S</strong> save · <strong>C</strong> copy · <strong>P</strong> pause · <strong>ESC</strong> exit
+    </div>
+    <div class="vision-hud-keys" style="margin-top:6px;">
+      <strong>L-drag</strong> tool · <strong>R-drag</strong> void · <strong>M-drag</strong> vortex · <strong>Shift</strong> flow · <strong>Alt</strong> helical · <strong>Ctrl-click</strong> symbol · <strong>Wheel</strong> brush
+    </div>
+  </div>
+  <div class="vision-hud-fps" id="vision_hud_fps"></div>
+
+  <!-- v0.8 — Tool strip (advanced-mode only) -->
+  <div class="vision-tools" id="vision_tools">
+    <div class="row">
+      <span class="k">tool</span><span class="v" id="vis_tool">Bloom Brush</span>
+      <span class="k">brush</span><span class="v" id="vis_brush">12</span>
+      <span class="k">palette</span><span class="v" id="vis_tileset">cosmic</span>
+      <span class="k">verb</span><span class="v" id="vis_verb">—</span>
+      <span class="k">events</span><span class="v" id="vis_events">—</span>
+    </div>
+  </div>
+
+  <!-- v0.13 — Beginner HUD (default Vision Mode) -->
+  <div class="beginner-hud" id="beginner_hud">
+    <span class="b-style" id="beg_style">Soma Watercolor</span>
+    <span class="b-brush" id="beg_brush">brush 14</span>
+    <span class="b-last"  id="beg_last">—</span>
+    <span class="b-phrase" id="beg_phrase">—</span>
+  </div>
+
+  <!-- v0.16 — diagnostic profiler (toggle with backtick `) -->
+  <pre class="profiler-hud" id="profiler_hud"></pre>
+</div>
+<script type="module" src="./main.js"></script>
+</body>
+</html>

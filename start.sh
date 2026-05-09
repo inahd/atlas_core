@@ -8,6 +8,7 @@
 #   ./start.sh sc         restart SuperCollider (scsynth + sclang + sc_boot)
 #   ./start.sh sound      same as sc
 #   ./start.sh boot-sc    scsynth only via start_sc.sh + sc_boot POST
+#   ./start.sh om         restart om.py (tanpura drone + sarangi via pw-cat)
 #   ./start.sh tanpura    POST /sound/sc_boot — send field params to SC
 #   ./start.sh ngrok      restart ngrok tunnel
 #   ./start.sh status     show status of all components
@@ -23,6 +24,7 @@ set -u
 ATLAS=~/atlas_core
 KERNEL_LOG=/tmp/atlas_kernel.log
 SC_LOG=/tmp/scsynth.log
+OM_LOG=/tmp/om.log
 NGROK_LOG=/tmp/ngrok.log
 PORT=5000
 
@@ -35,6 +37,7 @@ _ngrok_pid()  { pgrep -f "ngrok.*http.*$PORT" 2>/dev/null | head -1; }
 _scsynth_pid(){ pgrep -x scsynth 2>/dev/null | head -1; }
 _sclang_pid() { pgrep -x sclang 2>/dev/null | head -1; }
 _sc_running() { [ -n "$(_scsynth_pid)" ] || [ -n "$(_sclang_pid)" ]; }
+_om_pid()     { pgrep -f "python3.*om\.py" 2>/dev/null | head -1; }
 
 _ngrok_url() {
   curl -s --max-time 2 localhost:4040/api/tunnels 2>/dev/null \
@@ -113,7 +116,28 @@ do_sc() {
   fi
 }
 
-do_sound() { do_sc; }
+do_om() {
+  echo "  stopping old om.py…"
+  local pid; pid=$(_om_pid)
+  [ -n "$pid" ] && kill "$pid" 2>/dev/null
+  sleep 1
+
+  echo "  starting om.py…"
+  cd "$ATLAS"
+  setsid python3 om.py </dev/null >"$OM_LOG" 2>&1 &
+  disown
+  sleep 3
+
+  pid=$(_om_pid)
+  if [ -n "$pid" ]; then
+    echo "  ✦ om.py running (pid $pid) → pw-cat → MOTU"
+  else
+    echo "  ✗ om.py failed — check $OM_LOG"
+    tail -5 "$OM_LOG" 2>/dev/null
+  fi
+}
+
+do_sound() { do_sc; do_om; }
 do_boot_sc() { do_sc; }
 
 do_tanpura() {
@@ -188,6 +212,10 @@ do_stop() {
   pkill -9 sclang 2>/dev/null && echo "  sclang stopped"
   pkill -9 scsynth 2>/dev/null && echo "  scsynth stopped"
 
+  # om.py
+  pid=$(_om_pid)
+  [ -n "$pid" ] && { kill "$pid" 2>/dev/null; echo "  om.py stopped"; }
+
   echo "  ✦ stopped"
 }
 
@@ -217,6 +245,14 @@ do_status() {
     echo "sclang         ● running (pid $slpid)  OSC :57120"
   else
     echo "sclang         ○ not running"
+  fi
+
+  # om.py
+  local ompid; ompid=$(_om_pid)
+  if [ -n "$ompid" ]; then
+    echo "om.py          ● running (pid $ompid)  pw-cat → MOTU"
+  else
+    echo "om.py          ○ not running"
   fi
 
   # SC sound state from kernel
@@ -267,8 +303,10 @@ except Exception as e:
   # PipeWire audio connections
   if command -v pw-link >/dev/null 2>&1; then
     local sc_links
-    sc_links=$(pw-link -l 2>/dev/null | grep -c "SuperCollider" || echo 0)
-    if [ "$sc_links" -gt 0 ]; then
+    sc_links=$(pw-link -l 2>/dev/null | grep -c "SuperCollider" || true)
+    sc_links=${sc_links:-0}
+    sc_links=${sc_links##* }
+    if [ "$sc_links" -gt 0 ] 2>/dev/null; then
       echo "audio          ● SC connected ($sc_links links)"
     else
       echo "audio          ○ SC not connected"
@@ -339,6 +377,10 @@ do_boot() {
   echo ""
   do_sc
 
+  # om.py — tanpura drone + sarangi + tabla (pw-cat → MOTU)
+  echo ""
+  do_om
+
   # ngrok (optional)
   # do_ngrok
 
@@ -374,21 +416,22 @@ do_reset() {
   pkill -f "python3.*kernel\.py" 2>/dev/null || true
   pkill -9 scsynth 2>/dev/null || true
   pkill -9 sclang 2>/dev/null || true
+  pkill -f "python3.*om\.py" 2>/dev/null || true
   pkill -f "ngrok.*http" 2>/dev/null || true
   fuser -k "$PORT/tcp" 2>/dev/null || true
   sleep 2
   echo "  ✓ all processes stopped"
 
   echo "  cleaning temp files…"
-  rm -f "$KERNEL_LOG" "$SC_LOG" "$NGROK_LOG"
+  rm -f "$KERNEL_LOG" "$SC_LOG" "$OM_LOG" "$NGROK_LOG"
   echo "  ✓ cleaned"
 
   do_boot
 }
 
 do_logs() {
-  echo "Tailing kernel + scsynth logs (Ctrl+C to stop):"
-  tail -f "$KERNEL_LOG" "$SC_LOG" 2>/dev/null
+  echo "Tailing kernel + scsynth + om logs (Ctrl+C to stop):"
+  tail -f "$KERNEL_LOG" "$SC_LOG" "$OM_LOG" 2>/dev/null
 }
 
 do_services() {
@@ -411,6 +454,7 @@ do_services() {
 case "${1:-boot}" in
   sound|sc)   do_sc ;;
   boot-sc)    do_sc ;;
+  om)         do_om ;;
   tanpura)    do_tanpura ;;
   audio)      do_audio ;;
   kernel)     do_kernel ;;
