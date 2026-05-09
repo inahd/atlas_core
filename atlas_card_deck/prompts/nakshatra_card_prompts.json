@@ -1,0 +1,272 @@
+[
+  {
+    "deck_id": "nak_01",
+    "nakshatra_name": "Ashwini",
+    "short_title": "Ashwini — Healing",
+    "front_image_prompt": "twin horse-headed physicians side by side, each holding a golden healing vessel, youthful radiant forms. A horse head motif is inscribed or integrated into the composition. Two golden horses flanking the twin physicians. Low shrub with small red-orange berries among oval green leaves in the border. Composition: warm bg; twin horse heads flanking; swift diagonal lines. Dominant color: warm bronze-brown, overall mood warm and radiant. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Ashwini · Ashwini Kumaras · Healing · Ketu",
+    "symbol_prompt": "Isolated symbolic glyph of a horse head, stylized in fine gold linework on matte warm bronze-brown background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #8d784f (warm bronze-brown), mood: warm and radiant, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_02",
+    "nakshatra_name": "Bharani",
+    "short_title": "Bharani — Transformation",
+    "front_image_prompt": "dark-skinned lord of death, seated on buffalo vahana, holding noose (pasha) and staff (danda), red garments, stern composure. A yoni motif is inscribed or integrated into the composition. Yama seated on his buffalo, with a tusked elephant standing guard at card base. Round ribbed green gooseberries clustered on feathery pinnate-leafed branches in the border. Composition: earth tones; yoni triangle center; heavy border. Dominant color: soft mauve-pink, overall mood grounded and rich. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Bharani · Yama · Transformation · Venus",
+    "symbol_prompt": "Isolated symbolic glyph of a yoni, stylized in fine gold linework on matte soft mauve-pink background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #ffa9dc (soft mauve-pink), mood: grounded and rich, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_03",
+    "nakshatra_name": "Krittika",
+    "short_title": "Krittika — Purification",
+    "front_image_prompt": "red-skinned fire god, seven tongues of flame rising from crown, multi-armed holding ghee ladle and japa mala, riding a ram. A razor motif is inscribed or integrated into the composition. Agni riding his ram, a sheep resting at the base of the flames. Round figs clustered directly on trunk and thick branches, broad lobed leaves framing edges. Composition: flame gradient; razor motif top; sharp horizontal divide. Dominant color: bright saffron-amber, overall mood warm and radiant. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Krittika · Agni · Purification · Sun",
+    "symbol_prompt": "Isolated symbolic glyph of a razor, stylized in fine gold linework on matte bright saffron-amber background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #ffb300 (bright saffron-amber), mood: warm and radiant, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_04",
+    "nakshatra_name": "Rohini",
+    "short_title": "Rohini — Growth",
+    "front_image_prompt": "four-headed four-armed creator, seated on lotus, holding Vedas scroll and water vessel (kamandalu), white beard, serene. A chariot motif is inscribed or integrated into the composition. A serpent coiled peacefully among jasmine vines at the card base. White five-petaled star-shaped jasmine flowers with deep green leaves woven as garland. Composition: cream/green; chariot center; lush organic border. Dominant color: pale moonlit lavender, overall mood grounded and rich. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Rohini · Brahma · Growth · Moon",
+    "symbol_prompt": "Isolated symbolic glyph of a chariot, stylized in fine gold linework on matte pale moonlit lavender background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #e7e7ff (pale moonlit lavender), mood: grounded and rich, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_05",
+    "nakshatra_name": "Mrigashira",
+    "short_title": "Mrigashira — Searching",
+    "front_image_prompt": "cool blue-skinned moon deity, holding chalice of amrita, crescent moon on brow, seated on antelope, luminous. A deer head motif is inscribed or integrated into the composition. A serpent coiled in moonlit grass at the deity's feet, deer-head symbol at card top. Thorny acacia branch with small yellow pom-pom flower clusters and pinnate leaves in border. Composition: bisected earth/air; deer silhouette; wandering path. Dominant color: deep burnt sienna, overall mood grounded and rich. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Mrigashira · Soma · Searching · Mars",
+    "symbol_prompt": "Isolated symbolic glyph of a deer head, stylized in fine gold linework on matte deep burnt sienna background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #922610 (deep burnt sienna), mood: grounded and rich, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_06",
+    "nakshatra_name": "Ardra",
+    "short_title": "Ardra — Renewal",
+    "front_image_prompt": "three-eyed fierce ascetic, tiger-skin garment, holding trident and damaru drum, ash-smeared body, matted locks piled high. A teardrop motif is inscribed or integrated into the composition. A loyal dog sitting beside Rudra in the storm. Dark resinous wood fragments and small white flower clusters in border corners. Composition: dark storm wash; single teardrop focal; jagged edges. Dominant color: dark storm-violet, overall mood cool and deep. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Ardra · Rudra · Renewal · Rahu",
+    "symbol_prompt": "Isolated symbolic glyph of a teardrop, stylized in fine gold linework on matte dark storm-violet background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #4e0d7a (dark storm-violet), mood: cool and deep, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_07",
+    "nakshatra_name": "Punarvasu",
+    "short_title": "Punarvasu — Restoration",
+    "front_image_prompt": "maternal cosmic mother, radiant halo of twelve suns around her head, seated in lotus posture, open-palmed blessing gesture. A quiver motif is inscribed or integrated into the composition. A cat resting in bamboo shade at the card base. Tall segmented green bamboo culms with narrow leaves framing the card sides. Composition: golden air; quiver motif; return-arrow arc. Dominant color: warm golden-yellow, overall mood luminous and open. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Punarvasu · Aditi · Restoration · Jupiter",
+    "symbol_prompt": "Isolated symbolic glyph of a quiver, stylized in fine gold linework on matte warm golden-yellow background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #ffe574 (warm golden-yellow), mood: luminous and open, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_08",
+    "nakshatra_name": "Pushya",
+    "short_title": "Pushya — Nourishment",
+    "front_image_prompt": "golden-skinned guru with chin-beard, holding teaching staff (danda) and rudraksha rosary, seated on lotus, wise expression. A lotus motif is inscribed or integrated into the composition. A sheep grazing beneath the peepal tree at the card base. Heart-shaped leaves with elongated drip-tips, fluttering on slender petioles as border motif. Composition: deep blue-green; lotus center; concentric rings. Dominant color: deep slate-blue, overall mood cool and deep. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Pushya · Brihaspati · Nourishment · Saturn",
+    "symbol_prompt": "Isolated symbolic glyph of a lotus, stylized in fine gold linework on matte deep slate-blue background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #4e6175 (deep slate-blue), mood: cool and deep, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_09",
+    "nakshatra_name": "Ashlesha",
+    "short_title": "Ashlesha — Entwining",
+    "front_image_prompt": "multi-hooded serpent deities, jeweled cobra hoods raised, coiled lower bodies, luminous gem in central hood. A coiled serpent motif is inscribed or integrated into the composition. The Naga serpent deities ARE the central figures, a small cat curled at base. Waxy white four-petaled flowers with golden stamen clusters in the border. Composition: dark green; coiled serpent spiral; tight border. Dominant color: dark emerald-green, overall mood cool and deep. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Ashlesha · Nagas · Entwining · Mercury",
+    "symbol_prompt": "Isolated symbolic glyph of a coiled serpent, stylized in fine gold linework on matte dark emerald-green background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #0d7a39 (dark emerald-green), mood: cool and deep, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_10",
+    "nakshatra_name": "Magha",
+    "short_title": "Magha — Authority",
+    "front_image_prompt": "three elder ancestral figures seated in row, white garments, offerings of rice and water before them, dignified stillness. A throne motif is inscribed or integrated into the composition. A mouse near the offerings at the foot of the throne. Broad canopy with descending aerial roots, thick oval leaves as frame elements. Composition: dark fire tones; throne silhouette; ancestral column. Dominant color: aged bronze-earth, overall mood warm and radiant. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Magha · Pitris · Authority · Ketu",
+    "symbol_prompt": "Isolated symbolic glyph of a throne, stylized in fine gold linework on matte aged bronze-earth background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #685d48 (aged bronze-earth), mood: warm and radiant, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_11",
+    "nakshatra_name": "Purva Phalguni",
+    "short_title": "Purva Phalguni — Enjoyment",
+    "front_image_prompt": "red-gold solar deity of fortune, holding lotus in right hand, dawn light behind, regal standing posture. A hammock motif is inscribed or integrated into the composition. A small mouse nestled in the hammock folds. Brilliant orange-red flame-of-forest flowers on bare branches, trifoliate leaves in border. Composition: rose/gold; hammock arc; open relaxed composition. Dominant color: soft mauve-pink, overall mood grounded and rich. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Purva Phalguni · Bhaga · Enjoyment · Venus",
+    "symbol_prompt": "Isolated symbolic glyph of a hammock, stylized in fine gold linework on matte soft mauve-pink background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #ffa9dc (soft mauve-pink), mood: grounded and rich, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_12",
+    "nakshatra_name": "Uttara Phalguni",
+    "short_title": "Uttara Phalguni — Patronage",
+    "front_image_prompt": "golden-complexioned friend-god, seated on chariot, holding contract scroll, solar disc behind head. A bed motif is inscribed or integrated into the composition. A bull (cow, male) standing steady beside Aryaman's chariot. Blue-brown ridged rudraksha berries on branch with elliptic leaves in border. Composition: amber/earth; bed frame lines; stable grid. Dominant color: rich amber-gold, overall mood grounded and rich. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Uttara Phalguni · Aryaman · Patronage · Sun",
+    "symbol_prompt": "Isolated symbolic glyph of a bed, stylized in fine gold linework on matte rich amber-gold background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #ffbe26 (rich amber-gold), mood: grounded and rich, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_13",
+    "nakshatra_name": "Hasta",
+    "short_title": "Hasta — Manifestation",
+    "front_image_prompt": "solar-golden deity, two right hands raised in blessing mudra (abhaya and varada), radiating light-lines from palms. A hand motif is inscribed or integrated into the composition. A water buffalo visible in the field behind Savitar. Round brown soapnut fruits and pinnate compound leaves in border corners. Composition: white/silver; open hand center; fine craft-line detail. Dominant color: luminous silver-white, overall mood luminous and open. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Hasta · Savitar · Manifestation · Moon",
+    "symbol_prompt": "Isolated symbolic glyph of a hand, stylized in fine gold linework on matte luminous silver-white background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #ffffff (luminous silver-white), mood: luminous and open, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_14",
+    "nakshatra_name": "Chitra",
+    "short_title": "Chitra — Creation",
+    "front_image_prompt": "divine architect-artisan, holding hammer and compass, mandala blueprint visible, creating cosmic forms at a workbench. A pearl motif is inscribed or integrated into the composition. A tiger seated at Tvashtar's workbench side. Trifoliate bilva leaves (three pointed leaflets) and hard yellow-green fruit in border. Composition: jewel tones; pearl/gem focal; architectural frame. Dominant color: deep burnt sienna, overall mood warm and radiant. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Chitra · Tvashtar · Creation · Mars",
+    "symbol_prompt": "Isolated symbolic glyph of a pearl, stylized in fine gold linework on matte deep burnt sienna background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #922610 (deep burnt sienna), mood: warm and radiant, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_15",
+    "nakshatra_name": "Swati",
+    "short_title": "Swati — Independence",
+    "front_image_prompt": "blue-green wind god, striding forward dynamically, holding banner that streams behind, garments wind-swept, powerful build. A young shoot motif is inscribed or integrated into the composition. A buffalo silhouette in the wind-swept landscape behind Vayu. Arjuna tree bark strips and small pale flower clusters in border. Composition: violet/air; young shoot rising; asymmetric wind lines. Dominant color: deep royal-violet, overall mood luminous and open. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Swati · Vayu · Independence · Rahu",
+    "symbol_prompt": "Isolated symbolic glyph of a young shoot, stylized in fine gold linework on matte deep royal-violet background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #6500aa (deep royal-violet), mood: luminous and open, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_16",
+    "nakshatra_name": "Vishakha",
+    "short_title": "Vishakha — Achievement",
+    "front_image_prompt": "dual deity — Indra (right, holding vajra thunderbolt, crowned) and Agni (left, flame-tongued, holding ladle) sharing one throne. A triumph arch motif is inscribed or integrated into the composition. A tigress prowling beneath the triumphal arch. Hard round wood apple fruit and compound leaves in border corners. Composition: gold/fire; triumphal arch frame; goal-directed axis. Dominant color: bright turmeric-gold, overall mood warm and radiant. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Vishakha · Indra-Agni · Achievement · Jupiter",
+    "symbol_prompt": "Isolated symbolic glyph of a triumph arch, stylized in fine gold linework on matte bright turmeric-gold background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #ffdd43 (bright turmeric-gold), mood: warm and radiant, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_17",
+    "nakshatra_name": "Anuradha",
+    "short_title": "Anuradha — Devotion",
+    "front_image_prompt": "solar friend-god, gentle golden complexion, holding lotus and sun disc, seated on chariot, benevolent expression. A lotus motif is inscribed or integrated into the composition. A hare seated beside Mitra on the lotus platform. Small dark-green aromatic tulsi leaves with purple stems and tiny flower spikes in border. Composition: water/devotion blue; lotus center; friendship dyad. Dominant color: deep slate-blue, overall mood cool and deep. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Anuradha · Mitra · Devotion · Saturn",
+    "symbol_prompt": "Isolated symbolic glyph of a lotus, stylized in fine gold linework on matte deep slate-blue background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #4e6175 (deep slate-blue), mood: cool and deep, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_18",
+    "nakshatra_name": "Jyeshtha",
+    "short_title": "Jyeshtha — Leadership",
+    "front_image_prompt": "king of devas, crowned with kirita-mukuta, vajra thunderbolt in right hand, seated regally on white elephant Airavata. An earring motif is inscribed or integrated into the composition. A hare crouched near the base of Indra's elephant. Red silk-cotton flowers on thorny trunk, kapok pods splitting open in border. Composition: emerald; protective earring motif; elder border. Dominant color: dark emerald-green, overall mood luminous and open. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Jyeshtha · Indra · Leadership · Mercury",
+    "symbol_prompt": "Isolated symbolic glyph of a earring, stylized in fine gold linework on matte dark emerald-green background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #0d7a39 (dark emerald-green), mood: luminous and open, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_19",
+    "nakshatra_name": "Mula",
+    "short_title": "Mula — Destruction",
+    "front_image_prompt": "dark fierce goddess of dissolution, matted hair, seated on black dog, holding tangled roots and a skull, southwest quarter. A root motif is inscribed or integrated into the composition. A dog at the goddess's side, both surrounded by tangled roots. Broad sal leaves and small cream-yellow flower clusters in border. Composition: root brown; root system radiating down; stripped composition. Dominant color: aged bronze-earth, overall mood luminous and open. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Mula · Nirriti · Destruction · Ketu",
+    "symbol_prompt": "Isolated symbolic glyph of a root, stylized in fine gold linework on matte aged bronze-earth background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #685d48 (aged bronze-earth), mood: luminous and open, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_20",
+    "nakshatra_name": "Purva Ashadha",
+    "short_title": "Purva Ashadha — Invigoration",
+    "front_image_prompt": "water nymphs (three flowing feminine forms), holding conch and lotus, turquoise-blue skin, emerging from waves. A fan motif is inscribed or integrated into the composition. A monkey perched on a branch above the water nymphs. Open pink lotus blooms and round floating leaves as border and base motif. Composition: water blue/rose; fan spread; upward declaration. Dominant color: soft mauve-pink, overall mood cool and deep. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Purva Ashadha · Apas · Invigoration · Venus",
+    "symbol_prompt": "Isolated symbolic glyph of a fan, stylized in fine gold linework on matte soft mauve-pink background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #ffa9dc (soft mauve-pink), mood: cool and deep, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_21",
+    "nakshatra_name": "Uttara Ashadha",
+    "short_title": "Uttara Ashadha — Victory",
+    "front_image_prompt": "assembly of ten devas in two rows, each holding different attribute, collective regal composition, sunburst behind group. An elephant tusk motif is inscribed or integrated into the composition. A mongoose among rocks at the assembly's base. Large oblong spiny jackfruit and broad dark leaves in border. Composition: amber/earth; elephant tusk vertical; enduring column. Dominant color: rich amber-gold, overall mood grounded and rich. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Uttara Ashadha · Vishvadevas · Victory · Sun",
+    "symbol_prompt": "Isolated symbolic glyph of a elephant tusk, stylized in fine gold linework on matte rich amber-gold background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #ffbe26 (rich amber-gold), mood: grounded and rich, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_22",
+    "nakshatra_name": "Shravana",
+    "short_title": "Shravana — Listening",
+    "front_image_prompt": "dark-blue four-armed preserver, holding conch (shankha), discus (sudarshana), mace (gada), lotus (padma), standing on lotus. An ear motif is inscribed or integrated into the composition. A monkey in a listening pose in the background landscape. Crown flower with waxy purple-white five-petaled blooms and thick round leaves in border. Composition: silver/white; ear motif; concentric listening rings. Dominant color: luminous silver-white, overall mood luminous and open. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Shravana · Vishnu · Listening · Moon",
+    "symbol_prompt": "Isolated symbolic glyph of a ear, stylized in fine gold linework on matte luminous silver-white background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #ffffff (luminous silver-white), mood: luminous and open, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_23",
+    "nakshatra_name": "Dhanishta",
+    "short_title": "Dhanishta — Fame",
+    "front_image_prompt": "eight elemental deities grouped in circle, drums and instruments present, each in distinct color, communal energy. A drum motif is inscribed or integrated into the composition. A lion seated among the eight Vasu deities. Tiny bipinnate leaves and small yellow flower clusters of prosopis in border. Composition: red/fire; drum center; rhythmic horizontal bands. Dominant color: fierce vermilion-red, overall mood warm and radiant. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Dhanishta · Vasus · Fame · Mars",
+    "symbol_prompt": "Isolated symbolic glyph of a drum, stylized in fine gold linework on matte fierce vermilion-red background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #cc2100 (fierce vermilion-red), mood: warm and radiant, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_24",
+    "nakshatra_name": "Shatabhisha",
+    "short_title": "Shatabhisha — Healing",
+    "front_image_prompt": "blue-black ocean lord, holding noose (pasha), seated on makara sea-creature, oceanic waves as background, stern gaze. An empty circle motif is inscribed or integrated into the composition. A mare (female horse) at the ocean shore behind Varuna. Spherical orange kadamba flower-balls and broad round leaves in border. Composition: deep violet; empty circle center; 100-dot surround. Dominant color: dark storm-violet, overall mood luminous and open. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Shatabhisha · Varuna · Healing · Rahu",
+    "symbol_prompt": "Isolated symbolic glyph of a empty circle, stylized in fine gold linework on matte dark storm-violet background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #4e0d7a (dark storm-violet), mood: luminous and open, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_25",
+    "nakshatra_name": "Purva Bhadrapada",
+    "short_title": "Purva Bhadrapada — Spiritual Fire",
+    "front_image_prompt": "one-footed goat-headed ascetic deity, fierce expression, single leg planted in fire, lightning around form. A front legs of bed motif is inscribed or integrated into the composition. A lioness at the base of the one-footed fire deity. Broad lance-shaped mango leaves in red-green new-growth colors, small fruit clusters in border. Composition: fire/gold; lightning bolt diagonal; intense edge. Dominant color: burning gold, overall mood warm and radiant. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Purva Bhadrapada · Aja Ekapada · Spiritual Fire · Jupiter",
+    "symbol_prompt": "Isolated symbolic glyph of a front legs of bed, stylized in fine gold linework on matte burning gold background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #e5c11c (burning gold), mood: warm and radiant, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_26",
+    "nakshatra_name": "Uttara Bhadrapada",
+    "short_title": "Uttara Bhadrapada — Stability",
+    "front_image_prompt": "great serpent of the cosmic depths, coiled massive form, jeweled hood, oceanic underworld setting, patient stillness. A back legs of bed motif is inscribed or integrated into the composition. A cow resting on the shore above the oceanic depths. Pinnate compound neem leaves with small white flower sprays in border. Composition: deep ocean blue; serpent bed base; patient depth. Dominant color: deep slate-blue, overall mood cool and deep. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Uttara Bhadrapada · Ahirbudhnya · Stability · Saturn",
+    "symbol_prompt": "Isolated symbolic glyph of a back legs of bed, stylized in fine gold linework on matte deep slate-blue background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #4e6175 (deep slate-blue), mood: cool and deep, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  },
+  {
+    "deck_id": "nak_27",
+    "nakshatra_name": "Revati",
+    "short_title": "Revati — Prosperity",
+    "front_image_prompt": "gentle golden nourisher, holding goad, soft features, guardian of paths, cow visible nearby, benevolent pastoral setting. A fish motif is inscribed or integrated into the composition. A gentle elephant walking beside Pushan on the path. Fleshy cream-yellow mahua flowers dropping from branches, broad leaves in border. Composition: sea green; fish motif; flowing completion arc. Dominant color: living sea-green, overall mood cool and deep. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "back_caption": "Revati · Pushan · Prosperity · Mercury",
+    "symbol_prompt": "Isolated symbolic glyph of a fish, stylized in fine gold linework on matte living sea-green background. No text, no figures. Rajput miniature painting style, Mewar school, flat jewel-tone color fields, fine gold leaf detailing, black outline, vertical portrait composition, ornamental border.",
+    "palette_prompt": "Color swatch: primary #00c34e (living sea-green), mood: cool and deep, accent: gold leaf. Matte, flat, print-ready.",
+    "negative_prompt": "photorealistic, glossy, generic fantasy, western tarot imagery, RWS/Rider-Waite imagery, text overlays, watermark, blurry, extra fingers, deformed, anime, Disney, digital painting style, modern graphic design, sanskrit text, devanagari script in image"
+  }
+]
