@@ -48,3 +48,21 @@ data/coherence_cache/
 
 # Python virtualenvs (e.g., .venv-archive/ for the geosolar fetch pipeline)
 .venv*/
+
+# Local agent state
+.claude/
+
+# SSH keys / credentials — never push
+gitpushssh*
+
+# Build artifacts
+build/
+
+# Distributable archives (regenerable from source dirs)
+*.zip
+
+# teslatech_lineage corpus PDFs (4.8 GB; regeneratable from dedup_report.md sources)
+corpus/
+
+# Accidental shell-redirect artifact
+datasets.422
