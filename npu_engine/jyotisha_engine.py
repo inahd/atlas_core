@@ -546,6 +546,19 @@ def compute_pair_interference(
     needs strict backward compatibility. Callers that take `abs(...)` of the result
     now get the proper magnitude |Z_k| instead of |cos(...)+cos(...)|; these scalars
     coincide only when phase geometry happens to align them.
+
+    Mathematical foundation: Steinmetz versor algebra (1900). See
+    npu_engine.math_extracts.steinmetz_alternating_current_phenomena for the
+    full derivation, including the closed-form identity that establishes
+    target-invariance of the magnitude:
+
+        |Z_k| = 2 |cos(k·(β − α)/2)|
+
+    The implementation here is kept inline (using math.cos / math.sin) to
+    preserve bit-for-bit numerical behavior across versions; the math_extracts
+    module provides the canonical citation and a numpy-based reference
+    implementation (two_source_interference_complex,
+    two_source_interference_magnitude_closed_form).
     """
     d1 = math.radians(target_long - source_1_long)
     d2 = math.radians(target_long - source_2_long)
@@ -599,6 +612,14 @@ def compute_wave_field(
         composite_magnetic        = mean over (t,k) of magnetic[t][k]
         composite_dielectric      = mean over (t,k) of dielectric[t][k]
         composite_mode_ratio      = total_dielectric / (total_magnetic + total_dielectric + ε)
+
+    Mathematical foundation:
+        npu_engine.math_extracts.steinmetz_alternating_current_phenomena
+            Versor algebra (Steinmetz 1900) and the closed-form
+            target-invariance identity used in this engine.
+        npu_engine.math_extracts.dollard_1982_dielectric_magnetic_discharges
+            Magnetic / dielectric register parallel-quantity duality
+            (Dollard 1982) that motivates the Re/Im mode decomposition.
     """
     if k_values is None:
         k_values = _DEFAULT_K
