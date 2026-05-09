@@ -294,8 +294,8 @@ class FieldVoice:
         self.bija_id = "om"          # current bija mantra
         self.bija_sa = 0.0           # Sa freq used for current buffer
         # Sarangi — bowed Sa drone
-        from npu_engine.sarangi_voice import SarangiString
-        self.sarangi = SarangiString(freq=self.sa_hz, rate=RATE)
+        from npu_engine.sarangi_voice import SarangiVoice
+        self.sarangi = SarangiVoice(sa_hz=self.sa_hz, rate=RATE)
         # Debug flags — toggle layers on/off without restarting
         self.layer_flags = {
             "tanpura": True,
@@ -497,8 +497,8 @@ def update_voice(v: FieldVoice):
     v._last_sa = v.sa_hz
 
     # Update sarangi Sa frequency
-    v.sarangi.set_freq(v.sa_hz)
-    log.info("sarangi: bowing Sa=%.1fHz", v.sa_hz)
+    v.sarangi.retune(v.sa_hz)
+    log.info("sarangi: Sa=%.1fHz", v.sa_hz)
 
     mu = params.get("mudra", {})
     log.info("synth params: %s · %d voices · %s · %d bols · mudrā: %s (%s)",
@@ -533,8 +533,11 @@ def update_voice(v: FieldVoice):
         log.info("✦ SympatheticKernel started → OSC 57121")
     if _phrase is not None and not _phrase.playing:
         _phrase.start()
+        _phrase._field_state_ref = bs  # conductor reads this for instrument selection
         log.info("✦ PhraseEngine started — %s / %s",
                  _phrase._raga_name, _phrase._perf_mode)
+    elif _phrase is not None:
+        _phrase._field_state_ref = bs
 
     # RhythmKernel — update and start
     if _rhythm is not None:
@@ -579,6 +582,10 @@ def update_voice(v: FieldVoice):
             _vocal.start()
             log.info("✦ VocalKernel started → OSC 57121 (bija, amp=0.08)")
 
+    # SC Conductor — sends PhraseEngine melody + tala bols to SC SynthDefs
+    if not _conductor_running:
+        start_conductor(v)
+
 
 def write_state(v: FieldVoice):
     try:
@@ -617,6 +624,21 @@ def _get_mix_amp(layer_name: str, fallback: float = 1.0) -> float:
     return float(sent.get(layer_name, fallback))
 
 
+# ══════════════════════════════════════════════════════════
+# CONDUCTOR — PhraseEngine → sarangi_voice, tabla → fill_buffer
+# All audio through om.py pw-cat → MOTU (SC JACK path is dead)
+# ══════════════════════════════════════════════════════════
+
+_conductor_running = False
+
+
+def start_conductor(v):
+    """Mark conductor as running — melody + tabla render in fill_buffer."""
+    global _conductor_running
+    _conductor_running = True
+    log.info("✦ conductor: sarangi melody + tabla → pw-cat → MOTU")
+
+
 def fill_buffer(buf, frames, v: FieldVoice):
     _read_layer_flags(v)
 
@@ -643,64 +665,53 @@ def fill_buffer(buf, frames, v: FieldVoice):
         buf[:frames, 1] += bija_samples
         v.bija_pos = (v.bija_pos + frames) % bija_len
 
-    # Sarangi — bowed Sa drone sitting just above tanpura (cached loop)
-    if v.layer_flags.get("sarangi", True):
-        sarangi_audio = v.sarangi.render_looped(frames, amp=0.15 * mx[6])
-        buf[:frames, 0] += sarangi_audio
-        buf[:frames, 1] += sarangi_audio
+    # Sarangi melody — PhraseEngine feeds notes into sarangi_voice
+    if v.layer_flags.get("sarangi", True) and _phrase is not None:
+        # Feed next note to sarangi if current note finished
+        if v.sarangi.note_finished:
+            note = _phrase.next_note()
+            if note is not None and note.freq_hz > 0:
+                dur = max(0.4, note.duration_sec)
+                v.sarangi.set_note(note.freq_hz, dur, note.amplitude, note.gamak)
+                # Excite sympathetic strings
+                if _sympathetic is not None and _sympathetic.playing:
+                    _sympathetic.excite_melody(note.freq_hz, note.amplitude * 0.6)
+            elif note is not None and note.gamak == "silence":
+                # Rest — release current note
+                v.sarangi.set_note(0, note.duration_sec, 0)
+
+        sarangi_audio = v.sarangi.render(frames)
+        melody_amp = 0.35 * mx[6]
+        buf[:frames, 0] += sarangi_audio[:, 0] * melody_amp
+        buf[:frames, 1] += sarangi_audio[:, 1] * melody_amp
 
     # Excite sympathetic strings from tanpura
     if _sympathetic is not None and _sympathetic.playing:
         for ratio in v.string_ratios:
             _sympathetic.excite_melody(v.sa_hz * ratio, amp=0.3)
 
-    # Tabla: mix sample-based percussion
-    if v.layer_flags["tabla"] and v.percussion_active and v.tala_bols and v.tabla_samples and mx[3] > 0.01:
+    # Tabla — sample-based percussion from tala_bols
+    if v.layer_flags.get("tabla", True) and v.percussion_active and v.tala_bols and v.tabla_samples and mx[3] > 0.01:
         from npu_engine.tabla_sampler import render_tala_beat
         beat_dur = 60.0 / max(v.bpm, 30)
         beat_samples = int(RATE * beat_dur)
 
-        # How many samples into the current beat are we?
         beat_frac = v.beat_phase - int(v.beat_phase)
         beat_offset = int(beat_frac * beat_samples)
         beat_idx = int(v.beat_phase) % max(len(v.tala_bols), 1)
 
-        # Render one beat, extract the portion that overlaps this buffer
         bol_audio = render_tala_beat(v.tabla_samples, v.tala_bols, beat_idx, v.bpm, RATE)
         mix_len = min(frames, len(bol_audio) - beat_offset)
         if mix_len > 0 and beat_offset < len(bol_audio):
             tabla_mono = bol_audio[beat_offset:beat_offset + mix_len]
-            tabla_gain = 0.35 * mx[3]
+            tabla_gain = 0.6 * mx[3]
             buf[:mix_len, 0] += tabla_mono * tabla_gain
             buf[:mix_len, 1] += tabla_mono * tabla_gain
 
         v.beat_phase += frames / RATE / beat_dur
     elif v.tala_bols:
-        # Advance beat phase even if muted
         beat_dur = 60.0 / max(v.bpm, 30)
         v.beat_phase += frames / RATE / beat_dur
-
-    # Live melody from PhraseEngine
-    if _phrase is not None and v.layer_flags.get("melody", True):
-        note = _phrase.next_note()
-        if note is not None and note.freq_hz > 0:
-            t = np.arange(frames, dtype=np.float64) / RATE + v.melody_phase
-            # Short attack/decay envelope
-            env = np.ones(frames, dtype=np.float64)
-            attack = min(int(RATE * 0.02), frames // 4)
-            decay  = min(int(RATE * 0.05), frames // 4)
-            if attack > 0:
-                env[:attack] = np.linspace(0, 1, attack)
-            if decay > 0:
-                env[-decay:] = np.linspace(1, 0, decay)
-            melody = note.amplitude * env * np.sin(2 * np.pi * note.freq_hz * t)
-            melody_amp = _get_mix_amp("melody", 0.5)
-            buf[:, 0] += (melody * melody_amp * 0.4).astype(np.float32)
-            buf[:, 1] += (melody * melody_amp * 0.4).astype(np.float32)
-            # Excite sympathetic strings
-            if _sympathetic is not None and _sympathetic.playing:
-                _sympathetic.excite_melody(note.freq_hz, note.amplitude)
-        v.melody_phase += frames / RATE
 
     # Breath modulation
     t = np.arange(frames, dtype=np.float64) / RATE + v.phase

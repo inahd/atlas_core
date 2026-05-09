@@ -63,3 +63,61 @@ of the tiling and carry the same symmetry information.
 
 If specific substitution-rule tilings become available for these N values,
 they can replace the multigrid construction while keeping the same interface.
+
+---
+
+## 3D Polyhedron Mediators
+
+Each Nitya Devi's 3D polyhedron is the intermediate object between
+the higher-dimensional parent lattice and the 2D quasicrystal projection.
+Its shadow IS the 2D Nitya render.
+
+### Platonic/Archimedean mediators (standard N)
+
+- **N=3** → tetrahedron (4 faces, simplest Platonic)
+- **N=4** → cube (6 faces)
+- **N=5** → icosahedron (20 faces, golden-ratio symmetry)
+- **N=6** → cuboctahedron (14 faces, Archimedean)
+- **N=10** → dodecahedron (12 pentagonal faces, dual of icosahedron)
+- **N=12** → icosahedron (dodecagonal projection axis)
+- **N=15** → rhombic triacontahedron (30 rhombic faces = 30 tithis)
+
+### Antiprism mediators (non-standard N)
+
+- **N=7** (Sivaduti) → heptagonal antiprism (14 triangular + 2 heptagonal faces).
+  The 7-fold rotational axis is preserved. The antiprism's two heptagonal
+  caps represent the two pakshas; the 14 triangular side faces represent
+  the 14 intermediate tithis.
+
+- **N=8** (Vahnivasini, Tvarita) → octagonal antiprism. 8-fold axis.
+  Could alternatively use a truncated cube for closer Ammann-Beenker
+  correspondence; antiprism chosen for consistency.
+
+- **N=9** (Kulasundari) → nonagonal antiprism. 9 = navamsha. The 9-fold
+  axis connects this to the D9 divisional chart.
+
+- **N=11** (Nilapataka) → hendecagonal antiprism. 11-fold quasicrystalline
+  axis. Jupiter's retrograde station count.
+
+- **N=13** (Sarvangasundari) → 13-gonal antiprism. 13 is prime; the
+  resulting polyhedron is irreducible.
+
+- **N=14** (Jvalamalini) → 14-gonal antiprism. 14 = 2×7, producing a
+  doubled-Mars structure.
+
+### Whole-month polyhedron
+
+The rhombic triacontahedron (30 rhombic faces = 60 triangular faces in pairs)
+is the resting-state view. Each rhombic face is labeled with a tithi number
+(1-30). Pairs of triangles sharing a dodecahedron-type edge (T-T edge) form
+one rhombus. Both triangles in a pair carry the same face label so they
+highlight together.
+
+Constructed as the dual of the icosidodecahedron: the 32 vertices are the
+face centers of the icosidodecahedron (12 from pentagonal faces = 5-valent
+icosahedron-type, 20 from triangular faces = 3-valent dodecahedron-type).
+All 32 vertices lie on the convex hull.
+
+Face ordering: sorted by centroid azimuthal angle for deterministic
+tithi-to-face assignment. This means adjacent tithis map to nearby faces
+on the polyhedron, approximating the lunar cycle's angular progression.

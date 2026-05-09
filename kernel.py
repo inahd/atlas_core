@@ -4026,6 +4026,16 @@ def create_app():
             mimetype="application/json",
         )
 
+    @app.route("/field/morphogenesis")
+    def _field_morphogenesis():
+        from morphogenesis import derive_bundle
+        fs = _merge_override(field_state())
+        bundle = derive_bundle(fs)
+        return app.response_class(
+            json.dumps(bundle.as_dict(), default=_json_serial, ensure_ascii=False),
+            mimetype="application/json",
+        )
+
     @app.route("/entity/<path:entity_id>")
     def _entity(entity_id):
         payload = get_entity_data(entity_id)

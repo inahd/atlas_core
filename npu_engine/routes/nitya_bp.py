@@ -5,9 +5,17 @@ Blueprint: nitya_bp, prefix: /nitya
 """
 
 import io
-from flask import Blueprint, jsonify, request, Response
+import os
+from flask import Blueprint, jsonify, request, Response, send_from_directory
 
 nitya_bp = Blueprint("nitya_bp", __name__, url_prefix="/nitya")
+
+_STATIC = os.path.join(os.path.dirname(__file__), "..", "..", "static")
+
+
+@nitya_bp.route("/mandala")
+def mandala_page():
+    return send_from_directory(_STATIC, "nitya_mandala.html")
 
 
 @nitya_bp.route("/devi/today")
@@ -87,6 +95,26 @@ def devi_field_png(tithi):
         return Response(buf.getvalue(), mimetype='image/png')
     except ImportError:
         return jsonify({"error": "PIL not installed for PNG rendering"}), 500
+
+
+@nitya_bp.route("/mediator/<int:tithi>")
+def mediator(tithi):
+    """3D polyhedron mediator for one Nitya Devi."""
+    from npu_engine.nitya.devi_engine import get_mediator_params, get_devi_by_tithi
+    if tithi < 1 or tithi > 30:
+        return jsonify({"error": "tithi must be 1-30"}), 400
+    params = get_mediator_params(tithi)
+    devi = get_devi_by_tithi(tithi)
+    params['devi'] = devi
+    return jsonify(params)
+
+
+@nitya_bp.route("/mediator/whole")
+def mediator_whole():
+    """Whole-month rhombic triacontahedron with 30 face labels."""
+    from npu_engine.geometry.cut_and_project import whole_month_polyhedron
+    poly = whole_month_polyhedron()
+    return jsonify(poly)
 
 
 @nitya_bp.route("/srichakra")

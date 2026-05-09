@@ -184,6 +184,48 @@ def get_render_params(tithi: int) -> dict:
     }
 
 
+def get_mediator_params(tithi: int) -> dict:
+    """
+    Return 3D polyhedron mediator parameters for a Nitya Devi.
+
+    The polyhedron sits between the 6D hypercubic parent and the 2D Nitya
+    render — it is the intermediate object whose shadow is the quasicrystal.
+    """
+    from npu_engine.geometry.cut_and_project import polyhedron_mediator
+
+    if tithi > 15:
+        tithi = 30 - tithi + 1
+    if tithi <= 0:
+        tithi = 1
+
+    N = DEVI_N.get(tithi, 3)
+    poly = polyhedron_mediator(N)
+
+    # 6D parent description
+    phi_str = "1/φ" if N in (5, 10, 15) else f"2π/{N}"
+    if N <= 6:
+        parent_desc = f"{N}D periodic parent lattice, projected to 3D via standard crystallographic cut"
+    else:
+        parent_desc = f"6D hypercubic parent, cut at irrational angle θ = {phi_str} to produce {N}-fold quasicrystal"
+
+    # Projection angle from yantra geometry
+    geo = _load_yantra_geometry()
+    yantra = geo.get(tithi, {})
+    proj_angle = float(yantra.get('projection_angle_degrees', 15) or 15)
+
+    return {
+        'polyhedron': {
+            'vertices': poly['vertices'],
+            'faces': poly['faces'],
+            'face_labels': poly.get('face_labels'),
+            'construction_name': poly.get('construction_name', ''),
+        },
+        'N': N,
+        'projection_angle': proj_angle,
+        'sixd_parent_description': parent_desc,
+    }
+
+
 def render_devi_field(
     tithi: int,
     k: float = None,
