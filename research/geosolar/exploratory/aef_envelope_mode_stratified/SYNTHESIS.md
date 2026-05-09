@@ -1,9 +1,39 @@
 # AEF ↔ spring/neap envelope, mode-stratified — SYNTHESIS
 
-**Status:** EXPLORATORY. Not pre-registered. Counterpart to the M4
-envelope-mode-stratified test (commit 7847576).
+**Status:** EXPLORATORY (process-disclosure framing — see §0 below).
+Counterpart to the M4 envelope-mode-stratified test (commit 7847576).
 
 Date: 2026-05-08
+
+## §0. Process disclosure — prereg ordering (added in follow-up to commit 0099e18)
+
+The hypothesis tested here was **structurally articulated in framework
+memory** (Atlas's persistent memory file `feedback_architecture.md`,
+line 15-16) **on 2026-05-08, before any of the dielectric-register
+physical data targeted in this test was inspected at the level of
+mode-coupling structure**.
+
+The framework prediction:
+- Magnetic-register bhumi-layer indicators (M4 tide range, ring
+  current, seismic): mode-coupling absent or noise-level.
+- Dielectric-register bhumi-layer indicators (AEF, Schumann amplitude,
+  ionospheric potential): mode-coupling present.
+
+**Process disclosure:** PREREG_006 (now drafted) was intended to be
+the formal pre-registration document filed *before* test execution.
+Due to agent execution order, the test on PANGAEA Hungary AEF was
+run before the prereg document was committed. The framework
+prediction articulated in memory was identical to what would have
+been formally pre-registered; the document-order issue does not
+affect what was predicted, only when the prediction document was
+filed.
+
+**This result is therefore framed as exploratory on this dataset.**
+Confirmatory replication is queued under PREREG_006 on held-out
+multi-station Schumann amplitude data (Williams Zenodo 4276361,
+ALB / BOU / ESK / HRN / RI — geographic projection-equivalence test).
+Williams data has not been inspected at the mode-coupling level
+beyond the NCK sample fetched at commit e9329c8 to verify access.
 
 ## What this is
 
